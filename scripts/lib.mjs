@@ -24,3 +24,20 @@ export async function loadBreaches() {
   }
   return entries;
 }
+
+// data/data-types.yml を読み込み、レベル一覧（重要度の高い順）と「種類名 → レベルID」の対応を返す
+export async function loadDataTypes() {
+  const text = await readFile(path.join(ROOT, 'data', 'data-types.yml'), 'utf8');
+  const raw = yaml.load(text, { schema: yaml.CORE_SCHEMA });
+  const levels = [];
+  const types = {};
+  const duplicates = [];
+  for (const [id, { label, description, types: names = [] }] of Object.entries(raw)) {
+    levels.push({ id, label, description });
+    for (const name of names) {
+      if (types[name]) duplicates.push(name);
+      types[name] = id;
+    }
+  }
+  return { levels, types, duplicates };
+}
