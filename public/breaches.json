@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-10-07T13:43:00.000Z",
-  "count": 208,
+  "count": 211,
   "severity_levels": [
     {
       "id": "critical",
@@ -3424,6 +3424,40 @@
       "severity": null
     },
     {
+      "id": "2025-01-mufg-nicos",
+      "organization": "三菱UFJニコス株式会社",
+      "group": "三菱UFJフィナンシャル・グループ",
+      "services": [
+        "MUFGカード（フランチャイジー各社を含む）"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2024-12-01",
+      "date_announced": "2025-01-22",
+      "affected_count": 400000,
+      "count_note": "約40万人（三菱UFJニコスとMUFGカードのフランチャイジー等 計16社の顧客）",
+      "cause": "misconfiguration",
+      "root_cause": "システム改修時の誤設定で、自社以外の会社の業務端末から顧客のカード情報を閲覧できる状態になった",
+      "data_types": [
+        "クレジットカード番号",
+        "クレジットカード情報（番号の一部・有効期限等）",
+        "口座番号",
+        "入会・退会年月日"
+      ],
+      "summary": "システム改修時の誤設定により、MUFGカードのフランチャイジーなど16社の一部顧客のカード番号・有効期限・口座番号などが、自社以外の業務端末から閲覧可能になっていた。氏名・住所・セキュリティコードは含まれず、不正利用は確認されていない。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/02/25/52386.html"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/?p=12240"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
       "id": "2024-12-hiroshima-peace",
       "organization": "広島県",
       "services": [
@@ -3633,6 +3667,37 @@
         }
       ],
       "severity": "critical"
+    },
+    {
+      "id": "2024-11-viewcard",
+      "organization": "株式会社ビューカード",
+      "group": "JR東日本グループ",
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2024-11-15",
+      "date_announced": "2024-11-25",
+      "affected_count": null,
+      "count_note": "件数は公表されていない（SDカード20枚分の通話録音）",
+      "cause": "lost_device",
+      "root_cause": "電話録音装置の廃棄手続きの過程で、通話を録音したSDカード20枚を紛失",
+      "data_types": [
+        "生年月日",
+        "住所",
+        "氏名",
+        "電話番号"
+      ],
+      "summary": "審査発行センターで2024年9月までに顧客と通話した内容を録音したSDカード20枚を紛失した。カード番号や暗証番号は含まれていない。",
+      "sources": [
+        {
+          "title": "ビューカード 公式発表",
+          "url": "https://www.jreast.co.jp/card/caution/notice2411251000.html"
+        },
+        {
+          "title": "ASCII.jp",
+          "url": "https://ascii.jp/elem/000/004/236/4236852/"
+        }
+      ],
+      "severity": "high"
     },
     {
       "id": "2024-11-shop-channel",
@@ -5606,6 +5671,36 @@
         }
       ],
       "severity": null
+    },
+    {
+      "id": "2023-05-smbc-card",
+      "organization": "三井住友カード株式会社",
+      "group": "SMBCグループ",
+      "services": [
+        "AOYAMA VISAカード",
+        "BLUE ROSE CARD"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2023-04-18",
+      "date_announced": "2023-05-16",
+      "affected_count": 290771,
+      "count_note": "2023年4月18日・20日送付のダイレクトメール合計290,771件",
+      "cause": "human_error",
+      "root_cause": "DM作成時にシステムから顧客情報を抜き出す作業で、通常と異なる確認方法をとり宛名面にカード番号を印字した",
+      "data_types": [
+        "クレジットカード番号",
+        "氏名",
+        "住所"
+      ],
+      "summary": "提携カード会員宛てのダイレクトメールの表面に、クレジットカード番号を印字したまま送付した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2023/05/24/49404.html"
+        }
+      ],
+      "severity": "critical"
     },
     {
       "id": "2023-03-docomo-plala",
