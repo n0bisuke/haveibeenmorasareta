@@ -1,0 +1,25 @@
+organization: イオンモール株式会社
+group: イオングループ
+services:
+  - ハウジング事業（直営店）
+industry: 不動産
+country: JP
+date_occurred: 2026-04-05
+date_announced: 2026-05-01
+affected_count: null
+count_note: 件数は公表されていない
+cause: third_party
+root_cause: 利用していた不動産業者向けクラウド「いえらぶCLOUD」の脆弱性を発端とする不正アクセス
+vendor:
+  name: 株式会社いえらぶGROUP
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 住所
+summary: ハウジング事業の直営店が利用するクラウドサービスが不正アクセスを受け、データが不正に取得された。同サービスの利用企業では16社以上が影響を公表している。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/05/11/55227.html
+  - title: ScanNetSecurity（いえらぶGROUP）
+    url: https://scan.netsecurity.ne.jp/article/2026/05/11/55226.html
