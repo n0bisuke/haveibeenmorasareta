@@ -1,0 +1,20 @@
+organization: 大阪公立大学医学部附属病院
+industry: 医療
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/35
+date_occurred: 2024-11-28
+date_announced: 2024-12-03
+affected_count: null
+count_note: 件数は未確認
+cause: misconfiguration
+root_cause: 登録医とカルテを共有する地域医療連携ネットワークの設定不備
+data_types:
+  - 氏名
+  - 健康・医療情報
+summary: 登録医とカルテを共有する地域医療連携ネットワークの設定不備で、本来表示されるべきでない患者一覧が閲覧できる状態になっていた。11月28日に病院職員が気づいた。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/12/16/52044.html
+  - title: 大阪公立大学医学部附属病院 お知らせ
+    url: https://hosp.omu.ac.jp/doc/20241202-info-important.pdf
