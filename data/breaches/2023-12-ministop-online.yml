@@ -1,0 +1,18 @@
+organization: ミニストップ株式会社
+group: イオングループ
+services:
+  - ミニストップオンライン
+industry: 小売・EC
+country: JP
+date_occurred: 2023-12-19
+date_announced: 2023-12-21
+affected_count: null
+count_note: 件数は公表されていない
+cause: human_error
+root_cause: 店頭受取商品の受注確定時のデータ加工ミスで、他の顧客の購買履歴がマイページに表示された
+data_types:
+  - 購入履歴
+summary: ECサイトで2023年12月19日の約7時間、ログインした顧客のマイページから別の顧客の購買履歴を閲覧できる状態になっていた。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/01/04/50424.html
