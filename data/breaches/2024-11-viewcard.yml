@@ -1,0 +1,21 @@
+organization: 株式会社ビューカード
+group: JR東日本グループ
+industry: 金融・保険
+country: JP
+date_occurred: 2024-11-15
+date_announced: 2024-11-25
+affected_count: null
+count_note: 件数は公表されていない（SDカード20枚分の通話録音）
+cause: lost_device
+root_cause: 電話録音装置の廃棄手続きの過程で、通話を録音したSDカード20枚を紛失
+data_types:
+  - 生年月日
+  - 住所
+  - 氏名
+  - 電話番号
+summary: 審査発行センターで2024年9月までに顧客と通話した内容を録音したSDカード20枚を紛失した。カード番号や暗証番号は含まれていない。
+sources:
+  - title: ビューカード 公式発表
+    url: https://www.jreast.co.jp/card/caution/notice2411251000.html
+  - title: ASCII.jp
+    url: https://ascii.jp/elem/000/004/236/4236852/
