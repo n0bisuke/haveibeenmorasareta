@@ -1,0 +1,18 @@
+organization: マルカワみそ株式会社
+services:
+  - マルカワみそ公式サイト
+industry: 食品
+country: JP
+date_announced: 2024-04-02
+affected_count: 89673
+count_note: 個人情報89,673名、うちクレジットカード情報5,447件
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+  - パスワード（保管形式不明）
+summary: 公式通販サイトが不正アクセスを受け、カード情報に加えて会員のログイン用パスワードなどの個人情報が漏えいした可能性がある。一部で不正利用も確認された。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/05/14/50990.html

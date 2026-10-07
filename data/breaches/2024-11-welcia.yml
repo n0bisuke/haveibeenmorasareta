@@ -1,0 +1,16 @@
+organization: ウエルシア薬局株式会社
+group: イオングループ
+services:
+  - ウエルシアドットコム
+industry: 小売・EC
+country: JP
+date_occurred: 2024-10-24
+date_announced: 2024-11-08
+affected_count: 40736
+count_note: 顧客39,805名、関係会社の従業員931名
+cause: phishing
+root_cause: 通販担当の従業員がサポート詐欺で遠隔操作ソフトをインストールさせられた
+summary: 公式通販サイトの担当従業員がサポート詐欺の被害に遭い、業務用PCが遠隔操作されて顧客と従業員の個人情報が漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/11/15/51921.html

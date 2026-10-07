@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-07T13:17:48.000Z",
-  "count": 120,
+  "generated_at": "2026-10-07T13:26:17.000Z",
+  "count": 203,
   "severity_levels": [
     {
       "id": "critical",
@@ -3352,6 +3352,616 @@
       "severity": null
     },
     {
+      "id": "2024-12-hiroshima-peace",
+      "organization": "広島県",
+      "services": [
+        "国際平和拠点ひろしま"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "date_announced": "2024-12-30",
+      "affected_count": 3751,
+      "cause": "unauthorized_access",
+      "summary": "世界平和に関する情報発信サイトが不正アクセスで一部ページを改ざんされ、サーバーに保存していた会員情報などが漏えいした可能性が高いと発表した。パスワードは登録時に暗号化していた。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/01/16/52166.html"
+        },
+        {
+          "title": "ScanNetSecurity（第3報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/01/22/52200.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-12-techful",
+      "organization": "444株式会社",
+      "group": "マイナビグループ",
+      "services": [
+        "TechFUL"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_announced": "2024-12-25",
+      "affected_count": 45576,
+      "count_note": "個人ユーザー登録アカウント45,576件など",
+      "cause": "unauthorized_access",
+      "summary": "プログラミング能力測定サービスのサーバーが不正アクセスを受け、個人情報や機密情報が漏えいした疑いがある。攻撃者からデータを公開しない条件で身代金を要求された。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/01/10/52145.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-12-toa-univ",
+      "organization": "東亜大学",
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2024-12-07",
+      "date_announced": "2024-12-18",
+      "affected_count": 17276,
+      "count_note": "在学生・卒業生・教職員等（2025年3月の続報で約8,000名から拡大）",
+      "cause": "unauthorized_access",
+      "summary": "大学のデータサーバーが不正アクセスを受け、保存されていた学生や教職員などの個人情報が漏えいした可能性がある。大学ドメインの検索結果に無関係なリンクが出るとの通報で発覚した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/01/06/52115.html"
+        },
+        {
+          "title": "ScanNetSecurity（続報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/03/21/52532.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-12-onomichi-cu",
+      "organization": "尾道市立大学",
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2024-12-02",
+      "date_announced": "2024-12-16",
+      "affected_count": 3327,
+      "count_note": "学生・広報配布先・学内メールアドレス一覧など",
+      "cause": "unauthorized_access",
+      "root_cause": "附属美術館職員のアカウントが乗っ取られ、PCに不正ログインされた",
+      "summary": "附属美術館の職員アカウントが乗っ取られてPC1台に不正ログインがあり、保存されていた個人情報が漏えいした可能性を排除できないと発表した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/12/27/52108.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-12-exd",
+      "organization": "株式会社イーエックスディー",
+      "industry": "団体・その他",
+      "country": "JP",
+      "date_occurred": "2024-11-28",
+      "date_announced": "2024-12-03",
+      "affected_count": 5000,
+      "count_note": "福島県の委託事業（ふくしまフェスタ等）の参加者・来場者 約5,000件",
+      "cause": "ransomware",
+      "summary": "イベント運営会社のサーバーがランサムウェアに感染した。福島県や郡山市の事業の再々委託先で、イベント参加者などの個人情報が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/12/23/52076.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-11-isetan-door",
+      "organization": "株式会社三越伊勢丹ホールディングス",
+      "group": "三越伊勢丹グループ",
+      "services": [
+        "ISETAN DOOR"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2024-11-24",
+      "date_announced": "2024-11-26",
+      "affected_count": 11073,
+      "cause": "unauthorized_access",
+      "root_cause": "外部で入手されたID・パスワードによるなりすましログイン（リスト型攻撃）",
+      "summary": "食品宅配サービスでなりすましログインがあり、11,073件のアカウント情報が参照された可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/12/06/52007.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-11-oisix",
+      "organization": "オイシックス・ラ・大地株式会社",
+      "services": [
+        "Oisix.com"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2024-11-24",
+      "date_announced": "2024-11-26",
+      "affected_count": 97533,
+      "cause": "unauthorized_access",
+      "root_cause": "第三者によるなりすましログイン",
+      "summary": "有機野菜宅配サイトでなりすましログインが確認され、ユーザーの個人情報が閲覧された可能性がある。システム監視で検知した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/12/06/52006.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-11-gintoki",
+      "organization": "株式会社銀時",
+      "services": [
+        "銀時公式通販サイト"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2024-11-25",
+      "affected_count": 17171,
+      "count_note": "個人情報17,171名、うちクレジットカード情報1,850名",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "通販サイトが改ざんされ、注文時に入力されたカード情報と個人情報が漏えいした可能性がある。警察からの連絡で発覚した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/12/02/51983.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-11-shop-channel",
+      "organization": "ジュピターショップチャンネル株式会社",
+      "services": [
+        "ショップチャンネル"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2024-11-15",
+      "date_announced": "2024-11-19",
+      "affected_count": 15000,
+      "count_note": "約1万5,000件の不正ログイン",
+      "cause": "unauthorized_access",
+      "root_cause": "外部から入手したとみられるID・パスワードでの不正ログイン",
+      "summary": "テレビ通販のECサイトで大量の不正ログインがあり、顧客の個人情報が閲覧された可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/11/27/51969.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-11-biima",
+      "organization": "株式会社biima",
+      "services": [
+        "biima sports"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2024-11-11",
+      "date_announced": "2024-11-13",
+      "affected_count": 23000,
+      "count_note": "体験参加者・退会者を含む約2万3,000人",
+      "cause": "human_error",
+      "root_cause": "案内メールに約2.3万人分の個人情報を記載したCSVファイルを誤って添付",
+      "summary": "子ども向けスポーツスクールの案内メールを53名に送る際、会員や過去の在籍者など約2万3,000人分の個人情報を含むCSVファイルを誤って添付した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/11/21/51946.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-11-toyota-mobility-tokyo",
+      "organization": "トヨタモビリティ東京株式会社",
+      "group": "トヨタグループ",
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_announced": "2024-11-08",
+      "affected_count": 9489,
+      "count_note": "従業員・退職者・入社希望の学生等",
+      "cause": "lost_device",
+      "root_cause": "従業員が個人情報をダウンロードした私物のUSBメモリを紛失",
+      "data_types": [
+        "住所",
+        "氏名",
+        "電話番号",
+        "従業員情報"
+      ],
+      "summary": "従業員が社内の個人情報を私物のUSBメモリに保存して紛失した。後日届け出があったが、その間の漏えいを否定できないとして個人情報保護委員会に報告した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/11/20/51936.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2024-11-welcia",
+      "organization": "ウエルシア薬局株式会社",
+      "group": "イオングループ",
+      "services": [
+        "ウエルシアドットコム"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2024-10-24",
+      "date_announced": "2024-11-08",
+      "affected_count": 40736,
+      "count_note": "顧客39,805名、関係会社の従業員931名",
+      "cause": "phishing",
+      "root_cause": "通販担当の従業員がサポート詐欺で遠隔操作ソフトをインストールさせられた",
+      "summary": "公式通販サイトの担当従業員がサポート詐欺の被害に遭い、業務用PCが遠隔操作されて顧客と従業員の個人情報が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/11/15/51921.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-11-tohoku-gakuin",
+      "organization": "学校法人東北学院",
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2024-09-07",
+      "date_announced": "2024-11-06",
+      "affected_count": 7085,
+      "cause": "ransomware",
+      "root_cause": "職員の業務用PCのIDとパスワードを窃取されて侵入された",
+      "summary": "職員の業務用PCが不正侵入を受けてランサムウェアに感染し、共有ドライブから業務データが窃取され、学内外の関係者の個人情報が漏えいした。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/11/13/51907.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-11-hakubun-eikodo",
+      "organization": "株式会社東西哲学書院",
+      "services": [
+        "博文栄光堂オンラインショップ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2024-11-05",
+      "affected_count": 50338,
+      "count_note": "個人情報50,338件、うちクレジットカード情報18,394件",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "オンラインショップが不正アクセスを受け、顧客のカード情報と個人情報が漏えいし、一部が不正利用された可能性がある。警視庁からの連絡で発覚した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/11/12/51900.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-10-karel-capek",
+      "organization": "株式会社カレルチャペック",
+      "services": [
+        "カレルチャペック紅茶店公式通販サイト"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_occurred": "2020-04-26",
+      "date_announced": "2024-10-30",
+      "affected_count": 58407,
+      "count_note": "延べ58,407名のクレジットカード情報",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "通販サイトが2020年4月から2024年5月にかけて改ざんされており、その期間の顧客の個人情報とカード情報が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/11/07/51882.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-10-sharp",
+      "organization": "シャープ株式会社",
+      "services": [
+        "COCORO STORE",
+        "ヘルシオデリ"
+      ],
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2024-07-19",
+      "date_announced": "2024-10-30",
+      "affected_count": 5836,
+      "count_note": "個人情報5,836人、うちクレジットカード情報4,257人",
+      "cause": "unauthorized_access",
+      "root_cause": "サイトに悪性スクリプトが埋め込まれ、利用者が不正なサイトに誘導された",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "公式オンラインストアと食材宅配サービスのサイトに悪性スクリプトが埋め込まれ、利用者の個人情報とカード情報が漏えいした可能性があると調査結果を発表した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/11/08/51889.html"
+        },
+        {
+          "title": "ScanNetSecurity（初報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/08/01/51409.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-10-fuwarii",
+      "organization": "株式会社協和",
+      "services": [
+        "ふわりぃ公式オンラインショップ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2024-10-29",
+      "affected_count": 16396,
+      "count_note": "クレジットカード情報16,396名",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "ランドセルの公式通販サイトが改ざんされ、購入者のカード情報が漏えいした。警視庁からの連絡で発覚した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/11/07/51881.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-10-slow-village",
+      "organization": "株式会社スローヴィレッジ",
+      "services": [
+        "スローヴィレッジオンラインショップ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2024-10-24",
+      "affected_count": 27851,
+      "count_note": "顧客データ27,851件、うちクレジットカード情報4,494件",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "オンラインショップの決済アプリケーションが改ざんされ、購入者のカード情報が漏えいした可能性がある。決済画面にランダムな番号が大量に入力される事態も起きていた。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/11/01/51853.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-10-hachijuni",
+      "organization": "株式会社八十二銀行",
+      "group": "八十二グループ",
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2024-10-16",
+      "affected_count": 106000,
+      "count_note": "八十二銀行の顧客と長野銀行のカードローン契約者 延べ約10万6,000件",
+      "cause": "insider",
+      "root_cause": "アコムからの出向者が顧客情報を同意なく出向元にメール送信",
+      "summary": "業務提携に伴い出向していたアコムの社員が、八十二銀行と長野銀行の顧客情報をアコムにメールで送っていた。アコムは情報を営業に使っておらず、全て削除したと説明している。",
+      "sources": [
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/?p=9585"
+        },
+        {
+          "title": "ビジネス+IT",
+          "url": "https://www.sbbit.jp/article/refers/150569"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-10-gamefreak",
+      "organization": "株式会社ゲームフリーク",
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2024-08-01",
+      "date_announced": "2024-10-10",
+      "affected_count": 2606,
+      "count_note": "従業員・業務委託従事者等",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "従業員情報"
+      ],
+      "summary": "2024年8月に発生したサーバーへの不正アクセスに関連して、従業員などの個人情報が漏えいしたことが判明した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/10/24/51806.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2024-09-ricoh-japan",
+      "organization": "リコージャパン株式会社",
+      "group": "リコーグループ",
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2024-09-12",
+      "date_announced": "2024-09-24",
+      "affected_count": 6444,
+      "count_note": "顧客情報3,841件、社員情報2,603件",
+      "cause": "third_party",
+      "root_cause": "業務委託先の倉業サービスがランサムウェアに感染",
+      "vendor": {
+        "name": "株式会社倉業サービス"
+      },
+      "summary": "業務委託先のサーバーがランサムウェア攻撃を受け、委託していた顧客情報と社員情報が流出した可能性がある。同じ委託先では大樹生命保険などの顧客情報も影響を受けた。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/10/04/51719.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-09-kenbiya",
+      "organization": "健美家株式会社",
+      "group": "LIFULLグループ",
+      "services": [
+        "健美家"
+      ],
+      "industry": "不動産",
+      "country": "JP",
+      "date_occurred": "2024-09-17",
+      "date_announced": "2024-09-19",
+      "affected_count": 217953,
+      "count_note": "個人・法人の利用者情報（第2報で60,153名分が追加）",
+      "cause": "unauthorized_access",
+      "root_cause": "データベースのバックアップに外部からアクセスされた",
+      "summary": "不動産投資サイトのデータベースのバックアップが外部からアクセスされ、利用者情報が閲覧された可能性がある。親会社LIFULLの第2報で対象者がさらに判明した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/10/03/51709.html"
+        },
+        {
+          "title": "ScanNetSecurity（第2報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/10/11/51752.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-09-doda",
+      "organization": "パーソルキャリア株式会社",
+      "group": "パーソルグループ",
+      "services": [
+        "doda"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_announced": "2024-09-17",
+      "affected_count": 549195,
+      "count_note": "法人顧客の採用担当者の情報",
+      "cause": "misconfiguration",
+      "root_cause": "販売代理店向けシステムで、閲覧の必要がない採用担当者の情報まで見える状態だった",
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "取引先情報"
+      ],
+      "summary": "求人広告の販売代理店向けシステムの不備により、法人顧客の採用担当者の名刺相当の情報が代理店とその委託先1,164社から閲覧できる状態だった。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/10/01/51689.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2024-08-sanofi",
+      "organization": "サノフィ株式会社",
+      "industry": "医療",
+      "country": "JP",
+      "date_occurred": "2024-07-10",
+      "date_announced": "2024-08-28",
+      "affected_count": 733820,
+      "count_note": "国内の医療従事者73万3,820人（別に従業員1,390人分の氏名）",
+      "cause": "third_party",
+      "root_cause": "海外の業務委託コンサルタントの個人PCがマルウェアに感染し、保存していたアクセスIDを悪用された",
+      "summary": "医薬品メーカーの日本法人のデータベースが不正アクセスを受け、医療従事者の個人情報が漏えいした。委託コンサルタントは社内のセキュリティポリシーに反してアクセスIDを個人PCに保存していた。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/09/05/51586.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-08-vitamer",
+      "organization": "株式会社エーデルワイス",
+      "services": [
+        "ヴィタメール オンラインショップ",
+        "アンテノール オンラインショップ"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2024-08-28",
+      "affected_count": 45355,
+      "count_note": "ヴィタメールでカード情報45,355名（アンテノールでも別に7,018名）",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "洋菓子の通販サイトが改ざんされ、購入者のクレジットカード情報が漏えいし、一部が不正利用された可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/09/05/51588.html"
+        },
+        {
+          "title": "ScanNetSecurity（アンテノール）",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/09/05/51587.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
       "id": "2024-08-genkai",
       "organization": "玄海町",
       "services": [
@@ -3381,6 +3991,90 @@
         }
       ],
       "severity": "medium"
+    },
+    {
+      "id": "2024-08-j-will",
+      "organization": "株式会社ジェイ・ウィル・パートナーズ",
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2024-07-02",
+      "date_announced": "2024-08-23",
+      "affected_count": 7132,
+      "cause": "unauthorized_access",
+      "summary": "従業員1名のメールアカウントが不正アクセスを受け、過去に送受信したメールと添付ファイルのデータが流出した可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/09/02/51562.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-08-kumon",
+      "organization": "株式会社公文教育研究会",
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2024-05-26",
+      "date_announced": "2024-08-20",
+      "affected_count": 739714,
+      "count_note": "会員・テスト受験者等",
+      "cause": "third_party",
+      "root_cause": "郵送物の印刷・発送を委託していたイセトーへのランサムウェア攻撃",
+      "vendor": {
+        "name": "株式会社イセトー"
+      },
+      "data_types": [
+        "住所",
+        "氏名",
+        "電話番号"
+      ],
+      "summary": "顧客向け郵送物の業務を委託していたイセトーがランサムウェアに感染し、会員やテスト受験者の個人情報が漏えいしたことが新たに判明した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/08/29/51549.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2024-08-fp-partner",
+      "organization": "株式会社FPパートナー",
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2024-08-15",
+      "affected_count": 35000,
+      "count_note": "他保険会社の契約者情報 約3万5,000件",
+      "cause": "insider",
+      "root_cause": "東京海上日動火災保険からの出向社員が他社の保険契約者情報を出向元に送付",
+      "summary": "保険代理店に出向していた東京海上日動の社員2名が、代理店で扱う他の保険会社の契約者情報を出向元に漏えいしていた。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/08/28/51539.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-08-tokyu-livable",
+      "organization": "東急リバブル株式会社",
+      "group": "東急グループ",
+      "industry": "不動産",
+      "country": "JP",
+      "date_announced": "2024-08-07",
+      "affected_count": 25406,
+      "cause": "insider",
+      "root_cause": "同業他社へ転職した元従業員が社内資料を不正に持ち出し、ダイレクトメールに使用",
+      "summary": "退職した元従業員が、不動産登記簿の情報をデータ化した社内資料を持ち出し、転職先でダイレクトメールの送付に使っていた。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/08/19/51485.html"
+        }
+      ],
+      "severity": null
     },
     {
       "id": "2024-08-kadokawa",
@@ -3417,6 +4111,1311 @@
       "severity": "high"
     },
     {
+      "id": "2024-08-mitsubishi-home",
+      "organization": "三菱電機ホーム機器株式会社",
+      "group": "三菱電機グループ",
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2024-04-17",
+      "date_announced": "2024-08-05",
+      "affected_count": 2310000,
+      "count_note": "約231万名分の顧客情報を保管するサーバーへのアクセス",
+      "cause": "unauthorized_access",
+      "summary": "個人情報が登録された情報システムのサーバーが外部から不正アクセスを受け、約231万名分の顧客情報が閲覧された可能性を否定できないと発表した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/08/16/51479.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-08-tomoe-shokai",
+      "organization": "株式会社巴商会",
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2024-05-01",
+      "date_announced": "2024-08-03",
+      "affected_count": 2331,
+      "count_note": "従業員・退職者・グループ会社の顧客等",
+      "cause": "ransomware",
+      "root_cause": "ファイアウォールからリモートデスクトップ接続でサーバーに侵入された",
+      "summary": "産業ガス会社のサーバーがランサムウェア攻撃を受け、従業員や退職者、グループ会社の顧客などの個人情報が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/08/15/51475.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-07-tokyo-tamago",
+      "organization": "株式会社東京玉子本舗",
+      "services": [
+        "東京玉子本舗公式オンラインショップ"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2024-07-31",
+      "affected_count": 73961,
+      "count_note": "個人情報73,961件、うちクレジットカード情報65,387件",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "オンラインショップの一部が改ざんされ、顧客のクレジットカード情報と個人情報が漏えいした可能性がある。警視庁からの連絡で発覚し、約2か月後に公表した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/08/06/51432.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-07-wantedly",
+      "organization": "ウォンテッドリー株式会社",
+      "services": [
+        "Wantedly"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2024-04-10",
+      "date_announced": "2024-07-30",
+      "affected_count": 200578,
+      "cause": "misconfiguration",
+      "root_cause": "非公開・削除済みの募集記事などが、URLを入力すると権限なしで閲覧できる設定ミス",
+      "summary": "ビジネスSNSのシステム設定ミスにより、非公開や削除済みの募集記事・会社ページが権限を持たない第三者に閲覧される状態だった。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/08/13/51465.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-07-uno-port",
+      "organization": "宇野港土地株式会社",
+      "services": [
+        "瀬戸内温泉たまの湯"
+      ],
+      "industry": "旅行",
+      "country": "JP",
+      "date_occurred": "2024-07-11",
+      "date_announced": "2024-07-29",
+      "affected_count": 10847,
+      "count_note": "LINE会員システム・WEB予約システムの利用者",
+      "cause": "unauthorized_access",
+      "summary": "温泉施設のLINE会員システムとWeb予約システムを動かすサーバーが不正アクセスを受け、顧客情報が流出した可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/08/02/51417.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-07-shimogamo-saryo",
+      "organization": "株式会社下鴨茶寮",
+      "services": [
+        "下鴨茶寮オンラインショップ"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2024-07-18",
+      "affected_count": 19235,
+      "count_note": "個人情報19,235件、うちクレジットカード情報16,682件（2024年10月31日の調査結果）",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "京料理の老舗の通販サイトが改ざんされ、会員の個人情報とカード情報が漏えいし、一部が不正利用された可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/11/11/51893.html"
+        },
+        {
+          "title": "ScanNetSecurity（初報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/07/30/51383.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-07-tokyo-gas",
+      "organization": "東京ガス株式会社",
+      "group": "東京ガスグループ",
+      "services": [
+        "東京ガスエンジニアリングソリューションズ（TGES）"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_occurred": "2024-07-09",
+      "date_announced": "2024-07-17",
+      "affected_count": 4160000,
+      "count_note": "約416万人分（東京ガスの顧客と、TGESの委託元の顧客情報を含む）",
+      "cause": "unauthorized_access",
+      "root_cause": "子会社TGESのネットワークへの不正アクセス",
+      "summary": "子会社の東京ガスエンジニアリングソリューションズのネットワークが不正アクセスを受け、同社と東京ガスのサーバーに保存されていた顧客情報が流出した可能性がある。TGESに業務を委託していた自治体やガス会社にも影響が広がった。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/07/25/51367.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-07-higashihara",
+      "organization": "有限会社東原商店",
+      "services": [
+        "オリーブ牛の肉のヒガシハラ"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2024-07-16",
+      "affected_count": 27561,
+      "count_note": "個人情報27,561名、うちクレジットカード情報1,703名",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "精肉の通販サイトが不正アクセスを受けて決済アプリケーションが改ざんされ、顧客のカード情報を含む個人情報が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/07/25/51365.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-07-recruit-suumo",
+      "organization": "株式会社リクルート",
+      "services": [
+        "SUUMO（不動産会社向け実証実験サービス）"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_occurred": "2024-07-09",
+      "date_announced": "2024-07-16",
+      "affected_count": 1313,
+      "count_note": "同社と委託先の従業者等",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "従業員情報"
+      ],
+      "summary": "SUUMOが一部エリアで試験提供していた不動産会社向けサービスのサーバーが不正アクセスを受け、同社と委託先の従業者の情報が漏えいした。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/07/22/51343.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2024-07-jaxa",
+      "organization": "国立研究開発法人宇宙航空研究開発機構（JAXA）",
+      "industry": "行政",
+      "country": "JP",
+      "date_occurred": "2023-10-01",
+      "date_announced": "2024-07-05",
+      "affected_count": 5000,
+      "count_note": "役職員等の個人情報 約5,000件（報道ベース）",
+      "cause": "unauthorized_access",
+      "root_cause": "業務用イントラネットのサーバーに侵入され、未知のマルウェアで検知を困難にされた",
+      "data_types": [
+        "従業員情報",
+        "取引先情報"
+      ],
+      "summary": "2023年10月に外部からの通報で業務用イントラネットへの不正アクセスを認知し、役職員の個人情報や外部機関との文書の一部が漏えいしたことを確認した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/07/18/51325.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2024-07-hags",
+      "organization": "株式会社HAGS",
+      "services": [
+        "hags-ec.com"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2024-07-02",
+      "affected_count": 21398,
+      "count_note": "会員情報21,398名、うちクレジットカード情報1,432名",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "建材の通販サイトが改ざんされ、購入者のカード情報と過去の会員登録者の情報が漏えいした可能性がある。警視庁からの連絡で発覚した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/07/10/51283.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-07-kubota",
+      "organization": "株式会社クボタ",
+      "group": "クボタグループ",
+      "services": [
+        "クボタクレジット"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2024-05-26",
+      "date_announced": "2024-07-01",
+      "affected_count": 61424,
+      "count_note": "クボタクレジットの顧客の利用明細",
+      "cause": "third_party",
+      "root_cause": "利用明細の印刷・発送を委託していたイセトーへのランサムウェア攻撃",
+      "vendor": {
+        "name": "株式会社イセトー"
+      },
+      "summary": "グループの信販会社クボタクレジットが利用明細の印刷・発送を委託していたイセトーがランサムウェアに感染し、顧客の個人情報が漏えいした。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/07/04/51242.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-06-sanchoku",
+      "organization": "株式会社北海道産地直送センター",
+      "services": [
+        "産地直送センター"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2021-03-30",
+      "date_announced": "2024-06-26",
+      "affected_count": 54583,
+      "count_note": "個人情報54,583件、うちクレジットカード情報18,443件",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "ECサイトが改ざんされ、注文時に入力された顧客のカード情報と個人情報が漏えいし、一部が不正利用された可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/07/10/51282.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-06-sophia",
+      "organization": "上智大学",
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2024-05-16",
+      "date_announced": "2024-06-26",
+      "affected_count": 13949,
+      "count_note": "全正規生",
+      "cause": "human_error",
+      "root_cause": "参加者リスト作成時に全学生のマスターデータのシートを削除し忘れて送信",
+      "data_types": [
+        "生年月日",
+        "氏名"
+      ],
+      "summary": "短期留学プログラムの参加者リストを海外の協定校3校に送る際、全正規生の氏名・生年月日・国籍などを含むシートを削除せずに送ってしまった。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/07/10/51281.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2024-06-academia",
+      "organization": "アカデミア・ミュージック株式会社",
+      "services": [
+        "アカデミア・ミュージック"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2024-06-18",
+      "affected_count": 4324,
+      "count_note": "クレジットカード情報4,324名（一覧サイトでは4,696件）",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "楽譜や音楽書の通販サイトが改ざんされ、顧客のカード情報が漏えいし、一部が不正利用された可能性がある。警察からの連絡で発覚した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/06/28/51212.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-06-morinaga",
+      "organization": "森永製菓株式会社",
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2024-06-18",
+      "affected_count": 4882,
+      "count_note": "同社とグループ会社の役職員等",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "従業員情報"
+      ],
+      "summary": "サーバー機器が外部から不正アクセスを受け、同社とグループ会社の役職員などの個人情報の一部が流出した可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/06/27/51203.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2024-06-alpha-uni",
+      "organization": "株式会社アルファユニ",
+      "services": [
+        "アルファユニ 公式ショップ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2024-06-17",
+      "affected_count": 3126,
+      "count_note": "個人情報3,126件、うちクレジットカード情報1,054件",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "医療用ユニフォームの通販サイトが不正注文を通じて改ざんされ、購入者のカード情報が漏えいし、会員の個人情報が閲覧された可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/06/26/51197.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-06-mog",
+      "organization": "mog株式会社",
+      "services": [
+        "こども栄養バランスmog オンラインストア"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2024-06-14",
+      "affected_count": 3484,
+      "count_note": "個人情報3,484件、うちクレジットカード情報2,153件（2024年11月12日の調査結果）",
+      "cause": "third_party",
+      "root_cause": "委託先のカートシステム運営会社のサーバーが不正アクセスを受け、カートシステムが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "子ども向け栄養食品の通販サイトで、委託先のカートシステムが改ざんされ、購入者のカード情報が漏えいし、一部が不正利用された可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/11/20/51937.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-06-premium-bandai",
+      "organization": "株式会社BANDAI SPIRITS",
+      "group": "バンダイナムコグループ",
+      "services": [
+        "プレミアムバンダイ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2024-06-11",
+      "affected_count": 1951,
+      "count_note": "個人情報1,951件、別にメールアドレス233件",
+      "cause": "third_party",
+      "root_cause": "委託先の従業員が業務に使った私物の外付けHDDを、データを消さずに廃棄した",
+      "summary": "業務委託先の従業員が私物HDDを業務に使い、データを削除せずに廃棄していた。HDDを入手した人からの連絡で、通販サイトの会員情報が含まれていることが分かった。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/06/19/51167.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-06-kyuhen",
+      "organization": "株式会社キューヘン",
+      "group": "九州電力グループ",
+      "industry": "製造",
+      "country": "JP",
+      "date_announced": "2024-06-03",
+      "affected_count": 104000,
+      "count_note": "約10万4,000件",
+      "cause": "ransomware",
+      "summary": "社内ネットワークの一部が不正アクセスを受け、ランサムウェアで社内情報の一部が暗号化された。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/06/13/51141.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-05-tullys",
+      "organization": "タリーズコーヒージャパン株式会社",
+      "group": "伊藤園グループ",
+      "services": [
+        "タリーズ オンラインストア"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_announced": "2024-05-30",
+      "affected_count": 92685,
+      "count_note": "会員情報92,685名、うちクレジットカード情報52,958名（2024年10月3日の調査結果）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "オンラインストアが不正アクセスを受け、会員情報とクレジットカード情報が漏えいした可能性がある。警視庁からの連絡でカード決済を停止し、ストアを一時閉鎖した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/10/16/51767.html"
+        },
+        {
+          "title": "ScanNetSecurity（初報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/06/07/51118.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-05-ise-shoyu",
+      "organization": "伊勢醤油本舗株式会社",
+      "group": "ヤマモリグループ",
+      "services": [
+        "伊勢醤油本舗オンラインショップ"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2024-05-28",
+      "affected_count": 9034,
+      "count_note": "個人情報9,034名、うちクレジットカード情報2,727名",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "ヤマモリの子会社が運営する通販サイトがショッピングシステムの脆弱性を突かれ、カード情報が漏えいし、一部が不正利用された可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/06/05/51102.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-05-nextlevel",
+      "organization": "株式会社ネクストレベル",
+      "services": [
+        "ネクストレベル"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2023-07-14",
+      "date_announced": "2024-05-24",
+      "affected_count": 496119,
+      "count_note": "ワーカーの個人情報",
+      "cause": "unauthorized_access",
+      "root_cause": "加盟企業に付与していた管理画面からワーカーのデータベースに不正アクセス",
+      "summary": "アルバイト・派遣のマッチングプラットフォームで、加盟企業向けの管理画面を通じてワーカーのデータベースに不正アクセスがあり、個人情報が抜き取られた。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/06/04/51096.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-05-sekisui-house",
+      "organization": "積水ハウス株式会社",
+      "services": [
+        "積水ハウス Net オーナーズクラブ"
+      ],
+      "industry": "不動産",
+      "country": "JP",
+      "date_announced": "2024-05-24",
+      "affected_count": 828168,
+      "count_note": "顧客・従業員等の情報",
+      "cause": "misconfiguration",
+      "root_cause": "現在は運用していないページのセキュリティ設定の不備",
+      "summary": "住宅オーナー向け会員制サイトがサイバー攻撃を受け、データベースに登録されていた顧客や従業員の情報が漏えい、または漏えいした可能性がある。委託先からアクセスの急増を知らされて発覚した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/31/51080.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-05-shinzone",
+      "organization": "株式会社シンゾーン",
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2024-05-15",
+      "date_announced": "2024-05-22",
+      "affected_count": 42400,
+      "count_note": "顧客最大約42,400名と従業員最大75名",
+      "cause": "misconfiguration",
+      "root_cause": "社内用ポータルサイトのクラウド環境の誤設定",
+      "summary": "クラウド環境の誤設定により、社内用ポータルサイトに記録された顧客と従業員の個人情報が外部からアクセスできる状態だった。不正アクセスの可能性は低いとしている。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/29/51067.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-05-okayama-psychiatric",
+      "organization": "地方独立行政法人岡山県精神科医療センター",
+      "industry": "医療",
+      "country": "JP",
+      "date_occurred": "2024-05-19",
+      "date_announced": "2024-05-21",
+      "affected_count": 40000,
+      "count_note": "最大約4万人分の患者情報（2024年6月11日の発表）",
+      "cause": "ransomware",
+      "data_types": [
+        "健康・医療情報",
+        "氏名",
+        "住所",
+        "生年月日"
+      ],
+      "summary": "電子カルテを含む総合情報システムがランサムウェア攻撃を受けて障害が発生し、センターと関連診療所の患者情報が最大約4万人分流出した可能性がある。2025年2月に調査報告書を公開した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/07/22/51344.html"
+        },
+        {
+          "title": "ScanNetSecurity（初報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/27/51057.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2024-05-fofo",
+      "organization": "株式会社インテンス",
+      "services": [
+        "fofo"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2024-05-20",
+      "affected_count": 15198,
+      "count_note": "クレジットカード情報15,198件",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "オンラインショップが外部から不正アクセスを受け、購入者のクレジットカード情報が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/27/51056.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-05-toratele",
+      "organization": "株式会社阪神タイガース",
+      "group": "阪急阪神ホールディングス",
+      "services": [
+        "虎テレ"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_announced": "2024-05-17",
+      "affected_count": 8452,
+      "count_note": "プレゼントキャンペーン応募情報",
+      "cause": "misconfiguration",
+      "root_cause": "委託先YTEが管理するクラウドサービスの設定ミス（2021年4月〜2024年5月）",
+      "vendor": {
+        "name": "株式会社YTE"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "公式動画配信サービスのキャンペーン応募者のメールアドレスなどが、委託先のクラウド設定ミスで外部から閲覧可能な状態だった。グループのセキュリティ監視会社が発見した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/24/51051.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2024-05-joyful-honda",
+      "organization": "株式会社ジョイフル本田",
+      "services": [
+        "THE GLOBE・OLD FRIEND オンラインショップ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2024-05-16",
+      "affected_count": 20132,
+      "count_note": "個人情報20,132名、うちクレジットカード情報3,958件",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "ホームセンター運営会社のインテリア通販サイトが不正アクセスを受け、不正ファイルの設置と改ざんによりカード情報と登録者の個人情報が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/21/51030.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-05-kishispo",
+      "organization": "株式会社岸和田スポーツ",
+      "services": [
+        "Kemari87KISHISPO公式通販サイト"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2021-02-21",
+      "date_announced": "2024-05-14",
+      "affected_count": 38664,
+      "count_note": "個人情報38,664件、うちクレジットカード情報13,879件",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "サッカー用品の通販サイトが2021年に不正アクセスを受けており、顧客のカード情報と個人情報が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/22/51036.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-05-biophilia",
+      "organization": "株式会社バイオフィリア",
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2024-05-03",
+      "date_announced": "2024-05-13",
+      "affected_count": 198200,
+      "count_note": "約19万8,200件（報道では234,962件とも）",
+      "cause": "unauthorized_access",
+      "summary": "ペットフードのオンラインサービスを管理するクラウド上のファイルサーバーが不正アクセスを受け、顧客の個人情報が外部にダウンロードされた。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/21/51029.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-05-kindai-hospital",
+      "organization": "近畿大学病院",
+      "industry": "医療",
+      "country": "JP",
+      "date_occurred": "2024-02-29",
+      "date_announced": "2024-05-13",
+      "affected_count": 2003,
+      "count_note": "研究目的で持ち出されていた患者情報",
+      "cause": "phishing",
+      "root_cause": "医師が個人所有のPCでサポート詐欺の被害に遭った",
+      "data_types": [
+        "健康・医療情報",
+        "氏名"
+      ],
+      "summary": "産婦人科の医師が個人所有のPCでサポート詐欺の被害に遭い、研究目的で保存していた患者の氏名や診療情報が漏えいした可能性がある。別に胎児エコー動画の誤提供も公表した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/22/51035.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2024-05-izumi",
+      "organization": "株式会社イズミ",
+      "services": [
+        "ゆめタウン",
+        "ゆめカード"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2024-02-15",
+      "date_announced": "2024-05-09",
+      "affected_count": 7784999,
+      "count_note": "会員情報最大778万2,009件、アルバイト応募者情報最大2,990件",
+      "cause": "ransomware",
+      "root_cause": "VPN装置から侵入され、グループの複数サーバーが暗号化された",
+      "summary": "2024年2月に発生したランサムウェア攻撃の調査結果として、会員やアルバイト応募者の個人情報が最大約778万件漏えいした可能性があると発表した。攻撃時には全店舗で発注システムに支障が出た。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/16/51008.html"
+        },
+        {
+          "title": "ScanNetSecurity（初報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/02/27/50638.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-05-tokyu",
+      "organization": "東急株式会社",
+      "group": "東急グループ",
+      "services": [
+        "東光食品"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2024-04-28",
+      "date_announced": "2024-05-09",
+      "affected_count": 16645,
+      "count_note": "子会社 東光食品のファイルサーバーの個人データ（2024年8月20日の調査結果）",
+      "cause": "unauthorized_access",
+      "root_cause": "構築中の新しい社内ネットワーク基盤の検証環境に侵入され、既存のネットワークへ不正に接続された",
+      "summary": "東急の社内ネットワークに不正アクセスがあり、連結子会社 東光食品のファイルサーバーからデータが読み出された。調査結果では、全データが持ち出されたものと想定して対応するとした。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/08/30/51557.html"
+        },
+        {
+          "title": "ScanNetSecurity（初報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/15/51000.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-05-yao-city",
+      "organization": "八尾市",
+      "services": [
+        "八尾市立斎場"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "date_announced": "2024-05-09",
+      "affected_count": 3000,
+      "count_note": "約3,000件",
+      "cause": "insider",
+      "root_cause": "斎場の職員が業務で得た遺族等の個人情報を、賄賂を受け取って葬儀業者に提供",
+      "summary": "市立斎場の職員が加重収賄などの容疑で逮捕され、業務上得た個人情報を民間の葬儀関連業者に流していた疑いがある。職員は懲戒免職となった。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/15/50999.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-04-njpw",
+      "organization": "新日本プロレスリング株式会社",
+      "services": [
+        "Team NJPW"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2024-04-22",
+      "date_announced": "2024-04-30",
+      "affected_count": 32775,
+      "count_note": "ファンクラブ会員",
+      "cause": "lost_device",
+      "summary": "後楽園ホール大会でのファンクラブ会員向け撮影会の準備中に、会員情報を保存したUSBメモリを紛失した。USBメモリは暗号化・セキュリティ機能付きだった。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/10/50978.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-04-sega-fave",
+      "organization": "株式会社セガ フェイブ",
+      "group": "セガサミーグループ",
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_announced": "2024-04-24",
+      "affected_count": 4700,
+      "count_note": "同社とグループ会社が保有する個人情報 約4,700件",
+      "cause": "unauthorized_access",
+      "root_cause": "従業員が使うMicrosoft 365アカウントへの不正アクセス",
+      "data_types": [
+        "取引先情報",
+        "従業員情報"
+      ],
+      "summary": "従業員のメールシステムのアカウントが不正アクセスを受け、取引先やグループ会社の従業員の個人情報が流出した可能性がある。のちに被害アカウントが追加で判明した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/07/50953.html"
+        },
+        {
+          "title": "ScanNetSecurity（続報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/21/51028.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2024-04-nagomi",
+      "organization": "有限会社なごみ",
+      "services": [
+        "味市春香なごみオンラインショップ"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2024-04-22",
+      "affected_count": 16407,
+      "count_note": "クレジットカード情報16,407件（会員15,274名）",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "オンラインショップが不正アクセスを受け、カード情報を含む会員の個人情報が漏えいし、一部が不正利用された可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/01/50940.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-04-marukawa-miso",
+      "organization": "マルカワみそ株式会社",
+      "services": [
+        "マルカワみそ公式サイト"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2024-04-02",
+      "affected_count": 89673,
+      "count_note": "個人情報89,673名、うちクレジットカード情報5,447件",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号",
+        "パスワード（保管形式不明）"
+      ],
+      "summary": "公式通販サイトが不正アクセスを受け、カード情報に加えて会員のログイン用パスワードなどの個人情報が漏えいした可能性がある。一部で不正利用も確認された。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/14/50990.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-03-hokushu",
+      "organization": "株式会社北洲",
+      "industry": "不動産",
+      "country": "JP",
+      "date_occurred": "2024-03-11",
+      "date_announced": "2024-03-15",
+      "affected_count": 34902,
+      "count_note": "取引情報に含まれる個人情報（2024年5月21日の調査結果）",
+      "cause": "unauthorized_access",
+      "summary": "サーバーが第三者の不正アクセスを受け、顧客情報を含む取引情報の一部ファイルを攻撃者が開いた可能性があると調査結果で発表した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/28/51062.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-03-ridenow",
+      "organization": "株式会社Philo",
+      "services": [
+        "RIDENOW"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_announced": "2024-03-07",
+      "affected_count": 1700,
+      "count_note": "約1,700名",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "運転免許情報",
+        "本人確認書類画像"
+      ],
+      "summary": "過去に運営していたカーシェアサービスのシステムが不正アクセスを受け、登録された運転免許証の画像などの顧客データが削除・漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/03/25/50757.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-03-yodoiko",
+      "organization": "国土交通省近畿地方整備局 淀川河川事務所",
+      "services": [
+        "淀川河川公園施設予約システム「よどいこ！」"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "date_occurred": "2024-03-01",
+      "date_announced": "2024-03-07",
+      "affected_count": 34000,
+      "count_note": "約3万4,000件",
+      "cause": "unauthorized_access",
+      "root_cause": "委託先がシステム改修のため構築していたテスト環境の新規サーバーへの不正通信",
+      "summary": "淀川河川公園の施設予約システムで、改修作業中のテスト用サーバーに外部から不正な通信があり、利用者の個人情報の一部が流出した可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/03/15/50730.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-03-kanko",
+      "organization": "菅公学生服株式会社",
+      "services": [
+        "カンコーオンラインショップ原宿セレクトスクエア"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2024-03-04",
+      "affected_count": 3827,
+      "count_note": "クレジットカード情報3,827名",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "学生服メーカーのオンラインショップの決済システムが不正アクセスで改ざんされ、利用者のカード情報が流出した可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/03/11/50706.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-03-hokudai-eng",
+      "organization": "北海道大学",
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2023-11-06",
+      "date_announced": "2024-03-01",
+      "affected_count": 23554,
+      "count_note": "工学系部局に在籍していた学生・教職員等",
+      "cause": "unauthorized_access",
+      "summary": "工学部のウェブサーバーが不正アクセスを受け、工学系部局が管理するデータベースに保存されていた学生や教職員などの個人情報が流出した可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/03/05/50673.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-02-nakahora",
+      "organization": "株式会社企業農業研究所",
+      "services": [
+        "なかほら牧場オンラインストア"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2024-02-28",
+      "affected_count": 14933,
+      "count_note": "個人情報14,933件、うちクレジットカード情報5,069件",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "牧場の旧オンラインストアが不正アクセスを受け、カード情報を含む顧客の個人情報が流出した可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/03/07/50686.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-02-create",
+      "organization": "株式会社クレイツ",
+      "services": [
+        "クレイツ公式オンラインショップ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2024-02-20",
+      "affected_count": 65520,
+      "count_note": "調査対象65,520名、うちクレジットカード情報4,583名",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "旧サイトのシステムの脆弱性を突かれ、カード情報を窃取するプログラムを埋め込まれた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "美容家電メーカーのリニューアル前の通販サイトが改ざんされ、顧客のカード情報や個人情報が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/03/04/50666.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-02-kumishoku",
+      "organization": "鹿児島くみあい食品株式会社",
+      "services": [
+        "クミショクファーム"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2024-02-19",
+      "affected_count": 22234,
+      "count_note": "個人情報22,234名、うちクレジットカード情報2,114件",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "オンラインショップが不正アクセスを受けて決済アプリケーションが改ざんされ、顧客のカード情報と個人情報が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/02/29/50652.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-02-booking-car",
+      "organization": "トヨタモビリティサービス株式会社",
+      "group": "トヨタグループ",
+      "services": [
+        "Booking Car"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2024-02-02",
+      "date_announced": "2024-02-16",
+      "affected_count": 25000,
+      "count_note": "利用企業・自治体の従業員・職員 約2万5,000名",
+      "cause": "misconfiguration",
+      "root_cause": "システム開発以前から使われていたAWSのアクセスキーの不適切な取り扱い",
+      "data_types": [
+        "メールアドレス",
+        "会員ID"
+      ],
+      "summary": "社用車管理クラウドサービスのデータ保管サーバー（AWS S3）に古いアクセスキーで不正侵入され、利用者のメールアドレスと顧客識別番号が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/02/27/50640.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2024-02-verdy",
+      "organization": "東京ヴェルディ株式会社",
+      "services": [
+        "東京ヴェルディ公式オンラインストア"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_announced": "2024-02-06",
+      "affected_count": 2726,
+      "count_note": "クレジットカード情報2,726名",
+      "cause": "unauthorized_access",
+      "root_cause": "サイトの開発管理者アカウントへの不正アクセスで決済アプリケーションが改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "サッカークラブの公式オンラインストアが改ざんされ、顧客のカード情報が漏えいし、一部が不正利用された。のちに逮捕者が出ている。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/02/16/50601.html"
+        },
+        {
+          "title": "ScanNetSecurity（逮捕）",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/07/09/53188.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-01-baitoru",
+      "organization": "ディップ株式会社",
+      "services": [
+        "バイトル"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2023-12-30",
+      "date_announced": "2024-01-31",
+      "affected_count": 1296,
+      "count_note": "掲載企業経由の応募者情報",
+      "cause": "unauthorized_access",
+      "root_cause": "掲載企業のID・パスワードを取得した第三者が応募者管理画面に不正ログイン",
+      "summary": "求人サイトの掲載企業のアカウントで管理画面に不正ログインされ、応募者情報が閲覧されたうえ、応募者に不審なメールが送られた。のちに別の掲載企業でも被害が判明した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/02/09/50575.html"
+        },
+        {
+          "title": "ScanNetSecurity（続報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/05/23/51042.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-01-fineaid",
+      "organization": "株式会社ファインエイド",
+      "services": [
+        "健康いきいきライフスタイル"
+      ],
+      "industry": "美容・健康",
+      "country": "JP",
+      "date_announced": "2024-01-31",
+      "affected_count": 5193,
+      "count_note": "クレジットカード情報5,193名",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "クロスサイトスクリプティング（XSS）で決済処理用のアプリケーションを改ざんされた",
+      "data_types": [
+        "クレジットカード番号"
+      ],
+      "summary": "健康食品の通販サイトがXSSの手法で攻撃され、カード決済時に処理される個人情報を取得するよう改ざんされた。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/02/07/50564.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2024-01-ofuji",
+      "organization": "株式会社大藤つり具",
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2024-01-26",
+      "affected_count": 200000,
+      "count_note": "最大約20万件（過去にダイレクトメールを送付した顧客など）",
+      "cause": "ransomware",
+      "summary": "サーバーが不正アクセスを受けてランサムウェアに感染し、会員情報を含むデータが暗号化され、流出した可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity（2024年2月の情報漏えい）",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/03/25/50761.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2023-12-diamond",
+      "organization": "株式会社ダイヤモンド社",
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2023-12-07",
+      "affected_count": 70000,
+      "count_note": "約7万件（2024年2月の調査結果）",
+      "cause": "ransomware",
+      "summary": "ランサムウェアによる攻撃で一部のサーバーとPCのファイルが暗号化された。調査の結果、約7万件の個人情報が漏えいしたおそれがあると発表した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/02/26/50632.html"
+        },
+        {
+          "title": "ScanNetSecurity（初報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2023/12/14/50356.html"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2023-11-lycorp",
       "organization": "LINEヤフー株式会社",
       "services": [
@@ -3449,6 +5448,33 @@
         }
       ],
       "severity": "high"
+    },
+    {
+      "id": "2023-10-ntt-procx",
+      "organization": "株式会社NTTマーケティングアクトProCX",
+      "group": "NTTグループ",
+      "services": [
+        "NTTビジネスソリューションズのコールセンターシステム"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2023-10-17",
+      "affected_count": 9280000,
+      "count_note": "テレマーケティング業務の委託元69件の顧客情報 約928万件（一部カード情報を含む）",
+      "cause": "insider",
+      "root_cause": "コールセンターシステムの運用保守を担う元派遣社員が、管理者アカウントを悪用して顧客情報を持ち出し名簿業者に売却",
+      "summary": "NTT西日本グループのコールセンターシステムから、運用保守に従事していた元派遣社員が約10年にわたり顧客情報を不正に持ち出していた。自治体など多数の委託元に影響し、元派遣社員は2024年1月に逮捕された。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2023/10/25/50146.html"
+        },
+        {
+          "title": "ScanNetSecurity（逮捕）",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/02/21/50619.html"
+        }
+      ],
+      "severity": null
     }
   ]
 }

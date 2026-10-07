@@ -1,0 +1,12 @@
+organization: 株式会社バイオフィリア
+industry: 小売・EC
+country: JP
+date_occurred: 2024-05-03
+date_announced: 2024-05-13
+affected_count: 198200
+count_note: 約19万8,200件（報道では234,962件とも）
+cause: unauthorized_access
+summary: ペットフードのオンラインサービスを管理するクラウド上のファイルサーバーが不正アクセスを受け、顧客の個人情報が外部にダウンロードされた。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/05/21/51029.html

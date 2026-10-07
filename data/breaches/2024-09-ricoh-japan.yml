@@ -1,0 +1,16 @@
+organization: リコージャパン株式会社
+group: リコーグループ
+industry: IT・通信
+country: JP
+date_occurred: 2024-09-12
+date_announced: 2024-09-24
+affected_count: 6444
+count_note: 顧客情報3,841件、社員情報2,603件
+cause: third_party
+root_cause: 業務委託先の倉業サービスがランサムウェアに感染
+vendor:
+  name: 株式会社倉業サービス
+summary: 業務委託先のサーバーがランサムウェア攻撃を受け、委託していた顧客情報と社員情報が流出した可能性がある。同じ委託先では大樹生命保険などの顧客情報も影響を受けた。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/10/04/51719.html

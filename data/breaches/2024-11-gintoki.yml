@@ -1,0 +1,17 @@
+organization: 株式会社銀時
+services:
+  - 銀時公式通販サイト
+industry: 食品
+country: JP
+date_announced: 2024-11-25
+affected_count: 17171
+count_note: 個人情報17,171名、うちクレジットカード情報1,850名
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: 通販サイトが改ざんされ、注文時に入力されたカード情報と個人情報が漏えいした可能性がある。警察からの連絡で発覚した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/12/02/51983.html

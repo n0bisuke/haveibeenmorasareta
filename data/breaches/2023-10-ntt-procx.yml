@@ -1,0 +1,17 @@
+organization: 株式会社NTTマーケティングアクトProCX
+group: NTTグループ
+services:
+  - NTTビジネスソリューションズのコールセンターシステム
+industry: IT・通信
+country: JP
+date_announced: 2023-10-17
+affected_count: 9280000
+count_note: テレマーケティング業務の委託元69件の顧客情報 約928万件（一部カード情報を含む）
+cause: insider
+root_cause: コールセンターシステムの運用保守を担う元派遣社員が、管理者アカウントを悪用して顧客情報を持ち出し名簿業者に売却
+summary: NTT西日本グループのコールセンターシステムから、運用保守に従事していた元派遣社員が約10年にわたり顧客情報を不正に持ち出していた。自治体など多数の委託元に影響し、元派遣社員は2024年1月に逮捕された。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2023/10/25/50146.html
+  - title: ScanNetSecurity（逮捕）
+    url: https://scan.netsecurity.ne.jp/article/2024/02/21/50619.html

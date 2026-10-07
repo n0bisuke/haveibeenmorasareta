@@ -1,0 +1,17 @@
+organization: 株式会社協和
+services:
+  - ふわりぃ公式オンラインショップ
+industry: 小売・EC
+country: JP
+date_announced: 2024-10-29
+affected_count: 16396
+count_note: クレジットカード情報16,396名
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: ランドセルの公式通販サイトが改ざんされ、購入者のカード情報が漏えいした。警視庁からの連絡で発覚した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/11/07/51881.html

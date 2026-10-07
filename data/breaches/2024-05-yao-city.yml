@@ -1,0 +1,14 @@
+organization: 八尾市
+services:
+  - 八尾市立斎場
+industry: 行政
+country: JP
+date_announced: 2024-05-09
+affected_count: 3000
+count_note: 約3,000件
+cause: insider
+root_cause: 斎場の職員が業務で得た遺族等の個人情報を、賄賂を受け取って葬儀業者に提供
+summary: 市立斎場の職員が加重収賄などの容疑で逮捕され、業務上得た個人情報を民間の葬儀関連業者に流していた疑いがある。職員は懲戒免職となった。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/05/15/50999.html

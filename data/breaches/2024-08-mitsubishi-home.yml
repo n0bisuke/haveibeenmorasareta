@@ -1,0 +1,13 @@
+organization: 三菱電機ホーム機器株式会社
+group: 三菱電機グループ
+industry: 製造
+country: JP
+date_occurred: 2024-04-17
+date_announced: 2024-08-05
+affected_count: 2310000
+count_note: 約231万名分の顧客情報を保管するサーバーへのアクセス
+cause: unauthorized_access
+summary: 個人情報が登録された情報システムのサーバーが外部から不正アクセスを受け、約231万名分の顧客情報が閲覧された可能性を否定できないと発表した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/08/16/51479.html

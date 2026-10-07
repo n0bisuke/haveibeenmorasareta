@@ -1,0 +1,12 @@
+organization: 北海道大学
+industry: 人材・教育
+country: JP
+date_occurred: 2023-11-06
+date_announced: 2024-03-01
+affected_count: 23554
+count_note: 工学系部局に在籍していた学生・教職員等
+cause: unauthorized_access
+summary: 工学部のウェブサーバーが不正アクセスを受け、工学系部局が管理するデータベースに保存されていた学生や教職員などの個人情報が流出した可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/03/05/50673.html

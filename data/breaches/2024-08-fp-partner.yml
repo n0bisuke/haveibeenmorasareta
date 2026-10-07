@@ -1,0 +1,12 @@
+organization: 株式会社FPパートナー
+industry: 金融・保険
+country: JP
+date_announced: 2024-08-15
+affected_count: 35000
+count_note: 他保険会社の契約者情報 約3万5,000件
+cause: insider
+root_cause: 東京海上日動火災保険からの出向社員が他社の保険契約者情報を出向元に送付
+summary: 保険代理店に出向していた東京海上日動の社員2名が、代理店で扱う他の保険会社の契約者情報を出向元に漏えいしていた。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/08/28/51539.html

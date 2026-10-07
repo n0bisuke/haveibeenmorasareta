@@ -1,0 +1,14 @@
+organization: 積水ハウス株式会社
+services:
+  - 積水ハウス Net オーナーズクラブ
+industry: 不動産
+country: JP
+date_announced: 2024-05-24
+affected_count: 828168
+count_note: 顧客・従業員等の情報
+cause: misconfiguration
+root_cause: 現在は運用していないページのセキュリティ設定の不備
+summary: 住宅オーナー向け会員制サイトがサイバー攻撃を受け、データベースに登録されていた顧客や従業員の情報が漏えい、または漏えいした可能性がある。委託先からアクセスの急増を知らされて発覚した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/05/31/51080.html

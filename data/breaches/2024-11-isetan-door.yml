@@ -1,0 +1,15 @@
+organization: 株式会社三越伊勢丹ホールディングス
+group: 三越伊勢丹グループ
+services:
+  - ISETAN DOOR
+industry: 小売・EC
+country: JP
+date_occurred: 2024-11-24
+date_announced: 2024-11-26
+affected_count: 11073
+cause: unauthorized_access
+root_cause: 外部で入手されたID・パスワードによるなりすましログイン（リスト型攻撃）
+summary: 食品宅配サービスでなりすましログインがあり、11,073件のアカウント情報が参照された可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/12/06/52007.html

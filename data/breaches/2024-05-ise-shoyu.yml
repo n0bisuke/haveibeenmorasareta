@@ -1,0 +1,18 @@
+organization: 伊勢醤油本舗株式会社
+group: ヤマモリグループ
+services:
+  - 伊勢醤油本舗オンラインショップ
+industry: 食品
+country: JP
+date_announced: 2024-05-28
+affected_count: 9034
+count_note: 個人情報9,034名、うちクレジットカード情報2,727名
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: ヤマモリの子会社が運営する通販サイトがショッピングシステムの脆弱性を突かれ、カード情報が漏えいし、一部が不正利用された可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/06/05/51102.html

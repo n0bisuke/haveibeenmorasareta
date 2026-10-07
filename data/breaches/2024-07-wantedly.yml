@@ -1,0 +1,14 @@
+organization: ウォンテッドリー株式会社
+services:
+  - Wantedly
+industry: 人材・教育
+country: JP
+date_occurred: 2024-04-10
+date_announced: 2024-07-30
+affected_count: 200578
+cause: misconfiguration
+root_cause: 非公開・削除済みの募集記事などが、URLを入力すると権限なしで閲覧できる設定ミス
+summary: ビジネスSNSのシステム設定ミスにより、非公開や削除済みの募集記事・会社ページが権限を持たない第三者に閲覧される状態だった。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/08/13/51465.html

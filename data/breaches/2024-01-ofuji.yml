@@ -1,0 +1,11 @@
+organization: 株式会社大藤つり具
+industry: 小売・EC
+country: JP
+date_announced: 2024-01-26
+affected_count: 200000
+count_note: 最大約20万件（過去にダイレクトメールを送付した顧客など）
+cause: ransomware
+summary: サーバーが不正アクセスを受けてランサムウェアに感染し、会員情報を含むデータが暗号化され、流出した可能性がある。
+sources:
+  - title: ScanNetSecurity（2024年2月の情報漏えい）
+    url: https://scan.netsecurity.ne.jp/article/2024/03/25/50761.html

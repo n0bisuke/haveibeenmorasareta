@@ -1,0 +1,18 @@
+organization: 東急株式会社
+group: 東急グループ
+services:
+  - 東光食品
+industry: 交通・モビリティ
+country: JP
+date_occurred: 2024-04-28
+date_announced: 2024-05-09
+affected_count: 16645
+count_note: 子会社 東光食品のファイルサーバーの個人データ（2024年8月20日の調査結果）
+cause: unauthorized_access
+root_cause: 構築中の新しい社内ネットワーク基盤の検証環境に侵入され、既存のネットワークへ不正に接続された
+summary: 東急の社内ネットワークに不正アクセスがあり、連結子会社 東光食品のファイルサーバーからデータが読み出された。調査結果では、全データが持ち出されたものと想定して対応するとした。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/08/30/51557.html
+  - title: ScanNetSecurity（初報）
+    url: https://scan.netsecurity.ne.jp/article/2024/05/15/51000.html

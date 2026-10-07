@@ -1,0 +1,16 @@
+organization: 近畿大学病院
+industry: 医療
+country: JP
+date_occurred: 2024-02-29
+date_announced: 2024-05-13
+affected_count: 2003
+count_note: 研究目的で持ち出されていた患者情報
+cause: phishing
+root_cause: 医師が個人所有のPCでサポート詐欺の被害に遭った
+data_types:
+  - 健康・医療情報
+  - 氏名
+summary: 産婦人科の医師が個人所有のPCでサポート詐欺の被害に遭い、研究目的で保存していた患者の氏名や診療情報が漏えいした可能性がある。別に胎児エコー動画の誤提供も公表した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/05/22/51035.html

@@ -1,0 +1,18 @@
+organization: 株式会社イズミ
+services:
+  - ゆめタウン
+  - ゆめカード
+industry: 小売・EC
+country: JP
+date_occurred: 2024-02-15
+date_announced: 2024-05-09
+affected_count: 7784999
+count_note: 会員情報最大778万2,009件、アルバイト応募者情報最大2,990件
+cause: ransomware
+root_cause: VPN装置から侵入され、グループの複数サーバーが暗号化された
+summary: 2024年2月に発生したランサムウェア攻撃の調査結果として、会員やアルバイト応募者の個人情報が最大約778万件漏えいした可能性があると発表した。攻撃時には全店舗で発注システムに支障が出た。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/05/16/51008.html
+  - title: ScanNetSecurity（初報）
+    url: https://scan.netsecurity.ne.jp/article/2024/02/27/50638.html

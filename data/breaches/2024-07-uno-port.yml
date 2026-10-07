@@ -1,0 +1,14 @@
+organization: 宇野港土地株式会社
+services:
+  - 瀬戸内温泉たまの湯
+industry: 旅行
+country: JP
+date_occurred: 2024-07-11
+date_announced: 2024-07-29
+affected_count: 10847
+count_note: LINE会員システム・WEB予約システムの利用者
+cause: unauthorized_access
+summary: 温泉施設のLINE会員システムとWeb予約システムを動かすサーバーが不正アクセスを受け、顧客情報が流出した可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/08/02/51417.html
