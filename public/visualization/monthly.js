@@ -155,7 +155,9 @@ function render() {
 
   // ホバー用の縦線と点
   const crosshair = el('line', { class: 'crosshair', y1: m.top, y2: m.top + ih, opacity: 0 }, svg);
-  const dots = values.map((v, i) => el('circle', { class: `dot${v === 0 ? ' zero' : ''}`, cx: x(i), cy: y(v), r: 4 }, svg));
+  // 月数が多いと点が重なるので小さくする
+  const r = iw / months.length < 18 ? 2.5 : 4;
+  const dots = values.map((v, i) => el('circle', { class: `dot${v === 0 ? ' zero' : ''}`, cx: x(i), cy: y(v), r }, svg));
 
   // 月ごとの当たり判定（点より広い帯）
   const band = months.length === 1 ? iw : iw / (months.length - 1);
@@ -168,13 +170,13 @@ function render() {
       crosshair.setAttribute('x1', x(i));
       crosshair.setAttribute('x2', x(i));
       crosshair.setAttribute('opacity', 1);
-      dots.forEach((d, j) => d.setAttribute('r', j === i ? 6 : 4));
+      dots.forEach((d, j) => d.setAttribute('r', j === i ? r + 2 : r));
       dots[i].classList.remove('zero');
       showTooltip(mo, values[i], metric, x(i), y(values[i]), width);
     };
     const hide = () => {
       crosshair.setAttribute('opacity', 0);
-      dots.forEach((d, j) => { d.setAttribute('r', 4); d.classList.toggle('zero', values[j] === 0); });
+      dots.forEach((d, j) => { d.setAttribute('r', r); d.classList.toggle('zero', values[j] === 0); });
       $('tooltip').hidden = true;
     };
     hit.addEventListener('pointerenter', show);
