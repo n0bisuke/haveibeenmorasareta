@@ -1,0 +1,23 @@
+organization: さくらインターネット株式会社
+services:
+  - さくらのレンタルサーバ
+industry: IT・通信
+country: JP
+date_announced: 2026-08-17
+affected_count: 1360563
+count_note: 影響の可能性があるアカウント数。うち30件はハッシュ化パスワードを含む。公表時点でデータの外部持ち出しは確認されていない
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 生年月日
+  - 性別
+  - 契約情報
+summary: 8月17日にレンタルサーバ一部環境への不正アクセスを公表。8月19日には社内の販売管理システムも不正アクセスを受けた可能性があると発表し、影響範囲が最大136万563アカウントに拡大した。
+sources:
+  - title: ITmedia エンタープライズ
+    url: https://www.itmedia.co.jp/enterprise/articles/2608/20/news078.html
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUF1962O0Z10C26A8000000/

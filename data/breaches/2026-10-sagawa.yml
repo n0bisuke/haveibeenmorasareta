@@ -1,0 +1,19 @@
+organization: 佐川急便株式会社
+services:
+  - お荷物問い合わせサービス
+industry: 物流
+country: JP
+date_announced: 2026-10-01
+affected_count: null
+count_note: 件数は調査中（公表時点）。9月30日を起点に過去約100日間のデータが対象の可能性
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+summary: Webサイトの「お荷物問い合わせサービス」への不正アクセスにより、荷物の送り主と宛先の氏名・住所・電話番号が流出した可能性がある。サービスの一部を停止した。
+sources:
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2145343.html
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC020KD0S6A001C2000000/
