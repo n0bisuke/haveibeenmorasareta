@@ -7,6 +7,9 @@ affected_count: 220000
 count_note: 約22万件（うち個人を特定できる顧客情報は約11万人分）
 cause: third_party
 root_cause: 委託先のFAQシステム「i-ask」管理サイトへの不正ログインと不正プログラムの設置
+vendor:
+  name: 株式会社スカラコミュニケーションズ
+  group: スカラグループ
 data_types:
   - 氏名
   - メールアドレス
@@ -16,5 +19,7 @@ summary: 外部委託先スカラコミュニケーションズのFAQ・問い�
 sources:
   - title: 日本経済新聞
     url: https://www.nikkei.com/article/DGXZQOUB053ZF0V01C26A0000000/
+  - title: スカラ 公式発表（2026年10月6日）
+    url: https://scalagrp.jp/pdf/ir/news/2026_IRnews1006.pdf
   - title: 週刊アスキー
     url: https://weekly.ascii.jp/elem/000/004/439/4439964/

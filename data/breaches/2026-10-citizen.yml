@@ -9,6 +9,9 @@ affected_count: 100000
 count_note: 約10万人分（漏えいの可能性）
 cause: third_party
 root_cause: 委託先のFAQシステム「i-ask」管理サイトへの不正ログインと不正プログラムの設置
+vendor:
+  name: 株式会社スカラコミュニケーションズ
+  group: スカラグループ
 data_types:
   - 氏名
   - 住所

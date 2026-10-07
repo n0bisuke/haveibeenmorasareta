@@ -8,6 +8,8 @@ date_announced: 2026-04-16
 affected_count: 510000
 count_note: 約51万件（漏えいのおそれ）。のちに外部専門機関の調査では、実質的な情報漏えいを裏付ける痕跡は確認されなかったとされる
 cause: third_party
+vendor:
+  name: 株式会社YCC情報システム
 data_types:
   - マイナンバー
   - 健康・医療情報
