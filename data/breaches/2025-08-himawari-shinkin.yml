@@ -1,0 +1,24 @@
+organization: ひまわり信用金庫
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 福島県
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/35
+date_occurred: 2024-03-08
+date_announced: 2025-08-22
+affected_count: 936
+count_note: 936先（書類1,667枚）。公表日が未確認のため紛失判明日を仮置き
+cause: lost_device
+root_cause: 支店の書類廃棄作業で定期預金申込書の綴りを誤って廃棄した可能性が高い
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - 生年月日
+  - 口座番号
+  - 資産・取引情報
+summary: 泉支店で、顧客情報が記載された定期預金申込書（兼印鑑票）の綴り12冊（1,667枚・936先分）の紛失が判明した。2024年3月の書類廃棄作業で誤って溶解処理した可能性が高く、外部流出の可能性は極めて低いとしている。
+sources:
+  - title: ひまわり信用金庫 お知らせ
+    url: https://www.shinkin.co.jp/himawari/pdf/oshirase/202508_lost.pdf

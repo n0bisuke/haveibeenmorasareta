@@ -1,0 +1,21 @@
+organization: 東濃信用金庫
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 岐阜県
+date_occurred: 2024-05-26
+date_announced: 2024-07-04
+affected_count: 5008
+count_note: ログデータ上の氏名5,008件
+cause: third_party
+root_cause: 東海信金ビジネスの再委託先でハガキ帳票を作成していたイセトーがランサムウェアに感染
+vendor:
+  name: 株式会社イセトー（東海信金ビジネスの再委託先）
+data_types:
+  - 氏名
+summary: 東海4県の信用金庫が出資する東海信金ビジネスの再委託先イセトーがランサムウェアに感染し、ダイレクトメール作成時のログデータに含まれる顧客の氏名が漏えいした。金融機関コードと支店コードも対象となりうる。東海4県の26信用金庫で延べ約7万7千件が漏えいした。
+sources:
+  - title: 東濃信用金庫 お詫び
+    url: https://www.shinkin.co.jp/tono/news/jyuyou/pdf/20240704owabi.pdf
+  - title: 日本経済新聞（東海の信金顧客情報、7万7千件流出）
+    url: https://www.nikkei.com/article/DGXZQOFD0947E0Z00C24A7000000/

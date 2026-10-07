@@ -1,0 +1,18 @@
+organization: 株式会社阿波銀行
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 徳島県
+date_occurred: 2025-07-01
+date_announced: 2025-12-24
+affected_count: 666
+count_note: 顧客情報666件（回収済み）
+cause: insider
+root_cause: 支店の元職員が顧客の金銭を着服し、顧客情報を持ち出した
+data_types:
+  - 氏名
+  - 口座番号
+summary: 藍住支店の元職員が2025年7月から11月にかけて顧客の預け金から87,410円を着服し、取引先顧客666件の顧客情報（氏名・口座番号など）を持ち出していた。顧客情報は回収済みで、第三者への漏えいは確認されていない。元職員は懲戒解雇となった。発生日は月のみ判明のため1日としている。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/01/26/54478.html

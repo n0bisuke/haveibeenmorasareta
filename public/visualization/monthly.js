@@ -71,9 +71,10 @@ const state = {
 function syncControls() {
   for (const btn of document.querySelectorAll('[data-metric]')) btn.setAttribute('aria-checked', String(btn.dataset.metric === state.metric));
   for (const btn of document.querySelectorAll('[data-range]')) btn.setAttribute('aria-checked', String(btn.dataset.range === state.range));
-  const next = new URLSearchParams();
-  if (state.metric !== 'incidents') next.set('metric', state.metric);
-  if (state.range !== '12') next.set('range', state.range);
+  // 地図など同じページの他のグラフのパラメータは残す
+  const next = new URLSearchParams(location.search);
+  if (state.metric !== 'incidents') next.set('metric', state.metric); else next.delete('metric');
+  if (state.range !== '12') next.set('range', state.range); else next.delete('range');
   const qs = next.toString();
   history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
 }

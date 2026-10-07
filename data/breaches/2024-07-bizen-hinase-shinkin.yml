@@ -1,0 +1,19 @@
+organization: 備前日生信用金庫
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 岡山県
+date_occurred: 2024-05-26
+date_announced: 2024-07-01
+affected_count: 17
+cause: third_party
+root_cause: 業務委託先のイセトーがランサムウェアに感染
+vendor:
+  name: 株式会社イセトー
+data_types:
+  - 氏名
+  - 住所
+summary: 業務を委託していたイセトーがランサムウェアに感染し、顧客17名の氏名と住所が漏えいした。
+sources:
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/shinkin-bizenhinase-info-leak-iseto/
