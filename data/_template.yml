@@ -16,6 +16,7 @@ cause: unauthorized_access                # 必須: 下記から1つ
 #   ransomware / unauthorized_access / vulnerability / misconfiguration /
 #   phishing / malware / third_party / insider / human_error /
 #   lost_device / unknown / other
+root_cause: VPN機器の既知の脆弱性を悪用されて侵入   # 任意: 原因の詳細（悪用された脆弱性や侵入経路。80文字以内）
 data_types:                               # 任意: data/data-types.yml にある名前のみ
   - 氏名
   - メールアドレス
