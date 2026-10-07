@@ -1,0 +1,18 @@
+organization: 健美家株式会社
+group: LIFULLグループ
+services:
+  - 健美家
+industry: 不動産
+country: JP
+date_occurred: 2024-09-17
+date_announced: 2024-09-19
+affected_count: 217953
+count_note: 個人・法人の利用者情報（第2報で60,153名分が追加）
+cause: unauthorized_access
+root_cause: データベースのバックアップに外部からアクセスされた
+summary: 不動産投資サイトのデータベースのバックアップが外部からアクセスされ、利用者情報が閲覧された可能性がある。親会社LIFULLの第2報で対象者がさらに判明した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/10/03/51709.html
+  - title: ScanNetSecurity（第2報）
+    url: https://scan.netsecurity.ne.jp/article/2024/10/11/51752.html

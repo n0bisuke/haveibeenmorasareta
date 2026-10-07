@@ -1,0 +1,17 @@
+organization: 株式会社HAGS
+services:
+  - hags-ec.com
+industry: 小売・EC
+country: JP
+date_announced: 2024-07-02
+affected_count: 21398
+count_note: 会員情報21,398名、うちクレジットカード情報1,432名
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: 建材の通販サイトが改ざんされ、購入者のカード情報と過去の会員登録者の情報が漏えいした可能性がある。警視庁からの連絡で発覚した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/07/10/51283.html

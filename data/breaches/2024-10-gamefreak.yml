@@ -1,0 +1,16 @@
+organization: 株式会社ゲームフリーク
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2024-08-01
+date_announced: 2024-10-10
+affected_count: 2606
+count_note: 従業員・業務委託従事者等
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - メールアドレス
+  - 従業員情報
+summary: 2024年8月に発生したサーバーへの不正アクセスに関連して、従業員などの個人情報が漏えいしたことが判明した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/10/24/51806.html

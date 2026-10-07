@@ -1,0 +1,16 @@
+organization: 株式会社リクルート
+services:
+  - SUUMO（不動産会社向け実証実験サービス）
+industry: メディア・出版
+country: JP
+date_occurred: 2024-07-09
+date_announced: 2024-07-16
+affected_count: 1313
+count_note: 同社と委託先の従業者等
+cause: unauthorized_access
+data_types:
+  - 従業員情報
+summary: SUUMOが一部エリアで試験提供していた不動産会社向けサービスのサーバーが不正アクセスを受け、同社と委託先の従業者の情報が漏えいした。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/07/22/51343.html

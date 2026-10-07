@@ -1,0 +1,13 @@
+organization: 株式会社ダイヤモンド社
+industry: メディア・出版
+country: JP
+date_announced: 2023-12-07
+affected_count: 70000
+count_note: 約7万件（2024年2月の調査結果）
+cause: ransomware
+summary: ランサムウェアによる攻撃で一部のサーバーとPCのファイルが暗号化された。調査の結果、約7万件の個人情報が漏えいしたおそれがあると発表した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/02/26/50632.html
+  - title: ScanNetSecurity（初報）
+    url: https://scan.netsecurity.ne.jp/article/2023/12/14/50356.html

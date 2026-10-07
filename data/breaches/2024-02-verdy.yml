@@ -1,0 +1,18 @@
+organization: 東京ヴェルディ株式会社
+services:
+  - 東京ヴェルディ公式オンラインストア
+industry: エンタメ・スポーツ
+country: JP
+date_announced: 2024-02-06
+affected_count: 2726
+count_note: クレジットカード情報2,726名
+cause: unauthorized_access
+root_cause: サイトの開発管理者アカウントへの不正アクセスで決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: サッカークラブの公式オンラインストアが改ざんされ、顧客のカード情報が漏えいし、一部が不正利用された。のちに逮捕者が出ている。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/02/16/50601.html
+  - title: ScanNetSecurity（逮捕）
+    url: https://scan.netsecurity.ne.jp/article/2025/07/09/53188.html

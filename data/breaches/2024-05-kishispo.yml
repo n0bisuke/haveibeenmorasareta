@@ -1,0 +1,18 @@
+organization: 株式会社岸和田スポーツ
+services:
+  - Kemari87KISHISPO公式通販サイト
+industry: 小売・EC
+country: JP
+date_occurred: 2021-02-21
+date_announced: 2024-05-14
+affected_count: 38664
+count_note: 個人情報38,664件、うちクレジットカード情報13,879件
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: サッカー用品の通販サイトが2021年に不正アクセスを受けており、顧客のカード情報と個人情報が漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/05/22/51036.html

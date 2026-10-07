@@ -1,0 +1,12 @@
+organization: 東急リバブル株式会社
+group: 東急グループ
+industry: 不動産
+country: JP
+date_announced: 2024-08-07
+affected_count: 25406
+cause: insider
+root_cause: 同業他社へ転職した元従業員が社内資料を不正に持ち出し、ダイレクトメールに使用
+summary: 退職した元従業員が、不動産登記簿の情報をデータ化した社内資料を持ち出し、転職先でダイレクトメールの送付に使っていた。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/08/19/51485.html

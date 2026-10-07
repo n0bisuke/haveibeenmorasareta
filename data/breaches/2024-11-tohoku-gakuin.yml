@@ -1,0 +1,12 @@
+organization: 学校法人東北学院
+industry: 人材・教育
+country: JP
+date_occurred: 2024-09-07
+date_announced: 2024-11-06
+affected_count: 7085
+cause: ransomware
+root_cause: 職員の業務用PCのIDとパスワードを窃取されて侵入された
+summary: 職員の業務用PCが不正侵入を受けてランサムウェアに感染し、共有ドライブから業務データが窃取され、学内外の関係者の個人情報が漏えいした。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/11/13/51907.html

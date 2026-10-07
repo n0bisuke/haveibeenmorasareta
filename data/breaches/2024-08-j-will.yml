@@ -1,0 +1,11 @@
+organization: 株式会社ジェイ・ウィル・パートナーズ
+industry: 金融・保険
+country: JP
+date_occurred: 2024-07-02
+date_announced: 2024-08-23
+affected_count: 7132
+cause: unauthorized_access
+summary: 従業員1名のメールアカウントが不正アクセスを受け、過去に送受信したメールと添付ファイルのデータが流出した可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/09/02/51562.html

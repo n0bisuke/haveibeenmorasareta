@@ -1,0 +1,13 @@
+organization: 株式会社シンゾーン
+industry: 小売・EC
+country: JP
+date_occurred: 2024-05-15
+date_announced: 2024-05-22
+affected_count: 42400
+count_note: 顧客最大約42,400名と従業員最大75名
+cause: misconfiguration
+root_cause: 社内用ポータルサイトのクラウド環境の誤設定
+summary: クラウド環境の誤設定により、社内用ポータルサイトに記録された顧客と従業員の個人情報が外部からアクセスできる状態だった。不正アクセスの可能性は低いとしている。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/05/29/51067.html

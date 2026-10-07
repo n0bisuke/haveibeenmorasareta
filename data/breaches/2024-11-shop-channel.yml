@@ -1,0 +1,15 @@
+organization: ジュピターショップチャンネル株式会社
+services:
+  - ショップチャンネル
+industry: 小売・EC
+country: JP
+date_occurred: 2024-11-15
+date_announced: 2024-11-19
+affected_count: 15000
+count_note: 約1万5,000件の不正ログイン
+cause: unauthorized_access
+root_cause: 外部から入手したとみられるID・パスワードでの不正ログイン
+summary: テレビ通販のECサイトで大量の不正ログインがあり、顧客の個人情報が閲覧された可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/11/27/51969.html

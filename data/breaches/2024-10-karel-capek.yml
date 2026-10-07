@@ -1,0 +1,18 @@
+organization: 株式会社カレルチャペック
+services:
+  - カレルチャペック紅茶店公式通販サイト
+industry: 食品
+country: JP
+date_occurred: 2020-04-26
+date_announced: 2024-10-30
+affected_count: 58407
+count_note: 延べ58,407名のクレジットカード情報
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: 通販サイトが2020年4月から2024年5月にかけて改ざんされており、その期間の顧客の個人情報とカード情報が漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/11/07/51882.html

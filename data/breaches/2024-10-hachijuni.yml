@@ -1,0 +1,15 @@
+organization: 株式会社八十二銀行
+group: 八十二グループ
+industry: 金融・保険
+country: JP
+date_announced: 2024-10-16
+affected_count: 106000
+count_note: 八十二銀行の顧客と長野銀行のカードローン契約者 延べ約10万6,000件
+cause: insider
+root_cause: アコムからの出向者が顧客情報を同意なく出向元にメール送信
+summary: 業務提携に伴い出向していたアコムの社員が、八十二銀行と長野銀行の顧客情報をアコムにメールで送っていた。アコムは情報を営業に使っておらず、全て削除したと説明している。
+sources:
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/?p=9585
+  - title: ビジネス+IT
+    url: https://www.sbbit.jp/article/refers/150569

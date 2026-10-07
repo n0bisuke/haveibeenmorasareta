@@ -1,0 +1,17 @@
+organization: 株式会社企業農業研究所
+services:
+  - なかほら牧場オンラインストア
+industry: 食品
+country: JP
+date_announced: 2024-02-28
+affected_count: 14933
+count_note: 個人情報14,933件、うちクレジットカード情報5,069件
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: 牧場の旧オンラインストアが不正アクセスを受け、カード情報を含む顧客の個人情報が流出した可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/03/07/50686.html

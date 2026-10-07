@@ -1,0 +1,13 @@
+organization: 森永製菓株式会社
+industry: 食品
+country: JP
+date_announced: 2024-06-18
+affected_count: 4882
+count_note: 同社とグループ会社の役職員等
+cause: unauthorized_access
+data_types:
+  - 従業員情報
+summary: サーバー機器が外部から不正アクセスを受け、同社とグループ会社の役職員などの個人情報の一部が流出した可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/06/27/51203.html

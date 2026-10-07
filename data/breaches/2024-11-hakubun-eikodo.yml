@@ -1,0 +1,17 @@
+organization: 株式会社東西哲学書院
+services:
+  - 博文栄光堂オンラインショップ
+industry: 小売・EC
+country: JP
+date_announced: 2024-11-05
+affected_count: 50338
+count_note: 個人情報50,338件、うちクレジットカード情報18,394件
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: オンラインショップが不正アクセスを受け、顧客のカード情報と個人情報が漏えいし、一部が不正利用された可能性がある。警視庁からの連絡で発覚した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/11/12/51900.html

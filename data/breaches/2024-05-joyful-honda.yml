@@ -1,0 +1,17 @@
+organization: 株式会社ジョイフル本田
+services:
+  - THE GLOBE・OLD FRIEND オンラインショップ
+industry: 小売・EC
+country: JP
+date_announced: 2024-05-16
+affected_count: 20132
+count_note: 個人情報20,132名、うちクレジットカード情報3,958件
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: ホームセンター運営会社のインテリア通販サイトが不正アクセスを受け、不正ファイルの設置と改ざんによりカード情報と登録者の個人情報が漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/05/21/51030.html

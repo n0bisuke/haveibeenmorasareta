@@ -1,0 +1,17 @@
+organization: 株式会社スローヴィレッジ
+services:
+  - スローヴィレッジオンラインショップ
+industry: 小売・EC
+country: JP
+date_announced: 2024-10-24
+affected_count: 27851
+count_note: 顧客データ27,851件、うちクレジットカード情報4,494件
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: オンラインショップの決済アプリケーションが改ざんされ、購入者のカード情報が漏えいした可能性がある。決済画面にランダムな番号が大量に入力される事態も起きていた。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/11/01/51853.html
