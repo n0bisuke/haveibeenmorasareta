@@ -1,11 +1,12 @@
 // 企業・グループ別、業界別、原因別のランキング
-import { CAUSES } from '../labels.js';
+import { CAUSES, showUpdated } from '../labels.js';
 
 const $ = (id) => document.getElementById(id);
 const nf = new Intl.NumberFormat('ja-JP');
 const ORG_LIMIT = 10;
 
-const { breaches, vuln_targets: VULN = [] } = await fetch('../breaches.json').then((r) => r.json());
+const { breaches, generated_at, vuln_targets: VULN = [] } = await fetch('../breaches.json').then((r) => r.json());
+showUpdated(generated_at);
 
 // 「株式会社」などを除いた短い名前（グループ指定があればグループ名）
 const VULN_LABEL = Object.fromEntries(VULN.map((t) => [t.id, t.label]));

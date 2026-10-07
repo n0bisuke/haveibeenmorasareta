@@ -1,4 +1,6 @@
 // 月ごとの情報漏洩の推移（公表件数 / 漏洩件数の合計）を折れ線で描く
+import { showUpdated } from '../labels.js';
+
 const $ = (id) => document.getElementById(id);
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const nf = new Intl.NumberFormat('ja-JP');
@@ -8,7 +10,8 @@ const METRICS = {
   affected: { label: '漏洩件数の合計', unit: '件', value: (m) => m.affected },
 };
 
-const { breaches } = await fetch('../breaches.json').then((r) => r.json());
+const { breaches, generated_at } = await fetch('../breaches.json').then((r) => r.json());
+showUpdated(generated_at);
 
 // ---- 月ごとに集計（データの無い月も 0 で埋める） ----
 const monthKey = (d) => d.slice(0, 7);
