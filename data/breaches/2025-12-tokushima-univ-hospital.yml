@@ -1,0 +1,18 @@
+organization: 徳島大学病院
+industry: 医療
+country: JP
+date_occurred: 2025-10-11
+date_announced: 2025-12-22
+affected_count: 18920
+count_note: 検体検査を受けた患者16,945件、職員42名、看護キャリア支援システムの登録職員1,933名
+cause: unauthorized_access
+data_types:
+  - パスワード（保管形式不明）
+  - 氏名
+  - メールアドレス
+  - 従業員情報
+  - 会員ID
+summary: 2025年10月11日から22日にかけて、院内で管理するシステムに外部から不正アクセスがあり、検体検査（血液・尿など）を受けた患者や職員の情報が漏えいした可能性がある。看護キャリア支援システムではユーザーID・パスワードや研修履歴なども対象となった。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/01/14/54403.html
