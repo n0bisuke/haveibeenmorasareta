@@ -1,0 +1,21 @@
+organization: 三井住友カード株式会社
+group: SMBCグループ
+services:
+  - AOYAMA VISAカード
+  - BLUE ROSE CARD
+industry: 金融・保険
+country: JP
+date_occurred: 2023-04-18
+date_announced: 2023-05-16
+affected_count: 290771
+count_note: 2023年4月18日・20日送付のダイレクトメール合計290,771件
+cause: human_error
+root_cause: DM作成時にシステムから顧客情報を抜き出す作業で、通常と異なる確認方法をとり宛名面にカード番号を印字した
+data_types:
+  - クレジットカード番号
+  - 氏名
+  - 住所
+summary: 提携カード会員宛てのダイレクトメールの表面に、クレジットカード番号を印字したまま送付した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2023/05/24/49404.html

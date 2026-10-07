@@ -1,0 +1,23 @@
+organization: 三菱UFJニコス株式会社
+group: 三菱UFJフィナンシャル・グループ
+services:
+  - MUFGカード（フランチャイジー各社を含む）
+industry: 金融・保険
+country: JP
+date_occurred: 2024-12-01
+date_announced: 2025-01-22
+affected_count: 400000
+count_note: 約40万人（三菱UFJニコスとMUFGカードのフランチャイジー等 計16社の顧客）
+cause: misconfiguration
+root_cause: システム改修時の誤設定で、自社以外の会社の業務端末から顧客のカード情報を閲覧できる状態になった
+data_types:
+  - クレジットカード番号
+  - クレジットカード情報（番号の一部・有効期限等）
+  - 口座番号
+  - 入会・退会年月日
+summary: システム改修時の誤設定により、MUFGカードのフランチャイジーなど16社の一部顧客のカード番号・有効期限・口座番号などが、自社以外の業務端末から閲覧可能になっていた。氏名・住所・セキュリティコードは含まれず、不正利用は確認されていない。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/02/25/52386.html
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/?p=12240
