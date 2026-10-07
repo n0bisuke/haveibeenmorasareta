@@ -1,0 +1,13 @@
+organization: 株式会社ローソン銀行
+industry: 金融・保険
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/31
+date_announced: 2026-03-31
+affected_count: 5373
+count_note: "まとめサイトの記載: 5,373件（一次情報で未確認）"
+cause: human_error
+summary: 株式会社ローソン銀行は、ATMの運用・保守業務を委託している委託先の再委託先において、最大5,373件の取引情報などが保存されていた可能性のあるSSD2個の所在が確認できなくなったと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2026年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

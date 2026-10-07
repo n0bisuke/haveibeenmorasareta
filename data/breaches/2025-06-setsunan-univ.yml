@@ -1,0 +1,13 @@
+organization: 摂南大学
+industry: 人材・教育
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-06-13
+affected_count: 9213
+count_note: "まとめサイトの記載: 9,213件（一次情報で未確認）"
+cause: human_error
+summary: 摂南大学は、同大就職部に所属する職員が在学生ら122名に宛てたMicrosoft Teamsのチャット機能にて、同大学の卒業生や修了生9,213人分に関する個人情報を含むファイルを誤送信した旨、発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

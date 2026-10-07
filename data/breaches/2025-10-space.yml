@@ -1,0 +1,13 @@
+organization: 株式会社スペース
+industry: IT・通信
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-10-07
+affected_count: 4200
+count_note: "まとめサイトの記載: 個人情報：約1,900件 契約情報：約4,200件（一次情報で未確認）"
+cause: unauthorized_access
+summary: 株式会社スペースは、管理を委託しているサーバーが第三者の不正アクセスを受け、保有する個人情報の漏えい懸念を発表した。漏洩した情報は、同社コンテンツのお問い合わせフォーム入力データ約1,900件と、契約リストファイル約4,200件。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

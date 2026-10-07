@@ -1,0 +1,15 @@
+organization: みずほ信託銀行株式会社
+industry: 金融・保険
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-04-24
+affected_count: 2472
+count_note: "まとめサイトの記載: 2,472件（一次情報で未確認）"
+cause: human_error
+summary: みずほ信託銀行株式会社は、同校に所属する職員が発信した電子メールについて誤送信があり、個人2,472名および法人246社の顧客情報を外部流出したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/05/19/52868.html
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

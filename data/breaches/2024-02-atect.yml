@@ -1,0 +1,13 @@
+organization: 株式会社アテクト
+industry: 製造
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-02-21
+affected_count: 2055
+count_note: "まとめサイトの記載: 2,055件（一次情報で未確認）"
+cause: human_error
+summary: 2024年2⽉21⽇、顧客向けに発した電子メールについて誤送信が発生し、メールアドレス2,055件が外部流出したと明らかにした。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

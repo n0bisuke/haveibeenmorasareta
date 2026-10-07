@@ -1,0 +1,13 @@
+organization: ウェルネット株式会社
+industry: IT・通信
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-04-10
+affected_count: 43727
+count_note: "まとめサイトの記載: 4万3,727件（一次情報で未確認）"
+cause: other
+summary: 会員管理システム「ekaiin」に不具合があり、団体が保有する個人情報4万3,727件が、特定の団体に流出したと発表。原因はサービスに関連したプログラムに内在していた不具合とのこと。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

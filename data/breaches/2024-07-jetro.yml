@@ -1,0 +1,13 @@
+organization: 独立行政法人日本貿易振興機構（JETRO）
+industry: 行政
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-07-31
+affected_count: 5960
+count_note: "まとめサイトの記載: 5,960件（一次情報で未確認）"
+cause: lost_device
+summary: 日本貿易振興機構（JETRO）は、機構の組織である日本食品海外プロモーションセンター（JFOODO）にて、JETRO職員含む内外の個人情報5,960件やJETROが保有する情報1万4,436件を記録したHDDの所在不明を発表した（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

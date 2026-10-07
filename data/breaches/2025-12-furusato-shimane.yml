@@ -1,0 +1,13 @@
+organization: 公益財団法人ふるさと島根定住財団
+industry: 団体・その他
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-12-23
+affected_count: 1238
+count_note: "まとめサイトの記載: 1,238件（一次情報で未確認）"
+cause: human_error
+summary: 公益財団法人ふるさと島根定住財団は、財団が管理する企業管理システムにおいて記録している学生など1,238人の個人情報を一部企業に誤って送信したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

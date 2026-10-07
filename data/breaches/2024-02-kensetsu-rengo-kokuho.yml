@@ -1,0 +1,13 @@
+organization: 建設連合国民健康保険組合
+industry: 金融・保険
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-02-09
+affected_count: 3775
+count_note: "まとめサイトの記載: 3,775件（一次情報で未確認）"
+cause: lost_device
+summary: 2024年2月9日、組合静岡支部にて管理する被保険者の個人情報3,775件が記録されたUSBメモリを紛失したと明らかにした。公表時点で見つかっていないが、USBメモリには高度な暗号化と複雑なパスワード設定による漏洩防止策が実施されており、公表時点で外部流出は確認されていないと発表している。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

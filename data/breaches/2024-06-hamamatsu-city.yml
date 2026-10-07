@@ -1,0 +1,13 @@
+organization: 浜松市
+industry: 行政
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-06-19
+affected_count: 1015
+count_note: "まとめサイトの記載: 1,015件（一次情報で未確認）"
+cause: human_error
+summary: 浜松市（静岡県）は、市が介護事業者向けに展開している事業に関連して、本来公開すべきでない「ロコトレ事業登録団体一覧表」に記載された申請者や事務担当者合計1,015名の個人情報をホームページに誤公開した旨、発表した（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information
