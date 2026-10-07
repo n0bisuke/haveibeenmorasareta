@@ -9,6 +9,7 @@ affected_count: 246000
 count_note: 約24.6万件。各府省庁の職員等の情報で、一般の方の個人情報やマイナンバー等は含まれない
 cause: vulnerability
 root_cause: VPN機器の既知の脆弱性を悪用されて侵入
+vuln_target: remote_access
 data_types:
   - 氏名
   - メールアドレス

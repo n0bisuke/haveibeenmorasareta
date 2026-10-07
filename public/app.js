@@ -4,15 +4,16 @@ const $ = (id) => document.getElementById(id);
 const nf = new Intl.NumberFormat('ja-JP');
 const fmtDate = (s) => s.replaceAll('-', '/');
 
-const { breaches, generated_at, severity_levels: LEVELS, data_types: TYPES } = await fetch('breaches.json').then((r) => r.json());
+const { breaches, generated_at, severity_levels: LEVELS, data_types: TYPES, vuln_targets: VULN = [] } = await fetch('breaches.json').then((r) => r.json());
 // データを追加した人（デプロイ時に生成。無ければアイコンを出さない）
 const CONTRIBUTORS = await fetch('contributors.json').then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
+const VULN_LABEL = Object.fromEntries(VULN.map((t) => [t.id, t.label]));
 const RANK = Object.fromEntries(LEVELS.map((l, i) => [l.id, i]));
 const LEVEL = Object.fromEntries(LEVELS.map((l) => [l.id, l]));
 
 // 検索用テキストを事前に作っておく
 for (const b of breaches) {
-  b._text = [b.organization, b.group, b.root_cause, b.vendor?.name, b.vendor?.group, ...(b.services ?? []), ...(b.data_types ?? []), b.industry, b.summary, CAUSES[b.cause]]
+  b._text = [b.organization, b.group, b.root_cause, b.vendor?.name, b.vendor?.group, ...(b.services ?? []), ...(b.data_types ?? []), b.industry, b.summary, CAUSES[b.cause], VULN_LABEL[b.vuln_target]]
     .filter(Boolean).join(' ').toLowerCase();
 }
 
@@ -60,7 +61,7 @@ function renderItem(b) {
   const meta = [
     `公表 ${fmtDate(b.date_announced)}`,
     b.date_occurred && `発生 ${fmtDate(b.date_occurred)}`,
-    CAUSES[b.cause],
+    VULN_LABEL[b.vuln_target] ? `${CAUSES[b.cause]}（${VULN_LABEL[b.vuln_target]}）` : CAUSES[b.cause],
     b.vendor && `委託先 ${b.vendor.name.replace(/株式会社/g, '')}`,
     b.industry,
   ].filter(Boolean);

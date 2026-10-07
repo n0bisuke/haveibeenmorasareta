@@ -84,6 +84,33 @@
     "団体・その他",
     "生活サービス"
   ],
+  "vuln_targets": [
+    {
+      "id": "ec_payment",
+      "label": "ECサイトの決済画面",
+      "description": "決済ページやカード決済アプリケーションの改ざん（Webスキミング）"
+    },
+    {
+      "id": "web_app",
+      "label": "Webサイト・Webアプリ",
+      "description": "SQLインジェクションやアクセス制御の不備など、公開しているWebサイト・Webアプリの脆弱性"
+    },
+    {
+      "id": "mail_system",
+      "label": "メールシステム",
+      "description": "Webメールやメールサーバーなど、メール関連のソフトウェア・サービスの脆弱性"
+    },
+    {
+      "id": "remote_access",
+      "label": "VPN・リモート接続機器",
+      "description": "VPN装置やリモートデスクトップなど、社外から社内につなぐための機器・サービスの脆弱性"
+    },
+    {
+      "id": "business_tool",
+      "label": "業務システム・社内ツール",
+      "description": "業務管理システムや分析ツールなど、社内で使うシステム・ソフトウェアの脆弱性"
+    }
+  ],
   "breaches": [
     {
       "id": "2026-10-his",
@@ -641,6 +668,7 @@
       "count_note": "約2,362万件（うちメールアドレス登録のない匿名ユーザー約1,801万件）。別に画像メタデータ約4.9億件、第二報で削除済み画像のメタデータ約1.74億件の流出も判明",
       "cause": "vulnerability",
       "root_cause": "画像アップロードサーバーの脆弱性で任意のコマンドを実行された",
+      "vuln_target": "web_app",
       "data_types": [
         "メールアドレス",
         "アカウント名",
@@ -665,6 +693,7 @@
       "count_note": "約44万アカウント（退会者を含む）",
       "cause": "vulnerability",
       "root_cause": "分析ツール「Metabase」の脆弱性を悪用され、接続先データベースから顧客情報を取得された",
+      "vuln_target": "business_tool",
       "summary": "社内で利用していた分析ツール「Metabase」の脆弱性が悪用され、第三者が同ツールに不正アクセスし、同社データベースから退会者を含む顧客情報を取得したことを確認した。",
       "sources": [
         {
@@ -688,6 +717,7 @@
       "count_note": "約24.6万件。各府省庁の職員等の情報で、一般の方の個人情報やマイナンバー等は含まれない",
       "cause": "vulnerability",
       "root_cause": "VPN機器の既知の脆弱性を悪用されて侵入",
+      "vuln_target": "remote_access",
       "data_types": [
         "氏名",
         "メールアドレス",
@@ -947,6 +977,7 @@
       "count_note": "最大件数。直販の「BiNDup」利用者は対象外",
       "cause": "vulnerability",
       "root_cause": "OEMパートナーの顧客管理システムのアクセス制御の不備",
+      "vuln_target": "web_app",
       "summary": "OEM向けホームページ作成サービスが不正アクセスを受け、一部の顧客情報が改ざんされるとともに、契約法人・契約個人の情報が漏えいした可能性がある。",
       "sources": [
         {
@@ -1202,6 +1233,7 @@
       "count_note": "2026年9月15日の第二報で確定した件数",
       "cause": "vulnerability",
       "root_cause": "Webシステムの一部の脆弱性から侵入され、複数システムに拡大",
+      "vuln_target": "web_app",
       "data_types": [
         "氏名",
         "住所",
@@ -1418,6 +1450,7 @@
       "count_note": "最大約1,422万件（初報）。2026年7月の続報で、メールアドレス約1,223万件・パスワード約761万件の漏えいとされた。解約済み・休眠ユーザーを含む",
       "cause": "vulnerability",
       "root_cause": "メールシステムで使う第三者製ソフトウェアの脆弱性",
+      "vuln_target": "mail_system",
       "data_types": [
         "パスワード（保管形式不明）",
         "メールアドレス"
@@ -1498,6 +1531,7 @@
       "count_note": "個人情報30,170名、うちクレジットカード情報5,783名（報道による）。サイバーセキュリティ.comの一覧では個人情報73,213件・カード情報6,303件とされている",
       "cause": "vulnerability",
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた（ウェブスキミング）",
+      "vuln_target": "ec_payment",
       "data_types": [
         "クレジットカード番号",
         "氏名"
@@ -1948,6 +1982,7 @@
       "count_note": "同社・グループ会社・取引先の従業員の情報。一般顧客の情報は含まれない",
       "cause": "vulnerability",
       "root_cause": "倉庫業務管理システムの脆弱性",
+      "vuln_target": "business_tool",
       "data_types": [
         "氏名",
         "メールアドレス",
@@ -2467,6 +2502,7 @@
       "count_note": "クレジットカード情報12,630件",
       "cause": "vulnerability",
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "vuln_target": "ec_payment",
       "data_types": [
         "クレジットカード番号"
       ],
@@ -2789,6 +2825,7 @@
       "count_note": "顧客29,932名、クレジットカード30,431件（2025年12月4日の調査結果）",
       "cause": "vulnerability",
       "root_cause": "監視ツールの脆弱性を突かれ、決済ページのJavaScriptが改ざんされた",
+      "vuln_target": "ec_payment",
       "data_types": [
         "クレジットカード番号",
         "クレジットカードのセキュリティコード",
@@ -2824,6 +2861,7 @@
       "count_note": "個人情報6,920件、うちクレジットカード情報2,972件",
       "cause": "vulnerability",
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "vuln_target": "ec_payment",
       "data_types": [
         "クレジットカード番号"
       ],
@@ -2870,6 +2908,7 @@
       "count_note": "約32万件（模試受験者・塾関係者など）",
       "cause": "vulnerability",
       "root_cause": "ウェブサイトへのSQLインジェクション攻撃",
+      "vuln_target": "web_app",
       "summary": "中学生向けの全県模試を運営する同社のウェブサイトがサイバー攻撃を受け、模試受験者や塾関係者などの個人情報が漏えいした可能性がある。",
       "sources": [
         {
@@ -2989,6 +3028,7 @@
       "count_note": "個人情報約9万件、うちクレジットカード情報30,712件",
       "cause": "vulnerability",
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
+      "vuln_target": "ec_payment",
       "data_types": [
         "クレジットカード番号"
       ],
@@ -3173,6 +3213,7 @@
       "count_note": "メールアカウント等の情報4,072,650件",
       "cause": "vulnerability",
       "root_cause": "メールソフト「Active!mail」の脆弱性（スタックベースのバッファオーバーフロー）",
+      "vuln_target": "mail_system",
       "data_types": [
         "メールアドレス"
       ],
@@ -3202,6 +3243,7 @@
       "count_note": "個人情報13,433名、うちクレジットカード情報13,193件",
       "cause": "vulnerability",
       "root_cause": "サイトに不正なプログラムが組み込まれ決済情報を窃取された",
+      "vuln_target": "ec_payment",
       "data_types": [
         "クレジットカード番号"
       ],
@@ -3299,6 +3341,7 @@
       "affected_count": 121886,
       "cause": "vulnerability",
       "root_cause": "アプリが利用するシステムのソフトウェアの脆弱性",
+      "vuln_target": "web_app",
       "summary": "雑貨のハンズのアプリで、システムのソフトウェアの脆弱性を突いた第三者の不正アクセスにより、登録会員の個人情報が漏えいした可能性がある。",
       "sources": [
         {
@@ -3322,6 +3365,7 @@
       "count_note": "2025年2月12日の調査結果で確定",
       "cause": "vulnerability",
       "root_cause": "特設サイトへのSQLインジェクション攻撃",
+      "vuln_target": "web_app",
       "data_types": [
         "メールアドレス"
       ],

@@ -8,6 +8,7 @@ affected_count: 30170
 count_note: 個人情報30,170名、うちクレジットカード情報5,783名（報道による）。サイバーセキュリティ.comの一覧では個人情報73,213件・カード情報6,303件とされている
 cause: vulnerability
 root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた（ウェブスキミング）
+vuln_target: ec_payment
 data_types:
   - クレジットカード番号
   - 氏名

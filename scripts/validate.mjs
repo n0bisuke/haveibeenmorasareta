@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
-import { ROOT, FILENAME_RE, loadBreaches, loadDataTypes, loadIndustries } from './lib.mjs';
+import { ROOT, FILENAME_RE, loadBreaches, loadDataTypes, loadIndustries, loadVulnTargets } from './lib.mjs';
 
 const schema = JSON.parse(await readFile(path.join(ROOT, 'schema', 'breach.schema.json'), 'utf8'));
 const ajv = new Ajv({ allErrors: true });
@@ -13,6 +13,7 @@ const today = new Date().toISOString().slice(0, 10);
 const errors = [];
 const dataTypes = await loadDataTypes();
 const industries = new Set(await loadIndustries());
+const vulnTargets = new Set((await loadVulnTargets()).map((t) => t.id));
 for (const name of dataTypes.duplicates) {
   errors.push(`data-types.yml: 「${name}」が複数のレベルに登録されています`);
 }
@@ -50,6 +51,9 @@ for (const { file, data, error } of entries) {
   }
   if (data.industry && !industries.has(data.industry)) {
     fail(`industry の「${data.industry}」は data/industries.yml に登録されていません（既存の業種に合わせるか、一覧に追加してください）`);
+  }
+  if (data.vuln_target && !vulnTargets.has(data.vuln_target)) {
+    fail(`vuln_target の「${data.vuln_target}」は data/vuln-targets.yml に登録されていません`);
   }
   for (const name of data.data_types ?? []) {
     if (!dataTypes.types[name]) {

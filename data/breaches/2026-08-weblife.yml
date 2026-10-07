@@ -9,6 +9,7 @@ affected_count: 7425
 count_note: 最大件数。直販の「BiNDup」利用者は対象外
 cause: vulnerability
 root_cause: OEMパートナーの顧客管理システムのアクセス制御の不備
+vuln_target: web_app
 summary: OEM向けホームページ作成サービスが不正アクセスを受け、一部の顧客情報が改ざんされるとともに、契約法人・契約個人の情報が漏えいした可能性がある。
 sources:
   - title: ScanNetSecurity

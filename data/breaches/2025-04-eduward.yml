@@ -8,6 +8,7 @@ affected_count: 13433
 count_note: 個人情報13,433名、うちクレジットカード情報13,193件
 cause: vulnerability
 root_cause: サイトに不正なプログラムが組み込まれ決済情報を窃取された
+vuln_target: ec_payment
 data_types:
   - クレジットカード番号
 summary: オンラインショップに不正プログラムが組み込まれ、利用者のクレジットカード情報と個人情報が漏えいした可能性がある。警視庁からの連絡で発覚した。
