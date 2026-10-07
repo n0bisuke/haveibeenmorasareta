@@ -10,6 +10,8 @@ count_note: 約2,362万件（うちメールアドレス登録のない匿名ユ
 cause: vulnerability
 root_cause: 画像アップロードサーバーの脆弱性で任意のコマンドを実行された
 vuln_target: web_app
+attack_methods:
+  - remote_code_execution
 data_types:
   - メールアドレス
   - アカウント名

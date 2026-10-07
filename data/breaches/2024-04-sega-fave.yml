@@ -6,6 +6,8 @@ date_announced: 2024-04-24
 affected_count: 4700
 count_note: 同社とグループ会社が保有する個人情報 約4,700件
 cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
 root_cause: 従業員が使うMicrosoft 365アカウントへの不正アクセス
 data_types:
   - 取引先情報

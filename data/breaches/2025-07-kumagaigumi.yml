@@ -7,6 +7,8 @@ date_announced: 2025-07-04
 affected_count: 1238
 count_note: "まとめサイトの記載: 1,238件（一次情報で未確認）"
 cause: phishing
+attack_methods:
+  - phishing
 summary: 株式会社熊谷組は、所属する職員がショートメッセージを利用したサイバー攻撃「スミッシング」の被害に遭い、社有iPhoneに紐づけられていた個人情報にアクセス可能なAppleアカウントに対する不正アクセスが発生したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
 sources:
   - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）

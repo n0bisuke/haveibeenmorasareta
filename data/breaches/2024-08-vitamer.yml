@@ -9,6 +9,8 @@ affected_count: 45355
 count_note: ヴィタメールでカード情報45,355名（アンテノールでも別に7,018名）
 cause: vulnerability
 vuln_target: ec_payment
+attack_methods:
+  - web_skimming
 root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
 data_types:
   - クレジットカード番号

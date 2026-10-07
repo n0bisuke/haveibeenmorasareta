@@ -7,6 +7,9 @@ date_announced: 2026-07-01
 affected_count: 373
 count_note: メールアドレス373件（2026年8月24日の調査結果）
 cause: phishing
+attack_methods:
+  - stolen_credentials
+  - phishing
 vendor:
   name: 株式会社アイネックス
   group: 朝日放送グループ

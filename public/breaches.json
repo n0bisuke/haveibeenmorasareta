@@ -112,6 +112,92 @@
       "description": "業務管理システムや分析ツールなど、社内で使うシステム・ソフトウェアの脆弱性"
     }
   ],
+  "attack_methods": [
+    {
+      "id": "sql_injection",
+      "label": "SQLインジェクション",
+      "category": "Webアプリへの攻撃",
+      "description": "入力欄などから不正なSQL文を送り込み、データベースの情報を取得・改ざんする"
+    },
+    {
+      "id": "xss",
+      "label": "クロスサイトスクリプティング（XSS）",
+      "category": "Webアプリへの攻撃",
+      "description": "Webページに不正なスクリプトを埋め込み、閲覧者のブラウザで実行させる"
+    },
+    {
+      "id": "web_skimming",
+      "label": "Webスキミング（決済画面の改ざん）",
+      "category": "Webアプリへの攻撃",
+      "description": "ECサイトの決済ページや決済アプリケーションを改ざんし、入力されたカード情報などを抜き取る"
+    },
+    {
+      "id": "remote_code_execution",
+      "label": "任意コード・コマンドの実行",
+      "category": "Webアプリへの攻撃",
+      "description": "サーバーやソフトウェアの脆弱性を突いて、任意のプログラムやコマンドを実行する"
+    },
+    {
+      "id": "broken_access_control",
+      "label": "アクセス制御の不備の悪用",
+      "category": "Webアプリへの攻撃",
+      "description": "認可やアクセス制限の欠陥を突いて、本来見られない他者のデータを取得する"
+    },
+    {
+      "id": "known_vulnerability",
+      "label": "既知の脆弱性の悪用（修正の未適用）",
+      "category": "脆弱性の悪用",
+      "description": "公表済みで修正パッチも出ている脆弱性を、適用前に悪用される"
+    },
+    {
+      "id": "network_device",
+      "label": "VPN・リモート接続機器からの侵入",
+      "category": "脆弱性の悪用",
+      "description": "VPN装置、リモートデスクトップ、ネットワーク機器などを足がかりに社内ネットワークへ侵入する"
+    },
+    {
+      "id": "credential_stuffing",
+      "label": "リスト型攻撃",
+      "category": "認証情報の悪用",
+      "description": "他のサービスから流出したID・パスワードの組み合わせで、なりすましログインを繰り返す"
+    },
+    {
+      "id": "stolen_credentials",
+      "label": "窃取した認証情報による不正ログイン",
+      "category": "認証情報の悪用",
+      "description": "何らかの方法で入手したアカウントのID・パスワードや認証情報を使って侵入する（入手経路が不明なものを含む）"
+    },
+    {
+      "id": "exposed_secret",
+      "label": "アクセスキー・認証情報の公開や放置",
+      "category": "認証情報の悪用",
+      "description": "クラウドのアクセスキーなどがGitHubで公開されたり、古いまま放置されたりして悪用される"
+    },
+    {
+      "id": "phishing",
+      "label": "フィッシング（スミッシングを含む）",
+      "category": "ソーシャルエンジニアリング",
+      "description": "取引先などを装ったメールやSMSで偽のログイン画面に誘導し、認証情報を入力させる"
+    },
+    {
+      "id": "support_scam",
+      "label": "サポート詐欺",
+      "category": "ソーシャルエンジニアリング",
+      "description": "偽の警告画面で電話をかけさせ、遠隔操作ソフトを入れさせてPCを操作する"
+    },
+    {
+      "id": "infostealer",
+      "label": "マルウェア感染による認証情報の窃取",
+      "category": "マルウェア",
+      "description": "PCに感染したマルウェア（インフォスティーラーなど）に、保存されていた認証情報を盗まれる"
+    },
+    {
+      "id": "brute_force",
+      "label": "総当たり・大量の機械的アクセス",
+      "category": "認証情報の悪用",
+      "description": "パスワードの総当たりや、照会機能への大量アクセスで情報を引き出す"
+    }
+  ],
   "breaches": [
     {
       "id": "2026-10-his",
@@ -191,6 +277,9 @@
       "affected_count": null,
       "count_note": "件数は報道時点で不明（大和証券の約11万人と重複する可能性あり）",
       "cause": "third_party",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "提携先の大和証券が利用する委託先スカラコミュニケーションズのFAQシステムへの不正アクセス",
       "vendor": {
         "name": "株式会社スカラコミュニケーションズ",
@@ -222,6 +311,9 @@
       "affected_count": 60000,
       "count_note": "SMILING ROADを導入した企業の従業員らから寄せられた問い合わせ延べ約6万件",
       "cause": "third_party",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "委託先のFAQシステム「i-ask」管理サイトへの不正ログインと不正プログラムの設置",
       "vendor": {
         "name": "株式会社スカラコミュニケーションズ",
@@ -253,6 +345,9 @@
       "affected_count": null,
       "count_note": "件数は公表時点で未確認",
       "cause": "third_party",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "委託先のFAQシステム「i-ask」管理サイトへの不正ログインと不正プログラムの設置",
       "vendor": {
         "name": "株式会社スカラコミュニケーションズ",
@@ -319,6 +414,9 @@
       "affected_count": 100000,
       "count_note": "約10万人分（漏えいの可能性）",
       "cause": "third_party",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "委託先のFAQシステム「i-ask」管理サイトへの不正ログインと不正プログラムの設置",
       "vendor": {
         "name": "株式会社スカラコミュニケーションズ",
@@ -449,6 +547,9 @@
       "affected_count": 15382,
       "count_note": "保存データ（写真・文書等）が取得・閲覧されたアカウント数。別に687アカウントのアカウント名等（うち313件は暗号化されたパスワードを含む）も対象",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "管理用アカウントの認証情報を不正に取得された",
       "data_types": [
         "保存データ（写真・文書等）",
@@ -478,6 +579,9 @@
       "affected_count": 220000,
       "count_note": "約22万件（うち個人を特定できる顧客情報は約11万人分）",
       "cause": "third_party",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "委託先のFAQシステム「i-ask」管理サイトへの不正ログインと不正プログラムの設置",
       "vendor": {
         "name": "株式会社スカラコミュニケーションズ",
@@ -966,6 +1070,9 @@
       "affected_count": 2835,
       "count_note": "ブロガー2,835名（ほかに取引先リスト10,780件など）",
       "cause": "misconfiguration",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "CMSの設定不備によりAPIの認証情報を狙われ、特権ユーザーを不正に作成された",
       "data_types": [
         "氏名",
@@ -1095,6 +1202,9 @@
       "cause": "vulnerability",
       "root_cause": "画像アップロードサーバーの脆弱性で任意のコマンドを実行された",
       "vuln_target": "web_app",
+      "attack_methods": [
+        "remote_code_execution"
+      ],
       "data_types": [
         "メールアドレス",
         "アカウント名",
@@ -1144,6 +1254,10 @@
       "cause": "vulnerability",
       "root_cause": "VPN機器の既知の脆弱性を悪用されて侵入",
       "vuln_target": "remote_access",
+      "attack_methods": [
+        "known_vulnerability",
+        "network_device"
+      ],
       "data_types": [
         "氏名",
         "メールアドレス",
@@ -1284,6 +1398,10 @@
       "affected_count": 136464,
       "count_note": "最大件数",
       "cause": "phishing",
+      "attack_methods": [
+        "stolen_credentials",
+        "phishing"
+      ],
       "root_cause": "フィッシングメールでECプラットフォームのスタッフアカウントの認証情報が流出（二段階認証未設定）",
       "data_types": [
         "生年月日",
@@ -1464,6 +1582,9 @@
       "count_note": "最大約17万人。うち約5万件は特定サイトで公開された可能性",
       "cause": "vulnerability",
       "vuln_target": "business_tool",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
       "root_cause": "利用していたBIツールの既知の脆弱性を、修正パッチの適用前に悪用された",
       "data_types": [
         "生年月日",
@@ -1502,6 +1623,9 @@
       "cause": "vulnerability",
       "root_cause": "OEMパートナーの顧客管理システムのアクセス制御の不備",
       "vuln_target": "web_app",
+      "attack_methods": [
+        "broken_access_control"
+      ],
       "summary": "OEM向けホームページ作成サービスが不正アクセスを受け、一部の顧客情報が改ざんされるとともに、契約法人・契約個人の情報が漏えいした可能性がある。",
       "sources": [
         {
@@ -1605,6 +1729,9 @@
       "affected_count": 230000,
       "count_note": "約23万件（漏えいのおそれ）",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "data_types": [
         "生年月日",
         "住所",
@@ -1661,6 +1788,9 @@
       "affected_count": 2400,
       "count_note": "約2,400件",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "data_types": [
         "氏名",
         "電話番号",
@@ -1687,6 +1817,9 @@
       "affected_count": 74100,
       "count_note": "関係機関・取引先等 約2,400人、グループ役職員・委託先社員等 約7万1,700人",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "一部システムの資格情報（認証情報）を不正に利用され、メールや連絡先情報を閲覧された",
       "data_types": [
         "氏名",
@@ -1722,6 +1855,10 @@
       "affected_count": 3812,
       "count_note": "最大件数。うち553件のアドレスにフィッシングメールが送られた",
       "cause": "phishing",
+      "attack_methods": [
+        "stolen_credentials",
+        "phishing"
+      ],
       "root_cause": "取引先を装ったフィッシングメールで社用メールの認証情報を窃取された",
       "data_types": [
         "氏名",
@@ -1914,6 +2051,9 @@
       "affected_count": 1000,
       "count_note": "まとめサイトの記載: 約1,000件（一次情報で未確認）",
       "cause": "phishing",
+      "attack_methods": [
+        "support_scam"
+      ],
       "summary": "海外貨物検査株式会社は、同社と契約する有機JAS認証審査員がサポート詐欺の被害に遭い、貸与していたパソコンから顧客の個人情報が外部に漏洩した可能性があると発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
       "sources": [
         {
@@ -1980,6 +2120,9 @@
       "affected_count": 4543,
       "count_note": "従業員1,343件・採用応募者2,786件・個人取引先414件（2026年7月30日の調査結果）",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "サーバーの認証連携に使うアカウントの認証情報が窃取・悪用された",
       "data_types": [
         "従業員情報",
@@ -2015,6 +2158,9 @@
       "affected_count": 2500,
       "count_note": "まとめサイトの記載: 約2,500件（一次情報で未確認）",
       "cause": "phishing",
+      "attack_methods": [
+        "support_scam"
+      ],
       "summary": "教員が使用するパソコンがサポート詐欺の被害に遭い、学生や教職員など約2,500人分の個人情報が漏えいしたおそれがあると発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
       "sources": [
         {
@@ -2053,6 +2199,10 @@
       "affected_count": 373,
       "count_note": "メールアドレス373件（2026年8月24日の調査結果）",
       "cause": "phishing",
+      "attack_methods": [
+        "stolen_credentials",
+        "phishing"
+      ],
       "vendor": {
         "name": "株式会社アイネックス",
         "group": "朝日放送グループ"
@@ -2284,6 +2434,9 @@
       "cause": "vulnerability",
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた（ウェブスキミング）",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "data_types": [
         "クレジットカード番号",
         "氏名"
@@ -2391,6 +2544,9 @@
       "affected_count": 2503,
       "count_note": "不正ログインに成功した件数",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "credential_stuffing"
+      ],
       "root_cause": "他サービスから流出したID・パスワードを使うパスワードリスト型攻撃",
       "summary": "転職情報サービス「ミドルの転職」でリスト型攻撃による不正ログインが発生し、一部ユーザーの会員情報ページにアクセスされた可能性がある。全会員のパスワードを一新した。",
       "sources": [
@@ -2410,6 +2566,9 @@
       "affected_count": 13500,
       "count_note": "最大約1万3,500件（顧客・取引先・採用応募者・従業員など）",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "社内ポータルが利用するクラウドストレージの認証情報を窃取された",
       "data_types": [
         "マイナンバー",
@@ -2438,6 +2597,9 @@
       "date_announced": "2026-06-03",
       "affected_count": 1365,
       "cause": "other",
+      "attack_methods": [
+        "support_scam"
+      ],
       "root_cause": "サポート詐欺で看護師の個人PCが遠隔操作された（院内規程に反し患者情報を保存していた）",
       "summary": "看護師の個人PCがサポート詐欺の被害に遭い、院内規程に反して保存していた患者の個人情報が外部に漏えいした可能性がある。",
       "sources": [
@@ -2491,6 +2653,9 @@
       "affected_count": 27163,
       "count_note": "予約者27,163件。別にパートナー事業者111社の情報も対象",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "一部パートナーアカウントへの不正ログインと、悪用された認証情報による他パートナー情報へのアクセス",
       "data_types": [
         "生年月日",
@@ -2794,6 +2959,10 @@
       "date_announced": "2026-03-27",
       "affected_count": 18553,
       "cause": "malware",
+      "attack_methods": [
+        "stolen_credentials",
+        "infostealer"
+      ],
       "root_cause": "PC端末のマルウェア感染で旧メールシステムのアカウント認証情報が窃取された",
       "summary": "店舗で使っていた旧メールシステムのアカウント2件が海外から継続的に不正ログインされ、予約客などの個人情報が流出した可能性がある。決済情報とマイナンバーは含まれない。",
       "sources": [
@@ -3073,6 +3242,9 @@
       "affected_count": 130000,
       "count_note": "当初は約1万人とし、2月27日の第5報で患者約13万人の漏えいが判明",
       "cause": "ransomware",
+      "attack_methods": [
+        "network_device"
+      ],
       "root_cause": "医療機器保守用のVPN装置から侵入され、ナースコール管理サーバーがランサムウェアに感染",
       "data_types": [
         "生年月日",
@@ -3157,6 +3329,9 @@
       "affected_count": 207773,
       "count_note": "2026年5月21日の第6報で確定した件数。3月9日の第4報時点では最大約49.6万人分の可能性としていた",
       "cause": "ransomware",
+      "attack_methods": [
+        "network_device"
+      ],
       "root_cause": "グループの通信機器の脆弱性を悪用されて侵入",
       "data_types": [
         "氏名",
@@ -3453,6 +3628,9 @@
       "affected_count": 4209,
       "count_note": "役職員および退職者",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "network_device"
+      ],
       "root_cause": "第三者が社内PCとサーバーへ複数回にわたり不正にリモート接続",
       "data_types": [
         "氏名",
@@ -3543,6 +3721,10 @@
       "affected_count": 17368,
       "count_note": "社員・取引先などSlackに登録されていた人数",
       "cause": "malware",
+      "attack_methods": [
+        "stolen_credentials",
+        "infostealer"
+      ],
       "root_cause": "社員の私物PCがマルウェアに感染し、Slackの認証情報が流出",
       "data_types": [
         "メッセージ・チャット履歴",
@@ -3598,6 +3780,9 @@
       "cause": "vulnerability",
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "data_types": [
         "クレジットカード番号"
       ],
@@ -3624,6 +3809,9 @@
       "affected_count": 1340000,
       "count_note": "2025年12月12日の調査結果で約74万件の流出を確認。2026年7月31日に新たに約60万件を特定し、漏えい懸念は約134万件に拡大",
       "cause": "ransomware",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "委託先に付与していたアカウントを悪用されて侵入",
       "data_types": [
         "住所",
@@ -3780,6 +3968,9 @@
       "affected_count": 20776,
       "count_note": "利用者と法人取引先の情報",
       "cause": "misconfiguration",
+      "attack_methods": [
+        "exposed_secret"
+      ],
       "root_cause": "個人情報を保存するクラウドサーバーのアクセスキーをGitHub上で公開していた",
       "summary": "クラフトビール定期便サービスの顧客情報を保存するクラウドサーバーのアクセスキーがGitHub上で公開されており、利用者と法人取引先の情報にアクセス可能な状態だった。",
       "sources": [
@@ -4010,6 +4201,9 @@
       "cause": "vulnerability",
       "root_cause": "監視ツールの脆弱性を突かれ、決済ページのJavaScriptが改ざんされた",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "data_types": [
         "クレジットカード番号",
         "クレジットカードのセキュリティコード",
@@ -4046,6 +4240,9 @@
       "cause": "vulnerability",
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "data_types": [
         "クレジットカード番号"
       ],
@@ -4090,6 +4287,9 @@
       "affected_count": 1238,
       "count_note": "まとめサイトの記載: 1,238件（一次情報で未確認）",
       "cause": "phishing",
+      "attack_methods": [
+        "phishing"
+      ],
       "summary": "株式会社熊谷組は、所属する職員がショートメッセージを利用したサイバー攻撃「スミッシング」の被害に遭い、社有iPhoneに紐づけられていた個人情報にアクセス可能なAppleアカウントに対する不正アクセスが発生したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
       "sources": [
         {
@@ -4116,6 +4316,9 @@
       "cause": "vulnerability",
       "root_cause": "ウェブサイトへのSQLインジェクション攻撃",
       "vuln_target": "web_app",
+      "attack_methods": [
+        "sql_injection"
+      ],
       "summary": "中学生向けの全県模試を運営する同社のウェブサイトがサイバー攻撃を受け、模試受験者や塾関係者などの個人情報が漏えいした可能性がある。",
       "sources": [
         {
@@ -4138,6 +4341,9 @@
       "affected_count": 194307,
       "count_note": "不正ログインに成功したアカウント数（試行は1,722,379件）",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "credential_stuffing"
+      ],
       "root_cause": "他サービスから流出したID・パスワードを使うリスト型攻撃",
       "summary": "オンライン通販サイト「PAL CLOSET」でリスト型アカウントハッキングとみられる大量の不正ログインが発生した。",
       "sources": [
@@ -4178,6 +4384,9 @@
       "affected_count": 1600,
       "count_note": "まとめサイトの記載: 約1,600件（一次情報で未確認）",
       "cause": "phishing",
+      "attack_methods": [
+        "support_scam"
+      ],
       "summary": "名古屋大学は、同大人文学研究科に所属する教員がサポート詐欺に遭い、使用端末に記録されていた同大や大学院、付属学校に所属する学生ら約1,600名の個人情報について漏えいの懸念を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
       "sources": [
         {
@@ -4366,6 +4575,9 @@
       "cause": "vulnerability",
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "data_types": [
         "クレジットカード番号"
       ],
@@ -4387,6 +4599,9 @@
       "date_announced": "2025-05-20",
       "affected_count": 1347445,
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "brute_force"
+      ],
       "root_cause": "会員サイトの会員情報照会機能に特定IPから約560万回の異常なアクセス",
       "summary": "会員サイトの会員情報照会機能が外部から大量にアクセスされ、会員の個人情報の一部が漏えいした可能性がある。",
       "sources": [
@@ -4408,6 +4623,9 @@
       "affected_count": 2619,
       "count_note": "まとめサイトの記載: 2,619件（一次情報で未確認）",
       "cause": "phishing",
+      "attack_methods": [
+        "support_scam"
+      ],
       "summary": "山形大学は、同大に所属する教員がいわゆるサポート詐欺被害に遭い、使用端末からアクセス可能であった、農学部をはじめとする学生2,306名の氏名や学生番号のほか、313名の健康調査票等について漏えいの懸念を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
       "sources": [
         {
@@ -4573,6 +4791,9 @@
       "date_announced": "2025-04-24",
       "affected_count": 150491,
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "remote_code_execution"
+      ],
       "root_cause": "オーダー業態「DIFFERENCE」のサーバーで不正プログラムが実行された",
       "summary": "オーダースーツ「DIFFERENCE」のサーバーに対する不正プログラムの行使により、保管していた顧客の個人情報の一部が漏えいした。",
       "sources": [
@@ -4622,6 +4843,9 @@
       "cause": "vulnerability",
       "root_cause": "メールソフト「Active!mail」の脆弱性（スタックベースのバッファオーバーフロー）",
       "vuln_target": "mail_system",
+      "attack_methods": [
+        "remote_code_execution"
+      ],
       "data_types": [
         "メールアドレス"
       ],
@@ -4676,6 +4900,9 @@
       "cause": "vulnerability",
       "root_cause": "サイトに不正なプログラムが組み込まれ決済情報を窃取された",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "data_types": [
         "クレジットカード番号"
       ],
@@ -5250,6 +5477,9 @@
       "affected_count": null,
       "count_note": "件数は公表されていない（取引先関係者・従業員等）",
       "cause": "third_party",
+      "attack_methods": [
+        "network_device"
+      ],
       "root_cause": "ネットワーク保守を委託していたNTTコミュニケーションズが管理する保守・監視用VPN装置を経由して侵入された",
       "vendor": {
         "name": "NTTコミュニケーションズ株式会社",
@@ -5350,6 +5580,9 @@
       "affected_count": 3327,
       "count_note": "学生・広報配布先・学内メールアドレス一覧など",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "附属美術館職員のアカウントが乗っ取られ、PCに不正ログインされた",
       "summary": "附属美術館の職員アカウントが乗っ取られてPC1台に不正ログインがあり、保存されていた個人情報が漏えいした可能性を排除できないと発表した。",
       "sources": [
@@ -5394,6 +5627,9 @@
       "affected_count": 19274,
       "count_note": "まとめサイトの記載: 19,274件（一次情報で未確認）",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "summary": "宮崎大学は、同大の特定のメールアカウントが外部アクセスに伴い、大量のスパムメール発信や学内外の個人情報19,274件の漏えい懸念を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
       "sources": [
         {
@@ -5498,6 +5734,9 @@
       "date_announced": "2024-11-26",
       "affected_count": 11073,
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "credential_stuffing"
+      ],
       "root_cause": "外部で入手されたID・パスワードによるなりすましログイン（リスト型攻撃）",
       "summary": "食品宅配サービスでなりすましログインがあり、11,073件のアカウント情報が参照された可能性がある。",
       "sources": [
@@ -5520,6 +5759,9 @@
       "date_announced": "2024-11-26",
       "affected_count": 97533,
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "第三者によるなりすましログイン",
       "summary": "有機野菜宅配サイトでなりすましログインが確認され、ユーザーの個人情報が閲覧された可能性がある。システム監視で検知した。",
       "sources": [
@@ -5543,6 +5785,9 @@
       "count_note": "個人情報17,171名、うちクレジットカード情報1,850名",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -5603,6 +5848,9 @@
       "affected_count": 15000,
       "count_note": "約1万5,000件の不正ログイン",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "credential_stuffing"
+      ],
       "root_cause": "外部から入手したとみられるID・パスワードでの不正ログイン",
       "summary": "テレビ通販のECサイトで大量の不正ログインがあり、顧客の個人情報が閲覧された可能性がある。",
       "sources": [
@@ -5682,6 +5930,9 @@
       "affected_count": 40736,
       "count_note": "顧客39,805名、関係会社の従業員931名",
       "cause": "phishing",
+      "attack_methods": [
+        "support_scam"
+      ],
       "root_cause": "通販担当の従業員がサポート詐欺で遠隔操作ソフトをインストールさせられた",
       "summary": "公式通販サイトの担当従業員がサポート詐欺の被害に遭い、業務用PCが遠隔操作されて顧客と従業員の個人情報が漏えいした可能性がある。",
       "sources": [
@@ -5701,6 +5952,9 @@
       "date_announced": "2024-11-06",
       "affected_count": 7085,
       "cause": "ransomware",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "職員の業務用PCのIDとパスワードを窃取されて侵入された",
       "summary": "職員の業務用PCが不正侵入を受けてランサムウェアに感染し、共有ドライブから業務データが窃取され、学内外の関係者の個人情報が漏えいした。",
       "sources": [
@@ -5724,6 +5978,9 @@
       "count_note": "個人情報50,338件、うちクレジットカード情報18,394件",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -5798,6 +6055,9 @@
       "count_note": "延べ58,407名のクレジットカード情報",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -5828,6 +6088,9 @@
       "affected_count": 5836,
       "count_note": "個人情報5,836人、うちクレジットカード情報4,257人",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "サイトに悪性スクリプトが埋め込まれ、利用者が不正なサイトに誘導された",
       "data_types": [
         "クレジットカード番号"
@@ -5858,6 +6121,9 @@
       "count_note": "クレジットカード情報16,396名",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -5884,6 +6150,9 @@
       "count_note": "顧客データ27,851件、うちクレジットカード情報4,494件",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -6104,6 +6373,10 @@
       "affected_count": 733820,
       "count_note": "国内の医療従事者73万3,820人（別に従業員1,390人分の氏名）",
       "cause": "third_party",
+      "attack_methods": [
+        "stolen_credentials",
+        "infostealer"
+      ],
       "root_cause": "海外の業務委託コンサルタントの個人PCがマルウェアに感染し、保存していたアクセスIDを悪用された",
       "summary": "医薬品メーカーの日本法人のデータベースが不正アクセスを受け、医療従事者の個人情報が漏えいした。委託コンサルタントは社内のセキュリティポリシーに反してアクセスIDを個人PCに保存していた。",
       "sources": [
@@ -6128,6 +6401,9 @@
       "count_note": "ヴィタメールでカード情報45,355名（アンテノールでも別に7,018名）",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -6160,6 +6436,9 @@
       "cause": "vulnerability",
       "root_cause": "特設サイトへのSQLインジェクション攻撃",
       "vuln_target": "web_app",
+      "attack_methods": [
+        "sql_injection"
+      ],
       "data_types": [
         "メールアドレス"
       ],
@@ -6185,6 +6464,9 @@
       "date_announced": "2024-08-23",
       "affected_count": 7132,
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "summary": "従業員1名のメールアカウントが不正アクセスを受け、過去に送受信したメールと添付ファイルのデータが流出した可能性がある。",
       "sources": [
         {
@@ -6351,6 +6633,9 @@
       "affected_count": 2331,
       "count_note": "従業員・退職者・グループ会社の顧客等",
       "cause": "ransomware",
+      "attack_methods": [
+        "network_device"
+      ],
       "root_cause": "ファイアウォールからリモートデスクトップ接続でサーバーに侵入された",
       "summary": "産業ガス会社のサーバーがランサムウェア攻撃を受け、従業員や退職者、グループ会社の顧客などの個人情報が漏えいした可能性がある。",
       "sources": [
@@ -6394,6 +6679,9 @@
       "count_note": "個人情報73,961件、うちクレジットカード情報65,387件",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -6487,6 +6775,9 @@
       "count_note": "個人情報19,235件、うちクレジットカード情報16,682件（2024年10月31日の調査結果）",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -6567,6 +6858,9 @@
       "count_note": "個人情報27,561名、うちクレジットカード情報1,703名",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -6645,6 +6939,9 @@
       "count_note": "会員情報21,398名、うちクレジットカード情報1,432名",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -6702,6 +6999,9 @@
       "count_note": "個人情報54,583件、うちクレジットカード情報18,443件",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -6811,6 +7111,9 @@
       "count_note": "クレジットカード情報4,324名（一覧サイトでは4,696件）",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -6881,6 +7184,9 @@
       "count_note": "個人情報3,126件、うちクレジットカード情報1,054件",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -6929,6 +7235,9 @@
       "affected_count": 3484,
       "count_note": "個人情報3,484件、うちクレジットカード情報2,153件（2024年11月12日の調査結果）",
       "cause": "third_party",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "委託先のカートシステム運営会社のサーバーが不正アクセスを受け、カートシステムが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -7050,6 +7359,9 @@
       "count_note": "個人情報9,034名、うちクレジットカード情報2,727名",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -7076,6 +7388,9 @@
       "affected_count": 496119,
       "count_note": "ワーカーの個人情報",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "加盟企業に付与していた管理画面からワーカーのデータベースに不正アクセス",
       "summary": "アルバイト・派遣のマッチングプラットフォームで、加盟企業向けの管理画面を通じてワーカーのデータベースに不正アクセスがあり、個人情報が抜き取られた。",
       "sources": [
@@ -7170,6 +7485,9 @@
       "count_note": "クレジットカード情報15,198件",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -7225,6 +7543,9 @@
       "count_note": "個人情報20,132名、うちクレジットカード情報3,958件",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -7252,6 +7573,9 @@
       "count_note": "個人情報38,664件、うちクレジットカード情報13,879件",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -7297,6 +7621,9 @@
       "affected_count": 2003,
       "count_note": "研究目的で持ち出されていた患者情報",
       "cause": "phishing",
+      "attack_methods": [
+        "support_scam"
+      ],
       "root_cause": "医師が個人所有のPCでサポート詐欺の被害に遭った",
       "data_types": [
         "健康・医療情報",
@@ -7325,6 +7652,9 @@
       "affected_count": 7784999,
       "count_note": "会員情報最大778万2,009件、アルバイト応募者情報最大2,990件",
       "cause": "ransomware",
+      "attack_methods": [
+        "network_device"
+      ],
       "root_cause": "VPN装置から侵入され、グループの複数サーバーが暗号化された",
       "summary": "2024年2月に発生したランサムウェア攻撃の調査結果として、会員やアルバイト応募者の個人情報が最大約778万件漏えいした可能性があると発表した。攻撃時には全店舗で発注システムに支障が出た。",
       "sources": [
@@ -7427,6 +7757,9 @@
       "affected_count": 4700,
       "count_note": "同社とグループ会社が保有する個人情報 約4,700件",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "従業員が使うMicrosoft 365アカウントへの不正アクセス",
       "data_types": [
         "取引先情報",
@@ -7478,6 +7811,9 @@
       "count_note": "クレジットカード情報16,407件（会員15,274名）",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -7547,6 +7883,9 @@
       "count_note": "個人情報89,673名、うちクレジットカード情報5,447件",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号",
@@ -7707,6 +8046,9 @@
       "count_note": "クレジットカード情報3,827名",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -7752,6 +8094,9 @@
       "count_note": "個人情報14,933件、うちクレジットカード情報5,069件",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -7851,6 +8196,9 @@
       "count_note": "調査対象65,520名、うちクレジットカード情報4,583名",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "旧サイトのシステムの脆弱性を突かれ、カード情報を窃取するプログラムを埋め込まれた",
       "data_types": [
         "クレジットカード番号"
@@ -7877,6 +8225,9 @@
       "count_note": "個人情報22,234名、うちクレジットカード情報2,114件",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
       "root_cause": "システムの脆弱性を突かれ決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -7927,6 +8278,9 @@
       "affected_count": 25000,
       "count_note": "利用企業・自治体の従業員・職員 約2万5,000名",
       "cause": "misconfiguration",
+      "attack_methods": [
+        "exposed_secret"
+      ],
       "root_cause": "システム開発以前から使われていたAWSのアクセスキーの不適切な取り扱い",
       "data_types": [
         "メールアドレス",
@@ -7976,6 +8330,10 @@
       "affected_count": 2726,
       "count_note": "クレジットカード情報2,726名",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "web_skimming",
+        "stolen_credentials"
+      ],
       "root_cause": "サイトの開発管理者アカウントへの不正アクセスで決済アプリケーションが改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -8006,6 +8364,9 @@
       "affected_count": 1296,
       "count_note": "掲載企業経由の応募者情報",
       "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "root_cause": "掲載企業のID・パスワードを取得した第三者が応募者管理画面に不正ログイン",
       "summary": "求人サイトの掲載企業のアカウントで管理画面に不正ログインされ、応募者情報が閲覧されたうえ、応募者に不審なメールが送られた。のちに別の掲載企業でも被害が判明した。",
       "sources": [
@@ -8033,6 +8394,10 @@
       "count_note": "クレジットカード情報5,193名",
       "cause": "vulnerability",
       "vuln_target": "ec_payment",
+      "attack_methods": [
+        "xss",
+        "web_skimming"
+      ],
       "root_cause": "クロスサイトスクリプティング（XSS）で決済処理用のアプリケーションを改ざんされた",
       "data_types": [
         "クレジットカード番号"
@@ -8166,6 +8531,9 @@
       "affected_count": 440027,
       "count_note": "推計値を含む。ユーザー302,569件、取引先86,105件、従業者等51,353件（2023年11月27日時点）",
       "cause": "third_party",
+      "attack_methods": [
+        "infostealer"
+      ],
       "root_cause": "委託先PCのマルウェア感染から、関係会社と共通の認証基盤を経由して侵入",
       "vendor": {
         "name": "NAVER Cloud Corporation",

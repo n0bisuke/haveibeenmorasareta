@@ -8,6 +8,8 @@ date_announced: 2024-05-24
 affected_count: 496119
 count_note: ワーカーの個人情報
 cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
 root_cause: 加盟企業に付与していた管理画面からワーカーのデータベースに不正アクセス
 summary: アルバイト・派遣のマッチングプラットフォームで、加盟企業向けの管理画面を通じてワーカーのデータベースに不正アクセスがあり、個人情報が抜き取られた。
 sources:

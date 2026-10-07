@@ -7,6 +7,8 @@ date_announced: 2026-08-04
 affected_count: 74100
 count_note: 関係機関・取引先等 約2,400人、グループ役職員・委託先社員等 約7万1,700人
 cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
 root_cause: 一部システムの資格情報（認証情報）を不正に利用され、メールや連絡先情報を閲覧された
 data_types:
   - 氏名

@@ -7,6 +7,8 @@ date_announced: 2024-12-13
 affected_count: 19274
 count_note: "まとめサイトの記載: 19,274件（一次情報で未確認）"
 cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
 summary: 宮崎大学は、同大の特定のメールアカウントが外部アクセスに伴い、大量のスパムメール発信や学内外の個人情報19,274件の漏えい懸念を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
 sources:
   - title: ScanNetSecurity

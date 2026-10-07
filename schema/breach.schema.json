@@ -98,6 +98,13 @@
       "pattern": "^[a-z_]+$",
       "description": "脆弱性を悪用された箇所。data/vuln-targets.yml の ID"
     },
+    "attack_methods": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z_]+$" },
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "判明している攻撃手法。data/attack-methods.yml の ID（複数可）"
+    },
     "root_cause": {
       "type": "string",
       "minLength": 4,
