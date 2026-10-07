@@ -1,22 +1,8 @@
-import { readFile } from 'node:fs/promises';
-import path from 'node:path';
-import Ajv from 'ajv';
-import addFormats from 'ajv-formats';
-import { ROOT, FILENAME_RE, loadBreaches, loadDataTypes, loadIndustries, loadVulnTargets, loadAttackMethods, loadOrgTypes, loadPrefectures } from './lib.mjs';
+import { loadBreaches } from './lib.mjs';
+import { createChecker } from './check.mjs';
 
-const schema = JSON.parse(await readFile(path.join(ROOT, 'schema', 'breach.schema.json'), 'utf8'));
-const ajv = new Ajv({ allErrors: true });
-addFormats(ajv);
-const validate = ajv.compile(schema);
-
-const today = new Date().toISOString().slice(0, 10);
 const errors = [];
-const dataTypes = await loadDataTypes();
-const industries = new Set(await loadIndustries());
-const vulnTargets = new Set((await loadVulnTargets()).map((t) => t.id));
-const attackMethods = new Set((await loadAttackMethods()).map((t) => t.id));
-const orgTypes = new Set((await loadOrgTypes()).map((t) => t.id));
-const prefectures = new Set((await loadPrefectures()).map((p) => p.name));
+const { checkEntry, dataTypes } = await createChecker();
 for (const name of dataTypes.duplicates) {
   errors.push(`data-types.yml: 「${name}」が複数のレベルに登録されています`);
 }
@@ -24,62 +10,20 @@ const seenUrls = new Map();
 const entries = await loadBreaches();
 
 for (const { file, data, error } of entries) {
-  const fail = (msg) => errors.push(`${file}: ${msg}`);
-
-  const m = file.match(FILENAME_RE);
-  if (!m) fail('ファイル名は YYYY-MM-slug.yml 形式（slug は半角英小文字・数字・ハイフン）にしてください');
-
   if (error) {
-    fail(`YAML の構文エラー: ${error}`);
+    errors.push(`${file}: YAML の構文エラー: ${error}`);
     continue;
   }
-  if (!data || typeof data !== 'object' || Array.isArray(data)) {
-    fail('YAML のトップレベルはオブジェクトである必要があります');
-    continue;
-  }
+  const entryErrors = checkEntry(file, data);
+  for (const e of entryErrors) errors.push(`${file}: ${e}`);
+  if (entryErrors.length) continue;
 
-  if (!validate(data)) {
-    for (const e of validate.errors) fail(`${e.instancePath || '(root)'} ${e.message}`);
-    continue;
-  }
-
-  if (m && data.date_announced.slice(0, 7) !== `${m[1]}-${m[2]}`) {
-    fail(`ファイル名の年月 (${m[1]}-${m[2]}) と date_announced (${data.date_announced}) の年月を一致させてください`);
-  }
-  for (const key of ['date_occurred', 'date_announced']) {
-    if (data[key] && data[key] > today) fail(`${key} が未来の日付です`);
-  }
-  if (data.date_occurred && data.date_occurred > data.date_announced) {
-    fail('date_occurred が date_announced より後になっています');
-  }
-  for (const name of [data.industry ?? []].flat()) {
-    if (!industries.has(name)) {
-      fail(`industry の「${name}」は data/industries.yml に登録されていません（既存の業種に合わせるか、一覧に追加してください）`);
-    }
-  }
-  if (data.status === 'investigating' && !data.issue) {
-    fail('status: investigating の事案には、情報募集用の issue（GitHub Issue の URL）を指定してください');
-  }
-  if (data.vuln_target && !vulnTargets.has(data.vuln_target)) {
-    fail(`vuln_target の「${data.vuln_target}」は data/vuln-targets.yml に登録されていません`);
-  }
-  for (const m of data.attack_methods ?? []) {
-    if (!attackMethods.has(m)) fail(`attack_methods の「${m}」は data/attack-methods.yml に登録されていません`);
-  }
-  if (data.org_type && !orgTypes.has(data.org_type)) fail(`org_type の「${data.org_type}」は data/org-types.yml に登録されていません`);
-  if (data.prefecture && !prefectures.has(data.prefecture)) fail(`prefecture の「${data.prefecture}」は data/prefectures.yml に登録されていません`);
-  if (data.org_type && !data.prefecture) fail('org_type を指定した事案には prefecture（都道府県）も指定してください');
-  for (const name of data.data_types ?? []) {
-    if (!dataTypes.types[name]) {
-      fail(`data_types の「${name}」は data/data-types.yml に登録されていません（表記を合わせるか、対応表に追加してください）`);
-    }
-  }
   for (const { url } of data.sources) {
     // まとめサイトしか出典が無い「調査中」同士は同じ URL を共有してよい
     const prev = seenUrls.get(url);
     const investigating = data.status === 'investigating';
     if (prev && prev.file !== file && !(investigating && prev.investigating)) {
-      fail(`出典URLが ${prev.file} と重複しています（同一インシデントの重複登録の可能性）`);
+      errors.push(`${file}: 出典URLが ${prev.file} と重複しています（同一インシデントの重複登録の可能性）`);
     }
     if (!prev) seenUrls.set(url, { file, investigating });
   }
