@@ -80,6 +80,12 @@
       ],
       "description": "主な原因"
     },
+    "root_cause": {
+      "type": "string",
+      "minLength": 4,
+      "maxLength": 80,
+      "description": "原因の詳細（任意）。悪用された脆弱性や侵入経路など、公表されている範囲で簡潔に"
+    },
     "data_types": {
       "type": "array",
       "items": {

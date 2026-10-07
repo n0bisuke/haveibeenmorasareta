@@ -7,6 +7,7 @@ date_announced: 2025-11-04
 affected_count: 17368
 count_note: 社員・取引先などSlackに登録されていた人数
 cause: malware
+root_cause: 社員の私物PCがマルウェアに感染し、Slackの認証情報が流出
 data_types:
   - メッセージ・チャット履歴
   - 氏名

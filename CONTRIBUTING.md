@@ -26,6 +26,7 @@
 | `affected_count` | | 漏洩（の可能性がある）件数。不明なら `null` |
 | `count_note` | | 件数の補足（推計値・最大値など） |
 | `cause` | ✔ | 原因（下表から1つ） |
+| `root_cause` | | 原因の詳細。悪用された脆弱性や侵入経路など、公表されている範囲で簡潔に（80文字以内） |
 | `data_types` | | 漏洩した情報の種類。[`data/data-types.yml`](data/data-types.yml) に登録された名前のみ使用可 |
 | `summary` | ✔ | 概要（10〜600文字） |
 | `sources` | ✔ | 出典（`title` と `url`）。1件以上 |
