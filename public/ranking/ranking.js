@@ -53,7 +53,7 @@ const trim = (x) => (Math.round(x * 10) / 10).toString();
 // ---- 状態（URL と同期） ----
 const params = new URLSearchParams(location.search);
 const state = {
-  metric: METRICS[params.get('metric')] ? params.get('metric') : 'affected',
+  metric: METRICS[params.get('metric')] ? params.get('metric') : 'incidents',
   range: params.get('range') === 'all' ? 'all' : '12',
   expanded: false,
 };
@@ -152,7 +152,7 @@ function render() {
   for (const btn of document.querySelectorAll('[data-metric]')) btn.setAttribute('aria-checked', String(btn.dataset.metric === state.metric));
   for (const btn of document.querySelectorAll('[data-range]')) btn.setAttribute('aria-checked', String(btn.dataset.range === state.range));
   const next = new URLSearchParams();
-  if (state.metric !== 'affected') next.set('metric', state.metric);
+  if (state.metric !== 'incidents') next.set('metric', state.metric);
   if (state.range !== '12') next.set('range', state.range);
   const qs = next.toString();
   history.replaceState(null, '', qs ? `?${qs}` : location.pathname);

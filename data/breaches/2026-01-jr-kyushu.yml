@@ -1,0 +1,18 @@
+organization: 九州旅客鉄道株式会社（JR九州）
+group: JR九州グループ
+industry: 交通・モビリティ
+country: JP
+date_occurred: 2025-10-17
+date_announced: 2026-01-19
+affected_count: 14638
+count_note: グループ会社の従業員・派遣スタッフ・退職者
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - メールアドレス
+  - アカウント名
+  - 従業員情報
+summary: JR九州グループ会社のネットワーク環境が不正アクセスを受け、セキュリティツールで検知・防御したものの、その後の調査でグループ会社従業員のPCログインIDなどが漏えいした可能性があると判断した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/02/04/54553.html

@@ -1,0 +1,13 @@
+organization: 学校法人KBC学園
+industry: 人材・教育
+country: JP
+date_announced: 2026-08-17
+affected_count: 2471
+cause: human_error
+root_cause: 発送データ作成時の行の削除ミスで宛名と住所が1行ずつずれた
+data_types:
+  - 氏名
+summary: ダイレクトメールの宛名と住所がずれた状態で発送され、2,471人の氏名が別の住所に届いた。保護者からの連絡で発覚した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/09/08/56157.html

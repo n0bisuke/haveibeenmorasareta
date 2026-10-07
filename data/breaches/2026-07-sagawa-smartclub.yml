@@ -1,0 +1,20 @@
+organization: 佐川急便株式会社
+services:
+  - スマートクラブ
+industry: 物流
+country: JP
+date_occurred: 2026-07-15
+date_announced: 2026-07-19
+affected_count: 70000
+count_note: 約7万人に影響の可能性
+cause: misconfiguration
+root_cause: システム不具合からの復旧作業時に配達予定通知メールの設定を誤った
+data_types:
+  - 氏名
+  - メールアドレス
+summary: 会員制Webサービス「スマートクラブ」の配達予定通知メールに、本来とは異なる利用者の氏名・メールアドレス・送り状番号が表示された。不正アクセスやサイバー攻撃ではない。住所やクレジットカード情報は含まれない。
+sources:
+  - title: 熊本日日新聞
+    url: https://kumanichi.com/articles/2015184
+  - title: LNEWS
+    url: https://www.lnews.jp/2026/07/s0721105.html

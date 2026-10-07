@@ -1,0 +1,19 @@
+organization: 九州電力送配電株式会社
+group: 九州電力グループ
+industry: エネルギー・インフラ
+country: JP
+date_announced: 2026-06-08
+affected_count: 10900000
+count_note: 最大1,090万口分。媒体の所在不明で、公表時点で外部への流出は確認されていない
+cause: lost_device
+data_types:
+  - 住所
+  - 利用履歴
+  - 氏名
+  - 電話番号
+summary: 顧客情報を保存したバックアップ用の外部記憶媒体（SSD）がサーバ室から所在不明になった。需要者名、供給場所住所、使用電力量、電話番号などが含まれる。銀行口座やクレジットカード情報は含まれない。経済産業省が報告を求めた。
+sources:
+  - title: ＠IT
+    url: https://atmarkit.itmedia.co.jp/ait/articles/2606/10/news045.html
+  - title: 経済産業省
+    url: https://www.meti.go.jp/press/2026/06/20260608001/20260608001.html
