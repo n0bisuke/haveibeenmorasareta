@@ -10,7 +10,7 @@ const LEVEL = Object.fromEntries(LEVELS.map((l) => [l.id, l]));
 
 // 検索用テキストを事前に作っておく
 for (const b of breaches) {
-  b._text = [b.organization, b.group, ...(b.services ?? []), ...(b.data_types ?? []), b.industry, b.summary, CAUSES[b.cause]]
+  b._text = [b.organization, b.group, b.root_cause, ...(b.services ?? []), ...(b.data_types ?? []), b.industry, b.summary, CAUSES[b.cause]]
     .filter(Boolean).join(' ').toLowerCase();
 }
 
@@ -62,6 +62,8 @@ function renderItem(b) {
     b.industry,
   ].filter(Boolean);
   el.querySelector('.meta').replaceChildren(...meta.map((t) => Object.assign(document.createElement('span'), { textContent: t })));
+  if (b.root_cause) el.querySelector('.root-cause-text').textContent = b.root_cause;
+  else el.querySelector('.root-cause').remove();
   el.querySelector('.summary').textContent = b.summary;
   // 重要度の高い順に並べ、レベルごとに色分けする
   const tags = (b.data_types ?? []).map((t, i) => ({ t, i, level: TYPES[t] }))

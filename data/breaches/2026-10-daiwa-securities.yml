@@ -6,6 +6,7 @@ date_announced: 2026-10-05
 affected_count: 220000
 count_note: 約22万件（うち個人を特定できる顧客情報は約11万人分）
 cause: third_party
+root_cause: 委託先のFAQシステム「i-ask」管理サイトへの不正ログインと不正プログラムの設置
 data_types:
   - 氏名
   - メールアドレス

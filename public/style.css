@@ -84,6 +84,10 @@ a { color: var(--accent); }
 .count { font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .services { margin: 2px 0 0; color: var(--muted); font-size: 0.9rem; }
 .meta { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 0.85rem; color: var(--muted); margin-top: 6px; }
+.root-cause { display: flex; gap: 8px; align-items: baseline; margin: 8px 0 0; font-size: 0.85rem; }
+.root-cause-label {
+  flex-shrink: 0; font-size: 0.75rem; color: var(--muted); border: 1px solid var(--border); border-radius: 4px; padding: 0 6px;
+}
 .summary { margin: 10px 0; }
 .tags { list-style: none; padding: 0; margin: 0 0 8px; display: flex; flex-wrap: wrap; gap: 6px; }
 .tags li, .legend .chip { background: var(--tag-bg); border-radius: 999px; padding: 2px 10px; font-size: 0.8rem; }
