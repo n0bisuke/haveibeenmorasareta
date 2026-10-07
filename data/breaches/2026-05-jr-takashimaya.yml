@@ -1,0 +1,20 @@
+organization: 株式会社ジェイアール東海高島屋
+group: JR東海グループ
+industry: 小売・EC
+country: JP
+date_occurred: 2026-05-01
+date_announced: 2026-05-08
+affected_count: 7582
+count_note: 7,582人（当初は最大1,338件。2026年7月24日の追加調査で拡大）
+cause: vulnerability
+root_cause: サーバー管理ソフトウェアの脆弱性を悪用された可能性が高い
+vuln_target: business_tool
+data_types:
+  - 氏名
+  - 従業員情報
+summary: アルバイトスタッフ管理システムが不正アクセスを受けた。追加調査で、アルバイト応募受付サーバーに2015年以降の個人情報を含む操作ログが残っていたことが判明し、対象は7,582人に拡大した。外部へ流出した痕跡は確認されていないとしている。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/08/10/55899.html
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/?p=37383
