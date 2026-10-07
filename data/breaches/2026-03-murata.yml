@@ -1,0 +1,25 @@
+organization: 株式会社村田製作所
+industry: 製造
+country: JP
+date_occurred: 2026-02-28
+date_announced: 2026-03-06
+affected_count: 88000
+count_note: 約8.8万件（従業員とその関係者約7.3万件、顧客・仕入先など社外関係者約1.5万件）。2026年4月27日公表の件数で、人単位での重複の可能性あり
+cause: unauthorized_access
+data_types:
+  - 口座番号
+  - 生年月日
+  - 住所
+  - 健康・医療情報
+  - 氏名
+  - 性別
+  - 電話番号
+  - メールアドレス
+  - 従業員情報
+  - 取引先情報
+summary: 社内システムへの不正アクセスにより、従業員（家族・退職者を含む）と社外関係者の個人情報が不正に取得されたおそれがある。従業員の情報には銀行口座情報や健康情報も含まれる。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/articles/2604/27/news133.html
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUF272P10X20C26A4000000/

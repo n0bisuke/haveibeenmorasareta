@@ -1,0 +1,17 @@
+organization: 株式会社穴吹ハウジングサービス
+industry: 不動産
+country: JP
+date_occurred: 2026-02-03
+date_announced: 2026-02-03
+affected_count: 207773
+count_note: 2026年5月21日の第6報で確定した件数。3月9日の第4報時点では最大約49.6万人分の可能性としていた
+cause: ransomware
+data_types:
+  - 氏名
+  - 電話番号
+summary: グループの通信機器の脆弱性を悪用されて侵入され、一部サーバーがランサムウェアに感染。ダークウェブのリークサイトへの情報掲載も確認された。主な項目は氏名・電話番号などで、対象者により異なる。クレジットカード・銀行口座・マイナンバーは含まれない。
+sources:
+  - title: 穴吹ハウジングサービス 公式発表（第6報）
+    url: https://www.anabuki-housing.co.jp/news/content.php?news_id=530
+  - title: 日経クロステック
+    url: https://xtech.nikkei.com/atcl/nxt/column/18/01157/042200159/

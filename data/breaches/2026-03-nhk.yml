@@ -1,0 +1,17 @@
+organization: 日本放送協会（NHK）
+industry: メディア・出版
+country: JP
+date_occurred: 2026-03-17
+date_announced: 2026-03-18
+affected_count: 32940
+count_note: NHK職員15,199人、関連団体職員9,188人、外部委託先8,553人
+cause: human_error
+data_types:
+  - メールアドレス
+  - 従業員情報
+summary: 情報システムの保守を担う外部事業者の作業者が、承認依頼メールの宛先に登録者全員を誤って選択して送信。100人単位で送られ、同じグループ内で互いのメールアドレスが閲覧できる状態になった。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/03/23/54883.html
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC183G80Y6A310C2000000/
