@@ -1,0 +1,13 @@
+organization: 大阪教育大学
+industry: 人材・教育
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/31
+date_announced: 2026-02-03
+affected_count: 2376
+count_note: "まとめサイトの記載: 2,376件（一次情報で未確認）"
+cause: human_error
+summary: 国立大学法人大阪教育大学は、学生宛てに送信した一斉メールにおいて、メールアドレスが第三者に表示される形で送信されていたことを明らかにした。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2026年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

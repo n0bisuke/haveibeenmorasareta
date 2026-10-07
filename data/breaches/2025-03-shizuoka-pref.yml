@@ -1,0 +1,13 @@
+organization: 静岡県
+industry: 行政
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-03-14
+affected_count: 1455
+count_note: "まとめサイトの記載: 1,455件（一次情報で未確認）"
+cause: lost_device
+summary: 静岡県は、過去開催された「東京オリンピック・パラリンピック2020」に関連し、県内のボランティアや聖火ランナーなど約1,455人の個人情報を記録したUSBメモリー4本の紛失を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

@@ -1,0 +1,13 @@
+organization: 株式会社東映京都スタジオ
+industry: エンタメ・スポーツ
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-04-24
+affected_count: 1223
+count_note: "まとめサイトの記載: 1,223件（一次情報で未確認）"
+cause: human_error
+summary: 運営する東映太秦映画村が実施するドラマ記者会見の一般参加者向け電子メールにおいて誤送信が発生し、応募者1,223名の個人情報を2名の当選者に漏えいしたと発表。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

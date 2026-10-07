@@ -1,0 +1,15 @@
+organization: 山形大学
+industry: 人材・教育
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-05-12
+affected_count: 2619
+count_note: "まとめサイトの記載: 2,619件（一次情報で未確認）"
+cause: phishing
+summary: 山形大学は、同大に所属する教員がいわゆるサポート詐欺被害に遭い、使用端末からアクセス可能であった、農学部をはじめとする学生2,306名の氏名や学生番号のほか、313名の健康調査票等について漏えいの懸念を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/05/27/52920.html
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

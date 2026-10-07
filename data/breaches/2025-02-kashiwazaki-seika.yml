@@ -1,0 +1,13 @@
+organization: 有限会社柏崎青果
+industry: 小売・EC
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-02-25
+affected_count: 1198
+count_note: "まとめサイトの記載: 1,198件（一次情報で未確認）"
+cause: unauthorized_access
+summary: 有限会社柏崎青果は、同社が運営する「柏崎青果オンラインショップ」に対する外部からの不正アクセスに伴い、ユーザー1,198名のクレジットカード情報やログインパスワード等の個人情報の漏えい懸念を公表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

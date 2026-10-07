@@ -1,0 +1,17 @@
+organization: 大樹生命保険株式会社
+group: 日本生命グループ
+industry: 金融・保険
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-10-01
+affected_count: 70000
+count_note: 最大7万人分。公表日は要確認
+cause: third_party
+root_cause: 業務委託先の倉業サービスへのランサムウェア攻撃
+vendor:
+  name: 株式会社倉業サービス
+summary: 業務委託先の倉業サービスがランサムウェア攻撃を受け、大樹生命保険の顧客最大7万人分の個人情報が漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/10/03/51710.html

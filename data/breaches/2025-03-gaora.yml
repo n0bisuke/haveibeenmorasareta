@@ -1,0 +1,15 @@
+organization: 株式会社GAORA
+industry: エンタメ・スポーツ
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-03-31
+affected_count: 16795
+count_note: "まとめサイトの記載: 個人情報：1万6,795 件 クレジットカード情報：1,909件（一次情報で未確認）"
+cause: unauthorized_access
+summary: 株式会社GAORAは、同社が許諾し株式会社グローバーが運営する通販サイト「GAORAオンラインショップ」に対する外部からの不正アクセスにより、サイトユーザーの個人情報1万6,795 件やクレジットカード情報1,909件について漏えい懸念を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/04/14/52672.html
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

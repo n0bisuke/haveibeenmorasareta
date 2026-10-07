@@ -1,0 +1,13 @@
+organization: 関東ESD活動支援センター
+industry: 団体・その他
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-03-15
+affected_count: 2296
+count_note: "まとめサイトの記載: 2,296件（一次情報で未確認）"
+cause: unauthorized_access
+summary: 2024年3月15日、関東ESD活動支援センター（以下：関東ESD）のメールマガジン「関東ESDニュース」配信サービスが外部からの不正アクセスを受けたと明らかにした。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

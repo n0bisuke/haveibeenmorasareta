@@ -1,0 +1,13 @@
+organization: 鹿沼市
+industry: 行政
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-12-13
+affected_count: 1998
+count_note: "まとめサイトの記載: 1,998件（一次情報で未確認）"
+cause: human_error
+summary: 鹿沼市（栃木）は、市の教育委員会事務局スポーツ振興課が事務局を担う「鹿沼さつきマラソン大会」に関連した電子メールについて誤送信が発生し、参加者の氏名やメールアドレス1,998件を漏えいしたと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

@@ -1,0 +1,13 @@
+organization: 鹿嶋市
+industry: 行政
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-12-06
+affected_count: 1780
+count_note: "まとめサイトの記載: 1,780件（一次情報で未確認）"
+cause: human_error
+summary: 鹿嶋市（茨城）は、こども相談課に所属する職員が、鹿嶋市地域子育て支援センターである「セイビ堂ドリームパーク」の利用者に宛てた電子メールを誤送信し、合計1,780件のアドレスを漏えいしたと発表。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

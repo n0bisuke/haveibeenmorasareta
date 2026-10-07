@@ -1,0 +1,15 @@
+organization: 株式会社クレイズ
+industry: 小売・EC
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-02-17
+affected_count: 8257
+count_note: "まとめサイトの記載: ユーザー情報：8,257 件 クレジットカード情報：7,455件（一次情報で未確認）"
+cause: unauthorized_access
+summary: 株式会社クレイズは、同社が運営するオンラインショップ「一撃オフィシャルショップ」に対する外部からの不正アクセスに伴い、ユーザー情報8,257 件やクレジットカード情報7,455件の漏えい懸念を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/02/28/52417.html
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

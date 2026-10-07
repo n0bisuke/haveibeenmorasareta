@@ -1,0 +1,13 @@
+organization: 株式会社テイン
+industry: 製造
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/31
+date_announced: 2026-04-08
+affected_count: 7304
+count_note: "まとめサイトの記載: 7,304件（一次情報で未確認）"
+cause: ransomware
+summary: 株式会社テインは、同社システムがランサムウェアに感染した問題について最終報を公表し、社員や株主など計7,304人分の個人情報が漏えいした可能性があると発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2026年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

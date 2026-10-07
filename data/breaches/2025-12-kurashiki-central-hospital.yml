@@ -1,0 +1,13 @@
+organization: 倉敷中央病院
+industry: 医療
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-12-15
+affected_count: 1162
+count_note: "まとめサイトの記載: 1,162件（一次情報で未確認）"
+cause: lost_device
+summary: 倉敷中央病院(岡山)は、心臓血管外科手術に関する測定データを記録した、患者1,162名の個人情報を含むUSBメモリを紛失した事案が発生したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

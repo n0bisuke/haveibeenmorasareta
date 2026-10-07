@@ -64,10 +64,13 @@ for (const { file, data, error } of entries) {
     }
   }
   for (const { url } of data.sources) {
-    if (seenUrls.has(url) && seenUrls.get(url) !== file) {
-      fail(`出典URLが ${seenUrls.get(url)} と重複しています（同一インシデントの重複登録の可能性）`);
+    // まとめサイトしか出典が無い「調査中」同士は同じ URL を共有してよい
+    const prev = seenUrls.get(url);
+    const investigating = data.status === 'investigating';
+    if (prev && prev.file !== file && !(investigating && prev.investigating)) {
+      fail(`出典URLが ${prev.file} と重複しています（同一インシデントの重複登録の可能性）`);
     }
-    seenUrls.set(url, file);
+    if (!prev) seenUrls.set(url, { file, investigating });
   }
 }
 

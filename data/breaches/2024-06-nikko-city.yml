@@ -1,0 +1,13 @@
+organization: 日光市
+industry: 行政
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-06-18
+affected_count: 9549
+count_note: "まとめサイトの記載: 9,549件（一次情報で未確認）"
+cause: human_error
+summary: 日光市健康課の担当職員が合計9,549人の国民健康保険や後期高齢者医療保険情報を記載した電子メールを、市職員や関係機関12の宛先に誤送信したと発表した（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

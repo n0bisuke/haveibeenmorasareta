@@ -1,0 +1,13 @@
+organization: 北九州市
+industry: 行政
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-07-26
+affected_count: 10000
+count_note: "まとめサイトの記載: 1万件（一次情報で未確認）"
+cause: lost_device
+summary: 北九州市（福岡県）は、精神科等に通院する市民が利用する自立支援医療制度の利用者名簿データ約1万件を記録したCDを紛失したと明らかにした。公表時点で個人情報流出に係る被害の報告も確認されていないとしている（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

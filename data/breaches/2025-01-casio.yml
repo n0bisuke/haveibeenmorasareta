@@ -1,0 +1,13 @@
+organization: カシオ計算機株式会社
+industry: 製造
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-01-07
+affected_count: 8478
+count_note: "まとめサイトの記載: 8,478件（一次情報で未確認）"
+cause: unauthorized_access
+summary: カシオ計算機株式会社は、同社が2024年10月に公表した自社サーバーに対するランサムウェア感染問題について、社内外関係者や取引先、ユーザー等合計8,478名の個人情報流出を確認したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information
