@@ -1,3 +1,6 @@
 node_modules/
 .DS_Store
 public/contributors.json
+candidates.json
+ai-out/
+ai-state/

@@ -2,6 +2,7 @@ name: Validate
 
 on:
   pull_request:
+  workflow_dispatch: # AI 下書きの PR（Actions のトークンで作成）は自動で検証が動かないため、ai-publish.mjs から起動する
   push:
     branches-ignore: [main]
 

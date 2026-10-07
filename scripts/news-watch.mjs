@@ -2,9 +2,13 @@
 // GITHUB_TOKEN と GITHUB_REPOSITORY があれば、候補を Issue（1件を毎回更新）にまとめる。無ければ標準出力に出すだけ
 //   node scripts/news-watch.mjs            … 候補を表示
 //   node scripts/news-watch.mjs --days 14  … 対象期間を変更（既定 7 日）
+//   node scripts/news-watch.mjs --out candidates.json … 候補を JSON でも書き出す（scripts/ai-draft.mjs の入力）
+import { writeFile } from 'node:fs/promises';
 import { loadBreaches } from './lib.mjs';
 
-const DAYS = Number(process.argv[process.argv.indexOf('--days') + 1]) || 7;
+const arg = (name) => (process.argv.includes(name) ? process.argv[process.argv.indexOf(name) + 1] : undefined);
+const DAYS = Number(arg('--days')) || 7;
+const OUT = arg('--out');
 const ISSUE_TITLE = '【自動】未収録の情報漏洩ニュース候補';
 const { GITHUB_TOKEN, GITHUB_REPOSITORY } = process.env;
 
@@ -102,6 +106,7 @@ for (const i of items) {
   candidates.push({ ...i, time: Number.isFinite(time) ? time : 0 });
 }
 candidates.sort((a, b) => b.time - a.time);
+if (OUT) await writeFile(OUT, `${JSON.stringify(candidates, null, 2)}\n`);
 
 const fmt = (t) => (t ? new Date(t).toLocaleDateString('ja-JP', { timeZone: 'Asia/Tokyo' }) : '日付不明');
 const body = [
