@@ -1,0 +1,20 @@
+organization: 株式会社マイナビ
+industry: 人材・教育
+country: JP
+date_occurred: 2025-12-05
+date_announced: 2026-02-12
+affected_count: 111505
+count_note: 一般ユーザー74,224件、法人担当者21,609件、同社およびグループ会社従業員15,672件（2026年3月31日の第3報）
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - メールアドレス
+  - 住所
+  - 従業員情報
+  - 取引先情報
+summary: 同社が利用するクラウドサービスに第三者が不正アクセスし、一般ユーザー・法人担当者・従業員の個人情報の一部が流出した可能性がある。2025年12月にクラウド上の異常を検知し、2026年1月に流出の可能性が判明した。クレジットカード情報とマイナンバーは含まれない。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2604/02/1260402075/
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/04/16/55073.html

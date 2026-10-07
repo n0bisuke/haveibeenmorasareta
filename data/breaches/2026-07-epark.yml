@@ -1,0 +1,25 @@
+organization: 株式会社EPARKリラク＆エステ
+services:
+  - PeakManager（予約・顧客管理プラットフォーム）
+industry: 美容・健康
+country: JP
+date_occurred: 2026-07-27
+date_announced: 2026-07-31
+affected_count: 22180000
+count_note: 当初は最大約3,300万レコードとし、重複などを整理して約2,218万レコード（第2報）。健康状態などの要配慮個人情報を含む可能性あり
+cause: unauthorized_access
+data_types:
+  - 健康・医療情報
+  - 生年月日
+  - 住所
+  - パスワード（ハッシュ化・暗号化済み）
+  - 氏名
+  - 性別
+  - 電話番号
+  - メールアドレス
+summary: 整体院・エステなどの予約・顧客管理プラットフォーム「PeakManager」のデータベースに不正アクセスがあり、個人情報が外部に転送された。ダークウェブでハッカーが犯行声明を出している。クレジットカード情報とマイナンバー関連情報は含まれない。
+sources:
+  - title: EPARK 公式発表
+    url: https://epark.jp/news/427/
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2608/03/2000000354/

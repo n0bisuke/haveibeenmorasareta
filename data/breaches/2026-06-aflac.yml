@@ -1,0 +1,24 @@
+organization: アフラック生命保険株式会社
+services:
+  - アフラック よりそうネット
+industry: 金融・保険
+country: JP
+date_occurred: 2026-06-15
+date_announced: 2026-06-30
+affected_count: 4400000
+count_note: 顧客約440万人（初報は約438万人）。うち保険料振替口座情報を含むのは約22万人。別に代理店約4万店の情報も対象
+cause: unauthorized_access
+data_types:
+  - 口座番号
+  - 生年月日
+  - 住所
+  - 氏名
+  - 性別
+  - 電話番号
+  - 契約情報
+summary: 契約者向けサイト「アフラック よりそうネット」などのシステムに第三者が不正アクセス。6月15日から25日にかけて複数回アクセスされ、契約者・被保険者・受取人の情報や証券番号、保障内容、保険料振替口座情報が漏えいした。マイナンバー、クレジットカード情報、メールアドレスは含まれない。
+sources:
+  - title: アフラック 調査結果と再発防止策（2026年7月31日）
+    url: https://www.aflac.co.jp/static/corp/profile/news/2026/2026073100.pdf
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/07/01/55610.html
