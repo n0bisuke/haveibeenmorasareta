@@ -1,0 +1,12 @@
+organization: 関彰商事株式会社
+group: セキショウグループ
+industry: 人材・教育
+country: JP
+date_announced: 2025-10-10
+affected_count: 15535
+count_note: 最大件数（セキショウベトナムが保有する個人情報）
+cause: unauthorized_access
+summary: 海外グループ会社セキショウベトナムのサーバーが不正アクセスを受け、ベトナムとインドで開催した就職支援イベント参加者などの個人情報を含む社内データが漏えいした。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/10/22/53856.html

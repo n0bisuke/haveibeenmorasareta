@@ -1,0 +1,19 @@
+organization: スターバックス コーヒー ジャパン株式会社
+industry: 飲食
+country: JP
+date_announced: 2025-09-19
+affected_count: 31500
+count_note: 約31,500名。10月3日の続報で別に約40,700名分の従業員IDの漏えいが判明
+cause: third_party
+root_cause: シフト作成ツールを提供するBlue Yonder社のデータ転送システムへの不正アクセス
+vendor:
+  name: Blue Yonder
+  group: パナソニックグループ
+data_types:
+  - 従業員情報
+summary: 利用しているBlue Yonder社のシフト作成ツールが外部から不正アクセスを受け、従業員の個人情報の一部が漏えいした。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/10/01/53714.html
+  - title: ScanNetSecurity（続報）
+    url: https://scan.netsecurity.ne.jp/article/2025/10/15/53803.html

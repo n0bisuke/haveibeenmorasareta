@@ -1,0 +1,11 @@
+organization: 株式会社ミツウロコヴェッセル
+group: ミツウロコグループ
+industry: エネルギー・インフラ
+country: JP
+date_announced: 2025-09-03
+affected_count: 6303
+cause: lost_device
+summary: 営業店舗で顧客情報を保管するLPガス検針・集金用の情報端末を紛失し、顧客情報が流出するおそれがある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/09/12/53608.html
