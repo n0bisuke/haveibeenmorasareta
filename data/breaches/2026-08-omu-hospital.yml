@@ -1,0 +1,16 @@
+organization: 大阪公立大学医学部附属病院
+industry: 医療
+country: JP
+date_occurred: 2025-10-01
+date_announced: 2026-08-12
+affected_count: 13
+count_note: X線画像13件（うち1件に患者の氏名を表示）
+cause: insider
+root_cause: 取引業者の従業員が手術室のモニターに表示されたX線画像を患者の同意なくスマートフォンで撮影し、院外へ持ち出した
+data_types:
+  - 氏名
+  - 健康・医療情報
+summary: 2025年10月、手術室内で取引業者の従業員が患者のX線画像を表示したモニターをスマートフォンで計13件撮影し、院外へ持ち出していた。画像は取引業者の社内で共有されていたが、社外への流出は確認されていない。発生日は月のみ判明のため1日としている。
+sources:
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/?p=38495
