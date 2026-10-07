@@ -38,3 +38,30 @@
 .viz-table table { width: 100%; border-collapse: collapse; margin-top: 8px; }
 .viz-table th, .viz-table td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
 .viz-table td.num, .viz-table th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/* ---- ランキング ---- */
+.ranking-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 24px 0 0; }
+.ranking-scope { margin: 0; font-size: 0.85rem; }
+.ranking-controls ~ .viz-card { margin: 16px 0 0; }
+.ranking { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 4px; }
+.rank-row {
+  display: grid; grid-template-columns: 2em minmax(7em, 14em) 1fr; align-items: center; gap: 8px 12px;
+  padding: 6px 4px; border-radius: 6px; color: inherit; text-decoration: none;
+}
+.rank-row:hover, .rank-row:focus-visible { background: var(--tag-bg); outline: none; }
+.rank-no { color: var(--muted); font-variant-numeric: tabular-nums; text-align: right; font-size: 0.85rem; }
+.rank-label { font-size: 0.9rem; line-height: 1.35; overflow-wrap: anywhere; }
+.rank-label small { display: block; color: var(--muted); font-size: 0.75rem; }
+.rank-bar { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.rank-bar .bar { height: 14px; min-width: 2px; background: var(--accent); border-radius: 0 4px 4px 0; flex: none; }
+.rank-bar .val { font-size: 0.85rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.more {
+  font: inherit; font-size: 0.85rem; margin-top: 8px; padding: 6px 12px; border-radius: 8px;
+  border: 1px solid var(--border); background: var(--surface); color: var(--muted); cursor: pointer;
+}
+.ranking-note { margin: 16px 0 48px; }
+main { position: relative; }
+@media (max-width: 640px) {
+  .rank-row { grid-template-columns: 1.6em 1fr; }
+  .rank-bar { grid-column: 2; }
+}

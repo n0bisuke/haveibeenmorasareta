@@ -3,9 +3,10 @@
 # 例: data/breaches/2025-01-example-corp.yml
 
 organization: 株式会社サンプル           # 必須: 正式名称
+group: サンプルグループ                   # 任意: 企業グループ名（ランキングでまとめて集計）
 services:                                 # 任意: 影響を受けたサービス・サイト
   - サンプルオンラインストア
-industry: 小売                            # 任意: 業種
+industry: 小売・EC                         # 任意: 業種（data/industries.yml にある名前のみ）
 country: JP                               # 任意: ISO 3166-1 alpha-2
 date_occurred: 2025-01-10                 # 任意: 発生日（判明していれば）
 date_announced: 2025-01-31                # 必須: 最初の公表日

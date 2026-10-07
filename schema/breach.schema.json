@@ -4,22 +4,36 @@
   "description": "情報漏洩インシデント1件分のデータ",
   "type": "object",
   "additionalProperties": false,
-  "required": ["organization", "date_announced", "cause", "summary", "sources"],
+  "required": [
+    "organization",
+    "date_announced",
+    "cause",
+    "summary",
+    "sources"
+  ],
   "properties": {
     "organization": {
       "type": "string",
       "minLength": 1,
       "description": "漏洩を公表した企業・団体の正式名称"
     },
+    "group": {
+      "type": "string",
+      "minLength": 1,
+      "description": "企業グループ名（任意）。同じグループの事案をランキングでまとめて集計する"
+    },
     "services": {
       "type": "array",
-      "items": { "type": "string", "minLength": 1 },
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
       "uniqueItems": true,
       "description": "影響を受けたサービス・サイト名"
     },
     "industry": {
       "type": "string",
-      "description": "業種（例: 小売、IT・通信、金融、医療、教育、行政、メディア・出版）"
+      "description": "業種。data/industries.yml にある名前のみ使用可"
     },
     "country": {
       "type": "string",
@@ -37,7 +51,10 @@
       "description": "最初の公表日 YYYY-MM-DD"
     },
     "affected_count": {
-      "type": ["integer", "null"],
+      "type": [
+        "integer",
+        "null"
+      ],
       "minimum": 0,
       "description": "漏洩（またはその可能性がある）件数・人数。不明なら null"
     },
@@ -65,7 +82,10 @@
     },
     "data_types": {
       "type": "array",
-      "items": { "type": "string", "minLength": 1 },
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
       "uniqueItems": true,
       "description": "漏洩した情報の種類（例: 氏名、メールアドレス、パスワード、クレジットカード情報）"
     },
@@ -82,10 +102,18 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["url"],
+        "required": [
+          "url"
+        ],
         "properties": {
-          "title": { "type": "string" },
-          "url": { "type": "string", "format": "uri", "pattern": "^https?://" }
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https?://"
+          }
         }
       }
     }
