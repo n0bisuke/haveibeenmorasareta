@@ -1,6 +1,8 @@
 organization: 農林水産省
 industry: 行政
 country: JP
+org_type: national_gov
+prefecture: 東京都
 date_announced: 2026-01-23
 affected_count: 4571
 count_note: 本省職員2,593人とその家族1,978人

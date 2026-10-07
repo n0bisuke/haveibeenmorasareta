@@ -1,6 +1,8 @@
 organization: 山形大学
 industry: 人材・教育
 country: JP
+org_type: university
+prefecture: 山形県
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-05-12

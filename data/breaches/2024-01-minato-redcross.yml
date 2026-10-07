@@ -1,6 +1,8 @@
 organization: 横浜市立みなと赤十字病院
 industry: 医療
 country: JP
+org_type: hospital
+prefecture: 神奈川県
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
 date_announced: 2024-01-17

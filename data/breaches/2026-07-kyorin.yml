@@ -3,6 +3,8 @@ industry:
   - 人材・教育
   - 医療
 country: JP
+org_type: university
+prefecture: 東京都
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/31
 date_announced: 2026-07-07

@@ -5,6 +5,8 @@ industry:
   - 行政
   - 生活サービス
 country: JP
+org_type: local_gov
+prefecture: 大阪府
 date_announced: 2024-05-09
 affected_count: 3000
 count_note: 約3,000件

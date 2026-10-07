@@ -61,3 +61,16 @@ export async function loadAttackMethods() {
   const raw = yaml.load(text, { schema: yaml.CORE_SCHEMA });
   return Object.entries(raw).map(([id, { label, category, description }]) => ({ id, label, category, description }));
 }
+
+// data/org-types.yml（組織の種類）を読み込み、[{ id, label }] を返す
+export async function loadOrgTypes() {
+  const text = await readFile(path.join(ROOT, 'data', 'org-types.yml'), 'utf8');
+  const raw = yaml.load(text, { schema: yaml.CORE_SCHEMA });
+  return Object.entries(raw).map(([id, { label }]) => ({ id, label }));
+}
+
+// data/prefectures.yml（都道府県とマップ上の位置）を読み込み、[{ name, x, y }] を返す
+export async function loadPrefectures() {
+  const text = await readFile(path.join(ROOT, 'data', 'prefectures.yml'), 'utf8');
+  return yaml.load(text, { schema: yaml.CORE_SCHEMA });
+}

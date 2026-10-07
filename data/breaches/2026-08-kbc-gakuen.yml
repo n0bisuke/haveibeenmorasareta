@@ -1,6 +1,8 @@
 organization: 学校法人KBC学園
 industry: 人材・教育
 country: JP
+org_type: university
+prefecture: 沖縄県
 date_announced: 2026-08-17
 affected_count: 2471
 cause: human_error

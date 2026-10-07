@@ -1,6 +1,8 @@
 organization: 東京大学定量生命科学研究所
 industry: 人材・教育
 country: JP
+org_type: university
+prefecture: 東京都
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-12-19
