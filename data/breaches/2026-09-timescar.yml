@@ -1,0 +1,29 @@
+organization: パーク24株式会社・タイムズモビリティ株式会社
+services:
+  - タイムズカー
+  - タイムズビジネスサービス
+industry: 交通・モビリティ
+country: JP
+date_occurred: 2026-09-25
+date_announced: 2026-09-25
+affected_count: 6600000
+count_note: 約660万アカウント（退会者・入会未完了の申込者を含む）。うち本人確認書類（運転免許証画像等）が漏えいしたのは約160万件
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - 住所
+  - 生年月日
+  - 電話番号
+  - メールアドレス
+  - 運転免許情報
+  - 本人確認書類画像
+  - パスワード（復元不可能な形式）
+  - 連携サービスID
+summary: タイムズカーWebシステムへの外部からの不正アクセスを2026年9月25日に検知し、翌26日までに経路を遮断。会員・退会者・入会未完了者の約660万アカウントの情報が漏えいした。クレジットカード情報は漏えいしていない。
+sources:
+  - title: パーク24 公式発表（第1報）
+    url: https://www.park24.co.jp/news/2026/09/web1.html
+  - title: パーク24 公式発表（第2報）
+    url: https://www.park24.co.jp/news/2026/09/20260928-1.html
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2609/28/2000001808/

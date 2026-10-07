@@ -1,0 +1,21 @@
+organization: 株式会社物語コーポレーション
+services:
+  - 焼肉きんぐ公式アプリ
+industry: 飲食
+country: JP
+date_occurred: 2026-10-02
+date_announced: 2026-10-05
+affected_count: 10788963
+count_note: アプリ会員のほぼ全員に相当
+cause: unauthorized_access
+data_types:
+  - 会員番号
+  - 氏名
+  - メールアドレス
+  - 電話番号
+summary: 公式アプリの会員管理システムが第三者から不正アクセスを受け、会員情報1,078万8,963件が漏えいした。パスワード・生年月日・性別・保有ポイント・利用履歴、クレジットカード決済情報は含まれない。
+sources:
+  - title: 物語コーポレーション 公式発表
+    url: https://www.monogatari.co.jp/news/261005_news/
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/05/2000002011/
