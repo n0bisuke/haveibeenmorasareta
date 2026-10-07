@@ -37,6 +37,11 @@ jobs:
             git commit -m "public/breaches.json を再生成"
             git push
           fi
+      # カードに表示する「データを追加した人」のアイコン用（公開物にだけ含め、コミットはしない）
+      - name: Generate contributors.json
+        run: node scripts/contributors.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:
