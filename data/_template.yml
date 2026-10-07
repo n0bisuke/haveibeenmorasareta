@@ -1,0 +1,24 @@
+# このファイルを data/breaches/YYYY-MM-slug.yml としてコピーして使ってください。
+# YYYY-MM は date_announced（公表日）の年月、slug は半角英小文字・数字・ハイフン。
+# 例: data/breaches/2025-01-example-corp.yml
+
+organization: 株式会社サンプル           # 必須: 正式名称
+services:                                 # 任意: 影響を受けたサービス・サイト
+  - サンプルオンラインストア
+industry: 小売                            # 任意: 業種
+country: JP                               # 任意: ISO 3166-1 alpha-2
+date_occurred: 2025-01-10                 # 任意: 発生日（判明していれば）
+date_announced: 2025-01-31                # 必須: 最初の公表日
+affected_count: 12345                     # 任意: 件数。不明なら null
+count_note: 最大件数。調査中               # 任意: 件数の補足
+cause: unauthorized_access                # 必須: 下記から1つ
+#   ransomware / unauthorized_access / vulnerability / misconfiguration /
+#   phishing / malware / third_party / insider / human_error /
+#   lost_device / unknown / other
+data_types:                               # 任意: 漏洩した情報の種類
+  - 氏名
+  - メールアドレス
+summary: ここに概要を書きます。         # 必須: 10〜600文字。事実ベースで簡潔に（改行せず1行で）
+sources:                                  # 必須: 1件以上。公式発表を最初に
+  - title: 株式会社サンプル 公式発表
+    url: https://example.com/news/2025/0131

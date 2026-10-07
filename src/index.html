@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Have I Been Morasareta</title>
+  <meta name="description" content="情報漏洩を公表した企業・サービスの一覧。GitHub のプルリクエストで誰でも更新できます。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Have I Been <span class="accent">Morasareta</span></h1>
+      <p class="lead">情報漏洩を公表した企業・サービスの一覧</p>
+      <dl class="stats" id="stats" aria-live="polite"></dl>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="controls" aria-label="絞り込み">
+      <input type="search" id="q" placeholder="企業名・サービス名・漏洩した情報で検索" aria-label="検索">
+      <select id="year" aria-label="公表年"><option value="">すべての年</option></select>
+      <select id="cause" aria-label="原因"><option value="">すべての原因</option></select>
+      <select id="sort" aria-label="並び順">
+        <option value="date">公表日が新しい順</option>
+        <option value="count">件数が多い順</option>
+      </select>
+    </section>
+
+    <p class="result-count" id="result-count"></p>
+    <ol class="list" id="list"></ol>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>
+        掲載内容は各社の公式発表・報道に基づきます。追加・修正は
+        <a href="https://github.com/n0bisuke/haveibeenmorasareta">GitHub</a>
+        へのプルリクエストでお願いします（<a href="https://github.com/n0bisuke/haveibeenmorasareta/blob/main/CONTRIBUTING.md">書き方</a>）。
+      </p>
+      <p class="muted" id="generated"></p>
+    </div>
+  </footer>
+
+  <template id="item-tpl">
+    <li class="item">
+      <div class="item-head">
+        <h2 class="org"></h2>
+        <span class="count"></span>
+      </div>
+      <p class="services"></p>
+      <div class="meta"></div>
+      <p class="summary"></p>
+      <ul class="tags"></ul>
+      <p class="count-note muted"></p>
+      <ul class="sources"></ul>
+    </li>
+  </template>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
