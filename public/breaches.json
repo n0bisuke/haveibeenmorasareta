@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-10-07T16:29:20.000Z",
-  "count": 329,
+  "count": 337,
   "severity_levels": [
     {
       "id": "critical",
@@ -1330,6 +1330,31 @@
         }
       ],
       "severity": "high"
+    },
+    {
+      "id": "2026-09-resona-bank",
+      "organization": "株式会社りそな銀行",
+      "group": "りそなグループ",
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-09-28",
+      "affected_count": 9000,
+      "count_note": "約9,000人（1992年7月〜2001年3月に旧羽村支店で口座を解約した顧客）",
+      "cause": "lost_device",
+      "root_cause": "預金口座解約索引簿を記録したコムフィッシュ（マイクロフィルム）を誤って廃棄した可能性が高い",
+      "data_types": [
+        "氏名",
+        "口座番号",
+        "資産・取引情報"
+      ],
+      "summary": "旧協和埼玉銀行・旧あさひ銀行の羽村支店で過去に口座を解約した顧客約9,000人分の氏名・口座番号・解約金額・解約理由・最終取引日を記録したコムフィッシュの紛失が判明した。誤廃棄の可能性が高く、外部へ流出した可能性は極めて低いとしている。",
+      "sources": [
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/?p=41695"
+        }
+      ],
+      "severity": "critical"
     },
     {
       "id": "2026-09-shueisha",
@@ -3489,6 +3514,33 @@
       "severity": "medium"
     },
     {
+      "id": "2026-03-fukuoka-bank",
+      "organization": "株式会社福岡銀行",
+      "group": "ふくおかフィナンシャルグループ",
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "福岡県",
+      "date_occurred": "2023-12-01",
+      "date_announced": "2026-03-27",
+      "affected_count": 1052,
+      "count_note": "個人1,052名（ほかに法人45社）",
+      "cause": "insider",
+      "root_cause": "メットライフ生命からの出向者が、銀行窓口で契約された生命保険の情報を出向元にメールで送っていた",
+      "data_types": [
+        "氏名",
+        "契約情報"
+      ],
+      "summary": "メットライフ生命保険からの出向者が、2023年4月から2024年3月に福岡銀行の募集で生命保険を契約した顧客の氏名と契約内容（保険会社名・保険商品名・保険料など）を、印刷資料を電子化してメットライフ生命にメールで送っていた。住所・電話番号・口座番号は含まれない。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/04/08/55006.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
       "id": "2026-03-zetton",
       "organization": "株式会社ゼットン",
       "industry": "飲食",
@@ -4835,6 +4887,28 @@
       "severity": null
     },
     {
+      "id": "2025-08-fujitomi-sec",
+      "organization": "フジトミ証券株式会社",
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2025-08-04",
+      "date_announced": "2025-08-12",
+      "affected_count": 25,
+      "cause": "human_error",
+      "root_cause": "情報提供メールをBCCではなくTOで送信した",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "情報提供メールを送る際、BCCで送るべきところをTOで送信し、受信者25名のメールアドレスが互いに見える状態になった。受信者からの指摘で発覚した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/09/03/53555.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
       "id": "2025-08-surugaya",
       "organization": "株式会社駿河屋",
       "services": [
@@ -5657,6 +5731,38 @@
       "severity": null
     },
     {
+      "id": "2025-03-rakuten-sec",
+      "organization": "楽天証券株式会社",
+      "group": "楽天グループ",
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2025-03-24",
+      "affected_count": null,
+      "count_note": "件数は未公表（2025年2月〜4月16日に証券6社で不正アクセス3,312件・不正取引1,454件。金融庁の集計）",
+      "cause": "phishing",
+      "attack_methods": [
+        "phishing",
+        "stolen_credentials"
+      ],
+      "data_types": [
+        "氏名",
+        "資産・取引情報",
+        "口座番号"
+      ],
+      "summary": "楽天証券を装うフィッシングメールなどで盗まれたログイン情報により顧客口座への不正アクセスが急増し、保有株の売却や中国株の買付などの不正取引が行われた。同時期にSBI証券・野村證券・SMBC日興証券・マネックス証券・松井証券でも被害が出た。同社は被害額の補償方針を発表した。",
+      "sources": [
+        {
+          "title": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/1672247.html"
+        },
+        {
+          "title": "ScanNetSecurity（補償方針）",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/07/31/53335.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
       "id": "2025-03-hokkaido-jalan",
       "organization": "株式会社リクルート",
       "services": [
@@ -5849,6 +5955,30 @@
         }
       ],
       "severity": null
+    },
+    {
+      "id": "2025-02-mufg-bank",
+      "organization": "株式会社三菱UFJ銀行",
+      "group": "三菱UFJフィナンシャル・グループ",
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2020-04-01",
+      "date_announced": "2025-02-21",
+      "affected_count": 37843,
+      "count_note": "住宅ローン契約者37,843名（ほかに法人8社）",
+      "cause": "insider",
+      "root_cause": "東京海上日動あんしん生命からの出向者が、住宅ローン契約者の取引情報を東京海上日動火災保険に提供した",
+      "data_types": [
+        "契約情報"
+      ],
+      "summary": "保険会社からの出向者が、2020年4月から2024年3月にかけて住宅ローン契約者の取引店番・取引先番号などを出向元グループの東京海上日動火災保険に提供していた。火災保険の付保率の計算に使われたとされる。氏名・住所・電話番号・クレジットカード情報は含まれない。",
+      "sources": [
+        {
+          "title": "三菱UFJ銀行 お知らせ",
+          "url": "https://www.bk.mufg.jp/news/news2025/pdf/news0221.pdf"
+        }
+      ],
+      "severity": "medium"
     },
     {
       "id": "2025-02-sony-music-shop",
@@ -7010,6 +7140,71 @@
         {
           "title": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2024/10/24/51806.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2024-10-ffg-hoken",
+      "organization": "株式会社ふくおかフィナンシャルグループ",
+      "group": "ふくおかフィナンシャルグループ",
+      "services": [
+        "FFGほけんサービス",
+        "福岡銀行",
+        "熊本銀行",
+        "十八親和銀行"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "福岡県",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/35",
+      "date_occurred": "2021-10-01",
+      "date_announced": "2024-10-01",
+      "affected_count": 1518,
+      "count_note": "個人1,518件・法人104件。公表日が未確認のため2024年10月を仮置き",
+      "cause": "insider",
+      "root_cause": "損害保険ジャパンからの出向者が、自社の契約シェア把握のため他社の契約情報を無断で提供した",
+      "data_types": [
+        "氏名",
+        "契約情報"
+      ],
+      "summary": "2021年10月から2024年3月にFFGほけんサービスと傘下の福岡銀行・熊本銀行・十八親和銀行で火災保険・損害保険を契約した顧客の氏名と契約内容が、損保ジャパンからの出向者によって出向元に提供されていた。",
+      "sources": [
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/10261/"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2024-10-higo-bank",
+      "organization": "株式会社肥後銀行",
+      "group": "九州フィナンシャルグループ",
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "熊本県",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/35",
+      "date_occurred": "2018-05-01",
+      "date_announced": "2024-10-01",
+      "affected_count": 1030,
+      "count_note": "東京海上日動の出向者分で個人1,030件・法人4,335件（第一生命・損保ジャパンの出向者分は別）。公表日が未確認のため2024年10月を仮置き",
+      "cause": "insider",
+      "root_cause": "東京海上日動・第一生命・損保ジャパンからの出向者が、銀行で扱った他社の保険契約情報を出向元に提供した",
+      "data_types": [
+        "氏名",
+        "契約情報",
+        "取引先情報"
+      ],
+      "summary": "保険会社3社からの出向者が、肥後銀行で扱った保険契約の情報を出向元に提供していた。東京海上日動の出向者分では2018年5月から2024年7月にかけて、契約者名・保険会社名・証券番号・保険金額・保険料や法人取引先の情報が漏えいした。",
+      "sources": [
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/12050/"
         }
       ],
       "severity": "medium"
@@ -9643,6 +9838,31 @@
         }
       ],
       "severity": null
+    },
+    {
+      "id": "2023-07-chibagin-sec",
+      "organization": "ちばぎん証券株式会社",
+      "group": "千葉銀行グループ",
+      "industry": "金融・保険",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/35",
+      "date_announced": "2023-07-12",
+      "affected_count": null,
+      "count_note": "件数は未確認",
+      "cause": "human_error",
+      "root_cause": "データ内容を精査せずに、共有対象外の情報を含む明細を送信した",
+      "data_types": [
+        "契約情報"
+      ],
+      "summary": "ファンドラップの媒介報酬明細書を千葉銀行と武蔵野銀行に送る際、情報共有の対象としていない顧客情報を含めて送信していた。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2023/07/20/49693.html"
+        }
+      ],
+      "severity": "medium"
     },
     {
       "id": "2023-05-smbc-card",

@@ -1,0 +1,26 @@
+organization: 株式会社ふくおかフィナンシャルグループ
+group: ふくおかフィナンシャルグループ
+services:
+  - FFGほけんサービス
+  - 福岡銀行
+  - 熊本銀行
+  - 十八親和銀行
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 福岡県
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/35
+date_occurred: 2021-10-01
+date_announced: 2024-10-01
+affected_count: 1518
+count_note: 個人1,518件・法人104件。公表日が未確認のため2024年10月を仮置き
+cause: insider
+root_cause: 損害保険ジャパンからの出向者が、自社の契約シェア把握のため他社の契約情報を無断で提供した
+data_types:
+  - 氏名
+  - 契約情報
+summary: 2021年10月から2024年3月にFFGほけんサービスと傘下の福岡銀行・熊本銀行・十八親和銀行で火災保険・損害保険を契約した顧客の氏名と契約内容が、損保ジャパンからの出向者によって出向元に提供されていた。
+sources:
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/10261/

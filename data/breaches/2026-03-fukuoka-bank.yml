@@ -1,0 +1,19 @@
+organization: 株式会社福岡銀行
+group: ふくおかフィナンシャルグループ
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 福岡県
+date_occurred: 2023-12-01
+date_announced: 2026-03-27
+affected_count: 1052
+count_note: 個人1,052名（ほかに法人45社）
+cause: insider
+root_cause: メットライフ生命からの出向者が、銀行窓口で契約された生命保険の情報を出向元にメールで送っていた
+data_types:
+  - 氏名
+  - 契約情報
+summary: メットライフ生命保険からの出向者が、2023年4月から2024年3月に福岡銀行の募集で生命保険を契約した顧客の氏名と契約内容（保険会社名・保険商品名・保険料など）を、印刷資料を電子化してメットライフ生命にメールで送っていた。住所・電話番号・口座番号は含まれない。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/04/08/55006.html

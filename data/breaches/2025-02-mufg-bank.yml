@@ -1,0 +1,16 @@
+organization: 株式会社三菱UFJ銀行
+group: 三菱UFJフィナンシャル・グループ
+industry: 金融・保険
+country: JP
+date_occurred: 2020-04-01
+date_announced: 2025-02-21
+affected_count: 37843
+count_note: 住宅ローン契約者37,843名（ほかに法人8社）
+cause: insider
+root_cause: 東京海上日動あんしん生命からの出向者が、住宅ローン契約者の取引情報を東京海上日動火災保険に提供した
+data_types:
+  - 契約情報
+summary: 保険会社からの出向者が、2020年4月から2024年3月にかけて住宅ローン契約者の取引店番・取引先番号などを出向元グループの東京海上日動火災保険に提供していた。火災保険の付保率の計算に使われたとされる。氏名・住所・電話番号・クレジットカード情報は含まれない。
+sources:
+  - title: 三菱UFJ銀行 お知らせ
+    url: https://www.bk.mufg.jp/news/news2025/pdf/news0221.pdf

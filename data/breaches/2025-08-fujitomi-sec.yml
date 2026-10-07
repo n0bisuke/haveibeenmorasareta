@@ -1,0 +1,14 @@
+organization: フジトミ証券株式会社
+industry: 金融・保険
+country: JP
+date_occurred: 2025-08-04
+date_announced: 2025-08-12
+affected_count: 25
+cause: human_error
+root_cause: 情報提供メールをBCCではなくTOで送信した
+data_types:
+  - メールアドレス
+summary: 情報提供メールを送る際、BCCで送るべきところをTOで送信し、受信者25名のメールアドレスが互いに見える状態になった。受信者からの指摘で発覚した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/09/03/53555.html
