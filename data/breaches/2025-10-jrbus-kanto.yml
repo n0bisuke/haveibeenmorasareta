@@ -1,0 +1,17 @@
+organization: ジェイアールバス関東株式会社
+group: JR東日本グループ
+industry: 交通・モビリティ
+country: JP
+date_occurred: 2025-10-13
+date_announced: 2025-10-17
+affected_count: null
+count_note: 件数は未公表。2025年12月の最終報告で、個人情報が外部に送信・流出した痕跡は確認されなかったとした
+cause: unauthorized_access
+data_types:
+  - 氏名
+summary: 愛知県新城市の事業所で使っていた業務用パソコン1台が外部から不正アクセスを受け、個人情報を含む情報が漏えいした可能性があると公表した。2025年12月16日の最終報告では、外部専門家の調査で流出を示すログや痕跡は確認されなかったとしている。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/10/29/53911.html
+  - title: セキュリティ対策Lab（最終報告）
+    url: https://rocket-boys.co.jp/?p=26738
