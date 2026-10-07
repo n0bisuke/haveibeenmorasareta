@@ -1,0 +1,21 @@
+organization: 株式会社RBW JAPAN
+services:
+  - MOOMOO JAPAN（MAMAMOO JAPAN OFFICIAL FANCLUB）
+industry: エンタメ・スポーツ
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/33
+date_occurred: 2026-09-01
+date_announced: 2026-09-03
+affected_count: null
+count_note: 件数は未公表（有料会員の一部）
+cause: third_party
+vendor:
+  name: システム管理の委託先（社名非公表）
+data_types:
+  - メールアドレス
+  - パスワード（保管形式不明）
+summary: MAMAMOOの日本公式ファンクラブ「MOOMOO JAPAN」のシステム管理を委託している会社のサーバーに不正アクセスがあり、一部の有料会員のメールアドレスとパスワードが漏えいした可能性がある。クレジットカード情報は含まれない。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/09/15/56232.html

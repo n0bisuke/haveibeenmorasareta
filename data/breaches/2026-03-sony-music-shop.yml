@@ -1,0 +1,17 @@
+organization: 株式会社ソニー・ミュージックソリューションズ
+group: ソニーグループ
+services:
+  - Sony Music Shop
+industry: エンタメ・スポーツ
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/33
+date_announced: 2026-03-05
+affected_count: null
+count_note: 件数は未確認（報道日を公表日として仮置き）
+cause: misconfiguration
+root_cause: システム改修時の担当者間で作業範囲や役割分担の認識にずれがあった
+summary: Sony Music Shopのサイトで、顧客の個人情報が他の利用者から閲覧できる状態になっていたと報じられた。2025年2月の事案との関係や件数は確認中。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/03/05/54765.html

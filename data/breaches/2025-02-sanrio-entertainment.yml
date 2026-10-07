@@ -1,0 +1,29 @@
+organization: 株式会社サンリオエンターテイメント
+group: サンリオ
+services:
+  - サンリオピューロランド
+  - ピューロランドファンクラブ
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2025-01-21
+date_announced: 2025-02-07
+affected_count: 2000000
+count_note: 最大約200万件（漏えいの可能性。2025年8月の調査完了時点で実際の漏えいは確認されていない）
+cause: ransomware
+data_types:
+  - 氏名
+  - 性別
+  - 生年月日
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 会員ID
+  - 従業員情報
+summary: サンリオピューロランドなどを運営するサンリオエンターテイメントのサーバーがランサムウェアによる不正アクセスを受けた。ピューロランドファンクラブ会員や年間パスポート購入者の情報など最大約200万件が漏えいした可能性があると公表した。2025年8月12日に調査と復旧の完了を報告し、その時点で情報漏えいは確認されていないとしている。
+sources:
+  - title: サンリオ お知らせ（2025年2月7日）
+    url: https://corporate.sanrio.co.jp/information/20250207/index.html
+  - title: サンリオ 調査結果のご報告（2025年8月12日）
+    url: https://corporate.sanrio.co.jp/information/20250812/
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/02/10/52303.html
