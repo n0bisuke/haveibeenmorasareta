@@ -208,3 +208,11 @@ a { color: var(--accent); }
 .theme-toggle:hover { background: var(--tag-bg); }
 .theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .dark .theme-toggle { font-family: "DotGothic16", ui-monospace, monospace; }
+
+/* ---- 愛称「漏らされったー」（タイトル上の小さな見出し） ---- */
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 6px; margin: 0 0 4px;
+  font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em;
+  color: color-mix(in srgb, var(--accent) 70%, var(--muted));
+}
+.eyebrow::before, .eyebrow::after { content: ""; width: 12px; height: 1px; background: currentColor; opacity: 0.5; }
