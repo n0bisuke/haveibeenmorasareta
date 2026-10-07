@@ -3,6 +3,8 @@ industry:
   - 行政
   - 医療
 country: JP
+org_type: local_gov
+prefecture: 福岡県
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
 date_announced: 2024-07-26

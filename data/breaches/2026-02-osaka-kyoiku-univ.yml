@@ -1,6 +1,8 @@
 organization: 大阪教育大学
 industry: 人材・教育
 country: JP
+org_type: university
+prefecture: 大阪府
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/31
 date_announced: 2026-02-03

@@ -67,3 +67,27 @@ main { position: relative; }
   .rank-row { grid-template-columns: 1.6em 1fr; }
   .rank-bar { grid-column: 2; }
 }
+
+/* ---- 地域別マップ（都道府県タイルグリッド） ---- */
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.map-select select {
+  font: inherit; font-size: 0.85rem; padding: 6px 10px; border: 1px solid var(--border); border-radius: 8px;
+  background: var(--surface); color: var(--text);
+}
+.map { position: relative; margin: 16px auto 0; max-width: 640px; }
+.map-grid { display: grid; grid-template-columns: repeat(13, 1fr); grid-template-rows: repeat(13, auto); gap: 3px; }
+.tile {
+  aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  border-radius: 4px; background: var(--tag-bg); color: var(--muted); text-decoration: none; line-height: 1.1;
+  font-size: clamp(0.5rem, 1.6vw, 0.72rem); min-width: 0; overflow: hidden;
+}
+.tile-name { white-space: nowrap; }
+.tile-count { font-weight: 700; font-variant-numeric: tabular-nums; font-size: 1.15em; }
+.tile.b1, .swatch.b1 { background: color-mix(in srgb, var(--accent) 22%, var(--surface)); color: var(--text); }
+.tile.b2, .swatch.b2 { background: color-mix(in srgb, var(--accent) 45%, var(--surface)); color: var(--text); }
+.tile.b3, .swatch.b3 { background: color-mix(in srgb, var(--accent) 72%, var(--surface)); color: var(--surface); }
+.tile.b4, .swatch.b4 { background: var(--accent); color: var(--surface); }
+a.tile:hover, a.tile:focus-visible { outline: 2px solid var(--text); outline-offset: 1px; }
+.map-legend { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 14px; font-size: 0.8rem; color: var(--muted); }
+.map-legend li { display: inline-flex; align-items: center; gap: 6px; }
+.swatch { width: 14px; height: 14px; border-radius: 3px; background: var(--tag-bg); border: 1px solid var(--border); }

@@ -8,6 +8,8 @@ services:                                 # 任意: 影響を受けたサービ�
   - サンプルオンラインストア
 industry: 小売・EC                         # 任意: 業種（data/industries.yml にある名前のみ。複数なら [IT・通信, 行政] のように書く）
 country: JP                               # 任意: ISO 3166-1 alpha-2
+# org_type: local_gov                       # 任意: 民間企業以外の組織の種類（data/org-types.yml の ID）
+# prefecture: 大阪府                         # 任意: 都道府県（org_type を書いたときは必須。地域別マップに表示）
 # status: investigating                      # 任意: 件数・漏えいの有無などが調査中のとき（issue も指定）
 # issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/1  # 任意: 情報募集用の Issue
 date_occurred: 2025-01-10                 # 任意: 発生日（判明していれば）

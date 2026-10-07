@@ -1,6 +1,8 @@
 organization: 鳥取県
 industry: 行政
 country: JP
+org_type: local_gov
+prefecture: 鳥取県
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-12-09

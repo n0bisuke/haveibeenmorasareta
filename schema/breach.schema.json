@@ -38,6 +38,16 @@
       ],
       "description": "業種。data/industries.yml にある名前のみ使用可。当事者の業種を先頭に、影響を受けた側の業種（委託元の自治体・病院など）も複数指定できる"
     },
+    "org_type": {
+      "type": "string",
+      "pattern": "^[a-z_]+$",
+      "description": "民間企業以外の組織の種類。data/org-types.yml の ID（自治体・大学・病院など）"
+    },
+    "prefecture": {
+      "type": "string",
+      "minLength": 2,
+      "description": "組織の所在地の都道府県。data/prefectures.yml にある名前"
+    },
     "country": {
       "type": "string",
       "pattern": "^[A-Z]{2}$",

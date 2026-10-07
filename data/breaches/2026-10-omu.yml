@@ -1,6 +1,8 @@
 organization: 大阪公立大学
 industry: 人材・教育
 country: JP
+org_type: university
+prefecture: 大阪府
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/26
 date_occurred: 2026-10-02

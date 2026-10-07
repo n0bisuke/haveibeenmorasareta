@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ビジュアライズ | Have I Been Morasareta 日本版</title>
-  <meta name="description" content="日本国内で公表された情報漏洩を、月ごとの推移などで可視化します。">
+  <meta name="description" content="日本国内で公表された情報漏洩を、月ごとの推移や地域別の地図で可視化します。">
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../charts.css">
 </head>
@@ -56,6 +56,41 @@
         </div>
       </details>
     </section>
+
+    <section class="viz-card" aria-labelledby="map-title">
+      <div class="viz-head">
+        <div>
+          <h2 id="map-title">地域別（民間企業以外）</h2>
+          <p class="muted viz-sub" id="map-sub"></p>
+        </div>
+        <div class="viz-controls">
+          <label class="map-select"><span class="visually-hidden">組織の種類</span>
+            <select id="map-type"><option value="all">すべての組織</option></select>
+          </label>
+          <div class="seg" role="radiogroup" aria-label="期間">
+            <button type="button" role="radio" data-map-range="12">直近12か月</button>
+            <button type="button" role="radio" data-map-range="all">すべて</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="map" id="map">
+        <div class="map-grid" id="map-grid"></div>
+        <div class="tooltip" id="map-tooltip" role="status" aria-live="polite" hidden></div>
+      </div>
+      <ul class="map-legend" id="map-legend" aria-label="凡例（事案数）"></ul>
+      <p class="muted viz-note">企業は所在地が東京に集中するため、自治体・国の機関・大学・病院・公益法人などの組織だけを、組織の所在地（国の機関は担当部署の所在地）で集計しています。都道府県をクリックすると一覧で該当する事案を表示します。</p>
+
+      <details class="viz-table">
+        <summary>表で見る</summary>
+        <div class="table-scroll">
+        <table>
+          <thead><tr><th scope="col">都道府県</th><th scope="col" class="num">事案数</th><th scope="col">組織</th></tr></thead>
+          <tbody id="map-table"></tbody>
+        </table>
+        </div>
+      </details>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -69,5 +104,6 @@
   </footer>
 
   <script src="monthly.js" type="module"></script>
+  <script src="map.js" type="module"></script>
 </body>
 </html>

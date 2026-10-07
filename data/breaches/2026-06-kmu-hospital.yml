@@ -3,6 +3,8 @@ industry:
   - 医療
   - 人材・教育
 country: JP
+org_type: hospital
+prefecture: 大阪府
 date_announced: 2026-06-03
 affected_count: 1800
 count_note: 約1,800人。USBメモリは数日後に発見・回収済み

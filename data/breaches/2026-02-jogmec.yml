@@ -3,6 +3,8 @@ industry:
   - 行政
   - エネルギー・インフラ
 country: JP
+org_type: public_agency
+prefecture: 東京都
 date_announced: 2026-02-17
 affected_count: 2246
 cause: insider

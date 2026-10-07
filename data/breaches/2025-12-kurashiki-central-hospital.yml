@@ -1,6 +1,8 @@
 organization: 倉敷中央病院
 industry: 医療
 country: JP
+org_type: hospital
+prefecture: 岡山県
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-12-15

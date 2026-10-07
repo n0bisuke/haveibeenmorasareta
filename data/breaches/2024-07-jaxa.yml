@@ -1,6 +1,8 @@
 organization: 国立研究開発法人宇宙航空研究開発機構（JAXA）
 industry: 行政
 country: JP
+org_type: public_agency
+prefecture: 東京都
 date_occurred: 2023-10-01
 date_announced: 2024-07-05
 affected_count: 5000
