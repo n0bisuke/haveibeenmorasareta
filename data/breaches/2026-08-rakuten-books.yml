@@ -1,0 +1,21 @@
+organization: 楽天ブックスネットワーク株式会社
+services:
+  - 楽天ブックス
+industry: 小売・EC
+country: JP
+date_occurred: 2026-04-05
+date_announced: 2026-08-21
+affected_count: 33333
+count_note: 2022年5月18〜19日、2023年12月19〜21日の楽天ブックス注文データに含まれる配送先情報
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - 郵便番号
+  - 住所
+  - 電話番号
+summary: 楽天ブックスの関係会社が使用する一部のPC端末に社外の第三者が不正アクセス。端末内に保存されていた楽天ブックス利用者の配送先情報33,333件が対象となった。
+sources:
+  - title: 楽天ブックスネットワーク 公式発表
+    url: https://www.rakuten-booksnetwork.co.jp/2026/08/21/unauthorized-access-notice/index.html
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/08/25/56015.html

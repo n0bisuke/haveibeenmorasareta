@@ -1,0 +1,23 @@
+organization: 株式会社エイチ・アイ・エス
+services:
+  - H.I.S. TOURS CO., LTD.（タイ子会社）
+industry: 旅行
+country: JP
+date_occurred: 2025-12-11
+date_announced: 2026-10-07
+affected_count: 627
+count_note: 最大件数。2017年、2019〜2020年、2024〜2025年にHISでタイへ渡航した顧客
+cause: unauthorized_access
+data_types:
+  - 氏名（ローマ字）
+  - 性別
+  - 生年月日
+  - パスポート番号
+  - パスポート有効期限
+  - アレルギー情報
+summary: タイ子会社のファイルサーバーに不正アクセスがあり、データの一部が不正に取得された。顧客のパスポート情報などが流出した可能性がある。電話番号・住所・メールアドレス・クレジットカード情報は含まれない。
+sources:
+  - title: HIS 公式発表（2026年10月7日）
+    url: https://www.his.co.jp/assets/20261007.pdf
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/07/2000002090/

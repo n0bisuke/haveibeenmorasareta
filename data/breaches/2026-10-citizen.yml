@@ -1,0 +1,20 @@
+organization: シチズン時計株式会社
+services:
+  - シチズン・ブローバ・フレデリック・コンスタント 各Webサイトの問い合わせフォーム
+industry: 製造
+country: JP
+date_occurred: 2026-10-02
+date_announced: 2026-10-06
+affected_count: 100000
+count_note: 約10万人分（漏えいの可能性）
+cause: third_party
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 問い合わせ内容
+summary: 委託先スカラコミュニケーションズが提供するFAQシステム「i-ask」の管理サイトに第三者が不正ログインし、サーバーに不正なプログラムを設置。Webサイトの問い合わせフォームで受け付けた情報が漏えいした可能性がある。大和証券と同じ委託先が原因。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/06/2000002067/

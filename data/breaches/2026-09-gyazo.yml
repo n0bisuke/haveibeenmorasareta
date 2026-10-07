@@ -1,0 +1,18 @@
+organization: 株式会社Helpfeel
+services:
+  - Gyazo
+industry: IT・通信
+country: JP
+date_occurred: 2026-09-11
+date_announced: 2026-09-16
+affected_count: 23620000
+count_note: 約2,362万件（うちメールアドレス登録のない匿名ユーザー約1,801万件）。別に画像メタデータ約4.9億件、第二報で削除済み画像のメタデータ約1.74億件の流出も判明
+cause: vulnerability
+data_types:
+  - メールアドレス
+  - アカウント情報
+  - 画像メタデータ
+summary: 画像アップロードサーバーの脆弱性を悪用され、システム上で任意のコマンドを実行された。ユーザーに関するデータ約2,362万件と画像のメタデータ約4.9億件が外部に流出した。
+sources:
+  - title: INTERNET Watch（第二報）
+    url: https://internet.watch.impress.co.jp/docs/news/2143465.html

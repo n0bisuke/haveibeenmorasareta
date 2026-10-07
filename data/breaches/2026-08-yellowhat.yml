@@ -1,0 +1,21 @@
+organization: 株式会社イエローハット
+services:
+  - イエローハットWEB作業予約システム
+industry: 小売・EC
+country: JP
+date_occurred: 2026-08-18
+date_announced: 2026-08-28
+affected_count: 1801499
+count_note: 最大件数（漏えいの可能性）
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 会員番号
+summary: WEB作業予約システムが不正なプログラムによる攻撃を受け、最大180万1,499人分の個人情報が漏えいした可能性がある。クレジットカード情報・パスワード・車両情報は同システムで保持していない。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2608/28/2000000922/
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2136818.html
