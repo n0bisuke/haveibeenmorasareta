@@ -1,0 +1,40 @@
+.viz-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin: 24px 0 48px; }
+.viz-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px 24px; flex-wrap: wrap; }
+.viz-head h2 { margin: 0; font-size: 1.15rem; }
+.viz-sub { margin: 2px 0 0; font-size: 0.9rem; }
+.viz-controls { display: flex; gap: 8px; flex-wrap: wrap; }
+.seg { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.seg button {
+  font: inherit; font-size: 0.85rem; padding: 6px 12px; border: 0; background: var(--surface); color: var(--muted); cursor: pointer;
+}
+.seg button + button { border-left: 1px solid var(--border); }
+.seg button[aria-checked="true"] { background: var(--tag-bg); color: var(--text); font-weight: 700; }
+
+.chart { position: relative; margin-top: 16px; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart .grid line { stroke: var(--border); stroke-width: 1; }
+.chart .axis text { fill: var(--muted); font-size: 12px; }
+.chart .line { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.chart .area { fill: var(--accent); opacity: 0.1; }
+.chart .dot { fill: var(--accent); stroke: var(--surface); stroke-width: 2; }
+.chart .dot.zero { opacity: 0; }
+.chart .crosshair { stroke: var(--muted); stroke-width: 1; }
+.chart .hit { fill: transparent; cursor: crosshair; }
+.chart .hit:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+.tooltip {
+  position: absolute; pointer-events: none; z-index: 1; min-width: 180px; max-width: 280px;
+  background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 8px;
+  padding: 8px 10px; font-size: 0.8rem; box-shadow: 0 4px 16px rgb(0 0 0 / 0.12);
+}
+.tooltip .tt-month { color: var(--muted); }
+.tooltip .tt-value { font-size: 1rem; font-weight: 700; margin: 2px 0 4px; font-variant-numeric: tabular-nums; }
+.tooltip ul { margin: 0; padding-left: 1.1em; }
+.tooltip li { margin: 1px 0; }
+
+.viz-note { font-size: 0.8rem; margin: 8px 0 0; }
+.viz-table { margin-top: 12px; font-size: 0.85rem; }
+.viz-table summary { cursor: pointer; color: var(--muted); }
+.viz-table table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.viz-table th, .viz-table td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.viz-table td.num, .viz-table th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }

@@ -1,0 +1,22 @@
+organization: アスクル株式会社
+services:
+  - ASKUL
+  - LOHACO
+industry: 小売・EC
+country: JP
+date_occurred: 2025-10-19
+date_announced: 2025-10-19
+affected_count: 1340000
+count_note: 2025年12月12日の調査結果で約74万件の流出を確認。2026年7月31日に新たに約60万件を特定し、漏えい懸念は約134万件に拡大
+cause: ransomware
+data_types:
+  - 住所
+  - 氏名
+  - 電話番号
+  - メールアドレス
+summary: ランサムウェア攻撃によりデータの暗号化とシステム障害が発生し、法人向けECのASKULや個人向けのLOHACOで受注・出荷を停止。委託先のアカウントを使って侵入され、顧客情報を中心に個人情報が流出した。クレジットカード情報は含まれない。
+sources:
+  - title: ITmedia NEWS（2025年12月12日）
+    url: https://www.itmedia.co.jp/news/articles/2512/12/news106.html
+  - title: ITmedia NEWS（2026年7月31日）
+    url: https://www.itmedia.co.jp/news/article/2607/31/2000000327/

@@ -1,0 +1,25 @@
+organization: 学校法人東海大学
+services:
+  - 業務委託先 株式会社東海ソフト開発のサーバー
+industry: 人材・教育
+country: JP
+date_announced: 2025-11-14
+affected_count: 193118
+count_note: 延べ最大193,118人（2026年2月18日の第2報）。うち2020〜2025年度の学生76,314人
+cause: third_party
+data_types:
+  - 健康・医療情報
+  - 生年月日
+  - 住所
+  - パスワード（保管形式不明）
+  - 氏名
+  - 性別
+  - 電話番号
+  - メールアドレス
+  - 会員ID
+summary: ネットワークシステムの保守を委託していた東海ソフト開発のサーバーが不正アクセスを受け、ランサムウェアの被害に遭った。委託先がルールに反してデータを持ち帰っていた。学生・保護者・教職員の情報のほか、付属病院の健診情報なども漏えいした。クレジットカード情報は含まれない。
+sources:
+  - title: 東海大学 公式発表
+    url: https://www.u-tokai.ac.jp/news-notice/1358654/
+  - title: ITmedia NEWS（第2報）
+    url: https://www.itmedia.co.jp/news/articles/2602/18/news129.html
