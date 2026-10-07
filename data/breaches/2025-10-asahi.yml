@@ -1,0 +1,26 @@
+organization: アサヒグループホールディングス株式会社
+industry: 食品・飲料
+country: JP
+date_occurred: 2025-09-29
+date_announced: 2025-10-03
+affected_count: 1914000
+count_note: 漏えいまたはそのおそれ約191.4万件（2025年11月27日、うちお客様相談室への問い合わせ情報約152.5万件）。2026年2月18日の調査完了時点で漏えいを確認したのは約11.5万件。9月29日にシステム障害を公表し、10月3日の第2報で情報漏えいの可能性を公表
+cause: ransomware
+data_types:
+  - 生年月日
+  - 住所
+  - 氏名
+  - 性別
+  - 電話番号
+  - メールアドレス
+  - 問い合わせ内容
+  - 従業員情報
+  - 取引先情報
+summary: ランサムウェア攻撃により国内グループ会社の受注・出荷やコールセンター業務が停止。ランサムウェアグループQilinが犯行を主張した。お客様相談室への問い合わせ情報や従業員・取引先の情報が漏えいまたはそのおそれがある。クレジットカード情報は含まれない。
+sources:
+  - title: アサヒグループ 公式発表（第2報）
+    url: https://www.asahigroup-holdings.com/newsroom/detail/20251003-0104.html
+  - title: アサヒグループ 調査結果（2025年11月27日）
+    url: https://www.asahigroup-holdings.com/newsroom/detail/20251127-0104.html
+  - title: INTERNET Watch（2026年2月）
+    url: https://internet.watch.impress.co.jp/docs/news/2087007.html
