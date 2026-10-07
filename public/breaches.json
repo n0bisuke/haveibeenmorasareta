@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-10-07T13:26:17.000Z",
-  "count": 203,
+  "count": 206,
   "severity_levels": [
     {
       "id": "critical",
@@ -1782,6 +1782,43 @@
       "severity": "high"
     },
     {
+      "id": "2026-05-aeon-mall",
+      "organization": "イオンモール株式会社",
+      "group": "イオングループ",
+      "services": [
+        "ハウジング事業（直営店）"
+      ],
+      "industry": "不動産",
+      "country": "JP",
+      "date_occurred": "2026-04-05",
+      "date_announced": "2026-05-01",
+      "affected_count": null,
+      "count_note": "件数は公表されていない",
+      "cause": "third_party",
+      "root_cause": "利用していた不動産業者向けクラウド「いえらぶCLOUD」の脆弱性を発端とする不正アクセス",
+      "vendor": {
+        "name": "株式会社いえらぶGROUP"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "住所"
+      ],
+      "summary": "ハウジング事業の直営店が利用するクラウドサービスが不正アクセスを受け、データが不正に取得された。同サービスの利用企業では16社以上が影響を公表している。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/05/11/55227.html"
+        },
+        {
+          "title": "ScanNetSecurity（いえらぶGROUP）",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/05/11/55226.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-04-2rinkan",
       "organization": "株式会社２りんかんイエローハット",
       "group": "イエローハットグループ",
@@ -3305,6 +3342,41 @@
       "severity": null
     },
     {
+      "id": "2025-03-ntt-com",
+      "organization": "NTTコミュニケーションズ株式会社",
+      "group": "NTTグループ",
+      "services": [
+        "オーダ情報流通システム"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2025-02-05",
+      "date_announced": "2025-03-05",
+      "affected_count": 17891,
+      "count_note": "法人顧客17,891社分（個人顧客の情報は含まれない）",
+      "cause": "unauthorized_access",
+      "root_cause": "社内ネットワークのオーダ情報流通システム内の装置に不正アクセスされた",
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "住所",
+        "契約情報"
+      ],
+      "summary": "社内ネットワークで不審な通信を検知し、法人顧客の契約番号、担当者名、連絡先、サービス利用情報などを管理するシステムから情報が流出した可能性が判明した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/03/11/52470.html"
+        },
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2025/03/07/japanese-telco-giant-ntt-com-says-hackers-accessed-details-of-almost-18000-organizations"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2025-02-utsunomiya-central",
       "organization": "医療法人DIC 宇都宮セントラルクリニック",
       "industry": "医療",
@@ -3374,6 +3446,38 @@
         }
       ],
       "severity": null
+    },
+    {
+      "id": "2024-12-fujikura",
+      "organization": "株式会社フジクラ",
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2024-07-02",
+      "date_announced": "2024-12-25",
+      "affected_count": null,
+      "count_note": "件数は公表されていない（取引先関係者・従業員等）",
+      "cause": "third_party",
+      "root_cause": "ネットワーク保守を委託していたNTTコミュニケーションズが管理する保守・監視用VPN装置を経由して侵入された",
+      "vendor": {
+        "name": "NTTコミュニケーションズ株式会社",
+        "group": "NTTグループ"
+      },
+      "data_types": [
+        "従業員情報",
+        "取引先情報"
+      ],
+      "summary": "委託先が管理するVPN装置の管理不備を突かれて社内ネットワークに侵入され、佐倉事業所の複数のサーバーからデータが流出した痕跡が確認された。取引先関係者や従業員の個人情報が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/01/15/52160.html"
+        },
+        {
+          "title": "ScanNetSecurity（続報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/05/20/52879.html"
+        }
+      ],
+      "severity": "medium"
     },
     {
       "id": "2024-12-techful",
