@@ -1,0 +1,22 @@
+organization: 株式会社肥後銀行
+group: 九州フィナンシャルグループ
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 熊本県
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/35
+date_occurred: 2018-05-01
+date_announced: 2024-10-01
+affected_count: 1030
+count_note: 東京海上日動の出向者分で個人1,030件・法人4,335件（第一生命・損保ジャパンの出向者分は別）。公表日が未確認のため2024年10月を仮置き
+cause: insider
+root_cause: 東京海上日動・第一生命・損保ジャパンからの出向者が、銀行で扱った他社の保険契約情報を出向元に提供した
+data_types:
+  - 氏名
+  - 契約情報
+  - 取引先情報
+summary: 保険会社3社からの出向者が、肥後銀行で扱った保険契約の情報を出向元に提供していた。東京海上日動の出向者分では2018年5月から2024年7月にかけて、契約者名・保険会社名・証券番号・保険金額・保険料や法人取引先の情報が漏えいした。
+sources:
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/12050/

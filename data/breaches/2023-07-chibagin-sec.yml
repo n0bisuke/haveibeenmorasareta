@@ -1,0 +1,17 @@
+organization: ちばぎん証券株式会社
+group: 千葉銀行グループ
+industry: 金融・保険
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/35
+date_announced: 2023-07-12
+affected_count: null
+count_note: 件数は未確認
+cause: human_error
+root_cause: データ内容を精査せずに、共有対象外の情報を含む明細を送信した
+data_types:
+  - 契約情報
+summary: ファンドラップの媒介報酬明細書を千葉銀行と武蔵野銀行に送る際、情報共有の対象としていない顧客情報を含めて送信していた。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2023/07/20/49693.html
