@@ -10,7 +10,7 @@ const LEVEL = Object.fromEntries(LEVELS.map((l) => [l.id, l]));
 
 // 検索用テキストを事前に作っておく
 for (const b of breaches) {
-  b._text = [b.organization, b.group, b.root_cause, ...(b.services ?? []), ...(b.data_types ?? []), b.industry, b.summary, CAUSES[b.cause]]
+  b._text = [b.organization, b.group, b.root_cause, b.vendor?.name, b.vendor?.group, ...(b.services ?? []), ...(b.data_types ?? []), b.industry, b.summary, CAUSES[b.cause]]
     .filter(Boolean).join(' ').toLowerCase();
 }
 
@@ -59,6 +59,7 @@ function renderItem(b) {
     `公表 ${fmtDate(b.date_announced)}`,
     b.date_occurred && `発生 ${fmtDate(b.date_occurred)}`,
     CAUSES[b.cause],
+    b.vendor && `委託先 ${b.vendor.name.replace(/株式会社/g, '')}`,
     b.industry,
   ].filter(Boolean);
   el.querySelector('.meta').replaceChildren(...meta.map((t) => Object.assign(document.createElement('span'), { textContent: t })));

@@ -17,6 +17,9 @@ cause: unauthorized_access                # 必須: 下記から1つ
 #   phishing / malware / third_party / insider / human_error /
 #   lost_device / unknown / other
 root_cause: VPN機器の既知の脆弱性を悪用されて侵入   # 任意: 原因の詳細（悪用された脆弱性や侵入経路。80文字以内）
+vendor:                                   # 任意: 委託先経由の事案のみ
+  name: 株式会社サンプルシステムズ        #   委託先の正式名称
+  group: サンプルグループ                 #   委託先の企業グループ名（任意。例: 日立グループ）
 data_types:                               # 任意: data/data-types.yml にある名前のみ
   - 氏名
   - メールアドレス
