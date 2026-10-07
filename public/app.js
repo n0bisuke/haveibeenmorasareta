@@ -13,8 +13,8 @@ const LEVEL = Object.fromEntries(LEVELS.map((l) => [l.id, l]));
 
 // 検索用テキストを事前に作っておく
 for (const b of breaches) {
-  b._text = [b.organization, b.group, b.root_cause, b.vendor?.name, b.vendor?.group, ...(b.services ?? []), ...(b.data_types ?? []), b.industry, b.summary, CAUSES[b.cause], VULN_LABEL[b.vuln_target]]
-    .filter(Boolean).join(' ').toLowerCase();
+  b._text = [b.organization, b.group, b.root_cause, b.vendor?.name, b.vendor?.group, ...(b.services ?? []), ...(b.data_types ?? []), b.industry, b.summary, CAUSES[b.cause], VULN_LABEL[b.vuln_target],
+    b.status === 'investigating' && '調査中'].filter(Boolean).join(' ').toLowerCase();
 }
 
 function fillSelect(select, values, label = (v) => v) {
@@ -35,16 +35,32 @@ $('legend').replaceChildren(...LEVELS.map((l) => {
 // URL のクエリと状態を同期（共有用）
 const params = new URLSearchParams(location.search);
 for (const key of ['q', 'year', 'cause', 'sev', 'sort']) if (params.has(key)) $(key).value = params.get(key);
+// 「調査中」の事案だけに絞る（統計の「調査中」から切り替え）
+let onlyInvestigating = params.get('status') === 'investigating';
 
 function renderStats() {
   const total = breaches.reduce((n, b) => n + (b.affected_count ?? 0), 0);
+  const investigating = breaches.filter((b) => b.status === 'investigating').length;
   const stats = [['掲載件数', `${nf.format(breaches.length)} 件`], ['漏洩件数の合計', `${nf.format(total)}`]];
-  $('stats').replaceChildren(...stats.map(([k, v]) => {
+  if (investigating) stats.push(['調査中', `${nf.format(investigating)} 件`, true]);
+  $('stats').replaceChildren(...stats.map(([k, v, toggle]) => {
     const div = document.createElement('div');
     const dt = document.createElement('dt');
     const dd = document.createElement('dd');
     dt.textContent = k;
-    dd.textContent = v;
+    if (toggle) {
+      // クリックで調査中の事案だけを表示する
+      const btn = Object.assign(document.createElement('button'), { type: 'button', className: 'stat-toggle', textContent: v, title: '調査中の事案だけを表示' });
+      btn.setAttribute('aria-pressed', String(onlyInvestigating));
+      btn.addEventListener('click', () => {
+        onlyInvestigating = !onlyInvestigating;
+        btn.setAttribute('aria-pressed', String(onlyInvestigating));
+        render();
+      });
+      dd.append(btn);
+    } else {
+      dd.textContent = v;
+    }
     div.append(dt, dd);
     return div;
   }));
@@ -57,6 +73,22 @@ function renderItem(b) {
   el.id = b.id;
   if (b.severity) el.classList.add(`sev-${b.severity}`);
   el.querySelector('.org').textContent = b.organization;
+  if (b.status === 'investigating') {
+    el.classList.add('is-investigating');
+    el.querySelector('.status-badge').hidden = false;
+    const note = el.querySelector('.investigating');
+    note.hidden = false;
+    const link = note.querySelector('.investigating-link');
+    if (b.issue) {
+      link.href = b.issue;
+      link.textContent = `Issue #${b.issue.split('/').pop()}`;
+    } else {
+      link.replaceWith('Issue');
+    }
+  } else {
+    el.querySelector('.status-badge').remove();
+    el.querySelector('.investigating').remove();
+  }
   el.querySelector('.count').textContent = b.affected_count == null ? '件数不明' : `${nf.format(b.affected_count)} 件`;
   el.querySelector('.services').textContent = (b.services ?? []).join(' / ');
   const meta = [
@@ -118,12 +150,13 @@ function render() {
     .filter((b) => (!year || b.date_announced.startsWith(year))
       && (!cause || b.cause === cause)
       && (!sev || (b.severity && RANK[b.severity] <= RANK[sev]))
+      && (!onlyInvestigating || b.status === 'investigating')
       && words.every((w) => b._text.includes(w)))
     .sort(sort === 'count'
       ? (a, b) => (b.affected_count ?? -1) - (a.affected_count ?? -1)
       : (a, b) => b.date_announced.localeCompare(a.date_announced));
 
-  $('result-count').textContent = `${nf.format(items.length)} 件を表示`;
+  $('result-count').textContent = `${onlyInvestigating ? '調査中の事案のみ・' : ''}${nf.format(items.length)} 件を表示`;
   $('list').replaceChildren(...(items.length
     ? items.map(renderItem)
     : [Object.assign(document.createElement('li'), { className: 'empty', textContent: '該当するデータがありません' })]));
@@ -134,6 +167,7 @@ function render() {
   if (cause) next.set('cause', cause);
   if (sev) next.set('sev', sev);
   if (sort !== 'date') next.set('sort', sort);
+  if (onlyInvestigating) next.set('status', 'investigating');
   const qs = next.toString();
   history.replaceState(null, '', qs ? `?${qs}${location.hash}` : location.pathname + location.hash);
 }
