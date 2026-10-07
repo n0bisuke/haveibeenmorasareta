@@ -24,6 +24,7 @@ public/ranking/       … 企業・業界・原因・委託先別のランキン
 - **main へのマージ時**: `Deploy to GitHub Pages` ワークフローが `public/breaches.json` を生成し、`public/` を GitHub Pages に公開します
 - `public/breaches.json` はリポジトリにも含まれ、main へのマージ時に自動で再生成・コミットされます。
   サイト上の https://n0bisuke.github.io/haveibeenmorasareta/breaches.json から API 的に再利用できます
+- デプロイ時に `scripts/stamp.mjs` が JS・CSS・JSON の参照に `?v=コミットSHA` を付け、更新直後に古いファイルがキャッシュから読まれないようにします（公開物のみ）
 - デプロイ時に `scripts/contributors.mjs` が、各事案ファイルを追加した PR の作成者を GitHub API で調べて `public/contributors.json` を生成します（公開物にだけ含め、コミットはしません）。一覧のカード右下にその人のアイコンが表示されます
 
 ## 追加・修正したい場合
