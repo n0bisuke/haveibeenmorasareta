@@ -10,6 +10,8 @@ date_announced: 2026-05-28
 affected_count: 27163
 count_note: 予約者27,163件。別にパートナー事業者111社の情報も対象
 cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
 root_cause: 一部パートナーアカウントへの不正ログインと、悪用された認証情報による他パートナー情報へのアクセス
 data_types:
   - 生年月日

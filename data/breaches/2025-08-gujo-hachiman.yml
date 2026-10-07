@@ -9,6 +9,8 @@ count_note: 個人情報6,920件、うちクレジットカード情報2,972件
 cause: vulnerability
 root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
 vuln_target: ec_payment
+attack_methods:
+  - web_skimming
 data_types:
   - クレジットカード番号
 summary: 特産品通販サイトが不正アクセスを受け、決済アプリケーションの改ざんにより顧客のカード情報が漏えいし、一部が不正利用された可能性がある。岐阜県警からの連絡で発覚した。

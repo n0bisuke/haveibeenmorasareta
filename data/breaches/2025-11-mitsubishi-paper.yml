@@ -6,6 +6,8 @@ date_announced: 2025-11-28
 affected_count: 4209
 count_note: 役職員および退職者
 cause: unauthorized_access
+attack_methods:
+  - network_device
 root_cause: 第三者が社内PCとサーバーへ複数回にわたり不正にリモート接続
 data_types:
   - 氏名

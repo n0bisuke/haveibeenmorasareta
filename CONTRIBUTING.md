@@ -29,6 +29,7 @@
 | `count_note` | | 件数の補足（推計値・最大値など） |
 | `cause` | ✔ | 原因（下表から1つ） |
 | `vuln_target` | | `cause: vulnerability` のとき、脆弱性を悪用された箇所。[`data/vuln-targets.yml`](data/vuln-targets.yml) の ID（`ec_payment` / `web_app` / `mail_system` / `remote_access` / `business_tool`） |
+| `attack_methods` | | 公式発表や報道で判明している攻撃手法。[`data/attack-methods.yml`](data/attack-methods.yml) の ID（`sql_injection` / `web_skimming` / `phishing` / `support_scam` / `credential_stuffing` など。複数可）。分からなければ書かない |
 | `root_cause` | | 原因の詳細。悪用された脆弱性や侵入経路など、公表されている範囲で簡潔に（80文字以内） |
 | `vendor` | | 委託先経由の事案のみ。`name`（委託先の正式名称）と `group`（委託先の企業グループ名、任意）。例: 日立ソリューションズと日立ソリューションズ・クリエイトはどちらも `group: 日立グループ` にすると、ランキングでまとめて集計されます |
 | `data_types` | | 漏洩した情報の種類。[`data/data-types.yml`](data/data-types.yml) に登録された名前のみ使用可 |

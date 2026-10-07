@@ -8,6 +8,8 @@ date_announced: 2026-08-13
 affected_count: 230000
 count_note: 約23万件（漏えいのおそれ）
 cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
 data_types:
   - 生年月日
   - 住所

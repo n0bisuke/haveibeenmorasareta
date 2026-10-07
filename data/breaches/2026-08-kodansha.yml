@@ -6,6 +6,9 @@ date_announced: 2026-08-03
 affected_count: 3812
 count_note: 最大件数。うち553件のアドレスにフィッシングメールが送られた
 cause: phishing
+attack_methods:
+  - stolen_credentials
+  - phishing
 root_cause: 取引先を装ったフィッシングメールで社用メールの認証情報を窃取された
 data_types:
   - 氏名

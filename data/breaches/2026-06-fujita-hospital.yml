@@ -7,6 +7,8 @@ date_occurred: 2026-05-25
 date_announced: 2026-06-03
 affected_count: 1365
 cause: other
+attack_methods:
+  - support_scam
 root_cause: サポート詐欺で看護師の個人PCが遠隔操作された（院内規程に反し患者情報を保存していた）
 summary: 看護師の個人PCがサポート詐欺の被害に遭い、院内規程に反して保存していた患者の個人情報が外部に漏えいした可能性がある。
 sources:

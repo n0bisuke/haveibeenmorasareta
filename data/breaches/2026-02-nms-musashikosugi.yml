@@ -8,6 +8,8 @@ date_announced: 2026-02-13
 affected_count: 130000
 count_note: 当初は約1万人とし、2月27日の第5報で患者約13万人の漏えいが判明
 cause: ransomware
+attack_methods:
+  - network_device
 root_cause: 医療機器保守用のVPN装置から侵入され、ナースコール管理サーバーがランサムウェアに感染
 data_types:
   - 生年月日

@@ -9,6 +9,8 @@ date_announced: 2025-10-19
 affected_count: 1340000
 count_note: 2025年12月12日の調査結果で約74万件の流出を確認。2026年7月31日に新たに約60万件を特定し、漏えい懸念は約134万件に拡大
 cause: ransomware
+attack_methods:
+  - stolen_credentials
 root_cause: 委託先に付与していたアカウントを悪用されて侵入
 data_types:
   - 住所

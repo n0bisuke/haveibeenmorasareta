@@ -8,6 +8,9 @@ date_announced: 2024-08-28
 affected_count: 733820
 count_note: 国内の医療従事者73万3,820人（別に従業員1,390人分の氏名）
 cause: third_party
+attack_methods:
+  - stolen_credentials
+  - infostealer
 root_cause: 海外の業務委託コンサルタントの個人PCがマルウェアに感染し、保存していたアクセスIDを悪用された
 summary: 医薬品メーカーの日本法人のデータベースが不正アクセスを受け、医療従事者の個人情報が漏えいした。委託コンサルタントは社内のセキュリティポリシーに反してアクセスIDを個人PCに保存していた。
 sources:

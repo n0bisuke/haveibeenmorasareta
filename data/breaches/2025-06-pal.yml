@@ -8,6 +8,8 @@ date_announced: 2025-06-20
 affected_count: 194307
 count_note: 不正ログインに成功したアカウント数（試行は1,722,379件）
 cause: unauthorized_access
+attack_methods:
+  - credential_stuffing
 root_cause: 他サービスから流出したID・パスワードを使うリスト型攻撃
 summary: オンライン通販サイト「PAL CLOSET」でリスト型アカウントハッキングとみられる大量の不正ログインが発生した。
 sources:

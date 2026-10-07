@@ -6,6 +6,8 @@ date_announced: 2026-02-03
 affected_count: 207773
 count_note: 2026年5月21日の第6報で確定した件数。3月9日の第4報時点では最大約49.6万人分の可能性としていた
 cause: ransomware
+attack_methods:
+  - network_device
 root_cause: グループの通信機器の脆弱性を悪用されて侵入
 data_types:
   - 氏名

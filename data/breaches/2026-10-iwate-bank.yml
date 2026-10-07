@@ -8,6 +8,8 @@ date_announced: 2026-10-07
 affected_count: null
 count_note: 件数は報道時点で不明（大和証券の約11万人と重複する可能性あり）
 cause: third_party
+attack_methods:
+  - stolen_credentials
 root_cause: 提携先の大和証券が利用する委託先スカラコミュニケーションズのFAQシステムへの不正アクセス
 vendor:
   name: 株式会社スカラコミュニケーションズ

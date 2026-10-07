@@ -8,6 +8,8 @@ date_announced: 2023-11-27
 affected_count: 440027
 count_note: 推計値を含む。ユーザー302,569件、取引先86,105件、従業者等51,353件（2023年11月27日時点）
 cause: third_party
+attack_methods:
+  - infostealer
 root_cause: 委託先PCのマルウェア感染から、関係会社と共通の認証基盤を経由して侵入
 vendor:
   name: NAVER Cloud Corporation
