@@ -6,6 +6,7 @@ date_announced: 2026-03-18
 affected_count: 32940
 count_note: NHK職員15,199人、関連団体職員9,188人、外部委託先8,553人
 cause: human_error
+root_cause: 保守事業者の作業者がメールの宛先に登録者全員を誤って選択
 data_types:
   - メールアドレス
   - 従業員情報

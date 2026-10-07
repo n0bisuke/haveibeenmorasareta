@@ -7,6 +7,7 @@ date_announced: 2026-09-30
 affected_count: 13460
 count_note: 2,322企業・団体の従業員13,460名
 cause: misconfiguration
+root_cause: システム改修時のダウンロード機能の条件設定不備（把握後も未修正）
 data_types:
   - 生年月日
   - 氏名
