@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-10-07T12:45:45.000Z",
-  "count": 35,
+  "count": 39,
   "severity_levels": [
     {
       "id": "critical",
@@ -39,6 +39,7 @@
     "アレルギー情報": "high",
     "保存データ（写真・文書等）": "high",
     "メッセージ・チャット履歴": "high",
+    "クレジットカード情報（番号の一部・有効期限等）": "high",
     "購入履歴": "high",
     "利用履歴": "high",
     "パスワード（ハッシュ化・暗号化済み）": "high",
@@ -306,6 +307,38 @@
       "severity": "high"
     },
     {
+      "id": "2026-09-benefit-one",
+      "organization": "株式会社ベネフィット・ワン",
+      "services": [
+        "ベネワン・プラットフォーム（企業・団体担当者向けアンケート機能）"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-09-30",
+      "affected_count": 13460,
+      "count_note": "2,322企業・団体の従業員13,460名",
+      "cause": "misconfiguration",
+      "data_types": [
+        "生年月日",
+        "氏名",
+        "性別",
+        "従業員情報",
+        "会員ID"
+      ],
+      "summary": "アンケート結果のダウンロード機能で、本来アクセスできない他の企業・団体の従業員情報がデータに含まれる不具合があった。2025年6月のシステム改修で生じた条件設定の不備が原因で、同年10月に不具合を把握しながら解消が適切に行われていなかった。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com",
+          "url": "https://cybersecurity-jp.com/news/116906"
+        },
+        {
+          "title": "innovaTopia",
+          "url": "https://innovatopia.jp/cyber-security/cyber-security-news/118411/"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-09-seicomart",
       "organization": "株式会社セイコーマート",
       "services": [
@@ -366,6 +399,34 @@
         {
           "title": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56361.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2026-09-fines",
+      "organization": "株式会社ファインズ",
+      "services": [
+        "予約システム"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-09-22",
+      "date_announced": "2026-09-25",
+      "affected_count": 1536322,
+      "count_note": "漏えいのおそれがある件数",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "利用履歴",
+        "氏名",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "同社が提供する店舗向け予約システムで異常を検知し、第三者による不正アクセスを確認。予約者の氏名・電話番号・メールアドレスと、予約店舗・メニュー・日時などが漏えいしたおそれがある。",
+      "sources": [
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/fines-reservation-system-unauthorized-acess-data-leak/"
         }
       ],
       "severity": "high"
@@ -565,6 +626,42 @@
         }
       ],
       "severity": "high"
+    },
+    {
+      "id": "2026-08-estore-shopserve",
+      "organization": "株式会社Eストアー",
+      "services": [
+        "ショップサーブ"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-05-21",
+      "date_announced": "2026-08-01",
+      "affected_count": 8853839,
+      "count_note": "延べ最大8,853,839件（8月2日の第2報）。ショップサーブを利用する多数の店舗の購入者・会員の情報を含む",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "口座番号",
+        "住所",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "クレジットカード情報（番号の一部・有効期限等）",
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "会員ID"
+      ],
+      "summary": "ECサイト構築サービス「ショップサーブ」のサーバー上で第三者が不正なプログラムを実行し、2026年5月21日から8月1日にかけて購入者情報を外部へ送信していた。クレジットカードはカード名義・有効期限・番号の先頭6桁と下4桁が対象。店舗の管理画面・FTPの認証情報や振込先口座情報も流出した。",
+      "sources": [
+        {
+          "title": "ネットショップ担当者フォーラム",
+          "url": "https://netshop.impress.co.jp/n/2026/08/05/16526"
+        },
+        {
+          "title": "日本ネット経済新聞",
+          "url": "https://netkeizai.com/articles/detail/19430"
+        }
+      ],
+      "severity": "critical"
     },
     {
       "id": "2026-07-epark",
@@ -971,6 +1068,32 @@
         }
       ],
       "severity": "medium"
+    },
+    {
+      "id": "2025-12-tokushima-univ-hospital",
+      "organization": "徳島大学病院",
+      "industry": "医療",
+      "country": "JP",
+      "date_occurred": "2025-10-11",
+      "date_announced": "2025-12-22",
+      "affected_count": 18920,
+      "count_note": "検体検査を受けた患者16,945件、職員42名、看護キャリア支援システムの登録職員1,933名",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "パスワード（保管形式不明）",
+        "氏名",
+        "メールアドレス",
+        "従業員情報",
+        "会員ID"
+      ],
+      "summary": "2025年10月11日から22日にかけて、院内で管理するシステムに外部から不正アクセスがあり、検体検査（血液・尿など）を受けた患者や職員の情報が漏えいした可能性がある。看護キャリア支援システムではユーザーID・パスワードや研修履歴なども対象となった。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/01/14/54403.html"
+        }
+      ],
+      "severity": "high"
     },
     {
       "id": "2025-11-tokai-univ",
