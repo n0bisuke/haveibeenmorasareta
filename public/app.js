@@ -1,4 +1,4 @@
-import { CAUSES } from './labels.js';
+import { CAUSES, showUpdated } from './labels.js';
 
 const $ = (id) => document.getElementById(id);
 const nf = new Intl.NumberFormat('ja-JP');
@@ -49,6 +49,7 @@ function renderStats() {
     return div;
   }));
   $('generated').textContent = `最終更新: ${new Date(generated_at).toLocaleString('ja-JP')}`;
+  showUpdated(generated_at);
 }
 
 function renderItem(b) {
