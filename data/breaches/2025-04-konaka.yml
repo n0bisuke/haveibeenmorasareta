@@ -6,6 +6,8 @@ country: JP
 date_announced: 2025-04-24
 affected_count: 150491
 cause: unauthorized_access
+attack_methods:
+  - remote_code_execution
 root_cause: オーダー業態「DIFFERENCE」のサーバーで不正プログラムが実行された
 summary: オーダースーツ「DIFFERENCE」のサーバーに対する不正プログラムの行使により、保管していた顧客の個人情報の一部が漏えいした。
 sources:

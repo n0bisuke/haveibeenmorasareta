@@ -6,6 +6,8 @@ date_announced: 2024-12-16
 affected_count: 3327
 count_note: 学生・広報配布先・学内メールアドレス一覧など
 cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
 root_cause: 附属美術館職員のアカウントが乗っ取られ、PCに不正ログインされた
 summary: 附属美術館の職員アカウントが乗っ取られてPC1台に不正ログインがあり、保存されていた個人情報が漏えいした可能性を排除できないと発表した。
 sources:

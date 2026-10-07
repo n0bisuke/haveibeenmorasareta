@@ -10,6 +10,9 @@ count_note: 約24.6万件。各府省庁の職員等の情報で、一般の方�
 cause: vulnerability
 root_cause: VPN機器の既知の脆弱性を悪用されて侵入
 vuln_target: remote_access
+attack_methods:
+  - known_vulnerability
+  - network_device
 data_types:
   - 氏名
   - メールアドレス

@@ -10,6 +10,8 @@ count_note: 2025年2月12日の調査結果で確定
 cause: vulnerability
 root_cause: 特設サイトへのSQLインジェクション攻撃
 vuln_target: web_app
+attack_methods:
+  - sql_injection
 data_types:
   - メールアドレス
 summary: ふるさと納税特設サイトの脆弱性を突いた攻撃で寄附者の情報にアクセスされた。調査の結果、利用者41万3,867人分の個人情報が漏えいしたと結論づけた。

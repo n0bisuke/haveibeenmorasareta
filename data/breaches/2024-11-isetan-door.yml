@@ -8,6 +8,8 @@ date_occurred: 2024-11-24
 date_announced: 2024-11-26
 affected_count: 11073
 cause: unauthorized_access
+attack_methods:
+  - credential_stuffing
 root_cause: 外部で入手されたID・パスワードによるなりすましログイン（リスト型攻撃）
 summary: 食品宅配サービスでなりすましログインがあり、11,073件のアカウント情報が参照された可能性がある。
 sources:

@@ -11,6 +11,8 @@ date_announced: 2024-10-30
 affected_count: 5836
 count_note: 個人情報5,836人、うちクレジットカード情報4,257人
 cause: unauthorized_access
+attack_methods:
+  - web_skimming
 root_cause: サイトに悪性スクリプトが埋め込まれ、利用者が不正なサイトに誘導された
 data_types:
   - クレジットカード番号

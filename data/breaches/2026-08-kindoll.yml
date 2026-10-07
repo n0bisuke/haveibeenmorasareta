@@ -7,6 +7,9 @@ date_announced: 2026-08-28
 affected_count: 136464
 count_note: 最大件数
 cause: phishing
+attack_methods:
+  - stolen_credentials
+  - phishing
 root_cause: フィッシングメールでECプラットフォームのスタッフアカウントの認証情報が流出（二段階認証未設定）
 data_types:
   - 生年月日

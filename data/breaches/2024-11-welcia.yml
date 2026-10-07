@@ -11,6 +11,8 @@ date_announced: 2024-11-08
 affected_count: 40736
 count_note: 顧客39,805名、関係会社の従業員931名
 cause: phishing
+attack_methods:
+  - support_scam
 root_cause: 通販担当の従業員がサポート詐欺で遠隔操作ソフトをインストールさせられた
 summary: 公式通販サイトの担当従業員がサポート詐欺の被害に遭い、業務用PCが遠隔操作されて顧客と従業員の個人情報が漏えいした可能性がある。
 sources:

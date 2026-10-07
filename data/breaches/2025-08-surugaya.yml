@@ -10,6 +10,8 @@ count_note: 顧客29,932名、クレジットカード30,431件（2025年12月4�
 cause: vulnerability
 root_cause: 監視ツールの脆弱性を突かれ、決済ページのJavaScriptが改ざんされた
 vuln_target: ec_payment
+attack_methods:
+  - web_skimming
 data_types:
   - クレジットカード番号
   - クレジットカードのセキュリティコード

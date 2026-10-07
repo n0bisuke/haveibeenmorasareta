@@ -8,6 +8,9 @@ affected_count: 5193
 count_note: クレジットカード情報5,193名
 cause: vulnerability
 vuln_target: ec_payment
+attack_methods:
+  - xss
+  - web_skimming
 root_cause: クロスサイトスクリプティング（XSS）で決済処理用のアプリケーションを改ざんされた
 data_types:
   - クレジットカード番号

@@ -5,11 +5,12 @@ const $ = (id) => document.getElementById(id);
 const nf = new Intl.NumberFormat('ja-JP');
 const ORG_LIMIT = 10;
 
-const { breaches, generated_at, vuln_targets: VULN = [] } = await fetch('../breaches.json').then((r) => r.json());
+const { breaches, generated_at, vuln_targets: VULN = [], attack_methods: ATTACKS = [] } = await fetch('../breaches.json').then((r) => r.json());
 showUpdated(generated_at);
 
 // 「株式会社」などを除いた短い名前（グループ指定があればグループ名）
 const VULN_LABEL = Object.fromEntries(VULN.map((t) => [t.id, t.label]));
+const ATTACK = Object.fromEntries(ATTACKS.map((t) => [t.id, t]));
 
 const shortName = (s) => s.replace(/株式会社|学校法人/g, '').trim();
 const orgKey = (b) => b.group ?? shortName(b.organization);
@@ -43,6 +44,14 @@ const RANKINGS = [
     key: (b) => b.cause,
     label: (k) => CAUSES[k] ?? k,
     href: (g) => `../?cause=${encodeURIComponent(g.key)}`,
+  },
+  {
+    // 攻撃手法が判明している事案を、手法ごとに集計（1件に複数の手法があればそれぞれに数える）
+    id: 'attack',
+    key: (b) => b.attack_methods,
+    label: (k) => ATTACK[k]?.label ?? k,
+    sub: (g) => ATTACK[g.key]?.category ?? '',
+    href: (g) => `../?q=${encodeURIComponent(ATTACK[g.key]?.label ?? g.key)}`,
   },
   {
     // 「脆弱性の悪用」の事案を、悪用された箇所ごとに集計（未分類は「不明」）
