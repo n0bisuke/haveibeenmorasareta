@@ -1,0 +1,13 @@
+organization: 東京大学定量生命科学研究所
+industry: 人材・教育
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-12-19
+affected_count: 1323
+count_note: "まとめサイトの記載: 1,323件（一次情報で未確認）"
+cause: lost_device
+summary: 定量生命科学研究所は、所属教員が海外出張中に携行していた業務用ノートパソコンが盗難被害に遭い、記録されていた1,323人分の学生情報の漏えい可能性を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

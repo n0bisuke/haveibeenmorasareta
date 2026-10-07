@@ -1,0 +1,13 @@
+organization: 筑波大学
+industry: 人材・教育
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-06-03
+affected_count: 1248
+count_note: "まとめサイトの記載: 1,248件（一次情報で未確認）"
+cause: misconfiguration
+summary: 大教員による転送先メールアドレスの設定ミスに関連し、同大教員や学生等の関係者のメールアドレス1,248件が外部流出したと発表した（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

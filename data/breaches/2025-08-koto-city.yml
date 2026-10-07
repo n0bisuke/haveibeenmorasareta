@@ -1,0 +1,13 @@
+organization: 江東区
+industry: 行政
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-08-28
+affected_count: 1000
+count_note: "まとめサイトの記載: 約1,000件（一次情報で未確認）"
+cause: human_error
+summary: 江東区は、区立小学校にて電子メール誤送信が発生し、教員希望者約1,000名の情報が漏えいしたと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

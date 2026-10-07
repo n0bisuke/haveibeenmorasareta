@@ -1,0 +1,15 @@
+organization: 株式会社荒畑園
+industry: 小売・EC
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-03-25
+affected_count: 73684
+count_note: "まとめサイトの記載: 個人情報：7万3,684件 クレジットカード情報：1万3,094件（一次情報で未確認）"
+cause: unauthorized_access
+summary: 株式会社荒畑園は、同社が運営する「お茶の荒畑園公式サイト」が外部からの不正アクセスを受け、過去サイトを利用したユーザーの個人情報最大7万3,684件やクレジットカード情報1万3,094件について漏えいの懸念を公表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/04/08/52634.html
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

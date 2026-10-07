@@ -1,0 +1,13 @@
+organization: 特定非営利活動法人美原体育協会
+industry: 団体・その他
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-02-21
+affected_count: 14000
+count_note: "まとめサイトの記載: 約1万4,000件（一次情報で未確認）"
+cause: phishing
+summary: 2024年2月21日、職員が使用する業務用パソコンが外部から遠隔操作によるアクセスを受け、美原体育館利用者等の個人情報約1万4,000件が流出した可能性があると明らかにした。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

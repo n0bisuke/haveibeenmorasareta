@@ -1,0 +1,13 @@
+organization: 日本駐車場開発株式会社
+industry: 不動産
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-10-15
+affected_count: 5078
+count_note: "まとめサイトの記載: 5,078件（一次情報で未確認）"
+cause: lost_device
+summary: 日本駐車場開発株式会社は、同社に所属する従業員が駐車場契約者等の契約者情報合計5,078件が記録されたノートパソコンを紛失したと発表。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

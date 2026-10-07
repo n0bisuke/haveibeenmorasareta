@@ -1,0 +1,13 @@
+organization: 株式会社東急モールズデベロップメント
+industry: 不動産
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-01-10
+affected_count: 1082
+count_note: "まとめサイトの記載: 1,082件（一次情報で未確認）"
+cause: human_error
+summary: 株式会社東急モールズデベロップメントは、同社が一部業務を委託している事業者が電子メールを誤送信し、同社元従業員等を含む従業員の個人情報1,082件を外部漏洩したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

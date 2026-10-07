@@ -1,0 +1,13 @@
+organization: 近畿日本鉄道株式会社
+industry: 交通・モビリティ
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-03-06
+affected_count: 1671
+count_note: "まとめサイトの記載: 1,671名（一次情報で未確認）"
+cause: human_error
+summary: 2024年3月6日、ユーザー向け電子メールを誤送信し、1,671名のメールアドレスが流出したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

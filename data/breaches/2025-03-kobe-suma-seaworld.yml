@@ -1,0 +1,13 @@
+organization: 神戸須磨シーワールド
+industry: エンタメ・スポーツ
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-03-19
+affected_count: 12931
+count_note: "まとめサイトの記載: 1万2,931件（一次情報で未確認）"
+cause: other
+summary: 神戸須磨シーワールドは、神戸須磨シーワールドが運用する「KOBEこども割クーポン利用申請システム」においてシステムの一部に不備があり、サービス利用申込者の個人情報1万2,931件が外部閲覧可能な状態にあったと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

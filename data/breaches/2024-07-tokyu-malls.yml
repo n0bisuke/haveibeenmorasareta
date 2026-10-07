@@ -1,0 +1,13 @@
+organization: 株式会社東急モールズデベロップメント
+industry: 不動産
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-07-17
+affected_count: 1097
+count_note: "まとめサイトの記載: 1,097件（一次情報で未確認）"
+cause: human_error
+summary: 同社実施のイベント「キッズスタッフイベント（みなとみらい東急スクエア）」の運営委託事業者がイベント応募者に宛てたメール送信を誤り、個人情報が記述された電子メール合計1,097件をそれぞれ本来とは異なる宛先に送信したと発表した（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

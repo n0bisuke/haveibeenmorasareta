@@ -1,0 +1,13 @@
+organization: 秋田大学
+industry: 人材・教育
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-05-30
+affected_count: 1500
+count_note: "まとめサイトの記載: 約1,500件（一次情報で未確認）"
+cause: lost_device
+summary: 秋田大学は、同大医学部附属病院にて保管していた職員の針刺し・切創および皮膚・粘膜曝露に関連する合計約1,500件の個人情報を含んだUSBメモリが所在不明であることを明らかにした。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

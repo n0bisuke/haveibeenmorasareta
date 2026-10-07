@@ -1,0 +1,13 @@
+organization: 宇都宮大学
+industry: 人材・教育
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-02-13
+affected_count: 1212
+count_note: "まとめサイトの記載: 1,212件（一次情報で未確認）"
+cause: unauthorized_access
+summary: 国立大学法人の宇都宮大学は、2025年3月卒業・修了見込みの大学・大学院生に対し実施したMicrosoft Formsを利用のウェブ調査に関連する電子メールに誤送信があり、送信先89名の学生に回答者1,212名の個人情報を閲覧できるURLを添付していたと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

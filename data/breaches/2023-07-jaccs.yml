@@ -1,0 +1,15 @@
+organization: 株式会社ジャックス
+industry: 金融・保険
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2023-07-28
+affected_count: null
+count_note: 個人情報の漏えいの有無・件数は未確認
+cause: ransomware
+summary: サーバーが不正アクセスを受け、のちにランサムウェア攻撃で電子帳票サービスのデータに被害が出たと続報した。個人情報が漏えいしたかどうかは確認できていない。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2023/08/24/49858.html
+  - title: ScanNetSecurity（初報）
+    url: https://scan.netsecurity.ne.jp/article/2023/08/07/49780.html

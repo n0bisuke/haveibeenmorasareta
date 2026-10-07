@@ -1,0 +1,13 @@
+organization: 名古屋大学
+industry: 人材・教育
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-06-17
+affected_count: 1600
+count_note: "まとめサイトの記載: 約1,600件（一次情報で未確認）"
+cause: phishing
+summary: 名古屋大学は、同大人文学研究科に所属する教員がサポート詐欺に遭い、使用端末に記録されていた同大や大学院、付属学校に所属する学生ら約1,600名の個人情報について漏えいの懸念を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

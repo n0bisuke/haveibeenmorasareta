@@ -1,0 +1,13 @@
+organization: 公益財団法人浜松地域イノベーション推進機構
+industry: 団体・その他
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-01-26
+affected_count: 7600
+count_note: "まとめサイトの記載: 7,600件（一次情報で未確認）"
+cause: unauthorized_access
+summary: 公益財団法人浜松地域イノベーション推進機構は、財団のホームページが外部からの不正アクセスに伴う、複数の障害や個人情報7,600件の漏えいの可能性を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

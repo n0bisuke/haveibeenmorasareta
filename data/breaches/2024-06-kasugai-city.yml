@@ -1,0 +1,13 @@
+organization: 春日井市
+industry: 行政
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-06-14
+affected_count: 1133
+count_note: "まとめサイトの記載: 1,133件（一次情報で未確認）"
+cause: lost_device
+summary: 春日井市（愛知県）は個人情報を含む排水設備工事に関連した資料1,133件が記録されたデータディスクを紛失したと発表しました。いまだ発見には至らず、誤廃棄の可能性が高いとのこと（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

@@ -1,0 +1,13 @@
+organization: 株式会社みずほ銀行
+industry: 金融・保険
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-06-14
+affected_count: 5572
+count_note: "まとめサイトの記載: 5,572件（一次情報で未確認）"
+cause: human_error
+summary: 株式会社みずほ銀行は、同行職員が発信した電子メールについて誤送信があり、iDeCo申込者5,572名のメールアドレスや申込受付状況等のデータを誤送信したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

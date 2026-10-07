@@ -1,0 +1,13 @@
+organization: 日本マクドナルド株式会社
+industry: 飲食
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-03-19
+affected_count: 8989
+count_note: "まとめサイトの記載: 8,989件（一次情報で未確認）"
+cause: human_error
+summary: 日本マクドナルド株式会社は、同社が設定したメール配信システムの設定にミスがあり、8,989件のメールアドレスが漏えいしたと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information
