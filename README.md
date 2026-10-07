@@ -13,6 +13,7 @@ schema/               … データの JSON Schema
 scripts/validate.mjs  … データ検証（スキーマ・ファイル名・日付・出典の重複）
 scripts/build.mjs     … データから public/breaches.json を生成（リポジトリにもコミット）
 public/               … 公開ディレクトリ（依存なしの静的 HTML/CSS/JS）
+public/visualization/ … グラフなどの可視化ページ（/visualization/）
 ```
 
 - **PR 時**: `Validate` ワークフローがデータを検証し、問題があれば CI が失敗します
