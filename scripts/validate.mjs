@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
-import { ROOT, FILENAME_RE, loadBreaches } from './lib.mjs';
+import { ROOT, FILENAME_RE, loadBreaches, loadDataTypes } from './lib.mjs';
 
 const schema = JSON.parse(await readFile(path.join(ROOT, 'schema', 'breach.schema.json'), 'utf8'));
 const ajv = new Ajv({ allErrors: true });
@@ -11,6 +11,10 @@ const validate = ajv.compile(schema);
 
 const today = new Date().toISOString().slice(0, 10);
 const errors = [];
+const dataTypes = await loadDataTypes();
+for (const name of dataTypes.duplicates) {
+  errors.push(`data-types.yml: 「${name}」が複数のレベルに登録されています`);
+}
 const seenUrls = new Map();
 const entries = await loadBreaches();
 
@@ -42,6 +46,11 @@ for (const { file, data, error } of entries) {
   }
   if (data.date_occurred && data.date_occurred > data.date_announced) {
     fail('date_occurred が date_announced より後になっています');
+  }
+  for (const name of data.data_types ?? []) {
+    if (!dataTypes.types[name]) {
+      fail(`data_types の「${name}」は data/data-types.yml に登録されていません（表記を合わせるか、対応表に追加してください）`);
+    }
   }
   for (const { url } of data.sources) {
     if (seenUrls.has(url) && seenUrls.get(url) !== file) {
