@@ -1,0 +1,21 @@
+organization: 日本郵船株式会社
+group: 日本郵船グループ
+industry:
+  - 物流
+  - 交通・モビリティ
+country: JP
+date_occurred: 2026-03-24
+date_announced: 2026-04-09
+affected_count: null
+count_note: 件数は未公表（社員・退職者と取引先企業の社員）
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 従業員情報
+  - 取引先情報
+summary: グループで利用する船舶燃料調達システムが第三者の不正アクセスを受け、社員・退職者と取引先企業の社員の氏名・会社名・電話番号・メールアドレスなどが外部に持ち出された。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/05/01/55187.html

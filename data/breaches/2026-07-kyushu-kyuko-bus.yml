@@ -1,0 +1,17 @@
+organization: 九州急行バス株式会社
+group: 西鉄グループ
+industry: 交通・モビリティ
+country: JP
+date_occurred: 2026-06-24
+date_announced: 2026-07-06
+affected_count: 1
+cause: insider
+root_cause: 運転士が運行管理者を通じて予約情報を不正に閲覧・取得した
+data_types:
+  - 氏名
+  - 電話番号
+  - 利用履歴
+summary: 高速バスの運転士が運行管理者を通じて乗客の予約情報を不正に取得し、その乗客の電話番号に私的なショートメッセージを送っていた。乗客からの申し出で発覚した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/07/14/55697.html
