@@ -9,7 +9,7 @@ affected_count: 627
 count_note: 最大件数。2017年、2019〜2020年、2024〜2025年にHISでタイへ渡航した顧客
 cause: unauthorized_access
 data_types:
-  - 氏名（ローマ字）
+  - 氏名
   - 性別
   - 生年月日
   - パスポート番号

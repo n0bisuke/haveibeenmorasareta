@@ -1,6 +1,61 @@
 {
   "generated_at": "2026-10-07T12:30:29.000Z",
   "count": 19,
+  "severity_levels": [
+    {
+      "id": "critical",
+      "label": "危険",
+      "description": "なりすましや金銭被害に直結し、変更できない・変更が困難な情報"
+    },
+    {
+      "id": "high",
+      "label": "高",
+      "description": "他の情報と組み合わさると個人の特定やプライバシー侵害につながる情報"
+    },
+    {
+      "id": "medium",
+      "label": "中",
+      "description": "フィッシングや迷惑電話・メールに悪用されうる情報"
+    },
+    {
+      "id": "low",
+      "label": "低",
+      "description": "単体では悪用リスクが小さい情報"
+    }
+  ],
+  "data_types": {
+    "マイナンバー": "critical",
+    "パスポート番号": "critical",
+    "運転免許情報": "critical",
+    "本人確認書類画像": "critical",
+    "クレジットカード番号": "critical",
+    "クレジットカードのセキュリティコード": "critical",
+    "口座番号": "critical",
+    "パスワード（平文）": "critical",
+    "生年月日": "high",
+    "住所": "high",
+    "健康・医療情報": "high",
+    "アレルギー情報": "high",
+    "保存データ（写真・文書等）": "high",
+    "購入履歴": "high",
+    "利用履歴": "high",
+    "パスワード（ハッシュ化・暗号化済み）": "high",
+    "氏名": "medium",
+    "電話番号": "medium",
+    "メールアドレス": "medium",
+    "性別": "medium",
+    "郵便番号": "medium",
+    "契約情報": "medium",
+    "問い合わせ内容": "medium",
+    "従業員情報": "medium",
+    "取引先情報": "medium",
+    "パスポート有効期限": "medium",
+    "会員ID": "low",
+    "アカウント名": "low",
+    "連携サービスID": "low",
+    "入会・退会年月日": "low",
+    "画像メタデータ": "low"
+  },
   "breaches": [
     {
       "id": "2026-10-his",
@@ -16,7 +71,7 @@
       "count_note": "最大件数。2017年、2019〜2020年、2024〜2025年にHISでタイへ渡航した顧客",
       "cause": "unauthorized_access",
       "data_types": [
-        "氏名（ローマ字）",
+        "氏名",
         "性別",
         "生年月日",
         "パスポート番号",
@@ -33,7 +88,8 @@
           "title": "ITmedia NEWS",
           "url": "https://www.itmedia.co.jp/news/article/2610/07/2000002090/"
         }
-      ]
+      ],
+      "severity": "critical"
     },
     {
       "id": "2026-10-citizen",
@@ -61,7 +117,8 @@
           "title": "ITmedia NEWS",
           "url": "https://www.itmedia.co.jp/news/article/2610/06/2000002067/"
         }
-      ]
+      ],
+      "severity": "high"
     },
     {
       "id": "2026-10-mrmax",
@@ -93,7 +150,8 @@
           "title": "ネットショップ担当者フォーラム",
           "url": "https://netshop.impress.co.jp/n/2026/10/07/16832"
         }
-      ]
+      ],
+      "severity": "medium"
     },
     {
       "id": "2026-10-rakuten-drive",
@@ -111,7 +169,7 @@
       "data_types": [
         "保存データ（写真・文書等）",
         "アカウント名",
-        "パスワード（暗号化済み）"
+        "パスワード（ハッシュ化・暗号化済み）"
       ],
       "summary": "管理用アカウントの認証情報が不正取得され、一部システムに不正アクセスされた。2026年1月29日から9月17日にかけて、15,382アカウントの保存データが取得・閲覧された。",
       "sources": [
@@ -123,7 +181,8 @@
           "title": "ITmedia Mobile",
           "url": "https://www.itmedia.co.jp/mobile/articles/2610/06/news071.html"
         }
-      ]
+      ],
+      "severity": "high"
     },
     {
       "id": "2026-10-daiwa-securities",
@@ -151,7 +210,8 @@
           "title": "週刊アスキー",
           "url": "https://weekly.ascii.jp/elem/000/004/439/4439964/"
         }
-      ]
+      ],
+      "severity": "critical"
     },
     {
       "id": "2026-10-yakiniku-king",
@@ -167,7 +227,7 @@
       "count_note": "アプリ会員のほぼ全員に相当",
       "cause": "unauthorized_access",
       "data_types": [
-        "会員番号",
+        "会員ID",
         "氏名",
         "メールアドレス",
         "電話番号"
@@ -182,7 +242,8 @@
           "title": "ITmedia NEWS",
           "url": "https://www.itmedia.co.jp/news/article/2610/05/2000002011/"
         }
-      ]
+      ],
+      "severity": "medium"
     },
     {
       "id": "2026-10-daiichi-life",
@@ -206,7 +267,8 @@
           "title": "セキュリティ対策Lab",
           "url": "https://rocket-boys.co.jp/security-measures-lab/daiichi-life-employee-data-breach-120k-20261002/"
         }
-      ]
+      ],
+      "severity": "high"
     },
     {
       "id": "2026-10-sagawa",
@@ -235,7 +297,8 @@
           "title": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC020KD0S6A001C2000000/"
         }
-      ]
+      ],
+      "severity": "high"
     },
     {
       "id": "2026-09-seicomart",
@@ -270,7 +333,8 @@
           "title": "ITmedia NEWS",
           "url": "https://www.itmedia.co.jp/news/article/2609/29/2000001830/"
         }
-      ]
+      ],
+      "severity": "high"
     },
     {
       "id": "2026-09-yamato",
@@ -298,7 +362,8 @@
           "title": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56361.html"
         }
-      ]
+      ],
+      "severity": "high"
     },
     {
       "id": "2026-09-timescar",
@@ -322,7 +387,7 @@
         "メールアドレス",
         "運転免許情報",
         "本人確認書類画像",
-        "パスワード（復元不可能な形式）",
+        "パスワード（ハッシュ化・暗号化済み）",
         "連携サービスID"
       ],
       "summary": "タイムズカーWebシステムへの外部からの不正アクセスを2026年9月25日に検知し、翌26日までに経路を遮断。会員・退会者・入会未完了者の約660万アカウントの情報が漏えいした。クレジットカード情報は漏えいしていない。",
@@ -339,7 +404,8 @@
           "title": "ITmedia NEWS",
           "url": "https://www.itmedia.co.jp/news/article/2609/28/2000001808/"
         }
-      ]
+      ],
+      "severity": "critical"
     },
     {
       "id": "2026-09-gyazo",
@@ -356,7 +422,7 @@
       "cause": "vulnerability",
       "data_types": [
         "メールアドレス",
-        "アカウント情報",
+        "アカウント名",
         "画像メタデータ"
       ],
       "summary": "画像アップロードサーバーの脆弱性を悪用され、システム上で任意のコマンドを実行された。ユーザーに関するデータ約2,362万件と画像のメタデータ約4.9億件が外部に流出した。",
@@ -365,7 +431,8 @@
           "title": "INTERNET Watch（第二報）",
           "url": "https://internet.watch.impress.co.jp/docs/news/2143465.html"
         }
-      ]
+      ],
+      "severity": "medium"
     },
     {
       "id": "2026-09-digital-agency-gss",
@@ -393,7 +460,8 @@
           "title": "ITmedia NEWS",
           "url": "https://www.itmedia.co.jp/news/article/2609/11/2000001406/"
         }
-      ]
+      ],
+      "severity": "high"
     },
     {
       "id": "2026-08-yellowhat",
@@ -412,7 +480,7 @@
         "氏名",
         "電話番号",
         "メールアドレス",
-        "会員番号"
+        "会員ID"
       ],
       "summary": "WEB作業予約システムが不正なプログラムによる攻撃を受け、最大180万1,499人分の個人情報が漏えいした可能性がある。クレジットカード情報・パスワード・車両情報は同システムで保持していない。",
       "sources": [
@@ -424,7 +492,8 @@
           "title": "INTERNET Watch",
           "url": "https://internet.watch.impress.co.jp/docs/news/2136818.html"
         }
-      ]
+      ],
+      "severity": "medium"
     },
     {
       "id": "2026-08-rakuten-books",
@@ -455,7 +524,8 @@
           "title": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/08/25/56015.html"
         }
-      ]
+      ],
+      "severity": "high"
     },
     {
       "id": "2026-08-sakura-internet",
@@ -488,7 +558,8 @@
           "title": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUF1962O0Z10C26A8000000/"
         }
-      ]
+      ],
+      "severity": "high"
     },
     {
       "id": "2026-07-murauchi",
@@ -518,7 +589,8 @@
           "title": "INTERNET Watch",
           "url": "https://internet.watch.impress.co.jp/docs/news/2141530.html"
         }
-      ]
+      ],
+      "severity": "high"
     },
     {
       "id": "2024-08-kadokawa",
@@ -551,7 +623,8 @@
           "title": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2024/08/14/51468.html"
         }
-      ]
+      ],
+      "severity": "high"
     },
     {
       "id": "2023-11-lycorp",
@@ -579,7 +652,8 @@
           "title": "LINEヤフー 公式発表（2023年11月27日）",
           "url": "https://www.lycorp.co.jp/ja/news/announcements/001002/"
         }
-      ]
+      ],
+      "severity": "high"
     }
   ]
 }

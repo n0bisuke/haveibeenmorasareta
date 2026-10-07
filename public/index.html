@@ -21,12 +21,14 @@
       <input type="search" id="q" placeholder="企業名・サービス名・漏洩した情報で検索" aria-label="検索">
       <select id="year" aria-label="公表年"><option value="">すべての年</option></select>
       <select id="cause" aria-label="原因"><option value="">すべての原因</option></select>
+      <select id="sev" aria-label="重要度"><option value="">すべての重要度</option></select>
       <select id="sort" aria-label="並び順">
         <option value="date">公表日が新しい順</option>
         <option value="count">件数が多い順</option>
       </select>
     </section>
 
+    <ul class="legend" id="legend" aria-label="漏洩した情報の重要度"></ul>
     <p class="result-count" id="result-count"></p>
     <ol class="list" id="list"></ol>
   </main>

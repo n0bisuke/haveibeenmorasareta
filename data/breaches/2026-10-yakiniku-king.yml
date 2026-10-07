@@ -9,7 +9,7 @@ affected_count: 10788963
 count_note: アプリ会員のほぼ全員に相当
 cause: unauthorized_access
 data_types:
-  - 会員番号
+  - 会員ID
   - 氏名
   - メールアドレス
   - 電話番号
