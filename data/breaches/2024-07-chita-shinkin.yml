@@ -1,0 +1,19 @@
+organization: 知多信用金庫
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 愛知県
+date_occurred: 2024-05-26
+date_announced: 2024-07-04
+affected_count: 2702
+count_note: 2,702件（7月4日の公表時は2,713件。最終報で修正）
+cause: third_party
+root_cause: 東海信金ビジネスの再委託先でハガキ帳票を作成していたイセトーがランサムウェアに感染
+vendor:
+  name: 株式会社イセトー（東海信金ビジネスの再委託先）
+data_types:
+  - 氏名
+summary: 東海4県の信用金庫が出資する東海信金ビジネスの再委託先イセトーがランサムウェアに感染し、ダイレクトメール作成時のログデータに含まれる顧客の氏名が漏えいした。金融機関コードと支店コードも対象となりうる。東海4県の26信用金庫で延べ約7万7千件が漏えいした。
+sources:
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/chitashin-info-leak-ransomware-cyberattacks-iseto/

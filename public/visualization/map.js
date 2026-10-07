@@ -1,4 +1,4 @@
-// 都道府県別の地図（タイルグリッド）。民間企業以外（自治体・大学・病院など）の事案を所在地で集計する
+// 都道府県別の地図（タイルグリッド）。民間企業以外（自治体・大学・病院など）と地域の金融機関の事案を所在地で集計する
 const $ = (id) => document.getElementById(id);
 const nf = new Intl.NumberFormat('ja-JP');
 
@@ -59,7 +59,8 @@ function render() {
   const byPref = aggregate();
   const total = [...byPref.values()].reduce((n, l) => n + l.length, 0);
   const prefCount = [...byPref.values()].filter((l) => l.length).length;
-  $('map-sub').textContent = `自治体・国の機関・大学・病院・団体など、民間企業以外の組織 ${total}件（${prefCount}都道府県）`;
+  const scope = state.type === 'all' ? '自治体・国の機関・大学・病院・団体・地域の金融機関' : ORG_LABEL[state.type];
+  $('map-sub').textContent = `${scope} ${total}件（${prefCount}都道府県）`;
 
   const grid = $('map-grid');
   grid.replaceChildren(...PREFS.map((p) => {

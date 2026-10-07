@@ -2,6 +2,8 @@ organization: 株式会社八十二銀行
 group: 八十二グループ
 industry: 金融・保険
 country: JP
+org_type: regional_bank
+prefecture: 長野県
 date_announced: 2024-10-16
 affected_count: 106000
 count_note: 八十二銀行の顧客と長野銀行のカードローン契約者 延べ約10万6,000件

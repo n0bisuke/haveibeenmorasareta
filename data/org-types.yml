@@ -1,5 +1,5 @@
 # 組織の種類（org_type）。民間企業以外の組織に指定し、prefecture（都道府県）とあわせて地域別マップに表示します。
-# 民間企業には指定しません。
+# 民間企業には原則として指定しません（例外: 地域に根ざした金融機関の regional_bank）。
 local_gov:
   label: 自治体
 national_gov:
@@ -12,3 +12,5 @@ hospital:
   label: 病院
 public_org:
   label: 公益法人・団体
+regional_bank:
+  label: 地方銀行・信用金庫など
