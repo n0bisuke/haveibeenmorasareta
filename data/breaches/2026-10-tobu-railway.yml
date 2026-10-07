@@ -1,0 +1,18 @@
+organization: 東武鉄道株式会社
+industry: 交通・モビリティ
+country: JP
+date_occurred: 2026-10-02
+date_announced: 2026-10-07
+affected_count: null
+count_note: 件数は公表時点で未確認
+cause: third_party
+root_cause: 委託先のFAQシステム「i-ask」管理サイトへの不正ログインと不正プログラムの設置
+vendor:
+  name: 株式会社スカラコミュニケーションズ
+  group: スカラグループ
+summary: 問い合わせ対応に利用していたスカラコミュニケーションズのFAQシステム「i-ask」への不正アクセスで、寄せられた問い合わせ情報が漏えいした可能性があると公表した。i-ask全体では利用企業最大5社・延べ最大713,126件が対象とされる。
+sources:
+  - title: 日経クロステック
+    url: https://xtech.nikkei.com/atcl/nxt/news/24/03417/
+  - title: スカラコミュニケーションズ 公式発表
+    url: https://scala-com.jp/news/2026/10-1/

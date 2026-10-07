@@ -30,6 +30,12 @@ const RANKINGS = [
     href: (g) => `../?q=${encodeURIComponent(g.key)}`,
   },
   {
+    id: 'vendor',
+    key: (b) => b.vendor && (b.vendor.group ?? shortName(b.vendor.name)),
+    sub: (g) => (g.items[0].vendor.group ? [...new Set(g.items.map((b) => shortName(b.vendor.name)))].join('・') : ''),
+    href: (g) => `../?q=${encodeURIComponent(g.key)}`,
+  },
+  {
     id: 'cause',
     key: (b) => b.cause,
     label: (k) => CAUSES[k] ?? k,

@@ -8,6 +8,8 @@ affected_count: 193118
 count_note: 延べ最大193,118人（2026年2月18日の第2報）。うち2020〜2025年度の学生76,314人
 cause: third_party
 root_cause: 委託先がルールに反して持ち帰ったデータを保管するサーバーがランサムウェア被害
+vendor:
+  name: 株式会社東海ソフト開発
 data_types:
   - 健康・医療情報
   - 生年月日
