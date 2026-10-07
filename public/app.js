@@ -1,17 +1,4 @@
-const CAUSES = {
-  ransomware: 'ランサムウェア',
-  unauthorized_access: '不正アクセス',
-  vulnerability: '脆弱性の悪用',
-  misconfiguration: '設定ミス',
-  phishing: 'フィッシング',
-  malware: 'マルウェア感染',
-  third_party: '委託先・関連会社経由',
-  insider: '内部不正',
-  human_error: '誤送信・人的ミス',
-  lost_device: '紛失・盗難',
-  unknown: '不明',
-  other: 'その他',
-};
+import { CAUSES } from './labels.js';
 
 const $ = (id) => document.getElementById(id);
 const nf = new Intl.NumberFormat('ja-JP');
@@ -23,7 +10,7 @@ const LEVEL = Object.fromEntries(LEVELS.map((l) => [l.id, l]));
 
 // 検索用テキストを事前に作っておく
 for (const b of breaches) {
-  b._text = [b.organization, ...(b.services ?? []), ...(b.data_types ?? []), b.industry, b.summary, CAUSES[b.cause]]
+  b._text = [b.organization, b.group, ...(b.services ?? []), ...(b.data_types ?? []), b.industry, b.summary, CAUSES[b.cause]]
     .filter(Boolean).join(' ').toLowerCase();
 }
 
