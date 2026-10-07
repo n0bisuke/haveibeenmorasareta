@@ -2,7 +2,9 @@ organization: 東京ガス株式会社
 group: 東京ガスグループ
 services:
   - 東京ガスエンジニアリングソリューションズ（TGES）
-industry: エネルギー・インフラ
+industry:
+  - エネルギー・インフラ
+  - 行政
 country: JP
 date_occurred: 2024-07-09
 date_announced: 2024-07-17

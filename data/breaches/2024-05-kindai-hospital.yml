@@ -1,5 +1,7 @@
 organization: 近畿大学病院
-industry: 医療
+industry:
+  - 医療
+  - 人材・教育
 country: JP
 date_occurred: 2024-02-29
 date_announced: 2024-05-13

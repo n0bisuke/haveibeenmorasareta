@@ -32,8 +32,11 @@
       "description": "影響を受けたサービス・サイト名"
     },
     "industry": {
-      "type": "string",
-      "description": "業種。data/industries.yml にある名前のみ使用可"
+      "oneOf": [
+        { "type": "string", "minLength": 1 },
+        { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1, "uniqueItems": true }
+      ],
+      "description": "業種。data/industries.yml にある名前のみ使用可。当事者の業種を先頭に、影響を受けた側の業種（委託元の自治体・病院など）も複数指定できる"
     },
     "country": {
       "type": "string",

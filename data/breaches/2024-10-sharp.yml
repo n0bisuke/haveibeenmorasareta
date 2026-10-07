@@ -2,7 +2,9 @@ organization: シャープ株式会社
 services:
   - COCORO STORE
   - ヘルシオデリ
-industry: 製造
+industry:
+  - 製造
+  - 小売・EC
 country: JP
 date_occurred: 2024-07-19
 date_announced: 2024-10-30

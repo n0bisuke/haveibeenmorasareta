@@ -1,5 +1,7 @@
 organization: 株式会社イーエックスディー
-industry: 団体・その他
+industry:
+  - エンタメ・スポーツ
+  - 行政
 country: JP
 date_occurred: 2024-11-28
 date_announced: 2024-12-03

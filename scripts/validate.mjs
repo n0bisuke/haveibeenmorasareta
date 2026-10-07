@@ -49,8 +49,10 @@ for (const { file, data, error } of entries) {
   if (data.date_occurred && data.date_occurred > data.date_announced) {
     fail('date_occurred が date_announced より後になっています');
   }
-  if (data.industry && !industries.has(data.industry)) {
-    fail(`industry の「${data.industry}」は data/industries.yml に登録されていません（既存の業種に合わせるか、一覧に追加してください）`);
+  for (const name of [data.industry ?? []].flat()) {
+    if (!industries.has(name)) {
+      fail(`industry の「${name}」は data/industries.yml に登録されていません（既存の業種に合わせるか、一覧に追加してください）`);
+    }
   }
   if (data.status === 'investigating' && !data.issue) {
     fail('status: investigating の事案には、情報募集用の issue（GitHub Issue の URL）を指定してください');

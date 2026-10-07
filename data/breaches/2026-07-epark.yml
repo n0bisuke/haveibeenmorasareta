@@ -1,7 +1,9 @@
 organization: 株式会社EPARKリラク＆エステ
 services:
   - PeakManager（予約・顧客管理プラットフォーム）
-industry: 美容・健康
+industry:
+  - 美容・健康
+  - IT・通信
 country: JP
 date_occurred: 2026-07-27
 date_announced: 2026-07-31
