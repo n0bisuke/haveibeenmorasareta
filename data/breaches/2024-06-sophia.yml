@@ -1,0 +1,16 @@
+organization: 上智大学
+industry: 人材・教育
+country: JP
+date_occurred: 2024-05-16
+date_announced: 2024-06-26
+affected_count: 13949
+count_note: 全正規生
+cause: human_error
+root_cause: 参加者リスト作成時に全学生のマスターデータのシートを削除し忘れて送信
+data_types:
+  - 生年月日
+  - 氏名
+summary: 短期留学プログラムの参加者リストを海外の協定校3校に送る際、全正規生の氏名・生年月日・国籍などを含むシートを削除せずに送ってしまった。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/07/10/51281.html

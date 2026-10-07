@@ -1,0 +1,17 @@
+organization: 菅公学生服株式会社
+services:
+  - カンコーオンラインショップ原宿セレクトスクエア
+industry: 小売・EC
+country: JP
+date_announced: 2024-03-04
+affected_count: 3827
+count_note: クレジットカード情報3,827名
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: 学生服メーカーのオンラインショップの決済システムが不正アクセスで改ざんされ、利用者のカード情報が流出した可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/03/11/50706.html

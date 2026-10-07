@@ -1,0 +1,12 @@
+organization: 株式会社イーエックスディー
+industry: 団体・その他
+country: JP
+date_occurred: 2024-11-28
+date_announced: 2024-12-03
+affected_count: 5000
+count_note: 福島県の委託事業（ふくしまフェスタ等）の参加者・来場者 約5,000件
+cause: ransomware
+summary: イベント運営会社のサーバーがランサムウェアに感染した。福島県や郡山市の事業の再々委託先で、イベント参加者などの個人情報が漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/12/23/52076.html

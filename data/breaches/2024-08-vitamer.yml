@@ -1,0 +1,20 @@
+organization: 株式会社エーデルワイス
+services:
+  - ヴィタメール オンラインショップ
+  - アンテノール オンラインショップ
+industry: 食品
+country: JP
+date_announced: 2024-08-28
+affected_count: 45355
+count_note: ヴィタメールでカード情報45,355名（アンテノールでも別に7,018名）
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: 洋菓子の通販サイトが改ざんされ、購入者のクレジットカード情報が漏えいし、一部が不正利用された可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/09/05/51588.html
+  - title: ScanNetSecurity（アンテノール）
+    url: https://scan.netsecurity.ne.jp/article/2024/09/05/51587.html

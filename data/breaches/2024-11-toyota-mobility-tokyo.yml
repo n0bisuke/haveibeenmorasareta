@@ -1,0 +1,18 @@
+organization: トヨタモビリティ東京株式会社
+group: トヨタグループ
+industry: 交通・モビリティ
+country: JP
+date_announced: 2024-11-08
+affected_count: 9489
+count_note: 従業員・退職者・入社希望の学生等
+cause: lost_device
+root_cause: 従業員が個人情報をダウンロードした私物のUSBメモリを紛失
+data_types:
+  - 住所
+  - 氏名
+  - 電話番号
+  - 従業員情報
+summary: 従業員が社内の個人情報を私物のUSBメモリに保存して紛失した。後日届け出があったが、その間の漏えいを否定できないとして個人情報保護委員会に報告した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/11/20/51936.html

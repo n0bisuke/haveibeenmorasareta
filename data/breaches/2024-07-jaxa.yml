@@ -1,0 +1,16 @@
+organization: 国立研究開発法人宇宙航空研究開発機構（JAXA）
+industry: 行政
+country: JP
+date_occurred: 2023-10-01
+date_announced: 2024-07-05
+affected_count: 5000
+count_note: 役職員等の個人情報 約5,000件（報道ベース）
+cause: unauthorized_access
+root_cause: 業務用イントラネットのサーバーに侵入され、未知のマルウェアで検知を困難にされた
+data_types:
+  - 従業員情報
+  - 取引先情報
+summary: 2023年10月に外部からの通報で業務用イントラネットへの不正アクセスを認知し、役職員の個人情報や外部機関との文書の一部が漏えいしたことを確認した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/07/18/51325.html

@@ -1,0 +1,15 @@
+organization: 株式会社BANDAI SPIRITS
+group: バンダイナムコグループ
+services:
+  - プレミアムバンダイ
+industry: 小売・EC
+country: JP
+date_announced: 2024-06-11
+affected_count: 1951
+count_note: 個人情報1,951件、別にメールアドレス233件
+cause: third_party
+root_cause: 委託先の従業員が業務に使った私物の外付けHDDを、データを消さずに廃棄した
+summary: 業務委託先の従業員が私物HDDを業務に使い、データを削除せずに廃棄していた。HDDを入手した人からの連絡で、通販サイトの会員情報が含まれていることが分かった。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/06/19/51167.html

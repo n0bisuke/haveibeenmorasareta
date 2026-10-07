@@ -1,0 +1,13 @@
+organization: 株式会社巴商会
+industry: 製造
+country: JP
+date_occurred: 2024-05-01
+date_announced: 2024-08-03
+affected_count: 2331
+count_note: 従業員・退職者・グループ会社の顧客等
+cause: ransomware
+root_cause: ファイアウォールからリモートデスクトップ接続でサーバーに侵入された
+summary: 産業ガス会社のサーバーがランサムウェア攻撃を受け、従業員や退職者、グループ会社の顧客などの個人情報が漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/08/15/51475.html

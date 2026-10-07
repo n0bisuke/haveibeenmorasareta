@@ -1,0 +1,17 @@
+organization: 株式会社ファインエイド
+services:
+  - 健康いきいきライフスタイル
+industry: 美容・健康
+country: JP
+date_announced: 2024-01-31
+affected_count: 5193
+count_note: クレジットカード情報5,193名
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: クロスサイトスクリプティング（XSS）で決済処理用のアプリケーションを改ざんされた
+data_types:
+  - クレジットカード番号
+summary: 健康食品の通販サイトがXSSの手法で攻撃され、カード決済時に処理される個人情報を取得するよう改ざんされた。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/02/07/50564.html

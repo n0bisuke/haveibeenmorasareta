@@ -1,0 +1,19 @@
+organization: トヨタモビリティサービス株式会社
+group: トヨタグループ
+services:
+  - Booking Car
+industry: 交通・モビリティ
+country: JP
+date_occurred: 2024-02-02
+date_announced: 2024-02-16
+affected_count: 25000
+count_note: 利用企業・自治体の従業員・職員 約2万5,000名
+cause: misconfiguration
+root_cause: システム開発以前から使われていたAWSのアクセスキーの不適切な取り扱い
+data_types:
+  - メールアドレス
+  - 会員ID
+summary: 社用車管理クラウドサービスのデータ保管サーバー（AWS S3）に古いアクセスキーで不正侵入され、利用者のメールアドレスと顧客識別番号が漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/02/27/50640.html

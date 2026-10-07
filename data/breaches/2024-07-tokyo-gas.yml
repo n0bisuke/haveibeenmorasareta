@@ -1,0 +1,16 @@
+organization: 東京ガス株式会社
+group: 東京ガスグループ
+services:
+  - 東京ガスエンジニアリングソリューションズ（TGES）
+industry: エネルギー・インフラ
+country: JP
+date_occurred: 2024-07-09
+date_announced: 2024-07-17
+affected_count: 4160000
+count_note: 約416万人分（東京ガスの顧客と、TGESの委託元の顧客情報を含む）
+cause: unauthorized_access
+root_cause: 子会社TGESのネットワークへの不正アクセス
+summary: 子会社の東京ガスエンジニアリングソリューションズのネットワークが不正アクセスを受け、同社と東京ガスのサーバーに保存されていた顧客情報が流出した可能性がある。TGESに業務を委託していた自治体やガス会社にも影響が広がった。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/07/25/51367.html

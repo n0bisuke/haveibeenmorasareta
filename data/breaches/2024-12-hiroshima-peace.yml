@@ -1,0 +1,14 @@
+organization: 広島県
+services:
+  - 国際平和拠点ひろしま
+industry: 行政
+country: JP
+date_announced: 2024-12-30
+affected_count: 3751
+cause: unauthorized_access
+summary: 世界平和に関する情報発信サイトが不正アクセスで一部ページを改ざんされ、サーバーに保存していた会員情報などが漏えいした可能性が高いと発表した。パスワードは登録時に暗号化していた。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/01/16/52166.html
+  - title: ScanNetSecurity（第3報）
+    url: https://scan.netsecurity.ne.jp/article/2025/01/22/52200.html

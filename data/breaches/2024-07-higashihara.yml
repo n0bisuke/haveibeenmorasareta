@@ -1,0 +1,17 @@
+organization: 有限会社東原商店
+services:
+  - オリーブ牛の肉のヒガシハラ
+industry: 食品
+country: JP
+date_announced: 2024-07-16
+affected_count: 27561
+count_note: 個人情報27,561名、うちクレジットカード情報1,703名
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: 精肉の通販サイトが不正アクセスを受けて決済アプリケーションが改ざんされ、顧客のカード情報を含む個人情報が漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/07/25/51365.html

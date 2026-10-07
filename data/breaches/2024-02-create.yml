@@ -1,0 +1,17 @@
+organization: 株式会社クレイツ
+services:
+  - クレイツ公式オンラインショップ
+industry: 小売・EC
+country: JP
+date_announced: 2024-02-20
+affected_count: 65520
+count_note: 調査対象65,520名、うちクレジットカード情報4,583名
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: 旧サイトのシステムの脆弱性を突かれ、カード情報を窃取するプログラムを埋め込まれた
+data_types:
+  - クレジットカード番号
+summary: 美容家電メーカーのリニューアル前の通販サイトが改ざんされ、顧客のカード情報や個人情報が漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/03/04/50666.html

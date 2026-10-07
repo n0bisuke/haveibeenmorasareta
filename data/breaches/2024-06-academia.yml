@@ -1,0 +1,17 @@
+organization: アカデミア・ミュージック株式会社
+services:
+  - アカデミア・ミュージック
+industry: 小売・EC
+country: JP
+date_announced: 2024-06-18
+affected_count: 4324
+count_note: クレジットカード情報4,324名（一覧サイトでは4,696件）
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: 楽譜や音楽書の通販サイトが改ざんされ、顧客のカード情報が漏えいし、一部が不正利用された可能性がある。警察からの連絡で発覚した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/06/28/51212.html

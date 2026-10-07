@@ -1,0 +1,14 @@
+organization: 東亜大学
+industry: 人材・教育
+country: JP
+date_occurred: 2024-12-07
+date_announced: 2024-12-18
+affected_count: 17276
+count_note: 在学生・卒業生・教職員等（2025年3月の続報で約8,000名から拡大）
+cause: unauthorized_access
+summary: 大学のデータサーバーが不正アクセスを受け、保存されていた学生や教職員などの個人情報が漏えいした可能性がある。大学ドメインの検索結果に無関係なリンクが出るとの通報で発覚した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/01/06/52115.html
+  - title: ScanNetSecurity（続報）
+    url: https://scan.netsecurity.ne.jp/article/2025/03/21/52532.html

@@ -1,0 +1,12 @@
+organization: 株式会社北洲
+industry: 不動産
+country: JP
+date_occurred: 2024-03-11
+date_announced: 2024-03-15
+affected_count: 34902
+count_note: 取引情報に含まれる個人情報（2024年5月21日の調査結果）
+cause: unauthorized_access
+summary: サーバーが第三者の不正アクセスを受け、顧客情報を含む取引情報の一部ファイルを攻撃者が開いた可能性があると調査結果で発表した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/05/28/51062.html

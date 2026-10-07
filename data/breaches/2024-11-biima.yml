@@ -1,0 +1,15 @@
+organization: 株式会社biima
+services:
+  - biima sports
+industry: 人材・教育
+country: JP
+date_occurred: 2024-11-11
+date_announced: 2024-11-13
+affected_count: 23000
+count_note: 体験参加者・退会者を含む約2万3,000人
+cause: human_error
+root_cause: 案内メールに約2.3万人分の個人情報を記載したCSVファイルを誤って添付
+summary: 子ども向けスポーツスクールの案内メールを53名に送る際、会員や過去の在籍者など約2万3,000人分の個人情報を含むCSVファイルを誤って添付した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/11/21/51946.html
