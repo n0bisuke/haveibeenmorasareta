@@ -1,0 +1,15 @@
+organization: 株式会社ニチレイ
+industry: 食品・物流
+country: JP
+date_announced: 2026-07-13
+affected_count: 50000
+count_note: 約5万件（配送先・取引先・従業員など）
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - 取引先情報
+  - 従業員情報
+summary: 不正アクセスによるシステム障害で、冷蔵倉庫の入出庫や冷凍食品の出荷業務が停止し、取引先約5,000社に影響が広がった。被害を受けたサーバーに保管されていた配送先・取引先・従業員などの個人情報の漏えいが確認された。ハッカー集団RansomHouseが犯行声明を出している。
+sources:
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2142333.html

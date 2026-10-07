@@ -1,0 +1,19 @@
+organization: KDDI株式会社
+services:
+  - ISP事業者向けメールシステム（@nifty、BIGLOBE、J:COM、CPI ほか計6社）
+industry: IT・通信
+country: JP
+date_occurred: 2026-06-17
+date_announced: 2026-06-23
+affected_count: 14220000
+count_note: 最大約1,422万件（初報）。2026年7月の続報で、メールアドレス約1,223万件・パスワード約761万件の漏えいとされた。解約済み・休眠ユーザーを含む
+cause: vulnerability
+data_types:
+  - パスワード（保管形式不明）
+  - メールアドレス
+summary: ISP事業者向けに提供するメールシステムで使っていた第三者製ソフトウェアの脆弱性を悪用され、メールボックスに紐づくメールアドレスとパスワードが漏えいした可能性がある。対象サービスの利用者にパスワード変更が呼びかけられた。
+sources:
+  - title: KDDI 報道発表資料（2026年7月6日）
+    url: https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-73_4619/kddi_nr_s-73_4619_pdf_01.pdf
+  - title: キーマンズネット
+    url: https://kn.itmedia.co.jp/kn/articles/2606/23/news136.html

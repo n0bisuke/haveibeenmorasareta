@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-07T12:37:49.000Z",
-  "count": 19,
+  "generated_at": "2026-10-07T12:41:13.000Z",
+  "count": 31,
   "severity_levels": [
     {
       "id": "critical",
@@ -26,6 +26,7 @@
   "data_types": {
     "マイナンバー": "critical",
     "パスポート番号": "critical",
+    "在留カード": "critical",
     "運転免許情報": "critical",
     "本人確認書類画像": "critical",
     "クレジットカード番号": "critical",
@@ -40,6 +41,7 @@
     "購入履歴": "high",
     "利用履歴": "high",
     "パスワード（ハッシュ化・暗号化済み）": "high",
+    "パスワード（保管形式不明）": "high",
     "氏名": "medium",
     "電話番号": "medium",
     "メールアドレス": "medium",
@@ -50,11 +52,13 @@
     "従業員情報": "medium",
     "取引先情報": "medium",
     "パスポート有効期限": "medium",
+    "車両情報": "medium",
     "会員ID": "low",
     "アカウント名": "low",
     "連携サービスID": "low",
     "入会・退会年月日": "low",
-    "画像メタデータ": "low"
+    "画像メタデータ": "low",
+    "ポイント情報": "low"
   },
   "breaches": [
     {
@@ -562,6 +566,42 @@
       "severity": "high"
     },
     {
+      "id": "2026-07-epark",
+      "organization": "株式会社EPARKリラク＆エステ",
+      "services": [
+        "PeakManager（予約・顧客管理プラットフォーム）"
+      ],
+      "industry": "美容・健康",
+      "country": "JP",
+      "date_occurred": "2026-07-27",
+      "date_announced": "2026-07-31",
+      "affected_count": 22180000,
+      "count_note": "当初は最大約3,300万レコードとし、重複などを整理して約2,218万レコード（第2報）。健康状態などの要配慮個人情報を含む可能性あり",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "健康・医療情報",
+        "生年月日",
+        "住所",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "氏名",
+        "性別",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "整体院・エステなどの予約・顧客管理プラットフォーム「PeakManager」のデータベースに不正アクセスがあり、個人情報が外部に転送された。ダークウェブでハッカーが犯行声明を出している。クレジットカード情報とマイナンバー関連情報は含まれない。",
+      "sources": [
+        {
+          "title": "EPARK 公式発表",
+          "url": "https://epark.jp/news/427/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2608/03/2000000354/"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-07-murauchi",
       "organization": "株式会社ムラウチドットコム",
       "industry": "小売・EC",
@@ -591,6 +631,345 @@
         }
       ],
       "severity": "high"
+    },
+    {
+      "id": "2026-07-nichirei",
+      "organization": "株式会社ニチレイ",
+      "industry": "食品・物流",
+      "country": "JP",
+      "date_announced": "2026-07-13",
+      "affected_count": 50000,
+      "count_note": "約5万件（配送先・取引先・従業員など）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "取引先情報",
+        "従業員情報"
+      ],
+      "summary": "不正アクセスによるシステム障害で、冷蔵倉庫の入出庫や冷凍食品の出荷業務が停止し、取引先約5,000社に影響が広がった。被害を受けたサーバーに保管されていた配送先・取引先・従業員などの個人情報の漏えいが確認された。ハッカー集団RansomHouseが犯行声明を出している。",
+      "sources": [
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2142333.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2026-06-aflac",
+      "organization": "アフラック生命保険株式会社",
+      "services": [
+        "アフラック よりそうネット"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-06-15",
+      "date_announced": "2026-06-30",
+      "affected_count": 4400000,
+      "count_note": "顧客約440万人（初報は約438万人）。うち保険料振替口座情報を含むのは約22万人。別に代理店約4万店の情報も対象",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "口座番号",
+        "生年月日",
+        "住所",
+        "氏名",
+        "性別",
+        "電話番号",
+        "契約情報"
+      ],
+      "summary": "契約者向けサイト「アフラック よりそうネット」などのシステムに第三者が不正アクセス。6月15日から25日にかけて複数回アクセスされ、契約者・被保険者・受取人の情報や証券番号、保障内容、保険料振替口座情報が漏えいした。マイナンバー、クレジットカード情報、メールアドレスは含まれない。",
+      "sources": [
+        {
+          "title": "アフラック 調査結果と再発防止策（2026年7月31日）",
+          "url": "https://www.aflac.co.jp/static/corp/profile/news/2026/2026073100.pdf"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/07/01/55610.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2026-06-kddi",
+      "organization": "KDDI株式会社",
+      "services": [
+        "ISP事業者向けメールシステム（@nifty、BIGLOBE、J:COM、CPI ほか計6社）"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-06-17",
+      "date_announced": "2026-06-23",
+      "affected_count": 14220000,
+      "count_note": "最大約1,422万件（初報）。2026年7月の続報で、メールアドレス約1,223万件・パスワード約761万件の漏えいとされた。解約済み・休眠ユーザーを含む",
+      "cause": "vulnerability",
+      "data_types": [
+        "パスワード（保管形式不明）",
+        "メールアドレス"
+      ],
+      "summary": "ISP事業者向けに提供するメールシステムで使っていた第三者製ソフトウェアの脆弱性を悪用され、メールボックスに紐づくメールアドレスとパスワードが漏えいした可能性がある。対象サービスの利用者にパスワード変更が呼びかけられた。",
+      "sources": [
+        {
+          "title": "KDDI 報道発表資料（2026年7月6日）",
+          "url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-73_4619/kddi_nr_s-73_4619_pdf_01.pdf"
+        },
+        {
+          "title": "キーマンズネット",
+          "url": "https://kn.itmedia.co.jp/kn/articles/2606/23/news136.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2026-04-2rinkan",
+      "organization": "株式会社２りんかんイエローハット",
+      "services": [
+        "２りんかんアプリ",
+        "２りんかん会員サーバー"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-04-20",
+      "date_announced": "2026-04-23",
+      "affected_count": 3455754,
+      "count_note": "最大件数（2026年5月1日の続報）。ポイント会員・モバイル会員・アプリ会員を含む",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "生年月日",
+        "住所",
+        "パスワード（保管形式不明）",
+        "氏名",
+        "電話番号",
+        "性別",
+        "メールアドレス",
+        "車両情報",
+        "会員ID",
+        "ポイント情報"
+      ],
+      "summary": "イエローハットの連結子会社が運営する会員専用サーバーに不正アクセスがあり、会員の個人情報が不正に持ち出された痕跡が確認された。アプリのIDとパスワードも対象。クレジットカード情報は含まれない。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/articles/2605/01/news111.html"
+        },
+        {
+          "title": "週刊アスキー",
+          "url": "https://weekly.ascii.jp/elem/000/004/400/4400097/"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2026-04-yamagata-city-ycc",
+      "organization": "山形市",
+      "services": [
+        "委託先 株式会社YCC情報システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "date_occurred": "2026-04-02",
+      "date_announced": "2026-04-16",
+      "affected_count": 510000,
+      "count_note": "約51万件（漏えいのおそれ）。のちに外部専門機関の調査では、実質的な情報漏えいを裏付ける痕跡は確認されなかったとされる",
+      "cause": "third_party",
+      "data_types": [
+        "マイナンバー",
+        "健康・医療情報",
+        "生年月日",
+        "住所",
+        "氏名",
+        "従業員情報"
+      ],
+      "summary": "システムの構築・運用を委託していたYCC情報システムのファイルサーバーがランサムウェア攻撃を受け、市民の健康情報を中心に複数システムの個人情報が漏えいしたおそれがある。マイナンバーや給与など人事給与情報も含まれる。同社への攻撃は他の自治体・企業にも波及した。",
+      "sources": [
+        {
+          "title": "山形市 公式発表",
+          "url": "https://www.city.yamagata-yamagata.lg.jp/shiseijoho/it/1012825/1018734.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUD16BZS0W6A410C2000000/"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2026-03-mazda",
+      "organization": "マツダ株式会社",
+      "services": [
+        "タイからの調達部品の倉庫業務管理システム"
+      ],
+      "industry": "製造",
+      "country": "JP",
+      "date_announced": "2026-03-19",
+      "affected_count": 692,
+      "count_note": "同社・グループ会社・取引先の従業員の情報。一般顧客の情報は含まれない",
+      "cause": "vulnerability",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "従業員情報",
+        "取引先情報",
+        "アカウント名"
+      ],
+      "summary": "倉庫業務に使う管理システムの脆弱性を悪用され、2025年12月中旬に第三者が不正アクセス。ユーザーID・氏名・メールアドレス・会社名・取引先IDの計692件にアクセスされた可能性がある。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/articles/2603/19/news129.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2026-03-nhk",
+      "organization": "日本放送協会（NHK）",
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_occurred": "2026-03-17",
+      "date_announced": "2026-03-18",
+      "affected_count": 32940,
+      "count_note": "NHK職員15,199人、関連団体職員9,188人、外部委託先8,553人",
+      "cause": "human_error",
+      "data_types": [
+        "メールアドレス",
+        "従業員情報"
+      ],
+      "summary": "情報システムの保守を担う外部事業者の作業者が、承認依頼メールの宛先に登録者全員を誤って選択して送信。100人単位で送られ、同じグループ内で互いのメールアドレスが閲覧できる状態になった。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/03/23/54883.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC183G80Y6A310C2000000/"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2026-03-medica",
+      "organization": "株式会社メディカ出版",
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_occurred": "2026-03-13",
+      "date_announced": "2026-03-17",
+      "affected_count": 772000,
+      "count_note": "約77.2万件（2026年4月9日の第3報時点。同一案件・同一人物の重複計上の可能性あり）",
+      "cause": "ransomware",
+      "data_types": [
+        "パスポート番号",
+        "在留カード",
+        "口座番号",
+        "健康・医療情報",
+        "生年月日",
+        "住所",
+        "パスワード（保管形式不明）",
+        "氏名",
+        "メールアドレス",
+        "従業員情報"
+      ],
+      "summary": "ランサムウェアによる不正アクセスでシステム障害が発生し、個人情報が漏えいした可能性がある。顧客の連絡先のほか、従業員・応募者のパスポート、在留カード、健康診断結果、銀行口座、人事評価などが含まれる。",
+      "sources": [
+        {
+          "title": "メディカ出版 公式発表（第3報）",
+          "url": "https://www.medica.co.jp/news/information/3479/"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2026-03-murata",
+      "organization": "株式会社村田製作所",
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2026-02-28",
+      "date_announced": "2026-03-06",
+      "affected_count": 88000,
+      "count_note": "約8.8万件（従業員とその関係者約7.3万件、顧客・仕入先など社外関係者約1.5万件）。2026年4月27日公表の件数で、人単位での重複の可能性あり",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "口座番号",
+        "生年月日",
+        "住所",
+        "健康・医療情報",
+        "氏名",
+        "性別",
+        "電話番号",
+        "メールアドレス",
+        "従業員情報",
+        "取引先情報"
+      ],
+      "summary": "社内システムへの不正アクセスにより、従業員（家族・退職者を含む）と社外関係者の個人情報が不正に取得されたおそれがある。従業員の情報には銀行口座情報や健康情報も含まれる。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/articles/2604/27/news133.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF272P10X20C26A4000000/"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2026-02-mynavi",
+      "organization": "株式会社マイナビ",
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2025-12-05",
+      "date_announced": "2026-02-12",
+      "affected_count": 111505,
+      "count_note": "一般ユーザー74,224件、法人担当者21,609件、同社およびグループ会社従業員15,672件（2026年3月31日の第3報）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "住所",
+        "従業員情報",
+        "取引先情報"
+      ],
+      "summary": "同社が利用するクラウドサービスに第三者が不正アクセスし、一般ユーザー・法人担当者・従業員の個人情報の一部が流出した可能性がある。2025年12月にクラウド上の異常を検知し、2026年1月に流出の可能性が判明した。クレジットカード情報とマイナンバーは含まれない。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2604/02/1260402075/"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/04/16/55073.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2026-02-anabuki-housing",
+      "organization": "株式会社穴吹ハウジングサービス",
+      "industry": "不動産",
+      "country": "JP",
+      "date_occurred": "2026-02-03",
+      "date_announced": "2026-02-03",
+      "affected_count": 207773,
+      "count_note": "2026年5月21日の第6報で確定した件数。3月9日の第4報時点では最大約49.6万人分の可能性としていた",
+      "cause": "ransomware",
+      "data_types": [
+        "氏名",
+        "電話番号"
+      ],
+      "summary": "グループの通信機器の脆弱性を悪用されて侵入され、一部サーバーがランサムウェアに感染。ダークウェブのリークサイトへの情報掲載も確認された。主な項目は氏名・電話番号などで、対象者により異なる。クレジットカード・銀行口座・マイナンバーは含まれない。",
+      "sources": [
+        {
+          "title": "穴吹ハウジングサービス 公式発表（第6報）",
+          "url": "https://www.anabuki-housing.co.jp/news/content.php?news_id=530"
+        },
+        {
+          "title": "日経クロステック",
+          "url": "https://xtech.nikkei.com/atcl/nxt/column/18/01157/042200159/"
+        }
+      ],
+      "severity": "medium"
     },
     {
       "id": "2024-08-kadokawa",
