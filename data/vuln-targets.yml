@@ -1,0 +1,17 @@
+# 脆弱性を悪用された箇所（vuln_target）の分類。cause が vulnerability の事案で使います。
+# data/breaches/*.yml の vuln_target にはここにある ID のみ使えます。
+ec_payment:
+  label: ECサイトの決済画面
+  description: 決済ページやカード決済アプリケーションの改ざん（Webスキミング）
+web_app:
+  label: Webサイト・Webアプリ
+  description: SQLインジェクションやアクセス制御の不備など、公開しているWebサイト・Webアプリの脆弱性
+mail_system:
+  label: メールシステム
+  description: Webメールやメールサーバーなど、メール関連のソフトウェア・サービスの脆弱性
+remote_access:
+  label: VPN・リモート接続機器
+  description: VPN装置やリモートデスクトップなど、社外から社内につなぐための機器・サービスの脆弱性
+business_tool:
+  label: 業務システム・社内ツール
+  description: 業務管理システムや分析ツールなど、社内で使うシステム・ソフトウェアの脆弱性

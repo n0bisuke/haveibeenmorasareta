@@ -42,6 +42,13 @@ export async function loadDataTypes() {
   return { levels, types, duplicates };
 }
 
+// data/vuln-targets.yml（脆弱性を悪用された箇所の分類）を読み込み、[{ id, label, description }] を返す
+export async function loadVulnTargets() {
+  const text = await readFile(path.join(ROOT, 'data', 'vuln-targets.yml'), 'utf8');
+  const raw = yaml.load(text, { schema: yaml.CORE_SCHEMA });
+  return Object.entries(raw).map(([id, { label, description }]) => ({ id, label, description }));
+}
+
 // data/industries.yml（業種の一覧）を読み込む
 export async function loadIndustries() {
   const text = await readFile(path.join(ROOT, 'data', 'industries.yml'), 'utf8');

@@ -80,6 +80,11 @@
       ],
       "description": "主な原因"
     },
+    "vuln_target": {
+      "type": "string",
+      "pattern": "^[a-z_]+$",
+      "description": "脆弱性を悪用された箇所。data/vuln-targets.yml の ID"
+    },
     "root_cause": {
       "type": "string",
       "minLength": 4,
