@@ -15,7 +15,7 @@ cause: unauthorized_access                # 必須: 下記から1つ
 #   ransomware / unauthorized_access / vulnerability / misconfiguration /
 #   phishing / malware / third_party / insider / human_error /
 #   lost_device / unknown / other
-data_types:                               # 任意: 漏洩した情報の種類
+data_types:                               # 任意: data/data-types.yml にある名前のみ
   - 氏名
   - メールアドレス
 summary: ここに概要を書きます。         # 必須: 10〜600文字。事実ベースで簡潔に（改行せず1行で）
