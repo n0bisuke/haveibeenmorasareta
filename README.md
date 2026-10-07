@@ -11,13 +11,14 @@
 data/breaches/*.yml   … 1インシデント = 1ファイルのデータ
 schema/               … データの JSON Schema
 scripts/validate.mjs  … データ検証（スキーマ・ファイル名・日付・出典の重複）
-scripts/build.mjs     … データから public/breaches.json を生成
+scripts/build.mjs     … データから public/breaches.json を生成（リポジトリにもコミット）
 public/               … 公開ディレクトリ（依存なしの静的 HTML/CSS/JS）
 ```
 
 - **PR 時**: `Validate` ワークフローがデータを検証し、問題があれば CI が失敗します
 - **main へのマージ時**: `Deploy to GitHub Pages` ワークフローが `public/breaches.json` を生成し、`public/` を GitHub Pages に公開します
-- 生成される `breaches.json` は API 的に再利用することもできます
+- `public/breaches.json` はリポジトリにも含まれ、main へのマージ時に自動で再生成・コミットされます。
+  サイト上の https://n0bisuke.github.io/haveibeenmorasareta/breaches.json から API 的に再利用できます
 
 ## 追加・修正したい場合
 
