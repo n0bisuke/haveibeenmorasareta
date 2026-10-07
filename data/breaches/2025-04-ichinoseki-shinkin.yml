@@ -1,0 +1,23 @@
+organization: 一関信用金庫
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 岩手県
+date_announced: 2025-04-22
+affected_count: 18316
+count_note: 最大18,316名
+cause: insider
+root_cause: 元職員が内部規程に反して顧客情報を含む業務ファイルを私物のUSBメモリに保存し、自宅へ持ち帰っていた
+data_types:
+  - 氏名
+  - 住所
+  - 生年月日
+  - 性別
+  - 電話番号
+  - メールアドレス
+  - 口座番号
+  - 資産・取引情報
+summary: 元職員が顧客の個人情報を含む業務ファイルを私物のUSBメモリに保存して自宅へ持ち帰っており、最大18,316名分が外部に漏えいした可能性がある。勤務先・年収・取引残高なども含まれる。業務用PCのダウンロード状況の確認で発覚した。暗証番号やネットバンキングのID・パスワード、マイナンバーは含まれない。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/05/08/52802.html

@@ -1,0 +1,24 @@
+organization: 株式会社伊予銀行
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 愛媛県
+date_occurred: 2024-05-26
+date_announced: 2024-07-03
+affected_count: 254659
+count_note: 254,659先（2024年8月19日の調査結果）
+cause: third_party
+root_cause: 帳票の作成・発送を委託していたイセトーがランサムウェアに感染
+vendor:
+  name: 株式会社イセトー
+data_types:
+  - 氏名
+  - 住所
+  - 口座番号
+  - 資産・取引情報
+summary: 顧客向け帳票の作成・発送を委託していたイセトーがランサムウェアに感染し、ダークウェブに顧客情報が掲載された。住所・氏名のほか、取引日・金額・口座番号や振込相手先の口座情報などが漏えいした可能性がある（項目は顧客により異なる）。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/07/25/51368.html
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/7452/
