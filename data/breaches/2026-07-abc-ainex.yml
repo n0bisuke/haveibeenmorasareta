@@ -1,0 +1,21 @@
+organization: 朝日放送テレビ株式会社
+group: 朝日放送グループ
+industry: メディア・出版
+country: JP
+date_occurred: 2026-06-17
+date_announced: 2026-07-01
+affected_count: 373
+count_note: メールアドレス373件（2026年8月24日の調査結果）
+cause: phishing
+vendor:
+  name: 株式会社アイネックス
+  group: 朝日放送グループ
+root_cause: グループ会社の従業員が取引先を装うフィッシングメールに反応し、ID・パスワードを入力した
+data_types:
+  - メールアドレス
+summary: 朝日放送テレビのグループ会社アイネックスで従業員アカウントへの不正ログインとクラウドサービスへの不正アクセスがあった。8月24日の調査結果で、メールアドレス373件の漏えいが確定した。
+sources:
+  - title: 秋田魁新報（共同通信）
+    url: https://www.sakigake.jp/news/article/20260701OR0199/
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/07/13/55687.html

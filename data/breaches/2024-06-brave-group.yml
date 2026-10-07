@@ -1,0 +1,25 @@
+organization: 株式会社Brave group
+services:
+  - ぶいすぽっ!JP オーディション
+  - Brave group総合オーディション
+  - HareVare VLiverオーディション
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2024-06-04
+date_announced: 2024-06-25
+affected_count: 10653
+count_note: 約7,000件・約2,610件・約1,043件の合計（概数）
+cause: misconfiguration
+root_cause: Googleフォームの編集用URLが「リンクを知っている全員が閲覧可」の設定になっていた
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - 生年月日
+  - アカウント名
+summary: VTuberグループ「ぶいすぽっ!」などのオーディションで使ったGoogleフォームの編集用URLが誰でも閲覧できる設定になっており、応募者の氏名・電話番号・生年月日・志望動機などが閲覧できる状態だった。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2406/25/1240625209/
+  - title: GameBusiness.jp
+    url: https://www.gamebusiness.jp/article/2024/06/26/23219.html

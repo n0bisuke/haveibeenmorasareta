@@ -1,0 +1,21 @@
+organization: 株式会社鹿島アントラーズ・エフ・シー
+services:
+  - SÓCIO・ファンクラブ
+industry: エンタメ・スポーツ
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/33
+date_occurred: 2024-01-08
+date_announced: 2024-02-21
+affected_count: 16
+count_note: 16件（閲覧の可能性があるアクセス314回）。公表日は未確認のため発生期間の終了日を仮置き
+cause: misconfiguration
+root_cause: ユニフォームのネーム&ナンバー変更受付フォームが他の回答を閲覧できる設定になっていた
+data_types:
+  - メールアドレス
+  - 会員ID
+  - 氏名
+summary: ファンクラブ入会時のユニフォームのネーム&ナンバー変更受付フォームの設定不備で、2024年1月8日から2月21日まで、他の申込者が入力した情報を閲覧できる状態だった。
+sources:
+  - title: ゲキサカ
+    url: https://web.gekisaka.jp/news/jleague/detail/?401844-401844-fl

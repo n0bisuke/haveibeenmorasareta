@@ -1,0 +1,19 @@
+organization: 吉本興業株式会社
+services:
+  - 東京型銭湯 スタンプラリー
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-03-30
+date_announced: 2026-04-02
+affected_count: 94
+count_note: 最大94名（東京都都市整備局の委託業務）
+cause: human_error
+root_cause: ノベルティの発送先リストで氏名と住所の行がずれたまま再確認せずに発送した
+data_types:
+  - 氏名
+summary: 東京都都市整備局から銭湯のスタンプラリーの運営を受託していた吉本興業が、当選ノベルティを発送する際、発送先リストの氏名と住所がずれたまま配送を手配し、他の当選者の氏名で荷物が届いた。東京都が公表した。
+sources:
+  - title: 東京都 報道発表
+    url: https://www.metro.tokyo.lg.jp/information/press/2026/04/2026040305
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/04/17/55086.html
