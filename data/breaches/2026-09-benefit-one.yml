@@ -1,0 +1,21 @@
+organization: 株式会社ベネフィット・ワン
+services:
+  - ベネワン・プラットフォーム（企業・団体担当者向けアンケート機能）
+industry: IT・通信
+country: JP
+date_announced: 2026-09-30
+affected_count: 13460
+count_note: 2,322企業・団体の従業員13,460名
+cause: misconfiguration
+data_types:
+  - 生年月日
+  - 氏名
+  - 性別
+  - 従業員情報
+  - 会員ID
+summary: アンケート結果のダウンロード機能で、本来アクセスできない他の企業・団体の従業員情報がデータに含まれる不具合があった。2025年6月のシステム改修で生じた条件設定の不備が原因で、同年10月に不具合を把握しながら解消が適切に行われていなかった。二次被害は確認されていない。
+sources:
+  - title: サイバーセキュリティ.com
+    url: https://cybersecurity-jp.com/news/116906
+  - title: innovaTopia
+    url: https://innovatopia.jp/cyber-security/cyber-security-news/118411/
