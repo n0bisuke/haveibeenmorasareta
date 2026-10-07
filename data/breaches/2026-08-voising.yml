@@ -1,0 +1,26 @@
+organization: 株式会社VOISING
+services:
+  - いれいす 公式サービス
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-08-10
+date_announced: 2026-08-18
+affected_count: 170000
+count_note: 最大約17万人。うち約5万件は特定サイトで公開された可能性
+cause: vulnerability
+vuln_target: business_tool
+root_cause: 利用していたBIツールの既知の脆弱性を、修正パッチの適用前に悪用された
+data_types:
+  - 生年月日
+  - 住所
+  - 氏名
+  - 性別
+  - 電話番号
+  - メールアドレス
+  - 購入履歴
+summary: 2.5次元アイドルグループ「いれいす」の事務所が利用するBIツールが不正アクセスを受け、ファンの氏名・住所・購買履歴・応援対象タレントの情報などが漏えいした。一部はネット上での公開も確認された。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/09/07/56144.html
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/voising-ireisu-unauthorized-access-data-leak-updated-20260930/

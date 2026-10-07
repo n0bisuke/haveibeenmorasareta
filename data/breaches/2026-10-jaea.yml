@@ -1,0 +1,26 @@
+organization: 国立研究開発法人日本原子力研究開発機構（JAEA）
+services:
+  - 研究支援サイト（JRR-3 施設利用手続き）
+industry: 行政
+country: JP
+date_occurred: 2026-09-25
+date_announced: 2026-10-01
+affected_count: 175
+count_note: 登録ファイル2,419件がダウンロードされ、うち個人情報を含む367件・175人分。マイナンバーを含むものが6人分
+cause: unauthorized_access
+data_types:
+  - マイナンバー
+  - パスポート番号
+  - 在留カード
+  - 運転免許情報
+  - 本人確認書類画像
+  - 健康・医療情報
+  - 氏名
+summary: 研究用原子炉JRR-3の施設利用手続きに使う研究支援サイトが不正アクセスを受け、顔写真付き身分証の画像200件、放射線業務の特殊健康診断結果146件などがダウンロードされた。
+sources:
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261003de54107
+  - title: アスキー（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/19974fc3c15b0d41a323a41ba7d485f0fdc20083
+  - title: "@IT"
+    url: https://atmarkit.itmedia.co.jp/ait/articles/2610/05/news018.html

@@ -1,0 +1,30 @@
+organization: GMOリサーチ&AI株式会社
+group: GMOインターネットグループ
+services:
+  - infoQ
+industry: IT・通信
+country: JP
+date_occurred: 2026-10-03
+date_announced: 2026-10-05
+affected_count: 948498
+count_note: 最大94万8,498件。611件・約287万円分のポイントがAmazonギフトコードに不正交換された
+cause: vulnerability
+vuln_target: web_app
+root_cause: アンケートサイトで使用していたソフトウェアの脆弱性を悪用された
+data_types:
+  - パスワード（ハッシュ化・暗号化済み）
+  - 生年月日
+  - 住所
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 会員ID
+  - ポイント情報
+summary: アンケートサイト「infoQ」が不正アクセスを受け、会員の個人情報が外部に持ち出された。会員のポイントが不正にギフトコードへ交換される二次被害も確認され、同社は全額を補填するとしている。
+sources:
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261006de55007
+  - title: ABEMA TIMES（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/4e242e99a415254e9bb508451b9cd98d1c0a232c
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC062GV0W6A001C2000000/

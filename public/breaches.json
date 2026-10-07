@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-10-07T14:28:52.000Z",
-  "count": 213,
+  "count": 223,
   "severity_levels": [
     {
       "id": "critical",
@@ -237,6 +237,38 @@
       "severity": null
     },
     {
+      "id": "2026-10-asahi-kasei-therapeutics",
+      "organization": "旭化成セラピューティクス株式会社",
+      "group": "旭化成グループ",
+      "services": [
+        "医療関係者向けウェブサイト",
+        "RAコネクト"
+      ],
+      "industry": "医療",
+      "country": "JP",
+      "date_announced": "2026-10-06",
+      "affected_count": 558700,
+      "count_note": "最大約55万8,700人（うち医療従事者 約51万4,000人）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "取引先情報"
+      ],
+      "summary": "医薬品子会社が提供する医療関係者向けウェブサイトがサイバー攻撃を受け、医療従事者の氏名・所属施設・診療科・メールアドレスなどが漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261007de55592"
+        },
+        {
+          "title": "共同通信（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/24fa600bed69776b64f00fbe14e6ac4e8e67d8ce"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
       "id": "2026-10-citizen",
       "organization": "シチズン時計株式会社",
       "services": [
@@ -299,6 +331,68 @@
         {
           "title": "ネットショップ担当者フォーラム",
           "url": "https://netshop.impress.co.jp/n/2026/10/07/16832"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2026-10-nimoca",
+      "organization": "株式会社ニモカ",
+      "group": "西鉄グループ",
+      "services": [
+        "nimoca 利用履歴照会サービス"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2026-10-04",
+      "date_announced": "2026-10-06",
+      "affected_count": 521,
+      "cause": "unauthorized_access",
+      "data_types": [
+        "生年月日",
+        "メールアドレス",
+        "会員ID"
+      ],
+      "summary": "交通系ICカード「nimoca」の利用履歴照会サービスが不正アクセスを受け、登録メールアドレス・生年月日・カード番号521件が漏えいした。利用者から「身に覚えのないメールが届いた」との問い合わせで発覚し、サービスを停止した。",
+      "sources": [
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261006de55188"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/06/2000002047/"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2026-10-offerbox",
+      "organization": "株式会社i-plug",
+      "services": [
+        "OfferBox"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2026-05-12",
+      "date_announced": "2026-10-06",
+      "affected_count": 314009,
+      "count_note": "理論上の最大値（2027年卒・2028年卒の利用学生の総数）。利用企業以外への流出は確認されていない",
+      "cause": "misconfiguration",
+      "root_cause": "利用企業向けページの通信データに学生の氏名（文字コード表記）とメールアドレスが含まれる設定不備",
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "新卒採用サービスで、利用企業がブラウザの開発者ツールを使うと学生の氏名とメールアドレスを閲覧できる状態が2026年5月12日〜8月28日に続いていた。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/06/2000002026/"
+        },
+        {
+          "title": "ITmedia NEWS（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/77fd7ac27ea1a9f7cb158209f25f602acae2a9e3"
         }
       ],
       "severity": "medium"
@@ -375,6 +469,49 @@
       "severity": "critical"
     },
     {
+      "id": "2026-10-gmo-research",
+      "organization": "GMOリサーチ&AI株式会社",
+      "group": "GMOインターネットグループ",
+      "services": [
+        "infoQ"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-10-03",
+      "date_announced": "2026-10-05",
+      "affected_count": 948498,
+      "count_note": "最大94万8,498件。611件・約287万円分のポイントがAmazonギフトコードに不正交換された",
+      "cause": "vulnerability",
+      "vuln_target": "web_app",
+      "root_cause": "アンケートサイトで使用していたソフトウェアの脆弱性を悪用された",
+      "data_types": [
+        "パスワード（ハッシュ化・暗号化済み）",
+        "生年月日",
+        "住所",
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "会員ID",
+        "ポイント情報"
+      ],
+      "summary": "アンケートサイト「infoQ」が不正アクセスを受け、会員の個人情報が外部に持ち出された。会員のポイントが不正にギフトコードへ交換される二次被害も確認され、同社は全額を補填するとしている。",
+      "sources": [
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261006de55007"
+        },
+        {
+          "title": "ABEMA TIMES（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/4e242e99a415254e9bb508451b9cd98d1c0a232c"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC062GV0W6A001C2000000/"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-10-omu",
       "organization": "大阪公立大学",
       "industry": "人材・教育",
@@ -410,6 +547,40 @@
         }
       ],
       "severity": "critical"
+    },
+    {
+      "id": "2026-10-taiki-suisan",
+      "organization": "大起水産株式会社",
+      "services": [
+        "大起水産公式アプリ"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_occurred": "2026-09-15",
+      "date_announced": "2026-10-05",
+      "affected_count": 174933,
+      "count_note": "2024年11月〜2026年9月15日のアプリ登録者（退会者を含む）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "生年月日",
+        "住所",
+        "氏名",
+        "性別",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "回転ずしチェーンなどを運営する同社の公式アプリのシステムが不正アクセスを受け、登録者の個人情報が漏えいした可能性がある。パスワードは別サーバーで管理しており含まれない。",
+      "sources": [
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261005de54848"
+        },
+        {
+          "title": "関西テレビ（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/ef6ecfd5116e920525192a98b5d9992f76666e9f"
+        }
+      ],
+      "severity": "high"
     },
     {
       "id": "2026-10-yakiniku-king",
@@ -467,6 +638,80 @@
         }
       ],
       "severity": "high"
+    },
+    {
+      "id": "2026-10-jaea",
+      "organization": "国立研究開発法人日本原子力研究開発機構（JAEA）",
+      "services": [
+        "研究支援サイト（JRR-3 施設利用手続き）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "date_occurred": "2026-09-25",
+      "date_announced": "2026-10-01",
+      "affected_count": 175,
+      "count_note": "登録ファイル2,419件がダウンロードされ、うち個人情報を含む367件・175人分。マイナンバーを含むものが6人分",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "マイナンバー",
+        "パスポート番号",
+        "在留カード",
+        "運転免許情報",
+        "本人確認書類画像",
+        "健康・医療情報",
+        "氏名"
+      ],
+      "summary": "研究用原子炉JRR-3の施設利用手続きに使う研究支援サイトが不正アクセスを受け、顔写真付き身分証の画像200件、放射線業務の特殊健康診断結果146件などがダウンロードされた。",
+      "sources": [
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261003de54107"
+        },
+        {
+          "title": "アスキー（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/19974fc3c15b0d41a323a41ba7d485f0fdc20083"
+        },
+        {
+          "title": "@IT",
+          "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/05/news018.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2026-10-lashinbang",
+      "organization": "株式会社らしんばん",
+      "services": [
+        "らしんばん"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-09-14",
+      "date_announced": "2026-10-01",
+      "affected_count": null,
+      "count_note": "件数は調査中",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "本人確認書類画像",
+        "口座番号",
+        "住所",
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "購入履歴"
+      ],
+      "summary": "中古アニメグッズの買取・販売サービスが2026年9月14日〜16日に不正アクセスを受け、氏名・住所・本人確認書類の種別と番号・買取時の銀行口座情報・注文内容・同意書画像などが漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/01/2000001927/"
+        },
+        {
+          "title": "アスキー（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/1efd02c4c123bd75d36f452af63a9a4cccd34407"
+        }
+      ],
+      "severity": "critical"
     },
     {
       "id": "2026-10-sagawa",
@@ -558,6 +803,40 @@
         }
       ],
       "severity": "critical"
+    },
+    {
+      "id": "2026-09-japanpost-app",
+      "organization": "日本郵便株式会社",
+      "group": "日本郵政グループ",
+      "services": [
+        "郵便局アプリ",
+        "ゆうID"
+      ],
+      "industry": "物流",
+      "country": "JP",
+      "date_occurred": "2026-09-25",
+      "date_announced": "2026-09-29",
+      "affected_count": 19,
+      "count_note": "19人分・69件（送り状の受取人や住所録の相手の情報を含む）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "生年月日",
+        "住所",
+        "氏名",
+        "電話番号"
+      ],
+      "summary": "荷物の追跡や再配達依頼ができる「郵便局アプリ」が不正アクセスを受け、利用者の氏名・住所・電話番号・送り状の情報などが不正に取得された。ゆうIDとアプリを緊急メンテナンスし、翌日再開した。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/fea78d6cb37c1744e5237e42961a6fb33ca8f931"
+        },
+        {
+          "title": "ASCII.jp",
+          "url": "https://ascii.jp/elem/000/004/438/4438474/"
+        }
+      ],
+      "severity": "high"
     },
     {
       "id": "2026-09-seicomart",
@@ -1029,6 +1308,43 @@
       "severity": "medium"
     },
     {
+      "id": "2026-08-voising",
+      "organization": "株式会社VOISING",
+      "services": [
+        "いれいす 公式サービス"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-08-10",
+      "date_announced": "2026-08-18",
+      "affected_count": 170000,
+      "count_note": "最大約17万人。うち約5万件は特定サイトで公開された可能性",
+      "cause": "vulnerability",
+      "vuln_target": "business_tool",
+      "root_cause": "利用していたBIツールの既知の脆弱性を、修正パッチの適用前に悪用された",
+      "data_types": [
+        "生年月日",
+        "住所",
+        "氏名",
+        "性別",
+        "電話番号",
+        "メールアドレス",
+        "購入履歴"
+      ],
+      "summary": "2.5次元アイドルグループ「いれいす」の事務所が利用するBIツールが不正アクセスを受け、ファンの氏名・住所・購買履歴・応援対象タレントの情報などが漏えいした。一部はネット上での公開も確認された。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/09/07/56144.html"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/voising-ireisu-unauthorized-access-data-leak-updated-20260930/"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-08-weblife",
       "organization": "株式会社ウェブライフ",
       "services": [
@@ -1183,6 +1499,42 @@
         {
           "title": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/08/25/56013.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2026-08-chubu-electric",
+      "organization": "中部電力株式会社",
+      "group": "中部電力グループ",
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_occurred": "2026-07-29",
+      "date_announced": "2026-08-04",
+      "affected_count": 74100,
+      "count_note": "関係機関・取引先等 約2,400人、グループ役職員・委託先社員等 約7万1,700人",
+      "cause": "unauthorized_access",
+      "root_cause": "一部システムの資格情報（認証情報）を不正に利用され、メールや連絡先情報を閲覧された",
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "従業員情報",
+        "取引先情報"
+      ],
+      "summary": "第三者機関からの情報提供で、役職員のメール約2,400件とグループ内の連絡先情報が不正に閲覧された可能性が判明した。電気・ガスの顧客情報の漏えいは確認されておらず、ランサムウェアによる攻撃ではない。",
+      "sources": [
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/na-k10015196091000"
+        },
+        {
+          "title": "時事通信（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/7837d8a093456ea93934c91b6df6a461f307e806"
+        },
+        {
+          "title": "日経クロステック",
+          "url": "https://xtech.nikkei.com/atcl/nxt/news/24/03331/"
         }
       ],
       "severity": "medium"

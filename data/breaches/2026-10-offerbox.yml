@@ -1,0 +1,20 @@
+organization: 株式会社i-plug
+services:
+  - OfferBox
+industry: 人材・教育
+country: JP
+date_occurred: 2026-05-12
+date_announced: 2026-10-06
+affected_count: 314009
+count_note: 理論上の最大値（2027年卒・2028年卒の利用学生の総数）。利用企業以外への流出は確認されていない
+cause: misconfiguration
+root_cause: 利用企業向けページの通信データに学生の氏名（文字コード表記）とメールアドレスが含まれる設定不備
+data_types:
+  - 氏名
+  - メールアドレス
+summary: 新卒採用サービスで、利用企業がブラウザの開発者ツールを使うと学生の氏名とメールアドレスを閲覧できる状態が2026年5月12日〜8月28日に続いていた。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/06/2000002026/
+  - title: ITmedia NEWS（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/77fd7ac27ea1a9f7cb158209f25f602acae2a9e3

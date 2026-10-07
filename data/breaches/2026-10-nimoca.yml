@@ -1,0 +1,20 @@
+organization: 株式会社ニモカ
+group: 西鉄グループ
+services:
+  - nimoca 利用履歴照会サービス
+industry: 交通・モビリティ
+country: JP
+date_occurred: 2026-10-04
+date_announced: 2026-10-06
+affected_count: 521
+cause: unauthorized_access
+data_types:
+  - 生年月日
+  - メールアドレス
+  - 会員ID
+summary: 交通系ICカード「nimoca」の利用履歴照会サービスが不正アクセスを受け、登録メールアドレス・生年月日・カード番号521件が漏えいした。利用者から「身に覚えのないメールが届いた」との問い合わせで発覚し、サービスを停止した。
+sources:
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261006de55188
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/06/2000002047/
