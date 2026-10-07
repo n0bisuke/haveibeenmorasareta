@@ -1,7 +1,525 @@
 {
   "generated_at": "2026-10-07T12:13:48.000Z",
-  "count": 2,
+  "count": 19,
   "breaches": [
+    {
+      "id": "2026-10-his",
+      "organization": "株式会社エイチ・アイ・エス",
+      "services": [
+        "H.I.S. TOURS CO., LTD.（タイ子会社）"
+      ],
+      "industry": "旅行",
+      "country": "JP",
+      "date_occurred": "2025-12-11",
+      "date_announced": "2026-10-07",
+      "affected_count": 627,
+      "count_note": "最大件数。2017年、2019〜2020年、2024〜2025年にHISでタイへ渡航した顧客",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名（ローマ字）",
+        "性別",
+        "生年月日",
+        "パスポート番号",
+        "パスポート有効期限",
+        "アレルギー情報"
+      ],
+      "summary": "タイ子会社のファイルサーバーに不正アクセスがあり、データの一部が不正に取得された。顧客のパスポート情報などが流出した可能性がある。電話番号・住所・メールアドレス・クレジットカード情報は含まれない。",
+      "sources": [
+        {
+          "title": "HIS 公式発表（2026年10月7日）",
+          "url": "https://www.his.co.jp/assets/20261007.pdf"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/07/2000002090/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-citizen",
+      "organization": "シチズン時計株式会社",
+      "services": [
+        "シチズン・ブローバ・フレデリック・コンスタント 各Webサイトの問い合わせフォーム"
+      ],
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2026-10-02",
+      "date_announced": "2026-10-06",
+      "affected_count": 100000,
+      "count_note": "約10万人分（漏えいの可能性）",
+      "cause": "third_party",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "問い合わせ内容"
+      ],
+      "summary": "委託先スカラコミュニケーションズが提供するFAQシステム「i-ask」の管理サイトに第三者が不正ログインし、サーバーに不正なプログラムを設置。Webサイトの問い合わせフォームで受け付けた情報が漏えいした可能性がある。大和証券と同じ委託先が原因。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/06/2000002067/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-mrmax",
+      "organization": "株式会社ミスターマックス・ホールディングス",
+      "services": [
+        "MrMaxアプリ",
+        "MrMaxオンラインストア"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-10-03",
+      "date_announced": "2026-10-06",
+      "affected_count": 1735154,
+      "count_note": "最大件数。項目は会員の登録状況により異なる",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "会員ID",
+        "氏名",
+        "メールアドレス",
+        "電話番号"
+      ],
+      "summary": "アプリとオンラインストアのサーバーが第三者から不正アクセスを受け、会員の個人情報の一部が流出した。住所・生年月日・クレジットカード情報・パスワード・購入履歴は流出していない。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/06/2000002030/"
+        },
+        {
+          "title": "ネットショップ担当者フォーラム",
+          "url": "https://netshop.impress.co.jp/n/2026/10/07/16832"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-rakuten-drive",
+      "organization": "楽天シンフォニー株式会社",
+      "services": [
+        "楽天ドライブ"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-01-29",
+      "date_announced": "2026-10-06",
+      "affected_count": 15382,
+      "count_note": "保存データ（写真・文書等）が取得・閲覧されたアカウント数。別に687アカウントのアカウント名等（うち313件は暗号化されたパスワードを含む）も対象",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "保存データ（写真・文書等）",
+        "アカウント名",
+        "パスワード（暗号化済み）"
+      ],
+      "summary": "管理用アカウントの認証情報が不正取得され、一部システムに不正アクセスされた。2026年1月29日から9月17日にかけて、15,382アカウントの保存データが取得・閲覧された。",
+      "sources": [
+        {
+          "title": "楽天ドライブ 公式発表",
+          "url": "https://support.rakuten-drive.com/hc/ja/articles/62934949147929"
+        },
+        {
+          "title": "ITmedia Mobile",
+          "url": "https://www.itmedia.co.jp/mobile/articles/2610/06/news071.html"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-daiwa-securities",
+      "organization": "大和証券株式会社",
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-10-02",
+      "date_announced": "2026-10-05",
+      "affected_count": 220000,
+      "count_note": "約22万件（うち個人を特定できる顧客情報は約11万人分）",
+      "cause": "third_party",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "口座番号",
+        "問い合わせ内容"
+      ],
+      "summary": "外部委託先スカラコミュニケーションズのFAQ・問い合わせ管理システムのサーバーに不正アクセスがあり、顧客情報が漏えいした可能性がある。大和証券のシステムへの不正アクセスは確認されていない。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB053ZF0V01C26A0000000/"
+        },
+        {
+          "title": "週刊アスキー",
+          "url": "https://weekly.ascii.jp/elem/000/004/439/4439964/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-yakiniku-king",
+      "organization": "株式会社物語コーポレーション",
+      "services": [
+        "焼肉きんぐ公式アプリ"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_occurred": "2026-10-02",
+      "date_announced": "2026-10-05",
+      "affected_count": 10788963,
+      "count_note": "アプリ会員のほぼ全員に相当",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "会員番号",
+        "氏名",
+        "メールアドレス",
+        "電話番号"
+      ],
+      "summary": "公式アプリの会員管理システムが第三者から不正アクセスを受け、会員情報1,078万8,963件が漏えいした。パスワード・生年月日・性別・保有ポイント・利用履歴、クレジットカード決済情報は含まれない。",
+      "sources": [
+        {
+          "title": "物語コーポレーション 公式発表",
+          "url": "https://www.monogatari.co.jp/news/261005_news/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/05/2000002011/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-daiichi-life",
+      "organization": "第一生命保険株式会社",
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-09-24",
+      "date_announced": "2026-10-02",
+      "affected_count": 120000,
+      "count_note": "約12万人（うち退職者約7万人）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "従業員情報"
+      ],
+      "summary": "人事システムへの不正アクセスにより、現役・退職者を含む従業員約12万人分の氏名・住所・電話番号・所属・職位などが漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/daiichi-life-employee-data-breach-120k-20261002/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-sagawa",
+      "organization": "佐川急便株式会社",
+      "services": [
+        "お荷物問い合わせサービス"
+      ],
+      "industry": "物流",
+      "country": "JP",
+      "date_announced": "2026-10-01",
+      "affected_count": null,
+      "count_note": "件数は調査中（公表時点）。9月30日を起点に過去約100日間のデータが対象の可能性",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号"
+      ],
+      "summary": "Webサイトの「お荷物問い合わせサービス」への不正アクセスにより、荷物の送り主と宛先の氏名・住所・電話番号が流出した可能性がある。サービスの一部を停止した。",
+      "sources": [
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2145343.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC020KD0S6A001C2000000/"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-seicomart",
+      "organization": "株式会社セイコーマート",
+      "services": [
+        "セイコーマートアプリ",
+        "セイコーマートクラブ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-09-24",
+      "date_announced": "2026-09-29",
+      "affected_count": 570000,
+      "count_note": "約57万アカウント（流出の可能性）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "性別",
+        "生年月日",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "入会・退会年月日"
+      ],
+      "summary": "スマートフォンアプリのサーバーを経由して会員情報を保有するサーバーに第三者が不正アクセス。9月24日の不正な退会処理をきっかけに判明した。パスワードは漏洩しておらず、クレジットカード情報は保有していない。",
+      "sources": [
+        {
+          "title": "セイコーマート 公式発表（2026年9月29日）",
+          "url": "https://www.seicomart.co.jp/info/pdf/202609290017.pdf"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2609/29/2000001830/"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-yamato",
+      "organization": "ヤマト運輸株式会社",
+      "services": [
+        "クロネコ代金後払いサービス"
+      ],
+      "industry": "物流",
+      "country": "JP",
+      "date_occurred": "2026-09-28",
+      "date_announced": "2026-09-29",
+      "affected_count": null,
+      "count_note": "件数は調査中（公表時点）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "購入履歴"
+      ],
+      "summary": "通販向けの「クロネコ代金後払いサービス」への第三者からの不正アクセスを9月28日に確認し、同日中にサービスを停止。保存されていた氏名・住所や請求金額・商品明細などが対象となる可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56361.html"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-timescar",
+      "organization": "パーク24株式会社・タイムズモビリティ株式会社",
+      "services": [
+        "タイムズカー",
+        "タイムズビジネスサービス"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2026-09-25",
+      "date_announced": "2026-09-25",
+      "affected_count": 6600000,
+      "count_note": "約660万アカウント（退会者・入会未完了の申込者を含む）。うち本人確認書類（運転免許証画像等）が漏えいしたのは約160万件",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "住所",
+        "生年月日",
+        "電話番号",
+        "メールアドレス",
+        "運転免許情報",
+        "本人確認書類画像",
+        "パスワード（復元不可能な形式）",
+        "連携サービスID"
+      ],
+      "summary": "タイムズカーWebシステムへの外部からの不正アクセスを2026年9月25日に検知し、翌26日までに経路を遮断。会員・退会者・入会未完了者の約660万アカウントの情報が漏えいした。クレジットカード情報は漏えいしていない。",
+      "sources": [
+        {
+          "title": "パーク24 公式発表（第1報）",
+          "url": "https://www.park24.co.jp/news/2026/09/web1.html"
+        },
+        {
+          "title": "パーク24 公式発表（第2報）",
+          "url": "https://www.park24.co.jp/news/2026/09/20260928-1.html"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2609/28/2000001808/"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-gyazo",
+      "organization": "株式会社Helpfeel",
+      "services": [
+        "Gyazo"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-09-11",
+      "date_announced": "2026-09-16",
+      "affected_count": 23620000,
+      "count_note": "約2,362万件（うちメールアドレス登録のない匿名ユーザー約1,801万件）。別に画像メタデータ約4.9億件、第二報で削除済み画像のメタデータ約1.74億件の流出も判明",
+      "cause": "vulnerability",
+      "data_types": [
+        "メールアドレス",
+        "アカウント情報",
+        "画像メタデータ"
+      ],
+      "summary": "画像アップロードサーバーの脆弱性を悪用され、システム上で任意のコマンドを実行された。ユーザーに関するデータ約2,362万件と画像のメタデータ約4.9億件が外部に流出した。",
+      "sources": [
+        {
+          "title": "INTERNET Watch（第二報）",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2143465.html"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-digital-agency-gss",
+      "organization": "デジタル庁",
+      "services": [
+        "ガバメントソリューションサービス（GSS）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "date_occurred": "2026-06-25",
+      "date_announced": "2026-09-11",
+      "affected_count": 246000,
+      "count_note": "約24.6万件。各府省庁の職員等の情報で、一般の方の個人情報やマイナンバー等は含まれない",
+      "cause": "vulnerability",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "住所",
+        "従業員情報"
+      ],
+      "summary": "政府共通の業務基盤GSSに、VPN機器の既知の脆弱性を突いて第三者が侵入。保守運用担当者のアカウントでサーバ上の大量のファイルにアクセスされ、職員等の個人情報約24.6万件が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2609/11/2000001406/"
+        }
+      ]
+    },
+    {
+      "id": "2026-08-yellowhat",
+      "organization": "株式会社イエローハット",
+      "services": [
+        "イエローハットWEB作業予約システム"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-08-18",
+      "date_announced": "2026-08-28",
+      "affected_count": 1801499,
+      "count_note": "最大件数（漏えいの可能性）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "会員番号"
+      ],
+      "summary": "WEB作業予約システムが不正なプログラムによる攻撃を受け、最大180万1,499人分の個人情報が漏えいした可能性がある。クレジットカード情報・パスワード・車両情報は同システムで保持していない。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2608/28/2000000922/"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2136818.html"
+        }
+      ]
+    },
+    {
+      "id": "2026-08-rakuten-books",
+      "organization": "楽天ブックスネットワーク株式会社",
+      "services": [
+        "楽天ブックス"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-04-05",
+      "date_announced": "2026-08-21",
+      "affected_count": 33333,
+      "count_note": "2022年5月18〜19日、2023年12月19〜21日の楽天ブックス注文データに含まれる配送先情報",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "郵便番号",
+        "住所",
+        "電話番号"
+      ],
+      "summary": "楽天ブックスの関係会社が使用する一部のPC端末に社外の第三者が不正アクセス。端末内に保存されていた楽天ブックス利用者の配送先情報33,333件が対象となった。",
+      "sources": [
+        {
+          "title": "楽天ブックスネットワーク 公式発表",
+          "url": "https://www.rakuten-booksnetwork.co.jp/2026/08/21/unauthorized-access-notice/index.html"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/08/25/56015.html"
+        }
+      ]
+    },
+    {
+      "id": "2026-08-sakura-internet",
+      "organization": "さくらインターネット株式会社",
+      "services": [
+        "さくらのレンタルサーバ"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-08-17",
+      "affected_count": 1360563,
+      "count_note": "影響の可能性があるアカウント数。うち30件はハッシュ化パスワードを含む。公表時点でデータの外部持ち出しは確認されていない",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "生年月日",
+        "性別",
+        "契約情報"
+      ],
+      "summary": "8月17日にレンタルサーバ一部環境への不正アクセスを公表。8月19日には社内の販売管理システムも不正アクセスを受けた可能性があると発表し、影響範囲が最大136万563アカウントに拡大した。",
+      "sources": [
+        {
+          "title": "ITmedia エンタープライズ",
+          "url": "https://www.itmedia.co.jp/enterprise/articles/2608/20/news078.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF1962O0Z10C26A8000000/"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-murauchi",
+      "organization": "株式会社ムラウチドットコム",
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-07-15",
+      "date_announced": "2026-07-24",
+      "affected_count": 7716811,
+      "count_note": "2026年9月15日の第二報で確定した件数",
+      "cause": "vulnerability",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "生年月日",
+        "性別"
+      ],
+      "summary": "Webシステムの一部の脆弱性を突かれて侵入され、複数のシステムに不正アクセスされた。顧客の個人情報771万6,811件が外部に持ち出された。クレジットカード情報とパスワードは含まれない。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2609/17/2000001567/"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2141530.html"
+        }
+      ]
+    },
     {
       "id": "2024-08-kadokawa",
       "organization": "株式会社KADOKAWA",

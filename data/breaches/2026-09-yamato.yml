@@ -1,0 +1,20 @@
+organization: ヤマト運輸株式会社
+services:
+  - クロネコ代金後払いサービス
+industry: 物流
+country: JP
+date_occurred: 2026-09-28
+date_announced: 2026-09-29
+affected_count: null
+count_note: 件数は調査中（公表時点）
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 購入履歴
+summary: 通販向けの「クロネコ代金後払いサービス」への第三者からの不正アクセスを9月28日に確認し、同日中にサービスを停止。保存されていた氏名・住所や請求金額・商品明細などが対象となる可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/01/56361.html
