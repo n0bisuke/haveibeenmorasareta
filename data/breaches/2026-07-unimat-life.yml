@@ -1,0 +1,11 @@
+organization: 株式会社ユニマットライフ
+industry: 小売・EC
+country: JP
+date_announced: 2026-07-03
+affected_count: 126947
+cause: human_error
+root_cause: 取引先に送った注文書フォームのExcelファイル内に顧客リストが残っていた
+summary: 営業所が取引先に送ったメールの添付ファイルに、別ファイルとして保存すべき顧客リストが含まれていたことで、顧客の個人情報が漏えいした。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/07/16/55718.html

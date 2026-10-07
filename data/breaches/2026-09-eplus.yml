@@ -1,0 +1,19 @@
+organization: 株式会社イープラス
+services:
+  - スマチケ 払戻し管理システム
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-09-11
+date_announced: 2026-09-29
+affected_count: 1463
+count_note: 銀行振込751件、クレジットカード返金644件、郵便振替68件
+cause: unauthorized_access
+data_types:
+  - 口座番号
+  - 住所
+  - 氏名
+  - メールアドレス
+summary: 電子チケット「スマチケ」の払戻し情報を管理するシステムが不正アクセスを受け、払戻しを申請した利用者の情報が漏えいした。銀行振込で返金した利用者は振込先口座情報も対象。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/02/56372.html

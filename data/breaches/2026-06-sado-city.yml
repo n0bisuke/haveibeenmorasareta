@@ -1,0 +1,18 @@
+organization: 佐渡市
+services:
+  - 佐渡トキファンクラブ
+industry: 行政
+country: JP
+date_occurred: 2026-06-16
+date_announced: 2026-06-19
+affected_count: 4111
+cause: third_party
+root_cause: 委託事業で使うメール配信システム「める配くん」のサーバーの脆弱性を突かれた
+vendor:
+  name: 株式会社ディライトフル
+data_types:
+  - メールアドレス
+summary: 市の委託事業で使っていたメール配信サーバーに外部から不正アクセスがあり、佐渡トキファンクラブ会員のメールアドレスが漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/07/03/55628.html

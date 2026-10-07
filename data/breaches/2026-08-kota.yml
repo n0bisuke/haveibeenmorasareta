@@ -1,0 +1,16 @@
+organization: コタ株式会社
+industry: 製造
+country: JP
+date_occurred: 2026-03-27
+date_announced: 2026-08-20
+affected_count: 109147
+count_note: 公表された8区分の単純合計で延べ109,147件（閲覧の可能性を否定できない件数）。ランサムウェア被害自体はそれ以前に公表
+cause: ransomware
+data_types:
+  - 氏名
+  - 従業員情報
+  - 取引先情報
+summary: 2026年3月に発生したランサムウェア被害について調査結果を公表し、従業員・退職者、採用応募者、直送サービス利用者、取引先、株主などの個人情報が第三者に閲覧された可能性を否定できないとした。クレジットカード情報は含まれない。
+sources:
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/?p=39023

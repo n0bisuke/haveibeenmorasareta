@@ -1,0 +1,20 @@
+organization: 株式会社ユナイテッドアローズ
+industry: 小売・EC
+country: JP
+date_occurred: 2026-01-04
+date_announced: 2026-03-16
+affected_count: 10000
+count_note: 約1万人（広報・PR関係の取引先）
+cause: insider
+root_cause: 退職した元従業員がクラウドの外部連携機能でデータを持ち出した
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 取引先情報
+summary: 元従業員によるデータ持ち出しにより、広報・PR活動に関係する取引先の個人情報が漏えいした。一般顧客の購買情報やクレジットカード情報は含まれない。
+sources:
+  - title: FASHIONSNAP
+    url: https://www.fashionsnap.com/article/2026-03-16/united-arrows-information-leak/
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/03/26/54914.html

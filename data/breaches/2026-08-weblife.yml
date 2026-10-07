@@ -1,0 +1,15 @@
+organization: 株式会社ウェブライフ
+services:
+  - OEM向けホームページ作成サービス
+industry: IT・通信
+country: JP
+date_occurred: 2026-08-14
+date_announced: 2026-08-18
+affected_count: 7425
+count_note: 最大件数。直販の「BiNDup」利用者は対象外
+cause: vulnerability
+root_cause: OEMパートナーの顧客管理システムのアクセス制御の不備
+summary: OEM向けホームページ作成サービスが不正アクセスを受け、一部の顧客情報が改ざんされるとともに、契約法人・契約個人の情報が漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/08/25/56016.html

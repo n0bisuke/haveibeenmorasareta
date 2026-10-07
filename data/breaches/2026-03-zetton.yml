@@ -1,0 +1,11 @@
+organization: 株式会社ゼットン
+industry: 飲食
+country: JP
+date_announced: 2026-03-27
+affected_count: 18553
+cause: malware
+root_cause: PC端末のマルウェア感染で旧メールシステムのアカウント認証情報が窃取された
+summary: 店舗で使っていた旧メールシステムのアカウント2件が海外から継続的に不正ログインされ、予約客などの個人情報が流出した可能性がある。決済情報とマイナンバーは含まれない。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/04/09/55018.html

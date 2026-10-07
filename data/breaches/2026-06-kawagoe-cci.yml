@@ -1,0 +1,19 @@
+organization: 川越商工会議所
+industry: 団体・その他
+country: JP
+date_occurred: 2026-06-08
+date_announced: 2026-06-12
+affected_count: 4363
+cause: human_error
+root_cause: 個人情報の列を非表示にしただけの会員データを、削除済みと誤認して外部に送信
+data_types:
+  - 口座番号
+  - 生年月日
+  - 住所
+  - 氏名
+  - 電話番号
+  - メールアドレス
+summary: 事業所名と業種のみのリストを送るはずが、個人情報を含む会員データを外部の送信先2件に誤って送信した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/06/26/55579.html
