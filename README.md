@@ -11,9 +11,12 @@
 data/breaches/*.yml   … 1インシデント = 1ファイルのデータ
 schema/               … データの JSON Schema
 scripts/validate.mjs  … データ検証（スキーマ・ファイル名・日付・出典の重複）
+data/data-types.yml   … 漏洩した情報の種類と重要度の対応表
+data/industries.yml   … 業種の一覧
 scripts/build.mjs     … データから public/breaches.json を生成（リポジトリにもコミット）
 public/               … 公開ディレクトリ（依存なしの静的 HTML/CSS/JS）
 public/visualization/ … グラフなどの可視化ページ（/visualization/）
+public/ranking/       … 企業・業界・原因別のランキング（/ranking/）
 ```
 
 - **PR 時**: `Validate` ワークフローがデータを検証し、問題があれば CI が失敗します
