@@ -1,0 +1,29 @@
+name: 調査中の事案の続報
+description: 件数・漏えいの有無などが分かっていない事案の情報を集めます（サイトでは「調査中」と表示）
+title: "【調査中】"
+labels: ["調査中"]
+body:
+  - type: input
+    id: organization
+    attributes:
+      label: 企業・団体名
+    validations:
+      required: true
+  - type: textarea
+    id: known
+    attributes:
+      label: 分かっていること
+      description: 公表日・発生日・原因・漏えいした可能性のある情報など
+    validations:
+      required: true
+  - type: textarea
+    id: wanted
+    attributes:
+      label: 募集している情報
+      placeholder: 漏えい件数の続報、侵入経路、委託先・提携先の公表 など
+  - type: textarea
+    id: sources
+    attributes:
+      label: 出典 URL
+    validations:
+      required: true

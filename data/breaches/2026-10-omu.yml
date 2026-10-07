@@ -1,6 +1,8 @@
 organization: 大阪公立大学
 industry: 人材・教育
 country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/26
 date_occurred: 2026-10-02
 date_announced: 2026-10-05
 affected_count: 130000

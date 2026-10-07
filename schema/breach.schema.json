@@ -50,6 +50,16 @@
       "format": "date",
       "description": "最初の公表日 YYYY-MM-DD"
     },
+    "status": {
+      "type": "string",
+      "enum": ["investigating"],
+      "description": "investigating: 件数・漏えいの有無などが調査中。サイトに「調査中」と表示し、issue で情報を募集する"
+    },
+    "issue": {
+      "type": "string",
+      "pattern": "^https://github\\.com/n0bisuke/haveibeenmorasareta/issues/[0-9]+$",
+      "description": "情報募集用の Issue の URL（status: investigating のとき）"
+    },
     "affected_count": {
       "type": [
         "integer",
