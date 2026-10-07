@@ -10,7 +10,7 @@
     "dev": "npm run build && npx --yes serve public"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "devDependencies": {
     "ajv": "^8.17.1",
