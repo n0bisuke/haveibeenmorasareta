@@ -19,7 +19,7 @@
 | `organization` | ✔ | 企業・団体の正式名称 |
 | `group` | | 企業グループ名。子会社などをランキングでまとめて集計したいときに指定 |
 | `services` | | 影響を受けたサービス・サイト名のリスト |
-| `industry` | | 業種。[`data/industries.yml`](data/industries.yml) にある名前のみ使用可 |
+| `industry` | | 業種。[`data/industries.yml`](data/industries.yml) にある名前のみ使用可。複数指定できる（当事者の業種を先頭に、委託元の自治体・病院など影響を受けた側の業種も並べる） |
 | `country` | | 国コード（`JP` など） |
 | `status` | | 件数・漏えいの有無などが調査中なら `investigating`。サイトに「調査中」と表示されます |
 | `issue` | | `status: investigating` のとき必須。情報を募集する GitHub Issue の URL（ラベル「調査中」） |

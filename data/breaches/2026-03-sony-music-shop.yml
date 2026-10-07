@@ -2,7 +2,9 @@ organization: 株式会社ソニー・ミュージックソリューションズ
 group: ソニーグループ
 services:
   - Sony Music Shop
-industry: エンタメ・スポーツ
+industry:
+  - エンタメ・スポーツ
+  - 小売・EC
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/33

@@ -2,7 +2,9 @@ organization: 株式会社BANDAI SPIRITS
 group: バンダイナムコグループ
 services:
   - プレミアムバンダイ
-industry: 小売・EC
+industry:
+  - 小売・EC
+  - エンタメ・スポーツ
 country: JP
 date_announced: 2024-06-11
 affected_count: 1951

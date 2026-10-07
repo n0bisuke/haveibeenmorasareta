@@ -2,7 +2,9 @@ organization: ユニバーサル ミュージック合同会社
 services:
   - UNIVERSAL MUSIC STORE
   - THE BEATLES STORE
-industry: エンタメ・スポーツ
+industry:
+  - エンタメ・スポーツ
+  - 小売・EC
 country: JP
 date_announced: 2026-05-18
 affected_count: 3105585

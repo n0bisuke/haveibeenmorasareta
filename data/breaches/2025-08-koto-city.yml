@@ -1,5 +1,7 @@
 organization: 江東区
-industry: 行政
+industry:
+  - 行政
+  - 人材・教育
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30

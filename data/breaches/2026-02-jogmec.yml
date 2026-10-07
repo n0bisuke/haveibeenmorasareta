@@ -1,5 +1,7 @@
 organization: 独立行政法人エネルギー・金属鉱物資源機構（JOGMEC）
-industry: 行政
+industry:
+  - 行政
+  - エネルギー・インフラ
 country: JP
 date_announced: 2026-02-17
 affected_count: 2246

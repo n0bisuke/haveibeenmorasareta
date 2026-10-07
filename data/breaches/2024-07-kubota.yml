@@ -2,7 +2,9 @@ organization: 株式会社クボタ
 group: クボタグループ
 services:
   - クボタクレジット
-industry: 金融・保険
+industry:
+  - 金融・保険
+  - 製造
 country: JP
 date_occurred: 2024-05-26
 date_announced: 2024-07-01

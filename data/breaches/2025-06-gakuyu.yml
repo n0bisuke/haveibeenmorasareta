@@ -1,7 +1,9 @@
 organization: 学悠出版株式会社
 services:
   - 愛知全県模試
-industry: 人材・教育
+industry:
+  - 人材・教育
+  - メディア・出版
 country: JP
 date_announced: 2025-06-30
 affected_count: 322000

@@ -1,7 +1,9 @@
 organization: 八尾市
 services:
   - 八尾市立斎場
-industry: 行政
+industry:
+  - 行政
+  - 生活サービス
 country: JP
 date_announced: 2024-05-09
 affected_count: 3000

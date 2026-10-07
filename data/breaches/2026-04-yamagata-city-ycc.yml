@@ -1,7 +1,9 @@
 organization: 山形市
 services:
   - 委託先 株式会社YCC情報システム
-industry: 行政
+industry:
+  - 行政
+  - 医療
 country: JP
 date_occurred: 2026-04-02
 date_announced: 2026-04-16

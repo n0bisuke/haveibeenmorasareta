@@ -2,7 +2,9 @@ organization: コスモ石油マーケティング株式会社
 group: コスモエネルギーグループ
 services:
   - コミっと車検
-industry: エネルギー・インフラ
+industry:
+  - エネルギー・インフラ
+  - 交通・モビリティ
 country: JP
 date_announced: 2025-06-16
 affected_count: 176000

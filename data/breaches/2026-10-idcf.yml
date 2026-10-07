@@ -2,7 +2,9 @@ organization: 株式会社IDCフロンティア
 group: ソフトバンクグループ
 services:
   - IDCFクラウド
-industry: IT・通信
+industry:
+  - IT・通信
+  - 行政
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/24

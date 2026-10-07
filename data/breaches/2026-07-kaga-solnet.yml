@@ -1,7 +1,9 @@
 organization: 加賀ソルネット株式会社
 services:
   - アカデミコナビ
-industry: 小売・EC
+industry:
+  - 小売・EC
+  - 人材・教育
 country: JP
 date_occurred: 2026-06-22
 date_announced: 2026-07-01

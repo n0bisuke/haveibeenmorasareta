@@ -2,7 +2,10 @@ organization: 株式会社KADOKAWA
 services:
   - ニコニコ
   - N中等部・N高等学校・S高等学校
-industry: メディア・出版
+industry:
+  - メディア・出版
+  - エンタメ・スポーツ
+  - 人材・教育
 country: JP
 date_occurred: 2024-06-08
 date_announced: 2024-08-05

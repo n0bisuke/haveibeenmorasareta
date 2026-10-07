@@ -1,7 +1,9 @@
 organization: 学校法人東海大学
 services:
   - 業務委託先 株式会社東海ソフト開発のサーバー
-industry: 人材・教育
+industry:
+  - 人材・教育
+  - 医療
 country: JP
 date_announced: 2025-11-14
 affected_count: 193118
