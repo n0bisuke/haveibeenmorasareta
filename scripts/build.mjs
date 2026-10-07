@@ -1,12 +1,13 @@
 import { execFileSync } from 'node:child_process';
 import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { ROOT, loadBreaches, loadDataTypes, loadIndustries } from './lib.mjs';
+import { ROOT, loadBreaches, loadDataTypes, loadIndustries, loadVulnTargets } from './lib.mjs';
 
 const PUBLIC = path.join(ROOT, 'public');
 
 const { levels, types } = await loadDataTypes();
 const industries = await loadIndustries();
+const vulnTargets = await loadVulnTargets();
 const rank = Object.fromEntries(levels.map((l, i) => [l.id, i]));
 
 // 漏洩した情報のうち最も重要度の高いレベルを、その事案の重要度とする
@@ -30,6 +31,6 @@ function lastDataUpdate() {
 // public/ の静的ファイルはそのまま公開し、データだけを生成する
 await writeFile(
   path.join(PUBLIC, 'breaches.json'),
-  JSON.stringify({ generated_at: lastDataUpdate(), count: breaches.length, severity_levels: levels, data_types: types, industries, breaches }, null, 2) + '\n',
+  JSON.stringify({ generated_at: lastDataUpdate(), count: breaches.length, severity_levels: levels, data_types: types, industries, vuln_targets: vulnTargets, breaches }, null, 2) + '\n',
 );
 console.log(`✔ public/breaches.json に ${breaches.length} 件を出力しました`);

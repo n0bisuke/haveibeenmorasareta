@@ -8,6 +8,7 @@ affected_count: 12630
 count_note: クレジットカード情報12,630件
 cause: vulnerability
 root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+vuln_target: ec_payment
 data_types:
   - クレジットカード番号
 summary: 作業服通販サイトが不正アクセスを受け、決済アプリケーションの改ざんにより購入者のクレジットカード情報が漏えいし、一部が不正利用された可能性がある。神奈川県警からの通報で発覚した。

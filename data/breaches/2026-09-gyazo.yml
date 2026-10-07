@@ -9,6 +9,7 @@ affected_count: 23620000
 count_note: 約2,362万件（うちメールアドレス登録のない匿名ユーザー約1,801万件）。別に画像メタデータ約4.9億件、第二報で削除済み画像のメタデータ約1.74億件の流出も判明
 cause: vulnerability
 root_cause: 画像アップロードサーバーの脆弱性で任意のコマンドを実行された
+vuln_target: web_app
 data_types:
   - メールアドレス
   - アカウント名

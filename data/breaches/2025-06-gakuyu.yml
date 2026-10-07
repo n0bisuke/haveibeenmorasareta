@@ -8,6 +8,7 @@ affected_count: 322000
 count_note: 約32万件（模試受験者・塾関係者など）
 cause: vulnerability
 root_cause: ウェブサイトへのSQLインジェクション攻撃
+vuln_target: web_app
 summary: 中学生向けの全県模試を運営する同社のウェブサイトがサイバー攻撃を受け、模試受験者や塾関係者などの個人情報が漏えいした可能性がある。
 sources:
   - title: ScanNetSecurity（2025年7月の情報漏えい）
