@@ -1,0 +1,23 @@
+organization: 東京都交通局
+services:
+  - 都営交通モニター
+industry:
+  - 行政
+  - 交通・モビリティ
+country: JP
+org_type: local_gov
+prefecture: 東京都
+date_occurred: 2024-05-23
+date_announced: 2024-05-24
+affected_count: 29
+count_note: 29名（モニター応募者2,230名への送信のうち）
+cause: human_error
+root_cause: 委託先が作成した送信リストの不備で、宛名と送信先がずれたメールを送信した
+vendor:
+  name: 株式会社エスアイ総合研究所
+data_types:
+  - 氏名
+summary: 都営交通モニターの応募者2,230名にメールを送る際、委託先の送信リストの不備により、29名に別の応募者の氏名を宛名にしたメールが送られた。
+sources:
+  - title: 東京都交通局 お知らせ
+    url: https://www.kotsu.metro.tokyo.jp/pickup_information/news/03b8bfb053935973cbf69603c3b6dc685078cf6a.pdf

@@ -1,0 +1,21 @@
+organization: 株式会社MTI
+group: 日本郵船グループ
+industry:
+  - IT・通信
+  - 物流
+country: JP
+date_occurred: 2024-08-22
+date_announced: 2024-10-21
+affected_count: null
+count_note: 件数は未公表（同社と取引先の社員など）
+cause: ransomware
+attack_methods:
+  - stolen_credentials
+root_cause: 認証情報を窃取した第三者がサーバーに不正アクセスし、ランサムウェアを実行した
+data_types:
+  - 従業員情報
+  - 取引先情報
+summary: 日本郵船グループで海事技術の研究開発などを担うMTIのサーバーが、認証情報を窃取した第三者に不正アクセスされ、ランサムウェアでファイルを暗号化された。同社と取引先の社員などの個人情報が漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/10/30/51837.html

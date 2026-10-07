@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-10-07T16:21:14.000Z",
-  "count": 319,
+  "count": 329,
   "severity_levels": [
     {
       "id": "critical",
@@ -1391,6 +1391,43 @@
       "severity": "medium"
     },
     {
+      "id": "2026-09-nippon-rentacar",
+      "organization": "ニッポンレンタカーサービス株式会社",
+      "services": [
+        "ニッポンレンタカーアプリ"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2026-09-19",
+      "date_announced": "2026-09-26",
+      "affected_count": 96,
+      "count_note": "41名（初報）＋別の手法による55名（続報）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "会員ID",
+        "利用履歴",
+        "運転免許情報",
+        "住所",
+        "生年月日",
+        "クレジットカード情報（番号の一部・有効期限等）"
+      ],
+      "summary": "「ニッポンレンタカーアプリ」のシステムが不正アクセスを受け、会員41名の情報が閲覧されたおそれがある。続報で、別の手法による55名分の会員情報ページへの不正アクセスも判明した。登録状況により運転免許証番号・住所・生年月日・カード番号下4桁なども対象となる。",
+      "sources": [
+        {
+          "title": "ニッポンレンタカー お知らせ",
+          "url": "https://www.nipponrentacar.co.jp/info/202610_2.html"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56358.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
       "id": "2026-09-fines",
       "organization": "株式会社ファインズ",
       "services": [
@@ -1786,6 +1823,37 @@
         {
           "title": "セキュリティ対策Lab",
           "url": "https://rocket-boys.co.jp/?p=39348"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2026-08-ana-trading",
+      "organization": "全日空商事株式会社",
+      "group": "ANAグループ",
+      "services": [
+        "選べるe-GIFT"
+      ],
+      "industry": [
+        "小売・EC",
+        "交通・モビリティ"
+      ],
+      "country": "JP",
+      "date_occurred": "2026-08-11",
+      "date_announced": "2026-08-24",
+      "affected_count": null,
+      "count_note": "件数は未公表（契約企業の担当者）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "取引先情報"
+      ],
+      "summary": "法人向けデジタルギフト「選べるe-GIFT」の管理運用システムが8月11日から12日にかけて不正アクセスを受け、契約企業担当者の氏名やメールアドレスの一部が記載されたページが閲覧された。一部のギフトが第三者に不正に交換される被害も確認された。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/08/27/56047.html"
         }
       ],
       "severity": "medium"
@@ -2272,6 +2340,44 @@
       "severity": "high"
     },
     {
+      "id": "2026-07-ocs",
+      "organization": "株式会社OCS",
+      "group": "ANAグループ",
+      "services": [
+        "OCS FAMILY LINK SERVICE"
+      ],
+      "industry": [
+        "物流",
+        "交通・モビリティ"
+      ],
+      "country": "JP",
+      "date_announced": "2026-07-23",
+      "affected_count": null,
+      "count_note": "件数は未公表",
+      "cause": "vulnerability",
+      "data_types": [
+        "氏名",
+        "住所",
+        "メールアドレス",
+        "電話番号",
+        "会員ID",
+        "取引先情報",
+        "パスワード（ハッシュ化・暗号化済み）"
+      ],
+      "summary": "ANAグループの国際宅配会社OCSが運営する海外への荷物配送サービス「OCS FAMILY LINK SERVICE」が不正アクセスを受け、利用者の氏名・海外の配送先住所・メールアドレス・電話番号・会員番号や、法人管理者の情報（暗号化されたパスワードを含む）が流出した可能性がある。のちに脆弱性が原因と公表した。クレジットカード情報は含まれない。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/08/05/55870.html"
+        },
+        {
+          "title": "セキュリティ対策Lab（原因の続報）",
+          "url": "https://rocket-boys.co.jp/?p=38478"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-07-sagawa-smartclub",
       "organization": "佐川急便株式会社",
       "services": [
@@ -2456,6 +2562,31 @@
         }
       ],
       "severity": null
+    },
+    {
+      "id": "2026-07-kyushu-kyuko-bus",
+      "organization": "九州急行バス株式会社",
+      "group": "西鉄グループ",
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2026-06-24",
+      "date_announced": "2026-07-06",
+      "affected_count": 1,
+      "cause": "insider",
+      "root_cause": "運転士が運行管理者を通じて予約情報を不正に閲覧・取得した",
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "利用履歴"
+      ],
+      "summary": "高速バスの運転士が運行管理者を通じて乗客の予約情報を不正に取得し、その乗客の電話番号に私的なショートメッセージを送っていた。乗客からの申し出で発覚した。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/07/14/55697.html"
+        }
+      ],
+      "severity": "high"
     },
     {
       "id": "2026-07-unimat-life",
@@ -3008,6 +3139,36 @@
       "severity": "high"
     },
     {
+      "id": "2026-05-jr-takashimaya",
+      "organization": "株式会社ジェイアール東海高島屋",
+      "group": "JR東海グループ",
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-05-01",
+      "date_announced": "2026-05-08",
+      "affected_count": 7582,
+      "count_note": "7,582人（当初は最大1,338件。2026年7月24日の追加調査で拡大）",
+      "cause": "vulnerability",
+      "root_cause": "サーバー管理ソフトウェアの脆弱性を悪用された可能性が高い",
+      "vuln_target": "business_tool",
+      "data_types": [
+        "氏名",
+        "従業員情報"
+      ],
+      "summary": "アルバイトスタッフ管理システムが不正アクセスを受けた。追加調査で、アルバイト応募受付サーバーに2015年以降の個人情報を含む操作ログが残っていたことが判明し、対象は7,582人に拡大した。外部へ流出した痕跡は確認されていないとしている。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/08/10/55899.html"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/?p=37383"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
       "id": "2026-05-aeon-mall",
       "organization": "イオンモール株式会社",
       "group": "イオングループ",
@@ -3088,6 +3249,49 @@
       "severity": "high"
     },
     {
+      "id": "2026-04-daiwa-lease",
+      "organization": "大和リース株式会社",
+      "group": "大和ハウスグループ",
+      "services": [
+        "Dシェア"
+      ],
+      "industry": [
+        "交通・モビリティ",
+        "不動産"
+      ],
+      "country": "JP",
+      "date_occurred": "2026-03-17",
+      "date_announced": "2026-04-23",
+      "affected_count": 1066000,
+      "count_note": "最大約106.6万件（漏えいの可能性。2026年6月の調査結果で外部へのデータ転送の痕跡は検出されず）",
+      "cause": "ransomware",
+      "attack_methods": [
+        "network_device"
+      ],
+      "root_cause": "カーシェア支援システムの提供元の再委託先（日本テレネット）がネットワーク機器から侵入され、ランサムウェアに感染",
+      "vendor": {
+        "name": "日本テレネット株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "カーシェアリングサービス「Dシェア」のシステム提供元・コールセンター委託先であるUPRの再委託先、日本テレネットがランサムウェア攻撃を受け、会員情報が漏えいした可能性があると公表した。日本テレネットは6月の調査結果で、外部へのデータ転送の痕跡は検出されなかったとしている。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/05/14/55264.html"
+        },
+        {
+          "title": "ScanNetSecurity（日本テレネットの調査結果）",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/07/27/55786.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-04-yamagata-city-ycc",
       "organization": "山形市",
       "services": [
@@ -3128,6 +3332,36 @@
         }
       ],
       "severity": "critical"
+    },
+    {
+      "id": "2026-04-nyk",
+      "organization": "日本郵船株式会社",
+      "group": "日本郵船グループ",
+      "industry": [
+        "物流",
+        "交通・モビリティ"
+      ],
+      "country": "JP",
+      "date_occurred": "2026-03-24",
+      "date_announced": "2026-04-09",
+      "affected_count": null,
+      "count_note": "件数は未公表（社員・退職者と取引先企業の社員）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "従業員情報",
+        "取引先情報"
+      ],
+      "summary": "グループで利用する船舶燃料調達システムが第三者の不正アクセスを受け、社員・退職者と取引先企業の社員の氏名・会社名・電話番号・メールアドレスなどが外部に持ち出された。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/05/01/55187.html"
+        }
+      ],
+      "severity": "medium"
     },
     {
       "id": "2026-04-tein",
@@ -4184,6 +4418,33 @@
         }
       ],
       "severity": "high"
+    },
+    {
+      "id": "2025-10-jrbus-kanto",
+      "organization": "ジェイアールバス関東株式会社",
+      "group": "JR東日本グループ",
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2025-10-13",
+      "date_announced": "2025-10-17",
+      "affected_count": null,
+      "count_note": "件数は未公表。2025年12月の最終報告で、個人情報が外部に送信・流出した痕跡は確認されなかったとした",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名"
+      ],
+      "summary": "愛知県新城市の事業所で使っていた業務用パソコン1台が外部から不正アクセスを受け、個人情報を含む情報が漏えいした可能性があると公表した。2025年12月16日の最終報告では、外部専門家の調査で流出を示すログや痕跡は確認されなかったとしている。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/10/29/53911.html"
+        },
+        {
+          "title": "セキュリティ対策Lab（最終報告）",
+          "url": "https://rocket-boys.co.jp/?p=26738"
+        }
+      ],
+      "severity": "medium"
     },
     {
       "id": "2025-10-medics",
@@ -6653,6 +6914,37 @@
       "severity": "critical"
     },
     {
+      "id": "2024-10-mti",
+      "organization": "株式会社MTI",
+      "group": "日本郵船グループ",
+      "industry": [
+        "IT・通信",
+        "物流"
+      ],
+      "country": "JP",
+      "date_occurred": "2024-08-22",
+      "date_announced": "2024-10-21",
+      "affected_count": null,
+      "count_note": "件数は未公表（同社と取引先の社員など）",
+      "cause": "ransomware",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "root_cause": "認証情報を窃取した第三者がサーバーに不正アクセスし、ランサムウェアを実行した",
+      "data_types": [
+        "従業員情報",
+        "取引先情報"
+      ],
+      "summary": "日本郵船グループで海事技術の研究開発などを担うMTIのサーバーが、認証情報を窃取した第三者に不正アクセスされ、ランサムウェアでファイルを暗号化された。同社と取引先の社員などの個人情報が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/10/30/51837.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
       "id": "2024-10-hachijuni",
       "organization": "株式会社八十二銀行",
       "group": "八十二グループ",
@@ -8111,6 +8403,40 @@
         }
       ],
       "severity": null
+    },
+    {
+      "id": "2024-05-toei-transport",
+      "organization": "東京都交通局",
+      "services": [
+        "都営交通モニター"
+      ],
+      "industry": [
+        "行政",
+        "交通・モビリティ"
+      ],
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "東京都",
+      "date_occurred": "2024-05-23",
+      "date_announced": "2024-05-24",
+      "affected_count": 29,
+      "count_note": "29名（モニター応募者2,230名への送信のうち）",
+      "cause": "human_error",
+      "root_cause": "委託先が作成した送信リストの不備で、宛名と送信先がずれたメールを送信した",
+      "vendor": {
+        "name": "株式会社エスアイ総合研究所"
+      },
+      "data_types": [
+        "氏名"
+      ],
+      "summary": "都営交通モニターの応募者2,230名にメールを送る際、委託先の送信リストの不備により、29名に別の応募者の氏名を宛名にしたメールが送られた。",
+      "sources": [
+        {
+          "title": "東京都交通局 お知らせ",
+          "url": "https://www.kotsu.metro.tokyo.jp/pickup_information/news/03b8bfb053935973cbf69603c3b6dc685078cf6a.pdf"
+        }
+      ],
+      "severity": "medium"
     },
     {
       "id": "2024-05-shinzone",
