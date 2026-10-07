@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-07T12:41:13.000Z",
-  "count": 31,
+  "generated_at": "2026-10-07T12:45:45.000Z",
+  "count": 35,
   "severity_levels": [
     {
       "id": "critical",
@@ -38,6 +38,7 @@
     "健康・医療情報": "high",
     "アレルギー情報": "high",
     "保存データ（写真・文書等）": "high",
+    "メッセージ・チャット履歴": "high",
     "購入履歴": "high",
     "利用履歴": "high",
     "パスワード（ハッシュ化・暗号化済み）": "high",
@@ -970,6 +971,145 @@
         }
       ],
       "severity": "medium"
+    },
+    {
+      "id": "2025-11-tokai-univ",
+      "organization": "学校法人東海大学",
+      "services": [
+        "業務委託先 株式会社東海ソフト開発のサーバー"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_announced": "2025-11-14",
+      "affected_count": 193118,
+      "count_note": "延べ最大193,118人（2026年2月18日の第2報）。うち2020〜2025年度の学生76,314人",
+      "cause": "third_party",
+      "data_types": [
+        "健康・医療情報",
+        "生年月日",
+        "住所",
+        "パスワード（保管形式不明）",
+        "氏名",
+        "性別",
+        "電話番号",
+        "メールアドレス",
+        "会員ID"
+      ],
+      "summary": "ネットワークシステムの保守を委託していた東海ソフト開発のサーバーが不正アクセスを受け、ランサムウェアの被害に遭った。委託先がルールに反してデータを持ち帰っていた。学生・保護者・教職員の情報のほか、付属病院の健診情報なども漏えいした。クレジットカード情報は含まれない。",
+      "sources": [
+        {
+          "title": "東海大学 公式発表",
+          "url": "https://www.u-tokai.ac.jp/news-notice/1358654/"
+        },
+        {
+          "title": "ITmedia NEWS（第2報）",
+          "url": "https://www.itmedia.co.jp/news/articles/2602/18/news129.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2025-11-nikkei",
+      "organization": "株式会社日本経済新聞社",
+      "services": [
+        "Slack（社内ビジネスチャット）"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2025-11-04",
+      "affected_count": 17368,
+      "count_note": "社員・取引先などSlackに登録されていた人数",
+      "cause": "malware",
+      "data_types": [
+        "メッセージ・チャット履歴",
+        "氏名",
+        "メールアドレス",
+        "従業員情報",
+        "取引先情報"
+      ],
+      "summary": "社員の個人所有PCがウイルスに感染してSlackの認証情報が流出し、そのアカウントで不正ログインされた。Slackに登録されていた氏名・メールアドレス・チャット履歴などが流出した疑いがある。2025年9月に被害を把握していた。",
+      "sources": [
+        {
+          "title": "マイナビニュース",
+          "url": "https://news.mynavi.jp/techplus/article/20251106-3632637/"
+        },
+        {
+          "title": "時事ドットコム",
+          "url": "https://www.jiji.com/jc/article?k=2025110500313&g=eco"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2025-10-askul",
+      "organization": "アスクル株式会社",
+      "services": [
+        "ASKUL",
+        "LOHACO"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2025-10-19",
+      "date_announced": "2025-10-19",
+      "affected_count": 1340000,
+      "count_note": "2025年12月12日の調査結果で約74万件の流出を確認。2026年7月31日に新たに約60万件を特定し、漏えい懸念は約134万件に拡大",
+      "cause": "ransomware",
+      "data_types": [
+        "住所",
+        "氏名",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "ランサムウェア攻撃によりデータの暗号化とシステム障害が発生し、法人向けECのASKULや個人向けのLOHACOで受注・出荷を停止。委託先のアカウントを使って侵入され、顧客情報を中心に個人情報が流出した。クレジットカード情報は含まれない。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS（2025年12月12日）",
+          "url": "https://www.itmedia.co.jp/news/articles/2512/12/news106.html"
+        },
+        {
+          "title": "ITmedia NEWS（2026年7月31日）",
+          "url": "https://www.itmedia.co.jp/news/article/2607/31/2000000327/"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2025-10-asahi",
+      "organization": "アサヒグループホールディングス株式会社",
+      "industry": "食品・飲料",
+      "country": "JP",
+      "date_occurred": "2025-09-29",
+      "date_announced": "2025-10-03",
+      "affected_count": 1914000,
+      "count_note": "漏えいまたはそのおそれ約191.4万件（2025年11月27日、うちお客様相談室への問い合わせ情報約152.5万件）。2026年2月18日の調査完了時点で漏えいを確認したのは約11.5万件。9月29日にシステム障害を公表し、10月3日の第2報で情報漏えいの可能性を公表",
+      "cause": "ransomware",
+      "data_types": [
+        "生年月日",
+        "住所",
+        "氏名",
+        "性別",
+        "電話番号",
+        "メールアドレス",
+        "問い合わせ内容",
+        "従業員情報",
+        "取引先情報"
+      ],
+      "summary": "ランサムウェア攻撃により国内グループ会社の受注・出荷やコールセンター業務が停止。ランサムウェアグループQilinが犯行を主張した。お客様相談室への問い合わせ情報や従業員・取引先の情報が漏えいまたはそのおそれがある。クレジットカード情報は含まれない。",
+      "sources": [
+        {
+          "title": "アサヒグループ 公式発表（第2報）",
+          "url": "https://www.asahigroup-holdings.com/newsroom/detail/20251003-0104.html"
+        },
+        {
+          "title": "アサヒグループ 調査結果（2025年11月27日）",
+          "url": "https://www.asahigroup-holdings.com/newsroom/detail/20251127-0104.html"
+        },
+        {
+          "title": "INTERNET Watch（2026年2月）",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2087007.html"
+        }
+      ],
+      "severity": "high"
     },
     {
       "id": "2024-08-kadokawa",

@@ -1,0 +1,21 @@
+organization: 株式会社日本経済新聞社
+services:
+  - Slack（社内ビジネスチャット）
+industry: メディア・出版
+country: JP
+date_announced: 2025-11-04
+affected_count: 17368
+count_note: 社員・取引先などSlackに登録されていた人数
+cause: malware
+data_types:
+  - メッセージ・チャット履歴
+  - 氏名
+  - メールアドレス
+  - 従業員情報
+  - 取引先情報
+summary: 社員の個人所有PCがウイルスに感染してSlackの認証情報が流出し、そのアカウントで不正ログインされた。Slackに登録されていた氏名・メールアドレス・チャット履歴などが流出した疑いがある。2025年9月に被害を把握していた。
+sources:
+  - title: マイナビニュース
+    url: https://news.mynavi.jp/techplus/article/20251106-3632637/
+  - title: 時事ドットコム
+    url: https://www.jiji.com/jc/article?k=2025110500313&g=eco
