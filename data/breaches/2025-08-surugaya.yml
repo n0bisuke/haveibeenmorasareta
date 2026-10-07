@@ -1,0 +1,25 @@
+organization: 株式会社駿河屋
+services:
+  - 駿河屋.JP
+industry: 小売・EC
+country: JP
+date_occurred: 2025-07-23
+date_announced: 2025-08-08
+affected_count: 29932
+count_note: 顧客29,932名、クレジットカード30,431件（2025年12月4日の調査結果）
+cause: vulnerability
+root_cause: 監視ツールの脆弱性を突かれ、決済ページのJavaScriptが改ざんされた
+data_types:
+  - クレジットカード番号
+  - クレジットカードのセキュリティコード
+  - 住所
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 郵便番号
+summary: ECサイトの決済ページが改ざんされ、2025年7月23日から8月8日にかけて決済時に入力されたクレジットカード情報と個人情報が外部に流出した可能性がある。
+sources:
+  - title: 駿河屋 公式発表（2025年12月4日）
+    url: https://www.suruga-ya.jp/feature/osirase/2025_12_04.html
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/12/18/54267.html

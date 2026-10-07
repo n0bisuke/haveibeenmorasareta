@@ -1,0 +1,13 @@
+organization: 株式会社川本製作所
+industry: 製造
+country: JP
+date_announced: 2025-12-18
+affected_count: 2545
+count_note: 2017年2月〜2019年5月にお問い合わせフォームへ入力された情報
+cause: unauthorized_access
+data_types:
+  - 問い合わせ内容
+summary: ウェブサイトの「お問い合わせフォーム」に入力された情報の一部が、第三者の不正アクセスにより外部に流出した。ハッキングフォーラムで同社への不正アクセスを主張するサンプルデータが公開されていた。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/01/08/54374.html

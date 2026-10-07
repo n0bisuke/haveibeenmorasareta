@@ -1,0 +1,25 @@
+organization: ハウステンボス株式会社
+industry: 旅行
+country: JP
+date_occurred: 2025-08-29
+date_announced: 2025-08-29
+affected_count: 1540000
+count_note: 約154万人（2025年12月12日の調査結果。顧客約149.9万人、役職員等約3.7万人、取引先約0.9万人）
+cause: ransomware
+data_types:
+  - マイナンバー
+  - 健康・医療情報
+  - 生年月日
+  - 住所
+  - 氏名
+  - 性別
+  - 電話番号
+  - メールアドレス
+  - 従業員情報
+  - 取引先情報
+summary: 社内ネットワークに侵入した第三者により複数のサーバーや端末のデータが暗号化され、来場者・役職員・取引先の個人情報が漏えいした可能性がある。役職員等についてはマイナンバーや健康診断結果も含まれうる。クレジットカード情報は保有していない。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/09/10/53594.html
+  - title: ビジネス+IT
+    url: https://www.sbbit.jp/article/cont1/176965

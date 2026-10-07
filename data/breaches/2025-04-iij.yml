@@ -1,0 +1,19 @@
+organization: 株式会社インターネットイニシアティブ（IIJ）
+services:
+  - IIJセキュアMXサービス
+industry: IT・通信
+country: JP
+date_occurred: 2024-08-03
+date_announced: 2025-04-15
+affected_count: 4072650
+count_note: メールアカウント等の情報4,072,650件
+cause: vulnerability
+root_cause: メールソフト「Active!mail」の脆弱性（スタックベースのバッファオーバーフロー）
+data_types:
+  - メールアドレス
+summary: 法人向けメールセキュリティサービスの設備に不正アクセスがあり、2024年8月から不正なプログラムが実行されていた。利用企業のメール情報が漏えいした可能性があり、総務省から書面による指導を受けた。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/04/16/52691.html
+  - title: ScanNetSecurity（総務省指導）
+    url: https://scan.netsecurity.ne.jp/article/2025/07/24/53273.html

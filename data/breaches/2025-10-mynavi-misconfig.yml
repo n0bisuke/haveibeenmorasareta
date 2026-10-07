@@ -1,0 +1,17 @@
+organization: 株式会社マイナビ
+industry: 人材・教育
+country: JP
+date_announced: 2025-10-03
+affected_count: 14762
+count_note: 従業員・退職者の情報
+cause: misconfiguration
+root_cause: 社給端末を管理するクラウド環境のアクセス権限の誤設定（2022年11月〜2025年9月）
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 従業員情報
+summary: 社員に貸与するPCや携帯電話を管理するクラウド環境で権限設定を誤り、従業員や退職者の情報に第三者がアクセスできる状態になっていた。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/10/15/53804.html
