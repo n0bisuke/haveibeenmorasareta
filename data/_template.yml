@@ -8,6 +8,8 @@ services:                                 # 任意: 影響を受けたサービ�
   - サンプルオンラインストア
 industry: 小売・EC                         # 任意: 業種（data/industries.yml にある名前のみ）
 country: JP                               # 任意: ISO 3166-1 alpha-2
+# status: investigating                      # 任意: 件数・漏えいの有無などが調査中のとき（issue も指定）
+# issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/1  # 任意: 情報募集用の Issue
 date_occurred: 2025-01-10                 # 任意: 発生日（判明していれば）
 date_announced: 2025-01-31                # 必須: 最初の公表日
 affected_count: 12345                     # 任意: 件数。不明なら null
