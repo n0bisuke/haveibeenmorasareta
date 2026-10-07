@@ -1,0 +1,25 @@
+organization: 大阪公立大学
+industry: 人材・教育
+country: JP
+date_occurred: 2026-10-02
+date_announced: 2026-10-05
+affected_count: 130000
+count_note: 少なくとも13万人分（在学生・卒業生・教職員。旧大阪市立大・旧大阪府立大の在籍者を含む）。流出の有無は調査中
+cause: ransomware
+root_cause: 仮想化基盤に侵入され、約500台のサーバーとバックアップデータが暗号化された
+data_types:
+  - 口座番号
+  - 住所
+  - 保存データ（写真・文書等）
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 従業員情報
+summary: 情報基盤システム全般で大規模な障害が発生し、ランサムウェアによるサイバー攻撃と判断した。全授業を休講とした。被害を受けたシステムには学生証の顔写真や教職員の給与振込口座を含む個人情報が保管されており、流出の恐れがある。
+sources:
+  - title: ビジネス+IT
+    url: https://www.sbbit.jp/article/cont1/187311
+  - title: MBSニュース（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/4d139d586213ccab1bea8ea57e005e6689c4ab6b
+  - title: ライブドアニュース
+    url: https://news.livedoor.com/topics/detail/32494364/
