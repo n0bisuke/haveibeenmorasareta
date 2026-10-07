@@ -41,3 +41,9 @@ export async function loadDataTypes() {
   }
   return { levels, types, duplicates };
 }
+
+// data/industries.yml（業種の一覧）を読み込む
+export async function loadIndustries() {
+  const text = await readFile(path.join(ROOT, 'data', 'industries.yml'), 'utf8');
+  return yaml.load(text, { schema: yaml.CORE_SCHEMA });
+}

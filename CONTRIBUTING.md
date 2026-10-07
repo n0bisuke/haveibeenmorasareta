@@ -17,8 +17,9 @@
 | フィールド | 必須 | 説明 |
 | --- | --- | --- |
 | `organization` | ✔ | 企業・団体の正式名称 |
+| `group` | | 企業グループ名。子会社などをランキングでまとめて集計したいときに指定 |
 | `services` | | 影響を受けたサービス・サイト名のリスト |
-| `industry` | | 業種 |
+| `industry` | | 業種。[`data/industries.yml`](data/industries.yml) にある名前のみ使用可 |
 | `country` | | 国コード（`JP` など） |
 | `date_occurred` | | 発生日 `YYYY-MM-DD` |
 | `date_announced` | ✔ | 最初の公表日 `YYYY-MM-DD` |

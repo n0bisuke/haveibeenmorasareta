@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T12:47:45.000Z",
+  "generated_at": "2026-10-07T12:53:34.000Z",
   "count": 39,
   "severity_levels": [
     {
@@ -62,6 +62,23 @@
     "画像メタデータ": "low",
     "ポイント情報": "low"
   },
+  "industries": [
+    "IT・通信",
+    "小売・EC",
+    "金融・保険",
+    "製造",
+    "食品",
+    "飲食",
+    "物流",
+    "交通・モビリティ",
+    "旅行",
+    "不動産",
+    "医療",
+    "美容・健康",
+    "人材・教育",
+    "メディア・出版",
+    "行政"
+  ],
   "breaches": [
     {
       "id": "2026-10-his",
@@ -162,6 +179,7 @@
     {
       "id": "2026-10-rakuten-drive",
       "organization": "楽天シンフォニー株式会社",
+      "group": "楽天グループ",
       "services": [
         "楽天ドライブ"
       ],
@@ -532,6 +550,7 @@
     {
       "id": "2026-08-yellowhat",
       "organization": "株式会社イエローハット",
+      "group": "イエローハットグループ",
       "services": [
         "イエローハットWEB作業予約システム"
       ],
@@ -564,6 +583,7 @@
     {
       "id": "2026-08-rakuten-books",
       "organization": "楽天ブックスネットワーク株式会社",
+      "group": "楽天グループ",
       "services": [
         "楽天ブックス"
       ],
@@ -733,7 +753,7 @@
     {
       "id": "2026-07-nichirei",
       "organization": "株式会社ニチレイ",
-      "industry": "食品・物流",
+      "industry": "食品",
       "country": "JP",
       "date_announced": "2026-07-13",
       "affected_count": 50000,
@@ -821,6 +841,7 @@
     {
       "id": "2026-04-2rinkan",
       "organization": "株式会社２りんかんイエローハット",
+      "group": "イエローハットグループ",
       "services": [
         "２りんかんアプリ",
         "２りんかん会員サーバー"
@@ -1199,7 +1220,7 @@
     {
       "id": "2025-10-asahi",
       "organization": "アサヒグループホールディングス株式会社",
-      "industry": "食品・飲料",
+      "industry": "食品",
       "country": "JP",
       "date_occurred": "2025-09-29",
       "date_announced": "2025-10-03",
