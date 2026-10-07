@@ -44,6 +44,14 @@ npm run dev
 1. リポジトリの **Settings → Pages → Build and deployment → Source** を **GitHub Actions** にする
 2. **Settings → Branches** で `main` にブランチ保護ルールを追加し、`Validate` を必須チェックにすると、検証を通らない PR はマージできなくなります
 
+## ライセンス
+
+- プログラム（`scripts/`・`public/` の HTML・CSS・JavaScript など）: [MIT License](LICENSE)
+- 事案データ（`data/` と、そこから生成される `public/breaches.json`）: [CC BY 4.0](data/LICENSE)
+  - 出典として「Have I Been Morasareta 日本版」を表示すれば、商用・非商用を問わず再利用・改変できます
+  - 各事案の出典リンク先の記事・公式発表の著作権は、それぞれの著作権者に帰属します
+- PR で追加・修正されたデータやコードも、上記のライセンスで提供されるものとします
+
 ## 免責
 
 掲載内容は各社の公式発表および報道に基づきますが、正確性を保証するものではありません。
