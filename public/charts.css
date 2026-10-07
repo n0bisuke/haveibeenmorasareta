@@ -35,8 +35,10 @@
 .viz-note { font-size: 0.8rem; margin: 8px 0 0; }
 .viz-table { margin-top: 12px; font-size: 0.85rem; }
 .viz-table summary { cursor: pointer; color: var(--muted); }
-.viz-table table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.viz-table .table-scroll { overflow-x: auto; }
+.viz-table table { width: 100%; min-width: 480px; border-collapse: collapse; margin-top: 8px; }
 .viz-table th, .viz-table td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.viz-table td:first-child { white-space: nowrap; }
 .viz-table td.num, .viz-table th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 
 /* ---- ランキング ---- */
