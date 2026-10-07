@@ -3,6 +3,8 @@
 情報漏洩を公表した企業・サービスを一覧化するサイトです。
 データは GitHub のプルリクエストで誰でも追加・修正できます。
 
+🔗 https://n0bisuke.github.io/haveibeenmorasareta/
+
 ## 仕組み
 
 ```
