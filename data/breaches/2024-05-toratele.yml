@@ -1,0 +1,19 @@
+organization: 株式会社阪神タイガース
+group: 阪急阪神ホールディングス
+services:
+  - 虎テレ
+industry: エンタメ・スポーツ
+country: JP
+date_announced: 2024-05-17
+affected_count: 8452
+count_note: プレゼントキャンペーン応募情報
+cause: misconfiguration
+root_cause: 委託先YTEが管理するクラウドサービスの設定ミス（2021年4月〜2024年5月）
+vendor:
+  name: 株式会社YTE
+data_types:
+  - メールアドレス
+summary: 公式動画配信サービスのキャンペーン応募者のメールアドレスなどが、委託先のクラウド設定ミスで外部から閲覧可能な状態だった。グループのセキュリティ監視会社が発見した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/05/24/51051.html

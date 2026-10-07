@@ -1,0 +1,20 @@
+organization: シャープ株式会社
+services:
+  - COCORO STORE
+  - ヘルシオデリ
+industry: 製造
+country: JP
+date_occurred: 2024-07-19
+date_announced: 2024-10-30
+affected_count: 5836
+count_note: 個人情報5,836人、うちクレジットカード情報4,257人
+cause: unauthorized_access
+root_cause: サイトに悪性スクリプトが埋め込まれ、利用者が不正なサイトに誘導された
+data_types:
+  - クレジットカード番号
+summary: 公式オンラインストアと食材宅配サービスのサイトに悪性スクリプトが埋め込まれ、利用者の個人情報とカード情報が漏えいした可能性があると調査結果を発表した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/11/08/51889.html
+  - title: ScanNetSecurity（初報）
+    url: https://scan.netsecurity.ne.jp/article/2024/08/01/51409.html

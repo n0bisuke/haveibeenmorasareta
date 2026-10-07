@@ -1,0 +1,17 @@
+organization: 株式会社インテンス
+services:
+  - fofo
+industry: 小売・EC
+country: JP
+date_announced: 2024-05-20
+affected_count: 15198
+count_note: クレジットカード情報15,198件
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: オンラインショップが外部から不正アクセスを受け、購入者のクレジットカード情報が漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/05/27/51056.html

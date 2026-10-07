@@ -1,0 +1,18 @@
+organization: 株式会社クボタ
+group: クボタグループ
+services:
+  - クボタクレジット
+industry: 金融・保険
+country: JP
+date_occurred: 2024-05-26
+date_announced: 2024-07-01
+affected_count: 61424
+count_note: クボタクレジットの顧客の利用明細
+cause: third_party
+root_cause: 利用明細の印刷・発送を委託していたイセトーへのランサムウェア攻撃
+vendor:
+  name: 株式会社イセトー
+summary: グループの信販会社クボタクレジットが利用明細の印刷・発送を委託していたイセトーがランサムウェアに感染し、顧客の個人情報が漏えいした。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/07/04/51242.html

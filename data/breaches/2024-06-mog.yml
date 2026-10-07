@@ -1,0 +1,16 @@
+organization: mog株式会社
+services:
+  - こども栄養バランスmog オンラインストア
+industry: 食品
+country: JP
+date_announced: 2024-06-14
+affected_count: 3484
+count_note: 個人情報3,484件、うちクレジットカード情報2,153件（2024年11月12日の調査結果）
+cause: third_party
+root_cause: 委託先のカートシステム運営会社のサーバーが不正アクセスを受け、カートシステムが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: 子ども向け栄養食品の通販サイトで、委託先のカートシステムが改ざんされ、購入者のカード情報が漏えいし、一部が不正利用された可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/11/20/51937.html

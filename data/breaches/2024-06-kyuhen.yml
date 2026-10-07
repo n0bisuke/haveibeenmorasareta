@@ -1,0 +1,12 @@
+organization: 株式会社キューヘン
+group: 九州電力グループ
+industry: 製造
+country: JP
+date_announced: 2024-06-03
+affected_count: 104000
+count_note: 約10万4,000件
+cause: ransomware
+summary: 社内ネットワークの一部が不正アクセスを受け、ランサムウェアで社内情報の一部が暗号化された。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/06/13/51141.html

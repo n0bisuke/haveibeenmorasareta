@@ -1,0 +1,14 @@
+organization: 新日本プロレスリング株式会社
+services:
+  - Team NJPW
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2024-04-22
+date_announced: 2024-04-30
+affected_count: 32775
+count_note: ファンクラブ会員
+cause: lost_device
+summary: 後楽園ホール大会でのファンクラブ会員向け撮影会の準備中に、会員情報を保存したUSBメモリを紛失した。USBメモリは暗号化・セキュリティ機能付きだった。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/05/10/50978.html

@@ -1,0 +1,17 @@
+organization: 有限会社なごみ
+services:
+  - 味市春香なごみオンラインショップ
+industry: 食品
+country: JP
+date_announced: 2024-04-22
+affected_count: 16407
+count_note: クレジットカード情報16,407件（会員15,274名）
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: オンラインショップが不正アクセスを受け、カード情報を含む会員の個人情報が漏えいし、一部が不正利用された可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/05/01/50940.html

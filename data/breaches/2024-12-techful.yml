@@ -1,0 +1,14 @@
+organization: 444株式会社
+group: マイナビグループ
+services:
+  - TechFUL
+industry: 人材・教育
+country: JP
+date_announced: 2024-12-25
+affected_count: 45576
+count_note: 個人ユーザー登録アカウント45,576件など
+cause: unauthorized_access
+summary: プログラミング能力測定サービスのサーバーが不正アクセスを受け、個人情報や機密情報が漏えいした疑いがある。攻撃者からデータを公開しない条件で身代金を要求された。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/01/10/52145.html

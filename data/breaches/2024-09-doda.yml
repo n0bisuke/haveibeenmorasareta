@@ -1,0 +1,20 @@
+organization: パーソルキャリア株式会社
+group: パーソルグループ
+services:
+  - doda
+industry: 人材・教育
+country: JP
+date_announced: 2024-09-17
+affected_count: 549195
+count_note: 法人顧客の採用担当者の情報
+cause: misconfiguration
+root_cause: 販売代理店向けシステムで、閲覧の必要がない採用担当者の情報まで見える状態だった
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 取引先情報
+summary: 求人広告の販売代理店向けシステムの不備により、法人顧客の採用担当者の名刺相当の情報が代理店とその委託先1,164社から閲覧できる状態だった。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/10/01/51689.html

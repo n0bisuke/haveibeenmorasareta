@@ -1,0 +1,17 @@
+organization: 株式会社東京玉子本舗
+services:
+  - 東京玉子本舗公式オンラインショップ
+industry: 食品
+country: JP
+date_announced: 2024-07-31
+affected_count: 73961
+count_note: 個人情報73,961件、うちクレジットカード情報65,387件
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: オンラインショップの一部が改ざんされ、顧客のクレジットカード情報と個人情報が漏えいした可能性がある。警視庁からの連絡で発覚し、約2か月後に公表した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/08/06/51432.html

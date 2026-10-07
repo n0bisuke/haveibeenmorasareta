@@ -1,0 +1,19 @@
+organization: 株式会社下鴨茶寮
+services:
+  - 下鴨茶寮オンラインショップ
+industry: 食品
+country: JP
+date_announced: 2024-07-18
+affected_count: 19235
+count_note: 個人情報19,235件、うちクレジットカード情報16,682件（2024年10月31日の調査結果）
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: 京料理の老舗の通販サイトが改ざんされ、会員の個人情報とカード情報が漏えいし、一部が不正利用された可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/11/11/51893.html
+  - title: ScanNetSecurity（初報）
+    url: https://scan.netsecurity.ne.jp/article/2024/07/30/51383.html

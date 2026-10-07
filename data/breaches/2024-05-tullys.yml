@@ -1,0 +1,18 @@
+organization: タリーズコーヒージャパン株式会社
+group: 伊藤園グループ
+services:
+  - タリーズ オンラインストア
+industry: 飲食
+country: JP
+date_announced: 2024-05-30
+affected_count: 92685
+count_note: 会員情報92,685名、うちクレジットカード情報52,958名（2024年10月3日の調査結果）
+cause: unauthorized_access
+data_types:
+  - クレジットカード番号
+summary: オンラインストアが不正アクセスを受け、会員情報とクレジットカード情報が漏えいした可能性がある。警視庁からの連絡でカード決済を停止し、ストアを一時閉鎖した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/10/16/51767.html
+  - title: ScanNetSecurity（初報）
+    url: https://scan.netsecurity.ne.jp/article/2024/06/07/51118.html

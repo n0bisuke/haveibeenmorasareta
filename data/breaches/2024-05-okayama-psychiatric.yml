@@ -1,0 +1,19 @@
+organization: 地方独立行政法人岡山県精神科医療センター
+industry: 医療
+country: JP
+date_occurred: 2024-05-19
+date_announced: 2024-05-21
+affected_count: 40000
+count_note: 最大約4万人分の患者情報（2024年6月11日の発表）
+cause: ransomware
+data_types:
+  - 健康・医療情報
+  - 氏名
+  - 住所
+  - 生年月日
+summary: 電子カルテを含む総合情報システムがランサムウェア攻撃を受けて障害が発生し、センターと関連診療所の患者情報が最大約4万人分流出した可能性がある。2025年2月に調査報告書を公開した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/07/22/51344.html
+  - title: ScanNetSecurity（初報）
+    url: https://scan.netsecurity.ne.jp/article/2024/05/27/51057.html

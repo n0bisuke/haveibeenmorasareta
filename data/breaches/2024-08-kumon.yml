@@ -1,0 +1,19 @@
+organization: 株式会社公文教育研究会
+industry: 人材・教育
+country: JP
+date_occurred: 2024-05-26
+date_announced: 2024-08-20
+affected_count: 739714
+count_note: 会員・テスト受験者等
+cause: third_party
+root_cause: 郵送物の印刷・発送を委託していたイセトーへのランサムウェア攻撃
+vendor:
+  name: 株式会社イセトー
+data_types:
+  - 住所
+  - 氏名
+  - 電話番号
+summary: 顧客向け郵送物の業務を委託していたイセトーがランサムウェアに感染し、会員やテスト受験者の個人情報が漏えいしたことが新たに判明した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/08/29/51549.html

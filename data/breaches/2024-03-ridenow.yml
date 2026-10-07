@@ -1,0 +1,16 @@
+organization: 株式会社Philo
+services:
+  - RIDENOW
+industry: 交通・モビリティ
+country: JP
+date_announced: 2024-03-07
+affected_count: 1700
+count_note: 約1,700名
+cause: unauthorized_access
+data_types:
+  - 運転免許情報
+  - 本人確認書類画像
+summary: 過去に運営していたカーシェアサービスのシステムが不正アクセスを受け、登録された運転免許証の画像などの顧客データが削除・漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/03/25/50757.html

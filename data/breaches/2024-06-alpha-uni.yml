@@ -1,0 +1,17 @@
+organization: 株式会社アルファユニ
+services:
+  - アルファユニ 公式ショップ
+industry: 小売・EC
+country: JP
+date_announced: 2024-06-17
+affected_count: 3126
+count_note: 個人情報3,126件、うちクレジットカード情報1,054件
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: 医療用ユニフォームの通販サイトが不正注文を通じて改ざんされ、購入者のカード情報が漏えいし、会員の個人情報が閲覧された可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/06/26/51197.html

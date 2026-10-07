@@ -1,0 +1,15 @@
+organization: 国土交通省近畿地方整備局 淀川河川事務所
+services:
+  - 淀川河川公園施設予約システム「よどいこ！」
+industry: 行政
+country: JP
+date_occurred: 2024-03-01
+date_announced: 2024-03-07
+affected_count: 34000
+count_note: 約3万4,000件
+cause: unauthorized_access
+root_cause: 委託先がシステム改修のため構築していたテスト環境の新規サーバーへの不正通信
+summary: 淀川河川公園の施設予約システムで、改修作業中のテスト用サーバーに外部から不正な通信があり、利用者の個人情報の一部が流出した可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/03/15/50730.html

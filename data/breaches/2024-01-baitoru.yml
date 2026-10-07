@@ -1,0 +1,17 @@
+organization: ディップ株式会社
+services:
+  - バイトル
+industry: 人材・教育
+country: JP
+date_occurred: 2023-12-30
+date_announced: 2024-01-31
+affected_count: 1296
+count_note: 掲載企業経由の応募者情報
+cause: unauthorized_access
+root_cause: 掲載企業のID・パスワードを取得した第三者が応募者管理画面に不正ログイン
+summary: 求人サイトの掲載企業のアカウントで管理画面に不正ログインされ、応募者情報が閲覧されたうえ、応募者に不審なメールが送られた。のちに別の掲載企業でも被害が判明した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/02/09/50575.html
+  - title: ScanNetSecurity（続報）
+    url: https://scan.netsecurity.ne.jp/article/2024/05/23/51042.html
