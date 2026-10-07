@@ -86,6 +86,26 @@
       "maxLength": 80,
       "description": "原因の詳細（任意）。悪用された脆弱性や侵入経路など、公表されている範囲で簡潔に"
     },
+    "vendor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name"
+      ],
+      "description": "漏洩が起きた委託先・提供元（任意）。委託先経由の事案のみ",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "委託先の正式名称"
+        },
+        "group": {
+          "type": "string",
+          "minLength": 1,
+          "description": "委託先の企業グループ名（例: 日立グループ）。ランキングでまとめて集計する"
+        }
+      }
+    },
     "data_types": {
       "type": "array",
       "items": {
