@@ -1,5 +1,7 @@
 organization: 関西医科大学附属病院
-industry: 医療
+industry:
+  - 医療
+  - 人材・教育
 country: JP
 date_announced: 2026-06-03
 affected_count: 1800

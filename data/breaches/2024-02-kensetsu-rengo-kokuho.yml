@@ -1,5 +1,7 @@
 organization: 建設連合国民健康保険組合
-industry: 金融・保険
+industry:
+  - 金融・保険
+  - 医療
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29

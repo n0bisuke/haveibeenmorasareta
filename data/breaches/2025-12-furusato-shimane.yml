@@ -1,5 +1,7 @@
 organization: 公益財団法人ふるさと島根定住財団
-industry: 団体・その他
+industry:
+  - 団体・その他
+  - 人材・教育
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30

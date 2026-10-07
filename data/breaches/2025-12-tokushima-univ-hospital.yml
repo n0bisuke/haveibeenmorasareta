@@ -1,5 +1,7 @@
 organization: 徳島大学病院
-industry: 医療
+industry:
+  - 医療
+  - 人材・教育
 country: JP
 date_occurred: 2025-10-11
 date_announced: 2025-12-22

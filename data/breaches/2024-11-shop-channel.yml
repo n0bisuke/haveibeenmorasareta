@@ -1,7 +1,9 @@
 organization: ジュピターショップチャンネル株式会社
 services:
   - ショップチャンネル
-industry: 小売・EC
+industry:
+  - 小売・EC
+  - メディア・出版
 country: JP
 date_occurred: 2024-11-15
 date_announced: 2024-11-19

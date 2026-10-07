@@ -1,5 +1,7 @@
 organization: ワークスタイル株式会社
-industry: IT・通信
+industry:
+  - IT・通信
+  - 人材・教育
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29

@@ -82,7 +82,8 @@
     "エンタメ・スポーツ",
     "エネルギー・インフラ",
     "団体・その他",
-    "生活サービス"
+    "生活サービス",
+    "福祉・介護"
   ],
   "vuln_targets": [
     {
@@ -153,7 +154,10 @@
       "services": [
         "IDCFクラウド"
       ],
-      "industry": "IT・通信",
+      "industry": [
+        "IT・通信",
+        "行政"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/24",
@@ -275,7 +279,10 @@
         "医療関係者向けウェブサイト",
         "RAコネクト"
       ],
-      "industry": "医療",
+      "industry": [
+        "医療",
+        "製造"
+      ],
       "country": "JP",
       "date_announced": "2026-10-06",
       "affected_count": 558700,
@@ -678,7 +685,10 @@
       "services": [
         "研究支援サイト（JRR-3 施設利用手続き）"
       ],
-      "industry": "行政",
+      "industry": [
+        "行政",
+        "エネルギー・インフラ"
+      ],
       "country": "JP",
       "date_occurred": "2026-09-25",
       "date_announced": "2026-10-01",
@@ -717,7 +727,10 @@
       "services": [
         "らしんばん"
       ],
-      "industry": "小売・EC",
+      "industry": [
+        "小売・EC",
+        "エンタメ・スポーツ"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/25",
@@ -915,7 +928,10 @@
       "services": [
         "クロネコ代金後払いサービス"
       ],
-      "industry": "物流",
+      "industry": [
+        "物流",
+        "金融・保険"
+      ],
       "country": "JP",
       "date_occurred": "2026-09-28",
       "date_announced": "2026-09-29",
@@ -1298,7 +1314,10 @@
       "services": [
         "イエローハットWEB作業予約システム"
       ],
-      "industry": "小売・EC",
+      "industry": [
+        "小売・EC",
+        "交通・モビリティ"
+      ],
       "country": "JP",
       "date_occurred": "2026-08-18",
       "date_announced": "2026-08-28",
@@ -1350,7 +1369,10 @@
     {
       "id": "2026-08-nagaizumi-town",
       "organization": "長泉町",
-      "industry": "行政",
+      "industry": [
+        "行政",
+        "人材・教育"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/35",
@@ -1513,7 +1535,10 @@
     {
       "id": "2026-08-kyoiku-software",
       "organization": "株式会社教育ソフトウェア",
-      "industry": "IT・通信",
+      "industry": [
+        "IT・通信",
+        "人材・教育"
+      ],
       "country": "JP",
       "date_occurred": "2026-04-30",
       "date_announced": "2026-08-17",
@@ -1602,7 +1627,10 @@
     {
       "id": "2026-08-omu-hospital",
       "organization": "大阪公立大学医学部附属病院",
-      "industry": "医療",
+      "industry": [
+        "医療",
+        "人材・教育"
+      ],
       "country": "JP",
       "date_occurred": "2025-10-01",
       "date_announced": "2026-08-12",
@@ -1718,7 +1746,10 @@
       "services": [
         "ショップサーブ"
       ],
-      "industry": "IT・通信",
+      "industry": [
+        "IT・通信",
+        "小売・EC"
+      ],
       "country": "JP",
       "date_occurred": "2026-05-21",
       "date_announced": "2026-08-01",
@@ -1754,7 +1785,10 @@
       "services": [
         "PeakManager（予約・顧客管理プラットフォーム）"
       ],
-      "industry": "美容・健康",
+      "industry": [
+        "美容・健康",
+        "IT・通信"
+      ],
       "country": "JP",
       "date_occurred": "2026-07-27",
       "date_announced": "2026-07-31",
@@ -1869,7 +1903,10 @@
     {
       "id": "2026-07-omic",
       "organization": "海外貨物検査株式会社",
-      "industry": "団体・その他",
+      "industry": [
+        "団体・その他",
+        "食品"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
@@ -1909,7 +1946,10 @@
     {
       "id": "2026-07-nichirei",
       "organization": "株式会社ニチレイ",
-      "industry": "食品",
+      "industry": [
+        "食品",
+        "物流"
+      ],
       "country": "JP",
       "date_announced": "2026-07-13",
       "affected_count": 50000,
@@ -1964,7 +2004,10 @@
     {
       "id": "2026-07-kyorin",
       "organization": "杏林学園",
-      "industry": "人材・教育",
+      "industry": [
+        "人材・教育",
+        "医療"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
@@ -2037,7 +2080,10 @@
       "services": [
         "アカデミコナビ"
       ],
-      "industry": "小売・EC",
+      "industry": [
+        "小売・EC",
+        "人材・教育"
+      ],
       "country": "JP",
       "date_occurred": "2026-06-22",
       "date_announced": "2026-07-01",
@@ -2383,7 +2429,10 @@
     {
       "id": "2026-06-fujita-hospital",
       "organization": "藤田医科大学病院",
-      "industry": "医療",
+      "industry": [
+        "医療",
+        "人材・教育"
+      ],
       "country": "JP",
       "date_occurred": "2026-05-25",
       "date_announced": "2026-06-03",
@@ -2402,7 +2451,10 @@
     {
       "id": "2026-06-kmu-hospital",
       "organization": "関西医科大学附属病院",
-      "industry": "医療",
+      "industry": [
+        "医療",
+        "人材・教育"
+      ],
       "country": "JP",
       "date_announced": "2026-06-03",
       "affected_count": 1800,
@@ -2429,7 +2481,10 @@
       "services": [
         "satsuki（アクティビティ事業者向け予約管理システム）"
       ],
-      "industry": "旅行",
+      "industry": [
+        "旅行",
+        "エンタメ・スポーツ"
+      ],
       "country": "JP",
       "date_occurred": "2026-05-20",
       "date_announced": "2026-05-28",
@@ -2461,7 +2516,10 @@
         "UNIVERSAL MUSIC STORE",
         "THE BEATLES STORE"
       ],
-      "industry": "エンタメ・スポーツ",
+      "industry": [
+        "エンタメ・スポーツ",
+        "小売・EC"
+      ],
       "country": "JP",
       "date_announced": "2026-05-18",
       "affected_count": 3105585,
@@ -2532,7 +2590,10 @@
         "２りんかんアプリ",
         "２りんかん会員サーバー"
       ],
-      "industry": "小売・EC",
+      "industry": [
+        "小売・EC",
+        "交通・モビリティ"
+      ],
       "country": "JP",
       "date_occurred": "2026-04-20",
       "date_announced": "2026-04-23",
@@ -2570,7 +2631,10 @@
       "services": [
         "委託先 株式会社YCC情報システム"
       ],
-      "industry": "行政",
+      "industry": [
+        "行政",
+        "医療"
+      ],
       "country": "JP",
       "date_occurred": "2026-04-02",
       "date_announced": "2026-04-16",
@@ -2650,7 +2714,10 @@
       "services": [
         "東京型銭湯 スタンプラリー"
       ],
-      "industry": "エンタメ・スポーツ",
+      "industry": [
+        "エンタメ・スポーツ",
+        "行政"
+      ],
       "country": "JP",
       "date_occurred": "2026-03-30",
       "date_announced": "2026-04-02",
@@ -2768,7 +2835,10 @@
       "services": [
         "大阪マラソン2026 ボランティア登録情報システム"
       ],
-      "industry": "団体・その他",
+      "industry": [
+        "エンタメ・スポーツ",
+        "団体・その他"
+      ],
       "country": "JP",
       "date_announced": "2026-03-25",
       "affected_count": 4101,
@@ -2843,7 +2913,10 @@
     {
       "id": "2026-03-medica",
       "organization": "株式会社メディカ出版",
-      "industry": "メディア・出版",
+      "industry": [
+        "メディア・出版",
+        "医療"
+      ],
       "country": "JP",
       "date_occurred": "2026-03-13",
       "date_announced": "2026-03-17",
@@ -2943,7 +3016,10 @@
       "services": [
         "Sony Music Shop"
       ],
-      "industry": "エンタメ・スポーツ",
+      "industry": [
+        "エンタメ・スポーツ",
+        "小売・EC"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/33",
@@ -2964,7 +3040,10 @@
     {
       "id": "2026-02-jogmec",
       "organization": "独立行政法人エネルギー・金属鉱物資源機構（JOGMEC）",
-      "industry": "行政",
+      "industry": [
+        "行政",
+        "エネルギー・インフラ"
+      ],
       "country": "JP",
       "date_announced": "2026-02-17",
       "affected_count": 2246,
@@ -2984,7 +3063,10 @@
     {
       "id": "2026-02-nms-musashikosugi",
       "organization": "日本医科大学武蔵小杉病院",
-      "industry": "医療",
+      "industry": [
+        "医療",
+        "人材・教育"
+      ],
       "country": "JP",
       "date_occurred": "2026-02-09",
       "date_announced": "2026-02-13",
@@ -3017,7 +3099,10 @@
       "id": "2026-02-gala-yuzawa",
       "organization": "株式会社ガーラ湯沢",
       "group": "JR東日本グループ",
-      "industry": "旅行",
+      "industry": [
+        "旅行",
+        "エンタメ・スポーツ"
+      ],
       "country": "JP",
       "date_announced": "2026-02-12",
       "affected_count": 1518,
@@ -3168,7 +3253,10 @@
     {
       "id": "2025-12-furusato-shimane",
       "organization": "公益財団法人ふるさと島根定住財団",
-      "industry": "団体・その他",
+      "industry": [
+        "団体・その他",
+        "人材・教育"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
@@ -3191,7 +3279,10 @@
       "services": [
         "日産福岡販売の顧客管理システム"
       ],
-      "industry": "製造",
+      "industry": [
+        "製造",
+        "交通・モビリティ"
+      ],
       "country": "JP",
       "date_occurred": "2025-09-26",
       "date_announced": "2025-12-23",
@@ -3225,7 +3316,10 @@
     {
       "id": "2025-12-tokushima-univ-hospital",
       "organization": "徳島大学病院",
-      "industry": "医療",
+      "industry": [
+        "医療",
+        "人材・教育"
+      ],
       "country": "JP",
       "date_occurred": "2025-10-11",
       "date_announced": "2025-12-22",
@@ -3380,7 +3474,10 @@
       "services": [
         "業務委託先 株式会社東海ソフト開発のサーバー"
       ],
-      "industry": "人材・教育",
+      "industry": [
+        "人材・教育",
+        "医療"
+      ],
       "country": "JP",
       "date_announced": "2025-11-14",
       "affected_count": 193118,
@@ -3751,7 +3848,10 @@
         "キョードー東京",
         "TBSチケット"
       ],
-      "industry": "エンタメ・スポーツ",
+      "industry": [
+        "エンタメ・スポーツ",
+        "メディア・出版"
+      ],
       "country": "JP",
       "date_occurred": "2025-09-05",
       "date_announced": "2025-09-10",
@@ -3817,7 +3917,10 @@
     {
       "id": "2025-08-huis-ten-bosch",
       "organization": "ハウステンボス株式会社",
-      "industry": "旅行",
+      "industry": [
+        "旅行",
+        "エンタメ・スポーツ"
+      ],
       "country": "JP",
       "date_occurred": "2025-08-29",
       "date_announced": "2025-08-29",
@@ -3852,7 +3955,10 @@
     {
       "id": "2025-08-koto-city",
       "organization": "江東区",
-      "industry": "行政",
+      "industry": [
+        "行政",
+        "人材・教育"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
@@ -3999,7 +4105,10 @@
       "services": [
         "愛知全県模試"
       ],
-      "industry": "人材・教育",
+      "industry": [
+        "人材・教育",
+        "メディア・出版"
+      ],
       "country": "JP",
       "date_announced": "2025-06-30",
       "affected_count": 322000,
@@ -4085,7 +4194,10 @@
       "services": [
         "コミっと車検"
       ],
-      "industry": "エネルギー・インフラ",
+      "industry": [
+        "エネルギー・インフラ",
+        "交通・モビリティ"
+      ],
       "country": "JP",
       "date_announced": "2025-06-16",
       "affected_count": 176000,
@@ -4220,7 +4332,10 @@
     {
       "id": "2025-05-akita-univ",
       "organization": "秋田大学",
-      "industry": "人材・教育",
+      "industry": [
+        "人材・教育",
+        "医療"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
@@ -4384,7 +4499,10 @@
       "services": [
         "KIX-ITM Global Business Club"
       ],
-      "industry": "交通・モビリティ",
+      "industry": [
+        "交通・モビリティ",
+        "旅行"
+      ],
       "country": "JP",
       "date_announced": "2025-04-28",
       "affected_count": 10575,
@@ -4573,7 +4691,11 @@
     {
       "id": "2025-03-gaora",
       "organization": "株式会社GAORA",
-      "industry": "エンタメ・スポーツ",
+      "industry": [
+        "エンタメ・スポーツ",
+        "メディア・出版",
+        "小売・EC"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
@@ -4624,7 +4746,10 @@
       "services": [
         "北海道じゃらん"
       ],
-      "industry": "メディア・出版",
+      "industry": [
+        "メディア・出版",
+        "旅行"
+      ],
       "country": "JP",
       "date_announced": "2025-03-19",
       "affected_count": 104000,
@@ -4650,7 +4775,10 @@
     {
       "id": "2025-03-kobe-suma-seaworld",
       "organization": "神戸須磨シーワールド",
-      "industry": "エンタメ・スポーツ",
+      "industry": [
+        "エンタメ・スポーツ",
+        "行政"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
@@ -4710,7 +4838,10 @@
     {
       "id": "2025-03-shizuoka-pref",
       "organization": "静岡県",
-      "industry": "行政",
+      "industry": [
+        "行政",
+        "エンタメ・スポーツ"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
@@ -4808,7 +4939,10 @@
       "services": [
         "Sony Music Shop"
       ],
-      "industry": "エンタメ・スポーツ",
+      "industry": [
+        "エンタメ・スポーツ",
+        "小売・EC"
+      ],
       "country": "JP",
       "date_occurred": "2025-02-13",
       "date_announced": "2025-02-21",
@@ -5022,7 +5156,10 @@
     {
       "id": "2025-01-mie-kosei",
       "organization": "社会福祉法人三重県厚生事業団",
-      "industry": "医療",
+      "industry": [
+        "福祉・介護",
+        "行政"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
@@ -5138,7 +5275,10 @@
     {
       "id": "2024-12-omp-hospital",
       "organization": "大阪医科薬科大学病院",
-      "industry": "医療",
+      "industry": [
+        "医療",
+        "人材・教育"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
@@ -5223,7 +5363,10 @@
     {
       "id": "2024-12-kanuma-city",
       "organization": "鹿沼市",
-      "industry": "行政",
+      "industry": [
+        "行政",
+        "エンタメ・スポーツ"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
@@ -5267,7 +5410,10 @@
     {
       "id": "2024-12-kashima-city",
       "organization": "鹿嶋市",
-      "industry": "行政",
+      "industry": [
+        "行政",
+        "福祉・介護"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
@@ -5287,7 +5433,10 @@
     {
       "id": "2024-12-exd",
       "organization": "株式会社イーエックスディー",
-      "industry": "団体・その他",
+      "industry": [
+        "エンタメ・スポーツ",
+        "行政"
+      ],
       "country": "JP",
       "date_occurred": "2024-11-28",
       "date_announced": "2024-12-03",
@@ -5306,7 +5455,10 @@
     {
       "id": "2024-12-omu-hospital",
       "organization": "大阪公立大学医学部附属病院",
-      "industry": "医療",
+      "industry": [
+        "医療",
+        "人材・教育"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/35",
@@ -5441,7 +5593,10 @@
       "services": [
         "ショップチャンネル"
       ],
-      "industry": "小売・EC",
+      "industry": [
+        "小売・EC",
+        "メディア・出版"
+      ],
       "country": "JP",
       "date_occurred": "2024-11-15",
       "date_announced": "2024-11-19",
@@ -5464,7 +5619,10 @@
       "services": [
         "biima sports"
       ],
-      "industry": "人材・教育",
+      "industry": [
+        "人材・教育",
+        "エンタメ・スポーツ"
+      ],
       "country": "JP",
       "date_occurred": "2024-11-11",
       "date_announced": "2024-11-13",
@@ -5514,7 +5672,10 @@
       "services": [
         "ウエルシアドットコム"
       ],
-      "industry": "小売・EC",
+      "industry": [
+        "小売・EC",
+        "医療"
+      ],
       "country": "JP",
       "date_occurred": "2024-10-24",
       "date_announced": "2024-11-08",
@@ -5579,7 +5740,11 @@
     {
       "id": "2024-11-japanlaim",
       "organization": "ジャパンライム株式会社",
-      "industry": "メディア・出版",
+      "industry": [
+        "メディア・出版",
+        "医療",
+        "人材・教育"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
@@ -5653,7 +5818,10 @@
         "COCORO STORE",
         "ヘルシオデリ"
       ],
-      "industry": "製造",
+      "industry": [
+        "製造",
+        "小売・EC"
+      ],
       "country": "JP",
       "date_occurred": "2024-07-19",
       "date_announced": "2024-10-30",
@@ -5926,7 +6094,10 @@
     {
       "id": "2024-08-sanofi",
       "organization": "サノフィ株式会社",
-      "industry": "医療",
+      "industry": [
+        "医療",
+        "製造"
+      ],
       "country": "JP",
       "date_occurred": "2024-07-10",
       "date_announced": "2024-08-28",
@@ -6073,7 +6244,10 @@
     {
       "id": "2024-08-kesennuma-city",
       "organization": "気仙沼市",
-      "industry": "行政",
+      "industry": [
+        "行政",
+        "医療"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
@@ -6116,7 +6290,11 @@
         "ニコニコ",
         "N中等部・N高等学校・S高等学校"
       ],
-      "industry": "メディア・出版",
+      "industry": [
+        "メディア・出版",
+        "エンタメ・スポーツ",
+        "人材・教育"
+      ],
       "country": "JP",
       "date_occurred": "2024-06-08",
       "date_announced": "2024-08-05",
@@ -6276,7 +6454,10 @@
     {
       "id": "2024-07-kitakyushu-city",
       "organization": "北九州市",
-      "industry": "行政",
+      "industry": [
+        "行政",
+        "医療"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
@@ -6330,7 +6511,10 @@
       "services": [
         "東京ガスエンジニアリングソリューションズ（TGES）"
       ],
-      "industry": "エネルギー・インフラ",
+      "industry": [
+        "エネルギー・インフラ",
+        "行政"
+      ],
       "country": "JP",
       "date_occurred": "2024-07-09",
       "date_announced": "2024-07-17",
@@ -6350,7 +6534,10 @@
     {
       "id": "2024-07-tokyu-malls",
       "organization": "株式会社東急モールズデベロップメント",
-      "industry": "不動産",
+      "industry": [
+        "不動産",
+        "小売・EC"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
@@ -6399,7 +6586,10 @@
       "services": [
         "SUUMO（不動産会社向け実証実験サービス）"
       ],
-      "industry": "メディア・出版",
+      "industry": [
+        "メディア・出版",
+        "不動産"
+      ],
       "country": "JP",
       "date_occurred": "2024-07-09",
       "date_announced": "2024-07-16",
@@ -6475,7 +6665,10 @@
       "services": [
         "クボタクレジット"
       ],
-      "industry": "金融・保険",
+      "industry": [
+        "金融・保険",
+        "製造"
+      ],
       "country": "JP",
       "date_occurred": "2024-05-26",
       "date_announced": "2024-07-01",
@@ -6585,7 +6778,10 @@
     {
       "id": "2024-06-hamamatsu-city",
       "organization": "浜松市",
-      "industry": "行政",
+      "industry": [
+        "行政",
+        "福祉・介護"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
@@ -6652,7 +6848,10 @@
     {
       "id": "2024-06-nikko-city",
       "organization": "日光市",
-      "industry": "行政",
+      "industry": [
+        "行政",
+        "医療"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
@@ -6698,7 +6897,10 @@
     {
       "id": "2024-06-kasugai-city",
       "organization": "春日井市",
-      "industry": "行政",
+      "industry": [
+        "行政",
+        "エネルギー・インフラ"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
@@ -6747,7 +6949,10 @@
       "services": [
         "プレミアムバンダイ"
       ],
-      "industry": "小売・EC",
+      "industry": [
+        "小売・EC",
+        "エンタメ・スポーツ"
+      ],
       "country": "JP",
       "date_announced": "2024-06-11",
       "affected_count": 1951,
@@ -7082,7 +7287,10 @@
     {
       "id": "2024-05-kindai-hospital",
       "organization": "近畿大学病院",
-      "industry": "医療",
+      "industry": [
+        "医療",
+        "人材・教育"
+      ],
       "country": "JP",
       "date_occurred": "2024-02-29",
       "date_announced": "2024-05-13",
@@ -7138,7 +7346,10 @@
       "services": [
         "東光食品"
       ],
-      "industry": "交通・モビリティ",
+      "industry": [
+        "交通・モビリティ",
+        "食品"
+      ],
       "country": "JP",
       "date_occurred": "2024-04-28",
       "date_announced": "2024-05-09",
@@ -7165,7 +7376,10 @@
       "services": [
         "八尾市立斎場"
       ],
-      "industry": "行政",
+      "industry": [
+        "行政",
+        "生活サービス"
+      ],
       "country": "JP",
       "date_announced": "2024-05-09",
       "affected_count": 3000,
@@ -7300,7 +7514,10 @@
     {
       "id": "2024-04-wellnet",
       "organization": "ウェルネット株式会社",
-      "industry": "IT・通信",
+      "industry": [
+        "IT・通信",
+        "団体・その他"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
@@ -7347,7 +7564,10 @@
     {
       "id": "2024-03-welcomehr",
       "organization": "ワークスタイル株式会社",
-      "industry": "IT・通信",
+      "industry": [
+        "IT・通信",
+        "人材・教育"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
@@ -7386,7 +7606,10 @@
     {
       "id": "2024-03-kanto-esd",
       "organization": "関東ESD活動支援センター",
-      "industry": "団体・その他",
+      "industry": [
+        "団体・その他",
+        "人材・教育"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
@@ -7595,7 +7818,10 @@
     {
       "id": "2024-02-mihara-taikyo",
       "organization": "特定非営利活動法人美原体育協会",
-      "industry": "団体・その他",
+      "industry": [
+        "団体・その他",
+        "エンタメ・スポーツ"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
@@ -7667,7 +7893,10 @@
     {
       "id": "2024-02-osaka-city",
       "organization": "大阪市",
-      "industry": "行政",
+      "industry": [
+        "行政",
+        "福祉・介護"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
@@ -7715,7 +7944,10 @@
     {
       "id": "2024-02-kensetsu-rengo-kokuho",
       "organization": "建設連合国民健康保険組合",
-      "industry": "金融・保険",
+      "industry": [
+        "金融・保険",
+        "医療"
+      ],
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
@@ -7962,7 +8194,10 @@
       "services": [
         "NTTビジネスソリューションズのコールセンターシステム"
       ],
-      "industry": "IT・通信",
+      "industry": [
+        "IT・通信",
+        "行政"
+      ],
       "country": "JP",
       "date_announced": "2023-10-17",
       "affected_count": 9280000,

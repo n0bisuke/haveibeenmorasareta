@@ -1,5 +1,7 @@
 organization: サノフィ株式会社
-industry: 医療
+industry:
+  - 医療
+  - 製造
 country: JP
 date_occurred: 2024-07-10
 date_announced: 2024-08-28
