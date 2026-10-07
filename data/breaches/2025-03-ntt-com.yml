@@ -1,0 +1,24 @@
+organization: NTTコミュニケーションズ株式会社
+group: NTTグループ
+services:
+  - オーダ情報流通システム
+industry: IT・通信
+country: JP
+date_occurred: 2025-02-05
+date_announced: 2025-03-05
+affected_count: 17891
+count_note: 法人顧客17,891社分（個人顧客の情報は含まれない）
+cause: unauthorized_access
+root_cause: 社内ネットワークのオーダ情報流通システム内の装置に不正アクセスされた
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 住所
+  - 契約情報
+summary: 社内ネットワークで不審な通信を検知し、法人顧客の契約番号、担当者名、連絡先、サービス利用情報などを管理するシステムから情報が流出した可能性が判明した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/03/11/52470.html
+  - title: TechCrunch
+    url: https://techcrunch.com/2025/03/07/japanese-telco-giant-ntt-com-says-hackers-accessed-details-of-almost-18000-organizations
