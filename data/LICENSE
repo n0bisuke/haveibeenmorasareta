@@ -1,0 +1,15 @@
+このディレクトリ（data/）の事案データ、およびそれを元に生成される public/breaches.json は、
+クリエイティブ・コモンズ 表示 4.0 国際 ライセンス（CC BY 4.0）のもとで提供します。
+
+出典として「Have I Been Morasareta 日本版（https://n0bisuke.github.io/haveibeenmorasareta/）」を
+表示すれば、商用・非商用を問わず、複製・改変・再配布できます。
+
+ライセンス本文: https://creativecommons.org/licenses/by/4.0/legalcode.ja
+
+なお、各事案の出典（sources）に記載したリンク先の記事・公式発表の著作権は、それぞれの著作権者に帰属します。
+
+---
+
+The breach data in this directory (data/) and the generated public/breaches.json are licensed under
+the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
