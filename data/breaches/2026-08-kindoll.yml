@@ -1,0 +1,24 @@
+organization: 株式会社カインドオル
+group: トレジャー・ファクトリーグループ
+industry: 小売・EC
+country: JP
+date_occurred: 2026-08-22
+date_announced: 2026-08-28
+affected_count: 136464
+count_note: 最大件数
+cause: phishing
+root_cause: フィッシングメールでECプラットフォームのスタッフアカウントの認証情報が流出（二段階認証未設定）
+data_types:
+  - 生年月日
+  - 住所
+  - 購入履歴
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - ポイント情報
+summary: ECサイトで使うECプラットフォームのスタッフアカウントに第三者が不正アクセスし、メールアドレスを変更したうえで顧客情報を一括エクスポートした。クレジットカード番号やログインパスワードは含まれない。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/09/18/56270.html
+  - title: ネットショップ担当者フォーラム
+    url: https://netshop.impress.co.jp/n/2026/09/01/16648

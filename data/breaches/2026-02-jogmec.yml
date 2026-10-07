@@ -1,0 +1,12 @@
+organization: 独立行政法人エネルギー・金属鉱物資源機構（JOGMEC）
+industry: 行政
+country: JP
+date_announced: 2026-02-17
+affected_count: 2246
+cause: insider
+data_types:
+  - 氏名
+summary: 過去に在籍していた職員が、業務上取得した鉱業権者の氏名を外部に持ち出していた。住所や電話番号などは含まれず、第三者への提供や二次被害は確認されていない。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/03/06/54776.html

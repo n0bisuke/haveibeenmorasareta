@@ -1,0 +1,15 @@
+organization: 株式会社コロナ
+industry: 製造
+country: JP
+date_announced: 2026-08-28
+affected_count: 35000
+count_note: 最大約3万5,000名
+cause: unauthorized_access
+root_cause: 施工情報の管理に使う外部クラウドサービスへの不正アクセス
+data_types:
+  - 住所
+  - 氏名
+summary: 暖房機器メーカーが施工情報の管理に利用する外部クラウドサービスが不正アクセスを受け、顧客の氏名・住所と施工関連資料を含むデータが漏えいした可能性がある。
+sources:
+  - title: innovaTopia
+    url: https://innovatopia.jp/cyber-security/cyber-security-news/117453/

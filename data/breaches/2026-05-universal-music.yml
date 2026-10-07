@@ -1,0 +1,22 @@
+organization: ユニバーサル ミュージック合同会社
+services:
+  - UNIVERSAL MUSIC STORE
+  - THE BEATLES STORE
+industry: エンタメ・スポーツ
+country: JP
+date_announced: 2026-05-18
+affected_count: 3105585
+count_note: 2026年5月18日の調査結果で確定した件数。2025年10月25日に流出を示唆するSNS投稿を受けてサービスを一時停止していた
+cause: unauthorized_access
+data_types:
+  - 住所
+  - 購入履歴
+  - 氏名
+  - 電話番号
+  - メールアドレス
+summary: ECサイトへの不正アクセスについて調査結果を公表し、購入時に登録された氏名・住所・電話番号・メールアドレスと購入履歴が流出したことを確認した。パスワードと決済情報は保持していないため対象外。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/05/21/55325.html
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2109626.html

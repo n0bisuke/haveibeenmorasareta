@@ -1,0 +1,22 @@
+organization: 株式会社京都パープルサンガ
+services:
+  - 京都サンガF.C. ファンクラブ
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-09-02
+date_announced: 2026-09-08
+affected_count: 15612
+cause: human_error
+root_cause: 取引先へのメールにファンクラブ会員情報のファイルを誤って添付
+data_types:
+  - 生年月日
+  - 住所
+  - 氏名
+  - 電話番号
+  - 性別
+  - メールアドレス
+  - 会員ID
+summary: 担当者が取引先へ送ったメールにファンクラブ会員情報のファイルを誤って添付し、受信者11名のうち2名がファイルを開封した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/09/25/56301.html

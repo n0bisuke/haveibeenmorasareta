@@ -1,0 +1,15 @@
+organization: エン株式会社
+services:
+  - ミドルの転職
+industry: 人材・教育
+country: JP
+date_occurred: 2026-05-26
+date_announced: 2026-06-05
+affected_count: 2503
+count_note: 不正ログインに成功した件数
+cause: unauthorized_access
+root_cause: 他サービスから流出したID・パスワードを使うパスワードリスト型攻撃
+summary: 転職情報サービス「ミドルの転職」でリスト型攻撃による不正ログインが発生し、一部ユーザーの会員情報ページにアクセスされた可能性がある。全会員のパスワードを一新した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/06/15/55493.html

@@ -1,0 +1,16 @@
+organization: 関西医科大学附属病院
+industry: 医療
+country: JP
+date_announced: 2026-06-03
+affected_count: 1800
+count_note: 約1,800人。USBメモリは数日後に発見・回収済み
+cause: lost_device
+data_types:
+  - 健康・医療情報
+  - 氏名
+  - 性別
+  - 会員ID
+summary: 医師が使っていた、患者の氏名・患者ID・病名・入退院日などを記録したUSBメモリを2026年2月に一時紛失していた。病院は漏えいのリスクは極めて低いとしている。
+sources:
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/?p=34579

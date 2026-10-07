@@ -6,8 +6,8 @@ industry: 小売・EC
 country: JP
 date_occurred: 2026-04-05
 date_announced: 2026-08-21
-affected_count: 33333
-count_note: 2022年5月18〜19日、2023年12月19〜21日の楽天ブックス注文データに含まれる配送先情報
+affected_count: 35773
+count_note: 端末に保存されていた個人情報は計35,773件。うち楽天ブックス利用者の配送先情報が33,333件（2022年5月18〜19日、2023年12月19〜21日の注文データ）
 cause: unauthorized_access
 data_types:
   - 氏名
