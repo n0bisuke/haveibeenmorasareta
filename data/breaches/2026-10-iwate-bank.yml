@@ -1,6 +1,8 @@
 organization: 株式会社岩手銀行
 industry: 金融・保険
 country: JP
+org_type: regional_bank
+prefecture: 岩手県
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/27
 date_occurred: 2026-10-02

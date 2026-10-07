@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-10-07T16:15:31.000Z",
-  "count": 309,
+  "count": 319,
   "severity_levels": [
     {
       "id": "critical",
@@ -222,6 +222,10 @@
     {
       "id": "public_org",
       "label": "公益法人・団体"
+    },
+    {
+      "id": "regional_bank",
+      "label": "地方銀行・信用金庫など"
     }
   ],
   "prefectures": [
@@ -533,6 +537,8 @@
       "organization": "株式会社岩手銀行",
       "industry": "金融・保険",
       "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "岩手県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/27",
       "date_occurred": "2026-10-02",
@@ -3148,6 +3154,8 @@
       "organization": "株式会社阿波銀行",
       "industry": "金融・保険",
       "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "徳島県",
       "date_announced": "2026-04-03",
       "affected_count": 27745,
       "count_note": "顧客情報等を含むデータ延べ27,745件",
@@ -3731,6 +3739,32 @@
         }
       ],
       "severity": "medium"
+    },
+    {
+      "id": "2025-12-awa-bank",
+      "organization": "株式会社阿波銀行",
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "徳島県",
+      "date_occurred": "2025-07-01",
+      "date_announced": "2025-12-24",
+      "affected_count": 666,
+      "count_note": "顧客情報666件（回収済み）",
+      "cause": "insider",
+      "root_cause": "支店の元職員が顧客の金銭を着服し、顧客情報を持ち出した",
+      "data_types": [
+        "氏名",
+        "口座番号"
+      ],
+      "summary": "藍住支店の元職員が2025年7月から11月にかけて顧客の預け金から87,410円を着服し、取引先顧客666件の顧客情報（氏名・口座番号など）を持ち出していた。顧客情報は回収済みで、第三者への漏えいは確認されていない。元職員は懲戒解雇となった。発生日は月のみ判明のため1日としている。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/01/26/54478.html"
+        }
+      ],
+      "severity": "critical"
     },
     {
       "id": "2025-12-furusato-shimane",
@@ -4488,6 +4522,38 @@
       "severity": null
     },
     {
+      "id": "2025-08-himawari-shinkin",
+      "organization": "ひまわり信用金庫",
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "福島県",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/35",
+      "date_occurred": "2024-03-08",
+      "date_announced": "2025-08-22",
+      "affected_count": 936,
+      "count_note": "936先（書類1,667枚）。公表日が未確認のため紛失判明日を仮置き",
+      "cause": "lost_device",
+      "root_cause": "支店の書類廃棄作業で定期預金申込書の綴りを誤って廃棄した可能性が高い",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "生年月日",
+        "口座番号",
+        "資産・取引情報"
+      ],
+      "summary": "泉支店で、顧客情報が記載された定期預金申込書（兼印鑑票）の綴り12冊（1,667枚・936先分）の紛失が判明した。2024年3月の書類廃棄作業で誤って溶解処理した可能性が高く、外部流出の可能性は極めて低いとしている。",
+      "sources": [
+        {
+          "title": "ひまわり信用金庫 お知らせ",
+          "url": "https://www.shinkin.co.jp/himawari/pdf/oshirase/202508_lost.pdf"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
       "id": "2025-08-ecohai",
       "organization": "株式会社エコ配",
       "industry": "物流",
@@ -5158,6 +5224,37 @@
         }
       ],
       "severity": null
+    },
+    {
+      "id": "2025-04-ichinoseki-shinkin",
+      "organization": "一関信用金庫",
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "岩手県",
+      "date_announced": "2025-04-22",
+      "affected_count": 18316,
+      "count_note": "最大18,316名",
+      "cause": "insider",
+      "root_cause": "元職員が内部規程に反して顧客情報を含む業務ファイルを私物のUSBメモリに保存し、自宅へ持ち帰っていた",
+      "data_types": [
+        "氏名",
+        "住所",
+        "生年月日",
+        "性別",
+        "電話番号",
+        "メールアドレス",
+        "口座番号",
+        "資産・取引情報"
+      ],
+      "summary": "元職員が顧客の個人情報を含む業務ファイルを私物のUSBメモリに保存して自宅へ持ち帰っており、最大18,316名分が外部に漏えいした可能性がある。勤務先・年収・取引残高なども含まれる。業務用PCのダウンロード状況の確認で発覚した。暗証番号やネットバンキングのID・パスワード、マイナンバーは含まれない。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/05/08/52802.html"
+        }
+      ],
+      "severity": "critical"
     },
     {
       "id": "2025-04-iij",
@@ -6188,6 +6285,36 @@
       "severity": "high"
     },
     {
+      "id": "2024-11-kitaise-ueno-shinkin",
+      "organization": "北伊勢上野信用金庫",
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "三重県",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/40",
+      "date_occurred": "2024-05-26",
+      "date_announced": "2024-11-21",
+      "affected_count": 1430,
+      "count_note": "1,430件。初報の公表日が未確認のため最終報の日付を仮置き",
+      "cause": "third_party",
+      "root_cause": "東海信金ビジネスの再委託先でハガキ帳票を作成していたイセトーがランサムウェアに感染",
+      "vendor": {
+        "name": "株式会社イセトー（東海信金ビジネスの再委託先）"
+      },
+      "data_types": [
+        "氏名"
+      ],
+      "summary": "東海4県の信用金庫が出資する東海信金ビジネスの再委託先イセトーがランサムウェアに感染し、ダイレクトメール作成時のログデータに含まれる顧客の氏名が漏えいした。金融機関コードと支店コードも対象となりうる。東海4県の26信用金庫で延べ約7万7千件が漏えいした。",
+      "sources": [
+        {
+          "title": "北伊勢上野信用金庫 お詫び（最終報）",
+          "url": "https://www.kitaiseueno-shinkin.jp/pdf/20241121.pdf"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
       "id": "2024-11-shop-channel",
       "organization": "ジュピターショップチャンネル株式会社",
       "services": [
@@ -6531,6 +6658,8 @@
       "group": "八十二グループ",
       "industry": "金融・保険",
       "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "長野県",
       "date_announced": "2024-10-16",
       "affected_count": 106000,
       "count_note": "八十二銀行の顧客と長野銀行のカードローン契約者 延べ約10万6,000件",
@@ -7272,6 +7401,34 @@
       "severity": "medium"
     },
     {
+      "id": "2024-07-shimada-kakegawa-shinkin",
+      "organization": "島田掛川信用金庫",
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "静岡県",
+      "date_occurred": "2024-05-26",
+      "date_announced": "2024-07-10",
+      "affected_count": 3771,
+      "count_note": "ログデータ上の氏名3,771件",
+      "cause": "third_party",
+      "root_cause": "東海信金ビジネスの再委託先でハガキ帳票を作成していたイセトーがランサムウェアに感染",
+      "vendor": {
+        "name": "株式会社イセトー（東海信金ビジネスの再委託先）"
+      },
+      "data_types": [
+        "氏名"
+      ],
+      "summary": "東海4県の信用金庫が出資する東海信金ビジネスの再委託先イセトーがランサムウェアに感染し、ダイレクトメール作成時のログデータに含まれる顧客の氏名が漏えいした。金融機関コードと支店コードも対象となりうる。東海4県の26信用金庫で延べ約7万7千件が漏えいした。",
+      "sources": [
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/shimada-kakegawa-shinkin-info-leak-ransomware-cyberattacks-iseto/"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
       "id": "2024-07-jaxa",
       "organization": "国立研究開発法人宇宙航空研究開発機構（JAXA）",
       "industry": "行政",
@@ -7296,6 +7453,129 @@
         }
       ],
       "severity": "medium"
+    },
+    {
+      "id": "2024-07-chita-shinkin",
+      "organization": "知多信用金庫",
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "愛知県",
+      "date_occurred": "2024-05-26",
+      "date_announced": "2024-07-04",
+      "affected_count": 2702,
+      "count_note": "2,702件（7月4日の公表時は2,713件。最終報で修正）",
+      "cause": "third_party",
+      "root_cause": "東海信金ビジネスの再委託先でハガキ帳票を作成していたイセトーがランサムウェアに感染",
+      "vendor": {
+        "name": "株式会社イセトー（東海信金ビジネスの再委託先）"
+      },
+      "data_types": [
+        "氏名"
+      ],
+      "summary": "東海4県の信用金庫が出資する東海信金ビジネスの再委託先イセトーがランサムウェアに感染し、ダイレクトメール作成時のログデータに含まれる顧客の氏名が漏えいした。金融機関コードと支店コードも対象となりうる。東海4県の26信用金庫で延べ約7万7千件が漏えいした。",
+      "sources": [
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/chitashin-info-leak-ransomware-cyberattacks-iseto/"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2024-07-shizuokayaizu-shinkin",
+      "organization": "しずおか焼津信用金庫",
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "静岡県",
+      "date_occurred": "2024-05-26",
+      "date_announced": "2024-07-04",
+      "affected_count": 4653,
+      "count_note": "対象顧客4,653件",
+      "cause": "third_party",
+      "root_cause": "東海信金ビジネスの再委託先でハガキ帳票を作成していたイセトーがランサムウェアに感染",
+      "vendor": {
+        "name": "株式会社イセトー（東海信金ビジネスの再委託先）"
+      },
+      "data_types": [
+        "氏名"
+      ],
+      "summary": "東海4県の信用金庫が出資する東海信金ビジネスの再委託先イセトーがランサムウェアに感染し、ダイレクトメール作成時のログデータに含まれる顧客の氏名が漏えいした。金融機関コードと支店コードも対象となりうる。東海4県の26信用金庫で延べ約7万7千件が漏えいした。",
+      "sources": [
+        {
+          "title": "しずおか焼津信用金庫 お詫び（最終報）",
+          "url": "https://shizuokayaizu-shinkin.co.jp/files/topics/3462_ext_10_0.pdf"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2024-07-tono-shinkin",
+      "organization": "東濃信用金庫",
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "岐阜県",
+      "date_occurred": "2024-05-26",
+      "date_announced": "2024-07-04",
+      "affected_count": 5008,
+      "count_note": "ログデータ上の氏名5,008件",
+      "cause": "third_party",
+      "root_cause": "東海信金ビジネスの再委託先でハガキ帳票を作成していたイセトーがランサムウェアに感染",
+      "vendor": {
+        "name": "株式会社イセトー（東海信金ビジネスの再委託先）"
+      },
+      "data_types": [
+        "氏名"
+      ],
+      "summary": "東海4県の信用金庫が出資する東海信金ビジネスの再委託先イセトーがランサムウェアに感染し、ダイレクトメール作成時のログデータに含まれる顧客の氏名が漏えいした。金融機関コードと支店コードも対象となりうる。東海4県の26信用金庫で延べ約7万7千件が漏えいした。",
+      "sources": [
+        {
+          "title": "東濃信用金庫 お詫び",
+          "url": "https://www.shinkin.co.jp/tono/news/jyuyou/pdf/20240704owabi.pdf"
+        },
+        {
+          "title": "日本経済新聞（東海の信金顧客情報、7万7千件流出）",
+          "url": "https://www.nikkei.com/article/DGXZQOFD0947E0Z00C24A7000000/"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2024-07-iyo-bank",
+      "organization": "株式会社伊予銀行",
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "愛媛県",
+      "date_occurred": "2024-05-26",
+      "date_announced": "2024-07-03",
+      "affected_count": 254659,
+      "count_note": "254,659先（2024年8月19日の調査結果）",
+      "cause": "third_party",
+      "root_cause": "帳票の作成・発送を委託していたイセトーがランサムウェアに感染",
+      "vendor": {
+        "name": "株式会社イセトー"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "口座番号",
+        "資産・取引情報"
+      ],
+      "summary": "顧客向け帳票の作成・発送を委託していたイセトーがランサムウェアに感染し、ダークウェブに顧客情報が掲載された。住所・氏名のほか、取引日・金額・口座番号や振込相手先の口座情報などが漏えいした可能性がある（項目は顧客により異なる）。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/07/25/51368.html"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/7452/"
+        }
+      ],
+      "severity": "critical"
     },
     {
       "id": "2024-07-hags",
@@ -7325,6 +7605,34 @@
         }
       ],
       "severity": "critical"
+    },
+    {
+      "id": "2024-07-bizen-hinase-shinkin",
+      "organization": "備前日生信用金庫",
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "岡山県",
+      "date_occurred": "2024-05-26",
+      "date_announced": "2024-07-01",
+      "affected_count": 17,
+      "cause": "third_party",
+      "root_cause": "業務委託先のイセトーがランサムウェアに感染",
+      "vendor": {
+        "name": "株式会社イセトー"
+      },
+      "data_types": [
+        "氏名",
+        "住所"
+      ],
+      "summary": "業務を委託していたイセトーがランサムウェアに感染し、顧客17名の氏名と住所が漏えいした。",
+      "sources": [
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/shinkin-bizenhinase-info-leak-iseto/"
+        }
+      ],
+      "severity": "high"
     },
     {
       "id": "2024-07-kubota",

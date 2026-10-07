@@ -1,0 +1,21 @@
+organization: 北伊勢上野信用金庫
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 三重県
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/40
+date_occurred: 2024-05-26
+date_announced: 2024-11-21
+affected_count: 1430
+count_note: 1,430件。初報の公表日が未確認のため最終報の日付を仮置き
+cause: third_party
+root_cause: 東海信金ビジネスの再委託先でハガキ帳票を作成していたイセトーがランサムウェアに感染
+vendor:
+  name: 株式会社イセトー（東海信金ビジネスの再委託先）
+data_types:
+  - 氏名
+summary: 東海4県の信用金庫が出資する東海信金ビジネスの再委託先イセトーがランサムウェアに感染し、ダイレクトメール作成時のログデータに含まれる顧客の氏名が漏えいした。金融機関コードと支店コードも対象となりうる。東海4県の26信用金庫で延べ約7万7千件が漏えいした。
+sources:
+  - title: 北伊勢上野信用金庫 お詫び（最終報）
+    url: https://www.kitaiseueno-shinkin.jp/pdf/20241121.pdf
