@@ -1,0 +1,23 @@
+organization: 大起水産株式会社
+services:
+  - 大起水産公式アプリ
+industry: 飲食
+country: JP
+date_occurred: 2026-09-15
+date_announced: 2026-10-05
+affected_count: 174933
+count_note: 2024年11月〜2026年9月15日のアプリ登録者（退会者を含む）
+cause: unauthorized_access
+data_types:
+  - 生年月日
+  - 住所
+  - 氏名
+  - 性別
+  - 電話番号
+  - メールアドレス
+summary: 回転ずしチェーンなどを運営する同社の公式アプリのシステムが不正アクセスを受け、登録者の個人情報が漏えいした可能性がある。パスワードは別サーバーで管理しており含まれない。
+sources:
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261005de54848
+  - title: 関西テレビ（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/ef6ecfd5116e920525192a98b5d9992f76666e9f
