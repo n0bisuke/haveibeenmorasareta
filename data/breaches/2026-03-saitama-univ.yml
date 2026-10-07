@@ -1,6 +1,8 @@
 organization: 国立大学法人埼玉大学
 industry: 人材・教育
 country: JP
+org_type: university
+prefecture: 埼玉県
 date_announced: 2026-03-30
 affected_count: 1516
 cause: third_party

@@ -3,6 +3,8 @@ industry:
   - 行政
   - エンタメ・スポーツ
 country: JP
+org_type: local_gov
+prefecture: 静岡県
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-03-14

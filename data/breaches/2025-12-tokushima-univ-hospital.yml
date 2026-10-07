@@ -3,6 +3,8 @@ industry:
   - 医療
   - 人材・教育
 country: JP
+org_type: hospital
+prefecture: 徳島県
 date_occurred: 2025-10-11
 date_announced: 2025-12-22
 affected_count: 18920

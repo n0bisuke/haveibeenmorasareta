@@ -1,6 +1,8 @@
 organization: 小松島市
 industry: 行政
 country: JP
+org_type: local_gov
+prefecture: 徳島県
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/31
 date_announced: 2026-06-25

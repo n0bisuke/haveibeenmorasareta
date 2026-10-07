@@ -1,6 +1,8 @@
 organization: 日本放送協会（NHK）
 industry: メディア・出版
 country: JP
+org_type: public_agency
+prefecture: 東京都
 date_occurred: 2026-03-17
 date_announced: 2026-03-18
 affected_count: 32940

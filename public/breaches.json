@@ -198,6 +198,269 @@
       "description": "パスワードの総当たりや、照会機能への大量アクセスで情報を引き出す"
     }
   ],
+  "org_types": [
+    {
+      "id": "local_gov",
+      "label": "自治体"
+    },
+    {
+      "id": "national_gov",
+      "label": "国の機関"
+    },
+    {
+      "id": "public_agency",
+      "label": "独立行政法人・研究機関など"
+    },
+    {
+      "id": "university",
+      "label": "大学・学校"
+    },
+    {
+      "id": "hospital",
+      "label": "病院"
+    },
+    {
+      "id": "public_org",
+      "label": "公益法人・団体"
+    }
+  ],
+  "prefectures": [
+    {
+      "name": "北海道",
+      "x": 12,
+      "y": 0
+    },
+    {
+      "name": "青森県",
+      "x": 12,
+      "y": 2
+    },
+    {
+      "name": "岩手県",
+      "x": 12,
+      "y": 3
+    },
+    {
+      "name": "宮城県",
+      "x": 12,
+      "y": 4
+    },
+    {
+      "name": "秋田県",
+      "x": 11,
+      "y": 3
+    },
+    {
+      "name": "山形県",
+      "x": 11,
+      "y": 4
+    },
+    {
+      "name": "福島県",
+      "x": 12,
+      "y": 5
+    },
+    {
+      "name": "茨城県",
+      "x": 11,
+      "y": 6
+    },
+    {
+      "name": "栃木県",
+      "x": 11,
+      "y": 5
+    },
+    {
+      "name": "群馬県",
+      "x": 10,
+      "y": 5
+    },
+    {
+      "name": "埼玉県",
+      "x": 10,
+      "y": 6
+    },
+    {
+      "name": "千葉県",
+      "x": 11,
+      "y": 7
+    },
+    {
+      "name": "東京都",
+      "x": 10,
+      "y": 7
+    },
+    {
+      "name": "神奈川県",
+      "x": 9,
+      "y": 7
+    },
+    {
+      "name": "新潟県",
+      "x": 10,
+      "y": 4
+    },
+    {
+      "name": "富山県",
+      "x": 9,
+      "y": 4
+    },
+    {
+      "name": "石川県",
+      "x": 8,
+      "y": 4
+    },
+    {
+      "name": "福井県",
+      "x": 7,
+      "y": 5
+    },
+    {
+      "name": "山梨県",
+      "x": 9,
+      "y": 6
+    },
+    {
+      "name": "長野県",
+      "x": 9,
+      "y": 5
+    },
+    {
+      "name": "岐阜県",
+      "x": 8,
+      "y": 5
+    },
+    {
+      "name": "静岡県",
+      "x": 8,
+      "y": 7
+    },
+    {
+      "name": "愛知県",
+      "x": 8,
+      "y": 6
+    },
+    {
+      "name": "三重県",
+      "x": 7,
+      "y": 7
+    },
+    {
+      "name": "滋賀県",
+      "x": 7,
+      "y": 6
+    },
+    {
+      "name": "京都府",
+      "x": 6,
+      "y": 6
+    },
+    {
+      "name": "大阪府",
+      "x": 5,
+      "y": 7
+    },
+    {
+      "name": "兵庫県",
+      "x": 5,
+      "y": 6
+    },
+    {
+      "name": "奈良県",
+      "x": 6,
+      "y": 7
+    },
+    {
+      "name": "和歌山県",
+      "x": 5,
+      "y": 8
+    },
+    {
+      "name": "鳥取県",
+      "x": 4,
+      "y": 6
+    },
+    {
+      "name": "島根県",
+      "x": 3,
+      "y": 6
+    },
+    {
+      "name": "岡山県",
+      "x": 4,
+      "y": 7
+    },
+    {
+      "name": "広島県",
+      "x": 3,
+      "y": 7
+    },
+    {
+      "name": "山口県",
+      "x": 2,
+      "y": 7
+    },
+    {
+      "name": "徳島県",
+      "x": 4,
+      "y": 9
+    },
+    {
+      "name": "香川県",
+      "x": 4,
+      "y": 8
+    },
+    {
+      "name": "愛媛県",
+      "x": 3,
+      "y": 8
+    },
+    {
+      "name": "高知県",
+      "x": 3,
+      "y": 9
+    },
+    {
+      "name": "福岡県",
+      "x": 1,
+      "y": 8
+    },
+    {
+      "name": "佐賀県",
+      "x": 0,
+      "y": 8
+    },
+    {
+      "name": "長崎県",
+      "x": 0,
+      "y": 9
+    },
+    {
+      "name": "熊本県",
+      "x": 1,
+      "y": 9
+    },
+    {
+      "name": "大分県",
+      "x": 2,
+      "y": 9
+    },
+    {
+      "name": "宮崎県",
+      "x": 2,
+      "y": 10
+    },
+    {
+      "name": "鹿児島県",
+      "x": 1,
+      "y": 10
+    },
+    {
+      "name": "沖縄県",
+      "x": 0,
+      "y": 12
+    }
+  ],
   "breaches": [
     {
       "id": "2026-10-his",
@@ -658,6 +921,8 @@
       "organization": "大阪公立大学",
       "industry": "人材・教育",
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "大阪府",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/26",
       "date_occurred": "2026-10-02",
@@ -794,6 +1059,8 @@
         "エネルギー・インフラ"
       ],
       "country": "JP",
+      "org_type": "public_agency",
+      "prefecture": "茨城県",
       "date_occurred": "2026-09-25",
       "date_announced": "2026-10-01",
       "affected_count": 175,
@@ -1247,6 +1514,8 @@
       ],
       "industry": "行政",
       "country": "JP",
+      "org_type": "national_gov",
+      "prefecture": "東京都",
       "date_occurred": "2026-06-25",
       "date_announced": "2026-09-11",
       "affected_count": 246000,
@@ -1310,6 +1579,8 @@
       "organization": "大阪高等裁判所",
       "industry": "行政",
       "country": "JP",
+      "org_type": "national_gov",
+      "prefecture": "大阪府",
       "date_occurred": "2026-08-27",
       "date_announced": "2026-09-04",
       "affected_count": 6000,
@@ -1492,6 +1763,8 @@
         "人材・教育"
       ],
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "静岡県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/35",
       "date_announced": "2026-08-25",
@@ -1640,6 +1913,8 @@
       "organization": "学校法人KBC学園",
       "industry": "人材・教育",
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "沖縄県",
       "date_announced": "2026-08-17",
       "affected_count": 2471,
       "cause": "human_error",
@@ -1759,6 +2034,8 @@
         "人材・教育"
       ],
       "country": "JP",
+      "org_type": "hospital",
+      "prefecture": "大阪府",
       "date_occurred": "2025-10-01",
       "date_announced": "2026-08-12",
       "affected_count": 13,
@@ -2068,6 +2345,8 @@
       "organization": "南砺市",
       "industry": "行政",
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "富山県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
       "date_announced": "2026-07-13",
@@ -2152,6 +2431,8 @@
         "医療"
       ],
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "東京都",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
       "date_announced": "2026-07-07",
@@ -2323,6 +2604,8 @@
       "organization": "小松島市",
       "industry": "行政",
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "徳島県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
       "date_announced": "2026-06-25",
@@ -2378,6 +2661,8 @@
       ],
       "industry": "行政",
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "新潟県",
       "date_occurred": "2026-06-16",
       "date_announced": "2026-06-19",
       "affected_count": 4111,
@@ -2455,6 +2740,8 @@
       "organization": "川越商工会議所",
       "industry": "団体・その他",
       "country": "JP",
+      "org_type": "public_org",
+      "prefecture": "埼玉県",
       "date_occurred": "2026-06-08",
       "date_announced": "2026-06-12",
       "affected_count": 4363,
@@ -2593,6 +2880,8 @@
         "人材・教育"
       ],
       "country": "JP",
+      "org_type": "hospital",
+      "prefecture": "愛知県",
       "date_occurred": "2026-05-25",
       "date_announced": "2026-06-03",
       "affected_count": 1365,
@@ -2618,6 +2907,8 @@
         "人材・教育"
       ],
       "country": "JP",
+      "org_type": "hospital",
+      "prefecture": "大阪府",
       "date_announced": "2026-06-03",
       "affected_count": 1800,
       "count_note": "約1,800人。USBメモリは数日後に発見・回収済み",
@@ -2801,6 +3092,8 @@
         "医療"
       ],
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "山形県",
       "date_occurred": "2026-04-02",
       "date_announced": "2026-04-16",
       "affected_count": 510000,
@@ -2931,6 +3224,8 @@
       "organization": "国立大学法人埼玉大学",
       "industry": "人材・教育",
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "埼玉県",
       "date_announced": "2026-03-30",
       "affected_count": 1516,
       "cause": "third_party",
@@ -3009,6 +3304,8 @@
         "団体・その他"
       ],
       "country": "JP",
+      "org_type": "public_org",
+      "prefecture": "大阪府",
       "date_announced": "2026-03-25",
       "affected_count": 4101,
       "cause": "misconfiguration",
@@ -3056,6 +3353,8 @@
       "organization": "日本放送協会（NHK）",
       "industry": "メディア・出版",
       "country": "JP",
+      "org_type": "public_agency",
+      "prefecture": "東京都",
       "date_occurred": "2026-03-17",
       "date_announced": "2026-03-18",
       "affected_count": 32940,
@@ -3214,6 +3513,8 @@
         "エネルギー・インフラ"
       ],
       "country": "JP",
+      "org_type": "public_agency",
+      "prefecture": "東京都",
       "date_announced": "2026-02-17",
       "affected_count": 2246,
       "cause": "insider",
@@ -3237,6 +3538,8 @@
         "人材・教育"
       ],
       "country": "JP",
+      "org_type": "hospital",
+      "prefecture": "神奈川県",
       "date_occurred": "2026-02-09",
       "date_announced": "2026-02-13",
       "affected_count": 130000,
@@ -3355,6 +3658,8 @@
       "organization": "大阪教育大学",
       "industry": "人材・教育",
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "大阪府",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
       "date_announced": "2026-02-03",
@@ -3375,6 +3680,8 @@
       "organization": "農林水産省",
       "industry": "行政",
       "country": "JP",
+      "org_type": "national_gov",
+      "prefecture": "東京都",
       "date_announced": "2026-01-23",
       "affected_count": 4571,
       "count_note": "本省職員2,593人とその家族1,978人",
@@ -3433,6 +3740,8 @@
         "人材・教育"
       ],
       "country": "JP",
+      "org_type": "public_org",
+      "prefecture": "島根県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-12-23",
@@ -3496,6 +3805,8 @@
         "人材・教育"
       ],
       "country": "JP",
+      "org_type": "hospital",
+      "prefecture": "徳島県",
       "date_occurred": "2025-10-11",
       "date_announced": "2025-12-22",
       "affected_count": 18920,
@@ -3522,6 +3833,8 @@
       "organization": "東京大学定量生命科学研究所",
       "industry": "人材・教育",
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "東京都",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-12-19",
@@ -3563,6 +3876,8 @@
       "organization": "倉敷中央病院",
       "industry": "医療",
       "country": "JP",
+      "org_type": "hospital",
+      "prefecture": "岡山県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-12-15",
@@ -3583,6 +3898,8 @@
       "organization": "鳥取県",
       "industry": "行政",
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "鳥取県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-12-09",
@@ -3657,6 +3974,8 @@
         "医療"
       ],
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "東京都",
       "date_announced": "2025-11-14",
       "affected_count": 193118,
       "count_note": "延べ最大193,118人（2026年2月18日の第2報）。うち2020〜2025年度の学生76,314人",
@@ -4151,6 +4470,8 @@
         "人材・教育"
       ],
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "東京都",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-08-28",
@@ -4234,6 +4555,8 @@
       ],
       "industry": "小売・EC",
       "country": "JP",
+      "org_type": "public_org",
+      "prefecture": "岐阜県",
       "date_announced": "2025-08-04",
       "affected_count": 6920,
       "count_note": "個人情報6,920件、うちクレジットカード情報2,972件",
@@ -4378,6 +4701,8 @@
       "organization": "名古屋大学",
       "industry": "人材・教育",
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "愛知県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-06-17",
@@ -4453,6 +4778,8 @@
       "organization": "摂南大学",
       "industry": "人材・教育",
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "大阪府",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-06-13",
@@ -4546,6 +4873,8 @@
         "医療"
       ],
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "秋田県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-05-30",
@@ -4617,6 +4946,8 @@
       "organization": "山形大学",
       "industry": "人材・教育",
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "山形県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-05-12",
@@ -5070,6 +5401,8 @@
         "エンタメ・スポーツ"
       ],
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "静岡県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-03-14",
@@ -5222,6 +5555,8 @@
       "organization": "宇都宮大学",
       "industry": "人材・教育",
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "栃木県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-02-13",
@@ -5331,6 +5666,8 @@
       "organization": "公益財団法人浜松地域イノベーション推進機構",
       "industry": "団体・その他",
       "country": "JP",
+      "org_type": "public_org",
+      "prefecture": "静岡県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-01-26",
@@ -5388,6 +5725,8 @@
         "行政"
       ],
       "country": "JP",
+      "org_type": "public_org",
+      "prefecture": "三重県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-01-17",
@@ -5451,6 +5790,8 @@
       ],
       "industry": "行政",
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "広島県",
       "date_announced": "2024-12-30",
       "affected_count": 3751,
       "cause": "unauthorized_access",
@@ -5510,6 +5851,8 @@
         "人材・教育"
       ],
       "country": "JP",
+      "org_type": "hospital",
+      "prefecture": "大阪府",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-12-25",
@@ -5552,6 +5895,8 @@
       "organization": "東亜大学",
       "industry": "人材・教育",
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "山口県",
       "date_occurred": "2024-12-07",
       "date_announced": "2024-12-18",
       "affected_count": 17276,
@@ -5575,6 +5920,8 @@
       "organization": "尾道市立大学",
       "industry": "人材・教育",
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "広島県",
       "date_occurred": "2024-12-02",
       "date_announced": "2024-12-16",
       "affected_count": 3327,
@@ -5601,6 +5948,8 @@
         "エンタメ・スポーツ"
       ],
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "栃木県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-12-13",
@@ -5621,6 +5970,8 @@
       "organization": "宮崎大学",
       "industry": "人材・教育",
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "宮崎県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-12-13",
@@ -5651,6 +6002,8 @@
         "福祉・介護"
       ],
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "茨城県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-12-06",
@@ -5696,6 +6049,8 @@
         "人材・教育"
       ],
       "country": "JP",
+      "org_type": "hospital",
+      "prefecture": "大阪府",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/35",
       "date_occurred": "2024-11-28",
@@ -5948,6 +6303,8 @@
       "organization": "学校法人東北学院",
       "industry": "人材・教育",
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "宮城県",
       "date_occurred": "2024-09-07",
       "date_announced": "2024-11-06",
       "affected_count": 7085,
@@ -6026,6 +6383,8 @@
       ],
       "industry": "エンタメ・スポーツ",
       "country": "JP",
+      "org_type": "public_org",
+      "prefecture": "北海道",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/33",
       "date_announced": "2024-10-31",
@@ -6264,6 +6623,8 @@
       "organization": "信州大学",
       "industry": "人材・教育",
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "長野県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-09-25",
@@ -6429,6 +6790,8 @@
       ],
       "industry": "行政",
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "佐賀県",
       "date_occurred": "2024-08-20",
       "date_announced": "2024-08-27",
       "affected_count": 413867,
@@ -6531,6 +6894,8 @@
         "医療"
       ],
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "宮城県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-08-07",
@@ -6651,6 +7016,8 @@
       "organization": "独立行政法人日本貿易振興機構（JETRO）",
       "industry": "行政",
       "country": "JP",
+      "org_type": "public_agency",
+      "prefecture": "東京都",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-07-31",
@@ -6747,6 +7114,8 @@
         "医療"
       ],
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "福岡県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-07-26",
@@ -6907,6 +7276,8 @@
       "organization": "国立研究開発法人宇宙航空研究開発機構（JAXA）",
       "industry": "行政",
       "country": "JP",
+      "org_type": "public_agency",
+      "prefecture": "東京都",
       "date_occurred": "2023-10-01",
       "date_announced": "2024-07-05",
       "affected_count": 5000,
@@ -7020,6 +7391,8 @@
       "organization": "上智大学",
       "industry": "人材・教育",
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "東京都",
       "date_occurred": "2024-05-16",
       "date_announced": "2024-06-26",
       "affected_count": 13949,
@@ -7083,6 +7456,8 @@
         "福祉・介護"
       ],
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "静岡県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-06-19",
@@ -7156,6 +7531,8 @@
         "医療"
       ],
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "栃木県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-06-18",
@@ -7208,6 +7585,8 @@
         "エネルギー・インフラ"
       ],
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "愛知県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-06-14",
@@ -7301,6 +7680,8 @@
       "organization": "筑波大学",
       "industry": "人材・教育",
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "茨城県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-06-03",
@@ -7448,6 +7829,8 @@
       "organization": "地方独立行政法人岡山県精神科医療センター",
       "industry": "医療",
       "country": "JP",
+      "org_type": "hospital",
+      "prefecture": "岡山県",
       "date_occurred": "2024-05-19",
       "date_announced": "2024-05-21",
       "affected_count": 40000,
@@ -7616,6 +7999,8 @@
         "人材・教育"
       ],
       "country": "JP",
+      "org_type": "hospital",
+      "prefecture": "大阪府",
       "date_occurred": "2024-02-29",
       "date_announced": "2024-05-13",
       "affected_count": 2003,
@@ -7711,6 +8096,8 @@
         "生活サービス"
       ],
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "大阪府",
       "date_announced": "2024-05-09",
       "affected_count": 3000,
       "count_note": "約3,000件",
@@ -7950,6 +8337,8 @@
         "人材・教育"
       ],
       "country": "JP",
+      "org_type": "public_org",
+      "prefecture": "東京都",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-03-15",
@@ -7998,6 +8387,8 @@
       ],
       "industry": "行政",
       "country": "JP",
+      "org_type": "national_gov",
+      "prefecture": "大阪府",
       "date_occurred": "2024-03-01",
       "date_announced": "2024-03-07",
       "affected_count": 34000,
@@ -8067,6 +8458,8 @@
       "organization": "北海道大学",
       "industry": "人材・教育",
       "country": "JP",
+      "org_type": "university",
+      "prefecture": "北海道",
       "date_occurred": "2023-11-06",
       "date_announced": "2024-03-01",
       "affected_count": 23554,
@@ -8168,6 +8561,8 @@
         "エンタメ・スポーツ"
       ],
       "country": "JP",
+      "org_type": "public_org",
+      "prefecture": "大阪府",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-02-21",
@@ -8249,6 +8644,8 @@
         "福祉・介護"
       ],
       "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "大阪府",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-02-19",
@@ -8303,6 +8700,8 @@
         "医療"
       ],
       "country": "JP",
+      "org_type": "public_org",
+      "prefecture": "静岡県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-02-09",
@@ -8454,6 +8853,8 @@
       "organization": "横浜市立みなと赤十字病院",
       "industry": "医療",
       "country": "JP",
+      "org_type": "hospital",
+      "prefecture": "神奈川県",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-01-17",

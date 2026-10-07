@@ -3,6 +3,8 @@ services:
   - HAKODATE歌謡祭 チケットweb購入
 industry: エンタメ・スポーツ
 country: JP
+org_type: public_org
+prefecture: 北海道
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/33
 date_announced: 2024-10-31

@@ -3,6 +3,8 @@ services:
   - 国際平和拠点ひろしま
 industry: 行政
 country: JP
+org_type: local_gov
+prefecture: 広島県
 date_announced: 2024-12-30
 affected_count: 3751
 cause: unauthorized_access

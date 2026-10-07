@@ -3,6 +3,8 @@ industry:
   - 福祉・介護
   - 行政
 country: JP
+org_type: public_org
+prefecture: 三重県
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-01-17
