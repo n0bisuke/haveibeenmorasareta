@@ -1,5 +1,8 @@
 organization: 株式会社GAORA
-industry: エンタメ・スポーツ
+industry:
+  - エンタメ・スポーツ
+  - メディア・出版
+  - 小売・EC
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30

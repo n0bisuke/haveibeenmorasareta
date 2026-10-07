@@ -3,7 +3,9 @@ services:
   - CNプレイガイド
   - キョードー東京
   - TBSチケット
-industry: エンタメ・スポーツ
+industry:
+  - エンタメ・スポーツ
+  - メディア・出版
 country: JP
 date_occurred: 2025-09-05
 date_announced: 2025-09-10

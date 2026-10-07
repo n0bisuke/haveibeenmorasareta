@@ -1,6 +1,8 @@
 organization: 株式会社ガーラ湯沢
 group: JR東日本グループ
-industry: 旅行
+industry:
+  - 旅行
+  - エンタメ・スポーツ
 country: JP
 date_announced: 2026-02-12
 affected_count: 1518

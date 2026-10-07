@@ -1,7 +1,9 @@
 organization: 株式会社らしんばん
 services:
   - らしんばん
-industry: 小売・EC
+industry:
+  - 小売・EC
+  - エンタメ・スポーツ
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/25

@@ -1,7 +1,9 @@
 organization: 株式会社リクルート
 services:
   - 北海道じゃらん
-industry: メディア・出版
+industry:
+  - メディア・出版
+  - 旅行
 country: JP
 date_announced: 2025-03-19
 affected_count: 104000

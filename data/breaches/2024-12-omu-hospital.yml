@@ -1,5 +1,7 @@
 organization: 大阪公立大学医学部附属病院
-industry: 医療
+industry:
+  - 医療
+  - 人材・教育
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/35

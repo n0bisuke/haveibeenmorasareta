@@ -1,5 +1,7 @@
 organization: 神戸須磨シーワールド
-industry: エンタメ・スポーツ
+industry:
+  - エンタメ・スポーツ
+  - 行政
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30

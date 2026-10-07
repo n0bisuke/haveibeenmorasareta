@@ -1,7 +1,9 @@
 organization: アソビュー株式会社
 services:
   - satsuki（アクティビティ事業者向け予約管理システム）
-industry: 旅行
+industry:
+  - 旅行
+  - エンタメ・スポーツ
 country: JP
 date_occurred: 2026-05-20
 date_announced: 2026-05-28

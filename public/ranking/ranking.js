@@ -78,13 +78,15 @@ function inRange(b) {
 function group(items, keyFn) {
   const map = new Map();
   for (const b of items) {
-    const key = keyFn(b);
-    if (!key) continue;
-    if (!map.has(key)) map.set(key, { key, items: [], affected: 0, unknown: 0 });
-    const g = map.get(key);
-    g.items.push(b);
-    if (b.affected_count == null) g.unknown += 1;
-    else g.affected += b.affected_count;
+    // キーが配列（複数の業種など）なら、それぞれのグループに数える
+    for (const key of [keyFn(b)].flat()) {
+      if (!key) continue;
+      if (!map.has(key)) map.set(key, { key, items: [], affected: 0, unknown: 0 });
+      const g = map.get(key);
+      g.items.push(b);
+      if (b.affected_count == null) g.unknown += 1;
+      else g.affected += b.affected_count;
+    }
   }
   const metric = METRICS[state.metric];
   const other = METRICS[state.metric === 'affected' ? 'incidents' : 'affected'];

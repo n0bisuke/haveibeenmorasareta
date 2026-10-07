@@ -13,7 +13,7 @@ const LEVEL = Object.fromEntries(LEVELS.map((l) => [l.id, l]));
 
 // 検索用テキストを事前に作っておく
 for (const b of breaches) {
-  b._text = [b.organization, b.group, b.root_cause, b.vendor?.name, b.vendor?.group, ...(b.services ?? []), ...(b.data_types ?? []), b.industry, b.summary, CAUSES[b.cause], VULN_LABEL[b.vuln_target],
+  b._text = [b.organization, b.group, b.root_cause, b.vendor?.name, b.vendor?.group, ...(b.services ?? []), ...(b.data_types ?? []), ...[b.industry ?? []].flat(), b.summary, CAUSES[b.cause], VULN_LABEL[b.vuln_target],
     b.status === 'investigating' && '調査中'].filter(Boolean).join(' ').toLowerCase();
 }
 
@@ -96,7 +96,7 @@ function renderItem(b) {
     b.date_occurred && `発生 ${fmtDate(b.date_occurred)}`,
     VULN_LABEL[b.vuln_target] ? `${CAUSES[b.cause]}（${VULN_LABEL[b.vuln_target]}）` : CAUSES[b.cause],
     b.vendor && `委託先 ${b.vendor.name.replace(/株式会社/g, '')}`,
-    b.industry,
+    ...[b.industry ?? []].flat(),
   ].filter(Boolean);
   el.querySelector('.meta').replaceChildren(...meta.map((t) => Object.assign(document.createElement('span'), { textContent: t })));
   if (b.root_cause) el.querySelector('.root-cause-text').textContent = b.root_cause;

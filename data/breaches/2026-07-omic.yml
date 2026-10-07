@@ -1,5 +1,7 @@
 organization: 海外貨物検査株式会社
-industry: 団体・その他
+industry:
+  - 団体・その他
+  - 食品
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/31

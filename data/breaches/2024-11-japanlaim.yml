@@ -1,5 +1,8 @@
 organization: ジャパンライム株式会社
-industry: メディア・出版
+industry:
+  - メディア・出版
+  - 医療
+  - 人材・教育
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29

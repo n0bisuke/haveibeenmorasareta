@@ -2,7 +2,9 @@ organization: 株式会社ソニー・ミュージックソリューションズ
 group: ソニーグループ
 services:
   - Sony Music Shop
-industry: エンタメ・スポーツ
+industry:
+  - エンタメ・スポーツ
+  - 小売・EC
 country: JP
 date_occurred: 2025-02-13
 date_announced: 2025-02-21

@@ -1,7 +1,9 @@
 organization: 大阪マラソン組織委員会
 services:
   - 大阪マラソン2026 ボランティア登録情報システム
-industry: 団体・その他
+industry:
+  - エンタメ・スポーツ
+  - 団体・その他
 country: JP
 date_announced: 2026-03-25
 affected_count: 4101

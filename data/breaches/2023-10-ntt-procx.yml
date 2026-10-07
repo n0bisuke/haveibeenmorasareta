@@ -2,7 +2,9 @@ organization: 株式会社NTTマーケティングアクトProCX
 group: NTTグループ
 services:
   - NTTビジネスソリューションズのコールセンターシステム
-industry: IT・通信
+industry:
+  - IT・通信
+  - 行政
 country: JP
 date_announced: 2023-10-17
 affected_count: 9280000

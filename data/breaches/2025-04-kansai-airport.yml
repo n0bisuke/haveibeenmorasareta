@@ -1,7 +1,9 @@
 organization: 関西エアポート株式会社
 services:
   - KIX-ITM Global Business Club
-industry: 交通・モビリティ
+industry:
+  - 交通・モビリティ
+  - 旅行
 country: JP
 date_announced: 2025-04-28
 affected_count: 10575
