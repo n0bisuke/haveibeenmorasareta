@@ -5,9 +5,11 @@ const $ = (id) => document.getElementById(id);
 const nf = new Intl.NumberFormat('ja-JP');
 const ORG_LIMIT = 10;
 
-const { breaches } = await fetch('../breaches.json').then((r) => r.json());
+const { breaches, vuln_targets: VULN = [] } = await fetch('../breaches.json').then((r) => r.json());
 
 // 「株式会社」などを除いた短い名前（グループ指定があればグループ名）
+const VULN_LABEL = Object.fromEntries(VULN.map((t) => [t.id, t.label]));
+
 const shortName = (s) => s.replace(/株式会社|学校法人/g, '').trim();
 const orgKey = (b) => b.group ?? shortName(b.organization);
 
@@ -40,6 +42,13 @@ const RANKINGS = [
     key: (b) => b.cause,
     label: (k) => CAUSES[k] ?? k,
     href: (g) => `../?cause=${encodeURIComponent(g.key)}`,
+  },
+  {
+    // 「脆弱性の悪用」の事案を、悪用された箇所ごとに集計（未分類は「不明」）
+    id: 'vuln',
+    key: (b) => b.cause === 'vulnerability' && (b.vuln_target ?? 'unknown'),
+    label: (k) => VULN_LABEL[k] ?? '不明',
+    href: (g) => `../?cause=vulnerability${VULN_LABEL[g.key] ? `&q=${encodeURIComponent(VULN_LABEL[g.key])}` : ''}`,
   },
 ];
 

@@ -8,6 +8,7 @@ affected_count: 692
 count_note: 同社・グループ会社・取引先の従業員の情報。一般顧客の情報は含まれない
 cause: vulnerability
 root_cause: 倉庫業務管理システムの脆弱性
+vuln_target: business_tool
 data_types:
   - 氏名
   - メールアドレス

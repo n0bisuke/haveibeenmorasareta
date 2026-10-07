@@ -7,6 +7,7 @@ affected_count: 7716811
 count_note: 2026年9月15日の第二報で確定した件数
 cause: vulnerability
 root_cause: Webシステムの一部の脆弱性から侵入され、複数システムに拡大
+vuln_target: web_app
 data_types:
   - 氏名
   - 住所

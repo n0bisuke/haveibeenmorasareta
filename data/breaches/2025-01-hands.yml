@@ -7,6 +7,7 @@ date_announced: 2025-01-27
 affected_count: 121886
 cause: vulnerability
 root_cause: アプリが利用するシステムのソフトウェアの脆弱性
+vuln_target: web_app
 summary: 雑貨のハンズのアプリで、システムのソフトウェアの脆弱性を突いた第三者の不正アクセスにより、登録会員の個人情報が漏えいした可能性がある。
 sources:
   - title: ScanNetSecurity
