@@ -1,0 +1,13 @@
+organization: ワークスタイル株式会社
+industry: IT・通信
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-03-29
+affected_count: 154650
+count_note: "まとめサイトの記載: 15万4,650件（一次情報で未確認）"
+cause: misconfiguration
+summary: 労務管理サービス「WelcomeHR」において、ユーザーがストレージサーバーに保存した16万2,830人の個人情報が外部閲覧可能にあり、うち15万4,650人について第三者によるダウンロードが判明。原因は、「WelcomeHR」ストレージサーバーのアクセス権限設定ミスによるもので、本来外部アクセスを制限すべき部分について誤設定があり、特定の条件下において外部アクセス可能な状態にあったことが、調査により判明した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

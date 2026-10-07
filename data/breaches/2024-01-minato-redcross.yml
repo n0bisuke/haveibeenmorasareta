@@ -1,0 +1,13 @@
+organization: 横浜市立みなと赤十字病院
+industry: 医療
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-01-17
+affected_count: 1092
+count_note: "まとめサイトの記載: 1,092 件（一次情報で未確認）"
+cause: lost_device
+summary: 2024年1月17日、所属医師が循環器内科患者の診療データ1,092 件を記録したUSBメモリを紛失したと明らかにした。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

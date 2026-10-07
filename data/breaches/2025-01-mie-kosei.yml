@@ -1,0 +1,13 @@
+organization: 社会福祉法人三重県厚生事業団
+industry: 医療
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-01-17
+affected_count: 1384
+count_note: "まとめサイトの記載: 1,384件（一次情報で未確認）"
+cause: unauthorized_access
+summary: 三重県の外郭団体である社会福祉法人三重県厚生事業団は、運営する障害者施設「三重県いなば園」に所属する職員が園のサーバーに不正アクセスし、利用者や保護者らの個人情報約1,400件不正持ち出ししていたことが判明した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

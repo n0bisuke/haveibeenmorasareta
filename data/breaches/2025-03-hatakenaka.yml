@@ -1,0 +1,13 @@
+organization: はたけなか製麺株式会社
+industry: 食品
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-03-17
+affected_count: 4142
+count_note: "まとめサイトの記載: クレジットカード情報：824件 個人情報：4,142件（一次情報で未確認）"
+cause: unauthorized_access
+summary: はたけなか製麺株式会社は、運営する「はたけなかオンラインショップ」に対する外部からのサイバー攻撃に伴い、過去オンラインショップを利用したユーザーのクレジットカード情報824件および個人情報4,142件について漏えい懸念を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

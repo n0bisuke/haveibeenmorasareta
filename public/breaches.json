@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-10-07T15:34:12.000Z",
-  "count": 224,
+  "count": 295,
   "severity_levels": [
     {
       "id": "critical",
@@ -1757,6 +1757,46 @@
       "severity": null
     },
     {
+      "id": "2026-07-omic",
+      "organization": "海外貨物検査株式会社",
+      "industry": "団体・その他",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
+      "date_announced": "2026-07-14",
+      "affected_count": 1000,
+      "count_note": "まとめサイトの記載: 約1,000件（一次情報で未確認）",
+      "cause": "phishing",
+      "summary": "海外貨物検査株式会社は、同社と契約する有機JAS認証審査員がサポート詐欺の被害に遭い、貸与していたパソコンから顧客の個人情報が外部に漏洩した可能性があると発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2026年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2026-07-nanto-city",
+      "organization": "南砺市",
+      "industry": "行政",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
+      "date_announced": "2026-07-13",
+      "affected_count": 1380,
+      "count_note": "まとめサイトの記載: 1,380件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "南砺市(富山)は、市ホームページで公開していた農業経営基盤強化促進法に基づく「地域計画」のPDFデータについて、特定の操作により、マスキングした氏名などの個人情報が閲覧できる状態になっていたと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2026年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2026-07-nichirei",
       "organization": "株式会社ニチレイ",
       "industry": "食品",
@@ -1778,6 +1818,26 @@
         }
       ],
       "severity": "medium"
+    },
+    {
+      "id": "2026-07-kyorin",
+      "organization": "杏林学園",
+      "industry": "人材・教育",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
+      "date_announced": "2026-07-07",
+      "affected_count": 2500,
+      "count_note": "まとめサイトの記載: 約2,500件（一次情報で未確認）",
+      "cause": "phishing",
+      "summary": "教員が使用するパソコンがサポート詐欺の被害に遭い、学生や教職員など約2,500人分の個人情報が漏えいしたおそれがあると発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2026年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
     },
     {
       "id": "2026-07-unimat-life",
@@ -1887,6 +1947,26 @@
         }
       ],
       "severity": "high"
+    },
+    {
+      "id": "2026-06-komatsushima-city",
+      "organization": "小松島市",
+      "industry": "行政",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
+      "date_announced": "2026-06-25",
+      "affected_count": 1906,
+      "count_note": "まとめサイトの記載: 1,906件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "小松島市（徳島）は、農林水産課で経営所得安定対策に関係する個人情報1,906件を含むデータを誤送信したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2026年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
     },
     {
       "id": "2026-06-kddi",
@@ -2348,6 +2428,26 @@
       "severity": "critical"
     },
     {
+      "id": "2026-04-tein",
+      "organization": "株式会社テイン",
+      "industry": "製造",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
+      "date_announced": "2026-04-08",
+      "affected_count": 7304,
+      "count_note": "まとめサイトの記載: 7,304件（一次情報で未確認）",
+      "cause": "ransomware",
+      "summary": "株式会社テインは、同社システムがランサムウェアに感染した問題について最終報を公表し、社員や株主など計7,304人分の個人情報が漏えいした可能性があると発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2026年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2026-04-awa-bank",
       "organization": "株式会社阿波銀行",
       "industry": "金融・保険",
@@ -2366,6 +2466,26 @@
         {
           "title": "ScanNetSecurity（調査結果）",
           "url": "https://scan.netsecurity.ne.jp/article/2026/06/08/55440.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2026-03-lawson-bank",
+      "organization": "株式会社ローソン銀行",
+      "industry": "金融・保険",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
+      "date_announced": "2026-03-31",
+      "affected_count": 5373,
+      "count_note": "まとめサイトの記載: 5,373件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "株式会社ローソン銀行は、ATMの運用・保守業務を委託している委託先の再委託先において、最大5,373件の取引情報などが保存されていた可能性のあるSSD2個の所在が確認できなくなったと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2026年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
         }
       ],
       "severity": null
@@ -2742,6 +2862,26 @@
       "severity": "medium"
     },
     {
+      "id": "2026-02-osaka-kyoiku-univ",
+      "organization": "大阪教育大学",
+      "industry": "人材・教育",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
+      "date_announced": "2026-02-03",
+      "affected_count": 2376,
+      "count_note": "まとめサイトの記載: 2,376件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "国立大学法人大阪教育大学は、学生宛てに送信した一斉メールにおいて、メールアドレスが第三者に表示される形で送信されていたことを明らかにした。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2026年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2026-01-maff",
       "organization": "農林水産省",
       "industry": "行政",
@@ -2795,6 +2935,26 @@
         }
       ],
       "severity": "medium"
+    },
+    {
+      "id": "2025-12-furusato-shimane",
+      "organization": "公益財団法人ふるさと島根定住財団",
+      "industry": "団体・その他",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-12-23",
+      "affected_count": 1238,
+      "count_note": "まとめサイトの記載: 1,238件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "公益財団法人ふるさと島根定住財団は、財団が管理する企業管理システムにおいて記録している学生など1,238人の個人情報を一部企業に誤って送信したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
     },
     {
       "id": "2025-12-nissan",
@@ -2860,6 +3020,26 @@
       "severity": "high"
     },
     {
+      "id": "2025-12-iqb",
+      "organization": "東京大学定量生命科学研究所",
+      "industry": "人材・教育",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-12-19",
+      "affected_count": 1323,
+      "count_note": "まとめサイトの記載: 1,323件（一次情報で未確認）",
+      "cause": "lost_device",
+      "summary": "定量生命科学研究所は、所属教員が海外出張中に携行していた業務用ノートパソコンが盗難被害に遭い、記録されていた1,323人分の学生情報の漏えい可能性を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2025-12-kawamoto",
       "organization": "株式会社川本製作所",
       "industry": "製造",
@@ -2879,6 +3059,66 @@
         }
       ],
       "severity": "medium"
+    },
+    {
+      "id": "2025-12-kurashiki-central-hospital",
+      "organization": "倉敷中央病院",
+      "industry": "医療",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-12-15",
+      "affected_count": 1162,
+      "count_note": "まとめサイトの記載: 1,162件（一次情報で未確認）",
+      "cause": "lost_device",
+      "summary": "倉敷中央病院(岡山)は、心臓血管外科手術に関する測定データを記録した、患者1,162名の個人情報を含むUSBメモリを紛失した事案が発生したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2025-12-tottori-pref",
+      "organization": "鳥取県",
+      "industry": "行政",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-12-09",
+      "affected_count": 1495,
+      "count_note": "まとめサイトの記載: 1,495件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "鳥取県は、商工労働部企業支援課において、補助金事務に関連した電子メールの誤送信があり、1,495名の個人情報が外部に漏えいしたと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2025-12-tac",
+      "organization": "TAC株式会社",
+      "industry": "人材・教育",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-12-04",
+      "affected_count": 1315,
+      "count_note": "まとめサイトの記載: 1,315件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "TAC株式会社は、同社が保有する受講生ら最大1,315名の個人情報がインターネット上で閲覧できる状態にあったことを明らかにした。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
     },
     {
       "id": "2025-11-mitsubishi-paper",
@@ -2946,6 +3186,26 @@
       "severity": "high"
     },
     {
+      "id": "2025-11-nishimura-securities",
+      "organization": "西村証券株式会社",
+      "industry": "金融・保険",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-11-07",
+      "affected_count": 4104,
+      "count_note": "まとめサイトの記載: 4,104件（一次情報で未確認）",
+      "cause": "lost_device",
+      "summary": "西村証券株式会社は、同社が保管していた顧客4,104人分の個人情報を収録したDVDを紛失したと発表した。DVD内のデータにはファイルごとにパスワードを設定している旨、説明。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2025-11-nikkei",
       "organization": "株式会社日本経済新聞社",
       "services": [
@@ -2977,6 +3237,26 @@
         }
       ],
       "severity": "high"
+    },
+    {
+      "id": "2025-10-officebusters",
+      "organization": "株式会社オフィスバスターズ",
+      "industry": "小売・EC",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-10-31",
+      "affected_count": 1703,
+      "count_note": "まとめサイトの記載: 顧客情報：1,703件 クレジットカード情報：96件（一次情報で未確認）",
+      "cause": "unauthorized_access",
+      "summary": "ビジフォン舗を運営する株式会社オフィスバスターズは、「ビジフォン舗」サイトが第三者による不正アクセスを受け、顧客1703名情報および96名のクレジットカード情報が流出した可能性があると発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
     },
     {
       "id": "2025-10-fukuyoshi",
@@ -3075,6 +3355,26 @@
         {
           "title": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2025/10/22/53856.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2025-10-space",
+      "organization": "株式会社スペース",
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-10-07",
+      "affected_count": 4200,
+      "count_note": "まとめサイトの記載: 個人情報：約1,900件 契約情報：約4,200件（一次情報で未確認）",
+      "cause": "unauthorized_access",
+      "summary": "株式会社スペースは、管理を委託しているサーバーが第三者の不正アクセスを受け、保有する個人情報の漏えい懸念を発表した。漏洩した情報は、同社コンテンツのお問い合わせフォーム入力データ約1,900件と、契約リストファイル約4,200件。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
         }
       ],
       "severity": null
@@ -3195,6 +3495,26 @@
       "severity": "medium"
     },
     {
+      "id": "2025-09-kuretakeso",
+      "organization": "株式会社呉竹荘",
+      "industry": "旅行",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-09-12",
+      "affected_count": 3400,
+      "count_note": "まとめサイトの記載: 約3,400件（一次情報で未確認）",
+      "cause": "unauthorized_access",
+      "summary": "株式会社呉竹荘は、同社が運営ホテルが運用する宿泊予約情報管理システムが不正アクセスを受け、顧客の個人情報が漏えいした可能性があると発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2025-09-cn-playguide",
       "organization": "コミュニティ・ネットワーク株式会社",
       "services": [
@@ -3301,6 +3621,46 @@
       "severity": "critical"
     },
     {
+      "id": "2025-08-koto-city",
+      "organization": "江東区",
+      "industry": "行政",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-08-28",
+      "affected_count": 1000,
+      "count_note": "まとめサイトの記載: 約1,000件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "江東区は、区立小学校にて電子メール誤送信が発生し、教員希望者約1,000名の情報が漏えいしたと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2025-08-ecohai",
+      "organization": "株式会社エコ配",
+      "industry": "物流",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-08-12",
+      "affected_count": 149063,
+      "count_note": "まとめサイトの記載: 14万9,063件（一次情報で未確認）",
+      "cause": "misconfiguration",
+      "summary": "宅配関連サービスの株式会社エコ配は、同社が運営するサイトにおいてシステムの不備があり、一部の個人情報14万9,063件が第三者から閲覧可能な状態になっていたと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2025-08-surugaya",
       "organization": "株式会社駿河屋",
       "services": [
@@ -3385,6 +3745,26 @@
       "severity": null
     },
     {
+      "id": "2025-07-kumagaigumi",
+      "organization": "株式会社熊谷組",
+      "industry": "不動産",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-07-04",
+      "affected_count": 1238,
+      "count_note": "まとめサイトの記載: 1,238件（一次情報で未確認）",
+      "cause": "phishing",
+      "summary": "株式会社熊谷組は、所属する職員がショートメッセージを利用したサイバー攻撃「スミッシング」の被害に遭い、社有iPhoneに紐づけられていた個人情報にアクセス可能なAppleアカウントに対する不正アクセスが発生したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2025-06-gakuyu",
       "organization": "学悠出版株式会社",
       "services": [
@@ -3450,6 +3830,26 @@
       "severity": null
     },
     {
+      "id": "2025-06-nagoya-univ",
+      "organization": "名古屋大学",
+      "industry": "人材・教育",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-06-17",
+      "affected_count": 1600,
+      "count_note": "まとめサイトの記載: 約1,600件（一次情報で未確認）",
+      "cause": "phishing",
+      "summary": "名古屋大学は、同大人文学研究科に所属する教員がサポート詐欺に遭い、使用端末に記録されていた同大や大学院、付属学校に所属する学生ら約1,600名の個人情報について漏えいの懸念を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2025-06-cosmo",
       "organization": "コスモ石油マーケティング株式会社",
       "group": "コスモエネルギーグループ",
@@ -3479,6 +3879,46 @@
       "severity": "medium"
     },
     {
+      "id": "2025-06-mizuho-bank",
+      "organization": "株式会社みずほ銀行",
+      "industry": "金融・保険",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-06-14",
+      "affected_count": 5572,
+      "count_note": "まとめサイトの記載: 5,572件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "株式会社みずほ銀行は、同行職員が発信した電子メールについて誤送信があり、iDeCo申込者5,572名のメールアドレスや申込受付状況等のデータを誤送信したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2025-06-setsunan-univ",
+      "organization": "摂南大学",
+      "industry": "人材・教育",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-06-13",
+      "affected_count": 9213,
+      "count_note": "まとめサイトの記載: 9,213件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "摂南大学は、同大就職部に所属する職員が在学生ら122名に宛てたMicrosoft Teamsのチャット機能にて、同大学の卒業生や修了生9,213人分に関する個人情報を含むファイルを誤送信した旨、発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2025-06-softbank",
       "organization": "ソフトバンク株式会社",
       "services": [
@@ -3500,6 +3940,70 @@
         {
           "title": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2025/06/20/53082.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2025-06-shinchosa",
+      "organization": "株式会社審調社",
+      "industry": "金融・保険",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-06-05",
+      "affected_count": 102700,
+      "count_note": "約10万2,700件（委託元の保険会社 約130社の顧客情報）。公表日は要確認",
+      "cause": "ransomware",
+      "summary": "保険会社から事故調査などを受託する審調社がランサムウェア被害を受け、東京海上日動・三井住友海上・あいおいニッセイ同和・損保ジャパンなど委託元の顧客情報が漏えいした。委託元ごとの公表の確認が必要。",
+      "sources": [
+        {
+          "title": "日経クロステック",
+          "url": "https://xtech.nikkei.com/atcl/nxt/news/24/03016/"
+        },
+        {
+          "title": "損保ジャパン お知らせ",
+          "url": "https://www.sompo-japan.co.jp/announce/2025/202505_02/"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2025-06-baitimes",
+      "organization": "株式会社アルバイトタイムス",
+      "industry": "人材・教育",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-06-02",
+      "affected_count": 1809,
+      "count_note": "まとめサイトの記載: 1,809件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "株式会社アルバイトタイムスは、同社が送信した電子メールについて誤送信があり、送信先となったメールアドレス1,809件が漏えいした旨、発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2025-05-akita-univ",
+      "organization": "秋田大学",
+      "industry": "人材・教育",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-05-30",
+      "affected_count": 1500,
+      "count_note": "まとめサイトの記載: 約1,500件（一次情報で未確認）",
+      "cause": "lost_device",
+      "summary": "秋田大学は、同大医学部附属病院にて保管していた職員の針刺し・切創および皮膚・粘膜曝露に関連する合計約1,500件の個人情報を含んだUSBメモリが所在不明であることを明らかにした。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
         }
       ],
       "severity": null
@@ -3550,6 +4054,30 @@
       "severity": null
     },
     {
+      "id": "2025-05-yamagata-univ",
+      "organization": "山形大学",
+      "industry": "人材・教育",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-05-12",
+      "affected_count": 2619,
+      "count_note": "まとめサイトの記載: 2,619件（一次情報で未確認）",
+      "cause": "phishing",
+      "summary": "山形大学は、同大に所属する教員がいわゆるサポート詐欺被害に遭い、使用端末からアクセス可能であった、農学部をはじめとする学生2,306名の氏名や学生番号のほか、313名の健康調査票等について漏えいの懸念を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/05/27/52920.html"
+        },
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2025-05-prtimes",
       "organization": "株式会社PR TIMES",
       "services": [
@@ -3582,6 +4110,26 @@
         }
       ],
       "severity": "high"
+    },
+    {
+      "id": "2025-05-morioka-gas",
+      "organization": "盛岡ガス燃料株式会社",
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-05-02",
+      "affected_count": 2200,
+      "count_note": "まとめサイトの記載: 約2,200件（一次情報で未確認）",
+      "cause": "lost_device",
+      "summary": "盛岡ガス燃料株式会社は、同社に所属する従業員が車上荒らしに遭い、顧客情報約2,200件が記録されたUSBメモリが所在不明になったと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
     },
     {
       "id": "2025-04-newton",
@@ -3689,6 +4237,30 @@
       "severity": null
     },
     {
+      "id": "2025-04-mizuho-trust",
+      "organization": "みずほ信託銀行株式会社",
+      "industry": "金融・保険",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-04-24",
+      "affected_count": 2472,
+      "count_note": "まとめサイトの記載: 2,472件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "みずほ信託銀行株式会社は、同校に所属する職員が発信した電子メールについて誤送信があり、個人2,472名および法人246社の顧客情報を外部流出したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/05/19/52868.html"
+        },
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2025-04-iij",
       "organization": "株式会社インターネットイニシアティブ（IIJ）",
       "services": [
@@ -3720,6 +4292,30 @@
       "severity": "medium"
     },
     {
+      "id": "2025-04-hotstrap",
+      "organization": "ユー・アンド・アース株式会社",
+      "industry": "小売・EC",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-04-08",
+      "affected_count": 1506,
+      "count_note": "まとめサイトの記載: カード情報：690件 個人情報：1,506件（一次情報で未確認）",
+      "cause": "unauthorized_access",
+      "summary": "ユー・アンド・アース株式会社は、同社が運営する通販ショップ「ホットストラップ」のウェブサイトが外部からの不正アクセスを受け、過去ショップにてクレジットカード決済したユーザー690名のカード情報や1,506名の個人情報が漏えいした可能性があると発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/04/21/52718.html"
+        },
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2025-04-eduward",
       "organization": "株式会社EDUWARD Press",
       "services": [
@@ -3744,6 +4340,54 @@
         }
       ],
       "severity": "critical"
+    },
+    {
+      "id": "2025-03-gaora",
+      "organization": "株式会社GAORA",
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-03-31",
+      "affected_count": 16795,
+      "count_note": "まとめサイトの記載: 個人情報：1万6,795 件 クレジットカード情報：1,909件（一次情報で未確認）",
+      "cause": "unauthorized_access",
+      "summary": "株式会社GAORAは、同社が許諾し株式会社グローバーが運営する通販サイト「GAORAオンラインショップ」に対する外部からの不正アクセスにより、サイトユーザーの個人情報1万6,795 件やクレジットカード情報1,909件について漏えい懸念を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/04/14/52672.html"
+        },
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2025-03-arahataen",
+      "organization": "株式会社荒畑園",
+      "industry": "小売・EC",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-03-25",
+      "affected_count": 73684,
+      "count_note": "まとめサイトの記載: 個人情報：7万3,684件 クレジットカード情報：1万3,094件（一次情報で未確認）",
+      "cause": "unauthorized_access",
+      "summary": "株式会社荒畑園は、同社が運営する「お茶の荒畑園公式サイト」が外部からの不正アクセスを受け、過去サイトを利用したユーザーの個人情報最大7万3,684件やクレジットカード情報1万3,094件について漏えいの懸念を公表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/04/08/52634.html"
+        },
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
     },
     {
       "id": "2025-03-hokkaido-jalan",
@@ -3773,6 +4417,86 @@
         }
       ],
       "severity": "high"
+    },
+    {
+      "id": "2025-03-kobe-suma-seaworld",
+      "organization": "神戸須磨シーワールド",
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-03-19",
+      "affected_count": 12931,
+      "count_note": "まとめサイトの記載: 1万2,931件（一次情報で未確認）",
+      "cause": "other",
+      "summary": "神戸須磨シーワールドは、神戸須磨シーワールドが運用する「KOBEこども割クーポン利用申請システム」においてシステムの一部に不備があり、サービス利用申込者の個人情報1万2,931件が外部閲覧可能な状態にあったと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2025-03-mcdonalds",
+      "organization": "日本マクドナルド株式会社",
+      "industry": "飲食",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-03-19",
+      "affected_count": 8989,
+      "count_note": "まとめサイトの記載: 8,989件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "日本マクドナルド株式会社は、同社が設定したメール配信システムの設定にミスがあり、8,989件のメールアドレスが漏えいしたと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2025-03-hatakenaka",
+      "organization": "はたけなか製麺株式会社",
+      "industry": "食品",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-03-17",
+      "affected_count": 4142,
+      "count_note": "まとめサイトの記載: クレジットカード情報：824件 個人情報：4,142件（一次情報で未確認）",
+      "cause": "unauthorized_access",
+      "summary": "はたけなか製麺株式会社は、運営する「はたけなかオンラインショップ」に対する外部からのサイバー攻撃に伴い、過去オンラインショップを利用したユーザーのクレジットカード情報824件および個人情報4,142件について漏えい懸念を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2025-03-shizuoka-pref",
+      "organization": "静岡県",
+      "industry": "行政",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-03-14",
+      "affected_count": 1455,
+      "count_note": "まとめサイトの記載: 1,455件（一次情報で未確認）",
+      "cause": "lost_device",
+      "summary": "静岡県は、過去開催された「東京オリンピック・パラリンピック2020」に関連し、県内のボランティアや聖火ランナーなど約1,455人の個人情報を記録したUSBメモリー4本の紛失を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
     },
     {
       "id": "2025-03-oyatsu",
@@ -3829,6 +4553,70 @@
       "severity": "high"
     },
     {
+      "id": "2025-02-kashiwazaki-seika",
+      "organization": "有限会社柏崎青果",
+      "industry": "小売・EC",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-02-25",
+      "affected_count": 1198,
+      "count_note": "まとめサイトの記載: 1,198件（一次情報で未確認）",
+      "cause": "unauthorized_access",
+      "summary": "有限会社柏崎青果は、同社が運営する「柏崎青果オンラインショップ」に対する外部からの不正アクセスに伴い、ユーザー1,198名のクレジットカード情報やログインパスワード等の個人情報の漏えい懸念を公表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2025-02-craze",
+      "organization": "株式会社クレイズ",
+      "industry": "小売・EC",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-02-17",
+      "affected_count": 8257,
+      "count_note": "まとめサイトの記載: ユーザー情報：8,257 件 クレジットカード情報：7,455件（一次情報で未確認）",
+      "cause": "unauthorized_access",
+      "summary": "株式会社クレイズは、同社が運営するオンラインショップ「一撃オフィシャルショップ」に対する外部からの不正アクセスに伴い、ユーザー情報8,257 件やクレジットカード情報7,455件の漏えい懸念を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/02/28/52417.html"
+        },
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2025-02-utsunomiya-univ",
+      "organization": "宇都宮大学",
+      "industry": "人材・教育",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-02-13",
+      "affected_count": 1212,
+      "count_note": "まとめサイトの記載: 1,212件（一次情報で未確認）",
+      "cause": "unauthorized_access",
+      "summary": "国立大学法人の宇都宮大学は、2025年3月卒業・修了見込みの大学・大学院生に対し実施したMicrosoft Formsを利用のウェブ調査に関連する電子メールに誤送信があり、送信先89名の学生に回答者1,212名の個人情報を閲覧できるURLを添付していたと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2025-02-utsunomiya-central",
       "organization": "医療法人DIC 宇都宮セントラルクリニック",
       "industry": "医療",
@@ -3876,6 +4664,26 @@
       "severity": null
     },
     {
+      "id": "2025-01-hamamatsu-innovation",
+      "organization": "公益財団法人浜松地域イノベーション推進機構",
+      "industry": "団体・その他",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-01-26",
+      "affected_count": 7600,
+      "count_note": "まとめサイトの記載: 7,600件（一次情報で未確認）",
+      "cause": "unauthorized_access",
+      "summary": "公益財団法人浜松地域イノベーション推進機構は、財団のホームページが外部からの不正アクセスに伴う、複数の障害や個人情報7,600件の漏えいの可能性を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2025-01-mufg-nicos",
       "organization": "三菱UFJニコス株式会社",
       "group": "三菱UFJフィナンシャル・グループ",
@@ -3908,6 +4716,66 @@
         }
       ],
       "severity": "critical"
+    },
+    {
+      "id": "2025-01-mie-kosei",
+      "organization": "社会福祉法人三重県厚生事業団",
+      "industry": "医療",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-01-17",
+      "affected_count": 1384,
+      "count_note": "まとめサイトの記載: 1,384件（一次情報で未確認）",
+      "cause": "unauthorized_access",
+      "summary": "三重県の外郭団体である社会福祉法人三重県厚生事業団は、運営する障害者施設「三重県いなば園」に所属する職員が園のサーバーに不正アクセスし、利用者や保護者らの個人情報約1,400件不正持ち出ししていたことが判明した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2025-01-tokyu-malls",
+      "organization": "株式会社東急モールズデベロップメント",
+      "industry": "不動産",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-01-10",
+      "affected_count": 1082,
+      "count_note": "まとめサイトの記載: 1,082件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "株式会社東急モールズデベロップメントは、同社が一部業務を委託している事業者が電子メールを誤送信し、同社元従業員等を含む従業員の個人情報1,082件を外部漏洩したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2025-01-casio",
+      "organization": "カシオ計算機株式会社",
+      "industry": "製造",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
+      "date_announced": "2025-01-07",
+      "affected_count": 8478,
+      "count_note": "まとめサイトの記載: 8,478件（一次情報で未確認）",
+      "cause": "unauthorized_access",
+      "summary": "カシオ計算機株式会社は、同社が2024年10月に公表した自社サーバーに対するランサムウェア感染問題について、社内外関係者や取引先、ユーザー等合計8,478名の個人情報流出を確認したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2025年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
     },
     {
       "id": "2024-12-hiroshima-peace",
@@ -3964,6 +4832,26 @@
         }
       ],
       "severity": "medium"
+    },
+    {
+      "id": "2024-12-omp-hospital",
+      "organization": "大阪医科薬科大学病院",
+      "industry": "医療",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-12-25",
+      "affected_count": 5031,
+      "count_note": "まとめサイトの記載: 5,031件（一次情報で未確認）",
+      "cause": "lost_device",
+      "summary": "大阪医科薬科大学病院は、緩和ケアセンター執務室内にて患者の個人情報を記録したUSBメモリを紛失したと発表。紛失したUSBメモリには、氏名や年齢、病名など5,031名の情報が記録されていた。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
     },
     {
       "id": "2024-12-techful",
@@ -4026,6 +4914,70 @@
         {
           "title": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2024/12/27/52108.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-12-kanuma-city",
+      "organization": "鹿沼市",
+      "industry": "行政",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-12-13",
+      "affected_count": 1998,
+      "count_note": "まとめサイトの記載: 1,998件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "鹿沼市（栃木）は、市の教育委員会事務局スポーツ振興課が事務局を担う「鹿沼さつきマラソン大会」に関連した電子メールについて誤送信が発生し、参加者の氏名やメールアドレス1,998件を漏えいしたと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-12-miyazaki-univ",
+      "organization": "宮崎大学",
+      "industry": "人材・教育",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-12-13",
+      "affected_count": 19274,
+      "count_note": "まとめサイトの記載: 19,274件（一次情報で未確認）",
+      "cause": "unauthorized_access",
+      "summary": "宮崎大学は、同大の特定のメールアカウントが外部アクセスに伴い、大量のスパムメール発信や学内外の個人情報19,274件の漏えい懸念を発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/12/26/52103.html"
+        },
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-12-kashima-city",
+      "organization": "鹿嶋市",
+      "industry": "行政",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-12-06",
+      "affected_count": 1780,
+      "count_note": "まとめサイトの記載: 1,780件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "鹿嶋市（茨城）は、こども相談課に所属する職員が、鹿嶋市地域子育て支援センターである「セイビ堂ドリームパーク」の利用者に宛てた電子メールを誤送信し、合計1,780件のアドレスを漏えいしたと発表。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
         }
       ],
       "severity": null
@@ -4293,6 +5245,26 @@
       "severity": "critical"
     },
     {
+      "id": "2024-11-japanlaim",
+      "organization": "ジャパンライム株式会社",
+      "industry": "メディア・出版",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-11-01",
+      "affected_count": 6804,
+      "count_note": "まとめサイトの記載: 6,804件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "一般社団法人日本医療機器販売業協会より委託を受けた研修関連業務「2024年度継続的研修」において誤送信が発生し、研修受講申込者の個人情報6,804件が漏えいしたと発表。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2024-10-karel-capek",
       "organization": "株式会社カレルチャペック",
       "services": [
@@ -4427,6 +5399,26 @@
       "severity": null
     },
     {
+      "id": "2024-10-npd",
+      "organization": "日本駐車場開発株式会社",
+      "industry": "不動産",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-10-15",
+      "affected_count": 5078,
+      "count_note": "まとめサイトの記載: 5,078件（一次情報で未確認）",
+      "cause": "lost_device",
+      "summary": "日本駐車場開発株式会社は、同社に所属する従業員が駐車場契約者等の契約者情報合計5,078件が記録されたノートパソコンを紛失したと発表。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2024-10-gamefreak",
       "organization": "株式会社ゲームフリーク",
       "industry": "エンタメ・スポーツ",
@@ -4449,6 +5441,51 @@
         }
       ],
       "severity": "medium"
+    },
+    {
+      "id": "2024-10-taiju-life",
+      "organization": "大樹生命保険株式会社",
+      "group": "日本生命グループ",
+      "industry": "金融・保険",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-10-01",
+      "affected_count": 70000,
+      "count_note": "最大7万人分。公表日は要確認",
+      "cause": "third_party",
+      "root_cause": "業務委託先の倉業サービスへのランサムウェア攻撃",
+      "vendor": {
+        "name": "株式会社倉業サービス"
+      },
+      "summary": "業務委託先の倉業サービスがランサムウェア攻撃を受け、大樹生命保険の顧客最大7万人分の個人情報が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/10/03/51710.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-09-shinshu-univ",
+      "organization": "信州大学",
+      "industry": "人材・教育",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-09-25",
+      "affected_count": 4100,
+      "count_note": "まとめサイトの記載: 4,100件（一次情報で未確認）",
+      "cause": "unauthorized_access",
+      "summary": "信州大学教職支援センターが保有するシステムに対する外部からの不正アクセスに伴い、学生や卒業生4,100名の個人情報漏えい懸念を発表。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
     },
     {
       "id": "2024-09-ricoh-japan",
@@ -4679,6 +5716,26 @@
       "severity": null
     },
     {
+      "id": "2024-08-kesennuma-city",
+      "organization": "気仙沼市",
+      "industry": "行政",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-08-07",
+      "affected_count": 48651,
+      "count_note": "まとめサイトの記載: 4万8,651件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "気仙沼市（宮城県）は、気仙沼市立病院で運用していた計4万8,651名の個人データを記録したPOS（販売時点情報管理）レジ3台を、委託関連事業者がデータ消去しないままフリマアプリに出品し、漏えいが確認されたと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2024-08-tokyu-livable",
       "organization": "東急リバブル株式会社",
       "group": "東急グループ",
@@ -4772,6 +5829,26 @@
       "severity": null
     },
     {
+      "id": "2024-07-jetro",
+      "organization": "独立行政法人日本貿易振興機構（JETRO）",
+      "industry": "行政",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-07-31",
+      "affected_count": 5960,
+      "count_note": "まとめサイトの記載: 5,960件（一次情報で未確認）",
+      "cause": "lost_device",
+      "summary": "日本貿易振興機構（JETRO）は、機構の組織である日本食品海外プロモーションセンター（JFOODO）にて、JETRO職員含む内外の個人情報5,960件やJETROが保有する情報1万4,436件を記録したHDDの所在不明を発表した（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2024-07-tokyo-tamago",
       "organization": "株式会社東京玉子本舗",
       "services": [
@@ -4842,6 +5919,26 @@
       "severity": null
     },
     {
+      "id": "2024-07-kitakyushu-city",
+      "organization": "北九州市",
+      "industry": "行政",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-07-26",
+      "affected_count": 10000,
+      "count_note": "まとめサイトの記載: 1万件（一次情報で未確認）",
+      "cause": "lost_device",
+      "summary": "北九州市（福岡県）は、精神科等に通院する市民が利用する自立支援医療制度の利用者名簿データ約1万件を記録したCDを紛失したと明らかにした。公表時点で個人情報流出に係る被害の報告も確認されていないとしている（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2024-07-shimogamo-saryo",
       "organization": "株式会社下鴨茶寮",
       "services": [
@@ -4891,6 +5988,26 @@
         {
           "title": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2024/07/25/51367.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-07-tokyu-malls",
+      "organization": "株式会社東急モールズデベロップメント",
+      "industry": "不動産",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-07-17",
+      "affected_count": 1097,
+      "count_note": "まとめサイトの記載: 1,097件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "同社実施のイベント「キッズスタッフイベント（みなとみらい東急スクエア）」の運営委託事業者がイベント応募者に宛てたメール送信を誤り、個人情報が記述された電子メール合計1,097件をそれぞれ本来とは異なる宛先に送信したと発表した（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
         }
       ],
       "severity": null
@@ -5075,6 +6192,26 @@
       "severity": "high"
     },
     {
+      "id": "2024-06-hamamatsu-city",
+      "organization": "浜松市",
+      "industry": "行政",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-06-19",
+      "affected_count": 1015,
+      "count_note": "まとめサイトの記載: 1,015件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "浜松市（静岡県）は、市が介護事業者向けに展開している事業に関連して、本来公開すべきでない「ロコトレ事業登録団体一覧表」に記載された申請者や事務担当者合計1,015名の個人情報をホームページに誤公開した旨、発表した（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2024-06-academia",
       "organization": "アカデミア・ミュージック株式会社",
       "services": [
@@ -5122,6 +6259,26 @@
       "severity": "medium"
     },
     {
+      "id": "2024-06-nikko-city",
+      "organization": "日光市",
+      "industry": "行政",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-06-18",
+      "affected_count": 9549,
+      "count_note": "まとめサイトの記載: 9,549件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "日光市健康課の担当職員が合計9,549人の国民健康保険や後期高齢者医療保険情報を記載した電子メールを、市職員や関係機関12の宛先に誤送信したと発表した（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2024-06-alpha-uni",
       "organization": "株式会社アルファユニ",
       "services": [
@@ -5146,6 +6303,26 @@
         }
       ],
       "severity": "critical"
+    },
+    {
+      "id": "2024-06-kasugai-city",
+      "organization": "春日井市",
+      "industry": "行政",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-06-14",
+      "affected_count": 1133,
+      "count_note": "まとめサイトの記載: 1,133件（一次情報で未確認）",
+      "cause": "lost_device",
+      "summary": "春日井市（愛知県）は個人情報を含む排水設備工事に関連した資料1,133件が記録されたデータディスクを紛失したと発表しました。いまだ発見には至らず、誤廃棄の可能性が高いとのこと（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
     },
     {
       "id": "2024-06-mog",
@@ -5210,6 +6387,26 @@
         {
           "title": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2024/06/13/51141.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-06-tsukuba-univ",
+      "organization": "筑波大学",
+      "industry": "人材・教育",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-06-03",
+      "affected_count": 1248,
+      "count_note": "まとめサイトの記載: 1,248件（一次情報で未確認）",
+      "cause": "misconfiguration",
+      "summary": "大教員による転送先メールアドレスの設定ミスに関連し、同大教員や学生等の関係者のメールアドレス1,248件が外部流出したと発表した（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
         }
       ],
       "severity": null
@@ -5644,6 +6841,26 @@
       "severity": "medium"
     },
     {
+      "id": "2024-04-toei-kyoto",
+      "organization": "株式会社東映京都スタジオ",
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-04-24",
+      "affected_count": 1223,
+      "count_note": "まとめサイトの記載: 1,223件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "運営する東映太秦映画村が実施するドラマ記者会見の一般参加者向け電子メールにおいて誤送信が発生し、応募者1,223名の個人情報を2名の当選者に漏えいしたと発表。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2024-04-nagomi",
       "organization": "有限会社なごみ",
       "services": [
@@ -5668,6 +6885,46 @@
         }
       ],
       "severity": "critical"
+    },
+    {
+      "id": "2024-04-otsuka-shokai",
+      "organization": "株式会社大塚商会",
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-04-19",
+      "affected_count": 2687,
+      "count_note": "まとめサイトの記載: 2,687件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "社外の特定の1名に宛てに発信した電子メールに置いて誤送信が発生し、保有する顧客2,687名分の個人情報を、流出したと明らかにした。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-04-wellnet",
+      "organization": "ウェルネット株式会社",
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-04-10",
+      "affected_count": 43727,
+      "count_note": "まとめサイトの記載: 4万3,727件（一次情報で未確認）",
+      "cause": "other",
+      "summary": "会員管理システム「ekaiin」に不具合があり、団体が保有する個人情報4万3,727件が、特定の団体に流出したと発表。原因はサービスに関連したプログラムに内在していた不具合とのこと。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
     },
     {
       "id": "2024-04-marukawa-miso",
@@ -5697,6 +6954,26 @@
       "severity": "critical"
     },
     {
+      "id": "2024-03-welcomehr",
+      "organization": "ワークスタイル株式会社",
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-03-29",
+      "affected_count": 154650,
+      "count_note": "まとめサイトの記載: 15万4,650件（一次情報で未確認）",
+      "cause": "misconfiguration",
+      "summary": "労務管理サービス「WelcomeHR」において、ユーザーがストレージサーバーに保存した16万2,830人の個人情報が外部閲覧可能にあり、うち15万4,650人について第三者によるダウンロードが判明。原因は、「WelcomeHR」ストレージサーバーのアクセス権限設定ミスによるもので、本来外部アクセスを制限すべき部分について誤設定があり、特定の条件下において外部アクセス可能な状態にあったことが、調査により判明した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2024-03-hokushu",
       "organization": "株式会社北洲",
       "industry": "不動産",
@@ -5711,6 +6988,26 @@
         {
           "title": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2024/05/28/51062.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-03-kanto-esd",
+      "organization": "関東ESD活動支援センター",
+      "industry": "団体・その他",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-03-15",
+      "affected_count": 2296,
+      "count_note": "まとめサイトの記載: 2,296件（一次情報で未確認）",
+      "cause": "unauthorized_access",
+      "summary": "2024年3月15日、関東ESD活動支援センター（以下：関東ESD）のメールマガジン「関東ESDニュース」配信サービスが外部からの不正アクセスを受けたと明らかにした。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
         }
       ],
       "severity": null
@@ -5759,6 +7056,26 @@
         {
           "title": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2024/03/15/50730.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-03-kintetsu",
+      "organization": "近畿日本鉄道株式会社",
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-03-06",
+      "affected_count": 1671,
+      "count_note": "まとめサイトの記載: 1,671名（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "2024年3月6日、ユーザー向け電子メールを誤送信し、1,671名のメールアドレスが流出したと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
         }
       ],
       "severity": null
@@ -5835,6 +7152,46 @@
       "severity": "critical"
     },
     {
+      "id": "2024-02-atect",
+      "organization": "株式会社アテクト",
+      "industry": "製造",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-02-21",
+      "affected_count": 2055,
+      "count_note": "まとめサイトの記載: 2,055件（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "2024年2⽉21⽇、顧客向けに発した電子メールについて誤送信が発生し、メールアドレス2,055件が外部流出したと明らかにした。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-02-mihara-taikyo",
+      "organization": "特定非営利活動法人美原体育協会",
+      "industry": "団体・その他",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-02-21",
+      "affected_count": 14000,
+      "count_note": "まとめサイトの記載: 約1万4,000件（一次情報で未確認）",
+      "cause": "phishing",
+      "summary": "2024年2月21日、職員が使用する業務用パソコンが外部から遠隔操作によるアクセスを受け、美原体育館利用者等の個人情報約1万4,000件が流出した可能性があると明らかにした。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2024-02-create",
       "organization": "株式会社クレイツ",
       "services": [
@@ -5887,6 +7244,26 @@
       "severity": "critical"
     },
     {
+      "id": "2024-02-osaka-city",
+      "organization": "大阪市",
+      "industry": "行政",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-02-19",
+      "affected_count": 7468,
+      "count_note": "まとめサイトの記載: 7,468名（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "2024年2月19日、市が福祉事務所に宛てた電子メールを誤送信し、送信先となった福祉関連事業者7,468名の情報を漏えいしたと明らかにした。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2024-02-booking-car",
       "organization": "トヨタモビリティサービス株式会社",
       "group": "トヨタグループ",
@@ -5913,6 +7290,26 @@
         }
       ],
       "severity": "medium"
+    },
+    {
+      "id": "2024-02-kensetsu-rengo-kokuho",
+      "organization": "建設連合国民健康保険組合",
+      "industry": "金融・保険",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-02-09",
+      "affected_count": 3775,
+      "count_note": "まとめサイトの記載: 3,775件（一次情報で未確認）",
+      "cause": "lost_device",
+      "summary": "2024年2月9日、組合静岡支部にて管理する被保険者の個人情報3,775件が記録されたUSBメモリを紛失したと明らかにした。公表時点で見つかっていないが、USBメモリには高度な暗号化と複雑なパスワード設定による漏洩防止策が実施されており、公表時点で外部流出は確認されていないと発表している。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
     },
     {
       "id": "2024-02-verdy",
@@ -6010,6 +7407,46 @@
         {
           "title": "ScanNetSecurity（2024年2月の情報漏えい）",
           "url": "https://scan.netsecurity.ne.jp/article/2024/03/25/50761.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-01-openwork",
+      "organization": "オープンワーク株式会社",
+      "industry": "人材・教育",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-01-25",
+      "affected_count": 2094,
+      "count_note": "まとめサイトの記載: 2,094名（一次情報で未確認）",
+      "cause": "human_error",
+      "summary": "2024年1月25日、同社が展開する就職関連ソフトウェア「OpenWork」上で収集したユーザーの個人情報について別のユーザーに誤送信していたと明らかにした。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-01-minato-redcross",
+      "organization": "横浜市立みなと赤十字病院",
+      "industry": "医療",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2024-01-17",
+      "affected_count": 1092,
+      "count_note": "まとめサイトの記載: 1,092 件（一次情報で未確認）",
+      "cause": "lost_device",
+      "summary": "2024年1月17日、所属医師が循環器内科患者の診療データ1,092 件を記録したUSBメモリを紛失したと明らかにした。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）",
+      "sources": [
+        {
+          "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
+          "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
         }
       ],
       "severity": null
@@ -6120,6 +7557,30 @@
         {
           "title": "ScanNetSecurity（逮捕）",
           "url": "https://scan.netsecurity.ne.jp/article/2024/02/21/50619.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2023-07-jaccs",
+      "organization": "株式会社ジャックス",
+      "industry": "金融・保険",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
+      "date_announced": "2023-07-28",
+      "affected_count": null,
+      "count_note": "個人情報の漏えいの有無・件数は未確認",
+      "cause": "ransomware",
+      "summary": "サーバーが不正アクセスを受け、のちにランサムウェア攻撃で電子帳票サービスのデータに被害が出たと続報した。個人情報が漏えいしたかどうかは確認できていない。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2023/08/24/49858.html"
+        },
+        {
+          "title": "ScanNetSecurity（初報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2023/08/07/49780.html"
         }
       ],
       "severity": null

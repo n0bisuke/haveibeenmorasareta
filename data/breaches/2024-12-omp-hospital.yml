@@ -1,0 +1,13 @@
+organization: 大阪医科薬科大学病院
+industry: 医療
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-12-25
+affected_count: 5031
+count_note: "まとめサイトの記載: 5,031件（一次情報で未確認）"
+cause: lost_device
+summary: 大阪医科薬科大学病院は、緩和ケアセンター執務室内にて患者の個人情報を記録したUSBメモリを紛失したと発表。紛失したUSBメモリには、氏名や年齢、病名など5,031名の情報が記録されていた。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

@@ -1,0 +1,13 @@
+organization: 鳥取県
+industry: 行政
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-12-09
+affected_count: 1495
+count_note: "まとめサイトの記載: 1,495件（一次情報で未確認）"
+cause: human_error
+summary: 鳥取県は、商工労働部企業支援課において、補助金事務に関連した電子メールの誤送信があり、1,495名の個人情報が外部に漏えいしたと発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

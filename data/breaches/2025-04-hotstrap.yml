@@ -1,0 +1,15 @@
+organization: ユー・アンド・アース株式会社
+industry: 小売・EC
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-04-08
+affected_count: 1506
+count_note: "まとめサイトの記載: カード情報：690件 個人情報：1,506件（一次情報で未確認）"
+cause: unauthorized_access
+summary: ユー・アンド・アース株式会社は、同社が運営する通販ショップ「ホットストラップ」のウェブサイトが外部からの不正アクセスを受け、過去ショップにてクレジットカード決済したユーザー690名のカード情報や1,506名の個人情報が漏えいした可能性があると発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/04/21/52718.html
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

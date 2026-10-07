@@ -1,0 +1,13 @@
+organization: 株式会社大塚商会
+industry: IT・通信
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
+date_announced: 2024-04-19
+affected_count: 2687
+count_note: "まとめサイトの記載: 2,687件（一次情報で未確認）"
+cause: human_error
+summary: 社外の特定の1名に宛てに発信した電子メールに置いて誤送信が発生し、保有する顧客2,687名分の個人情報を、流出したと明らかにした。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2024年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information

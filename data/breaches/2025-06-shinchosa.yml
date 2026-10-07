@@ -1,0 +1,15 @@
+organization: 株式会社審調社
+industry: 金融・保険
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-06-05
+affected_count: 102700
+count_note: 約10万2,700件（委託元の保険会社 約130社の顧客情報）。公表日は要確認
+cause: ransomware
+summary: 保険会社から事故調査などを受託する審調社がランサムウェア被害を受け、東京海上日動・三井住友海上・あいおいニッセイ同和・損保ジャパンなど委託元の顧客情報が漏えいした。委託元ごとの公表の確認が必要。
+sources:
+  - title: 日経クロステック
+    url: https://xtech.nikkei.com/atcl/nxt/news/24/03016/
+  - title: 損保ジャパン お知らせ
+    url: https://www.sompo-japan.co.jp/announce/2025/202505_02/

@@ -1,0 +1,13 @@
+organization: 株式会社オフィスバスターズ
+industry: 小売・EC
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
+date_announced: 2025-10-31
+affected_count: 1703
+count_note: "まとめサイトの記載: 顧客情報：1,703件 クレジットカード情報：96件（一次情報で未確認）"
+cause: unauthorized_access
+summary: ビジフォン舗を運営する株式会社オフィスバスターズは、「ビジフォン舗」サイトが第三者による不正アクセスを受け、顧客1703名情報および96名のクレジットカード情報が流出した可能性があると発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
+sources:
+  - title: サイバーセキュリティ.com 個人情報漏洩一覧（2025年）
+    url: https://cybersecurity-jp.com/leakage-of-personal-information
