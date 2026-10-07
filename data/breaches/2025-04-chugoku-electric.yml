@@ -1,0 +1,16 @@
+organization: 中国電力株式会社
+group: 中国電力グループ
+industry: エネルギー・インフラ
+country: JP
+date_occurred: 2025-04-21
+date_announced: 2025-04-25
+affected_count: 15566
+count_note: 同社と中国電力ネットワークの関係者
+cause: misconfiguration
+root_cause: 社外からの社内ネットワーク接続に使う機器の設定不備
+data_types:
+  - 従業員情報
+summary: 社員等の個人情報を格納するシステムにつながる接続機器が不正アクセスを受け、関係者の個人情報が外部に流出した可能性がある。電力の安定供給に影響はない。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/05/14/52836.html

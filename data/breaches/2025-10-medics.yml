@@ -1,0 +1,14 @@
+organization: 株式会社メディックス
+services:
+  - セラピア淡路町店
+industry: 美容・健康
+country: JP
+date_occurred: 2025-10-07
+date_announced: 2025-10-17
+affected_count: 15210
+count_note: 初診アンケートに記入した顧客
+cause: unauthorized_access
+summary: 整体・マッサージ店のパソコンに外部から不正アクセスがあり、店舗で管理する初診アンケートの顧客情報が流出した可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/10/29/53913.html

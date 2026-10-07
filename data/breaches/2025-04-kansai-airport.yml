@@ -1,0 +1,12 @@
+organization: 関西エアポート株式会社
+services:
+  - KIX-ITM Global Business Club
+industry: 交通・モビリティ
+country: JP
+date_announced: 2025-04-28
+affected_count: 10575
+cause: unauthorized_access
+summary: 法人向け会員制サービスの管理サーバーが不正アクセスを受け、会員の個人情報の一部が漏えいした。脆弱性診断の過程で発覚した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/05/08/52805.html

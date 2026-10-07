@@ -1,0 +1,13 @@
+organization: 株式会社ハンズ
+services:
+  - ハンズクラブアプリ
+industry: 小売・EC
+country: JP
+date_announced: 2025-01-27
+affected_count: 121886
+cause: vulnerability
+root_cause: アプリが利用するシステムのソフトウェアの脆弱性
+summary: 雑貨のハンズのアプリで、システムのソフトウェアの脆弱性を突いた第三者の不正アクセスにより、登録会員の個人情報が漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/01/31/52251.html

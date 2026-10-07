@@ -1,0 +1,23 @@
+organization: 株式会社PR TIMES
+services:
+  - PR TIMES
+industry: IT・通信
+country: JP
+date_occurred: 2025-04-24
+date_announced: 2025-05-07
+affected_count: 901603
+count_note: 最大90万1,603件（企業・メディア・個人ユーザー、インポートリストなど）。報道では最大922,117件とも
+cause: unauthorized_access
+root_cause: コロナ禍で緩和した管理画面のIPアドレス制御をすり抜けて侵入された
+data_types:
+  - パスワード（ハッシュ化・暗号化済み）
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 取引先情報
+summary: プレスリリース配信サービスの管理画面に第三者が不正アクセスし、ユーザーの個人情報や発表前のプレスリリース情報が漏えいした可能性がある。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2505/07/1250507168/
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/05/12/52820.html

@@ -1,0 +1,15 @@
+organization: 株式会社パル
+services:
+  - PAL CLOSET
+industry: 小売・EC
+country: JP
+date_occurred: 2025-06-15
+date_announced: 2025-06-20
+affected_count: 194307
+count_note: 不正ログインに成功したアカウント数（試行は1,722,379件）
+cause: unauthorized_access
+root_cause: 他サービスから流出したID・パスワードを使うリスト型攻撃
+summary: オンライン通販サイト「PAL CLOSET」でリスト型アカウントハッキングとみられる大量の不正ログインが発生した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/06/30/53128.html

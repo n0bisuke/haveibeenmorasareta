@@ -1,0 +1,15 @@
+organization: 医療法人DIC 宇都宮セントラルクリニック
+industry: 医療
+country: JP
+date_announced: 2025-02-10
+affected_count: 300000
+count_note: 約30万件（患者・関係者）
+cause: ransomware
+data_types:
+  - 健康・医療情報
+summary: サーバーがランサムウェア攻撃を受けて診察と健診業務が制限され、患者と関係者の個人情報が漏えいした可能性がある。ランサムウェア集団Qilinが犯行を主張した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/02/28/52415.html
+  - title: ScanNetSecurity（学研健保）
+    url: https://scan.netsecurity.ne.jp/article/2025/03/11/52471.html

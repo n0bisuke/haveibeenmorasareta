@@ -1,0 +1,16 @@
+organization: 株式会社イケテイ
+services:
+  - IKETEI ONLINE
+industry: 小売・EC
+country: JP
+date_announced: 2025-05-21
+affected_count: 90000
+count_note: 個人情報約9万件、うちクレジットカード情報30,712件
+cause: vulnerability
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: オンラインショップが不正アクセスを受け、決済アプリケーションの改ざんにより顧客のクレジットカード情報などが漏えいした可能性がある。カード会社からの連絡で発覚した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/05/30/52954.html

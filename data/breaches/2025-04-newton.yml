@@ -1,0 +1,11 @@
+organization: 株式会社ニュートン・フィナンシャル・コンサルティング
+industry: IT・通信
+country: JP
+date_announced: 2025-04-30
+affected_count: 1300000
+count_note: 約130万件（同社・グループ会社・協業先の預かり情報）
+cause: ransomware
+summary: コールセンター業務などを受託する同社のファイルサーバーがランサムウェアの被害を受け、委託元のキューサイなどから預かった顧客情報が漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/05/22/52891.html

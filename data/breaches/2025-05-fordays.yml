@@ -1,0 +1,12 @@
+organization: フォーデイズ株式会社
+industry: 美容・健康
+country: JP
+date_occurred: 2024-04-18
+date_announced: 2025-05-20
+affected_count: 1347445
+cause: unauthorized_access
+root_cause: 会員サイトの会員情報照会機能に特定IPから約560万回の異常なアクセス
+summary: 会員サイトの会員情報照会機能が外部から大量にアクセスされ、会員の個人情報の一部が漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/05/30/52953.html

@@ -1,0 +1,15 @@
+organization: 株式会社良知経営
+industry: 小売・EC
+country: JP
+date_occurred: 2025-08-18
+date_announced: 2025-09-02
+affected_count: 450000
+count_note: 最大約45万件
+cause: unauthorized_access
+data_types:
+  - 従業員情報
+  - 取引先情報
+summary: スーパーを運営する同社のサーバーが第三者の不正アクセスを受け、企業情報と顧客・従業員の個人情報が流出した可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/09/12/53606.html

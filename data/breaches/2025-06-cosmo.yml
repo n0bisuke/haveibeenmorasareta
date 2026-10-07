@@ -1,0 +1,20 @@
+organization: コスモ石油マーケティング株式会社
+group: コスモエネルギーグループ
+services:
+  - コミっと車検
+industry: エネルギー・インフラ
+country: JP
+date_announced: 2025-06-16
+affected_count: 176000
+count_note: 電話番号約17.6万件（顧客識別番号約16.5万、氏名約3.5万、車両情報約11.9万など）
+cause: misconfiguration
+root_cause: クラウド環境に保存したファイルの閲覧制限の設定誤り
+data_types:
+  - 氏名
+  - 電話番号
+  - 車両情報
+  - 会員ID
+summary: 車検サービスで使うクラウド環境の一部ファイルに閲覧制限の設定誤りがあり、顧客とスタッフの情報が外部からアクセス可能な状態だった。設定見直しの過程で発覚した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/06/24/53096.html
