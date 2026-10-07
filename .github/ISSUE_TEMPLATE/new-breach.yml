@@ -1,0 +1,37 @@
+name: 情報漏洩の掲載リクエスト
+description: PR を作るのが難しい場合はこちらから情報提供してください
+title: "[追加] "
+labels: ["data"]
+body:
+  - type: input
+    id: organization
+    attributes:
+      label: 企業・団体名
+    validations:
+      required: true
+  - type: input
+    id: services
+    attributes:
+      label: 影響を受けたサービス・サイト
+  - type: input
+    id: date_announced
+    attributes:
+      label: 公表日
+      placeholder: 2025-01-31
+    validations:
+      required: true
+  - type: input
+    id: affected_count
+    attributes:
+      label: 漏洩件数（判明していれば）
+  - type: textarea
+    id: sources
+    attributes:
+      label: 出典URL
+      description: 公式発表のURLを優先してください
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: 補足

@@ -1,0 +1,20 @@
+organization: LINEヤフー株式会社
+services:
+  - LINE
+industry: IT・通信
+country: JP
+date_occurred: 2023-10-09
+date_announced: 2023-11-27
+affected_count: 440027
+count_note: 推計値を含む。ユーザー302,569件、取引先86,105件、従業者等51,353件（2023年11月27日時点）
+cause: third_party
+data_types:
+  - 氏名
+  - メールアドレス
+  - 利用履歴
+  - 従業員情報
+  - 取引先情報
+summary: 関係会社NAVER Cloudの委託先PCのマルウェア感染を発端に、共通認証基盤を経由してLINEヤフーのシステムへ不正アクセスされ、ユーザー・取引先・従業者の情報が漏洩した。
+sources:
+  - title: LINEヤフー 公式発表（2023年11月27日）
+    url: https://www.lycorp.co.jp/ja/news/announcements/001002/

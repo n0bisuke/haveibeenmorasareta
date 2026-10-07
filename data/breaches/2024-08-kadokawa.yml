@@ -1,0 +1,23 @@
+organization: 株式会社KADOKAWA
+services:
+  - ニコニコ
+  - N中等部・N高等学校・S高等学校
+industry: メディア・出版
+country: JP
+date_occurred: 2024-06-08
+date_announced: 2024-08-05
+affected_count: 254241
+cause: ransomware
+data_types:
+  - 氏名
+  - 生年月日
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 契約情報
+summary: ランサムウェア攻撃によりグループのサーバー群が暗号化され、ニコニコ等のサービスが長期停止。ドワンゴの従業員・取引先・クリエイター、学校法人角川ドワンゴ学園の生徒・保護者等、計254,241人の個人情報の外部漏洩が確認された。
+sources:
+  - title: KADOKAWA 公式発表（2024年8月5日）
+    url: https://www.kadokawa.co.jp/topics/12088/
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/08/14/51468.html
