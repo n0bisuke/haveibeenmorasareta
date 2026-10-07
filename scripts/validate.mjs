@@ -52,6 +52,9 @@ for (const { file, data, error } of entries) {
   if (data.industry && !industries.has(data.industry)) {
     fail(`industry の「${data.industry}」は data/industries.yml に登録されていません（既存の業種に合わせるか、一覧に追加してください）`);
   }
+  if (data.status === 'investigating' && !data.issue) {
+    fail('status: investigating の事案には、情報募集用の issue（GitHub Issue の URL）を指定してください');
+  }
   if (data.vuln_target && !vulnTargets.has(data.vuln_target)) {
     fail(`vuln_target の「${data.vuln_target}」は data/vuln-targets.yml に登録されていません`);
   }

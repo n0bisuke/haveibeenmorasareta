@@ -21,6 +21,8 @@
 | `services` | | 影響を受けたサービス・サイト名のリスト |
 | `industry` | | 業種。[`data/industries.yml`](data/industries.yml) にある名前のみ使用可 |
 | `country` | | 国コード（`JP` など） |
+| `status` | | 件数・漏えいの有無などが調査中なら `investigating`。サイトに「調査中」と表示されます |
+| `issue` | | `status: investigating` のとき必須。情報を募集する GitHub Issue の URL（ラベル「調査中」） |
 | `date_occurred` | | 発生日 `YYYY-MM-DD` |
 | `date_announced` | ✔ | 最初の公表日 `YYYY-MM-DD` |
 | `affected_count` | | 漏洩（の可能性がある）件数。不明なら `null` |
