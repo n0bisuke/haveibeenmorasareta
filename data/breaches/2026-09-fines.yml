@@ -1,0 +1,19 @@
+organization: 株式会社ファインズ
+services:
+  - 予約システム
+industry: IT・通信
+country: JP
+date_occurred: 2026-09-22
+date_announced: 2026-09-25
+affected_count: 1536322
+count_note: 漏えいのおそれがある件数
+cause: unauthorized_access
+data_types:
+  - 利用履歴
+  - 氏名
+  - 電話番号
+  - メールアドレス
+summary: 同社が提供する店舗向け予約システムで異常を検知し、第三者による不正アクセスを確認。予約者の氏名・電話番号・メールアドレスと、予約店舗・メニュー・日時などが漏えいしたおそれがある。
+sources:
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/fines-reservation-system-unauthorized-acess-data-leak/
