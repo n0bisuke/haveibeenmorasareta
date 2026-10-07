@@ -1,0 +1,22 @@
+organization: 株式会社ソニー・ミュージックソリューションズ
+group: ソニーグループ
+services:
+  - Sony Music Shop
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2025-02-13
+date_announced: 2025-02-21
+affected_count: 658
+count_note: 最大658名
+cause: misconfiguration
+root_cause: アクセス集中対策で導入したキャッシュ設定の不備により、他の利用者の入力内容やマイページが表示される状態になった
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - クレジットカード情報（番号の一部・有効期限等）
+summary: アクセス集中対策としてWebページのキャッシュ保持設定を行った影響で、新規会員登録画面に他の利用者の入力内容が表示されたり、他の利用者のマイページにアクセスできたりする状態になった。2025年2月13日から20日まで続き、最大658名に影響した可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/03/04/52432.html
