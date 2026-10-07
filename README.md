@@ -9,12 +9,12 @@
 data/breaches/*.yml   … 1インシデント = 1ファイルのデータ
 schema/               … データの JSON Schema
 scripts/validate.mjs  … データ検証（スキーマ・ファイル名・日付・出典の重複）
-scripts/build.mjs     … src/ と breaches.json を dist/ に出力
-src/                  … フロントエンド（依存なしの静的 HTML/CSS/JS）
+scripts/build.mjs     … データから public/breaches.json を生成
+public/               … 公開ディレクトリ（依存なしの静的 HTML/CSS/JS）
 ```
 
 - **PR 時**: `Validate` ワークフローがデータを検証し、問題があれば CI が失敗します
-- **main へのマージ時**: `Deploy to GitHub Pages` ワークフローがビルドして GitHub Pages に公開します
+- **main へのマージ時**: `Deploy to GitHub Pages` ワークフローが `public/breaches.json` を生成し、`public/` を GitHub Pages に公開します
 - 生成される `breaches.json` は API 的に再利用することもできます
 
 ## 追加・修正したい場合
