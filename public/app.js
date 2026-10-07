@@ -5,6 +5,8 @@ const nf = new Intl.NumberFormat('ja-JP');
 const fmtDate = (s) => s.replaceAll('-', '/');
 
 const { breaches, generated_at, severity_levels: LEVELS, data_types: TYPES } = await fetch('breaches.json').then((r) => r.json());
+// データを追加した人（デプロイ時に生成。無ければアイコンを出さない）
+const CONTRIBUTORS = await fetch('contributors.json').then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
 const RANK = Object.fromEntries(LEVELS.map((l, i) => [l.id, i]));
 const LEVEL = Object.fromEntries(LEVELS.map((l) => [l.id, l]));
 
@@ -85,6 +87,20 @@ function renderItem(b) {
     li.append(a);
     return li;
   }));
+  const c = CONTRIBUTORS[b.id];
+  if (c) {
+    const a = el.querySelector('.contributor');
+    a.hidden = false;
+    a.href = c.url ?? `https://github.com/${c.login}`;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.title = c.pr ? `@${c.login} さんが #${c.pr} で追加` : `@${c.login} さんが追加`;
+    const img = a.querySelector('img');
+    img.src = `${c.avatar_url}${c.avatar_url.includes('?') ? '&' : '?'}s=44`;
+    img.alt = `@${c.login}`;
+  } else {
+    el.querySelector('.contributor').remove();
+  }
   return el;
 }
 

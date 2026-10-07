@@ -102,3 +102,9 @@ a { color: var(--accent); }
 .empty { text-align: center; color: var(--muted); padding: 32px 0; }
 
 .site-footer { border-top: 1px solid var(--border); padding: 24px 0 40px; font-size: 0.9rem; }
+/* データを追加した人のアイコン（カード右下） */
+.item { position: relative; }
+.item:has(.contributor) .sources { padding-right: 36px; }
+.contributor { position: absolute; right: 14px; bottom: 12px; line-height: 0; }
+.contributor img { width: 22px; height: 22px; border-radius: 50%; border: 1px solid var(--border); background: var(--border); overflow: hidden; object-fit: cover; }
+.contributor:hover img, .contributor:focus-visible img { outline: 2px solid var(--accent, currentColor); outline-offset: 1px; }
