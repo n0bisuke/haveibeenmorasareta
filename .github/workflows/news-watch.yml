@@ -1,18 +1,26 @@
 name: News watch
 
-# ニュースの RSS を毎日巡回し、未収録の情報漏洩ニュースの候補を Issue にまとめる
+# ニュースの RSS を毎日巡回し、未収録の情報漏洩ニュースの候補を Issue にまとめる。
+# LLM の API キー（Secrets の LLM_API_KEY）とモデル名（Variables の LLM_MODEL）が設定されていれば、
+# 候補の記事から AI が事案データの下書きを作り、1件ずつ PR にする（設定方法は README の「AI による下書き」）
 on:
   schedule:
     - cron: '7 23 * * *' # 毎日 8:07（日本時間）
   workflow_dispatch:
 
-permissions:
-  contents: read
-  issues: write
+permissions: {}
+
+concurrency:
+  group: news-watch
+  cancel-in-progress: false
 
 jobs:
+  # 1. ニュースの候補を集める（プログラムのみ）
   watch:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -20,6 +28,76 @@ jobs:
           node-version: 26
           cache: npm
       - run: npm ci
-      - run: node scripts/news-watch.mjs
+      - run: node scripts/news-watch.mjs --out candidates.json
         env:
           GITHUB_TOKEN: ${{ github.token }}
+      - uses: actions/upload-artifact@v7
+        with:
+          name: candidates
+          path: candidates.json
+          retention-days: 7
+
+  # 2. AI が下書きを作る。LLM の API キーを持つのはこのジョブだけで、リポジトリへの書き込み権限は持たせない
+  draft:
+    needs: watch
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 26
+          cache: npm
+      - run: npm ci
+      - uses: actions/download-artifact@v8
+        with:
+          name: candidates
+      # 一度処理した記事を翌日以降に再び LLM に渡さないよう、処理済みの URL をキャッシュに残す
+      - uses: actions/cache/restore@v6
+        with:
+          path: ai-state
+          key: ai-state-${{ github.run_id }}
+          restore-keys: ai-state-
+      - run: node scripts/ai-draft.mjs --in candidates.json --out ai-out --state ai-state/seen.json
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL || 'https://openrouter.ai/api/v1' }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          LLM_EDITOR_MODEL: ${{ vars.LLM_EDITOR_MODEL }}
+          AI_MAX_ITEMS: ${{ vars.AI_MAX_ITEMS || '5' }}
+      - uses: actions/cache/save@v6
+        if: always()
+        with:
+          path: ai-state
+          key: ai-state-${{ github.run_id }}
+      - uses: actions/upload-artifact@v7
+        with:
+          name: ai-out
+          path: ai-out
+          retention-days: 14
+
+  # 3. 下書きを検証して PR にする（LLM は使わず、API キーも渡さない）
+  publish:
+    needs: draft
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write   # PR へのラベル付け
+      actions: write  # Validate・Deploy の起動（Actions のトークンで作った PR・マージでは自動で動かないため）
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 26
+          cache: npm
+      - run: npm ci
+      - uses: actions/download-artifact@v8
+        with:
+          name: ai-out
+          path: ai-out
+      - run: node scripts/ai-publish.mjs --in ai-out/drafts.json
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          AI_AUTO_MERGE: ${{ vars.AI_AUTO_MERGE }}
