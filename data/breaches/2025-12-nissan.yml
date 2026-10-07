@@ -1,0 +1,25 @@
+organization: 日産自動車株式会社
+services:
+  - 日産福岡販売の顧客管理システム
+industry: 製造
+country: JP
+date_occurred: 2025-09-26
+date_announced: 2025-12-23
+affected_count: 21000
+count_note: 約2万1,000人（旧福岡日産自動車で車両購入・サービス利用をした顧客）
+cause: third_party
+root_cause: 顧客管理システムの開発を委託していたRed Hat社のデータサーバーへの不正アクセス
+vendor:
+  name: Red Hat, Inc.
+  group: IBMグループ
+data_types:
+  - 住所
+  - 氏名
+  - 電話番号
+  - メールアドレス
+summary: 販売会社の顧客管理システム開発の委託先であるRed Hat社のサーバーが不正アクセスを受け、日産福岡販売の顧客情報が外部に流出した可能性がある。クレジットカード情報は含まれない。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/01/06/54358.html
+  - title: innovaTopia
+    url: https://innovatopia.jp/cyber-security/cyber-security-news/75666/

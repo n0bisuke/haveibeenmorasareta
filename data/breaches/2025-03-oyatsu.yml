@@ -1,0 +1,12 @@
+organization: 株式会社おやつカンパニー
+industry: 食品
+country: JP
+date_occurred: 2025-03-03
+date_announced: 2025-03-12
+affected_count: 170000
+count_note: 約17万名（2012〜2025年のキャンペーン当選者など）、別に従業員約450件
+cause: unauthorized_access
+summary: システムサーバーが第三者から不正アクセスを受けて障害が発生し、キャンペーン応募者や従業員の個人情報が漏えいした可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/03/18/52517.html

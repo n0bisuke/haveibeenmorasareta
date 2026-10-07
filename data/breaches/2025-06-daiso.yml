@@ -1,0 +1,12 @@
+organization: 株式会社大創産業
+industry: 小売・EC
+country: JP
+date_announced: 2025-06-18
+affected_count: 10000
+count_note: 約1万件（顧客・取引先・中途採用応募者・従業員などとのメール）
+cause: misconfiguration
+root_cause: 業務で使うGoogleグループの閲覧権限の設定不備
+summary: 業務で利用していたGoogleグループの設定不備により、顧客や取引先、中途採用応募者、従業員とやりとりしたメールの一部が外部から閲覧可能な状態だった。外部からの指摘で判明した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/06/24/53095.html

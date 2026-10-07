@@ -1,0 +1,17 @@
+organization: ソフトバンク株式会社
+services:
+  - ソフトバンク
+  - ワイモバイル
+industry: IT・通信
+country: JP
+date_announced: 2025-06-11
+affected_count: 137156
+count_note: 約13万7,156件（顧客等の情報）
+cause: insider
+root_cause: 委託先UFジャパンの協力会社の元従業員が事業所に不正に立ち入り、USBメモリで顧客情報を持ち出した
+vendor:
+  name: 株式会社UFジャパン
+summary: 業務委託先の事業所で、協力会社の元従業員が情報管理端末から顧客情報を持ち出し、他社の通信サービスの勧誘に利用していた可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/06/20/53082.html

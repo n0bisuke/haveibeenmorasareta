@@ -1,0 +1,13 @@
+organization: 株式会社トータルマリアージュサポート
+services:
+  - TMSイベントポータル
+industry: 生活サービス
+country: JP
+date_announced: 2025-07-14
+affected_count: 910795
+count_note: 最大件数
+cause: unauthorized_access
+summary: 婚活イベントサービスサイトのプログラムへの不正アクセスにより、データベース内の個人情報が外部に漏えいした可能性がある。顧客への偽ドメインからのフィッシングメールで発覚した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/07/28/53302.html

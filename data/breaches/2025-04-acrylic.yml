@@ -1,0 +1,14 @@
+organization: アクリル運動部株式会社
+services:
+  - アクリル購買部
+industry: 小売・EC
+country: JP
+date_occurred: 2025-04-15
+date_announced: 2025-04-24
+affected_count: 13200
+count_note: 約1万3,200名
+cause: unauthorized_access
+summary: 通販サイト「アクリル購買部」が外部から不正アクセスを受け、顧客の個人情報が漏えいした可能性が極めて高いと判断した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/05/08/52804.html

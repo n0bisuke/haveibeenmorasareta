@@ -1,0 +1,19 @@
+organization: コミュニティ・ネットワーク株式会社
+services:
+  - CNプレイガイド
+  - キョードー東京
+  - TBSチケット
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2025-09-05
+date_announced: 2025-09-10
+affected_count: 236323
+cause: unauthorized_access
+data_types:
+  - メールアドレス
+summary: チケットシステムを提供するサーバーに第三者が不正アクセスし、CNプレイガイドや販売・顧客管理を受託するキョードー東京、TBSチケットの会員のメールアドレスが流出した可能性がある。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/09/16/53616.html
+  - title: ScanNetSecurity（キョードー東京・TBS）
+    url: https://scan.netsecurity.ne.jp/article/2025/09/16/53617.html

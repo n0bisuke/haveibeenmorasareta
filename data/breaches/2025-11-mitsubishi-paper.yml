@@ -1,0 +1,17 @@
+organization: 三菱製紙株式会社
+industry: 製造
+country: JP
+date_occurred: 2025-08-26
+date_announced: 2025-11-28
+affected_count: 4209
+count_note: 役職員および退職者
+cause: unauthorized_access
+root_cause: 第三者が社内PCとサーバーへ複数回にわたり不正にリモート接続
+data_types:
+  - 氏名
+  - メールアドレス
+  - 従業員情報
+summary: 社内PCとサーバーへの不正アクセスにより、役職員と退職者の氏名・メールアドレス・所属・役職などが漏えい、または漏えいした可能性がある。
+sources:
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/?p=25961

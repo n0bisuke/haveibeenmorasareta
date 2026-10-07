@@ -1,0 +1,14 @@
+organization: Brewtope株式会社
+services:
+  - Otomoni
+industry: 飲食
+country: JP
+date_announced: 2025-09-25
+affected_count: 20776
+count_note: 利用者と法人取引先の情報
+cause: misconfiguration
+root_cause: 個人情報を保存するクラウドサーバーのアクセスキーをGitHub上で公開していた
+summary: クラフトビール定期便サービスの顧客情報を保存するクラウドサーバーのアクセスキーがGitHub上で公開されており、利用者と法人取引先の情報にアクセス可能な状態だった。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/10/07/53758.html

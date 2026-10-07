@@ -1,0 +1,20 @@
+organization: 株式会社リクルート
+services:
+  - 北海道じゃらん
+industry: メディア・出版
+country: JP
+date_announced: 2025-03-19
+affected_count: 104000
+count_note: 最大約10.4万件
+cause: unauthorized_access
+data_types:
+  - 生年月日
+  - 住所
+  - 氏名
+  - 性別
+  - 電話番号
+  - メールアドレス
+summary: 旅行情報誌「北海道じゃらん」のサイトが外部から不正アクセスを受け、利用者の個人情報が漏えいした可能性がある。不審なメールへの注意を呼びかけた。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/03/25/52549.html

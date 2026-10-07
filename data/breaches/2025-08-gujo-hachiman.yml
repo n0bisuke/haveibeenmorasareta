@@ -1,0 +1,16 @@
+organization: 一般財団法人郡上八幡産業振興公社
+services:
+  - 郡上八幡屋-特産品通販-
+industry: 小売・EC
+country: JP
+date_announced: 2025-08-04
+affected_count: 6920
+count_note: 個人情報6,920件、うちクレジットカード情報2,972件
+cause: vulnerability
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた
+data_types:
+  - クレジットカード番号
+summary: 特産品通販サイトが不正アクセスを受け、決済アプリケーションの改ざんにより顧客のカード情報が漏えいし、一部が不正利用された可能性がある。岐阜県警からの連絡で発覚した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2025/08/19/53452.html
