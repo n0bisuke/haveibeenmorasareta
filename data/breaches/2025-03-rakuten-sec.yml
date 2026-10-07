@@ -1,0 +1,21 @@
+organization: 楽天証券株式会社
+group: 楽天グループ
+industry: 金融・保険
+country: JP
+date_announced: 2025-03-24
+affected_count: null
+count_note: 件数は未公表（2025年2月〜4月16日に証券6社で不正アクセス3,312件・不正取引1,454件。金融庁の集計）
+cause: phishing
+attack_methods:
+  - phishing
+  - stolen_credentials
+data_types:
+  - 氏名
+  - 資産・取引情報
+  - 口座番号
+summary: 楽天証券を装うフィッシングメールなどで盗まれたログイン情報により顧客口座への不正アクセスが急増し、保有株の売却や中国株の買付などの不正取引が行われた。同時期にSBI証券・野村證券・SMBC日興証券・マネックス証券・松井証券でも被害が出た。同社は被害額の補償方針を発表した。
+sources:
+  - title: Impress Watch
+    url: https://www.watch.impress.co.jp/docs/news/1672247.html
+  - title: ScanNetSecurity（補償方針）
+    url: https://scan.netsecurity.ne.jp/article/2025/07/31/53335.html
