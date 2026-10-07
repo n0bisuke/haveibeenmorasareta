@@ -1,5 +1,7 @@
 organization: 春日井市
-industry: 行政
+industry:
+  - 行政
+  - エネルギー・インフラ
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29

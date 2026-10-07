@@ -1,5 +1,7 @@
 organization: 特定非営利活動法人美原体育協会
-industry: 団体・その他
+industry:
+  - 団体・その他
+  - エンタメ・スポーツ
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29

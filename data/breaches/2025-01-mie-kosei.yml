@@ -1,5 +1,7 @@
 organization: 社会福祉法人三重県厚生事業団
-industry: 医療
+industry:
+  - 福祉・介護
+  - 行政
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30

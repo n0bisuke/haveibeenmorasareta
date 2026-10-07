@@ -2,7 +2,9 @@ organization: 株式会社イエローハット
 group: イエローハットグループ
 services:
   - イエローハットWEB作業予約システム
-industry: 小売・EC
+industry:
+  - 小売・EC
+  - 交通・モビリティ
 country: JP
 date_occurred: 2026-08-18
 date_announced: 2026-08-28

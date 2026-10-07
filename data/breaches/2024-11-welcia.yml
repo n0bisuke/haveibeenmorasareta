@@ -2,7 +2,9 @@ organization: ウエルシア薬局株式会社
 group: イオングループ
 services:
   - ウエルシアドットコム
-industry: 小売・EC
+industry:
+  - 小売・EC
+  - 医療
 country: JP
 date_occurred: 2024-10-24
 date_announced: 2024-11-08

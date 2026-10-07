@@ -2,7 +2,9 @@ organization: 東急株式会社
 group: 東急グループ
 services:
   - 東光食品
-industry: 交通・モビリティ
+industry:
+  - 交通・モビリティ
+  - 食品
 country: JP
 date_occurred: 2024-04-28
 date_announced: 2024-05-09

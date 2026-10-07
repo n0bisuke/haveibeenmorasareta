@@ -1,5 +1,7 @@
 organization: ハウステンボス株式会社
-industry: 旅行
+industry:
+  - 旅行
+  - エンタメ・スポーツ
 country: JP
 date_occurred: 2025-08-29
 date_announced: 2025-08-29

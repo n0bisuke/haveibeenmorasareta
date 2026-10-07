@@ -1,5 +1,7 @@
 organization: 大阪市
-industry: 行政
+industry:
+  - 行政
+  - 福祉・介護
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29

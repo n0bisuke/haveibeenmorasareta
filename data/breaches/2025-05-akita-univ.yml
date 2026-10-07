@@ -1,5 +1,7 @@
 organization: 秋田大学
-industry: 人材・教育
+industry:
+  - 人材・教育
+  - 医療
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30

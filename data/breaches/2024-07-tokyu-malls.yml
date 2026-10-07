@@ -1,5 +1,7 @@
 organization: 株式会社東急モールズデベロップメント
-industry: 不動産
+industry:
+  - 不動産
+  - 小売・EC
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29

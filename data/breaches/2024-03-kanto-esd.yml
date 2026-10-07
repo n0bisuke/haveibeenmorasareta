@@ -1,5 +1,7 @@
 organization: 関東ESD活動支援センター
-industry: 団体・その他
+industry:
+  - 団体・その他
+  - 人材・教育
 country: JP
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
