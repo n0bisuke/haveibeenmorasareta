@@ -1,0 +1,23 @@
+organization: 日本郵便株式会社
+group: 日本郵政グループ
+services:
+  - 郵便局アプリ
+  - ゆうID
+industry: 物流
+country: JP
+date_occurred: 2026-09-25
+date_announced: 2026-09-29
+affected_count: 19
+count_note: 19人分・69件（送り状の受取人や住所録の相手の情報を含む）
+cause: unauthorized_access
+data_types:
+  - 生年月日
+  - 住所
+  - 氏名
+  - 電話番号
+summary: 荷物の追跡や再配達依頼ができる「郵便局アプリ」が不正アクセスを受け、利用者の氏名・住所・電話番号・送り状の情報などが不正に取得された。ゆうIDとアプリを緊急メンテナンスし、翌日再開した。
+sources:
+  - title: ITmedia NEWS（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/fea78d6cb37c1744e5237e42961a6fb33ca8f931
+  - title: ASCII.jp
+    url: https://ascii.jp/elem/000/004/438/4438474/
