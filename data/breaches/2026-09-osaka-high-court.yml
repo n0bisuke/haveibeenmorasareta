@@ -1,6 +1,8 @@
 organization: 大阪高等裁判所
 industry: 行政
 country: JP
+org_type: national_gov
+prefecture: 大阪府
 date_occurred: 2026-08-27
 date_announced: 2026-09-04
 affected_count: 6000

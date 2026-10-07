@@ -3,6 +3,8 @@ services:
   - 佐渡トキファンクラブ
 industry: 行政
 country: JP
+org_type: local_gov
+prefecture: 新潟県
 date_occurred: 2026-06-16
 date_announced: 2026-06-19
 affected_count: 4111

@@ -3,6 +3,8 @@ services:
   - 淀川河川公園施設予約システム「よどいこ！」
 industry: 行政
 country: JP
+org_type: national_gov
+prefecture: 大阪府
 date_occurred: 2024-03-01
 date_announced: 2024-03-07
 affected_count: 34000

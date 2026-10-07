@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
-import { ROOT, FILENAME_RE, loadBreaches, loadDataTypes, loadIndustries, loadVulnTargets, loadAttackMethods } from './lib.mjs';
+import { ROOT, FILENAME_RE, loadBreaches, loadDataTypes, loadIndustries, loadVulnTargets, loadAttackMethods, loadOrgTypes, loadPrefectures } from './lib.mjs';
 
 const schema = JSON.parse(await readFile(path.join(ROOT, 'schema', 'breach.schema.json'), 'utf8'));
 const ajv = new Ajv({ allErrors: true });
@@ -15,6 +15,8 @@ const dataTypes = await loadDataTypes();
 const industries = new Set(await loadIndustries());
 const vulnTargets = new Set((await loadVulnTargets()).map((t) => t.id));
 const attackMethods = new Set((await loadAttackMethods()).map((t) => t.id));
+const orgTypes = new Set((await loadOrgTypes()).map((t) => t.id));
+const prefectures = new Set((await loadPrefectures()).map((p) => p.name));
 for (const name of dataTypes.duplicates) {
   errors.push(`data-types.yml: 「${name}」が複数のレベルに登録されています`);
 }
@@ -64,6 +66,9 @@ for (const { file, data, error } of entries) {
   for (const m of data.attack_methods ?? []) {
     if (!attackMethods.has(m)) fail(`attack_methods の「${m}」は data/attack-methods.yml に登録されていません`);
   }
+  if (data.org_type && !orgTypes.has(data.org_type)) fail(`org_type の「${data.org_type}」は data/org-types.yml に登録されていません`);
+  if (data.prefecture && !prefectures.has(data.prefecture)) fail(`prefecture の「${data.prefecture}」は data/prefectures.yml に登録されていません`);
+  if (data.org_type && !data.prefecture) fail('org_type を指定した事案には prefecture（都道府県）も指定してください');
   for (const name of data.data_types ?? []) {
     if (!dataTypes.types[name]) {
       fail(`data_types の「${name}」は data/data-types.yml に登録されていません（表記を合わせるか、対応表に追加してください）`);

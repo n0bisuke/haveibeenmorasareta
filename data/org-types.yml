@@ -1,0 +1,14 @@
+# 組織の種類（org_type）。民間企業以外の組織に指定し、prefecture（都道府県）とあわせて地域別マップに表示します。
+# 民間企業には指定しません。
+local_gov:
+  label: 自治体
+national_gov:
+  label: 国の機関
+public_agency:
+  label: 独立行政法人・研究機関など
+university:
+  label: 大学・学校
+hospital:
+  label: 病院
+public_org:
+  label: 公益法人・団体

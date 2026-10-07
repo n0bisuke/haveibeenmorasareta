@@ -1,6 +1,8 @@
 organization: 地方独立行政法人岡山県精神科医療センター
 industry: 医療
 country: JP
+org_type: hospital
+prefecture: 岡山県
 date_occurred: 2024-05-19
 date_announced: 2024-05-21
 affected_count: 40000

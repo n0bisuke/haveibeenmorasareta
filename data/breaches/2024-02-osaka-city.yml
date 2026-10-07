@@ -3,6 +3,8 @@ industry:
   - 行政
   - 福祉・介護
 country: JP
+org_type: local_gov
+prefecture: 大阪府
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
 date_announced: 2024-02-19

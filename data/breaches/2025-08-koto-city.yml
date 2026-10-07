@@ -3,6 +3,8 @@ industry:
   - 行政
   - 人材・教育
 country: JP
+org_type: local_gov
+prefecture: 東京都
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-08-28

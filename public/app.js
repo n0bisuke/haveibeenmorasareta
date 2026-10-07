@@ -14,7 +14,7 @@ const LEVEL = Object.fromEntries(LEVELS.map((l) => [l.id, l]));
 
 // 検索用テキストを事前に作っておく
 for (const b of breaches) {
-  b._text = [b.organization, b.group, b.root_cause, b.vendor?.name, b.vendor?.group, ...(b.services ?? []), ...(b.data_types ?? []), ...[b.industry ?? []].flat(), b.summary, CAUSES[b.cause], VULN_LABEL[b.vuln_target],
+  b._text = [b.organization, b.group, b.root_cause, b.vendor?.name, b.vendor?.group, ...(b.services ?? []), ...(b.data_types ?? []), ...[b.industry ?? []].flat(), b.prefecture, b.summary, CAUSES[b.cause], VULN_LABEL[b.vuln_target],
     ...(b.attack_methods ?? []).map((m) => ATTACK_LABEL[m]),
     b.status === 'investigating' && '調査中'].filter(Boolean).join(' ').toLowerCase();
 }

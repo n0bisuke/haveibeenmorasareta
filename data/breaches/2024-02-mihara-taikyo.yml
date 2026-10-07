@@ -3,6 +3,8 @@ industry:
   - 団体・その他
   - エンタメ・スポーツ
 country: JP
+org_type: public_org
+prefecture: 大阪府
 status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
 date_announced: 2024-02-21
