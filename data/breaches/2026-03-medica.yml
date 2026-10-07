@@ -1,0 +1,23 @@
+organization: 株式会社メディカ出版
+industry: メディア・出版
+country: JP
+date_occurred: 2026-03-13
+date_announced: 2026-03-17
+affected_count: 772000
+count_note: 約77.2万件（2026年4月9日の第3報時点。同一案件・同一人物の重複計上の可能性あり）
+cause: ransomware
+data_types:
+  - パスポート番号
+  - 在留カード
+  - 口座番号
+  - 健康・医療情報
+  - 生年月日
+  - 住所
+  - パスワード（保管形式不明）
+  - 氏名
+  - メールアドレス
+  - 従業員情報
+summary: ランサムウェアによる不正アクセスでシステム障害が発生し、個人情報が漏えいした可能性がある。顧客の連絡先のほか、従業員・応募者のパスポート、在留カード、健康診断結果、銀行口座、人事評価などが含まれる。
+sources:
+  - title: メディカ出版 公式発表（第3報）
+    url: https://www.medica.co.jp/news/information/3479/

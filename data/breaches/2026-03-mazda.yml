@@ -1,0 +1,19 @@
+organization: マツダ株式会社
+services:
+  - タイからの調達部品の倉庫業務管理システム
+industry: 製造
+country: JP
+date_announced: 2026-03-19
+affected_count: 692
+count_note: 同社・グループ会社・取引先の従業員の情報。一般顧客の情報は含まれない
+cause: vulnerability
+data_types:
+  - 氏名
+  - メールアドレス
+  - 従業員情報
+  - 取引先情報
+  - アカウント名
+summary: 倉庫業務に使う管理システムの脆弱性を悪用され、2025年12月中旬に第三者が不正アクセス。ユーザーID・氏名・メールアドレス・会社名・取引先IDの計692件にアクセスされた可能性がある。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/articles/2603/19/news129.html

@@ -1,0 +1,28 @@
+organization: 株式会社２りんかんイエローハット
+services:
+  - ２りんかんアプリ
+  - ２りんかん会員サーバー
+industry: 小売・EC
+country: JP
+date_occurred: 2026-04-20
+date_announced: 2026-04-23
+affected_count: 3455754
+count_note: 最大件数（2026年5月1日の続報）。ポイント会員・モバイル会員・アプリ会員を含む
+cause: unauthorized_access
+data_types:
+  - 生年月日
+  - 住所
+  - パスワード（保管形式不明）
+  - 氏名
+  - 電話番号
+  - 性別
+  - メールアドレス
+  - 車両情報
+  - 会員ID
+  - ポイント情報
+summary: イエローハットの連結子会社が運営する会員専用サーバーに不正アクセスがあり、会員の個人情報が不正に持ち出された痕跡が確認された。アプリのIDとパスワードも対象。クレジットカード情報は含まれない。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/articles/2605/01/news111.html
+  - title: 週刊アスキー
+    url: https://weekly.ascii.jp/elem/000/004/400/4400097/
