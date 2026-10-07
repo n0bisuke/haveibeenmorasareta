@@ -1,0 +1,14 @@
+organization: 株式会社小松製作所
+industry: 製造
+country: JP
+date_announced: 2026-06-16
+affected_count: 139302
+cause: misconfiguration
+root_cause: 外部ユーザーを招待するシステムでユーザー一覧が非公開に設定されていなかった
+data_types:
+  - 氏名
+  - メールアドレス
+summary: 同社が管理するシステムに登録されたユーザーの氏名・メールアドレス・利用者区分・アクセス日などが、設定の不備により同じシステムの他の登録ユーザーから閲覧できる状態になっていた。
+sources:
+  - title: コマツ 公式発表
+    url: https://www.komatsu.jp/ja/newsroom/2026/20260616_3

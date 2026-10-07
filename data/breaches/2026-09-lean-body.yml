@@ -1,0 +1,12 @@
+organization: 株式会社LEAN BODY
+industry: 美容・健康
+country: JP
+date_announced: 2026-09-15
+affected_count: 440000
+count_note: 約44万アカウント（退会者を含む）
+cause: vulnerability
+root_cause: 分析ツール「Metabase」の脆弱性を悪用され、接続先データベースから顧客情報を取得された
+summary: 社内で利用していた分析ツール「Metabase」の脆弱性が悪用され、第三者が同ツールに不正アクセスし、同社データベースから退会者を含む顧客情報を取得したことを確認した。
+sources:
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/?p=40986

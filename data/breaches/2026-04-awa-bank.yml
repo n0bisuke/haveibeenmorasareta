@@ -1,0 +1,14 @@
+organization: 株式会社阿波銀行
+industry: 金融・保険
+country: JP
+date_announced: 2026-04-03
+affected_count: 27745
+count_note: 顧客情報等を含むデータ延べ27,745件
+cause: unauthorized_access
+root_cause: 目的完了後も廃止されずに使われ続けたOAシステムのテスト環境の管理不備
+summary: 行内の情報共有に使うOAシステムのテスト環境が不正アクセスを受け、保管していた顧客情報等が漏えいした。外部のセキュリティ会社からの連絡で発覚した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/04/22/55113.html
+  - title: ScanNetSecurity（調査結果）
+    url: https://scan.netsecurity.ne.jp/article/2026/06/08/55440.html

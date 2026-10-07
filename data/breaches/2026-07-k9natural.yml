@@ -1,0 +1,11 @@
+organization: 株式会社K9ナチュラルジャパン
+industry: 小売・EC
+country: JP
+date_announced: 2026-07-14
+affected_count: 60000
+count_note: 約6万件（顧客・取引先）
+cause: unauthorized_access
+summary: オンラインサービスを管理するサーバーが外部から不正アクセスを受け、顧客や取引先の個人情報の一部が流出した。警視庁からの連絡で発覚した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/07/31/55835.html

@@ -1,0 +1,19 @@
+organization: 農林水産省
+industry: 行政
+country: JP
+date_announced: 2026-01-23
+affected_count: 4571
+count_note: 本省職員2,593人とその家族1,978人
+cause: human_error
+root_cause: 源泉徴収票等の情報の提出先として誤ったメールアドレスを示した
+data_types:
+  - マイナンバー
+  - 資産・取引情報
+  - 氏名
+  - 従業員情報
+summary: 給与支払事務に関連し、職員の源泉徴収票等の情報が外部のメールサーバに送信された。氏名やマイナンバーのほか、給与支給額・税額・控除・家族情報などが含まれる。
+sources:
+  - title: 農林水産省 公式発表
+    url: https://www.maff.go.jp/j/press/kanbo/keiri/260123.html
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/02/12/54606.html

@@ -1,0 +1,17 @@
+organization: 株式会社ビジュアルアーツ
+industry: エンタメ・スポーツ
+country: JP
+date_announced: 2026-06-04
+affected_count: 13500
+count_note: 最大約1万3,500件（顧客・取引先・採用応募者・従業員など）
+cause: unauthorized_access
+root_cause: 社内ポータルが利用するクラウドストレージの認証情報を窃取された
+data_types:
+  - マイナンバー
+  - 氏名
+  - 従業員情報
+  - 取引先情報
+summary: 発売前のゲームのマスターデータが海外サイトに流出したことをきっかけに調査し、クラウドストレージ上の社内情報が持ち出された可能性が高いと判明した。マイナンバーを含む個人情報が漏えいした可能性がある。
+sources:
+  - title: GameBusiness.jp
+    url: https://www.gamebusiness.jp/article/2026/06/04/27114.html

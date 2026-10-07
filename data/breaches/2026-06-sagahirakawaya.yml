@@ -1,0 +1,17 @@
+organization: 株式会社佐嘉平川屋
+services:
+  - 佐嘉平川屋オンラインショップ
+industry: 食品
+country: JP
+date_announced: 2026-06-15
+affected_count: 30170
+count_note: 個人情報30,170名、うちクレジットカード情報5,783名（報道による）。サイバーセキュリティ.comの一覧では個人情報73,213件・カード情報6,303件とされている
+cause: vulnerability
+root_cause: システムの脆弱性を突かれ決済アプリケーションが改ざんされた（ウェブスキミング）
+data_types:
+  - クレジットカード番号
+  - 氏名
+summary: オンラインショップが不正アクセスを受け、決済画面の改ざんによりクレジットカード情報と個人情報が漏えいした可能性がある。カード情報の漏えい対象期間は2025年3月21日〜2026年3月10日。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/06/26/55581.html
