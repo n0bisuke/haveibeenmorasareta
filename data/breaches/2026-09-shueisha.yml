@@ -1,0 +1,22 @@
+organization: 株式会社集英社
+services:
+  - HAPPY PLUS COMMUNITY
+industry: メディア・出版
+country: JP
+date_announced: 2026-09-28
+affected_count: 2835
+count_note: ブロガー2,835名（ほかに取引先リスト10,780件など）
+cause: misconfiguration
+root_cause: CMSの設定不備によりAPIの認証情報を狙われ、特権ユーザーを不正に作成された
+data_types:
+  - 氏名
+  - メールアドレス
+  - 住所
+  - 電話番号
+  - 生年月日
+  - アカウント名
+  - 取引先情報
+summary: ファッション媒体のブロガー向けシステム「HAPPY PLUS COMMUNITY」が不正アクセスを受け、登録ブロガー2,835名の個人情報が漏えいした。システムから送ったメール11,237件や取引先リスト10,780件なども見られた。
+sources:
+  - title: 集英社 お詫びとお知らせ
+    url: https://www.shueisha.co.jp/wp-content/uploads/2026/09/Shueisha20260928-1.pdf

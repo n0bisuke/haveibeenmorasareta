@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-10-07T15:41:27.000Z",
-  "count": 295,
+  "count": 306,
   "severity_levels": [
     {
       "id": "critical",
@@ -939,6 +939,37 @@
       "severity": "high"
     },
     {
+      "id": "2026-09-shueisha",
+      "organization": "株式会社集英社",
+      "services": [
+        "HAPPY PLUS COMMUNITY"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2026-09-28",
+      "affected_count": 2835,
+      "count_note": "ブロガー2,835名（ほかに取引先リスト10,780件など）",
+      "cause": "misconfiguration",
+      "root_cause": "CMSの設定不備によりAPIの認証情報を狙われ、特権ユーザーを不正に作成された",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "住所",
+        "電話番号",
+        "生年月日",
+        "アカウント名",
+        "取引先情報"
+      ],
+      "summary": "ファッション媒体のブロガー向けシステム「HAPPY PLUS COMMUNITY」が不正アクセスを受け、登録ブロガー2,835名の個人情報が漏えいした。システムから送ったメール11,237件や取引先リスト10,780件なども見られた。",
+      "sources": [
+        {
+          "title": "集英社 お詫びとお知らせ",
+          "url": "https://www.shueisha.co.jp/wp-content/uploads/2026/09/Shueisha20260928-1.pdf"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-09-tokyo-metro",
       "organization": "東京地下鉄株式会社（東京メトロ）",
       "services": [
@@ -1171,6 +1202,37 @@
         }
       ],
       "severity": "medium"
+    },
+    {
+      "id": "2026-09-moomoo-japan",
+      "organization": "株式会社RBW JAPAN",
+      "services": [
+        "MOOMOO JAPAN（MAMAMOO JAPAN OFFICIAL FANCLUB）"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/33",
+      "date_occurred": "2026-09-01",
+      "date_announced": "2026-09-03",
+      "affected_count": null,
+      "count_note": "件数は未公表（有料会員の一部）",
+      "cause": "third_party",
+      "vendor": {
+        "name": "システム管理の委託先（社名非公表）"
+      },
+      "data_types": [
+        "メールアドレス",
+        "パスワード（保管形式不明）"
+      ],
+      "summary": "MAMAMOOの日本公式ファンクラブ「MOOMOO JAPAN」のシステム管理を委託している会社のサーバーに不正アクセスがあり、一部の有料会員のメールアドレスとパスワードが漏えいした可能性がある。クレジットカード情報は含まれない。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/09/15/56232.html"
+        }
+      ],
+      "severity": "high"
     },
     {
       "id": "2026-08-corona",
@@ -1820,6 +1882,38 @@
       "severity": "medium"
     },
     {
+      "id": "2026-07-tv-asahi-mediaplex",
+      "organization": "株式会社テレビ朝日メディアプレックス",
+      "group": "テレビ朝日グループ",
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_occurred": "2026-04-28",
+      "date_announced": "2026-07-13",
+      "affected_count": 4543,
+      "count_note": "従業員1,343件・採用応募者2,786件・個人取引先414件（2026年7月30日の調査結果）",
+      "cause": "unauthorized_access",
+      "root_cause": "サーバーの認証連携に使うアカウントの認証情報が窃取・悪用された",
+      "data_types": [
+        "従業員情報",
+        "マイナンバー",
+        "口座番号",
+        "氏名",
+        "取引先情報"
+      ],
+      "summary": "テレビ朝日メディアプレックスのサーバーが不正アクセスを受けた。7月30日に公表した調査結果で、従業員・採用応募者・個人取引先の計4,543件の個人データが漏えいした、またはそのおそれがあるとした。従業員情報にはマイナンバーや口座番号が含まれる。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/07/13/55688.html"
+        },
+        {
+          "title": "ScanNetSecurity（調査結果）",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/08/17/55939.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
       "id": "2026-07-kyorin",
       "organization": "杏林学園",
       "industry": "人材・教育",
@@ -1856,6 +1950,38 @@
         }
       ],
       "severity": null
+    },
+    {
+      "id": "2026-07-abc-ainex",
+      "organization": "朝日放送テレビ株式会社",
+      "group": "朝日放送グループ",
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_occurred": "2026-06-17",
+      "date_announced": "2026-07-01",
+      "affected_count": 373,
+      "count_note": "メールアドレス373件（2026年8月24日の調査結果）",
+      "cause": "phishing",
+      "vendor": {
+        "name": "株式会社アイネックス",
+        "group": "朝日放送グループ"
+      },
+      "root_cause": "グループ会社の従業員が取引先を装うフィッシングメールに反応し、ID・パスワードを入力した",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "朝日放送テレビのグループ会社アイネックスで従業員アカウントへの不正ログインとクラウドサービスへの不正アクセスがあった。8月24日の調査結果で、メールアドレス373件の漏えいが確定した。",
+      "sources": [
+        {
+          "title": "秋田魁新報（共同通信）",
+          "url": "https://www.sakigake.jp/news/article/20260701OR0199/"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/07/13/55687.html"
+        }
+      ],
+      "severity": "medium"
     },
     {
       "id": "2026-07-kaga-solnet",
@@ -2471,6 +2597,36 @@
       "severity": null
     },
     {
+      "id": "2026-04-yoshimoto",
+      "organization": "吉本興業株式会社",
+      "services": [
+        "東京型銭湯 スタンプラリー"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-03-30",
+      "date_announced": "2026-04-02",
+      "affected_count": 94,
+      "count_note": "最大94名（東京都都市整備局の委託業務）",
+      "cause": "human_error",
+      "root_cause": "ノベルティの発送先リストで氏名と住所の行がずれたまま再確認せずに発送した",
+      "data_types": [
+        "氏名"
+      ],
+      "summary": "東京都都市整備局から銭湯のスタンプラリーの運営を受託していた吉本興業が、当選ノベルティを発送する際、発送先リストの氏名と住所がずれたまま配送を手配し、他の当選者の氏名で荷物が届いた。東京都が公表した。",
+      "sources": [
+        {
+          "title": "東京都 報道発表",
+          "url": "https://www.metro.tokyo.lg.jp/information/press/2026/04/2026040305"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/04/17/55086.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
       "id": "2026-03-lawson-bank",
       "organization": "株式会社ローソン銀行",
       "industry": "金融・保険",
@@ -2731,6 +2887,31 @@
         }
       ],
       "severity": "critical"
+    },
+    {
+      "id": "2026-03-sony-music-shop",
+      "organization": "株式会社ソニー・ミュージックソリューションズ",
+      "group": "ソニーグループ",
+      "services": [
+        "Sony Music Shop"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/33",
+      "date_announced": "2026-03-05",
+      "affected_count": null,
+      "count_note": "件数は未確認（報道日を公表日として仮置き）",
+      "cause": "misconfiguration",
+      "root_cause": "システム改修時の担当者間で作業範囲や役割分担の認識にずれがあった",
+      "summary": "Sony Music Shopのサイトで、顧客の個人情報が他の利用者から閲覧できる状態になっていたと報じられた。2025年2月の事案との関係や件数は確認中。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/03/05/54765.html"
+        }
+      ],
+      "severity": null
     },
     {
       "id": "2026-02-jogmec",
@@ -4573,6 +4754,37 @@
       "severity": null
     },
     {
+      "id": "2025-02-sony-music-shop",
+      "organization": "株式会社ソニー・ミュージックソリューションズ",
+      "group": "ソニーグループ",
+      "services": [
+        "Sony Music Shop"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2025-02-13",
+      "date_announced": "2025-02-21",
+      "affected_count": 658,
+      "count_note": "最大658名",
+      "cause": "misconfiguration",
+      "root_cause": "アクセス集中対策で導入したキャッシュ設定の不備により、他の利用者の入力内容やマイページが表示される状態になった",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "クレジットカード情報（番号の一部・有効期限等）"
+      ],
+      "summary": "アクセス集中対策としてWebページのキャッシュ保持設定を行った影響で、新規会員登録画面に他の利用者の入力内容が表示されたり、他の利用者のマイページにアクセスできたりする状態になった。2025年2月13日から20日まで続き、最大658名に影響した可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/03/04/52432.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2025-02-craze",
       "organization": "株式会社クレイズ",
       "industry": "小売・EC",
@@ -4637,6 +4849,48 @@
         {
           "title": "ScanNetSecurity（学研健保）",
           "url": "https://scan.netsecurity.ne.jp/article/2025/03/11/52471.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2025-02-sanrio-entertainment",
+      "organization": "株式会社サンリオエンターテイメント",
+      "group": "サンリオ",
+      "services": [
+        "サンリオピューロランド",
+        "ピューロランドファンクラブ"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2025-01-21",
+      "date_announced": "2025-02-07",
+      "affected_count": 2000000,
+      "count_note": "最大約200万件（漏えいの可能性。2025年8月の調査完了時点で実際の漏えいは確認されていない）",
+      "cause": "ransomware",
+      "data_types": [
+        "氏名",
+        "性別",
+        "生年月日",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "会員ID",
+        "従業員情報"
+      ],
+      "summary": "サンリオピューロランドなどを運営するサンリオエンターテイメントのサーバーがランサムウェアによる不正アクセスを受けた。ピューロランドファンクラブ会員や年間パスポート購入者の情報など最大約200万件が漏えいした可能性があると公表した。2025年8月12日に調査と復旧の完了を報告し、その時点で情報漏えいは確認されていないとしている。",
+      "sources": [
+        {
+          "title": "サンリオ お知らせ（2025年2月7日）",
+          "url": "https://corporate.sanrio.co.jp/information/20250207/index.html"
+        },
+        {
+          "title": "サンリオ 調査結果のご報告（2025年8月12日）",
+          "url": "https://corporate.sanrio.co.jp/information/20250812/"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2025/02/10/52303.html"
         }
       ],
       "severity": "high"
@@ -5260,6 +5514,29 @@
         {
           "title": "サイバーセキュリティ.com 個人情報漏洩一覧（2024年）",
           "url": "https://cybersecurity-jp.com/leakage-of-personal-information"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2024-10-hakodate-kayousai",
+      "organization": "HAKODATE歌謡祭実行委員会",
+      "services": [
+        "HAKODATE歌謡祭 チケットweb購入"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/33",
+      "date_announced": "2024-10-31",
+      "affected_count": null,
+      "count_note": "件数は未確認（報道日を公表日として仮置き）",
+      "cause": "misconfiguration",
+      "summary": "「HAKODATE歌謡祭」サイトのシステムで設定していた情報の非開示が外れ、チケットのweb購入画面から他の購入者の個人情報が閲覧できる状態になっていた。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/10/31/51846.html"
         }
       ],
       "severity": null
@@ -6187,6 +6464,42 @@
         {
           "title": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2024/07/10/51281.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2024-06-brave-group",
+      "organization": "株式会社Brave group",
+      "services": [
+        "ぶいすぽっ!JP オーディション",
+        "Brave group総合オーディション",
+        "HareVare VLiverオーディション"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2024-06-04",
+      "date_announced": "2024-06-25",
+      "affected_count": 10653,
+      "count_note": "約7,000件・約2,610件・約1,043件の合計（概数）",
+      "cause": "misconfiguration",
+      "root_cause": "Googleフォームの編集用URLが「リンクを知っている全員が閲覧可」の設定になっていた",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "生年月日",
+        "アカウント名"
+      ],
+      "summary": "VTuberグループ「ぶいすぽっ!」などのオーディションで使ったGoogleフォームの編集用URLが誰でも閲覧できる設定になっており、応募者の氏名・電話番号・生年月日・志望動機などが閲覧できる状態だった。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2406/25/1240625209/"
+        },
+        {
+          "title": "GameBusiness.jp",
+          "url": "https://www.gamebusiness.jp/article/2024/06/26/23219.html"
         }
       ],
       "severity": "high"
@@ -7170,6 +7483,36 @@
         }
       ],
       "severity": null
+    },
+    {
+      "id": "2024-02-kashima-antlers",
+      "organization": "株式会社鹿島アントラーズ・エフ・シー",
+      "services": [
+        "SÓCIO・ファンクラブ"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/33",
+      "date_occurred": "2024-01-08",
+      "date_announced": "2024-02-21",
+      "affected_count": 16,
+      "count_note": "16件（閲覧の可能性があるアクセス314回）。公表日は未確認のため発生期間の終了日を仮置き",
+      "cause": "misconfiguration",
+      "root_cause": "ユニフォームのネーム&ナンバー変更受付フォームが他の回答を閲覧できる設定になっていた",
+      "data_types": [
+        "メールアドレス",
+        "会員ID",
+        "氏名"
+      ],
+      "summary": "ファンクラブ入会時のユニフォームのネーム&ナンバー変更受付フォームの設定不備で、2024年1月8日から2月21日まで、他の申込者が入力した情報を閲覧できる状態だった。",
+      "sources": [
+        {
+          "title": "ゲキサカ",
+          "url": "https://web.gekisaka.jp/news/jleague/detail/?401844-401844-fl"
+        }
+      ],
+      "severity": "medium"
     },
     {
       "id": "2024-02-mihara-taikyo",

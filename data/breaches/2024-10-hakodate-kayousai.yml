@@ -1,0 +1,15 @@
+organization: HAKODATE歌謡祭実行委員会
+services:
+  - HAKODATE歌謡祭 チケットweb購入
+industry: エンタメ・スポーツ
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/33
+date_announced: 2024-10-31
+affected_count: null
+count_note: 件数は未確認（報道日を公表日として仮置き）
+cause: misconfiguration
+summary: 「HAKODATE歌謡祭」サイトのシステムで設定していた情報の非開示が外れ、チケットのweb購入画面から他の購入者の個人情報が閲覧できる状態になっていた。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/10/31/51846.html

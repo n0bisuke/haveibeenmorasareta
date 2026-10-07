@@ -1,0 +1,22 @@
+organization: 株式会社テレビ朝日メディアプレックス
+group: テレビ朝日グループ
+industry: メディア・出版
+country: JP
+date_occurred: 2026-04-28
+date_announced: 2026-07-13
+affected_count: 4543
+count_note: 従業員1,343件・採用応募者2,786件・個人取引先414件（2026年7月30日の調査結果）
+cause: unauthorized_access
+root_cause: サーバーの認証連携に使うアカウントの認証情報が窃取・悪用された
+data_types:
+  - 従業員情報
+  - マイナンバー
+  - 口座番号
+  - 氏名
+  - 取引先情報
+summary: テレビ朝日メディアプレックスのサーバーが不正アクセスを受けた。7月30日に公表した調査結果で、従業員・採用応募者・個人取引先の計4,543件の個人データが漏えいした、またはそのおそれがあるとした。従業員情報にはマイナンバーや口座番号が含まれる。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/07/13/55688.html
+  - title: ScanNetSecurity（調査結果）
+    url: https://scan.netsecurity.ne.jp/article/2026/08/17/55939.html
