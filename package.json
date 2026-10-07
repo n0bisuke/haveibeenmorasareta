@@ -1,5 +1,6 @@
 {
   "name": "haveibeenmorasareta",
+  "license": "MIT",
   "version": "0.1.0",
   "private": true,
   "description": "情報漏洩した企業・サービスの一覧サイト",
