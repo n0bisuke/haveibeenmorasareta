@@ -6,6 +6,8 @@ date_announced: 2024-12-25
 affected_count: null
 count_note: 件数は公表されていない（取引先関係者・従業員等）
 cause: third_party
+attack_methods:
+  - network_device
 root_cause: ネットワーク保守を委託していたNTTコミュニケーションズが管理する保守・監視用VPN装置を経由して侵入された
 vendor:
   name: NTTコミュニケーションズ株式会社

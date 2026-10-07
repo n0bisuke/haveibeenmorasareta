@@ -7,6 +7,8 @@ date_occurred: 2024-11-24
 date_announced: 2024-11-26
 affected_count: 97533
 cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
 root_cause: 第三者によるなりすましログイン
 summary: 有機野菜宅配サイトでなりすましログインが確認され、ユーザーの個人情報が閲覧された可能性がある。システム監視で検知した。
 sources:

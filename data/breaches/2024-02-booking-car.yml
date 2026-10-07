@@ -9,6 +9,8 @@ date_announced: 2024-02-16
 affected_count: 25000
 count_note: 利用企業・自治体の従業員・職員 約2万5,000名
 cause: misconfiguration
+attack_methods:
+  - exposed_secret
 root_cause: システム開発以前から使われていたAWSのアクセスキーの不適切な取り扱い
 data_types:
   - メールアドレス

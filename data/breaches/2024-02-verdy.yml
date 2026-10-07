@@ -7,6 +7,9 @@ date_announced: 2024-02-06
 affected_count: 2726
 count_note: クレジットカード情報2,726名
 cause: unauthorized_access
+attack_methods:
+  - web_skimming
+  - stolen_credentials
 root_cause: サイトの開発管理者アカウントへの不正アクセスで決済アプリケーションが改ざんされた
 data_types:
   - クレジットカード番号

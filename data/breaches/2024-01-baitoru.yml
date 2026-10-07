@@ -8,6 +8,8 @@ date_announced: 2024-01-31
 affected_count: 1296
 count_note: 掲載企業経由の応募者情報
 cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
 root_cause: 掲載企業のID・パスワードを取得した第三者が応募者管理画面に不正ログイン
 summary: 求人サイトの掲載企業のアカウントで管理画面に不正ログインされ、応募者情報が閲覧されたうえ、応募者に不審なメールが送られた。のちに別の掲載企業でも被害が判明した。
 sources:

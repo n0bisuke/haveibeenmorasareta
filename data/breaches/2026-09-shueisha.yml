@@ -7,6 +7,8 @@ date_announced: 2026-09-28
 affected_count: 2835
 count_note: ブロガー2,835名（ほかに取引先リスト10,780件など）
 cause: misconfiguration
+attack_methods:
+  - stolen_credentials
 root_cause: CMSの設定不備によりAPIの認証情報を狙われ、特権ユーザーを不正に作成された
 data_types:
   - 氏名

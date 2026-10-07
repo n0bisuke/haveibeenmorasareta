@@ -1,0 +1,59 @@
+# 攻撃手法（attack_methods）の分類。公式発表や報道で手法が判明している事案にだけ指定します。
+# data/breaches/*.yml の attack_methods にはここにある ID のみ使えます（複数可）。
+# category はランキングでの補足表示に使います。
+sql_injection:
+  label: SQLインジェクション
+  category: Webアプリへの攻撃
+  description: 入力欄などから不正なSQL文を送り込み、データベースの情報を取得・改ざんする
+xss:
+  label: クロスサイトスクリプティング（XSS）
+  category: Webアプリへの攻撃
+  description: Webページに不正なスクリプトを埋め込み、閲覧者のブラウザで実行させる
+web_skimming:
+  label: Webスキミング（決済画面の改ざん）
+  category: Webアプリへの攻撃
+  description: ECサイトの決済ページや決済アプリケーションを改ざんし、入力されたカード情報などを抜き取る
+remote_code_execution:
+  label: 任意コード・コマンドの実行
+  category: Webアプリへの攻撃
+  description: サーバーやソフトウェアの脆弱性を突いて、任意のプログラムやコマンドを実行する
+broken_access_control:
+  label: アクセス制御の不備の悪用
+  category: Webアプリへの攻撃
+  description: 認可やアクセス制限の欠陥を突いて、本来見られない他者のデータを取得する
+known_vulnerability:
+  label: 既知の脆弱性の悪用（修正の未適用）
+  category: 脆弱性の悪用
+  description: 公表済みで修正パッチも出ている脆弱性を、適用前に悪用される
+network_device:
+  label: VPN・リモート接続機器からの侵入
+  category: 脆弱性の悪用
+  description: VPN装置、リモートデスクトップ、ネットワーク機器などを足がかりに社内ネットワークへ侵入する
+credential_stuffing:
+  label: リスト型攻撃
+  category: 認証情報の悪用
+  description: 他のサービスから流出したID・パスワードの組み合わせで、なりすましログインを繰り返す
+stolen_credentials:
+  label: 窃取した認証情報による不正ログイン
+  category: 認証情報の悪用
+  description: 何らかの方法で入手したアカウントのID・パスワードや認証情報を使って侵入する（入手経路が不明なものを含む）
+exposed_secret:
+  label: アクセスキー・認証情報の公開や放置
+  category: 認証情報の悪用
+  description: クラウドのアクセスキーなどがGitHubで公開されたり、古いまま放置されたりして悪用される
+phishing:
+  label: フィッシング（スミッシングを含む）
+  category: ソーシャルエンジニアリング
+  description: 取引先などを装ったメールやSMSで偽のログイン画面に誘導し、認証情報を入力させる
+support_scam:
+  label: サポート詐欺
+  category: ソーシャルエンジニアリング
+  description: 偽の警告画面で電話をかけさせ、遠隔操作ソフトを入れさせてPCを操作する
+infostealer:
+  label: マルウェア感染による認証情報の窃取
+  category: マルウェア
+  description: PCに感染したマルウェア（インフォスティーラーなど）に、保存されていた認証情報を盗まれる
+brute_force:
+  label: 総当たり・大量の機械的アクセス
+  category: 認証情報の悪用
+  description: パスワードの総当たりや、照会機能への大量アクセスで情報を引き出す

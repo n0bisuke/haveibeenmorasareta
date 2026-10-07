@@ -54,3 +54,10 @@ export async function loadIndustries() {
   const text = await readFile(path.join(ROOT, 'data', 'industries.yml'), 'utf8');
   return yaml.load(text, { schema: yaml.CORE_SCHEMA });
 }
+
+// data/attack-methods.yml（攻撃手法の分類）を読み込み、[{ id, label, category, description }] を返す
+export async function loadAttackMethods() {
+  const text = await readFile(path.join(ROOT, 'data', 'attack-methods.yml'), 'utf8');
+  const raw = yaml.load(text, { schema: yaml.CORE_SCHEMA });
+  return Object.entries(raw).map(([id, { label, category, description }]) => ({ id, label, category, description }));
+}

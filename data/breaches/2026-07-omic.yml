@@ -9,6 +9,8 @@ date_announced: 2026-07-14
 affected_count: 1000
 count_note: "まとめサイトの記載: 約1,000件（一次情報で未確認）"
 cause: phishing
+attack_methods:
+  - support_scam
 summary: 海外貨物検査株式会社は、同社と契約する有機JAS認証審査員がサポート詐欺の被害に遭い、貸与していたパソコンから顧客の個人情報が外部に漏洩した可能性があると発表した。（まとめサイトの記載に基づく。公式発表・報道での確認待ち）
 sources:
   - title: サイバーセキュリティ.com 個人情報漏洩一覧（2026年）

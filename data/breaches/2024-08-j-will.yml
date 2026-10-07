@@ -5,6 +5,8 @@ date_occurred: 2024-07-02
 date_announced: 2024-08-23
 affected_count: 7132
 cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
 summary: 従業員1名のメールアカウントが不正アクセスを受け、過去に送受信したメールと添付ファイルのデータが流出した可能性がある。
 sources:
   - title: ScanNetSecurity

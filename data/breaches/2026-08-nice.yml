@@ -6,6 +6,8 @@ date_announced: 2026-08-06
 affected_count: 2400
 count_note: 約2,400件
 cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
 data_types:
   - 氏名
   - 電話番号

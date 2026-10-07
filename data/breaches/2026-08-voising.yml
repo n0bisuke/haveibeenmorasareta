@@ -9,6 +9,8 @@ affected_count: 170000
 count_note: 最大約17万人。うち約5万件は特定サイトで公開された可能性
 cause: vulnerability
 vuln_target: business_tool
+attack_methods:
+  - known_vulnerability
 root_cause: 利用していたBIツールの既知の脆弱性を、修正パッチの適用前に悪用された
 data_types:
   - 生年月日
