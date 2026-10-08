@@ -36,3 +36,8 @@ summary: ここに概要を書きます。         # 必須: 10〜600文字。�
 sources:                                  # 必須: 1件以上。公式発表を最初に
   - title: 株式会社サンプル 公式発表
     url: https://example.com/news/2025/0131
+# related:                                  # 任意: 関連ページ（導入事例など。出典ではないもの）
+#   - title: 株式会社サンプル開発 導入事例（アーカイブ）
+#     url: https://web.archive.org/web/20250101000000/https://example.com/case/
+#     note: 事案との関係（当事者の説明があれば）
+#     removed: true                          # 元のページが削除されたとき
