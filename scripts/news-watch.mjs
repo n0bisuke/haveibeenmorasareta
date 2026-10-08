@@ -10,6 +10,7 @@ const arg = (name) => (process.argv.includes(name) ? process.argv[process.argv.i
 const DAYS = Number(arg('--days')) || 7;
 const OUT = arg('--out');
 const ISSUE_TITLE = '【自動】未収録の情報漏洩ニュース候補';
+const ISSUE_LABEL = 'ニュース候補';
 const { GITHUB_TOKEN, GITHUB_REPOSITORY } = process.env;
 
 // 調査ソース。NHK・Yahoo!ニュースなどの一般報道は Google ニュースの検索 RSS 経由で拾う
@@ -134,10 +135,10 @@ async function api(path, init = {}) {
 
 const open = (await api('/issues?state=open&per_page=100')).find((i) => i.title === ISSUE_TITLE && !i.pull_request);
 if (open) {
-  await api(`/issues/${open.number}`, { method: 'PATCH', body: JSON.stringify({ body }) });
+  await api(`/issues/${open.number}`, { method: 'PATCH', body: JSON.stringify({ body, labels: [ISSUE_LABEL] }) });
   console.log(`✔ Issue #${open.number} を更新しました（候補 ${candidates.length} 件）`);
 } else if (candidates.length) {
-  const created = await api('/issues', { method: 'POST', body: JSON.stringify({ title: ISSUE_TITLE, body }) });
+  const created = await api('/issues', { method: 'POST', body: JSON.stringify({ title: ISSUE_TITLE, body, labels: [ISSUE_LABEL] }) });
   console.log(`✔ Issue #${created.number} を作成しました（候補 ${candidates.length} 件）`);
 } else {
   console.log('候補はありませんでした');
