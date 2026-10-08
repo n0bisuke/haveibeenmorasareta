@@ -1,4 +1,5 @@
 // ニュース記事の取得と本文の抽出
+import { jinaReady, jinaRead } from '../jina.mjs';
 const UA = 'Mozilla/5.0 (compatible; haveibeenmorasareta-bot; +https://github.com/n0bisuke/haveibeenmorasareta)';
 const MAX_TEXT = Number(process.env.ARTICLE_MAX_CHARS) || 8000;
 
@@ -95,10 +96,21 @@ function toText(html) {
 }
 
 // 候補（RSS の項目）から元記事を取得して本文を返す
+// 直接取得できない・本文が短いページ（JavaScript で描画するページなど）は、JINA_API_KEY があれば Jina Reader で読み直す
 export async function loadArticle(candidate) {
   const url = await resolveGoogleNews(candidate.url);
-  const page = await fetchPage(url);
-  const article = extractArticle(page.html);
-  if (article.text.length < 150) throw new Error('本文を取得できませんでした（有料記事・JavaScript 必須のページの可能性）');
-  return { url: page.url, ...article, title: article.title || candidate.title };
+  let direct;
+  try {
+    const page = await fetchPage(url);
+    const article = extractArticle(page.html);
+    if (article.text.length >= 150) return { url: page.url, ...article, title: article.title || candidate.title };
+    direct = new Error('本文を取得できませんでした（有料記事・JavaScript 必須のページの可能性）');
+  } catch (e) {
+    direct = e;
+  }
+  if (!jinaReady) throw direct;
+  const page = await jinaRead(url);
+  const text = page.text.replace(/[ \t\u3000]+/g, ' ').replace(/\n{2,}/g, '\n').trim().slice(0, MAX_TEXT);
+  if (text.length < 150) throw new Error(`本文を取得できませんでした（直接: ${direct.message} / Jina でも本文なし）`);
+  return { url: page.url, title: page.title || candidate.title, published: page.published, text };
 }

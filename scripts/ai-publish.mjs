@@ -6,7 +6,7 @@ import { execFileSync } from 'node:child_process';
 import { appendFile, readFile, writeFile, rm } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
-import yaml from 'js-yaml';
+import * as yaml from 'js-yaml';
 import { DATA_DIR, loadBreaches } from './lib.mjs';
 import { createChecker } from './check.mjs';
 import { isTrustedSource } from './ai/guard.mjs';
