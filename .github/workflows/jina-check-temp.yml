@@ -1,0 +1,32 @@
+name: Jina check (temporary)
+on:
+  push:
+    branches: [claude/magical-archimedes-7lls9o]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Search and read with Jina
+        env:
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+        run: |
+          node -e '
+          const H = { Authorization: `Bearer ${process.env.JINA_API_KEY}`, Accept: "application/json" };
+          const show = (j) => (j.data ?? []).slice(0, 6).map((r) => ({ title: r.title, url: r.url, date: r.date, publishedTime: r.publishedTime, desc: (r.description ?? "").slice(0, 120), content: (r.content ?? "").slice(0, 160) }));
+          (async () => {
+            if (!process.env.JINA_API_KEY) return console.log("JINA_API_KEY が空です");
+            for (const q of ["site:x.com 個人情報 流出 お詫び", "不正アクセス 個人情報 漏えい お詫び", "x.com 情報漏洩 不正アクセス"]) {
+              const r = await fetch(`https://s.jina.ai/?q=${encodeURIComponent(q)}&gl=JP&hl=ja`, { headers: { ...H, "X-Respond-With": "no-content" } });
+              const j = await r.json().catch(() => ({}));
+              console.log("== search", q, r.status, JSON.stringify(j.code ?? j.name ?? ""), JSON.stringify(Object.keys(j)));
+              console.log(JSON.stringify(show(j), null, 1));
+            }
+            const r2 = await fetch("https://r.jina.ai/https://www.itmedia.co.jp/news/article/2610/05/2000002011/", { headers: H });
+            const j2 = await r2.json().catch(() => ({}));
+            console.log("== read", r2.status, j2.data?.title, j2.data?.publishedTime, (j2.data?.content ?? "").length, (j2.data?.content ?? "").slice(0, 200));
+            const r3 = await fetch("https://r.jina.ai/https://x.com/itmedia_news/status/2104832367362015740", { headers: H });
+            const j3 = await r3.json().catch(() => ({}));
+            console.log("== read x", r3.status, j3.data?.title, (j3.data?.content ?? "").slice(0, 300));
+          })();'
