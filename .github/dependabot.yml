@@ -1,0 +1,17 @@
+# GitHub Actions（コミット SHA で固定）と npm の依存関係を、週に1回まとめて更新する PR を作る
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ['*']
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      npm:
+        patterns: ['*']
