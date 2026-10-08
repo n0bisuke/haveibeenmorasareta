@@ -42,6 +42,9 @@ jobs:
         run: node scripts/contributors.mjs
         env:
           GITHUB_TOKEN: ${{ github.token }}
+      # 事案ごとの個別ページと sitemap.xml（公開物のみ）
+      - name: Generate breach pages
+        run: node scripts/pages.mjs
       # 更新直後に古い JS がキャッシュから読まれて壊れないよう、参照にバージョンを付ける（公開物のみ）
       - name: Stamp asset versions
         run: node scripts/stamp.mjs
