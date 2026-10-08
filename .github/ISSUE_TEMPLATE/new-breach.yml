@@ -1,37 +1,68 @@
-name: 情報漏洩の掲載リクエスト
-description: PR を作るのが難しい場合はこちらから情報提供してください
+name: 新しい漏洩事案の情報提供
+description: サイトに載っていない情報漏洩のニュースや公式発表を教えてください（PR を作らなくても OK）
 title: "[追加] "
-labels: ["data"]
+labels: ["情報提供"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        情報提供ありがとうございます。分かる範囲で大丈夫です（**必須は企業・団体名と出典URLだけ**）。
+        いただいた情報をもとに、メンテナーが公式発表を確認して掲載します。
   - type: input
     id: organization
     attributes:
       label: 企業・団体名
+      placeholder: 株式会社サンプル
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 出典URL
+      description: 公式発表（お知らせ・プレスリリース）があれば優先して、ニュース記事でも構いません。複数あれば改行して書いてください
+      placeholder: |
+        https://example.com/news/2026/1001
+        https://www.example-news.jp/article/12345
     validations:
       required: true
   - type: input
     id: services
     attributes:
-      label: 影響を受けたサービス・サイト
+      label: 影響を受けたサービス・サイト（分かれば）
+      placeholder: サンプルオンラインストア、公式アプリ など
   - type: input
     id: date_announced
     attributes:
-      label: 公表日
-      placeholder: 2025-01-31
-    validations:
-      required: true
+      label: 公表日（分かれば）
+      placeholder: 2026-10-01
   - type: input
     id: affected_count
     attributes:
-      label: 漏洩件数（判明していれば）
-  - type: textarea
-    id: sources
+      label: 漏洩件数（分かれば）
+      placeholder: 最大12,345件、調査中 など
+  - type: dropdown
+    id: cause
     attributes:
-      label: 出典URL
-      description: 公式発表のURLを優先してください
-    validations:
-      required: true
+      label: 原因（分かれば）
+      options:
+        - 分からない
+        - 不正アクセス
+        - ランサムウェア
+        - 脆弱性の悪用
+        - 設定ミス
+        - フィッシング
+        - 委託先・関連会社経由
+        - 誤送信・人的ミス
+        - 紛失・盗難
+        - 内部不正
+        - その他
+  - type: textarea
+    id: data_types
+    attributes:
+      label: 漏洩した情報（分かれば）
+      placeholder: 氏名、メールアドレス、電話番号、クレジットカード情報 など
   - type: textarea
     id: notes
     attributes:
       label: 補足
+      description: そのほか気づいたことがあれば
