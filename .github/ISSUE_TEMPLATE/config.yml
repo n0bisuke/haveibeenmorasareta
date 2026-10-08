@@ -1,1 +1,5 @@
 blank_issues_enabled: true
+contact_links:
+  - name: 自分でデータを追加・修正する（PR の作り方）
+    url: https://github.com/n0bisuke/haveibeenmorasareta/blob/main/CONTRIBUTING.md
+    about: YAML ファイルを1つ追加するだけで掲載できます。書き方はこちら
