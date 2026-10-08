@@ -3,6 +3,19 @@ import { CAUSES, showUpdated } from './labels.js';
 const $ = (id) => document.getElementById(id);
 const nf = new Intl.NumberFormat('ja-JP');
 const fmtDate = (s) => s.replaceAll('-', '/');
+// 情報の信頼度（scripts/build.mjs が出典から判定。low はデータで指定）
+const RELIABILITY = {
+  high: { label: '高', dots: 3, text: '公式発表で確認' },
+  mid: { label: '中', dots: 2, text: '報道で確認（公式発表は出典に未掲載）' },
+  low: { label: '低', dots: 1, text: '一次情報が未確認（まとめサイトなど）' },
+};
+function reliabilityEl(b) {
+  const r = RELIABILITY[b.reliability];
+  if (!r) return null;
+  const span = Object.assign(document.createElement('span'), { className: `reliability r-${b.reliability}`, title: `情報の信頼度：${r.label}（${r.text}）` });
+  span.append('信頼度', ...[1, 2, 3].map((i) => Object.assign(document.createElement('i'), { className: i <= r.dots ? 'on' : '' })), r.text);
+  return span;
+}
 
 const { breaches, generated_at, severity_levels: LEVELS, data_types: TYPES, vuln_targets: VULN = [], attack_methods: ATTACKS = [] } = await fetch('breaches.json').then((r) => r.json());
 // データを追加した人（デプロイ時に生成。無ければアイコンを出さない）
@@ -16,7 +29,7 @@ const LEVEL = Object.fromEntries(LEVELS.map((l) => [l.id, l]));
 for (const b of breaches) {
   b._text = [b.organization, b.group, b.root_cause, b.vendor?.name, b.vendor?.group, ...(b.services ?? []), ...(b.data_types ?? []), ...[b.industry ?? []].flat(), b.prefecture, b.summary, CAUSES[b.cause], VULN_LABEL[b.vuln_target],
     ...(b.attack_methods ?? []).map((m) => ATTACK_LABEL[m]),
-    b.status === 'investigating' && '調査中'].filter(Boolean).join(' ').toLowerCase();
+    b.status === 'investigating' && '企業側が調査中', `信頼度${RELIABILITY[b.reliability]?.label ?? ''}`].filter(Boolean).join(' ').toLowerCase();
 }
 
 function fillSelect(select, values, label = (v) => v) {
@@ -37,22 +50,22 @@ $('legend').replaceChildren(...LEVELS.map((l) => {
 // URL のクエリと状態を同期（共有用）
 const params = new URLSearchParams(location.search);
 for (const key of ['q', 'year', 'cause', 'sev', 'sort']) if (params.has(key)) $(key).value = params.get(key);
-// 「調査中」の事案だけに絞る（統計の「調査中」から切り替え）
+// 「企業側が調査中」の事案だけに絞る（統計の「企業側が調査中」から切り替え）
 let onlyInvestigating = params.get('status') === 'investigating';
 
 function renderStats() {
   const total = breaches.reduce((n, b) => n + (b.affected_count ?? 0), 0);
   const investigating = breaches.filter((b) => b.status === 'investigating').length;
   const stats = [['掲載件数', `${nf.format(breaches.length)} 件`], ['漏洩件数の合計', `${nf.format(total)}`]];
-  if (investigating) stats.push(['調査中', `${nf.format(investigating)} 件`, true]);
+  if (investigating) stats.push(['企業側が調査中', `${nf.format(investigating)} 件`, true]);
   $('stats').replaceChildren(...stats.map(([k, v, toggle]) => {
     const div = document.createElement('div');
     const dt = document.createElement('dt');
     const dd = document.createElement('dd');
     dt.textContent = k;
     if (toggle) {
-      // クリックで調査中の事案だけを表示する
-      const btn = Object.assign(document.createElement('button'), { type: 'button', className: 'stat-toggle', textContent: v, title: '調査中の事案だけを表示' });
+      // クリックで企業側が調査中の事案だけを表示する
+      const btn = Object.assign(document.createElement('button'), { type: 'button', className: 'stat-toggle', textContent: v, title: '企業側が調査中の事案だけを表示' });
       btn.setAttribute('aria-pressed', String(onlyInvestigating));
       btn.addEventListener('click', () => {
         onlyInvestigating = !onlyInvestigating;
@@ -110,7 +123,21 @@ function renderItem(b) {
     b.vendor && `委託先 ${b.vendor.name.replace(/株式会社/g, '')}`,
     ...[b.industry ?? []].flat(),
   ].filter(Boolean);
-  el.querySelector('.meta').replaceChildren(...meta.map((t) => Object.assign(document.createElement('span'), { textContent: t })));
+  el.querySelector('.meta').replaceChildren(...meta.map((t) => Object.assign(document.createElement('span'), { textContent: t })), ...[reliabilityEl(b)].filter(Boolean));
+  // 信頼度「低」の事案は、一次情報の情報提供を募集する
+  const lowNote = el.querySelector('.low-reliability');
+  if (b.reliability === 'low') {
+    lowNote.hidden = false;
+    const link = lowNote.querySelector('a');
+    if (b.issue) {
+      link.href = b.issue;
+      link.textContent = `Issue #${b.issue.split('/').pop()}`;
+    } else {
+      link.replaceWith('Issue');
+    }
+  } else {
+    lowNote.remove();
+  }
   if (b.root_cause) el.querySelector('.root-cause-text').textContent = b.root_cause;
   else el.querySelector('.root-cause').remove();
   el.querySelector('.summary').textContent = b.summary;
@@ -170,7 +197,7 @@ function render() {
         ? (a, b) => (b.disclosure_days ?? -1) - (a.disclosure_days ?? -1)
         : (a, b) => b.date_announced.localeCompare(a.date_announced));
 
-  $('result-count').textContent = `${onlyInvestigating ? '調査中の事案のみ・' : ''}${nf.format(items.length)} 件を表示`;
+  $('result-count').textContent = `${onlyInvestigating ? '企業側が調査中の事案のみ・' : ''}${nf.format(items.length)} 件を表示`;
   $('list').replaceChildren(...(items.length
     ? items.map(renderItem)
     : [Object.assign(document.createElement('li'), { className: 'empty', textContent: '該当するデータがありません' })]));

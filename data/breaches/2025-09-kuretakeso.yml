@@ -1,7 +1,7 @@
 organization: 株式会社呉竹荘
 industry: 旅行
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-09-12
 affected_count: 3400

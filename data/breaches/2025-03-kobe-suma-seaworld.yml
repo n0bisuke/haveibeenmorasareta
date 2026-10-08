@@ -3,7 +3,7 @@ industry:
   - エンタメ・スポーツ
   - 行政
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-03-19
 affected_count: 12931

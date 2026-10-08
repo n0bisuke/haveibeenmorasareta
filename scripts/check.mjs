@@ -53,6 +53,9 @@ export async function createChecker() {
     if (data.status === 'investigating' && !data.issue) {
       fail('status: investigating の事案には、情報募集用の issue（GitHub Issue の URL）を指定してください');
     }
+    if (data.reliability === 'low' && !data.issue) {
+      fail('reliability: low の事案には、情報募集用の issue（GitHub Issue の URL）を指定してください');
+    }
     if (data.vuln_target && !vulnTargets.has(data.vuln_target)) {
       fail(`vuln_target の「${data.vuln_target}」は data/vuln-targets.yml に登録されていません`);
     }

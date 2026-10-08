@@ -1,7 +1,7 @@
 organization: みずほ信託銀行株式会社
 industry: 金融・保険
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-04-24
 affected_count: 2472

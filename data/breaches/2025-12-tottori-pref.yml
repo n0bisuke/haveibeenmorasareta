@@ -3,7 +3,7 @@ industry: 行政
 country: JP
 org_type: local_gov
 prefecture: 鳥取県
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-12-09
 affected_count: 1495

@@ -5,7 +5,7 @@ industry:
 country: JP
 org_type: hospital
 prefecture: 大阪府
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/35
 date_occurred: 2024-11-28
 date_announced: 2024-12-03

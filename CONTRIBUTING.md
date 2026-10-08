@@ -23,8 +23,9 @@
 | `country` | | 国コード（`JP` など） |
 | `org_type` | | 民間企業以外の組織の種類。[`data/org-types.yml`](data/org-types.yml) の ID（`local_gov` 自治体 / `national_gov` 国の機関 / `public_agency` 独立行政法人・研究機関など / `university` 大学・学校 / `hospital` 病院 / `public_org` 公益法人・団体 / `regional_bank` 地方銀行・信用金庫など）。民間企業には書かない（地域の金融機関は例外） |
 | `prefecture` | | 組織の所在地の都道府県（`大阪府` など）。`org_type` を書いたときは必須で、ビジュアライズの地域別マップに表示されます |
-| `status` | | 件数・漏えいの有無などが調査中なら `investigating`。サイトに「調査中」と表示されます |
-| `issue` | | `status: investigating` のとき必須。情報を募集する GitHub Issue の URL（ラベル「調査中」） |
+| `status` | | 企業が件数・漏えいの有無などを調査中と公表しているなら `investigating`。サイトに「企業側が調査中」と表示されます |
+| `reliability` | | 公式発表や信頼できる報道（一次情報）を確認できていない（まとめサイトにしか載っていないなど）なら `low`。サイトに信頼度「低」と表示されます。高（出典に公式発表あり）・中（報道のみ）は出典から自動で判定します |
+| `issue` | | `status: investigating` または `reliability: low` のとき必須。情報を募集する GitHub Issue の URL（ラベル「企業側が調査中」または「一次情報募集」） |
 | `date_occurred` | | 発生日 `YYYY-MM-DD` |
 | `date_announced` | ✔ | 最初の公表日 `YYYY-MM-DD` |
 | `affected_count` | | 漏洩（の可能性がある）件数。不明なら `null` |
@@ -86,3 +87,15 @@ npm ci
 npm run validate   # データの検証のみ
 npm run dev        # ビルドしてローカルサーバーで表示
 ```
+
+## 情報の信頼度
+
+一覧や個別ページには、出典をもとにした「情報の信頼度」を3段階で表示します。
+
+| 信頼度 | 条件 |
+|---|---|
+| 高 | 出典に公式発表（タイトルに「公式」「発表」「お知らせ」「お詫び」「プレスリリース」などを含むもの）がある |
+| 中 | 報道で確認できているが、公式発表は出典にない |
+| 低 | `reliability: low` を指定した事案（一次情報が未確認） |
+
+公式発表の出典を追加するときは、タイトルを「〇〇株式会社 公式発表」のようにしてください。信頼度が「高」になります。

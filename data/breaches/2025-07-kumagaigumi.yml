@@ -1,7 +1,7 @@
 organization: 株式会社熊谷組
 industry: 不動産
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-07-04
 affected_count: 1238

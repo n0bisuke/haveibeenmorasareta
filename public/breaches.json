@@ -500,7 +500,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 300
+      "disclosure_days": 300,
+      "reliability": "high"
     },
     {
       "id": "2026-10-idcf",
@@ -533,7 +534,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 0
+      "disclosure_days": 0,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-iwate-bank",
@@ -569,7 +571,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 5
+      "disclosure_days": 5,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-nissui-logistics",
@@ -601,7 +604,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 0
+      "disclosure_days": 0,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-sompo-japan",
@@ -639,7 +643,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 5
+      "disclosure_days": 5,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-tobu-railway",
@@ -671,7 +676,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 5
+      "disclosure_days": 5,
+      "reliability": "high"
     },
     {
       "id": "2026-10-toda",
@@ -704,7 +710,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 6
+      "disclosure_days": 6,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-asahi-kasei-therapeutics",
@@ -740,7 +747,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-citizen",
@@ -778,7 +786,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 4
+      "disclosure_days": 4,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-mrmax",
@@ -812,7 +821,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 3
+      "disclosure_days": 3,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-nimoca",
@@ -844,7 +854,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 2
+      "disclosure_days": 2,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-offerbox",
@@ -876,7 +887,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 147
+      "disclosure_days": 147,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-rakuten-drive",
@@ -913,7 +925,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 250
+      "disclosure_days": 250,
+      "reliability": "high"
     },
     {
       "id": "2026-10-daiwa-securities",
@@ -955,7 +968,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 3
+      "disclosure_days": 3,
+      "reliability": "high"
     },
     {
       "id": "2026-10-fukuroi-kita-es",
@@ -992,7 +1006,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-gmo-research",
@@ -1036,7 +1051,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 2
+      "disclosure_days": 2,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-omu",
@@ -1078,7 +1094,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 3
+      "disclosure_days": 3,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-taiki-suisan",
@@ -1113,7 +1130,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 20
+      "disclosure_days": 20,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-yakiniku-king",
@@ -1146,7 +1164,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 3
+      "disclosure_days": 3,
+      "reliability": "high"
     },
     {
       "id": "2026-10-nikkei",
@@ -1184,7 +1203,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-nikkei-bp",
@@ -1221,7 +1241,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 4
+      "disclosure_days": 4,
+      "reliability": "high"
     },
     {
       "id": "2026-10-abahouse",
@@ -1263,7 +1284,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 6
+      "disclosure_days": 6,
+      "reliability": "high"
     },
     {
       "id": "2026-10-studysapuri",
@@ -1296,7 +1318,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 3
+      "disclosure_days": 3,
+      "reliability": "high"
     },
     {
       "id": "2026-10-daiichi-life",
@@ -1322,7 +1345,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 8
+      "disclosure_days": 8,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-etax",
@@ -1358,7 +1382,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 8
+      "disclosure_days": 8,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-jogmec",
@@ -1390,7 +1415,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-10-nichii",
@@ -1420,7 +1446,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 2335
+      "disclosure_days": 2335,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-jaea",
@@ -1465,7 +1492,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 6
+      "disclosure_days": 6,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-lashinbang",
@@ -1506,7 +1534,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 17
+      "disclosure_days": 17,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-sagawa",
@@ -1537,7 +1566,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-ticketplus",
@@ -1574,7 +1604,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 3
+      "disclosure_days": 3,
+      "reliability": "mid"
     },
     {
       "id": "2026-09-benefit-one",
@@ -1608,7 +1639,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-09-gpoint",
@@ -1642,7 +1674,8 @@
         }
       ],
       "severity": "low",
-      "disclosure_days": 5
+      "disclosure_days": 5,
+      "reliability": "high"
     },
     {
       "id": "2026-09-shudo-gakuen",
@@ -1683,7 +1716,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 4
+      "disclosure_days": 4,
+      "reliability": "high"
     },
     {
       "id": "2026-09-yoshinoya",
@@ -1728,7 +1762,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-09-eplus",
@@ -1757,7 +1792,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 18
+      "disclosure_days": 18,
+      "reliability": "mid"
     },
     {
       "id": "2026-09-fukuoka-pref",
@@ -1798,7 +1834,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 39
+      "disclosure_days": 39,
+      "reliability": "high"
     },
     {
       "id": "2026-09-japanpost-app",
@@ -1833,7 +1870,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 4
+      "disclosure_days": 4,
+      "reliability": "mid"
     },
     {
       "id": "2026-09-seicomart",
@@ -1870,7 +1908,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 5
+      "disclosure_days": 5,
+      "reliability": "high"
     },
     {
       "id": "2026-09-shizuoka-boe",
@@ -1903,7 +1942,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-09-sompo-japan-toppan",
@@ -1944,7 +1984,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 28
+      "disclosure_days": 28,
+      "reliability": "high"
     },
     {
       "id": "2026-09-yamato",
@@ -1977,7 +2018,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 1
+      "disclosure_days": 1,
+      "reliability": "mid"
     },
     {
       "id": "2026-09-resona-bank",
@@ -2003,7 +2045,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-09-shueisha",
@@ -2038,7 +2081,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-09-ozmall",
@@ -2072,7 +2116,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 1
+      "disclosure_days": 1,
+      "reliability": "mid"
     },
     {
       "id": "2026-09-tokyo-metro",
@@ -2098,7 +2143,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 2
+      "disclosure_days": 2,
+      "reliability": "mid"
     },
     {
       "id": "2026-09-nippon-rentacar",
@@ -2136,7 +2182,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 7
+      "disclosure_days": 7,
+      "reliability": "high"
     },
     {
       "id": "2026-09-fines",
@@ -2165,7 +2212,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 3
+      "disclosure_days": 3,
+      "reliability": "mid"
     },
     {
       "id": "2026-09-timescar",
@@ -2208,7 +2256,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 0
+      "disclosure_days": 0,
+      "reliability": "high"
     },
     {
       "id": "2026-09-ikegami",
@@ -2235,7 +2284,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 3
+      "disclosure_days": 3,
+      "reliability": "high"
     },
     {
       "id": "2026-09-chibagin-shoten",
@@ -2274,7 +2324,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 14
+      "disclosure_days": 14,
+      "reliability": "high"
     },
     {
       "id": "2026-09-gyazo",
@@ -2307,7 +2358,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 5
+      "disclosure_days": 5,
+      "reliability": "mid"
     },
     {
       "id": "2026-09-photogoods",
@@ -2358,7 +2410,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 41
+      "disclosure_days": 41,
+      "reliability": "high"
     },
     {
       "id": "2026-09-ainokaze",
@@ -2395,7 +2448,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 13
+      "disclosure_days": 13,
+      "reliability": "high"
     },
     {
       "id": "2026-09-lean-body",
@@ -2416,7 +2470,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-09-odawara-engineering",
@@ -2444,7 +2499,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 172
+      "disclosure_days": 172,
+      "reliability": "mid"
     },
     {
       "id": "2026-09-digital-agency-gss",
@@ -2482,7 +2538,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 78
+      "disclosure_days": 78,
+      "reliability": "mid"
     },
     {
       "id": "2026-09-ieej",
@@ -2523,7 +2580,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 44
+      "disclosure_days": 44,
+      "reliability": "high"
     },
     {
       "id": "2026-09-kyoto-sanga",
@@ -2555,7 +2613,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 6
+      "disclosure_days": 6,
+      "reliability": "mid"
     },
     {
       "id": "2026-09-osaka-high-court",
@@ -2586,7 +2645,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 8
+      "disclosure_days": 8,
+      "reliability": "high"
     },
     {
       "id": "2026-09-moomoo-japan",
@@ -2596,7 +2656,7 @@
       ],
       "industry": "エンタメ・スポーツ",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/33",
       "date_occurred": "2026-09-01",
       "date_announced": "2026-09-03",
@@ -2642,7 +2702,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-08-kindoll",
@@ -2681,7 +2742,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 6
+      "disclosure_days": 6,
+      "reliability": "mid"
     },
     {
       "id": "2026-08-yellowhat",
@@ -2718,7 +2780,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 10
+      "disclosure_days": 10,
+      "reliability": "mid"
     },
     {
       "id": "2026-08-coo",
@@ -2742,7 +2805,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-08-nagaizumi-town",
@@ -2754,7 +2818,7 @@
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "静岡県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/35",
       "date_announced": "2026-08-25",
       "affected_count": null,
@@ -2804,7 +2868,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 13
+      "disclosure_days": 13,
+      "reliability": "mid"
     },
     {
       "id": "2026-08-rakuten-books",
@@ -2838,7 +2903,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 138
+      "disclosure_days": 138,
+      "reliability": "high"
     },
     {
       "id": "2026-08-kota",
@@ -2863,7 +2929,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 146
+      "disclosure_days": 146,
+      "reliability": "mid"
     },
     {
       "id": "2026-08-beer-engawa",
@@ -2903,7 +2970,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 7
+      "disclosure_days": 7,
+      "reliability": "mid"
     },
     {
       "id": "2026-08-voising",
@@ -2944,7 +3012,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 8
+      "disclosure_days": 8,
+      "reliability": "mid"
     },
     {
       "id": "2026-08-weblife",
@@ -2972,7 +3041,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 4
+      "disclosure_days": 4,
+      "reliability": "mid"
     },
     {
       "id": "2026-08-kbc-gakuen",
@@ -2996,7 +3066,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-08-kyoiku-software",
@@ -3023,7 +3094,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 109
+      "disclosure_days": 109,
+      "reliability": "mid"
     },
     {
       "id": "2026-08-sakura-internet",
@@ -3058,7 +3130,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-08-charm",
@@ -3094,7 +3167,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-08-omu-hospital",
@@ -3124,7 +3198,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 315
+      "disclosure_days": 315,
+      "reliability": "mid"
     },
     {
       "id": "2026-08-white-essence",
@@ -3171,7 +3246,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 7
+      "disclosure_days": 7,
+      "reliability": "high"
     },
     {
       "id": "2026-08-nice",
@@ -3200,7 +3276,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 15
+      "disclosure_days": 15,
+      "reliability": "mid"
     },
     {
       "id": "2026-08-chubu-electric",
@@ -3240,7 +3317,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 6
+      "disclosure_days": 6,
+      "reliability": "mid"
     },
     {
       "id": "2026-08-kodansha",
@@ -3273,7 +3351,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 4
+      "disclosure_days": 4,
+      "reliability": "high"
     },
     {
       "id": "2026-08-estore-shopserve",
@@ -3313,7 +3392,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 72
+      "disclosure_days": 72,
+      "reliability": "mid"
     },
     {
       "id": "2026-07-epark",
@@ -3353,7 +3433,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 4
+      "disclosure_days": 4,
+      "reliability": "high"
     },
     {
       "id": "2026-07-murauchi",
@@ -3387,7 +3468,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 9
+      "disclosure_days": 9,
+      "reliability": "mid"
     },
     {
       "id": "2026-07-ocs",
@@ -3426,7 +3508,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-07-sagawa-smartclub",
@@ -3458,7 +3541,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 4
+      "disclosure_days": 4,
+      "reliability": "mid"
     },
     {
       "id": "2026-07-k9natural",
@@ -3477,7 +3561,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-07-omic",
@@ -3487,7 +3572,7 @@
         "食品"
       ],
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
       "date_announced": "2026-07-14",
       "affected_count": 1000,
@@ -3513,7 +3598,7 @@
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "富山県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
       "date_announced": "2026-07-13",
       "affected_count": 1380,
@@ -3554,7 +3639,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-07-tv-asahi-mediaplex",
@@ -3590,7 +3676,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 76
+      "disclosure_days": 76,
+      "reliability": "mid"
     },
     {
       "id": "2026-07-kyorin",
@@ -3602,7 +3689,7 @@
       "country": "JP",
       "org_type": "university",
       "prefecture": "東京都",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
       "date_announced": "2026-07-07",
       "affected_count": 2500,
@@ -3645,7 +3732,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 12
+      "disclosure_days": 12,
+      "reliability": "mid"
     },
     {
       "id": "2026-07-unimat-life",
@@ -3664,7 +3752,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-07-abc-ainex",
@@ -3701,7 +3790,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 14
+      "disclosure_days": 14,
+      "reliability": "mid"
     },
     {
       "id": "2026-07-kaga-solnet",
@@ -3739,7 +3829,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 9
+      "disclosure_days": 9,
+      "reliability": "mid"
     },
     {
       "id": "2026-06-aflac",
@@ -3775,7 +3866,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 15
+      "disclosure_days": 15,
+      "reliability": "mid"
     },
     {
       "id": "2026-06-norinchukin",
@@ -3798,7 +3890,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-06-komatsushima-city",
@@ -3807,7 +3900,7 @@
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "徳島県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
       "date_announced": "2026-06-25",
       "affected_count": 1906,
@@ -3854,7 +3947,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 6
+      "disclosure_days": 6,
+      "reliability": "high"
     },
     {
       "id": "2026-06-sado-city",
@@ -3885,7 +3979,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 3
+      "disclosure_days": 3,
+      "reliability": "mid"
     },
     {
       "id": "2026-06-komatsu",
@@ -3908,7 +4003,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-06-sagahirakawaya",
@@ -3939,7 +4035,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-06-kawagoe-cci",
@@ -3969,7 +4066,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 4
+      "disclosure_days": 4,
+      "reliability": "mid"
     },
     {
       "id": "2026-06-kaizen-tech-agent",
@@ -3995,7 +4093,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 237
+      "disclosure_days": 237,
+      "reliability": "mid"
     },
     {
       "id": "2026-06-kyuden-td",
@@ -4025,7 +4124,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-06-en-middle",
@@ -4052,7 +4152,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 10
+      "disclosure_days": 10,
+      "reliability": "mid"
     },
     {
       "id": "2026-06-visual-arts",
@@ -4081,7 +4182,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-06-fujita-hospital",
@@ -4109,7 +4211,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 9
+      "disclosure_days": 9,
+      "reliability": "mid"
     },
     {
       "id": "2026-06-kmu-hospital",
@@ -4139,7 +4242,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-05-asoview",
@@ -4177,7 +4281,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 8
+      "disclosure_days": 8,
+      "reliability": "mid"
     },
     {
       "id": "2026-05-universal-music",
@@ -4214,7 +4319,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-05-jr-takashimaya",
@@ -4245,7 +4351,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 7
+      "disclosure_days": 7,
+      "reliability": "mid"
     },
     {
       "id": "2026-05-aeon-mall",
@@ -4283,7 +4390,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 26
+      "disclosure_days": 26,
+      "reliability": "mid"
     },
     {
       "id": "2026-04-2rinkan",
@@ -4327,7 +4435,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 3
+      "disclosure_days": 3,
+      "reliability": "mid"
     },
     {
       "id": "2026-04-daiwa-lease",
@@ -4371,7 +4480,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 37
+      "disclosure_days": 37,
+      "reliability": "mid"
     },
     {
       "id": "2026-04-yamagata-city-ycc",
@@ -4414,7 +4524,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 14
+      "disclosure_days": 14,
+      "reliability": "high"
     },
     {
       "id": "2026-04-nyk",
@@ -4445,14 +4556,15 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 16
+      "disclosure_days": 16,
+      "reliability": "mid"
     },
     {
       "id": "2026-04-tein",
       "organization": "株式会社テイン",
       "industry": "製造",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
       "date_announced": "2026-04-08",
       "affected_count": 7304,
@@ -4492,7 +4604,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-04-yoshimoto",
@@ -4526,14 +4639,15 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 3
+      "disclosure_days": 3,
+      "reliability": "high"
     },
     {
       "id": "2026-03-lawson-bank",
       "organization": "株式会社ローソン銀行",
       "industry": "金融・保険",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
       "date_announced": "2026-03-31",
       "affected_count": 5373,
@@ -4575,7 +4689,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-03-fukuoka-bank",
@@ -4603,7 +4718,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 847
+      "disclosure_days": 847,
+      "reliability": "mid"
     },
     {
       "id": "2026-03-zetton",
@@ -4626,7 +4742,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-03-joyfull",
@@ -4652,7 +4769,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 56
+      "disclosure_days": 56,
+      "reliability": "mid"
     },
     {
       "id": "2026-03-moonstar",
@@ -4688,7 +4806,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-03-osaka-marathon",
@@ -4714,7 +4833,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-03-mazda",
@@ -4745,7 +4865,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-03-nhk",
@@ -4776,7 +4897,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 1
+      "disclosure_days": 1,
+      "reliability": "mid"
     },
     {
       "id": "2026-03-medica",
@@ -4811,7 +4933,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 4
+      "disclosure_days": 4,
+      "reliability": "high"
     },
     {
       "id": "2026-03-united-arrows",
@@ -4842,7 +4965,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 71
+      "disclosure_days": 71,
+      "reliability": "mid"
     },
     {
       "id": "2026-03-murata",
@@ -4878,7 +5002,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 6
+      "disclosure_days": 6,
+      "reliability": "mid"
     },
     {
       "id": "2026-03-sony-music-shop",
@@ -4892,7 +5017,7 @@
         "小売・EC"
       ],
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/33",
       "date_announced": "2026-03-05",
       "affected_count": null,
@@ -4933,7 +5058,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-02-nms-musashikosugi",
@@ -4974,7 +5100,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 4
+      "disclosure_days": 4,
+      "reliability": "mid"
     },
     {
       "id": "2026-02-gala-yuzawa",
@@ -4997,7 +5124,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-02-mynavi",
@@ -5028,7 +5156,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 69
+      "disclosure_days": 69,
+      "reliability": "mid"
     },
     {
       "id": "2026-02-anabuki-housing",
@@ -5060,7 +5189,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 0
+      "disclosure_days": 0,
+      "reliability": "high"
     },
     {
       "id": "2026-02-osaka-kyoiku-univ",
@@ -5069,7 +5199,7 @@
       "country": "JP",
       "org_type": "university",
       "prefecture": "大阪府",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
       "date_announced": "2026-02-03",
       "affected_count": 2376,
@@ -5115,7 +5245,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-01-jr-kyushu",
@@ -5142,7 +5273,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 94
+      "disclosure_days": 94,
+      "reliability": "mid"
     },
     {
       "id": "2025-12-awa-bank",
@@ -5169,7 +5301,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 176
+      "disclosure_days": 176,
+      "reliability": "mid"
     },
     {
       "id": "2025-12-furusato-shimane",
@@ -5181,7 +5314,7 @@
       "country": "JP",
       "org_type": "public_org",
       "prefecture": "島根県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-12-23",
       "affected_count": 1238,
@@ -5236,7 +5369,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 88
+      "disclosure_days": 88,
+      "reliability": "mid"
     },
     {
       "id": "2025-12-tokushima-univ-hospital",
@@ -5268,7 +5402,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 72
+      "disclosure_days": 72,
+      "reliability": "mid"
     },
     {
       "id": "2025-12-iqb",
@@ -5277,7 +5412,7 @@
       "country": "JP",
       "org_type": "university",
       "prefecture": "東京都",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-12-19",
       "affected_count": 1323,
@@ -5313,7 +5448,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-12-kurashiki-central-hospital",
@@ -5322,7 +5458,7 @@
       "country": "JP",
       "org_type": "hospital",
       "prefecture": "岡山県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-12-15",
       "affected_count": 1162,
@@ -5345,7 +5481,7 @@
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "鳥取県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-12-09",
       "affected_count": 1495,
@@ -5366,7 +5502,7 @@
       "organization": "TAC株式会社",
       "industry": "人材・教育",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-12-04",
       "affected_count": 1315,
@@ -5409,7 +5545,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 94
+      "disclosure_days": 94,
+      "reliability": "mid"
     },
     {
       "id": "2025-11-tokai-univ",
@@ -5455,14 +5592,15 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2025-11-nishimura-securities",
       "organization": "西村証券株式会社",
       "industry": "金融・保険",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-11-07",
       "affected_count": 4104,
@@ -5515,14 +5653,15 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-10-officebusters",
       "organization": "株式会社オフィスバスターズ",
       "industry": "小売・EC",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-10-31",
       "affected_count": 1703,
@@ -5566,7 +5705,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-10-askul",
@@ -5604,7 +5744,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 0
+      "disclosure_days": 0,
+      "reliability": "mid"
     },
     {
       "id": "2025-10-jrbus-kanto",
@@ -5632,7 +5773,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 4
+      "disclosure_days": 4,
+      "reliability": "mid"
     },
     {
       "id": "2025-10-medics",
@@ -5655,7 +5797,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 10
+      "disclosure_days": 10,
+      "reliability": "mid"
     },
     {
       "id": "2025-10-sekisho",
@@ -5675,14 +5818,15 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-10-space",
       "organization": "株式会社スペース",
       "industry": "IT・通信",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-10-07",
       "affected_count": 4200,
@@ -5735,7 +5879,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 4
+      "disclosure_days": 4,
+      "reliability": "high"
     },
     {
       "id": "2025-10-mynavi-misconfig",
@@ -5761,7 +5906,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-09-brewtope",
@@ -5787,7 +5933,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-09-starbucks",
@@ -5818,14 +5965,15 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-09-kuretakeso",
       "organization": "株式会社呉竹荘",
       "industry": "旅行",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-09-12",
       "affected_count": 3400,
@@ -5873,7 +6021,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 5
+      "disclosure_days": 5,
+      "reliability": "mid"
     },
     {
       "id": "2025-09-mitsuuroko",
@@ -5892,7 +6041,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-09-rachi",
@@ -5916,7 +6066,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 15
+      "disclosure_days": 15,
+      "reliability": "mid"
     },
     {
       "id": "2025-08-huis-ten-bosch",
@@ -5955,7 +6106,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 0
+      "disclosure_days": 0,
+      "reliability": "mid"
     },
     {
       "id": "2025-08-koto-city",
@@ -5967,7 +6119,7 @@
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "東京都",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-08-28",
       "affected_count": 1000,
@@ -5990,7 +6142,7 @@
       "country": "JP",
       "org_type": "regional_bank",
       "prefecture": "福島県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/35",
       "date_occurred": "2024-03-08",
       "date_announced": "2025-08-22",
@@ -6021,7 +6173,7 @@
       "organization": "株式会社エコ配",
       "industry": "物流",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-08-12",
       "affected_count": 149063,
@@ -6058,7 +6210,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 8
+      "disclosure_days": 8,
+      "reliability": "mid"
     },
     {
       "id": "2025-08-surugaya",
@@ -6099,7 +6252,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 16
+      "disclosure_days": 16,
+      "reliability": "high"
     },
     {
       "id": "2025-08-gujo-hachiman",
@@ -6131,7 +6285,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-07-total-mariage",
@@ -6153,14 +6308,15 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-07-kumagaigumi",
       "organization": "株式会社熊谷組",
       "industry": "不動産",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-07-04",
       "affected_count": 1238,
@@ -6207,7 +6363,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-06-pal",
@@ -6234,7 +6391,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 5
+      "disclosure_days": 5,
+      "reliability": "mid"
     },
     {
       "id": "2025-06-daiso",
@@ -6254,7 +6412,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-06-nagoya-univ",
@@ -6263,7 +6422,7 @@
       "country": "JP",
       "org_type": "university",
       "prefecture": "愛知県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-06-17",
       "affected_count": 1600,
@@ -6313,14 +6472,15 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-06-mizuho-bank",
       "organization": "株式会社みずほ銀行",
       "industry": "金融・保険",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-06-14",
       "affected_count": 5572,
@@ -6343,7 +6503,7 @@
       "country": "JP",
       "org_type": "university",
       "prefecture": "大阪府",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-06-13",
       "affected_count": 9213,
@@ -6384,14 +6544,15 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-06-shinchosa",
       "organization": "株式会社審調社",
       "industry": "金融・保険",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-06-05",
       "affected_count": 102700,
@@ -6416,7 +6577,7 @@
       "organization": "株式会社アルバイトタイムス",
       "industry": "人材・教育",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-06-02",
       "affected_count": 1809,
@@ -6442,7 +6603,7 @@
       "country": "JP",
       "org_type": "university",
       "prefecture": "秋田県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-05-30",
       "affected_count": 1500,
@@ -6486,7 +6647,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-05-fordays",
@@ -6509,7 +6671,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 397
+      "disclosure_days": 397,
+      "reliability": "mid"
     },
     {
       "id": "2025-05-yamagata-univ",
@@ -6518,7 +6681,7 @@
       "country": "JP",
       "org_type": "university",
       "prefecture": "山形県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-05-12",
       "affected_count": 2619,
@@ -6574,14 +6737,15 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 13
+      "disclosure_days": 13,
+      "reliability": "mid"
     },
     {
       "id": "2025-05-morioka-gas",
       "organization": "盛岡ガス燃料株式会社",
       "industry": "エネルギー・インフラ",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-05-02",
       "affected_count": 2200,
@@ -6614,7 +6778,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-04-kansai-airport",
@@ -6638,7 +6803,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-04-chugoku-electric",
@@ -6663,7 +6829,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 4
+      "disclosure_days": 4,
+      "reliability": "mid"
     },
     {
       "id": "2025-04-acrylic",
@@ -6686,7 +6853,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 9
+      "disclosure_days": 9,
+      "reliability": "mid"
     },
     {
       "id": "2025-04-konaka",
@@ -6711,14 +6879,15 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-04-mizuho-trust",
       "organization": "みずほ信託銀行株式会社",
       "industry": "金融・保険",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-04-24",
       "affected_count": 2472,
@@ -6768,7 +6937,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-04-iij",
@@ -6803,14 +6973,15 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 255
+      "disclosure_days": 255,
+      "reliability": "mid"
     },
     {
       "id": "2025-04-hotstrap",
       "organization": "ユー・アンド・アース株式会社",
       "industry": "小売・EC",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-04-08",
       "affected_count": 1506,
@@ -6858,7 +7029,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-03-gaora",
@@ -6869,7 +7041,7 @@
         "小売・EC"
       ],
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-03-31",
       "affected_count": 16795,
@@ -6894,7 +7066,7 @@
       "organization": "株式会社荒畑園",
       "industry": "小売・EC",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-03-25",
       "affected_count": 73684,
@@ -6945,7 +7117,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-03-hokkaido-jalan",
@@ -6978,7 +7151,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-03-kobe-suma-seaworld",
@@ -6988,7 +7162,7 @@
         "行政"
       ],
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-03-19",
       "affected_count": 12931,
@@ -7009,7 +7183,7 @@
       "organization": "日本マクドナルド株式会社",
       "industry": "飲食",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-03-19",
       "affected_count": 8989,
@@ -7030,7 +7204,7 @@
       "organization": "はたけなか製麺株式会社",
       "industry": "食品",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-03-17",
       "affected_count": 4142,
@@ -7056,7 +7230,7 @@
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "静岡県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-03-14",
       "affected_count": 1455,
@@ -7090,7 +7264,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 9
+      "disclosure_days": 9,
+      "reliability": "mid"
     },
     {
       "id": "2025-03-ntt-com",
@@ -7126,14 +7301,15 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 28
+      "disclosure_days": 28,
+      "reliability": "mid"
     },
     {
       "id": "2025-02-kashiwazaki-seika",
       "organization": "有限会社柏崎青果",
       "industry": "小売・EC",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-02-25",
       "affected_count": 1198,
@@ -7172,7 +7348,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 1787
+      "disclosure_days": 1787,
+      "reliability": "high"
     },
     {
       "id": "2025-02-sony-music-shop",
@@ -7207,14 +7384,15 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 8
+      "disclosure_days": 8,
+      "reliability": "mid"
     },
     {
       "id": "2025-02-craze",
       "organization": "株式会社クレイズ",
       "industry": "小売・EC",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-02-17",
       "affected_count": 8257,
@@ -7241,7 +7419,7 @@
       "country": "JP",
       "org_type": "university",
       "prefecture": "栃木県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-02-13",
       "affected_count": 1212,
@@ -7281,7 +7459,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-02-sanrio-entertainment",
@@ -7324,7 +7503,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 17
+      "disclosure_days": 17,
+      "reliability": "high"
     },
     {
       "id": "2025-01-hands",
@@ -7347,7 +7527,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2025-01-hamamatsu-innovation",
@@ -7356,7 +7537,7 @@
       "country": "JP",
       "org_type": "public_org",
       "prefecture": "静岡県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-01-26",
       "affected_count": 7600,
@@ -7405,7 +7586,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 52
+      "disclosure_days": 52,
+      "reliability": "mid"
     },
     {
       "id": "2025-01-mie-kosei",
@@ -7417,7 +7599,7 @@
       "country": "JP",
       "org_type": "public_org",
       "prefecture": "三重県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-01-17",
       "affected_count": 1384,
@@ -7438,7 +7620,7 @@
       "organization": "株式会社東急モールズデベロップメント",
       "industry": "不動産",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-01-10",
       "affected_count": 1082,
@@ -7459,7 +7641,7 @@
       "organization": "カシオ計算機株式会社",
       "industry": "製造",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/30",
       "date_announced": "2025-01-07",
       "affected_count": 8478,
@@ -7500,7 +7682,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-12-fujikura",
@@ -7536,7 +7719,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 176
+      "disclosure_days": 176,
+      "reliability": "mid"
     },
     {
       "id": "2024-12-omp-hospital",
@@ -7548,7 +7732,7 @@
       "country": "JP",
       "org_type": "hospital",
       "prefecture": "大阪府",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-12-25",
       "affected_count": 5031,
@@ -7585,7 +7769,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-12-toa-univ",
@@ -7611,7 +7796,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 11
+      "disclosure_days": 11,
+      "reliability": "mid"
     },
     {
       "id": "2024-12-onomichi-cu",
@@ -7637,7 +7823,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 14
+      "disclosure_days": 14,
+      "reliability": "mid"
     },
     {
       "id": "2024-12-kanuma-city",
@@ -7649,7 +7836,7 @@
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "栃木県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-12-13",
       "affected_count": 1998,
@@ -7672,7 +7859,7 @@
       "country": "JP",
       "org_type": "university",
       "prefecture": "宮崎県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-12-13",
       "affected_count": 19274,
@@ -7705,7 +7892,7 @@
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "茨城県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-12-06",
       "affected_count": 1780,
@@ -7742,7 +7929,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 5
+      "disclosure_days": 5,
+      "reliability": "mid"
     },
     {
       "id": "2024-12-omu-hospital",
@@ -7754,7 +7942,7 @@
       "country": "JP",
       "org_type": "hospital",
       "prefecture": "大阪府",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/35",
       "date_occurred": "2024-11-28",
       "date_announced": "2024-12-03",
@@ -7805,7 +7993,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 2
+      "disclosure_days": 2,
+      "reliability": "mid"
     },
     {
       "id": "2024-11-oisix",
@@ -7831,7 +8020,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 2
+      "disclosure_days": 2,
+      "reliability": "mid"
     },
     {
       "id": "2024-11-gintoki",
@@ -7861,7 +8051,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-11-viewcard",
@@ -7893,7 +8084,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 10
+      "disclosure_days": 10,
+      "reliability": "high"
     },
     {
       "id": "2024-11-kitaise-ueno-shinkin",
@@ -7924,7 +8116,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 179
+      "disclosure_days": 179,
+      "reliability": "high"
     },
     {
       "id": "2024-11-shop-channel",
@@ -7954,7 +8147,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 4
+      "disclosure_days": 4,
+      "reliability": "mid"
     },
     {
       "id": "2024-11-biima",
@@ -7981,7 +8175,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 2
+      "disclosure_days": 2,
+      "reliability": "mid"
     },
     {
       "id": "2024-11-toyota-mobility-tokyo",
@@ -8008,7 +8203,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-11-welcia",
@@ -8039,7 +8235,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 15
+      "disclosure_days": 15,
+      "reliability": "mid"
     },
     {
       "id": "2024-11-tohoku-gakuin",
@@ -8064,7 +8261,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 60
+      "disclosure_days": 60,
+      "reliability": "mid"
     },
     {
       "id": "2024-11-hakubun-eikodo",
@@ -8094,7 +8292,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-11-japanlaim",
@@ -8105,7 +8304,7 @@
         "人材・教育"
       ],
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-11-01",
       "affected_count": 6804,
@@ -8131,7 +8330,7 @@
       "country": "JP",
       "org_type": "public_org",
       "prefecture": "北海道",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/33",
       "date_announced": "2024-10-31",
       "affected_count": null,
@@ -8176,7 +8375,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 1648
+      "disclosure_days": 1648,
+      "reliability": "mid"
     },
     {
       "id": "2024-10-sharp",
@@ -8214,7 +8414,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 103
+      "disclosure_days": 103,
+      "reliability": "mid"
     },
     {
       "id": "2024-10-fuwarii",
@@ -8244,7 +8445,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-10-slow-village",
@@ -8274,7 +8476,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-10-mti",
@@ -8306,7 +8509,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 60
+      "disclosure_days": 60,
+      "reliability": "mid"
     },
     {
       "id": "2024-10-hachijuni",
@@ -8333,14 +8537,15 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-10-npd",
       "organization": "日本駐車場開発株式会社",
       "industry": "不動産",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-10-15",
       "affected_count": 5078,
@@ -8379,7 +8584,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 70
+      "disclosure_days": 70,
+      "reliability": "mid"
     },
     {
       "id": "2024-10-ffg-hoken",
@@ -8395,7 +8601,7 @@
       "country": "JP",
       "org_type": "regional_bank",
       "prefecture": "福岡県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/35",
       "date_occurred": "2021-10-01",
       "date_announced": "2024-10-01",
@@ -8425,7 +8631,7 @@
       "country": "JP",
       "org_type": "regional_bank",
       "prefecture": "熊本県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/35",
       "date_occurred": "2018-05-01",
       "date_announced": "2024-10-01",
@@ -8454,7 +8660,7 @@
       "group": "日本生命グループ",
       "industry": "金融・保険",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-10-01",
       "affected_count": 70000,
@@ -8481,7 +8687,7 @@
       "country": "JP",
       "org_type": "university",
       "prefecture": "長野県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-09-25",
       "affected_count": 4100,
@@ -8520,7 +8726,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 12
+      "disclosure_days": 12,
+      "reliability": "mid"
     },
     {
       "id": "2024-09-kenbiya",
@@ -8549,7 +8756,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 2
+      "disclosure_days": 2,
+      "reliability": "mid"
     },
     {
       "id": "2024-09-doda",
@@ -8579,7 +8787,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-08-sanofi",
@@ -8607,7 +8816,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 49
+      "disclosure_days": 49,
+      "reliability": "mid"
     },
     {
       "id": "2024-08-vitamer",
@@ -8642,7 +8852,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-08-genkai",
@@ -8679,7 +8890,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 7
+      "disclosure_days": 7,
+      "reliability": "mid"
     },
     {
       "id": "2024-08-j-will",
@@ -8701,7 +8913,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 52
+      "disclosure_days": 52,
+      "reliability": "mid"
     },
     {
       "id": "2024-08-kumon",
@@ -8730,7 +8943,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 86
+      "disclosure_days": 86,
+      "reliability": "mid"
     },
     {
       "id": "2024-08-fp-partner",
@@ -8750,7 +8964,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-08-kesennuma-city",
@@ -8762,7 +8977,7 @@
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "宮城県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-08-07",
       "affected_count": 48651,
@@ -8796,7 +9011,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-08-kadokawa",
@@ -8835,7 +9051,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 58
+      "disclosure_days": 58,
+      "reliability": "high"
     },
     {
       "id": "2024-08-mitsubishi-home",
@@ -8856,7 +9073,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 110
+      "disclosure_days": 110,
+      "reliability": "mid"
     },
     {
       "id": "2024-08-tomoe-shokai",
@@ -8880,7 +9098,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 94
+      "disclosure_days": 94,
+      "reliability": "mid"
     },
     {
       "id": "2024-07-jetro",
@@ -8889,7 +9108,7 @@
       "country": "JP",
       "org_type": "public_agency",
       "prefecture": "東京都",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-07-31",
       "affected_count": 5960,
@@ -8933,7 +9152,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-07-wantedly",
@@ -8956,7 +9176,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 111
+      "disclosure_days": 111,
+      "reliability": "mid"
     },
     {
       "id": "2024-07-uno-port",
@@ -8979,7 +9200,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 18
+      "disclosure_days": 18,
+      "reliability": "mid"
     },
     {
       "id": "2024-07-kitakyushu-city",
@@ -8991,7 +9213,7 @@
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "福岡県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-07-26",
       "affected_count": 10000,
@@ -9039,7 +9261,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-07-tokyo-gas",
@@ -9067,7 +9290,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 8
+      "disclosure_days": 8,
+      "reliability": "mid"
     },
     {
       "id": "2024-07-tokyu-malls",
@@ -9077,7 +9301,7 @@
         "小売・EC"
       ],
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-07-17",
       "affected_count": 1097,
@@ -9121,7 +9345,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-07-recruit-suumo",
@@ -9150,7 +9375,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 7
+      "disclosure_days": 7,
+      "reliability": "mid"
     },
     {
       "id": "2024-07-shimada-kakegawa-shinkin",
@@ -9179,7 +9405,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 45
+      "disclosure_days": 45,
+      "reliability": "mid"
     },
     {
       "id": "2024-07-jaxa",
@@ -9206,7 +9433,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 278
+      "disclosure_days": 278,
+      "reliability": "mid"
     },
     {
       "id": "2024-07-chita-shinkin",
@@ -9235,7 +9463,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 39
+      "disclosure_days": 39,
+      "reliability": "mid"
     },
     {
       "id": "2024-07-shizuokayaizu-shinkin",
@@ -9264,7 +9493,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 39
+      "disclosure_days": 39,
+      "reliability": "high"
     },
     {
       "id": "2024-07-tono-shinkin",
@@ -9297,7 +9527,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 39
+      "disclosure_days": 39,
+      "reliability": "high"
     },
     {
       "id": "2024-07-iyo-bank",
@@ -9333,7 +9564,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 38
+      "disclosure_days": 38,
+      "reliability": "mid"
     },
     {
       "id": "2024-07-hags",
@@ -9363,7 +9595,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-07-bizen-hinase-shinkin",
@@ -9392,7 +9625,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 36
+      "disclosure_days": 36,
+      "reliability": "mid"
     },
     {
       "id": "2024-07-kubota",
@@ -9423,7 +9657,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 36
+      "disclosure_days": 36,
+      "reliability": "mid"
     },
     {
       "id": "2024-06-sanchoku",
@@ -9454,7 +9689,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 1184
+      "disclosure_days": 1184,
+      "reliability": "mid"
     },
     {
       "id": "2024-06-sophia",
@@ -9481,7 +9717,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 41
+      "disclosure_days": 41,
+      "reliability": "mid"
     },
     {
       "id": "2024-06-brave-group",
@@ -9518,7 +9755,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 21
+      "disclosure_days": 21,
+      "reliability": "mid"
     },
     {
       "id": "2024-06-hamamatsu-city",
@@ -9530,7 +9768,7 @@
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "静岡県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-06-19",
       "affected_count": 1015,
@@ -9574,7 +9812,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-06-morinaga",
@@ -9596,7 +9835,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-06-nikko-city",
@@ -9608,7 +9848,7 @@
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "栃木県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-06-18",
       "affected_count": 9549,
@@ -9652,7 +9892,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-06-kasugai-city",
@@ -9664,7 +9905,7 @@
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "愛知県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-06-14",
       "affected_count": 1133,
@@ -9707,7 +9948,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-06-premium-bandai",
@@ -9734,7 +9976,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-06-kyuhen",
@@ -9754,7 +9997,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-06-tsukuba-univ",
@@ -9763,7 +10007,7 @@
       "country": "JP",
       "org_type": "university",
       "prefecture": "茨城県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-06-03",
       "affected_count": 1248,
@@ -9807,7 +10051,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-05-ise-shoyu",
@@ -9838,7 +10083,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-05-nextlevel",
@@ -9865,7 +10111,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 315
+      "disclosure_days": 315,
+      "reliability": "mid"
     },
     {
       "id": "2024-05-sekisui-house",
@@ -9888,7 +10135,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-05-toei-transport",
@@ -9923,7 +10171,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 1
+      "disclosure_days": 1,
+      "reliability": "high"
     },
     {
       "id": "2024-05-shinzone",
@@ -9944,7 +10193,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 7
+      "disclosure_days": 7,
+      "reliability": "mid"
     },
     {
       "id": "2024-05-okayama-psychiatric",
@@ -9976,7 +10226,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 2
+      "disclosure_days": 2,
+      "reliability": "mid"
     },
     {
       "id": "2024-05-fofo",
@@ -10006,7 +10257,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-05-toratele",
@@ -10036,7 +10288,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-05-joyful-honda",
@@ -10066,7 +10319,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-05-kishispo",
@@ -10097,7 +10351,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 1178
+      "disclosure_days": 1178,
+      "reliability": "mid"
     },
     {
       "id": "2024-05-biophilia",
@@ -10117,7 +10372,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 10
+      "disclosure_days": 10,
+      "reliability": "mid"
     },
     {
       "id": "2024-05-kindai-hospital",
@@ -10150,7 +10406,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 74
+      "disclosure_days": 74,
+      "reliability": "mid"
     },
     {
       "id": "2024-05-izumi",
@@ -10182,7 +10439,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 84
+      "disclosure_days": 84,
+      "reliability": "mid"
     },
     {
       "id": "2024-05-tokyu",
@@ -10214,7 +10472,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 11
+      "disclosure_days": 11,
+      "reliability": "mid"
     },
     {
       "id": "2024-05-yao-city",
@@ -10242,7 +10501,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-04-njpw",
@@ -10265,7 +10525,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 8
+      "disclosure_days": 8,
+      "reliability": "mid"
     },
     {
       "id": "2024-04-sega-fave",
@@ -10297,14 +10558,15 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-04-toei-kyoto",
       "organization": "株式会社東映京都スタジオ",
       "industry": "エンタメ・スポーツ",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-04-24",
       "affected_count": 1223,
@@ -10348,14 +10610,15 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-04-otsuka-shokai",
       "organization": "株式会社大塚商会",
       "industry": "IT・通信",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-04-19",
       "affected_count": 2687,
@@ -10379,7 +10642,7 @@
         "団体・その他"
       ],
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-04-10",
       "affected_count": 43727,
@@ -10424,7 +10687,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-03-welcomehr",
@@ -10434,7 +10698,7 @@
         "人材・教育"
       ],
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-03-29",
       "affected_count": 154650,
@@ -10468,7 +10732,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 4
+      "disclosure_days": 4,
+      "reliability": "mid"
     },
     {
       "id": "2024-03-kanto-esd",
@@ -10480,7 +10745,7 @@
       "country": "JP",
       "org_type": "public_org",
       "prefecture": "東京都",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-03-15",
       "affected_count": 2296,
@@ -10520,7 +10785,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-03-yodoiko",
@@ -10546,14 +10812,15 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 6
+      "disclosure_days": 6,
+      "reliability": "mid"
     },
     {
       "id": "2024-03-kintetsu",
       "organization": "近畿日本鉄道株式会社",
       "industry": "交通・モビリティ",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-03-06",
       "affected_count": 1671,
@@ -10597,7 +10864,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-03-hokudai-eng",
@@ -10619,7 +10887,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 116
+      "disclosure_days": 116,
+      "reliability": "mid"
     },
     {
       "id": "2024-02-nakahora",
@@ -10649,14 +10918,15 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-02-atect",
       "organization": "株式会社アテクト",
       "industry": "製造",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-02-21",
       "affected_count": 2055,
@@ -10680,7 +10950,7 @@
       ],
       "industry": "エンタメ・スポーツ",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/33",
       "date_occurred": "2024-01-08",
       "date_announced": "2024-02-21",
@@ -10713,7 +10983,7 @@
       "country": "JP",
       "org_type": "public_org",
       "prefecture": "大阪府",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-02-21",
       "affected_count": 14000,
@@ -10757,7 +11027,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-02-kumishoku",
@@ -10787,7 +11058,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-02-osaka-city",
@@ -10799,7 +11071,7 @@
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "大阪府",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-02-19",
       "affected_count": 7468,
@@ -10845,7 +11117,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": 14
+      "disclosure_days": 14,
+      "reliability": "mid"
     },
     {
       "id": "2024-02-kensetsu-rengo-kokuho",
@@ -10857,7 +11130,7 @@
       "country": "JP",
       "org_type": "public_org",
       "prefecture": "静岡県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-02-09",
       "affected_count": 3775,
@@ -10905,7 +11178,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-01-baitoru",
@@ -10936,7 +11210,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": 32
+      "disclosure_days": 32,
+      "reliability": "mid"
     },
     {
       "id": "2024-01-fineaid",
@@ -10967,7 +11242,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-01-ofuji",
@@ -10986,14 +11262,15 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2024-01-openwork",
       "organization": "オープンワーク株式会社",
       "industry": "人材・教育",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-01-25",
       "affected_count": 2094,
@@ -11016,7 +11293,7 @@
       "country": "JP",
       "org_type": "hospital",
       "prefecture": "神奈川県",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2024-01-17",
       "affected_count": 1092,
@@ -11058,7 +11335,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 2
+      "disclosure_days": 2,
+      "reliability": "mid"
     },
     {
       "id": "2023-12-diamond",
@@ -11081,7 +11359,8 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2023-11-lycorp",
@@ -11119,7 +11398,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 49
+      "disclosure_days": 49,
+      "reliability": "high"
     },
     {
       "id": "2023-10-ntt-procx",
@@ -11150,14 +11430,15 @@
         }
       ],
       "severity": null,
-      "disclosure_days": null
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2023-07-jaccs",
       "organization": "株式会社ジャックス",
       "industry": "金融・保険",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/29",
       "date_announced": "2023-07-28",
       "affected_count": null,
@@ -11183,7 +11464,7 @@
       "group": "千葉銀行グループ",
       "industry": "金融・保険",
       "country": "JP",
-      "status": "investigating",
+      "reliability": "low",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/35",
       "date_announced": "2023-07-12",
       "affected_count": null,
@@ -11232,7 +11513,8 @@
         }
       ],
       "severity": "critical",
-      "disclosure_days": 28
+      "disclosure_days": 28,
+      "reliability": "mid"
     },
     {
       "id": "2023-03-docomo-plala",
@@ -11278,7 +11560,8 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 1
+      "disclosure_days": 1,
+      "reliability": "mid"
     }
   ]
 }
