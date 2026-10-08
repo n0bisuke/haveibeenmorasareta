@@ -1,0 +1,32 @@
+organization: 株式会社ホワイトエッセンス
+services:
+  - ホワイトエッセンス 予約サイト
+industry:
+  - 美容・健康
+  - 医療
+country: JP
+date_occurred: 2026-08-05
+date_announced: 2026-08-12
+affected_count: 1050000
+count_note: 約105万アカウント（利用者・加盟院関係者・本部社員）。2026年10月5日の続報で漏えいを確認
+cause: vulnerability
+vuln_target: web_app
+root_cause: 予約サイトのプログラムの脆弱性を悪用され、そこを足がかりに基幹システムへ侵入された
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 生年月日
+  - 性別
+  - 会員ID
+  - パスワード（ハッシュ化・暗号化済み）
+  - 利用履歴
+summary: ホワイトニング・審美歯科チェーンの予約サイトと基幹システムが不正アクセスを受け、8月にシステムを停止して公表した。10月の続報で、予約サイトの脆弱性を悪用して基幹システムに侵入され、約105万アカウント分の氏名・住所・電話番号・生年月日などが外部に持ち出されたと発表した。
+sources:
+  - title: ホワイトエッセンス 公式発表（第1報）
+    url: https://www.whiteessence.com/news/news/20260812/
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/05/2000002016/
+  - title: Security NEXT
+    url: https://www.security-next.com/189665

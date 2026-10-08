@@ -1,0 +1,24 @@
+organization: 国税庁
+services:
+  - e-Tax（e-Taxマイページ）
+industry: 行政
+country: JP
+org_type: national_gov
+prefecture: 東京都
+date_occurred: 2026-09-24
+date_announced: 2026-10-02
+affected_count: 203
+count_note: 79人分の贈与税申告書等に記載された納税者・贈与者・関与税理士。本人以外の19人が閲覧した可能性
+cause: other
+root_cause: e-Taxマイページの改修に伴う不具合で、他人の申告書等が閲覧できる状態になった
+data_types:
+  - 氏名
+  - 生年月日
+  - 住所
+  - 資産・取引情報
+summary: e-Taxマイページのシステム改修に伴う不具合により、9月24日から25日にかけて79人分の贈与税申告書等が本人以外から閲覧できる状態になった。贈与者や関与税理士を含む計203人分の個人情報が対象で、本人以外の19人が閲覧した可能性がある。不具合は解消済み。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUD02BUP0S6A001C2000000/
+  - title: 日経クロステック
+    url: https://xtech.nikkei.com/atcl/nxt/news/24/03406/
