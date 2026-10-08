@@ -3,19 +3,21 @@ services:
   - ISP事業者向けメールシステム（@nifty、BIGLOBE、J:COM、CPI ほか計6社）
 industry: IT・通信
 country: JP
-date_occurred: 2026-06-17
+date_occurred: 2026-05-16
 date_announced: 2026-06-23
-affected_count: 14220000
-count_note: 最大約1,422万件（初報）。2026年7月の続報で、メールアドレス約1,223万件・パスワード約761万件の漏えいとされた。解約済み・休眠ユーザーを含む
+affected_count: 12231954
+count_note: 漏えいしたメールアドレスの件数（2026年7月21日更新の続報）。うちパスワードも漏えいしたのは7,616,173件。初報では最大約1,422万件としていた（解約済み・休眠ユーザーを含む）
 cause: vulnerability
 root_cause: メールシステムで使う第三者製ソフトウェアの脆弱性
 vuln_target: mail_system
 data_types:
   - パスワード（保管形式不明）
   - メールアドレス
-summary: ISP事業者向けに提供するメールシステムで使っていた第三者製ソフトウェアの脆弱性を悪用され、メールボックスに紐づくメールアドレスとパスワードが漏えいした可能性がある。対象サービスの利用者にパスワード変更が呼びかけられた。
+summary: ISP事業者向けに提供するメールシステムで使っていた第三者製ソフトウェアの脆弱性を悪用され、2026年5月中旬から不正アクセスを受けた。続報で、メールアドレス12,231,954件と、そのうち7,616,173件のパスワードの漏えいを確認した。対象サービスの利用者にパスワード変更が呼びかけられた。
 sources:
   - title: KDDI 報道発表資料（2026年7月6日）
     url: https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-73_4619/kddi_nr_s-73_4619_pdf_01.pdf
+  - title: Impress Watch
+    url: https://www.watch.impress.co.jp/docs/news/2122775.html
   - title: キーマンズネット
     url: https://kn.itmedia.co.jp/kn/articles/2606/23/news136.html

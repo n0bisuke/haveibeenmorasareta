@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-10-08T06:46:16.000Z",
-  "count": 364,
+  "count": 368,
   "severity_levels": [
     {
       "id": "critical",
@@ -3437,6 +3437,48 @@
       "reliability": "high"
     },
     {
+      "id": "2026-07-seiho-kyokai",
+      "organization": "一般社団法人生命保険協会",
+      "services": [
+        "生命保険契約照会システム"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "public_org",
+      "prefecture": "東京都",
+      "date_occurred": "2021-07-01",
+      "date_announced": "2026-07-29",
+      "affected_count": 27407,
+      "count_note": "重複を除いた人数（延べ37,929件）。外部から閲覧可能な状態だった",
+      "cause": "misconfiguration",
+      "root_cause": "未ログインの利用者に、他の利用者の個人情報を参照できる権限を誤って付与していた",
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "住所",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "生命保険契約照会システムで、未ログインの利用者に他の利用者の個人情報を参照できる権限を誤って付与しており、2021年7月のシステム開始から2026年7月まで外部から閲覧できる状態だった。外部のセキュリティ専門機関の指摘で判明し、重複を除く27,407人分の氏名・生年月日・住所・電話番号・メールアドレスなどが対象となった。契約内容や口座情報は含まれない。",
+      "sources": [
+        {
+          "title": "生命保険協会 公式発表（第一報）",
+          "url": "https://www.seiho.or.jp/info/news/shared/mt-item/20260729.pdf"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB147TJ0U6A910C2000000/"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2128915.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 1854,
+      "reliability": "high"
+    },
+    {
       "id": "2026-07-murauchi",
       "organization": "株式会社ムラウチドットコム",
       "industry": "小売・EC",
@@ -3543,6 +3585,49 @@
       "severity": "medium",
       "disclosure_days": 4,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-07-fivefoxes",
+      "organization": "株式会社ファイブフォックス",
+      "services": [
+        "COMME CA ISM ほか（会員・お客様窓口）"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-07-08",
+      "date_announced": "2026-07-14",
+      "affected_count": 73185,
+      "count_note": "延べ最大件数（流出の可能性）。VIP・GOLD会員59,504件、問い合わせ顧客8,403件、同社従業員2,450件、コムサ従業員2,828件。2026年9月8日の第二報で公表",
+      "cause": "ransomware",
+      "root_cause": "本社サーバーの一部がランサムウェアに感染した可能性。店舗とオンラインストアは別システムで影響なし",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "生年月日",
+        "性別",
+        "会員ID",
+        "従業員情報",
+        "口座番号"
+      ],
+      "summary": "アパレル大手のファイブフォックスで本社サーバーの一部がランサムウェアに感染した可能性があり、2026年7月に公表した。9月の第二報で、会員・問い合わせ顧客と同社およびグループ会社コムサの従業員の個人情報、延べ最大73,185件が流出した可能性があるとした。クレジットカード情報とマイナンバーは含まれない。",
+      "sources": [
+        {
+          "title": "ファイブフォックス 公式発表（第二報）",
+          "url": "https://www.fivefoxes.co.jp/2026/09/post-23.html"
+        },
+        {
+          "title": "Security NEXT",
+          "url": "https://www.security-next.com/187382"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/09/25/56300.html"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 6,
+      "reliability": "high"
     },
     {
       "id": "2026-07-k9natural",
@@ -3924,10 +4009,10 @@
       ],
       "industry": "IT・通信",
       "country": "JP",
-      "date_occurred": "2026-06-17",
+      "date_occurred": "2026-05-16",
       "date_announced": "2026-06-23",
-      "affected_count": 14220000,
-      "count_note": "最大約1,422万件（初報）。2026年7月の続報で、メールアドレス約1,223万件・パスワード約761万件の漏えいとされた。解約済み・休眠ユーザーを含む",
+      "affected_count": 12231954,
+      "count_note": "漏えいしたメールアドレスの件数（2026年7月21日更新の続報）。うちパスワードも漏えいしたのは7,616,173件。初報では最大約1,422万件としていた（解約済み・休眠ユーザーを含む）",
       "cause": "vulnerability",
       "root_cause": "メールシステムで使う第三者製ソフトウェアの脆弱性",
       "vuln_target": "mail_system",
@@ -3935,11 +4020,15 @@
         "パスワード（保管形式不明）",
         "メールアドレス"
       ],
-      "summary": "ISP事業者向けに提供するメールシステムで使っていた第三者製ソフトウェアの脆弱性を悪用され、メールボックスに紐づくメールアドレスとパスワードが漏えいした可能性がある。対象サービスの利用者にパスワード変更が呼びかけられた。",
+      "summary": "ISP事業者向けに提供するメールシステムで使っていた第三者製ソフトウェアの脆弱性を悪用され、2026年5月中旬から不正アクセスを受けた。続報で、メールアドレス12,231,954件と、そのうち7,616,173件のパスワードの漏えいを確認した。対象サービスの利用者にパスワード変更が呼びかけられた。",
       "sources": [
         {
           "title": "KDDI 報道発表資料（2026年7月6日）",
           "url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-73_4619/kddi_nr_s-73_4619_pdf_01.pdf"
+        },
+        {
+          "title": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2122775.html"
         },
         {
           "title": "キーマンズネット",
@@ -3947,7 +4036,7 @@
         }
       ],
       "severity": "high",
-      "disclosure_days": 6,
+      "disclosure_days": 38,
       "reliability": "high"
     },
     {
@@ -4283,6 +4372,41 @@
       "severity": "high",
       "disclosure_days": 8,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-05-tokyo-tda",
+      "organization": "東京都",
+      "services": [
+        "東京デジタルアカデミー（TDA）ポータルサイト（デジタルサービス局）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "東京都",
+      "date_announced": "2026-05-25",
+      "affected_count": 2438,
+      "count_note": "最大件数。主に行政職員（一般都民2人を含む）",
+      "cause": "misconfiguration",
+      "root_cause": "個人情報を格納した領域に適切なアクセス制限が設定されておらず、CSVファイルをダウンロードされた",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "パスワード（ハッシュ化・暗号化済み）"
+      ],
+      "summary": "東京都デジタルサービス局が運営する東京デジタルアカデミーのポータルサイトで、個人情報を格納した領域に適切なアクセス制限が設定されていなかった。アクセスログの調査で過去に不正アクセスがありCSVファイルがダウンロードされていたことを確認し、主に行政職員最大2,438人分の氏名・業務用メールアドレス・ハッシュ化パスワードが漏えいした。",
+      "sources": [
+        {
+          "title": "東京都デジタルサービス局 報道発表",
+          "url": "https://www.digitalservice.metro.tokyo.lg.jp/information/press/2026/05/20260525"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/06/05/55434.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-05-universal-music",
@@ -5676,6 +5800,44 @@
       ],
       "severity": null,
       "disclosure_days": null
+    },
+    {
+      "id": "2025-10-enessance",
+      "organization": "株式会社エネサンスホールディングス",
+      "group": "エネサンスグループ",
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_occurred": "2025-10-21",
+      "date_announced": "2025-10-23",
+      "affected_count": 365000,
+      "count_note": "顧客情報約36.5万件（流出またはそのおそれ。2026年5月11日の第4報で公表）。ほかに従業員等の情報約2,000件",
+      "cause": "ransomware",
+      "root_cause": "一部のサーバーと端末のデータを暗号化された。インターネットとの接続口から侵入された可能性が高いとしている",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "従業員情報"
+      ],
+      "summary": "LPガス・石油製品を販売するエネサンスグループがランサムウェア攻撃を受け、一部のサーバーと端末のデータが暗号化された。窃取されたとみられる情報が攻撃者のリークサイトで公開され、2026年5月の第4報で顧客の氏名・住所・電話番号・メールアドレスなど約36.5万件と従業員等約2,000件が流出またはそのおそれがあると公表した。同社に業務を委託していたガス会社各社も個別に公表している。",
+      "sources": [
+        {
+          "title": "エネサンス 公式発表（システム障害に関するお知らせ 第4報）",
+          "url": "https://www.enessance.co.jp/chubu/topics/%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E9%9A%9C%E5%AE%B3%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%EF%BC%88%E7%AC%AC4%E5%A0%B1%EF%BC%89/"
+        },
+        {
+          "title": "Security NEXT",
+          "url": "https://www.security-next.com/184352"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/05/22/55331.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 2,
+      "reliability": "high"
     },
     {
       "id": "2025-10-fukuyoshi",
