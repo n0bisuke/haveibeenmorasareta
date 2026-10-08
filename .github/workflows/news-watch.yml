@@ -1,7 +1,7 @@
 name: News watch
 
 # ニュースの RSS を毎日巡回し、未収録の情報漏洩ニュースの候補を Issue にまとめる。
-# LLM の API キー（Secrets の LLM_API_KEY）とモデル名（Variables の LLM_MODEL）が設定されていれば、
+# LLM の API キー（Secrets の GROQ_API_KEY、または LLM_API_KEY と Variables の LLM_MODEL）が設定されていれば、
 # 候補の記事から AI が事案データの下書きを作り、1件ずつ PR にする（設定方法は README の「AI による下書き」）
 on:
   schedule:
@@ -62,7 +62,8 @@ jobs:
       - run: node scripts/ai-draft.mjs --in candidates.json --out ai-out --state ai-state/seen.json
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          LLM_BASE_URL: ${{ vars.LLM_BASE_URL || 'https://openrouter.ai/api/v1' }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
           LLM_MODEL: ${{ vars.LLM_MODEL }}
           LLM_EDITOR_MODEL: ${{ vars.LLM_EDITOR_MODEL }}
           AI_MAX_ITEMS: ${{ vars.AI_MAX_ITEMS || '5' }}

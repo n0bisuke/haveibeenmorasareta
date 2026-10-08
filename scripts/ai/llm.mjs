@@ -1,16 +1,19 @@
 // OpenAI 互換の Chat Completions API（OpenRouter・Groq など）を呼び出す
-//   LLM_API_KEY         … API キー（必須。GitHub の Secrets に登録）
-//   LLM_BASE_URL        … API のベース URL（既定: OpenRouter）
-//   LLM_MODEL           … ライター役のモデル名（必須）
+//   LLM_API_KEY         … API キー（GitHub の Secrets に登録）
+//   GROQ_API_KEY        … LLM_API_KEY が無いときに使う Groq の API キー（ベース URL・モデルの既定も Groq 用になる）
+//   LLM_BASE_URL        … API のベース URL（既定: OpenRouter。GROQ_API_KEY のときは Groq）
+//   LLM_MODEL           … ライター役のモデル名（GROQ_API_KEY のときの既定は openai/gpt-oss-120b）
 //   LLM_EDITOR_MODEL    … 編集者役のモデル名（省略時は LLM_MODEL）
 //   LLM_INTERVAL_MS     … 呼び出しの間隔（無料枠のレート制限対策。既定 4000）
-const {
-  LLM_API_KEY,
-  LLM_BASE_URL = 'https://openrouter.ai/api/v1',
-  LLM_MODEL,
-  LLM_EDITOR_MODEL,
-  LLM_INTERVAL_MS = '4000',
-} = process.env;
+const env = process.env;
+// 空文字（未設定の Variables）は未指定として扱う
+const pick = (...v) => v.find((x) => x) || undefined;
+const groq = !env.LLM_API_KEY && Boolean(env.GROQ_API_KEY);
+const LLM_API_KEY = pick(env.LLM_API_KEY, env.GROQ_API_KEY);
+const LLM_BASE_URL = pick(env.LLM_BASE_URL, groq ? 'https://api.groq.com/openai/v1' : 'https://openrouter.ai/api/v1');
+const LLM_MODEL = pick(env.LLM_MODEL, groq ? 'openai/gpt-oss-120b' : undefined);
+const LLM_EDITOR_MODEL = pick(env.LLM_EDITOR_MODEL);
+const LLM_INTERVAL_MS = pick(env.LLM_INTERVAL_MS, '4000');
 
 export const llmConfig = {
   ready: Boolean(LLM_API_KEY && LLM_MODEL),
