@@ -3,8 +3,10 @@
 //   node scripts/news-watch.mjs            … 候補を表示
 //   node scripts/news-watch.mjs --days 14  … 対象期間を変更（既定 7 日）
 //   node scripts/news-watch.mjs --out candidates.json … 候補を JSON でも書き出す（scripts/ai-draft.mjs の入力）
+//   JINA_API_KEY があれば、Jina の検索で公式発表などの Web ページと X（旧Twitter）の投稿も探す
 import { writeFile } from 'node:fs/promises';
 import { loadBreaches } from './lib.mjs';
+import { jinaReady, jinaSearch, xPostTime } from './jina.mjs';
 
 const arg = (name) => (process.argv.includes(name) ? process.argv[process.argv.indexOf(name) + 1] : undefined);
 const DAYS = Number(arg('--days')) || 7;
@@ -96,15 +98,53 @@ const items = (await Promise.all(FEEDS.map(fetchFeed))).flat();
 const { names, urls } = await knownIndex();
 const seen = new Set();
 const candidates = [];
-for (const i of items) {
+const consider = (i) => {
   const time = Date.parse(i.date);
-  if (Number.isFinite(time) && time < since) continue;
-  if (!KEYWORDS.test(i.title)) continue;
-  if (urls.has(i.url) || names.some((n) => i.title.includes(n))) continue;
+  if (Number.isFinite(time) && time < since) return;
+  if (!KEYWORDS.test(i.title)) return;
+  if (urls.has(i.url) || names.some((n) => i.title.includes(n))) return;
   const key = normalize(i.title);
-  if (seen.has(key)) continue;
+  if (seen.has(key)) return;
   seen.add(key);
   candidates.push({ ...i, time: Number.isFinite(time) ? time : 0 });
+};
+items.forEach(consider);
+
+// ---- Jina の検索（JINA_API_KEY があるときだけ） ----
+// 公式発表などの Web ページ: 日付が分かる直近のものだけをニュースと同じ候補に加える（AI 下書きの対象にもなる）
+const WEB_QUERIES = ['不正アクセス 個人情報 漏えい お詫び', '個人情報 流出 お知らせ 不正アクセス', 'ランサムウェア 被害 お知らせ 個人情報', '個人情報 漏洩 お詫び 誤送信'];
+// X の投稿: SNS は出典にできないため、Issue の別欄に載せるだけ（AI 下書きには渡さない）
+const X_QUERIES = ['個人情報 流出 お詫び', '不正アクセス 個人情報 漏えい', '情報漏洩 お知らせ', 'ランサムウェア 被害 個人情報', '漏洩 メール 届いた'];
+const isX = (u) => /^https?:\/\/(?:[\w-]+\.)?(?:x|twitter)\.com\//.test(u);
+const xPosts = [];
+const jinaErrors = [];
+if (jinaReady) {
+  const search = async (q, opt) => {
+    try {
+      return await jinaSearch(q, opt);
+    } catch (e) {
+      jinaErrors.push(`「${q}」${e.message}`);
+      return [];
+    }
+  };
+  for (const q of WEB_QUERIES) {
+    for (const r of await search(q)) {
+      if (isX(r.url) || !Number.isFinite(Date.parse(r.date))) continue;
+      consider({ title: r.title, url: r.url, date: r.date, source: 'Jina 検索' });
+    }
+  }
+  const seenX = new Set();
+  for (const q of X_QUERIES) {
+    for (const r of await search(q, { site: 'x.com' })) {
+      const time = xPostTime(r.url);
+      const text = `${r.title} ${r.description}`;
+      if (!(time >= since) || seenX.has(r.url) || !KEYWORDS.test(text) || names.some((n) => text.includes(n))) continue;
+      seenX.add(r.url);
+      xPosts.push({ title: r.title, text: r.description, url: r.url, time });
+    }
+  }
+  xPosts.sort((a, b) => b.time - a.time);
+  for (const e of jinaErrors) console.warn(`⚠ Jina: ${e}`);
 }
 candidates.sort((a, b) => b.time - a.time);
 if (OUT) await writeFile(OUT, `${JSON.stringify(candidates, null, 2)}\n`);
@@ -126,7 +166,15 @@ const body = [
   '',
   ...candidates.map((c) => `- [ ] ${fmt(c.time)} ${mdUrl(c.url) ? `[${mdText(c.title)}](${mdUrl(c.url)})` : mdText(c.title)}${c.source ? `（${mdText(c.source)}）` : ''}`),
   '',
-  `<sub>巡回したソース: ${FEEDS.map((f) => f.name).join(' / ')}。更新: ${new Date().toISOString()}（\`scripts/news-watch.mjs\`）</sub>`,
+  ...(xPosts.length ? [
+    `## X（旧Twitter）で話題の投稿（${xPosts.length} 件）`,
+    '',
+    'SNS の投稿は出典にできません。公式発表や報道を確認できたものだけを追加してください（会社からのお詫びメールが届いたという投稿などは、情報募集の Issue にするのも手です）。',
+    '',
+    ...xPosts.map((p) => `- [ ] ${fmt(p.time)} ${mdUrl(p.url) ? `[${mdText(p.title)}](${mdUrl(p.url)})` : mdText(p.title)}${p.text ? `<br>${mdText(p.text).slice(0, 140)}` : ''}`),
+    '',
+  ] : []),
+  `<sub>巡回したソース: ${[...FEEDS.map((f) => f.name), ...(jinaReady ? ['Jina 検索（公式発表などの Web ページ・X の投稿）'] : [])].join(' / ')}。更新: ${new Date().toISOString()}（\`scripts/news-watch.mjs\`）</sub>`,
 ].join('\n');
 
 if (!GITHUB_TOKEN || !GITHUB_REPOSITORY) {
@@ -148,7 +196,7 @@ const open = (await api('/issues?state=open&per_page=100')).find((i) => i.title 
 if (open) {
   await api(`/issues/${open.number}`, { method: 'PATCH', body: JSON.stringify({ body, labels: [ISSUE_LABEL] }) });
   console.log(`✔ Issue #${open.number} を更新しました（候補 ${candidates.length} 件）`);
-} else if (candidates.length) {
+} else if (candidates.length || xPosts.length) {
   const created = await api('/issues', { method: 'POST', body: JSON.stringify({ title: ISSUE_TITLE, body, labels: [ISSUE_LABEL] }) });
   console.log(`✔ Issue #${created.number} を作成しました（候補 ${candidates.length} 件）`);
 } else {
