@@ -1,0 +1,26 @@
+organization: 損害保険ジャパン株式会社
+group: SOMPOグループ
+services:
+  - 保険料控除証明書発行サービス
+industry: 金融・保険
+country: JP
+date_occurred: 2026-09-01
+date_announced: 2026-09-29
+affected_count: 177426
+count_note: 同じ契約者が重複している場合がある。送付先の損害保険会社1社はデータを削除済み
+cause: human_error
+root_cause: 委託先の担当者がファイルを手作業で送る際、ドラッグ＆ドロップの操作を誤り他社分のファイルに混入させた
+vendor:
+  name: TOPPAN株式会社
+  group: TOPPANグループ
+data_types:
+  - 氏名
+  - 契約情報
+summary: TOPPANが損保ジャパンから受託した「保険料控除証明書発行サービス」の運用業務で、担当者のドラッグ＆ドロップ操作の誤りにより、契約者177,426名分のカナ氏名や証券番号を含むデータを別の損害保険会社1社へ誤送付した。住所・連絡先・口座情報は含まれない。送付先は当該データを削除した。
+sources:
+  - title: TOPPAN 公式発表
+    url: https://www.holdings.toppan.com/ja/info/toppan_info20260929.pdf
+  - title: 損保ジャパン 公式発表
+    url: https://www.sompo-japan.co.jp/-/media/SJNK/files/news/2026/20260929_1.pdf
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2609/30/2000001870/
