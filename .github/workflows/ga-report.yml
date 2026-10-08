@@ -22,5 +22,5 @@ jobs:
       - run: node scripts/ga-report.mjs
         env:
           GA_CREDENTIALS: ${{ secrets.GA_CREDENTIALS }}
-          GA_PROPERTY_ID: ${{ vars.GA_PROPERTY_ID }}
+          GA_PROPERTY_ID: ${{ vars.GA_PROPERTY_ID || secrets.GA_PROPERTY_ID }}
           GITHUB_TOKEN: ${{ github.token }}
