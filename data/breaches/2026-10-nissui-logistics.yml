@@ -1,0 +1,20 @@
+organization: 日水物流株式会社
+group: ニッスイグループ
+industry: 物流
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-10-07
+date_announced: 2026-10-07
+affected_count: null
+count_note: 個人情報・顧客データの流出の有無を確認中
+cause: third_party
+root_cause: 利用している委託先のデータセンターが第三者による不正アクセスを受けた
+summary: 日水物流で委託先データセンターへの第三者による不正アクセスとみられるシステム障害が発生し、全国の物流拠点で商品の入出荷ができなくなった。親会社のニッスイが公表し、グループが管理する個人情報や顧客データの外部への流出の有無を確認している。委託先は報道ではIDCフロンティアのクラウドサービス「IDCFクラウド」とされているが、公式発表では社名を明らかにしていない。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/08/2000002113/
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC07B2A0X01C26A0000000/
+  - title: LOGISTICS TODAY
+    url: https://www.logi-today.com/1008962

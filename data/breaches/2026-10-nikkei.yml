@@ -1,0 +1,24 @@
+organization: 株式会社日本経済新聞社
+group: 日経グループ
+services:
+  - Google Workspace（社員の業務用アカウント）
+  - Microsoft 365（社員の業務用アカウント）
+industry: メディア・出版
+country: JP
+date_announced: 2026-10-04
+affected_count: 1646
+count_note: Google Workspace の不正ログインで漏えいした可能性がある人数。Microsoft 365 の件（なりすましメール約9,000件）の影響範囲は調査中
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - メールアドレス
+  - 従業員情報
+  - 取引先情報
+summary: 社員が業務で使うGoogle Workspaceのアカウントが7月下旬以降に外部から不正ログインされ、社員や取引先など1,646人分の氏名とメールアドレスが漏えいした可能性がある。同日、社員のMicrosoft 365アカウントも不正ログインを受け、9月30日に悪性サイトへ誘導するなりすましメール約9,000件が社内外に送信されたと公表した。
+sources:
+  - title: ITmedia NEWS（Google Workspace）
+    url: https://www.itmedia.co.jp/news/article/2610/05/2000001994/
+  - title: ITmedia NEWS（Microsoft 365）
+    url: https://www.itmedia.co.jp/news/article/2610/05/2000001991/
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUD255YG0V20C26A9000000/
