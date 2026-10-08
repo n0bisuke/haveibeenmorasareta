@@ -29,7 +29,7 @@ const LEVEL = Object.fromEntries(LEVELS.map((l) => [l.id, l]));
 for (const b of breaches) {
   b._text = [b.organization, b.group, b.root_cause, b.vendor?.name, b.vendor?.group, ...(b.services ?? []), ...(b.data_types ?? []), ...[b.industry ?? []].flat(), b.prefecture, b.summary, CAUSES[b.cause], VULN_LABEL[b.vuln_target],
     ...(b.attack_methods ?? []).map((m) => ATTACK_LABEL[m]),
-    b.status === 'investigating' && '企業側が調査中', `信頼度${RELIABILITY[b.reliability]?.label ?? ''}`].filter(Boolean).join(' ').toLowerCase();
+    b.status === 'investigating' && '企業側が調査中', b.leaked === false && 'お漏らし無し', `信頼度${RELIABILITY[b.reliability]?.label ?? ''}`].filter(Boolean).join(' ').toLowerCase();
 }
 
 function fillSelect(select, values, label = (v) => v) {
@@ -54,9 +54,12 @@ for (const key of ['q', 'year', 'cause', 'sev', 'sort']) if (params.has(key)) $(
 let onlyInvestigating = params.get('status') === 'investigating';
 
 function renderStats() {
-  const total = breaches.reduce((n, b) => n + (b.affected_count ?? 0), 0);
+  // 「お漏らし無し」の事案は漏洩件数の合計に含めない
+  const total = breaches.reduce((n, b) => n + (b.leaked === false ? 0 : b.affected_count ?? 0), 0);
   const investigating = breaches.filter((b) => b.status === 'investigating').length;
+  const noleak = breaches.filter((b) => b.leaked === false).length;
   const stats = [['掲載件数', `${nf.format(breaches.length)} 件`], ['漏洩件数の合計', `${nf.format(total)}`]];
+  if (noleak) stats.push(['お漏らし無し', `${nf.format(noleak)} 件`]);
   if (investigating) stats.push(['企業側が調査中', `${nf.format(investigating)} 件`, true]);
   $('stats').replaceChildren(...stats.map(([k, v, toggle]) => {
     const div = document.createElement('div');
@@ -112,7 +115,17 @@ function renderItem(b) {
     el.querySelector('.status-badge').remove();
     el.querySelector('.investigating').remove();
   }
-  el.querySelector('.count').textContent = b.affected_count == null ? '件数不明' : `${nf.format(b.affected_count)} 件`;
+  // 不正アクセスなどを受けたが、漏洩の形跡が無かった事案
+  if (b.leaked === false) {
+    el.classList.add('is-noleak');
+    el.querySelector('.noleak-badge').hidden = false;
+    el.querySelector('.noleak').hidden = false;
+  } else {
+    el.querySelector('.noleak-badge').remove();
+    el.querySelector('.noleak').remove();
+  }
+  // お漏らし無しの事案はバッジで示し、件数は出さない
+  el.querySelector('.count').textContent = b.leaked === false ? '' : b.affected_count == null ? '件数不明' : `${nf.format(b.affected_count)} 件`;
   el.querySelector('.services').textContent = (b.services ?? []).join(' / ');
   const meta = [
     `公表 ${fmtDate(b.date_announced)}`,

@@ -17,7 +17,7 @@ data/vuln-targets.yml … 脆弱性を悪用された箇所（vuln_target）の�
 scripts/build.mjs     … データから public/breaches.json を生成（リポジトリにもコミット）
 public/               … 公開ディレクトリ（依存なしの静的 HTML/CSS/JS）
 public/visualization/ … グラフなどの可視化ページ（/visualization/）
-public/ranking/       … 企業・業界・原因・委託先別のランキング（/ranking/）
+public/ranking/       … 企業・業界・原因・委託先別のランキングと、お漏らししなかったランキング（/ranking/）
 ```
 
 - **PR 時**: `Validate` ワークフローがデータを検証し、問題があれば CI が失敗します

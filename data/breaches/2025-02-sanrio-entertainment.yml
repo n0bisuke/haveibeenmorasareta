@@ -6,6 +6,7 @@ services:
 industry: エンタメ・スポーツ
 country: JP
 date_occurred: 2025-01-21
+leaked: false
 date_announced: 2025-02-07
 affected_count: 2000000
 count_note: 最大約200万件（漏えいの可能性。2025年8月の調査完了時点で実際の漏えいは確認されていない）

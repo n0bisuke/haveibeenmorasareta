@@ -16,7 +16,8 @@ showUpdated(generated_at);
 // ---- 月ごとに集計（データの無い月も 0 で埋める） ----
 const monthKey = (d) => d.slice(0, 7);
 const byMonth = new Map();
-for (const b of breaches) {
+// 「お漏らし無し」の事案は数えない
+for (const b of breaches.filter((x) => x.leaked !== false)) {
   const key = monthKey(b.date_announced);
   if (!byMonth.has(key)) byMonth.set(key, []);
   byMonth.get(key).push(b);
