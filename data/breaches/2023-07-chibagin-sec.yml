@@ -2,7 +2,7 @@ organization: ちばぎん証券株式会社
 group: 千葉銀行グループ
 industry: 金融・保険
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/35
 date_announced: 2023-07-12
 affected_count: null

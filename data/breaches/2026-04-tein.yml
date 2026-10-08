@@ -1,7 +1,7 @@
 organization: 株式会社テイン
 industry: 製造
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/31
 date_announced: 2026-04-08
 affected_count: 7304

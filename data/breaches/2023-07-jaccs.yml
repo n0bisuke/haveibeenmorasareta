@@ -1,7 +1,7 @@
 organization: 株式会社ジャックス
 industry: 金融・保険
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
 date_announced: 2023-07-28
 affected_count: null

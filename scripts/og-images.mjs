@@ -1,7 +1,7 @@
 // 事案ごとの OGP 画像（public/breach/<id>/og.png、1200×630）を生成する
 // scripts/pages.mjs の後に実行し、公開物にだけ含める（リポジトリにはコミットしない）
 //   node scripts/og-images.mjs [--only <事案ID>,...] [--style auto|a|b|c]
-//   auto（既定）: 調査中は C（速報風）、重要度が「危険」「高」は B（ダーク8ビット）、それ以外は A（ライト）
+//   auto（既定）: 企業側が調査中は C（速報風）、重要度が「危険」「高」は B（ダーク8ビット）、それ以外は A（ライト）
 //   CHROME_PATH … 使う Chrome / Chromium（省略時はインストール済みの Google Chrome）
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -64,7 +64,7 @@ const STYLES = {
       ${v.svc ? `<div class="svc">${esc(v.svc)}</div>` : ''}
       <div class="bottom">
         <div><div class="count">${v.count ? `${esc(v.count)}<small>件</small>` : v.unknown}</div><div class="meta">${esc(v.meta)}</div></div>
-        <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-end">${v.investigating ? '<span class="badge">調査中</span>' : ''}${v.sev ? `<span class="sev">重要度：${esc(v.sev.label)}</span>` : ''}</div>
+        <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-end">${v.investigating ? '<span class="badge">企業側が調査中</span>' : ''}${v.sev ? `<span class="sev">重要度：${esc(v.sev.label)}</span>` : ''}</div>
       </div>
     </div>`;
   },
@@ -93,7 +93,7 @@ const STYLES = {
     ${v.svc ? `<div class="svc">${esc(v.svc)}</div>` : ''}
     <div class="count">${v.count ? `${esc(v.count)}<small>件</small>` : v.unknown}</div>
     <div class="meta">${esc(v.meta)}</div>
-    ${v.investigating ? '<div class="badge">調査中</div>' : ''}`;
+    ${v.investigating ? '<div class="badge">企業側が調査中</div>' : ''}`;
   },
 
   // C: 速報風（上部に帯。件数を主役に）
@@ -112,7 +112,7 @@ const STYLES = {
       .meta{font-size:26px;color:#6b6b75;margin-top:16px;display:flex;gap:16px;align-items:center}
       .chip{font-size:22px;font-weight:700;padding:4px 14px;border-radius:999px;background:${v.sev ? `${SEV_COLOR[b.severity]}22` : '#eee'};color:${v.sev ? SEV_COLOR[b.severity] : '#555'}}
     </style>
-    <div class="band">情報漏洩${v.investigating ? '（調査中）' : ''}<span>Have I Been Morasareta 日本版</span></div>
+    <div class="band">情報漏洩${v.investigating ? '（企業側が調査中）' : ''}<span>Have I Been Morasareta 日本版</span></div>
     <div class="main">
       <div class="org">${esc(b.organization)}</div>
       ${v.svc ? `<div class="svc">${esc(v.svc)}</div>` : ''}

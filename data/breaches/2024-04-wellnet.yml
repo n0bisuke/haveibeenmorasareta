@@ -3,7 +3,7 @@ industry:
   - IT・通信
   - 団体・その他
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
 date_announced: 2024-04-10
 affected_count: 43727

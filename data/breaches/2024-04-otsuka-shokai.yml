@@ -1,7 +1,7 @@
 organization: 株式会社大塚商会
 industry: IT・通信
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
 date_announced: 2024-04-19
 affected_count: 2687

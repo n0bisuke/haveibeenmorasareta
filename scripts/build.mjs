@@ -12,6 +12,8 @@ const attackMethods = await loadAttackMethods();
 const orgTypes = await loadOrgTypes();
 const prefectures = await loadPrefectures();
 const rank = Object.fromEntries(levels.map((l, i) => [l.id, i]));
+// 出典のタイトルに公式発表らしい語があれば、公式発表を確認済みとみなす
+const OFFICIAL = /公式|発表|お知らせ|お詫び|プレスリリース|ニュースリリース|適時開示|報道資料/;
 
 // 漏洩した情報のうち最も重要度の高いレベルを、その事案の重要度とする
 const breaches = (await loadBreaches())
@@ -22,7 +24,10 @@ const breaches = (await loadBreaches())
     const disclosure_days = data.date_occurred
       ? Math.round((Date.parse(data.date_announced) - Date.parse(data.date_occurred)) / 86400000)
       : null;
-    return { id, ...data, severity, disclosure_days };
+    // 情報の信頼度: low は手動で指定。それ以外は公式発表が出典にあれば high、無ければ mid
+    const official = data.sources.some((s) => OFFICIAL.test(s.title ?? ''));
+    const reliability = data.reliability === 'low' ? 'low' : official ? 'high' : 'mid';
+    return { id, ...data, severity, disclosure_days, reliability };
   })
   .sort((a, b) => b.date_announced.localeCompare(a.date_announced) || a.id.localeCompare(b.id));
 

@@ -275,3 +275,13 @@ a { color: var(--accent); }
 .org a:hover { text-decoration: underline; text-decoration-color: var(--accent); }
 .item.linked { cursor: pointer; transition: border-color 0.15s; }
 .item.linked:hover { border-top-color: var(--accent); border-right-color: var(--accent); border-bottom-color: var(--accent); }
+
+/* 情報の信頼度（3段階のドット） */
+.reliability { display: inline-flex; align-items: center; gap: 4px; }
+.reliability i { width: 8px; height: 8px; border-radius: 50%; background: var(--border); display: inline-block; }
+.reliability i:first-of-type { margin-left: 2px; }
+.reliability i:last-of-type { margin-right: 4px; }
+.reliability.r-high i.on { background: #2f9e5b; }
+.reliability.r-mid i.on { background: #3b6fd4; }
+.reliability.r-low i.on { background: var(--muted); }
+.low-reliability { margin: 8px 0 0; font-size: 0.85rem; color: var(--muted); }

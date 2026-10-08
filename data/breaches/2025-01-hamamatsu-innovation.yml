@@ -3,7 +3,7 @@ industry: 団体・その他
 country: JP
 org_type: public_org
 prefecture: 静岡県
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-01-26
 affected_count: 7600

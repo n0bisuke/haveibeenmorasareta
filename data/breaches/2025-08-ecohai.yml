@@ -1,7 +1,7 @@
 organization: 株式会社エコ配
 industry: 物流
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-08-12
 affected_count: 149063

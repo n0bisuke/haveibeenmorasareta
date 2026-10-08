@@ -1,7 +1,7 @@
 organization: 盛岡ガス燃料株式会社
 industry: エネルギー・インフラ
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-05-02
 affected_count: 2200
