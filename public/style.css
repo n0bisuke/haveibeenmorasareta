@@ -51,6 +51,14 @@ a { color: var(--accent); }
 .lead { margin: 4px 0 20px; color: var(--muted); }
 .disclaimer { margin: -16px 0 20px; font-size: 0.75rem; color: var(--muted); }
 .updated { margin: -16px 0 16px; font-size: 0.75rem; color: var(--muted); }
+.contribute {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px;
+  margin: -8px 0 20px; padding: 8px 12px; font-size: 0.8rem; color: var(--muted);
+  border: 1px solid var(--border); border-radius: 10px; background: var(--bg);
+}
+.contribute span { flex: 1 1 260px; }
+.contribute a { white-space: nowrap; font-weight: 600; }
+.contribute-icon { flex-shrink: 0; color: var(--text); }
 .home { color: inherit; text-decoration: none; }
 .site-nav { display: flex; gap: 4px; margin-top: 20px; }
 .site-nav a {
