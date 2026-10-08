@@ -173,6 +173,14 @@ function renderItem(b) {
     li.append(a);
     return li;
   }));
+  // 関連ページ（出典ではないが事案に関係する公開情報。削除されたページはアーカイブ）
+  const related = el.querySelector('.related-pages');
+  if (b.related?.length) {
+    related.hidden = false;
+    related.querySelector('ul').replaceChildren(...b.related.map(relatedItem));
+  } else {
+    related.remove();
+  }
   const c = CONTRIBUTORS[b.id];
   if (c) {
     const a = el.querySelector('.contributor');
@@ -188,6 +196,14 @@ function renderItem(b) {
     el.querySelector('.contributor').remove();
   }
   return el;
+}
+
+function relatedItem(r) {
+  const li = document.createElement('li');
+  li.append(Object.assign(document.createElement('a'), { href: r.url, rel: 'noopener noreferrer', target: '_blank', textContent: r.title }));
+  if (r.removed) li.append(' ', Object.assign(document.createElement('span'), { className: 'removed-chip', textContent: '削除済み・アーカイブ' }));
+  if (r.note) li.append(Object.assign(document.createElement('small'), { className: 'related-note', textContent: r.note }));
+  return li;
 }
 
 function render() {

@@ -207,6 +207,42 @@
           }
         }
       }
+    },
+    "related": {
+      "type": "array",
+      "minItems": 1,
+      "description": "関連ページ（任意）。出典ではないが事案に関係する公開情報。委託先・開発会社の導入事例など、事案の後に削除されたページはアーカイブ（Wayback Machine など）の URL を載せ、removed: true を付ける",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "url"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https?://"
+          },
+          "note": {
+            "type": "string",
+            "maxLength": 200,
+            "description": "事案との関係の説明（推測で関係を断定しない。当事者の説明があれば書く）"
+          },
+          "removed": {
+            "type": "boolean",
+            "enum": [
+              true
+            ],
+            "description": "元のページが削除された（url はアーカイブ）"
+          }
+        }
+      }
     }
   }
 }
