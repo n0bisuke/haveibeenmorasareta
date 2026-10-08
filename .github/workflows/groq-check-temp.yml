@@ -1,0 +1,28 @@
+name: Groq check (temporary)
+on:
+  push:
+    branches: [claude/magical-archimedes-7lls9o]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List models and test JSON mode
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          node -e '
+          const H = { Authorization: `Bearer ${process.env.GROQ_API_KEY}`, "Content-Type": "application/json" };
+          (async () => {
+            if (!process.env.GROQ_API_KEY) { console.log("GROQ_API_KEY が空です"); return; }
+            const m = await fetch("https://api.groq.com/openai/v1/models", { headers: H });
+            console.log("models status", m.status);
+            const list = (await m.json()).data ?? [];
+            for (const x of list.sort((a, b) => a.id.localeCompare(b.id))) console.log(x.id, x.context_window ?? "");
+            for (const model of ["openai/gpt-oss-120b", "llama-3.3-70b-versatile", "moonshotai/kimi-k2-instruct"]) {
+              const r = await fetch("https://api.groq.com/openai/v1/chat/completions", { method: "POST", headers: H, body: JSON.stringify({ model, temperature: 0, response_format: { type: "json_object" }, messages: [{ role: "system", content: "JSON オブジェクトだけを出力してください。" }, { role: "user", content: "「株式会社テストが顧客情報1,234件の漏えいを公表した」から organization と affected_count を JSON で" }] }) });
+              const j = await r.json();
+              console.log("==", model, r.status, (j.choices?.[0]?.message?.content ?? JSON.stringify(j.error ?? j)).slice(0, 200));
+            }
+          })();'
