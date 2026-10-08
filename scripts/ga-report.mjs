@@ -2,53 +2,20 @@
 //   GA_CREDENTIALS  … サービスアカウントの鍵（JSON の中身をそのまま。GitHub の Secrets に登録）
 //   GA_PROPERTY_ID  … GA4 のプロパティ ID（数字のみ。測定 ID の G-XXXX とは別）
 //   GITHUB_TOKEN / GITHUB_REPOSITORY が無ければ、レポートを標準出力に出すだけ
-import { createSign } from 'node:crypto';
+import { gaConfigured, gaClient } from './ga/client.mjs';
 
-const { GA_CREDENTIALS, GA_PROPERTY_ID, GITHUB_TOKEN, GITHUB_REPOSITORY } = process.env;
+const { GITHUB_TOKEN, GITHUB_REPOSITORY } = process.env;
 const LABEL = 'GAレポート';
-const TOKEN_URL = process.env.GA_TOKEN_URL ?? 'https://oauth2.googleapis.com/token';
-const API_BASE = process.env.GA_API_BASE ?? 'https://analyticsdata.googleapis.com/v1beta';
 
-if (!GA_CREDENTIALS || !GA_PROPERTY_ID) {
+if (!gaConfigured) {
   console.log('GA_CREDENTIALS / GA_PROPERTY_ID が未設定のため、GA レポートは作りません');
   process.exit(0);
 }
 
-// サービスアカウントの鍵で署名した JWT をアクセストークンに交換する
-async function accessToken() {
-  const key = JSON.parse(GA_CREDENTIALS);
-  const now = Math.floor(Date.now() / 1000);
-  const b64 = (o) => Buffer.from(JSON.stringify(o)).toString('base64url');
-  const unsigned = `${b64({ alg: 'RS256', typ: 'JWT' })}.${b64({
-    iss: key.client_email,
-    scope: 'https://www.googleapis.com/auth/analytics.readonly',
-    aud: TOKEN_URL,
-    iat: now,
-    exp: now + 3600,
-  })}`;
-  const signature = createSign('RSA-SHA256').update(unsigned).sign(key.private_key).toString('base64url');
-  const res = await fetch(TOKEN_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams({ grant_type: 'urn:ietf:params:oauth:grant-type:jwt-bearer', assertion: `${unsigned}.${signature}` }),
-  });
-  if (!res.ok) throw new Error(`アクセストークンの取得に失敗しました（${res.status}）: ${(await res.text()).slice(0, 300)}`);
-  return (await res.json()).access_token;
-}
-
-const token = await accessToken();
+const call = await gaClient();
 
 // --check: 接続確認用。直近30分のリアルタイムと今日のアクセスを表示するだけで、Issue には投稿しない
 if (process.argv.includes('--check')) {
-  const call = async (method, body) => {
-    const res = await fetch(`${API_BASE}/properties/${GA_PROPERTY_ID}:${method}`, {
-      method: 'POST',
-      headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify(body),
-    });
-    if (!res.ok) throw new Error(`GA Data API ${res.status}: ${(await res.text()).slice(0, 300)}`);
-    return (await res.json()).rows ?? [];
-  };
   const realtime = await call('runRealtimeReport', { metrics: [{ name: 'activeUsers' }] });
   const today = await call('runReport', { dateRanges: [{ startDate: 'today', endDate: 'today' }], metrics: [{ name: 'activeUsers' }, { name: 'screenPageViews' }] });
   const pages = await call('runReport', { dateRanges: [{ startDate: 'today', endDate: 'today' }], dimensions: [{ name: 'pagePath' }], metrics: [{ name: 'screenPageViews' }], limit: 5 });
@@ -58,15 +25,7 @@ if (process.argv.includes('--check')) {
   for (const r of pages) console.log(`  ${r.dimensionValues[0].value}: ${r.metricValues[0].value} PV`);
   process.exit(0);
 }
-async function report(body) {
-  const res = await fetch(`${API_BASE}/properties/${GA_PROPERTY_ID}:runReport`, {
-    method: 'POST',
-    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-  });
-  if (!res.ok) throw new Error(`GA Data API ${res.status}: ${(await res.text()).slice(0, 300)}`);
-  return (await res.json()).rows ?? [];
-}
+const report = (body) => call('runReport', body);
 
 // 日付はプロパティのタイムゾーン基準（"yesterday" など）
 const YESTERDAY = { startDate: 'yesterday', endDate: 'yesterday' };
