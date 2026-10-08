@@ -127,7 +127,10 @@ if (jinaReady) {
       return [];
     }
   };
-  for (const q of WEB_QUERIES) {
+  // 検索には期間の指定が無いため、今月（月初は先月も）を検索語に入れて直近の発表に寄せる
+  const ym = (d) => d.toLocaleDateString('ja-JP', { timeZone: 'Asia/Tokyo', year: 'numeric', month: 'long' });
+  const months = [...new Set([ym(new Date()), ym(new Date(since))])];
+  for (const q of WEB_QUERIES.flatMap((w) => months.map((m) => `${w} ${m}`))) {
     for (const r of await search(q)) {
       if (isX(r.url) || !Number.isFinite(Date.parse(r.date))) continue;
       consider({ title: r.title, url: r.url, date: r.date, source: 'Jina 検索' });
