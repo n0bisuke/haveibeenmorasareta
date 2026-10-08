@@ -1,0 +1,23 @@
+organization: あいの風とやま鉄道株式会社
+services:
+  - 観光列車「一万三千尺物語」座席管理システム
+industry: 交通・モビリティ
+country: JP
+date_occurred: 2026-09-02
+date_announced: 2026-09-15
+affected_count: 1409
+count_note: 個人で予約した利用客・予約客。漏えいしたおそれ
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+summary: 観光列車「一万三千尺物語」の座席管理システムが9月2日から8日にかけて複数回の不正アクセスを受け、利用客や予約客1,409人分の氏名・住所・電話番号・メールアドレスが漏えいしたおそれがある。身に覚えのない予約の取り消しなどから発覚した。クレジットカード情報は別会社のシステムで処理しており対象外。
+sources:
+  - title: あいの風とやま鉄道 公式発表
+    url: https://ainokaze.co.jp/24166
+  - title: 北日本新聞
+    url: https://webun.jp/articles/-/1093121
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/05/56383.html

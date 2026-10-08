@@ -1,0 +1,23 @@
+organization: 株式会社ムーンスター
+services:
+  - ムーンスター公式オンラインストア
+industry:
+  - 製造
+  - 小売・EC
+country: JP
+date_announced: 2026-03-26
+affected_count: null
+count_note: オンラインストアの利用者（件数は非公表）。2026年10月2日の続報で漏えいの可能性を公表
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 購入履歴
+summary: システムサーバーへの不正アクセスの疑いを2026年3月に公表し、10月の続報でオンラインストア利用者の氏名・住所・電話番号・メールアドレス・過去の注文情報が漏えいした可能性があるとした。クレジットカード番号とパスワードは含まれない。同社を装ったフィッシングメールが一部の顧客に届いている。
+sources:
+  - title: ムーンスター 公式発表（続報）
+    url: https://www.moonstar.co.jp/information/2026/10/post-4.html
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/03/2000001982/

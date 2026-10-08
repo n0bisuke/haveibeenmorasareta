@@ -1,0 +1,23 @@
+organization: 株式会社日経BP
+group: 日経グループ
+industry: メディア・出版
+country: JP
+date_occurred: 2026-09-30
+date_announced: 2026-10-04
+affected_count: 26
+count_note: 漏えいした可能性
+cause: phishing
+attack_methods:
+  - phishing
+root_cause: 日本経済新聞社の社員のアドレスから届いたフィッシングメールで従業員の認証情報を盗まれた
+data_types:
+  - 氏名
+  - メールアドレス
+summary: 従業員のメールアカウントが不正アクセスを受け、メールの送受信先26件の氏名とメールアドレスが漏えいした可能性がある。従業員は、乗っ取られた日本経済新聞社の社員のアドレスから届いたフィッシングメールで認証情報を盗まれていた。
+sources:
+  - title: 日経BP 公式発表
+    url: https://www.nikkeibp.co.jp/atcl/newsrelease/corp/100200417/
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2146104.html
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/07/56402.html

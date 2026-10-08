@@ -1,0 +1,25 @@
+organization: 株式会社ちばぎん商店
+group: 千葉銀行グループ
+industry:
+  - 小売・EC
+  - 金融・保険
+country: JP
+date_occurred: 2026-09-03
+date_announced: 2026-09-17
+affected_count: 2338
+count_note: 個人約722先・法人約1,616先（報道では3,252件、グループ全体で約1万件とするものもある）
+cause: unauthorized_access
+root_cause: コーポレートサイトのサーバーが不正アクセスを受け、オンラインカジノのコンテンツを表示させられた
+data_types:
+  - 氏名
+  - 住所
+  - メールアドレス
+  - 電話番号
+summary: 千葉銀行の子会社ちばぎん商店のコーポレートサイトのサーバーが第三者による不正アクセスを受け、海外オンラインカジノに関するコンテンツが表示された。サーバーに保存されていた顧客の氏名・住所・メールアドレス・電話番号などが漏えいした可能性がある。クレジットカード情報やパスワードは保存していなかった。
+sources:
+  - title: 千葉銀行 公式発表
+    url: https://www.chibabank.co.jp/news/news20260917_01
+  - title: キーマンズネット
+    url: https://kn.itmedia.co.jp/kn/article/2609/18/2000001596/
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/08/56415.html

@@ -1,0 +1,29 @@
+organization: 学校法人修道学園
+services:
+  - 広島修道大学
+  - 修道中学校・高等学校
+  - 広島修道大学ひろしま協創中学校・高等学校
+industry: 人材・教育
+country: JP
+org_type: university
+prefecture: 広島県
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-09-26
+date_announced: 2026-09-30
+affected_count: null
+count_note: 件数は非公表。外部の専門機関と影響範囲を調査中
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - 口座番号
+  - 従業員情報
+  - 取引先情報
+summary: 学園が管理するサーバーへの第三者による不正アクセスを確認し、教職員や一部の学生、外部講師の氏名・住所・電話番号・口座情報や、取引先の口座情報などが漏えいしたおそれがある。外部の専門機関と原因や影響範囲を調査している。
+sources:
+  - title: 修道学園 公式発表
+    url: https://www.shudo-u.ac.jp/news/20260930-unauthorizedaccess.html
+  - title: 中国新聞
+    url: https://www.chugoku-np.co.jp/articles/-/905554
