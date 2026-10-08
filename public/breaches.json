@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-08T03:24:11.000Z",
-  "count": 359,
+  "generated_at": "2026-10-08T03:29:53.000Z",
+  "count": 364,
   "severity_levels": [
     {
       "id": "critical",
@@ -944,6 +944,42 @@
       "severity": "critical"
     },
     {
+      "id": "2026-10-fukuroi-kita-es",
+      "organization": "袋井市教育委員会",
+      "services": [
+        "袋井市立袋井北小学校"
+      ],
+      "industry": [
+        "行政",
+        "人材・教育"
+      ],
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "静岡県",
+      "date_announced": "2026-10-05",
+      "affected_count": 6631,
+      "count_note": "台帳の作成開始から1988年度までの卒業生。外部への流出は確認されていない",
+      "cause": "human_error",
+      "root_cause": "卒業証書授与台帳を、保存年限を過ぎた書類と一緒に誤って廃棄した可能性が高い",
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "住所"
+      ],
+      "summary": "袋井北小学校で、1988年度までの卒業生6,631人分の卒業証書授与台帳を紛失した。台帳には氏名・生年月日・保護者名・住所などが記載されていた。卒業証明書の申請をきっかけに所在不明が分かり、保存年限を過ぎた書類と一緒に誤って廃棄した可能性が高いとしている。",
+      "sources": [
+        {
+          "title": "静岡新聞",
+          "url": "https://www.at-s.com/snews/article/ats/2069837.html"
+        },
+        {
+          "title": "中日新聞",
+          "url": "https://www.chunichi.co.jp/article/1321255"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-10-gmo-research",
       "organization": "GMOリサーチ&AI株式会社",
       "group": "GMOインターネットグループ",
@@ -1208,6 +1244,38 @@
       "severity": "high"
     },
     {
+      "id": "2026-10-studysapuri",
+      "organization": "株式会社リクルート",
+      "group": "リクルートグループ",
+      "services": [
+        "スタディサプリ"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-03",
+      "affected_count": 3687,
+      "count_note": "登録の有無を第三者に特定された可能性があるメールアドレスの件数",
+      "cause": "vulnerability",
+      "vuln_target": "web_app",
+      "root_cause": "システムの一部機能の仕様上の不備を突かれ、メールアドレスの登録の有無を特定された",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "スタディサプリのシステムの仕様上の不備を突く不正アクセスにより、3,687件のメールアドレスについて登録の有無を第三者に特定された可能性がある。9月30日に把握し、同日中に該当機能を改修した。氏名・パスワード・決済情報の流出や不正ログインは確認されていない。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/06/2000002019/"
+        },
+        {
+          "title": "千代田区 お知らせ",
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kyoikuinkai/studysapuri-roei.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
       "id": "2026-10-daiichi-life",
       "organization": "第一生命保険株式会社",
       "industry": "金融・保険",
@@ -1228,6 +1296,41 @@
         {
           "title": "セキュリティ対策Lab",
           "url": "https://rocket-boys.co.jp/security-measures-lab/daiichi-life-employee-data-breach-120k-20261002/"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2026-10-etax",
+      "organization": "国税庁",
+      "services": [
+        "e-Tax（e-Taxマイページ）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "national_gov",
+      "prefecture": "東京都",
+      "date_occurred": "2026-09-24",
+      "date_announced": "2026-10-02",
+      "affected_count": 203,
+      "count_note": "79人分の贈与税申告書等に記載された納税者・贈与者・関与税理士。本人以外の19人が閲覧した可能性",
+      "cause": "other",
+      "root_cause": "e-Taxマイページの改修に伴う不具合で、他人の申告書等が閲覧できる状態になった",
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "住所",
+        "資産・取引情報"
+      ],
+      "summary": "e-Taxマイページのシステム改修に伴う不具合により、9月24日から25日にかけて79人分の贈与税申告書等が本人以外から閲覧できる状態になった。贈与者や関与税理士を含む計203人分の個人情報が対象で、本人以外の19人が閲覧した可能性がある。不具合は解消済み。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUD02BUP0S6A001C2000000/"
+        },
+        {
+          "title": "日経クロステック",
+          "url": "https://xtech.nikkei.com/atcl/nxt/news/24/03406/"
         }
       ],
       "severity": "high"
@@ -1262,6 +1365,35 @@
         }
       ],
       "severity": "medium"
+    },
+    {
+      "id": "2026-10-nichii",
+      "organization": "株式会社ニチイ学館",
+      "group": "ニチイグループ",
+      "services": [
+        "ニチイの介護サイト"
+      ],
+      "industry": "福祉・介護",
+      "country": "JP",
+      "date_occurred": "2020-05-11",
+      "date_announced": "2026-10-02",
+      "affected_count": 583,
+      "count_note": "漏えいしたおそれ。うち99名分は健康状態や障がいに関する要配慮個人情報を含む",
+      "cause": "misconfiguration",
+      "root_cause": "お問い合わせデータのバックアップファイルが認証なしで外部から取得できる状態だった",
+      "data_types": [
+        "健康・医療情報",
+        "問い合わせ内容",
+        "氏名"
+      ],
+      "summary": "介護サイトのお問い合わせデータを含むバックアップファイルが、2020年5月から2026年9月まで外部から取得できる状態だった。問い合わせ内容の欄に書かれた583名分の個人情報が含まれ、うち99名分には健康状態や障がいに関する情報が含まれていた。",
+      "sources": [
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/nichii-kaigo-personal-data-exposure-20261002/"
+        }
+      ],
+      "severity": "high"
     },
     {
       "id": "2026-10-jaea",
@@ -2913,6 +3045,52 @@
         {
           "title": "セキュリティ対策Lab",
           "url": "https://rocket-boys.co.jp/?p=38495"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2026-08-white-essence",
+      "organization": "株式会社ホワイトエッセンス",
+      "services": [
+        "ホワイトエッセンス 予約サイト"
+      ],
+      "industry": [
+        "美容・健康",
+        "医療"
+      ],
+      "country": "JP",
+      "date_occurred": "2026-08-05",
+      "date_announced": "2026-08-12",
+      "affected_count": 1050000,
+      "count_note": "約105万アカウント（利用者・加盟院関係者・本部社員）。2026年10月5日の続報で漏えいを確認",
+      "cause": "vulnerability",
+      "vuln_target": "web_app",
+      "root_cause": "予約サイトのプログラムの脆弱性を悪用され、そこを足がかりに基幹システムへ侵入された",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "生年月日",
+        "性別",
+        "会員ID",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "利用履歴"
+      ],
+      "summary": "ホワイトニング・審美歯科チェーンの予約サイトと基幹システムが不正アクセスを受け、8月にシステムを停止して公表した。10月の続報で、予約サイトの脆弱性を悪用して基幹システムに侵入され、約105万アカウント分の氏名・住所・電話番号・生年月日などが外部に持ち出されたと発表した。",
+      "sources": [
+        {
+          "title": "ホワイトエッセンス 公式発表（第1報）",
+          "url": "https://www.whiteessence.com/news/news/20260812/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/05/2000002016/"
+        },
+        {
+          "title": "Security NEXT",
+          "url": "https://www.security-next.com/189665"
         }
       ],
       "severity": "high"

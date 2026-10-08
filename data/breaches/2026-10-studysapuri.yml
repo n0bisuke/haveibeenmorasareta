@@ -1,0 +1,21 @@
+organization: 株式会社リクルート
+group: リクルートグループ
+services:
+  - スタディサプリ
+industry: 人材・教育
+country: JP
+date_occurred: 2026-09-30
+date_announced: 2026-10-03
+affected_count: 3687
+count_note: 登録の有無を第三者に特定された可能性があるメールアドレスの件数
+cause: vulnerability
+vuln_target: web_app
+root_cause: システムの一部機能の仕様上の不備を突かれ、メールアドレスの登録の有無を特定された
+data_types:
+  - メールアドレス
+summary: スタディサプリのシステムの仕様上の不備を突く不正アクセスにより、3,687件のメールアドレスについて登録の有無を第三者に特定された可能性がある。9月30日に把握し、同日中に該当機能を改修した。氏名・パスワード・決済情報の流出や不正ログインは確認されていない。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/06/2000002019/
+  - title: 千代田区 お知らせ
+    url: https://www.city.chiyoda.lg.jp/koho/kosodate/kyoikuinkai/studysapuri-roei.html
