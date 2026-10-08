@@ -1,0 +1,28 @@
+organization: 株式会社アバハウスインターナショナル
+services:
+  - ABAHOUSE 公式オンラインストア
+industry: 小売・EC
+country: JP
+date_occurred: 2026-09-27
+date_announced: 2026-10-03
+affected_count: null
+count_note: 退会者を含む全会員が対象となる可能性（件数は非公表）
+cause: unauthorized_access
+root_cause: 社内システムへの不正ログインを起点に、システムの不備を突かれて不正なプログラムを実行された
+data_types:
+  - 会員ID
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 生年月日
+  - 性別
+  - 購入履歴
+summary: 社内システムへの不正アクセスにより、会員情報と受注情報が漏えいした可能性がある。顧客から注文内容と一致する不審な返金案内メールの問い合わせを受けて調査し、不正アクセスの痕跡を確認した。クレジットカード情報は決済代行会社が保持しており、漏えいは確認されていない。
+sources:
+  - title: アバハウス 公式発表
+    url: https://abahouse.co.jp/news/2005/
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/03/2000001981/
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC030Y20T01C26A0000000/

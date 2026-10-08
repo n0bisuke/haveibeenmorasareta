@@ -1,0 +1,17 @@
+organization: 株式会社小田原エンジニアリング
+industry: 製造
+country: JP
+date_occurred: 2026-03-27
+date_announced: 2026-09-15
+affected_count: null
+count_note: 取引先担当者の個人情報を含むメール約3,500通が閲覧された（人数は非公表）
+cause: unauthorized_access
+root_cause: ドイツ子会社に出向中の従業員のメールアカウントが約5か月にわたり不正アクセスを受けた
+data_types:
+  - 取引先情報
+summary: ドイツ子会社に出向中の従業員のメールアカウントが2026年3月27日から8月31日まで不正アクセスを受け、取引先担当者の個人情報を含むメール約3,500通が閲覧された。攻撃者は従業員になりすまして入金を指示するメールを送り、一部の取引先に金銭的な被害が出た。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/07/56400.html
+  - title: サイバーセキュリティ.com
+    url: https://cybersecurity-jp.com/news/116661
