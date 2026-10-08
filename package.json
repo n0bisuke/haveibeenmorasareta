@@ -8,7 +8,8 @@
   "scripts": {
     "validate": "node scripts/validate.mjs",
     "build": "node scripts/validate.mjs && node scripts/build.mjs",
-    "dev": "npm run build && npx --yes serve public",
+    "dev": "npm run build && node scripts/pages.mjs && npx --yes serve public",
+    "pages": "node scripts/pages.mjs",
     "news": "node scripts/news-watch.mjs"
   },
   "engines": {

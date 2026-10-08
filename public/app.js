@@ -74,7 +74,15 @@ function renderItem(b) {
   const el = $('item-tpl').content.firstElementChild.cloneNode(true);
   el.id = b.id;
   if (b.severity) el.classList.add(`sev-${b.severity}`);
-  el.querySelector('.org').textContent = b.organization;
+  // 組織名とカードのクリックで、事案ごとの個別ページへ
+  const href = `breach/${b.id}/`;
+  el.querySelector('.org').append(Object.assign(document.createElement('a'), { href, textContent: b.organization }));
+  el.classList.add('linked');
+  el.addEventListener('click', (e) => {
+    if (e.target.closest('a, button') || getSelection().toString()) return;
+    if (e.metaKey || e.ctrlKey) open(href, '_blank');
+    else location.href = href;
+  });
   if (b.status === 'investigating') {
     el.classList.add('is-investigating');
     el.querySelector('.status-badge').hidden = false;
