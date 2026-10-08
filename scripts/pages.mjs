@@ -153,7 +153,8 @@ function page(b) {
     </div>
 
     <div class="share">
-      <a href="https://x.com/intent/post?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(url)}" target="_blank" rel="noopener noreferrer">𝕏 でシェア</a>
+      <button type="button" class="native-share" data-url="${esc(url)}" data-text="${esc(shareText)}" hidden>共有…</button>
+      <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&amp;url=${encodeURIComponent(url)}" target="_blank" rel="noopener noreferrer">𝕏 でシェア</a>
       <a href="https://b.hatena.ne.jp/entry/s/${esc(url.replace(/^https?:\/\//, ''))}" target="_blank" rel="noopener noreferrer">はてブ</a>
       <button type="button" class="copy-link" data-url="${esc(url)}">リンクをコピー</button>
       <a class="edit" href="${REPO}/edit/main/data/breaches/${esc(b.file)}" target="_blank" rel="noopener noreferrer">✎ この事案を GitHub で修正</a>
@@ -176,6 +177,12 @@ function page(b) {
     </div>
   </footer>
   <script>
+    // スマホでは OS の共有シート（X・LINE などのアプリ）を使えるようにする
+    const share = document.querySelector('.native-share');
+    if (share && navigator.share) {
+      share.hidden = false;
+      share.addEventListener('click', () => navigator.share({ title: share.dataset.text, text: share.dataset.text, url: share.dataset.url }).catch(() => {}));
+    }
     document.querySelector('.copy-link')?.addEventListener('click', async (e) => {
       const btn = e.currentTarget;
       try { await navigator.clipboard.writeText(btn.dataset.url); btn.textContent = 'コピーしました'; }
