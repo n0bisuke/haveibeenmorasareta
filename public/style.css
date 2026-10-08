@@ -11,6 +11,7 @@
   --high: #f79009;     --high-bg: #feead2;     --high-fg: #a14a05;
   --medium: #e0a800;   --medium-bg: #fdf3c8;   --medium-fg: #7a5800;
   --low: #98a2b3;      --low-bg: #f1f1f4;      --low-fg: #555560;
+  --safe: #12b76a; --safe-bg: #dcfae6; --safe-fg: #067647;
 }
 @media all {
   :root.dark {
@@ -26,6 +27,7 @@
     --high: #fdb022;     --high-bg: #45290c;     --high-fg: #ffc785;
     --medium: #f5d04c;   --medium-bg: #3b3210;   --medium-fg: #f5dc85;
     --low: #7d8595;      --low-bg: #26262d;      --low-fg: #b0b0bb;
+    --safe: #47cd89; --safe-bg: #0f3a25; --safe-fg: #75e0a7;
   }
 }
 * { box-sizing: border-box; }
@@ -128,6 +130,14 @@ a { color: var(--accent); }
 }
 .item-head .org + .status-badge { margin-right: auto; }
 .item.is-investigating { border-style: dashed; border-left-style: solid; }
+/* お漏らし無しの事案 */
+.noleak-badge {
+  font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 999px;
+  background: var(--safe-bg); color: var(--safe-fg); white-space: nowrap;
+}
+.item-head .org + .noleak-badge { margin-right: auto; }
+.item.is-noleak { border-left-color: var(--safe); }
+.noleak { margin: 8px 0 0; font-size: 0.85rem; color: var(--muted); }
 .investigating { margin: 8px 0 0; font-size: 0.85rem; color: var(--muted); }
 .stat-toggle {
   font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer;
@@ -256,6 +266,7 @@ a { color: var(--accent); }
 .detail-side dd { margin: 0; overflow-wrap: anywhere; }
 .kpi { font-size: 2.2rem; font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; line-height: 1.15; }
 .kpi-note { font-size: 0.8rem; color: var(--muted); }
+.kpi.kpi-noleak { font-size: 1.6rem; color: var(--safe-fg); }
 .share { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
 .share a, .share button {
   font: inherit; font-size: 0.8rem; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--border);

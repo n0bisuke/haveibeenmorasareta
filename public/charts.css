@@ -92,3 +92,4 @@ a.tile:hover, a.tile:focus-visible { outline: 2px solid var(--text); outline-off
 .map-legend li { display: inline-flex; align-items: center; gap: 6px; }
 .swatch { width: 14px; height: 14px; border-radius: 3px; background: var(--tag-bg); border: 1px solid var(--border); }
 .delay-note { flex-basis: 100%; }
+.noleak-card .rank-bar .bar { background: var(--safe); }
