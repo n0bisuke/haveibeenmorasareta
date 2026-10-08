@@ -59,7 +59,7 @@ npm run dev
 | 種類 | 名前 | 内容 |
 |---|---|---|
 | Secret | `GA_CREDENTIALS` | 手順 2 の JSON ファイルの中身をそのまま |
-| Variable | `GA_PROPERTY_ID` | GA4 のプロパティ ID（**管理 → プロパティの詳細** にある数字。測定 ID の `G-` で始まるものとは別） |
+| Variable（Secret でも可） | `GA_PROPERTY_ID` | GA4 のプロパティ ID（**管理 → プロパティの詳細** にある数字。測定 ID の `G-` で始まるものとは別） |
 
 ## Issue のラベル
 
