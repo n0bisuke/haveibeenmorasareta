@@ -33,6 +33,7 @@ public/ranking/       … 企業・業界・原因・委託先別のランキン
 ## 追加・修正したい場合
 
 [CONTRIBUTING.md](CONTRIBUTING.md) を参照してください。PR が難しい場合は Issue からの情報提供も歓迎です。
+Claude Code・Codex などの AI エージェントで調査して PR を作る場合は、[AGENTS.md](AGENTS.md) に手順をまとめています（エージェントは自動で読み込みます）。
 
 ## 開発
 
