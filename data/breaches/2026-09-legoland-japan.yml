@@ -1,0 +1,20 @@
+organization: LEGOLAND Japan合同会社
+services:
+  - レゴランド・ジャパン・ホテル
+industry: エンタメ・スポーツ
+country: JP
+date_announced: 2026-09-25
+affected_count: 1557
+count_note: 影響を受けた可能性がある予約1,557件
+cause: third_party
+root_cause: ホテルの公式予約サイトで利用している外部のオンライン予約プラットフォーム（Amadeus）への不正アクセス
+vendor:
+  name: Amadeus IT Group
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+summary: レゴランド・ジャパン・ホテルの公式予約サイトで利用している外部のオンライン予約プラットフォームが不正アクセスを受け、予約1,557件分の氏名・メールアドレス・電話番号が影響を受けた可能性がある。運営元のAmadeusからは、決済情報・パスワード・金融情報・パスポート情報へのアクセスは確認されていないと報告を受けている。予約情報を悪用したメールやSMSなどによる詐欺への注意を呼びかけている。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2609/29/2000001849/
