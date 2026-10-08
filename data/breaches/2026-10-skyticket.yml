@@ -1,0 +1,16 @@
+organization: 株式会社アドベンチャー
+services:
+  - skyticket
+industry: 旅行
+country: JP
+status: investigating
+reliability: low
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/69
+date_announced: 2026-10-08
+affected_count: null
+count_note: 件数・流出した情報の種類は未確認（会員向けメールのみ確認）
+cause: unauthorized_access
+summary: 旅行予約サイト「skyticket」の会員に、同社が管理するサーバーの一部が第三者による不正アクセスを受け、登録会員の情報が外部に流出したと知らせるメールが届き、パスワードの変更を求めた。公式サイトのお知らせや適時開示、報道は確認できておらず、件数や情報の種類は分かっていない。
+sources:
+  - title: skyticket 会員向けメール「不正アクセスによるお客様情報流出のお詫びとパスワード変更のお願い」（2026/10/08 受信。Web 上の公式発表は未確認）
+    url: https://skyticket.jp/
