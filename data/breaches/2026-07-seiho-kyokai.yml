@@ -1,0 +1,27 @@
+organization: 一般社団法人生命保険協会
+services:
+  - 生命保険契約照会システム
+industry: 金融・保険
+country: JP
+org_type: public_org
+prefecture: 東京都
+date_occurred: 2021-07-01
+date_announced: 2026-07-29
+affected_count: 27407
+count_note: 重複を除いた人数（延べ37,929件）。外部から閲覧可能な状態だった
+cause: misconfiguration
+root_cause: 未ログインの利用者に、他の利用者の個人情報を参照できる権限を誤って付与していた
+data_types:
+  - 氏名
+  - 生年月日
+  - 住所
+  - 電話番号
+  - メールアドレス
+summary: 生命保険契約照会システムで、未ログインの利用者に他の利用者の個人情報を参照できる権限を誤って付与しており、2021年7月のシステム開始から2026年7月まで外部から閲覧できる状態だった。外部のセキュリティ専門機関の指摘で判明し、重複を除く27,407人分の氏名・生年月日・住所・電話番号・メールアドレスなどが対象となった。契約内容や口座情報は含まれない。
+sources:
+  - title: 生命保険協会 公式発表（第一報）
+    url: https://www.seiho.or.jp/info/news/shared/mt-item/20260729.pdf
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUB147TJ0U6A910C2000000/
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2128915.html
