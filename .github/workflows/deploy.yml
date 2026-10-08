@@ -49,6 +49,9 @@ jobs:
       # シェア用の画像（OGP）。調査中は速報風、重要度が危険・高はダーク、それ以外はライト
       - name: Generate share images
         run: node scripts/og-images.mjs
+      # トップ・ランキング・ビジュアライズ用のシェア画像（掲載事案数・業界別 TOP5・地域別の地図を最新のデータで描く）
+      - name: Generate top share image
+        run: node scripts/og-top.mjs
       # 更新直後に古い JS がキャッシュから読まれて壊れないよう、参照にバージョンを付ける（公開物のみ）
       - name: Stamp asset versions
         run: node scripts/stamp.mjs

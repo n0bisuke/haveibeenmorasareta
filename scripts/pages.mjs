@@ -178,6 +178,7 @@ function page(b) {
         <a href="${REPO}">GitHub</a>
         へのプルリクエストでお願いします（<a href="${REPO}/blob/main/CONTRIBUTING.md">書き方</a>）。
       </p>
+      <p class="muted">海外のサービスの漏洩は <a href="https://haveibeenpwned.com/" target="_blank" rel="noopener noreferrer">Have I Been Pwned</a> で調べられます（メールアドレスで、自分の情報が含まれていたかを確認できます）。</p>
     </div>
   </footer>
   <script>
