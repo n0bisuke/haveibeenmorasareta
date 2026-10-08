@@ -4,7 +4,8 @@ const nf = new Intl.NumberFormat('ja-JP');
 
 const { breaches, org_types: ORG_TYPES = [], prefectures: PREFS = [] } = await fetch('../breaches.json').then((r) => r.json());
 const ORG_LABEL = Object.fromEntries(ORG_TYPES.map((t) => [t.id, t.label]));
-const items = breaches.filter((b) => b.org_type && b.prefecture);
+// 「お漏らし無し」の事案は数えない
+const items = breaches.filter((b) => b.org_type && b.prefecture && b.leaked !== false);
 
 // 色の段階（件数）。0件は塗らない
 const BINS = [

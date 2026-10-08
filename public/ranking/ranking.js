@@ -26,6 +26,8 @@ const METRICS = {
     only: (g) => g.delays.length > 0,
   },
 };
+// お漏らししなかったランキング: 不正アクセスなどを受けても情報が漏れなかった事案の数（指標の切り替えに関係なく固定）
+const NOLEAK_METRIC = { label: 'お漏らし無しの事案数', value: (g) => g.items.length, format: (g) => `${g.items.length}件` };
 
 const RANKINGS = [
   {
@@ -68,6 +70,18 @@ const RANKINGS = [
     href: (g) => `../?cause=vulnerability${VULN_LABEL[g.key] ? `&q=${encodeURIComponent(VULN_LABEL[g.key])}` : ''}`,
   },
 ];
+const NOLEAK = {
+  id: 'noleak',
+  key: orgKey,
+  metric: NOLEAK_METRIC,
+  // 同じ企業・グループで漏洩した事案があれば併記する（同数なら漏洩の少ない方が上位）
+  leaks: (g) => state.leaks.filter((b) => orgKey(b) === g.key).length,
+  sub: (g) => {
+    const n = NOLEAK.leaks(g);
+    return n ? `漏洩した事案も${n}件` : '';
+  },
+  href: (g) => `../?q=${encodeURIComponent(`${g.key} お漏らし無し`)}`,
+};
 
 function compact(n) {
   if (n >= 1e8) return `${trim(n / 1e8)}億`;
@@ -82,6 +96,7 @@ const state = {
   metric: METRICS[params.get('metric')] ? params.get('metric') : 'incidents',
   range: params.get('range') === 'all' ? 'all' : '12',
   expanded: false,
+  leaks: [],
 };
 
 function inRange(b) {
@@ -91,7 +106,7 @@ function inRange(b) {
   return b.date_announced >= d.toISOString().slice(0, 7);
 }
 
-function group(items, keyFn) {
+function group(items, keyFn, metric = METRICS[state.metric], tie) {
   const map = new Map();
   for (const b of items) {
     // キーが配列（複数の業種など）なら、それぞれのグループに数える
@@ -106,15 +121,14 @@ function group(items, keyFn) {
     }
   }
   for (const g of map.values()) g.delayAvg = g.delays.length ? g.delays.reduce((x, y) => x + y, 0) / g.delays.length : 0;
-  const metric = METRICS[state.metric];
-  const other = METRICS[state.metric === 'affected' ? 'incidents' : 'affected'];
-  return [...map.values()].filter((g) => !metric.only || metric.only(g)).sort((a, b) => metric.value(b) - metric.value(a) || other.value(b) - other.value(a) || a.key.localeCompare(b.key, 'ja'));
+  const other = tie ?? ((g) => METRICS[state.metric === 'affected' ? 'incidents' : 'affected'].value(g));
+  return [...map.values()].filter((g) => !metric.only || metric.only(g)).sort((a, b) => metric.value(b) - metric.value(a) || other(b) - other(a) || a.key.localeCompare(b.key, 'ja'));
 }
 
 // ---- 描画 ----
 function renderRanking(def, items) {
-  const metric = METRICS[state.metric];
-  let groups = group(items, def.key);
+  const metric = def.metric ?? METRICS[state.metric];
+  let groups = group(items, def.key, metric, def.leaks && ((g) => -def.leaks(g)));
   const total = groups.length;
   if (def.limit && !state.expanded) groups = groups.slice(0, def.limit);
   const max = Math.max(1, ...groups.map(metric.value));
@@ -134,13 +148,16 @@ function renderRanking(def, items) {
     barWrap.append(bar, val);
     a.append(no, label, barWrap);
     a.setAttribute('aria-label', `${i + 1}位 ${label.textContent} ${metric.label} ${metric.format(g)}`);
-    a.addEventListener('pointerenter', () => showTooltip(a, g));
-    a.addEventListener('focus', () => showTooltip(a, g));
+    a.addEventListener('pointerenter', () => showTooltip(a, g, def));
+    a.addEventListener('focus', () => showTooltip(a, g, def));
     a.addEventListener('pointerleave', hideTooltip);
     a.addEventListener('blur', hideTooltip);
     li.append(a);
     return li;
   }));
+  list.hidden = !groups.length;
+  const empty = $(`empty-${def.id}`);
+  if (empty) empty.hidden = groups.length > 0;
 
   if (def.limit) {
     const more = $(`more-${def.id}`);
@@ -149,14 +166,17 @@ function renderRanking(def, items) {
   }
 }
 
-function showTooltip(row, g) {
+function showTooltip(row, g, def) {
   const tip = $('tooltip');
   tip.replaceChildren();
   const head = Object.assign(document.createElement('div'), { className: 'tt-month', textContent: `事案 ${g.items.length}件` });
-  const delayMode = state.metric === 'delay';
+  const noleak = def.id === 'noleak';
+  const delayMode = !noleak && state.metric === 'delay';
   const value = Object.assign(document.createElement('div'), {
     className: 'tt-value',
-    textContent: delayMode
+    textContent: noleak
+      ? `漏洩の形跡なし ${g.items.length}件${def.leaks(g) ? `・漏洩した事案 ${def.leaks(g)}件` : ''}`
+      : delayMode
       ? `平均${nf.format(Math.round(g.delayAvg))}日・最長${nf.format(Math.max(...g.delays))}日（発生日が分かる${g.delays.length}件）`
       : `${nf.format(g.affected)}件${g.unknown ? `＋件数不明 ${g.unknown}件` : ''}`,
   });
@@ -166,7 +186,8 @@ function showTooltip(row, g) {
     : g.items.slice().sort((a, b) => (b.affected_count ?? -1) - (a.affected_count ?? -1));
   for (const b of sorted.slice(0, 5)) {
     const count = b.affected_count == null ? '件数不明' : `${compact(b.affected_count)}件`;
-    const detail = delayMode ? `発生から${nf.format(b.disclosure_days)}日で公表` : `${count}・${b.date_announced.slice(0, 7).replace('-', '/')}`;
+    const month = b.date_announced.slice(0, 7).replace('-', '/');
+    const detail = noleak ? `${CAUSES[b.cause] ?? b.cause}・${month}` : delayMode ? `発生から${nf.format(b.disclosure_days)}日で公表` : `${count}・${month}`;
     ul.append(Object.assign(document.createElement('li'), { textContent: `${shortName(b.organization)}（${detail}）` }));
   }
   if (sorted.length > 5) ul.append(Object.assign(document.createElement('li'), { textContent: `ほか ${sorted.length - 5} 件` }));
@@ -193,14 +214,19 @@ function render() {
   const qs = next.toString();
   history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
 
-  const items = breaches.filter(inRange);
+  // 「お漏らし無し」の事案は通常のランキングから外し、お漏らししなかったランキングだけで数える
+  const inScope = breaches.filter(inRange);
+  const items = inScope.filter((b) => b.leaked !== false);
+  const noleak = inScope.filter((b) => b.leaked === false);
+  state.leaks = items;
   const total = items.reduce((n, b) => n + (b.affected_count ?? 0), 0);
-  $('scope').textContent = `対象 ${items.length}件の事案・漏洩件数 計${compact(total)}件`;
+  $('scope').textContent = `対象 ${items.length}件の事案・漏洩件数 計${compact(total)}件${noleak.length ? `（お漏らし無しの${noleak.length}件は除く）` : ''}`;
   const known = items.filter((b) => b.disclosure_days != null).length;
   $('delay-note').hidden = state.metric !== 'delay';
   $('delay-note').textContent = `発生日が分かっている${known}件の事案のみで集計しています。発生日は不正アクセスの開始日や発覚日など公表内容によって異なり、公表までの日数には調査に必要な期間も含まれます。`;
   hideTooltip();
   for (const def of RANKINGS) renderRanking(def, items);
+  renderRanking(NOLEAK, noleak);
 }
 
 for (const btn of document.querySelectorAll('[data-metric]')) btn.addEventListener('click', () => { state.metric = btn.dataset.metric; render(); });

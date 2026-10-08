@@ -1,7 +1,7 @@
 // 事案ごとの OGP 画像（public/breach/<id>/og.png、1200×630）を生成する
 // scripts/pages.mjs の後に実行し、公開物にだけ含める（リポジトリにはコミットしない）
 //   node scripts/og-images.mjs [--only <事案ID>,...] [--style auto|a|b|c]
-//   auto（既定）: 企業側が調査中は C（速報風）、重要度が「危険」「高」は B（ダーク8ビット）、それ以外は A（ライト）
+//   auto（既定）: お漏らし無しは A、企業側が調査中は C（速報風）、重要度が「危険」「高」は B（ダーク8ビット）、それ以外は A（ライト）
 //   CHROME_PATH … 使う Chrome / Chromium（省略時はインストール済みの Google Chrome）
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -27,12 +27,16 @@ const SEV_COLOR = { critical: '#d92d20', high: '#f79009', medium: '#e0a800', low
 const orgSize = (s, base) => (s.length > 26 ? base * 0.62 : s.length > 18 ? base * 0.78 : base);
 
 function view(b) {
-  const count = b.affected_count == null ? null : nf.format(b.affected_count);
-  const sev = b.severity && LEVEL[b.severity];
+  // お漏らし無しの事案は件数を出さず、「お漏らし無し」と表示する
+  const noleak = b.leaked === false;
+  const count = noleak || b.affected_count == null ? null : nf.format(b.affected_count);
+  // お漏らし無しの事案は重要度（漏洩した情報の重要度）を出さない
+  const sev = b.leaked !== false && b.severity && LEVEL[b.severity];
   const svc = (b.services ?? []).join(' / ');
   const meta = `${fmtDate(b.date_announced)} 公表 ・ ${CAUSES[b.cause]}`;
   const investigating = b.status === 'investigating';
-  return { count, sev, svc, meta, investigating, unknown: investigating ? '件数調査中' : '件数不明' };
+  const unknown = noleak ? '<span style="color:#067647">お漏らし無し</span>' : investigating ? '件数調査中' : '件数不明';
+  return { count, sev, svc, meta, investigating, unknown };
 }
 
 const FONT = '<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&family=DotGothic16&display=block" rel="stylesheet">';
@@ -45,7 +49,7 @@ const STYLES = {
     return `<style>${BASE}
       body{background:#f7f7f8;color:#1c1c1f;padding:56px 64px;position:relative}
       .stain{position:absolute;border-radius:50%;border:3px solid rgba(214,51,108,.18);background:radial-gradient(closest-side,rgba(214,51,108,.04) 60%,rgba(214,51,108,.1))}
-      .card{position:relative;height:100%;background:#fff;border:2px solid #e2e2e7;border-left:14px solid ${v.sev ? SEV_COLOR[b.severity] : '#e2e2e7'};border-radius:24px;padding:44px 52px;display:flex;flex-direction:column}
+      .card{position:relative;height:100%;background:#fff;border:2px solid #e2e2e7;border-left:14px solid ${b.leaked === false ? '#12b76a' : v.sev ? SEV_COLOR[b.severity] : '#e2e2e7'};border-radius:24px;padding:44px 52px;display:flex;flex-direction:column}
       .site{font-size:26px;font-weight:700;color:#6b6b75}.site b{color:#d6336c}
       .org{font-size:${orgSize(b.organization, 60)}px;font-weight:900;line-height:1.25;margin-top:22px}
       .svc{font-size:26px;color:#6b6b75;margin-top:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -124,6 +128,7 @@ const STYLES = {
 
 const pick = (b) => {
   if (STYLE !== 'auto') return STYLE;
+  if (b.leaked === false) return 'a';
   if (b.status === 'investigating') return 'c';
   if (b.severity === 'critical' || b.severity === 'high') return 'b';
   return 'a';
