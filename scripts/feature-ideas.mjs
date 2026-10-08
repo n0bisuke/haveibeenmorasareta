@@ -1,6 +1,6 @@
 // GA のアクセス傾向・既存の要望 Issue・サイトの機能一覧を LLM に渡し、機能追加の提案を Issue（ラベル「機能追加」「AI提案」）にする
 //   GA_CREDENTIALS / GA_PROPERTY_ID … scripts/ga/client.mjs を参照
-//   LLM_API_KEY / LLM_MODEL など   … scripts/ai/llm.mjs を参照
+//   GROQ_API_KEY（または LLM_API_KEY / LLM_MODEL）など … scripts/ai/llm.mjs を参照
 //   GITHUB_TOKEN / GITHUB_REPOSITORY が無ければ、提案を標準出力に出すだけ
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -13,7 +13,7 @@ const LABELS = ['機能追加', 'AI提案'];
 const ONLINE = Boolean(GITHUB_TOKEN && GITHUB_REPOSITORY);
 
 if (!gaConfigured || !llmConfig.ready) {
-  console.log('GA（GA_CREDENTIALS / GA_PROPERTY_ID）または LLM（LLM_API_KEY / LLM_MODEL）が未設定のため、提案は作りません');
+  console.log('GA（GA_CREDENTIALS / GA_PROPERTY_ID）または LLM（GROQ_API_KEY、または LLM_API_KEY / LLM_MODEL）が未設定のため、提案は作りません');
   process.exit(0);
 }
 

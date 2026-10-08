@@ -18,7 +18,7 @@ const MAX_ITEMS = Number(process.env.AI_MAX_ITEMS) || 5;
 
 await mkdir(OUT, { recursive: true });
 if (!llmConfig.ready) {
-  console.log('LLM_API_KEY / LLM_MODEL が未設定のため、AI 下書きは作りません');
+  console.log('LLM の API キー（GROQ_API_KEY、または LLM_API_KEY と LLM_MODEL）が未設定のため、AI 下書きは作りません');
   await writeFile(path.join(OUT, 'drafts.json'), '[]\n');
   process.exit(0);
 }

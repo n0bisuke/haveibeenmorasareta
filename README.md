@@ -64,7 +64,7 @@ npm run dev
 ### 機能追加の提案（AI）
 
 `Feature ideas` ワークフローが4日ごとに、直近28日間のアクセス傾向（GA）・既存の「機能追加」Issue・この README の「仕組み」を LLM に渡し、
-根拠となる数字付きの機能追加の提案3つを Issue（ラベル `機能追加`・`AI提案`）にします。GA の設定に加えて、下の「AI による下書き」と同じ `LLM_API_KEY`・`LLM_MODEL` が必要です。
+根拠となる数字付きの機能追加の提案3つを Issue（ラベル `機能追加`・`AI提案`）にします。GA の設定に加えて、下の「AI による下書き」と同じ LLM の設定（`GROQ_API_KEY`、または `LLM_API_KEY`・`LLM_MODEL`）が必要です。
 
 ## Issue のラベル
 
@@ -104,8 +104,9 @@ LLM の出力はそのまま信用せず、プログラムで次の検査をし�
 
 | 種類 | 名前 | 内容 |
 |---|---|---|
-| Secret | `LLM_API_KEY` | LLM サービスの API キー |
-| Variable | `LLM_MODEL` | ライター役のモデル名 |
+| Secret | `GROQ_API_KEY` | Groq の API キー。これだけ登録すれば、ベース URL とモデル（`openai/gpt-oss-120b`）は Groq 用の既定値を使う |
+| Secret | `LLM_API_KEY` | ほかの LLM サービス（OpenRouter など）を使う場合の API キー（`GROQ_API_KEY` より優先） |
+| Variable | `LLM_MODEL` | ライター役のモデル名（`LLM_API_KEY` を使う場合は必須） |
 | Variable | `LLM_BASE_URL` | API のベース URL（省略時は OpenRouter の `https://openrouter.ai/api/v1`。Groq は `https://api.groq.com/openai/v1`） |
 | Variable | `LLM_EDITOR_MODEL` | 編集者役のモデル名（省略時は `LLM_MODEL` と同じ） |
 | Variable | `AI_MAX_ITEMS` | 1日に処理する候補の数（省略時は 5） |

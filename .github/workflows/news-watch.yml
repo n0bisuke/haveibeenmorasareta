@@ -1,7 +1,7 @@
 name: News watch
 
 # ニュースの RSS を毎日巡回し、未収録の情報漏洩ニュースの候補を Issue にまとめる。
-# LLM の API キー（Secrets の LLM_API_KEY）とモデル名（Variables の LLM_MODEL）が設定されていれば、
+# LLM の API キー（Secrets の GROQ_API_KEY、または LLM_API_KEY と Variables の LLM_MODEL）が設定されていれば、
 # 候補の記事から AI が事案データの下書きを作り、1件ずつ PR にする（設定方法は README の「AI による下書き」）
 on:
   schedule:
