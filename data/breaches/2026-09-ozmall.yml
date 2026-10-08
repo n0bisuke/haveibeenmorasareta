@@ -1,0 +1,22 @@
+organization: スターツ出版株式会社
+group: スターツグループ
+services:
+  - オズモール（OZmall）
+industry: メディア・出版
+country: JP
+date_occurred: 2026-09-26
+date_announced: 2026-09-27
+affected_count: 442779
+count_note: 最大件数。閲覧された可能性（一部の退会者を含む）。第1報では447,610名
+cause: vulnerability
+vuln_target: web_app
+root_cause: 海外から大量の不正アクセスを受け、サイトの脆弱性を悪用された
+data_types:
+  - メールアドレス
+  - 氏名
+summary: スターツ出版が運営する「オズモール」で海外からの大量の不正アクセスを検知した。会員と一部の退会者の最大44万2,779名分のメールアドレスと、一部会員の氏名・住所（都道府県まで）が閲覧された可能性がある。原因となった脆弱性への対策を実施した。クレジットカード情報は外部の決済システムで扱っており含まれない。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2609/28/2000001786/
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/01/56359.html

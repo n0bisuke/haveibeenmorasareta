@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-10-07T17:06:19.000Z",
-  "count": 337,
+  "count": 352,
   "severity_levels": [
     {
       "id": "critical",
@@ -74,6 +74,7 @@
     "交通・モビリティ",
     "旅行",
     "不動産",
+    "建設",
     "医療",
     "美容・健康",
     "人材・教育",
@@ -568,6 +569,37 @@
       "severity": "critical"
     },
     {
+      "id": "2026-10-nissui-logistics",
+      "organization": "日水物流株式会社",
+      "group": "ニッスイグループ",
+      "industry": "物流",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-10-07",
+      "date_announced": "2026-10-07",
+      "affected_count": null,
+      "count_note": "個人情報・顧客データの流出の有無を確認中",
+      "cause": "third_party",
+      "root_cause": "利用している委託先のデータセンターが第三者による不正アクセスを受けた",
+      "summary": "日水物流で委託先データセンターへの第三者による不正アクセスとみられるシステム障害が発生し、全国の物流拠点で商品の入出荷ができなくなった。親会社のニッスイが公表し、グループが管理する個人情報や顧客データの外部への流出の有無を確認している。委託先は報道ではIDCフロンティアのクラウドサービス「IDCFクラウド」とされているが、公式発表では社名を明らかにしていない。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/08/2000002113/"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC07B2A0X01C26A0000000/"
+        },
+        {
+          "title": "LOGISTICS TODAY",
+          "url": "https://www.logi-today.com/1008962"
+        }
+      ],
+      "severity": null
+    },
+    {
       "id": "2026-10-sompo-japan",
       "organization": "損害保険ジャパン株式会社",
       "services": [
@@ -634,6 +666,38 @@
         }
       ],
       "severity": null
+    },
+    {
+      "id": "2026-10-toda",
+      "organization": "戸田建設株式会社",
+      "industry": "建設",
+      "country": "JP",
+      "date_occurred": "2026-10-01",
+      "date_announced": "2026-10-07",
+      "affected_count": 4778,
+      "count_note": "従業員の人数。ほかに取引先担当者のメールアドレス最大7,200件と取引データ最大6,000件",
+      "cause": "unauthorized_access",
+      "root_cause": "取引先への支払いを管理するシステムなどが外部から不正アクセスを受けた",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "従業員情報",
+        "取引先情報"
+      ],
+      "summary": "取引先への支払いを管理するシステムなどへの外部からの不正アクセスを検知し、10月1日から5日にかけての情報漏えいの形跡を確認した。従業員4,778人の氏名・住所などに加え、取引先担当者のメールアドレス最大7,200件と取引データ最大6,000件が漏えいした。侵入経路は調査中。",
+      "sources": [
+        {
+          "title": "ASCII.jp",
+          "url": "https://ascii.jp/elem/000/004/440/4440822/"
+        },
+        {
+          "title": "時事通信（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/92d511708ef4bb938b5237625828aa1c572a70b7"
+        }
+      ],
+      "severity": "high"
     },
     {
       "id": "2026-10-asahi-kasei-therapeutics",
@@ -1030,6 +1094,120 @@
       "severity": "medium"
     },
     {
+      "id": "2026-10-nikkei",
+      "organization": "株式会社日本経済新聞社",
+      "group": "日経グループ",
+      "services": [
+        "Google Workspace（社員の業務用アカウント）",
+        "Microsoft 365（社員の業務用アカウント）"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2026-10-04",
+      "affected_count": 1646,
+      "count_note": "Google Workspace の不正ログインで漏えいした可能性がある人数。Microsoft 365 の件（なりすましメール約9,000件）の影響範囲は調査中",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "従業員情報",
+        "取引先情報"
+      ],
+      "summary": "社員が業務で使うGoogle Workspaceのアカウントが7月下旬以降に外部から不正ログインされ、社員や取引先など1,646人分の氏名とメールアドレスが漏えいした可能性がある。同日、社員のMicrosoft 365アカウントも不正ログインを受け、9月30日に悪性サイトへ誘導するなりすましメール約9,000件が社内外に送信されたと公表した。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS（Google Workspace）",
+          "url": "https://www.itmedia.co.jp/news/article/2610/05/2000001994/"
+        },
+        {
+          "title": "ITmedia NEWS（Microsoft 365）",
+          "url": "https://www.itmedia.co.jp/news/article/2610/05/2000001991/"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUD255YG0V20C26A9000000/"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2026-10-nikkei-bp",
+      "organization": "株式会社日経BP",
+      "group": "日経グループ",
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-04",
+      "affected_count": 26,
+      "count_note": "漏えいした可能性",
+      "cause": "phishing",
+      "attack_methods": [
+        "phishing"
+      ],
+      "root_cause": "日本経済新聞社の社員のアドレスから届いたフィッシングメールで従業員の認証情報を盗まれた",
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "従業員のメールアカウントが不正アクセスを受け、メールの送受信先26件の氏名とメールアドレスが漏えいした可能性がある。従業員は、乗っ取られた日本経済新聞社の社員のアドレスから届いたフィッシングメールで認証情報を盗まれていた。",
+      "sources": [
+        {
+          "title": "日経BP 公式発表",
+          "url": "https://www.nikkeibp.co.jp/atcl/newsrelease/corp/100200417/"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2146104.html"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/07/56402.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2026-10-abahouse",
+      "organization": "株式会社アバハウスインターナショナル",
+      "services": [
+        "ABAHOUSE 公式オンラインストア"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-09-27",
+      "date_announced": "2026-10-03",
+      "affected_count": null,
+      "count_note": "退会者を含む全会員が対象となる可能性（件数は非公表）",
+      "cause": "unauthorized_access",
+      "root_cause": "社内システムへの不正ログインを起点に、システムの不備を突かれて不正なプログラムを実行された",
+      "data_types": [
+        "会員ID",
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "生年月日",
+        "性別",
+        "購入履歴"
+      ],
+      "summary": "社内システムへの不正アクセスにより、会員情報と受注情報が漏えいした可能性がある。顧客から注文内容と一致する不審な返金案内メールの問い合わせを受けて調査し、不正アクセスの痕跡を確認した。クレジットカード情報は決済代行会社が保持しており、漏えいは確認されていない。",
+      "sources": [
+        {
+          "title": "アバハウス 公式発表",
+          "url": "https://abahouse.co.jp/news/2005/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/03/2000001981/"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC030Y20T01C26A0000000/"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-10-daiichi-life",
       "organization": "第一生命保険株式会社",
       "industry": "金融・保険",
@@ -1200,6 +1378,46 @@
         }
       ],
       "severity": "high"
+    },
+    {
+      "id": "2026-09-shudo-gakuen",
+      "organization": "学校法人修道学園",
+      "services": [
+        "広島修道大学",
+        "修道中学校・高等学校",
+        "広島修道大学ひろしま協創中学校・高等学校"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "org_type": "university",
+      "prefecture": "広島県",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-09-26",
+      "date_announced": "2026-09-30",
+      "affected_count": null,
+      "count_note": "件数は非公表。外部の専門機関と影響範囲を調査中",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "口座番号",
+        "従業員情報",
+        "取引先情報"
+      ],
+      "summary": "学園が管理するサーバーへの第三者による不正アクセスを確認し、教職員や一部の学生、外部講師の氏名・住所・電話番号・口座情報や、取引先の口座情報などが漏えいしたおそれがある。外部の専門機関と原因や影響範囲を調査している。",
+      "sources": [
+        {
+          "title": "修道学園 公式発表",
+          "url": "https://www.shudo-u.ac.jp/news/20260930-unauthorizedaccess.html"
+        },
+        {
+          "title": "中国新聞",
+          "url": "https://www.chugoku-np.co.jp/articles/-/905554"
+        }
+      ],
+      "severity": "critical"
     },
     {
       "id": "2026-09-eplus",
@@ -1391,6 +1609,39 @@
       "severity": "high"
     },
     {
+      "id": "2026-09-ozmall",
+      "organization": "スターツ出版株式会社",
+      "group": "スターツグループ",
+      "services": [
+        "オズモール（OZmall）"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_occurred": "2026-09-26",
+      "date_announced": "2026-09-27",
+      "affected_count": 442779,
+      "count_note": "最大件数。閲覧された可能性（一部の退会者を含む）。第1報では447,610名",
+      "cause": "vulnerability",
+      "vuln_target": "web_app",
+      "root_cause": "海外から大量の不正アクセスを受け、サイトの脆弱性を悪用された",
+      "data_types": [
+        "メールアドレス",
+        "氏名"
+      ],
+      "summary": "スターツ出版が運営する「オズモール」で海外からの大量の不正アクセスを検知した。会員と一部の退会者の最大44万2,779名分のメールアドレスと、一部会員の氏名・住所（都道府県まで）が閲覧された可能性がある。原因となった脆弱性への対策を実施した。クレジットカード情報は外部の決済システムで扱っており含まれない。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2609/28/2000001786/"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56359.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
       "id": "2026-09-tokyo-metro",
       "organization": "東京地下鉄株式会社（東京メトロ）",
       "services": [
@@ -1523,6 +1774,70 @@
       "severity": "critical"
     },
     {
+      "id": "2026-09-ikegami",
+      "organization": "池上通信機株式会社",
+      "industry": "製造",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-09-21",
+      "date_announced": "2026-09-24",
+      "affected_count": null,
+      "count_note": "個人情報を含む情報漏えいの有無は調査中",
+      "cause": "ransomware",
+      "root_cause": "一部サーバーに不正アクセスされ、サーバー内のファイルを暗号化された",
+      "summary": "外部からの情報提供を受けてサイバー攻撃の可能性を公表し、その後の調査で一部サーバーへの不正アクセスの痕跡とファイルの暗号化を確認した。同社の資料とみられる情報がリークサイトで公開されていることも確認しており、個人情報を含む情報漏えいの有無を調査している。",
+      "sources": [
+        {
+          "title": "池上通信機 適時開示（日本経済新聞）",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20260924539383/"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56384.html"
+        }
+      ],
+      "severity": null
+    },
+    {
+      "id": "2026-09-chibagin-shoten",
+      "organization": "株式会社ちばぎん商店",
+      "group": "千葉銀行グループ",
+      "industry": [
+        "小売・EC",
+        "金融・保険"
+      ],
+      "country": "JP",
+      "date_occurred": "2026-09-03",
+      "date_announced": "2026-09-17",
+      "affected_count": 2338,
+      "count_note": "個人約722先・法人約1,616先（報道では3,252件、グループ全体で約1万件とするものもある）",
+      "cause": "unauthorized_access",
+      "root_cause": "コーポレートサイトのサーバーが不正アクセスを受け、オンラインカジノのコンテンツを表示させられた",
+      "data_types": [
+        "氏名",
+        "住所",
+        "メールアドレス",
+        "電話番号"
+      ],
+      "summary": "千葉銀行の子会社ちばぎん商店のコーポレートサイトのサーバーが第三者による不正アクセスを受け、海外オンラインカジノに関するコンテンツが表示された。サーバーに保存されていた顧客の氏名・住所・メールアドレス・電話番号などが漏えいした可能性がある。クレジットカード情報やパスワードは保存していなかった。",
+      "sources": [
+        {
+          "title": "千葉銀行 公式発表",
+          "url": "https://www.chibabank.co.jp/news/news20260917_01"
+        },
+        {
+          "title": "キーマンズネット",
+          "url": "https://kn.itmedia.co.jp/kn/article/2609/18/2000001596/"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/08/56415.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-09-gyazo",
       "organization": "株式会社Helpfeel",
       "services": [
@@ -1555,6 +1870,92 @@
       "severity": "medium"
     },
     {
+      "id": "2026-09-photogoods",
+      "organization": "大興印刷株式会社",
+      "services": [
+        "PhotoGoods"
+      ],
+      "industry": [
+        "小売・EC",
+        "製造"
+      ],
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-08-06",
+      "date_announced": "2026-09-16",
+      "affected_count": null,
+      "count_note": "2026年8月6日〜9月11日に決済画面でカード情報を入力した利用者。件数は調査中",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "attack_methods": [
+        "web_skimming"
+      ],
+      "root_cause": "システムの脆弱性とファイルアップロード機能を悪用され、決済画面にカード情報を盗むプログラムを設置された",
+      "data_types": [
+        "クレジットカード番号",
+        "クレジットカードのセキュリティコード",
+        "クレジットカード情報（番号の一部・有効期限等）",
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "パスワード（ハッシュ化・暗号化済み）"
+      ],
+      "summary": "大興印刷が運営する写真グッズ作成サービス「PhotoGoods」が不正アクセスを受け、決済画面に入力されたカード情報を盗むプログラムを設置された。2026年8月6日から9月11日までに決済画面でカード情報を入力した利用者のカード情報と個人情報が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "大興印刷 公式発表",
+          "url": "https://www.daiko-printing.co.jp/information/2037/"
+        },
+        {
+          "title": "Security NEXT",
+          "url": "https://www.security-next.com/190511"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56392.html"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "2026-09-ainokaze",
+      "organization": "あいの風とやま鉄道株式会社",
+      "services": [
+        "観光列車「一万三千尺物語」座席管理システム"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2026-09-02",
+      "date_announced": "2026-09-15",
+      "affected_count": 1409,
+      "count_note": "個人で予約した利用客・予約客。漏えいしたおそれ",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "観光列車「一万三千尺物語」の座席管理システムが9月2日から8日にかけて複数回の不正アクセスを受け、利用客や予約客1,409人分の氏名・住所・電話番号・メールアドレスが漏えいしたおそれがある。身に覚えのない予約の取り消しなどから発覚した。クレジットカード情報は別会社のシステムで処理しており対象外。",
+      "sources": [
+        {
+          "title": "あいの風とやま鉄道 公式発表",
+          "url": "https://ainokaze.co.jp/24166"
+        },
+        {
+          "title": "北日本新聞",
+          "url": "https://webun.jp/articles/-/1093121"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56383.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-09-lean-body",
       "organization": "株式会社LEAN BODY",
       "industry": "美容・健康",
@@ -1573,6 +1974,33 @@
         }
       ],
       "severity": null
+    },
+    {
+      "id": "2026-09-odawara-engineering",
+      "organization": "株式会社小田原エンジニアリング",
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2026-03-27",
+      "date_announced": "2026-09-15",
+      "affected_count": null,
+      "count_note": "取引先担当者の個人情報を含むメール約3,500通が閲覧された（人数は非公表）",
+      "cause": "unauthorized_access",
+      "root_cause": "ドイツ子会社に出向中の従業員のメールアカウントが約5か月にわたり不正アクセスを受けた",
+      "data_types": [
+        "取引先情報"
+      ],
+      "summary": "ドイツ子会社に出向中の従業員のメールアカウントが2026年3月27日から8月31日まで不正アクセスを受け、取引先担当者の個人情報を含むメール約3,500通が閲覧された。攻撃者は従業員になりすまして入金を指示するメールを送り、一部の取引先に金銭的な被害が出た。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/07/56400.html"
+        },
+        {
+          "title": "サイバーセキュリティ.com",
+          "url": "https://cybersecurity-jp.com/news/116661"
+        }
+      ],
+      "severity": "medium"
     },
     {
       "id": "2026-09-digital-agency-gss",
@@ -1610,6 +2038,46 @@
         }
       ],
       "severity": "high"
+    },
+    {
+      "id": "2026-09-ieej",
+      "organization": "一般財団法人日本エネルギー経済研究所",
+      "industry": "団体・その他",
+      "country": "JP",
+      "org_type": "public_org",
+      "prefecture": "東京都",
+      "date_occurred": "2026-07-29",
+      "date_announced": "2026-09-11",
+      "affected_count": null,
+      "count_note": "パスポート情報13件の漏えいを確認。ほかにメールアドレス759件、氏名・役職・所属23件などが漏えいした可能性",
+      "cause": "phishing",
+      "attack_methods": [
+        "phishing"
+      ],
+      "root_cause": "フィッシング攻撃で所員6名のMicrosoft 365アカウントが不正アクセスを受けた",
+      "data_types": [
+        "パスポート番号",
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "口座番号"
+      ],
+      "summary": "フィッシング攻撃を起点に所員6名のMicrosoft 365アカウントが不正アクセスを受け、メール5,417件とファイル3,272件が閲覧された。続報でパスポート情報13件の漏えいを確認し、メールアドレス759件などが漏えいした可能性があるとした。",
+      "sources": [
+        {
+          "title": "日本エネルギー経済研究所 公式発表（第1報）",
+          "url": "https://eneken.ieej.or.jp/press/press260911.pdf"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/02/2000001976/"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/02/56376.html"
+        }
+      ],
+      "severity": "critical"
     },
     {
       "id": "2026-09-kyoto-sanga",
@@ -1939,6 +2407,45 @@
         }
       ],
       "severity": "medium"
+    },
+    {
+      "id": "2026-08-beer-engawa",
+      "organization": "原田産業株式会社",
+      "services": [
+        "ビールの縁側"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-08-11",
+      "date_announced": "2026-08-18",
+      "affected_count": 9,
+      "count_note": "漏えいした可能性",
+      "cause": "vulnerability",
+      "vuln_target": "web_app",
+      "root_cause": "サイトの一部システムの脆弱性を突かれて管理者権限を取得され、不正なプログラムを稼働された",
+      "data_types": [
+        "クレジットカード番号",
+        "クレジットカードのセキュリティコード",
+        "クレジットカード情報（番号の一部・有効期限等）",
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "性別",
+        "生年月日"
+      ],
+      "summary": "ECサイト「ビールの縁側」でシステムの脆弱性を悪用されて管理者権限を不正に取得され、不正なプログラムが稼働していた。2026年8月11日から14日にかけて、顧客9名のクレジットカード情報を含む個人情報が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity（第1報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/08/26/56034.html"
+        },
+        {
+          "title": "ScanNetSecurity（続報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56379.html"
+        }
+      ],
+      "severity": "critical"
     },
     {
       "id": "2026-08-voising",
@@ -3588,6 +4095,41 @@
       "severity": "medium"
     },
     {
+      "id": "2026-03-moonstar",
+      "organization": "株式会社ムーンスター",
+      "services": [
+        "ムーンスター公式オンラインストア"
+      ],
+      "industry": [
+        "製造",
+        "小売・EC"
+      ],
+      "country": "JP",
+      "date_announced": "2026-03-26",
+      "affected_count": null,
+      "count_note": "オンラインストアの利用者（件数は非公表）。2026年10月2日の続報で漏えいの可能性を公表",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "購入履歴"
+      ],
+      "summary": "システムサーバーへの不正アクセスの疑いを2026年3月に公表し、10月の続報でオンラインストア利用者の氏名・住所・電話番号・メールアドレス・過去の注文情報が漏えいした可能性があるとした。クレジットカード番号とパスワードは含まれない。同社を装ったフィッシングメールが一部の顧客に届いている。",
+      "sources": [
+        {
+          "title": "ムーンスター 公式発表（続報）",
+          "url": "https://www.moonstar.co.jp/information/2026/10/post-4.html"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/03/2000001982/"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-03-osaka-marathon",
       "organization": "大阪マラソン組織委員会",
       "services": [
@@ -4351,6 +4893,7 @@
     {
       "id": "2025-11-nikkei",
       "organization": "株式会社日本経済新聞社",
+      "group": "日経グループ",
       "services": [
         "Slack（社内ビジネスチャット）"
       ],

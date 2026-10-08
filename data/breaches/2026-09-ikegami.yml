@@ -1,0 +1,17 @@
+organization: 池上通信機株式会社
+industry: 製造
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-09-21
+date_announced: 2026-09-24
+affected_count: null
+count_note: 個人情報を含む情報漏えいの有無は調査中
+cause: ransomware
+root_cause: 一部サーバーに不正アクセスされ、サーバー内のファイルを暗号化された
+summary: 外部からの情報提供を受けてサイバー攻撃の可能性を公表し、その後の調査で一部サーバーへの不正アクセスの痕跡とファイルの暗号化を確認した。同社の資料とみられる情報がリークサイトで公開されていることも確認しており、個人情報を含む情報漏えいの有無を調査している。
+sources:
+  - title: 池上通信機 適時開示（日本経済新聞）
+    url: https://www.nikkei.com/nkd/disclosure/tdnr/20260924539383/
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/05/56384.html
