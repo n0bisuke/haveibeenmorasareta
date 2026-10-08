@@ -1,0 +1,20 @@
+organization: 京王電鉄株式会社
+group: 京王グループ
+services:
+  - 京王ストア
+  - 京王プラザホテル
+industry: 交通・モビリティ
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/73
+date_occurred: 2026-09-26
+date_announced: 2026-09-26
+affected_count: null
+count_note: 公表時点で個人情報の漏えいは確認されていない（顧客情報の流出を含めて調査中）
+cause: ransomware
+summary: グループ会社のサーバーがランサムウェア攻撃を受け、京王ストアの現金以外の決済や京王プラザホテルの新規予約など、一部グループ会社の営業システムに障害が出た。鉄道の運行に影響はない。公表時点で個人情報などの漏えいは確認されていないが、事業の機密事項や顧客情報の流出を含めて外部の専門家と影響範囲を調査している。
+sources:
+  - title: 京王電鉄 ランサムウェア攻撃によるシステム障害に関するお知らせとお詫び
+    url: https://www.keio.co.jp/news/update/announce/nr260926v13404/
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC270LL0X20C26A9000000/
