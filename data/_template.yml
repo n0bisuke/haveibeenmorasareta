@@ -12,6 +12,7 @@ country: JP                               # 任意: ISO 3166-1 alpha-2
 # prefecture: 大阪府                         # 任意: 都道府県（org_type を書いたときは必須。地域別マップに表示）
 # status: investigating                      # 任意: 企業が件数・漏えいの有無などを調査中と公表しているとき（issue も指定）
 # reliability: low                          # 任意: 公式発表や信頼できる報道（一次情報）を確認できていないとき（issue も指定）
+# leaked: false                            # 任意: 不正アクセスなどを受けたが、情報が閲覧・持ち出された形跡は確認されなかったと公表されたとき（「お漏らし無し」）
 # issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/1  # 任意: 情報募集用の Issue
 date_occurred: 2025-01-10                 # 任意: 発生日（判明していれば）
 date_announced: 2025-01-31                # 必須: 最初の公表日

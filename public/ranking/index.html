@@ -111,7 +111,18 @@
       <ol class="ranking" id="rank-vendor"></ol>
     </section>
 
-    <p class="muted viz-note ranking-note">漏洩件数は公表時点の最大値・推計値を含みます。件数が不明な事案は合計に含みません。項目をクリックすると一覧で該当する事案を表示します。</p>
+    <section class="viz-card noleak-card" aria-labelledby="noleak-title">
+      <div class="viz-head">
+        <div>
+          <h2 id="noleak-title">お漏らししなかったランキング</h2>
+          <p class="muted viz-sub">不正アクセスなどを受けたものの、調査の結果、情報が閲覧・持ち出された形跡は確認されなかったと公表した事案の数です。攻撃を受けても漏らさなかった企業・団体として、ほかのランキングとは分けて集計しています（同数なら漏洩した事案が少ない方が上位）</p>
+        </div>
+      </div>
+      <ol class="ranking" id="rank-noleak"></ol>
+      <p class="muted" id="empty-noleak" hidden>この期間に該当する事案はありません。</p>
+    </section>
+
+    <p class="muted viz-note ranking-note">漏洩件数は公表時点の最大値・推計値を含みます。件数が不明な事案は合計に含みません。「お漏らし無し」の事案は、お漏らししなかったランキング以外には含みません。項目をクリックすると一覧で該当する事案を表示します。</p>
     <div class="tooltip" id="tooltip" role="status" aria-live="polite" hidden></div>
   </main>
 

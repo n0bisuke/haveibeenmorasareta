@@ -88,6 +88,13 @@
       ],
       "description": "low: 公式発表や信頼できる報道（一次情報）を確認できていない（まとめサイトにしか載っていないなど）。サイトに信頼度「低」と表示し、issue で情報を募集する。高・中は出典から自動で判定する"
     },
+    "leaked": {
+      "type": "boolean",
+      "enum": [
+        false
+      ],
+      "description": "false: 不正アクセスなどを受けたが、調査の結果、情報が閲覧・持ち出された形跡は確認されなかったと公表している。サイトに「お漏らし無し」と表示し、漏洩件数の合計・ランキング・地図などの集計から外す（「お漏らししなかったランキング」で数える）"
+    },
     "issue": {
       "type": "string",
       "pattern": "^https://github\\.com/n0bisuke/haveibeenmorasareta/issues/[0-9]+$",
