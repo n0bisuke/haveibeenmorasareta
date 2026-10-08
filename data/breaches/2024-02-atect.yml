@@ -1,7 +1,7 @@
 organization: 株式会社アテクト
 industry: 製造
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
 date_announced: 2024-02-21
 affected_count: 2055

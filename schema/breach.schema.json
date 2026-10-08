@@ -33,8 +33,19 @@
     },
     "industry": {
       "oneOf": [
-        { "type": "string", "minLength": 1 },
-        { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1, "uniqueItems": true }
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
       ],
       "description": "業種。data/industries.yml にある名前のみ使用可。当事者の業種を先頭に、影響を受けた側の業種（委託元の自治体・病院など）も複数指定できる"
     },
@@ -65,13 +76,22 @@
     },
     "status": {
       "type": "string",
-      "enum": ["investigating"],
-      "description": "investigating: 件数・漏えいの有無などが調査中。サイトに「調査中」と表示し、issue で情報を募集する"
+      "enum": [
+        "investigating"
+      ],
+      "description": "investigating: 企業が件数・漏えいの有無などを調査中と公表している。サイトに「企業側が調査中」と表示し、issue で続報を募集する"
+    },
+    "reliability": {
+      "type": "string",
+      "enum": [
+        "low"
+      ],
+      "description": "low: 公式発表や信頼できる報道（一次情報）を確認できていない（まとめサイトにしか載っていないなど）。サイトに信頼度「低」と表示し、issue で情報を募集する。高・中は出典から自動で判定する"
     },
     "issue": {
       "type": "string",
       "pattern": "^https://github\\.com/n0bisuke/haveibeenmorasareta/issues/[0-9]+$",
-      "description": "情報募集用の Issue の URL（status: investigating のとき）"
+      "description": "情報募集用の Issue の URL（status: investigating または reliability: low のとき）"
     },
     "affected_count": {
       "type": [
@@ -110,7 +130,10 @@
     },
     "attack_methods": {
       "type": "array",
-      "items": { "type": "string", "pattern": "^[a-z_]+$" },
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z_]+$"
+      },
       "minItems": 1,
       "uniqueItems": true,
       "description": "判明している攻撃手法。data/attack-methods.yml の ID（複数可）"

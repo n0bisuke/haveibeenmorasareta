@@ -1,7 +1,7 @@
 organization: 日本マクドナルド株式会社
 industry: 飲食
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-03-19
 affected_count: 8989

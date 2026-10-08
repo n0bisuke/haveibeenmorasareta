@@ -1,7 +1,7 @@
 organization: 株式会社ローソン銀行
 industry: 金融・保険
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/31
 date_announced: 2026-03-31
 affected_count: 5373

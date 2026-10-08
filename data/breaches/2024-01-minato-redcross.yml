@@ -3,7 +3,7 @@ industry: 医療
 country: JP
 org_type: hospital
 prefecture: 神奈川県
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
 date_announced: 2024-01-17
 affected_count: 1092

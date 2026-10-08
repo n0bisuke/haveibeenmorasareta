@@ -1,7 +1,7 @@
-name: 調査中の事案の続報
-description: 件数・漏えいの有無などが分かっていない事案の情報を集めます（サイトでは「調査中」と表示）
-title: "【調査中】"
-labels: ["調査中"]
+name: 企業側が調査中の事案の続報
+description: 件数・漏えいの有無などが分かっていない事案の情報を集めます（サイトでは「企業側が調査中」と表示）
+title: "【企業側が調査中】"
+labels: ["企業側が調査中"]
 body:
   - type: input
     id: organization

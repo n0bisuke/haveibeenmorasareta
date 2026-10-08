@@ -19,6 +19,11 @@ const ATTACK = Object.fromEntries((data.attack_methods ?? []).map((t) => [t.id, 
 const ORG_TYPE = Object.fromEntries((data.org_types ?? []).map((t) => [t.id, t.label]));
 const RANK = Object.fromEntries(LEVELS.map((l, i) => [l.id, i]));
 const LEVEL = Object.fromEntries(LEVELS.map((l) => [l.id, l]));
+const RELIABILITY = {
+  high: { label: '高', dots: 3, text: '公式発表で確認' },
+  mid: { label: '中', dots: 2, text: '報道で確認（公式発表は出典に未掲載）' },
+  low: { label: '低', dots: 1, text: '一次情報が未確認（まとめサイトなど）' },
+};
 // 画像（OGP）があれば使う。scripts/og-images.mjs が生成する
 const ogImage = (id) => `${SITE_URL}/breach/${id}/og.png`;
 const hasOg = process.argv.includes('--og');
@@ -124,7 +129,7 @@ function page(b) {
       <article class="detail-panel${b.status === 'investigating' ? ' is-investigating' : ''}">
         <div class="detail-title">
           <h1>${esc(b.organization)}</h1>
-          ${b.status === 'investigating' ? '<span class="status-badge">調査中</span>' : ''}
+          ${b.status === 'investigating' ? '<span class="status-badge">企業側が調査中</span>' : ''}
         </div>
         ${b.services?.length ? `<p class="services">${esc(b.services.join(' / '))}</p>` : ''}
         ${b.severity ? `<div class="sev-meter sev-${b.severity}" aria-hidden="true">${bars}</div>
@@ -132,7 +137,8 @@ function page(b) {
         <p class="detail-summary">${esc(b.summary)}</p>
         ${tags ? `<ul class="tags">${tags}</ul>` : ''}
         ${b.root_cause ? `<p class="root-cause"><span class="root-cause-label">原因の詳細</span><span>${esc(b.root_cause)}</span></p>` : ''}
-        ${b.status === 'investigating' ? `<p class="investigating">件数・漏えいの有無などを調査中です。続報や公式発表の情報を${b.issue ? ` <a href="${esc(b.issue)}" target="_blank" rel="noopener noreferrer">Issue #${esc(b.issue.split('/').pop())}</a> ` : ' Issue '}で募集しています。</p>` : ''}
+        ${b.status === 'investigating' ? `<p class="investigating">企業が件数・漏えいの有無などを調査中と公表しています。続報の情報を${b.issue ? ` <a href="${esc(b.issue)}" target="_blank" rel="noopener noreferrer">Issue #${esc(b.issue.split('/').pop())}</a> ` : ' Issue '}で募集しています。</p>` : ''}
+        ${b.reliability === 'low' ? `<p class="low-reliability">※ 公式発表や信頼できる報道（一次情報）をまだ確認できていない情報です。一次情報をご存じの方は${b.issue ? ` <a href="${esc(b.issue)}" target="_blank" rel="noopener noreferrer">Issue #${esc(b.issue.split('/').pop())}</a> ` : ' Issue '}で教えてください。</p>` : ''}
         <ol class="timeline">${timeline.map(([d, t]) => `<li><time datetime="${esc(d)}">${esc(fmtDate(d))}</time>${esc(t)}</li>`).join('')}</ol>
         <h2 class="detail-h">出典</h2>
         <ul class="sources">${b.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title || s.url)}</a></li>`).join('')}</ul>
@@ -141,6 +147,7 @@ function page(b) {
         <dl>
           <div><dt>漏洩件数</dt><dd class="kpi">${b.affected_count == null ? '不明' : esc(nf.format(b.affected_count))}</dd>${b.count_note ? `<dd class="kpi-note">${esc(b.count_note)}</dd>` : ''}</div>
           ${facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('\n          ')}
+          ${RELIABILITY[b.reliability] ? `<div><dt>情報の信頼度</dt><dd><span class="reliability r-${b.reliability}" title="情報の信頼度：${RELIABILITY[b.reliability].label}">${[1, 2, 3].map((i) => `<i class="${i <= RELIABILITY[b.reliability].dots ? 'on' : ''}"></i>`).join('')}${esc(RELIABILITY[b.reliability].label)}</span><br><small class="muted">${esc(RELIABILITY[b.reliability].text)}</small></dd></div>` : ''}
         </dl>
       </aside>
     </div>

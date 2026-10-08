@@ -5,7 +5,7 @@ industry:
 country: JP
 org_type: local_gov
 prefecture: 静岡県
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/35
 date_announced: 2026-08-25
 affected_count: null

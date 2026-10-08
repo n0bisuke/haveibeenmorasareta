@@ -2,7 +2,7 @@ organization: 大樹生命保険株式会社
 group: 日本生命グループ
 industry: 金融・保険
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
 date_announced: 2024-10-01
 affected_count: 70000
