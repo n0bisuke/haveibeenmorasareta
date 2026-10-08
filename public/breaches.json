@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-10-08T03:24:11.000Z",
-  "count": 352,
+  "count": 359,
   "severity_levels": [
     {
       "id": "critical",
@@ -1233,6 +1233,37 @@
       "severity": "high"
     },
     {
+      "id": "2026-10-jogmec",
+      "organization": "独立行政法人エネルギー・金属鉱物資源機構（JOGMEC）",
+      "industry": [
+        "行政",
+        "エネルギー・インフラ"
+      ],
+      "country": "JP",
+      "org_type": "public_agency",
+      "prefecture": "東京都",
+      "date_announced": "2026-10-02",
+      "affected_count": 8500,
+      "count_note": "約8,500件（役職員約1,100件・外部約7,400件）。漏えいした可能性",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "メールアドレス",
+        "従業員情報"
+      ],
+      "summary": "外部機関からの情報提供を受けて調査した結果、情報システムに外部から不正アクセスがあり、役職員約1,100件と外部約7,400件の計約8,500件のメールアドレスが漏えいした可能性があることが分かった。原因は関係機関や外部の専門事業者と調査している。",
+      "sources": [
+        {
+          "title": "JOGMEC 公式発表",
+          "url": "https://www.jogmec.go.jp/news/information/information_00706.html"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/jogmec-unauthorized-access-email-leak-26-10/"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
       "id": "2026-10-jaea",
       "organization": "国立研究開発法人日本原子力研究開発機構（JAEA）",
       "services": [
@@ -1347,6 +1378,42 @@
       "severity": "high"
     },
     {
+      "id": "2026-10-ticketplus",
+      "organization": "株式会社チケットプラス",
+      "services": [
+        "チケプラ"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-09-28",
+      "date_announced": "2026-10-01",
+      "affected_count": 107,
+      "count_note": "他の利用者に表示された可能性がある最大人数。他人の情報を閲覧した可能性がある利用者は最大322人",
+      "cause": "misconfiguration",
+      "root_cause": "アクセス集中への負荷対策でWebキャッシュの設定を変更し、他人の情報が表示されるようになった",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "郵便番号",
+        "住所",
+        "電話番号",
+        "クレジットカード情報（番号の一部・有効期限等）",
+        "会員ID"
+      ],
+      "summary": "電子チケットサービス「チケプラ」で、2026年9月28日から29日にかけて申し込み画面などに他の利用者の個人情報が表示される事象が発生した。負荷軽減のために行ったWebキャッシュの設定変更が原因で、最大107人の氏名・住所・電話番号・メールアドレス・クレジットカード番号下4桁などが他の利用者に表示された可能性がある。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/01/2000001941/"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/ticketplus-cache-personal-data-exposure-20261002/"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-09-benefit-one",
       "organization": "株式会社ベネフィット・ワン",
       "services": [
@@ -1378,6 +1445,39 @@
         }
       ],
       "severity": "high"
+    },
+    {
+      "id": "2026-09-gpoint",
+      "organization": "ジー・プラン株式会社",
+      "services": [
+        "Gポイント"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-09-25",
+      "date_announced": "2026-09-30",
+      "affected_count": 70000,
+      "count_note": "最大約7万件の会員識別子。流出した可能性",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "会員ID"
+      ],
+      "summary": "ポイント交換サービス「Gポイント」のシステムが外部から不正アクセスを受け、会員識別子最大約7万件が流出した可能性がある。氏名・住所・電話番号・メールアドレスは含まれないとしている。9月25日に異常を検知してシステムを停止し、原因と影響範囲を調査している。",
+      "sources": [
+        {
+          "title": "ジー・プラン 公式発表",
+          "url": "https://www.g-plan.net/news/details/20260930.html"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/01/2000001913/"
+        },
+        {
+          "title": "ケータイ Watch",
+          "url": "https://k-tai.watch.impress.co.jp/docs/news/2145575.html"
+        }
+      ],
+      "severity": "low"
     },
     {
       "id": "2026-09-shudo-gakuen",
@@ -1420,6 +1520,50 @@
       "severity": "critical"
     },
     {
+      "id": "2026-09-yoshinoya",
+      "organization": "株式会社吉野家ホールディングス",
+      "services": [
+        "吉野家・はなまるのアルバイト採用"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_announced": "2026-09-30",
+      "affected_count": 5366,
+      "count_note": "アルバイト応募者（吉野家4,998件・はなまる368件）。ほかに従業員アカウント418件",
+      "cause": "third_party",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "root_cause": "元委託先の採用管理プラットフォームでデータ分析ツールの脆弱性を悪用された。契約終了後も応募者情報が残っていた",
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "生年月日",
+        "性別",
+        "住所"
+      ],
+      "summary": "吉野家とはなまるのアルバイト採用業務を過去に委託していたApplyNowの採用管理プラットフォームが不正アクセスを受け、応募者5,366件と従業員アカウント418件の情報が漏えいした。データ分析ツールの脆弱性が悪用され、契約終了後に削除されるべきだった応募者情報が残っていた。",
+      "sources": [
+        {
+          "title": "吉野家ホールディングス 公式発表",
+          "url": "https://www.hanamaruudon.com/assets/pdf/news20260930.pdf"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/01/2000001928/"
+        },
+        {
+          "title": "流通ニュース",
+          "url": "https://www.ryutsuu.biz/strategy/s093080.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-09-eplus",
       "organization": "株式会社イープラス",
       "services": [
@@ -1446,6 +1590,46 @@
         }
       ],
       "severity": "critical"
+    },
+    {
+      "id": "2026-09-fukuoka-pref",
+      "organization": "福岡県",
+      "services": [
+        "働きやすい介護職場認証制度の申請受付"
+      ],
+      "industry": [
+        "行政",
+        "福祉・介護"
+      ],
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "福岡県",
+      "date_occurred": "2026-08-21",
+      "date_announced": "2026-09-29",
+      "affected_count": 183,
+      "count_note": "介護事業者24法人の役員（延べ人数）。閲覧された件数は不明",
+      "cause": "misconfiguration",
+      "root_cause": "委託先がホームページに掲載した申請用ファイルの設定を誤り、入力された役員情報が閲覧できる状態だった",
+      "vendor": {
+        "name": "麻生教育サービス株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "性別"
+      ],
+      "summary": "働きやすい介護職場認証制度の申請受付を委託した事業者が、ホームページ上の申請用ファイルの設定を誤ったため、8月21日から9月17日まで介護事業者24法人の役員183人分の氏名・生年月日・性別・役職が第三者に閲覧できる状態だった。申請予定者からの問い合わせで判明した。",
+      "sources": [
+        {
+          "title": "福岡県 報道発表",
+          "url": "https://www.pref.fukuoka.lg.jp/press-release/nkojinjyouhou.html"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nb-5010035568"
+        }
+      ],
+      "severity": "high"
     },
     {
       "id": "2026-09-japanpost-app",
@@ -1516,6 +1700,78 @@
         }
       ],
       "severity": "high"
+    },
+    {
+      "id": "2026-09-shizuoka-boe",
+      "organization": "静岡県教育委員会",
+      "industry": [
+        "行政",
+        "人材・教育"
+      ],
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "静岡県",
+      "date_announced": "2026-09-29",
+      "affected_count": 621,
+      "count_note": "県立学校6校の生徒指導要録（沼津工業高校定時制55人分ほか）。外部への流出は確認されていない",
+      "cause": "lost_device",
+      "root_cause": "紙の生徒指導要録が所在不明になった。データ移行や校舎の建て替えの際に紛失した可能性がある",
+      "data_types": [
+        "氏名",
+        "生年月日"
+      ],
+      "summary": "県立学校6校で計621人分の生徒指導要録を紛失した。沼津工業高校定時制で卒業生からの証明書申請をきっかけに55人分の所在不明が分かり、全県立学校を調べた結果、ほかの5校で566人分の紛失も判明した。外部への流出は確認されていない。",
+      "sources": [
+        {
+          "title": "テレビ静岡（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/0ac43589e8099fe8e409b00abbc4e1c001d4a50a"
+        },
+        {
+          "title": "静岡朝日テレビ",
+          "url": "https://look.satv.co.jp/content_news/incident/99223"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2026-09-sompo-japan-toppan",
+      "organization": "損害保険ジャパン株式会社",
+      "group": "SOMPOグループ",
+      "services": [
+        "保険料控除証明書発行サービス"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-09-01",
+      "date_announced": "2026-09-29",
+      "affected_count": 177426,
+      "count_note": "同じ契約者が重複している場合がある。送付先の損害保険会社1社はデータを削除済み",
+      "cause": "human_error",
+      "root_cause": "委託先の担当者がファイルを手作業で送る際、ドラッグ＆ドロップの操作を誤り他社分のファイルに混入させた",
+      "vendor": {
+        "name": "TOPPAN株式会社",
+        "group": "TOPPANグループ"
+      },
+      "data_types": [
+        "氏名",
+        "契約情報"
+      ],
+      "summary": "TOPPANが損保ジャパンから受託した「保険料控除証明書発行サービス」の運用業務で、担当者のドラッグ＆ドロップ操作の誤りにより、契約者177,426名分のカナ氏名や証券番号を含むデータを別の損害保険会社1社へ誤送付した。住所・連絡先・口座情報は含まれない。送付先は当該データを削除した。",
+      "sources": [
+        {
+          "title": "TOPPAN 公式発表",
+          "url": "https://www.holdings.toppan.com/ja/info/toppan_info20260929.pdf"
+        },
+        {
+          "title": "損保ジャパン 公式発表",
+          "url": "https://www.sompo-japan.co.jp/-/media/SJNK/files/news/2026/20260929_1.pdf"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2609/30/2000001870/"
+        }
+      ],
+      "severity": "medium"
     },
     {
       "id": "2026-09-yamato",

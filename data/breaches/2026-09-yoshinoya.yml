@@ -1,0 +1,29 @@
+organization: 株式会社吉野家ホールディングス
+services:
+  - 吉野家・はなまるのアルバイト採用
+industry: 飲食
+country: JP
+date_announced: 2026-09-30
+affected_count: 5366
+count_note: アルバイト応募者（吉野家4,998件・はなまる368件）。ほかに従業員アカウント418件
+cause: third_party
+attack_methods:
+  - known_vulnerability
+root_cause: 元委託先の採用管理プラットフォームでデータ分析ツールの脆弱性を悪用された。契約終了後も応募者情報が残っていた
+vendor:
+  name: 株式会社ApplyNow
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 生年月日
+  - 性別
+  - 住所
+summary: 吉野家とはなまるのアルバイト採用業務を過去に委託していたApplyNowの採用管理プラットフォームが不正アクセスを受け、応募者5,366件と従業員アカウント418件の情報が漏えいした。データ分析ツールの脆弱性が悪用され、契約終了後に削除されるべきだった応募者情報が残っていた。
+sources:
+  - title: 吉野家ホールディングス 公式発表
+    url: https://www.hanamaruudon.com/assets/pdf/news20260930.pdf
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/01/2000001928/
+  - title: 流通ニュース
+    url: https://www.ryutsuu.biz/strategy/s093080.html

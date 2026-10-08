@@ -1,0 +1,27 @@
+organization: 福岡県
+services:
+  - 働きやすい介護職場認証制度の申請受付
+industry:
+  - 行政
+  - 福祉・介護
+country: JP
+org_type: local_gov
+prefecture: 福岡県
+date_occurred: 2026-08-21
+date_announced: 2026-09-29
+affected_count: 183
+count_note: 介護事業者24法人の役員（延べ人数）。閲覧された件数は不明
+cause: misconfiguration
+root_cause: 委託先がホームページに掲載した申請用ファイルの設定を誤り、入力された役員情報が閲覧できる状態だった
+vendor:
+  name: 麻生教育サービス株式会社
+data_types:
+  - 氏名
+  - 生年月日
+  - 性別
+summary: 働きやすい介護職場認証制度の申請受付を委託した事業者が、ホームページ上の申請用ファイルの設定を誤ったため、8月21日から9月17日まで介護事業者24法人の役員183人分の氏名・生年月日・性別・役職が第三者に閲覧できる状態だった。申請予定者からの問い合わせで判明した。
+sources:
+  - title: 福岡県 報道発表
+    url: https://www.pref.fukuoka.lg.jp/press-release/nkojinjyouhou.html
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nb-5010035568
