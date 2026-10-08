@@ -1,6 +1,7 @@
 // 事案ごとの OGP 画像（public/breach/<id>/og.png、1200×630）を生成する
 // scripts/pages.mjs の後に実行し、公開物にだけ含める（リポジトリにはコミットしない）
-//   node scripts/og-images.mjs [--only <事案ID>,...] [--style a|b|c]
+//   node scripts/og-images.mjs [--only <事案ID>,...] [--style auto|a|b|c]
+//   auto（既定）: 調査中は C（速報風）、重要度が「危険」「高」は B（ダーク8ビット）、それ以外は A（ライト）
 //   CHROME_PATH … 使う Chrome / Chromium（省略時はインストール済みの Google Chrome）
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -11,7 +12,7 @@ import { CAUSES } from '../public/labels.js';
 const PUBLIC = path.join(ROOT, 'public');
 const arg = (name) => (process.argv.includes(name) ? process.argv[process.argv.indexOf(name) + 1] : undefined);
 const only = arg('--only')?.split(',');
-const STYLE = arg('--style') ?? process.env.OG_STYLE ?? 'a';
+const STYLE = arg('--style') ?? process.env.OG_STYLE ?? 'auto';
 
 const data = JSON.parse(await readFile(path.join(PUBLIC, 'breaches.json'), 'utf8'));
 const LEVEL = Object.fromEntries(data.severity_levels.map((l) => [l.id, l]));
@@ -30,7 +31,8 @@ function view(b) {
   const sev = b.severity && LEVEL[b.severity];
   const svc = (b.services ?? []).join(' / ');
   const meta = `${fmtDate(b.date_announced)} 公表 ・ ${CAUSES[b.cause]}`;
-  return { count, sev, svc, meta, investigating: b.status === 'investigating' };
+  const investigating = b.status === 'investigating';
+  return { count, sev, svc, meta, investigating, unknown: investigating ? '件数調査中' : '件数不明' };
 }
 
 const FONT = '<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&family=DotGothic16&display=block" rel="stylesheet">';
@@ -61,7 +63,7 @@ const STYLES = {
       <div class="org">${esc(b.organization)}</div>
       ${v.svc ? `<div class="svc">${esc(v.svc)}</div>` : ''}
       <div class="bottom">
-        <div><div class="count">${v.count ? `${esc(v.count)}<small>件</small>` : '件数調査中'}</div><div class="meta">${esc(v.meta)}</div></div>
+        <div><div class="count">${v.count ? `${esc(v.count)}<small>件</small>` : v.unknown}</div><div class="meta">${esc(v.meta)}</div></div>
         <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-end">${v.investigating ? '<span class="badge">調査中</span>' : ''}${v.sev ? `<span class="sev">重要度：${esc(v.sev.label)}</span>` : ''}</div>
       </div>
     </div>`;
@@ -74,7 +76,7 @@ const STYLES = {
       body{background:#111114;color:#ececf1;padding:56px 72px;font-family:"DotGothic16","Noto Sans JP",monospace;
         background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:24px 24px;position:relative}
       .site{font-size:28px;color:#9a9aa6}.site b{color:#ff6b9a;font-weight:400}
-      .org{font-size:${orgSize(b.organization, 64)}px;line-height:1.25;margin-top:30px}
+      .org{font-size:${orgSize(b.organization, 64)}px;line-height:1.25;margin-top:30px;max-width:880px}
       .svc{font-size:28px;color:#9a9aa6;margin-top:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:900px}
       .count{position:absolute;left:72px;bottom:110px;font-size:${v.count && v.count.length > 9 ? 96 : 116}px;color:#ff6b9a;line-height:1}
       .count small{font-size:40px;margin-left:10px}
@@ -89,7 +91,7 @@ const STYLES = {
     <div class="site">Have I Been <b>Morasareta</b> 日本版</div>
     <div class="org">${esc(b.organization)}</div>
     ${v.svc ? `<div class="svc">${esc(v.svc)}</div>` : ''}
-    <div class="count">${v.count ? `${esc(v.count)}<small>件</small>` : '件数調査中'}</div>
+    <div class="count">${v.count ? `${esc(v.count)}<small>件</small>` : v.unknown}</div>
     <div class="meta">${esc(v.meta)}</div>
     ${v.investigating ? '<div class="badge">調査中</div>' : ''}`;
   },
@@ -114,14 +116,19 @@ const STYLES = {
     <div class="main">
       <div class="org">${esc(b.organization)}</div>
       ${v.svc ? `<div class="svc">${esc(v.svc)}</div>` : ''}
-      <div class="row">${v.count ? `<span class="count">${esc(v.count)}</span><span class="unit">件</span>` : '<span class="count" style="font-size:96px">件数調査中</span>'}</div>
+      <div class="row">${v.count ? `<span class="count">${esc(v.count)}</span><span class="unit">件</span>` : '<span class="count" style="font-size:96px">' + v.unknown + '</span>'}</div>
       <div class="meta">${esc(v.meta)}${v.sev ? `<span class="chip">重要度：${esc(v.sev.label)}</span>` : ''}</div>
     </div>`;
   },
 };
 
-const template = STYLES[STYLE];
-if (!template) throw new Error(`--style は a / b / c のいずれかです（${STYLE}）`);
+const pick = (b) => {
+  if (STYLE !== 'auto') return STYLE;
+  if (b.status === 'investigating') return 'c';
+  if (b.severity === 'critical' || b.severity === 'high') return 'b';
+  return 'a';
+};
+if (STYLE !== 'auto' && !STYLES[STYLE]) throw new Error(`--style は auto / a / b / c のいずれかです（${STYLE}）`);
 
 const browser = await chromium.launch(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : { channel: 'chrome' });
 const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
@@ -129,7 +136,7 @@ const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
 await page.setContent(`<!doctype html><html lang="ja"><head><meta charset="utf-8">${FONT}</head><body></body></html>`, { waitUntil: 'networkidle' }).catch(() => {});
 let n = 0;
 for (const b of breaches) {
-  await page.evaluate((html) => { document.body.outerHTML = `<body>${html}</body>`; }, template(b));
+  await page.evaluate((html) => { document.body.outerHTML = `<body>${html}</body>`; }, STYLES[pick(b)](b));
   await page.evaluate(() => document.fonts.ready);
   await page.screenshot({ path: path.join(PUBLIC, 'breach', b.id, 'og.png') });
   n++;

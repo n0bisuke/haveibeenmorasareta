@@ -26,6 +26,7 @@ public/ranking/       … 企業・業界・原因・委託先別のランキン
   サイト上の https://n0bisuke.github.io/haveibeenmorasareta/breaches.json から API 的に再利用できます
 - 毎日 `News watch` ワークフローがニュースの RSS を巡回し、未収録の情報漏洩ニュースの候補を Issue にまとめます（調査ソースと手順は [RESEARCH.md](RESEARCH.md)）。LLM の API キーを設定すると、候補の記事から AI が事案データの下書きを作って PR にします（下記「AI による下書き」）
 - デプロイ時に `scripts/pages.mjs` が事案ごとの個別ページ（`/breach/<事案ID>/`）と `sitemap.xml` を生成します（公開物にだけ含め、コミットはしません）。一覧のカードをクリックすると個別ページに移動します
+- デプロイ時に `scripts/og-images.mjs` が事案ごとのシェア用画像（OGP、1200×630）を生成します。調査中は速報風、漏洩した情報の重要度が「危険」「高」はダーク（8ビット風）、それ以外はライトのデザインです
 - デプロイ時に `scripts/stamp.mjs` が JS・CSS・JSON の参照に `?v=コミットSHA` を付け、更新直後に古いファイルがキャッシュから読まれないようにします（公開物のみ）
 - デプロイ時に `scripts/contributors.mjs` が、各事案ファイルを追加した PR の作成者を GitHub API で調べて `public/contributors.json` を生成します（公開物にだけ含め、コミットはしません）。一覧のカード右下にその人のアイコンが表示されます
 
