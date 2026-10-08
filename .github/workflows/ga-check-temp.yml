@@ -1,0 +1,18 @@
+name: GA check (temporary)
+on:
+  push:
+    branches: [claude/magical-archimedes-7lls9o]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 26
+      - run: node scripts/ga-report.mjs --check
+        env:
+          GA_CREDENTIALS: ${{ secrets.GA_CREDENTIALS }}
+          GA_PROPERTY_ID: ${{ vars.GA_PROPERTY_ID }}
