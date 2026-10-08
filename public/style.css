@@ -113,6 +113,14 @@ a { color: var(--accent); }
 .count-note:empty, .services:empty { display: none; }
 .sources { margin: 0; padding-left: 1.2em; font-size: 0.85rem; }
 .sources a { word-break: break-all; }
+/* 関連ページ（削除されたページはアーカイブ） */
+.related-pages { margin-top: 6px; }
+.related-pages-label { margin: 0; font-size: 0.75rem; font-weight: 700; color: var(--muted); }
+.related-pages ul { margin: 0; padding-left: 1.2em; font-size: 0.85rem; }
+.related-pages a { word-break: break-all; }
+.item:has(.contributor) .related-pages ul { padding-right: 36px; }
+.removed-chip { font-size: 0.7rem; font-weight: 700; padding: 1px 7px; border-radius: 999px; background: var(--tag-bg); color: var(--muted); border: 1px dashed var(--muted); white-space: nowrap; }
+.related-note { display: block; color: var(--muted); font-size: 0.8rem; }
 .empty { text-align: center; color: var(--muted); padding: 32px 0; }
 
 .site-footer { border-top: 1px solid var(--border); padding: 24px 0 40px; font-size: 0.9rem; }

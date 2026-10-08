@@ -13,9 +13,16 @@ data_types:
   - 氏名
   - メールアドレス
   - 電話番号
-summary: 公式アプリの会員管理システムが第三者から不正アクセスを受け、会員情報1,078万8,963件が漏えいした。パスワード・生年月日・性別・保有ポイント・利用履歴、クレジットカード決済情報は含まれない。
+summary: 公式アプリの会員管理システムが第三者から不正アクセスを受け、会員情報1,078万8,963件が漏えいした。パスワード・生年月日・性別・保有ポイント・利用履歴、クレジットカード決済情報は含まれない。漏えいしなかった約2万件はメールアドレスが未登録の会員と説明している。公表後、アプリのソフトウェアテストを手がけたSHIFT ASIAの導入事例ページが注目されたが、同社によると、SHIFT ASIAは今回の会員管理システムには関与していない。
 sources:
   - title: 物語コーポレーション 公式発表
     url: https://www.monogatari.co.jp/news/261005_news/
   - title: ITmedia NEWS
     url: https://www.itmedia.co.jp/news/article/2610/05/2000002011/
+  - title: Yahoo!ニュース エキスパート（山口健太）
+    url: https://news.yahoo.co.jp/expert/articles/a41492ac484e49d7724d550f9a1aa80fa74cae4d
+related:
+  - title: SHIFT ASIA 導入事例「仕様書がなくても問題なくソフトウェアテストを実施。不具合を発見、修正した結果、アプリストアの評価が1点台から平均4.6点に」（2026年2月10日のアーカイブ）
+    url: https://web.archive.org/web/20260210033437/https://shiftasia.com/ja/case-studies/monogatari-corporation/
+    note: 焼肉きんぐアプリのソフトウェアテストの事例。公表後に元のページは削除されたとされる。物語コーポレーションは、SHIFT ASIAは今回の会員管理システムには関与していないと説明している
+    removed: true
