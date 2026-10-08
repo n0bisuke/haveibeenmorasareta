@@ -37,6 +37,27 @@ async function accessToken() {
 }
 
 const token = await accessToken();
+
+// --check: 接続確認用。直近30分のリアルタイムと今日のアクセスを表示するだけで、Issue には投稿しない
+if (process.argv.includes('--check')) {
+  const call = async (method, body) => {
+    const res = await fetch(`${API_BASE}/properties/${GA_PROPERTY_ID}:${method}`, {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    if (!res.ok) throw new Error(`GA Data API ${res.status}: ${(await res.text()).slice(0, 300)}`);
+    return (await res.json()).rows ?? [];
+  };
+  const realtime = await call('runRealtimeReport', { metrics: [{ name: 'activeUsers' }] });
+  const today = await call('runReport', { dateRanges: [{ startDate: 'today', endDate: 'today' }], metrics: [{ name: 'activeUsers' }, { name: 'screenPageViews' }] });
+  const pages = await call('runReport', { dateRanges: [{ startDate: 'today', endDate: 'today' }], dimensions: [{ name: 'pagePath' }], metrics: [{ name: 'screenPageViews' }], limit: 5 });
+  console.log('✔ GA Data API に接続できました');
+  console.log(`直近30分の訪問者: ${realtime[0]?.metricValues[0].value ?? 0}`);
+  console.log(`今日の訪問者: ${today[0]?.metricValues[0].value ?? 0} / PV: ${today[0]?.metricValues[1].value ?? 0}`);
+  for (const r of pages) console.log(`  ${r.dimensionValues[0].value}: ${r.metricValues[0].value} PV`);
+  process.exit(0);
+}
 async function report(body) {
   const res = await fetch(`${API_BASE}/properties/${GA_PROPERTY_ID}:runReport`, {
     method: 'POST',
