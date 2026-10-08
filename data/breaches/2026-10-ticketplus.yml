@@ -1,0 +1,25 @@
+organization: 株式会社チケットプラス
+services:
+  - チケプラ
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-09-28
+date_announced: 2026-10-01
+affected_count: 107
+count_note: 他の利用者に表示された可能性がある最大人数。他人の情報を閲覧した可能性がある利用者は最大322人
+cause: misconfiguration
+root_cause: アクセス集中への負荷対策でWebキャッシュの設定を変更し、他人の情報が表示されるようになった
+data_types:
+  - 氏名
+  - メールアドレス
+  - 郵便番号
+  - 住所
+  - 電話番号
+  - クレジットカード情報（番号の一部・有効期限等）
+  - 会員ID
+summary: 電子チケットサービス「チケプラ」で、2026年9月28日から29日にかけて申し込み画面などに他の利用者の個人情報が表示される事象が発生した。負荷軽減のために行ったWebキャッシュの設定変更が原因で、最大107人の氏名・住所・電話番号・メールアドレス・クレジットカード番号下4桁などが他の利用者に表示された可能性がある。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/01/2000001941/
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/ticketplus-cache-personal-data-exposure-20261002/

@@ -1,0 +1,24 @@
+organization: 袋井市教育委員会
+services:
+  - 袋井市立袋井北小学校
+industry:
+  - 行政
+  - 人材・教育
+country: JP
+org_type: local_gov
+prefecture: 静岡県
+date_announced: 2026-10-05
+affected_count: 6631
+count_note: 台帳の作成開始から1988年度までの卒業生。外部への流出は確認されていない
+cause: human_error
+root_cause: 卒業証書授与台帳を、保存年限を過ぎた書類と一緒に誤って廃棄した可能性が高い
+data_types:
+  - 氏名
+  - 生年月日
+  - 住所
+summary: 袋井北小学校で、1988年度までの卒業生6,631人分の卒業証書授与台帳を紛失した。台帳には氏名・生年月日・保護者名・住所などが記載されていた。卒業証明書の申請をきっかけに所在不明が分かり、保存年限を過ぎた書類と一緒に誤って廃棄した可能性が高いとしている。
+sources:
+  - title: 静岡新聞
+    url: https://www.at-s.com/snews/article/ats/2069837.html
+  - title: 中日新聞
+    url: https://www.chunichi.co.jp/article/1321255

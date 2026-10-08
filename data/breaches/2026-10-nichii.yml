@@ -1,0 +1,20 @@
+organization: 株式会社ニチイ学館
+group: ニチイグループ
+services:
+  - ニチイの介護サイト
+industry: 福祉・介護
+country: JP
+date_occurred: 2020-05-11
+date_announced: 2026-10-02
+affected_count: 583
+count_note: 漏えいしたおそれ。うち99名分は健康状態や障がいに関する要配慮個人情報を含む
+cause: misconfiguration
+root_cause: お問い合わせデータのバックアップファイルが認証なしで外部から取得できる状態だった
+data_types:
+  - 健康・医療情報
+  - 問い合わせ内容
+  - 氏名
+summary: 介護サイトのお問い合わせデータを含むバックアップファイルが、2020年5月から2026年9月まで外部から取得できる状態だった。問い合わせ内容の欄に書かれた583名分の個人情報が含まれ、うち99名分には健康状態や障がいに関する情報が含まれていた。
+sources:
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/nichii-kaigo-personal-data-exposure-20261002/

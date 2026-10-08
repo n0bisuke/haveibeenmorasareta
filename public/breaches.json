@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-08T03:24:11.000Z",
-  "count": 352,
+  "generated_at": "2026-10-08T03:29:53.000Z",
+  "count": 364,
   "severity_levels": [
     {
       "id": "critical",
@@ -944,6 +944,42 @@
       "severity": "critical"
     },
     {
+      "id": "2026-10-fukuroi-kita-es",
+      "organization": "袋井市教育委員会",
+      "services": [
+        "袋井市立袋井北小学校"
+      ],
+      "industry": [
+        "行政",
+        "人材・教育"
+      ],
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "静岡県",
+      "date_announced": "2026-10-05",
+      "affected_count": 6631,
+      "count_note": "台帳の作成開始から1988年度までの卒業生。外部への流出は確認されていない",
+      "cause": "human_error",
+      "root_cause": "卒業証書授与台帳を、保存年限を過ぎた書類と一緒に誤って廃棄した可能性が高い",
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "住所"
+      ],
+      "summary": "袋井北小学校で、1988年度までの卒業生6,631人分の卒業証書授与台帳を紛失した。台帳には氏名・生年月日・保護者名・住所などが記載されていた。卒業証明書の申請をきっかけに所在不明が分かり、保存年限を過ぎた書類と一緒に誤って廃棄した可能性が高いとしている。",
+      "sources": [
+        {
+          "title": "静岡新聞",
+          "url": "https://www.at-s.com/snews/article/ats/2069837.html"
+        },
+        {
+          "title": "中日新聞",
+          "url": "https://www.chunichi.co.jp/article/1321255"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-10-gmo-research",
       "organization": "GMOリサーチ&AI株式会社",
       "group": "GMOインターネットグループ",
@@ -1208,6 +1244,38 @@
       "severity": "high"
     },
     {
+      "id": "2026-10-studysapuri",
+      "organization": "株式会社リクルート",
+      "group": "リクルートグループ",
+      "services": [
+        "スタディサプリ"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-03",
+      "affected_count": 3687,
+      "count_note": "登録の有無を第三者に特定された可能性があるメールアドレスの件数",
+      "cause": "vulnerability",
+      "vuln_target": "web_app",
+      "root_cause": "システムの一部機能の仕様上の不備を突かれ、メールアドレスの登録の有無を特定された",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "スタディサプリのシステムの仕様上の不備を突く不正アクセスにより、3,687件のメールアドレスについて登録の有無を第三者に特定された可能性がある。9月30日に把握し、同日中に該当機能を改修した。氏名・パスワード・決済情報の流出や不正ログインは確認されていない。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/06/2000002019/"
+        },
+        {
+          "title": "千代田区 お知らせ",
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kyoikuinkai/studysapuri-roei.html"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
       "id": "2026-10-daiichi-life",
       "organization": "第一生命保険株式会社",
       "industry": "金融・保険",
@@ -1228,6 +1296,101 @@
         {
           "title": "セキュリティ対策Lab",
           "url": "https://rocket-boys.co.jp/security-measures-lab/daiichi-life-employee-data-breach-120k-20261002/"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2026-10-etax",
+      "organization": "国税庁",
+      "services": [
+        "e-Tax（e-Taxマイページ）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "national_gov",
+      "prefecture": "東京都",
+      "date_occurred": "2026-09-24",
+      "date_announced": "2026-10-02",
+      "affected_count": 203,
+      "count_note": "79人分の贈与税申告書等に記載された納税者・贈与者・関与税理士。本人以外の19人が閲覧した可能性",
+      "cause": "other",
+      "root_cause": "e-Taxマイページの改修に伴う不具合で、他人の申告書等が閲覧できる状態になった",
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "住所",
+        "資産・取引情報"
+      ],
+      "summary": "e-Taxマイページのシステム改修に伴う不具合により、9月24日から25日にかけて79人分の贈与税申告書等が本人以外から閲覧できる状態になった。贈与者や関与税理士を含む計203人分の個人情報が対象で、本人以外の19人が閲覧した可能性がある。不具合は解消済み。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUD02BUP0S6A001C2000000/"
+        },
+        {
+          "title": "日経クロステック",
+          "url": "https://xtech.nikkei.com/atcl/nxt/news/24/03406/"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2026-10-jogmec",
+      "organization": "独立行政法人エネルギー・金属鉱物資源機構（JOGMEC）",
+      "industry": [
+        "行政",
+        "エネルギー・インフラ"
+      ],
+      "country": "JP",
+      "org_type": "public_agency",
+      "prefecture": "東京都",
+      "date_announced": "2026-10-02",
+      "affected_count": 8500,
+      "count_note": "約8,500件（役職員約1,100件・外部約7,400件）。漏えいした可能性",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "メールアドレス",
+        "従業員情報"
+      ],
+      "summary": "外部機関からの情報提供を受けて調査した結果、情報システムに外部から不正アクセスがあり、役職員約1,100件と外部約7,400件の計約8,500件のメールアドレスが漏えいした可能性があることが分かった。原因は関係機関や外部の専門事業者と調査している。",
+      "sources": [
+        {
+          "title": "JOGMEC 公式発表",
+          "url": "https://www.jogmec.go.jp/news/information/information_00706.html"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/jogmec-unauthorized-access-email-leak-26-10/"
+        }
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "2026-10-nichii",
+      "organization": "株式会社ニチイ学館",
+      "group": "ニチイグループ",
+      "services": [
+        "ニチイの介護サイト"
+      ],
+      "industry": "福祉・介護",
+      "country": "JP",
+      "date_occurred": "2020-05-11",
+      "date_announced": "2026-10-02",
+      "affected_count": 583,
+      "count_note": "漏えいしたおそれ。うち99名分は健康状態や障がいに関する要配慮個人情報を含む",
+      "cause": "misconfiguration",
+      "root_cause": "お問い合わせデータのバックアップファイルが認証なしで外部から取得できる状態だった",
+      "data_types": [
+        "健康・医療情報",
+        "問い合わせ内容",
+        "氏名"
+      ],
+      "summary": "介護サイトのお問い合わせデータを含むバックアップファイルが、2020年5月から2026年9月まで外部から取得できる状態だった。問い合わせ内容の欄に書かれた583名分の個人情報が含まれ、うち99名分には健康状態や障がいに関する情報が含まれていた。",
+      "sources": [
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/nichii-kaigo-personal-data-exposure-20261002/"
         }
       ],
       "severity": "high"
@@ -1347,6 +1510,42 @@
       "severity": "high"
     },
     {
+      "id": "2026-10-ticketplus",
+      "organization": "株式会社チケットプラス",
+      "services": [
+        "チケプラ"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-09-28",
+      "date_announced": "2026-10-01",
+      "affected_count": 107,
+      "count_note": "他の利用者に表示された可能性がある最大人数。他人の情報を閲覧した可能性がある利用者は最大322人",
+      "cause": "misconfiguration",
+      "root_cause": "アクセス集中への負荷対策でWebキャッシュの設定を変更し、他人の情報が表示されるようになった",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "郵便番号",
+        "住所",
+        "電話番号",
+        "クレジットカード情報（番号の一部・有効期限等）",
+        "会員ID"
+      ],
+      "summary": "電子チケットサービス「チケプラ」で、2026年9月28日から29日にかけて申し込み画面などに他の利用者の個人情報が表示される事象が発生した。負荷軽減のために行ったWebキャッシュの設定変更が原因で、最大107人の氏名・住所・電話番号・メールアドレス・クレジットカード番号下4桁などが他の利用者に表示された可能性がある。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/01/2000001941/"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/ticketplus-cache-personal-data-exposure-20261002/"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-09-benefit-one",
       "organization": "株式会社ベネフィット・ワン",
       "services": [
@@ -1378,6 +1577,39 @@
         }
       ],
       "severity": "high"
+    },
+    {
+      "id": "2026-09-gpoint",
+      "organization": "ジー・プラン株式会社",
+      "services": [
+        "Gポイント"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-09-25",
+      "date_announced": "2026-09-30",
+      "affected_count": 70000,
+      "count_note": "最大約7万件の会員識別子。流出した可能性",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "会員ID"
+      ],
+      "summary": "ポイント交換サービス「Gポイント」のシステムが外部から不正アクセスを受け、会員識別子最大約7万件が流出した可能性がある。氏名・住所・電話番号・メールアドレスは含まれないとしている。9月25日に異常を検知してシステムを停止し、原因と影響範囲を調査している。",
+      "sources": [
+        {
+          "title": "ジー・プラン 公式発表",
+          "url": "https://www.g-plan.net/news/details/20260930.html"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/01/2000001913/"
+        },
+        {
+          "title": "ケータイ Watch",
+          "url": "https://k-tai.watch.impress.co.jp/docs/news/2145575.html"
+        }
+      ],
+      "severity": "low"
     },
     {
       "id": "2026-09-shudo-gakuen",
@@ -1420,6 +1652,50 @@
       "severity": "critical"
     },
     {
+      "id": "2026-09-yoshinoya",
+      "organization": "株式会社吉野家ホールディングス",
+      "services": [
+        "吉野家・はなまるのアルバイト採用"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_announced": "2026-09-30",
+      "affected_count": 5366,
+      "count_note": "アルバイト応募者（吉野家4,998件・はなまる368件）。ほかに従業員アカウント418件",
+      "cause": "third_party",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "root_cause": "元委託先の採用管理プラットフォームでデータ分析ツールの脆弱性を悪用された。契約終了後も応募者情報が残っていた",
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "生年月日",
+        "性別",
+        "住所"
+      ],
+      "summary": "吉野家とはなまるのアルバイト採用業務を過去に委託していたApplyNowの採用管理プラットフォームが不正アクセスを受け、応募者5,366件と従業員アカウント418件の情報が漏えいした。データ分析ツールの脆弱性が悪用され、契約終了後に削除されるべきだった応募者情報が残っていた。",
+      "sources": [
+        {
+          "title": "吉野家ホールディングス 公式発表",
+          "url": "https://www.hanamaruudon.com/assets/pdf/news20260930.pdf"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/01/2000001928/"
+        },
+        {
+          "title": "流通ニュース",
+          "url": "https://www.ryutsuu.biz/strategy/s093080.html"
+        }
+      ],
+      "severity": "high"
+    },
+    {
       "id": "2026-09-eplus",
       "organization": "株式会社イープラス",
       "services": [
@@ -1446,6 +1722,46 @@
         }
       ],
       "severity": "critical"
+    },
+    {
+      "id": "2026-09-fukuoka-pref",
+      "organization": "福岡県",
+      "services": [
+        "働きやすい介護職場認証制度の申請受付"
+      ],
+      "industry": [
+        "行政",
+        "福祉・介護"
+      ],
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "福岡県",
+      "date_occurred": "2026-08-21",
+      "date_announced": "2026-09-29",
+      "affected_count": 183,
+      "count_note": "介護事業者24法人の役員（延べ人数）。閲覧された件数は不明",
+      "cause": "misconfiguration",
+      "root_cause": "委託先がホームページに掲載した申請用ファイルの設定を誤り、入力された役員情報が閲覧できる状態だった",
+      "vendor": {
+        "name": "麻生教育サービス株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "性別"
+      ],
+      "summary": "働きやすい介護職場認証制度の申請受付を委託した事業者が、ホームページ上の申請用ファイルの設定を誤ったため、8月21日から9月17日まで介護事業者24法人の役員183人分の氏名・生年月日・性別・役職が第三者に閲覧できる状態だった。申請予定者からの問い合わせで判明した。",
+      "sources": [
+        {
+          "title": "福岡県 報道発表",
+          "url": "https://www.pref.fukuoka.lg.jp/press-release/nkojinjyouhou.html"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nb-5010035568"
+        }
+      ],
+      "severity": "high"
     },
     {
       "id": "2026-09-japanpost-app",
@@ -1516,6 +1832,78 @@
         }
       ],
       "severity": "high"
+    },
+    {
+      "id": "2026-09-shizuoka-boe",
+      "organization": "静岡県教育委員会",
+      "industry": [
+        "行政",
+        "人材・教育"
+      ],
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "静岡県",
+      "date_announced": "2026-09-29",
+      "affected_count": 621,
+      "count_note": "県立学校6校の生徒指導要録（沼津工業高校定時制55人分ほか）。外部への流出は確認されていない",
+      "cause": "lost_device",
+      "root_cause": "紙の生徒指導要録が所在不明になった。データ移行や校舎の建て替えの際に紛失した可能性がある",
+      "data_types": [
+        "氏名",
+        "生年月日"
+      ],
+      "summary": "県立学校6校で計621人分の生徒指導要録を紛失した。沼津工業高校定時制で卒業生からの証明書申請をきっかけに55人分の所在不明が分かり、全県立学校を調べた結果、ほかの5校で566人分の紛失も判明した。外部への流出は確認されていない。",
+      "sources": [
+        {
+          "title": "テレビ静岡（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/0ac43589e8099fe8e409b00abbc4e1c001d4a50a"
+        },
+        {
+          "title": "静岡朝日テレビ",
+          "url": "https://look.satv.co.jp/content_news/incident/99223"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2026-09-sompo-japan-toppan",
+      "organization": "損害保険ジャパン株式会社",
+      "group": "SOMPOグループ",
+      "services": [
+        "保険料控除証明書発行サービス"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-09-01",
+      "date_announced": "2026-09-29",
+      "affected_count": 177426,
+      "count_note": "同じ契約者が重複している場合がある。送付先の損害保険会社1社はデータを削除済み",
+      "cause": "human_error",
+      "root_cause": "委託先の担当者がファイルを手作業で送る際、ドラッグ＆ドロップの操作を誤り他社分のファイルに混入させた",
+      "vendor": {
+        "name": "TOPPAN株式会社",
+        "group": "TOPPANグループ"
+      },
+      "data_types": [
+        "氏名",
+        "契約情報"
+      ],
+      "summary": "TOPPANが損保ジャパンから受託した「保険料控除証明書発行サービス」の運用業務で、担当者のドラッグ＆ドロップ操作の誤りにより、契約者177,426名分のカナ氏名や証券番号を含むデータを別の損害保険会社1社へ誤送付した。住所・連絡先・口座情報は含まれない。送付先は当該データを削除した。",
+      "sources": [
+        {
+          "title": "TOPPAN 公式発表",
+          "url": "https://www.holdings.toppan.com/ja/info/toppan_info20260929.pdf"
+        },
+        {
+          "title": "損保ジャパン 公式発表",
+          "url": "https://www.sompo-japan.co.jp/-/media/SJNK/files/news/2026/20260929_1.pdf"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2609/30/2000001870/"
+        }
+      ],
+      "severity": "medium"
     },
     {
       "id": "2026-09-yamato",
@@ -2657,6 +3045,52 @@
         {
           "title": "セキュリティ対策Lab",
           "url": "https://rocket-boys.co.jp/?p=38495"
+        }
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "2026-08-white-essence",
+      "organization": "株式会社ホワイトエッセンス",
+      "services": [
+        "ホワイトエッセンス 予約サイト"
+      ],
+      "industry": [
+        "美容・健康",
+        "医療"
+      ],
+      "country": "JP",
+      "date_occurred": "2026-08-05",
+      "date_announced": "2026-08-12",
+      "affected_count": 1050000,
+      "count_note": "約105万アカウント（利用者・加盟院関係者・本部社員）。2026年10月5日の続報で漏えいを確認",
+      "cause": "vulnerability",
+      "vuln_target": "web_app",
+      "root_cause": "予約サイトのプログラムの脆弱性を悪用され、そこを足がかりに基幹システムへ侵入された",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "生年月日",
+        "性別",
+        "会員ID",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "利用履歴"
+      ],
+      "summary": "ホワイトニング・審美歯科チェーンの予約サイトと基幹システムが不正アクセスを受け、8月にシステムを停止して公表した。10月の続報で、予約サイトの脆弱性を悪用して基幹システムに侵入され、約105万アカウント分の氏名・住所・電話番号・生年月日などが外部に持ち出されたと発表した。",
+      "sources": [
+        {
+          "title": "ホワイトエッセンス 公式発表（第1報）",
+          "url": "https://www.whiteessence.com/news/news/20260812/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/05/2000002016/"
+        },
+        {
+          "title": "Security NEXT",
+          "url": "https://www.security-next.com/189665"
         }
       ],
       "severity": "high"
