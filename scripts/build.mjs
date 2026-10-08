@@ -18,7 +18,11 @@ const breaches = (await loadBreaches())
   .map(({ id, data }) => {
     const found = (data.data_types ?? []).map((t) => types[t]);
     const severity = found.length ? found.reduce((a, b) => (rank[a] <= rank[b] ? a : b)) : null;
-    return { id, ...data, severity };
+    // 発生から公表までの日数（発生日が分かっている事案のみ）
+    const disclosure_days = data.date_occurred
+      ? Math.round((Date.parse(data.date_announced) - Date.parse(data.date_occurred)) / 86400000)
+      : null;
+    return { id, ...data, severity, disclosure_days };
   })
   .sort((a, b) => b.date_announced.localeCompare(a.date_announced) || a.id.localeCompare(b.id));
 
