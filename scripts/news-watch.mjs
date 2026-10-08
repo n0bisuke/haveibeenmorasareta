@@ -109,12 +109,22 @@ for (const i of items) {
 candidates.sort((a, b) => b.time - a.time);
 if (OUT) await writeFile(OUT, `${JSON.stringify(candidates, null, 2)}\n`);
 
+// 記事の見出しなど外部由来の文字列を Issue に載せる前に無害化する（メンション・HTML・Markdown の装飾を作らせない）
+const mdText = (s) => String(s ?? '').replace(/[\r\n]+/g, ' ').replace(/[\\`*_{}[\]()<>#!|~]/g, '\\$&').replace(/@/g, '@\u200b').slice(0, 200);
+const mdUrl = (u) => {
+  try {
+    const url = new URL(u);
+    return /^https?:$/.test(url.protocol) ? url.href.replace(/[()<> ]/g, (c) => `%${c.charCodeAt(0).toString(16)}`) : '';
+  } catch {
+    return '';
+  }
+};
 const fmt = (t) => (t ? new Date(t).toLocaleDateString('ja-JP', { timeZone: 'Asia/Tokyo' }) : '日付不明');
 const body = [
   `直近 ${DAYS} 日のニュースから、まだ収録されていない可能性がある情報漏洩の記事を自動で集めました（${candidates.length} 件）。`,
   '見出しに既存データの企業名・サービス名が含まれるものは除外しています。対象外の記事（漏洩でない障害・海外事案など）も混ざるため、確認のうえで `data/breaches/` に追加してください。',
   '',
-  ...candidates.map((c) => `- [ ] ${fmt(c.time)} [${c.title.replace(/[[\]]/g, '')}](${c.url})${c.source ? `（${c.source}）` : ''}`),
+  ...candidates.map((c) => `- [ ] ${fmt(c.time)} ${mdUrl(c.url) ? `[${mdText(c.title)}](${mdUrl(c.url)})` : mdText(c.title)}${c.source ? `（${mdText(c.source)}）` : ''}`),
   '',
   `<sub>巡回したソース: ${FEEDS.map((f) => f.name).join(' / ')}。更新: ${new Date().toISOString()}（\`scripts/news-watch.mjs\`）</sub>`,
 ].join('\n');
@@ -133,7 +143,8 @@ async function api(path, init = {}) {
   return res.json();
 }
 
-const open = (await api('/issues?state=open&per_page=100')).find((i) => i.title === ISSUE_TITLE && !i.pull_request);
+// 第三者が同じタイトルの Issue を先に作っても乗っ取られないよう、ボット（Actions）が作った Issue だけを更新する
+const open = (await api('/issues?state=open&per_page=100')).find((i) => i.title === ISSUE_TITLE && !i.pull_request && i.user?.login === 'github-actions[bot]');
 if (open) {
   await api(`/issues/${open.number}`, { method: 'PATCH', body: JSON.stringify({ body, labels: [ISSUE_LABEL] }) });
   console.log(`✔ Issue #${open.number} を更新しました（候補 ${candidates.length} 件）`);
