@@ -132,8 +132,11 @@ if (jinaReady) {
   const months = [...new Set([ym(new Date()), ym(new Date(since))])];
   for (const q of WEB_QUERIES.flatMap((w) => months.map((m) => `${w} ${m}`))) {
     for (const r of await search(q)) {
-      if (isX(r.url) || !Number.isFinite(Date.parse(r.date))) continue;
-      consider({ title: r.title, url: r.url, date: r.date, source: 'Jina 検索' });
+      if (isX(r.url)) continue;
+      // 日付が無い結果は、見出し・説明に今月（先月）の年月が書かれているものだけを残す
+      const dated = Number.isFinite(Date.parse(r.date));
+      if (!dated && !months.some((m) => `${r.title} ${r.description}`.includes(m))) continue;
+      consider({ title: r.title, url: r.url, date: dated ? r.date : '', source: 'Jina 検索' });
     }
   }
   const seenX = new Set();
