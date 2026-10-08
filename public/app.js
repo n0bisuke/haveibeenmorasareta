@@ -104,6 +104,7 @@ function renderItem(b) {
   const meta = [
     `公表 ${fmtDate(b.date_announced)}`,
     b.date_occurred && `発生 ${fmtDate(b.date_occurred)}`,
+    b.disclosure_days != null && `公表まで ${nf.format(b.disclosure_days)}日`,
     VULN_LABEL[b.vuln_target] ? `${CAUSES[b.cause]}（${VULN_LABEL[b.vuln_target]}）` : CAUSES[b.cause],
     b.attack_methods && `手法 ${b.attack_methods.map((m) => ATTACK_LABEL[m] ?? m).join('・')}`,
     b.vendor && `委託先 ${b.vendor.name.replace(/株式会社/g, '')}`,
@@ -165,7 +166,9 @@ function render() {
       && words.every((w) => b._text.includes(w)))
     .sort(sort === 'count'
       ? (a, b) => (b.affected_count ?? -1) - (a.affected_count ?? -1)
-      : (a, b) => b.date_announced.localeCompare(a.date_announced));
+      : sort === 'delay'
+        ? (a, b) => (b.disclosure_days ?? -1) - (a.disclosure_days ?? -1)
+        : (a, b) => b.date_announced.localeCompare(a.date_announced));
 
   $('result-count').textContent = `${onlyInvestigating ? '調査中の事案のみ・' : ''}${nf.format(items.length)} 件を表示`;
   $('list').replaceChildren(...(items.length
