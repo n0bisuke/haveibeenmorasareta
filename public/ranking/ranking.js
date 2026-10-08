@@ -18,6 +18,13 @@ const orgKey = (b) => b.group ?? shortName(b.organization);
 const METRICS = {
   affected: { label: '漏洩件数の合計', value: (g) => g.affected, format: (g) => (g.affected || !g.unknown ? `${compact(g.affected)}件` : '件数不明') },
   incidents: { label: '事案数', value: (g) => g.items.length, format: (g) => `${g.items.length}件` },
+  // 発生日が分かっている事案だけで、発生から公表までの日数の平均を出す
+  delay: {
+    label: '発生から公表までの日数（平均）',
+    value: (g) => g.delayAvg,
+    format: (g) => `平均${nf.format(Math.round(g.delayAvg))}日`,
+    only: (g) => g.delays.length > 0,
+  },
 };
 
 const RANKINGS = [
@@ -90,16 +97,18 @@ function group(items, keyFn) {
     // キーが配列（複数の業種など）なら、それぞれのグループに数える
     for (const key of [keyFn(b)].flat()) {
       if (!key) continue;
-      if (!map.has(key)) map.set(key, { key, items: [], affected: 0, unknown: 0 });
+      if (!map.has(key)) map.set(key, { key, items: [], affected: 0, unknown: 0, delays: [] });
       const g = map.get(key);
       g.items.push(b);
+      if (b.disclosure_days != null) g.delays.push(b.disclosure_days);
       if (b.affected_count == null) g.unknown += 1;
       else g.affected += b.affected_count;
     }
   }
+  for (const g of map.values()) g.delayAvg = g.delays.length ? g.delays.reduce((x, y) => x + y, 0) / g.delays.length : 0;
   const metric = METRICS[state.metric];
   const other = METRICS[state.metric === 'affected' ? 'incidents' : 'affected'];
-  return [...map.values()].sort((a, b) => metric.value(b) - metric.value(a) || other.value(b) - other.value(a) || a.key.localeCompare(b.key, 'ja'));
+  return [...map.values()].filter((g) => !metric.only || metric.only(g)).sort((a, b) => metric.value(b) - metric.value(a) || other.value(b) - other.value(a) || a.key.localeCompare(b.key, 'ja'));
 }
 
 // ---- 描画 ----
@@ -144,15 +153,21 @@ function showTooltip(row, g) {
   const tip = $('tooltip');
   tip.replaceChildren();
   const head = Object.assign(document.createElement('div'), { className: 'tt-month', textContent: `事案 ${g.items.length}件` });
+  const delayMode = state.metric === 'delay';
   const value = Object.assign(document.createElement('div'), {
     className: 'tt-value',
-    textContent: `${nf.format(g.affected)}件${g.unknown ? `＋件数不明 ${g.unknown}件` : ''}`,
+    textContent: delayMode
+      ? `平均${nf.format(Math.round(g.delayAvg))}日・最長${nf.format(Math.max(...g.delays))}日（発生日が分かる${g.delays.length}件）`
+      : `${nf.format(g.affected)}件${g.unknown ? `＋件数不明 ${g.unknown}件` : ''}`,
   });
   const ul = document.createElement('ul');
-  const sorted = g.items.slice().sort((a, b) => (b.affected_count ?? -1) - (a.affected_count ?? -1));
+  const sorted = delayMode
+    ? g.items.filter((b) => b.disclosure_days != null).sort((a, b) => b.disclosure_days - a.disclosure_days)
+    : g.items.slice().sort((a, b) => (b.affected_count ?? -1) - (a.affected_count ?? -1));
   for (const b of sorted.slice(0, 5)) {
     const count = b.affected_count == null ? '件数不明' : `${compact(b.affected_count)}件`;
-    ul.append(Object.assign(document.createElement('li'), { textContent: `${shortName(b.organization)}（${count}・${b.date_announced.slice(0, 7).replace('-', '/')}）` }));
+    const detail = delayMode ? `発生から${nf.format(b.disclosure_days)}日で公表` : `${count}・${b.date_announced.slice(0, 7).replace('-', '/')}`;
+    ul.append(Object.assign(document.createElement('li'), { textContent: `${shortName(b.organization)}（${detail}）` }));
   }
   if (sorted.length > 5) ul.append(Object.assign(document.createElement('li'), { textContent: `ほか ${sorted.length - 5} 件` }));
   tip.append(head, value, ul);
@@ -181,6 +196,9 @@ function render() {
   const items = breaches.filter(inRange);
   const total = items.reduce((n, b) => n + (b.affected_count ?? 0), 0);
   $('scope').textContent = `対象 ${items.length}件の事案・漏洩件数 計${compact(total)}件`;
+  const known = items.filter((b) => b.disclosure_days != null).length;
+  $('delay-note').hidden = state.metric !== 'delay';
+  $('delay-note').textContent = `発生日が分かっている${known}件の事案のみで集計しています。発生日は不正アクセスの開始日や発覚日など公表内容によって異なり、公表までの日数には調査に必要な期間も含まれます。`;
   hideTooltip();
   for (const def of RANKINGS) renderRanking(def, items);
 }
