@@ -1,0 +1,29 @@
+name: Feature ideas
+
+# 4日ごとに、GA のアクセス傾向と既存の要望をもとに AI が機能追加の提案を作り、Issue（ラベル「機能追加」「AI提案」）にする
+# GA（GA_CREDENTIALS / GA_PROPERTY_ID）と LLM（LLM_API_KEY / LLM_MODEL）が未設定なら何もしない
+on:
+  schedule:
+    - cron: '29 0 */4 * *' # 4日ごと 9:29（日本時間）
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  ideas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 26
+      - run: node scripts/feature-ideas.mjs
+        env:
+          GA_CREDENTIALS: ${{ secrets.GA_CREDENTIALS }}
+          GA_PROPERTY_ID: ${{ vars.GA_PROPERTY_ID || secrets.GA_PROPERTY_ID }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL || 'https://openrouter.ai/api/v1' }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          GITHUB_TOKEN: ${{ github.token }}
