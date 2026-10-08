@@ -144,6 +144,8 @@ function page(b) {
         <ol class="timeline">${timeline.map(([d, t]) => `<li><time datetime="${esc(d)}">${esc(fmtDate(d))}</time>${esc(t)}</li>`).join('')}</ol>
         <h2 class="detail-h">出典</h2>
         <ul class="sources">${b.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title || s.url)}</a></li>`).join('')}</ul>
+        ${b.related?.length ? `<h2 class="detail-h">関連ページ</h2>
+        <ul class="sources related-list">${b.related.map((r) => `<li><a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>${r.removed ? ' <span class="removed-chip">削除済み・アーカイブ</span>' : ''}${r.note ? `<small class="related-note">${esc(r.note)}</small>` : ''}</li>`).join('')}</ul>` : ''}
       </article>
       <aside class="detail-panel detail-side">
         <dl>

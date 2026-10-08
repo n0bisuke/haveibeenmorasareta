@@ -39,6 +39,7 @@
 | `data_types` | | 漏洩した情報の種類。[`data/data-types.yml`](data/data-types.yml) に登録された名前のみ使用可 |
 | `summary` | ✔ | 概要（10〜600文字） |
 | `sources` | ✔ | 出典（`title` と `url`）。1件以上 |
+| `related` | | 関連ページ（`title`・`url`・`note`・`removed`）。出典ではないが事案に関係する公開情報（委託先・開発会社の導入事例など）。事案の後に削除されたページは Wayback Machine などのアーカイブ URL を載せて `removed: true` を付けると「削除済み・アーカイブ」と表示されます。関係は推測で断定せず、当事者の説明があれば `note` に書きます |
 
 ### `cause` の値
 
