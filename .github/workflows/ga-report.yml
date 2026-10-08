@@ -1,7 +1,8 @@
 name: GA report
 
 # Google アナリティクスの前日のアクセスを集計し、月ごとの Issue（ラベル「GAレポート」）にコメントで追記する
-# Secrets の GA_CREDENTIALS と Variables の GA_PROPERTY_ID が未設定なら何もしない（設定方法は README）
+# Secrets の GA_CREDENTIALS と GA_PROPERTY_ID（Variables・Secrets のどちらでも可）が未設定なら何もしない（設定方法は README）
+# 接続確認だけしたいときは node scripts/ga-report.mjs --check（直近30分と今日のアクセスを表示し、Issue には投稿しない）
 on:
   schedule:
     - cron: '17 0 * * *' # 毎日 9:17（日本時間）
@@ -22,5 +23,5 @@ jobs:
       - run: node scripts/ga-report.mjs
         env:
           GA_CREDENTIALS: ${{ secrets.GA_CREDENTIALS }}
-          GA_PROPERTY_ID: ${{ vars.GA_PROPERTY_ID }}
+          GA_PROPERTY_ID: ${{ vars.GA_PROPERTY_ID || secrets.GA_PROPERTY_ID }}
           GITHUB_TOKEN: ${{ github.token }}
