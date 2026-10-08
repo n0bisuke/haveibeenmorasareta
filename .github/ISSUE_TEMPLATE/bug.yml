@@ -1,0 +1,24 @@
+name: サイトの不具合
+description: 表示が崩れる・動かないなど、サイトの不具合を教えてください（掲載内容の誤りは「掲載内容の誤り・続報」へ）
+title: "[不具合] "
+labels: ["不具合"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: 起きたページの URL
+      placeholder: https://morasaretter.suke.dev/ranking/
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 起きたこと
+      description: 何をしたら、どうなったか
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 使っている端末・ブラウザ（任意）
+      placeholder: iPhone / Safari、Windows / Chrome など

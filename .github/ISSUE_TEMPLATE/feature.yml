@@ -1,0 +1,16 @@
+name: 機能追加・改善の要望
+description: サイトにほしい機能や、使いにくいところの改善案を教えてください
+title: "[要望] "
+labels: ["機能追加"]
+body:
+  - type: textarea
+    id: detail
+    attributes:
+      label: ほしい機能・改善したいこと
+      placeholder: 事案ごとに URL を発行して、SNS でシェアできるようにしてほしい
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 理由・使いたい場面（任意）
