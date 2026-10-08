@@ -1,0 +1,28 @@
+organization: 株式会社ファイブフォックス
+services:
+  - COMME CA ISM ほか（会員・お客様窓口）
+industry: 小売・EC
+country: JP
+date_occurred: 2026-07-08
+date_announced: 2026-07-14
+affected_count: 73185
+count_note: 延べ最大件数（流出の可能性）。VIP・GOLD会員59,504件、問い合わせ顧客8,403件、同社従業員2,450件、コムサ従業員2,828件。2026年9月8日の第二報で公表
+cause: ransomware
+root_cause: 本社サーバーの一部がランサムウェアに感染した可能性。店舗とオンラインストアは別システムで影響なし
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - 生年月日
+  - 性別
+  - 会員ID
+  - 従業員情報
+  - 口座番号
+summary: アパレル大手のファイブフォックスで本社サーバーの一部がランサムウェアに感染した可能性があり、2026年7月に公表した。9月の第二報で、会員・問い合わせ顧客と同社およびグループ会社コムサの従業員の個人情報、延べ最大73,185件が流出した可能性があるとした。クレジットカード情報とマイナンバーは含まれない。
+sources:
+  - title: ファイブフォックス 公式発表（第二報）
+    url: https://www.fivefoxes.co.jp/2026/09/post-23.html
+  - title: Security NEXT
+    url: https://www.security-next.com/187382
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/09/25/56300.html
