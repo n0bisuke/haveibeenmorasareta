@@ -1,0 +1,42 @@
+name: 掲載内容の誤り・続報
+description: すでに載っている事案の誤りの指摘や、件数・原因などの続報を教えてください
+title: "[修正] "
+labels: ["情報提供"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ご指摘ありがとうございます。どの事案のどこを直すべきか、根拠になる URL と一緒に教えてください。
+  - type: input
+    id: organization
+    attributes:
+      label: 対象の企業・団体名
+      description: サイトのカードに表示されている名前
+      placeholder: 株式会社サンプル
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 種類
+      options:
+        - 掲載内容の誤り
+        - 続報（件数・原因などが判明した）
+        - その他
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 内容
+      description: どこがどう違うか、新しく分かったことは何か
+      placeholder: 漏洩件数が「調査中」になっているが、10/15 の続報で 12,345 件と公表された
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 根拠となる URL
+      description: 公式発表やニュース記事
+    validations:
+      required: true
