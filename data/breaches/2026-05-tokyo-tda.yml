@@ -1,0 +1,22 @@
+organization: 東京都
+services:
+  - 東京デジタルアカデミー（TDA）ポータルサイト（デジタルサービス局）
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 東京都
+date_announced: 2026-05-25
+affected_count: 2438
+count_note: 最大件数。主に行政職員（一般都民2人を含む）
+cause: misconfiguration
+root_cause: 個人情報を格納した領域に適切なアクセス制限が設定されておらず、CSVファイルをダウンロードされた
+data_types:
+  - 氏名
+  - メールアドレス
+  - パスワード（ハッシュ化・暗号化済み）
+summary: 東京都デジタルサービス局が運営する東京デジタルアカデミーのポータルサイトで、個人情報を格納した領域に適切なアクセス制限が設定されていなかった。アクセスログの調査で過去に不正アクセスがありCSVファイルがダウンロードされていたことを確認し、主に行政職員最大2,438人分の氏名・業務用メールアドレス・ハッシュ化パスワードが漏えいした。
+sources:
+  - title: 東京都デジタルサービス局 報道発表
+    url: https://www.digitalservice.metro.tokyo.lg.jp/information/press/2026/05/20260525
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/06/05/55434.html
