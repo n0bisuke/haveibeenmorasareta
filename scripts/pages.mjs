@@ -61,6 +61,7 @@ function page(b) {
     .map(({ t, level }) => `<li class="${level ? `t-${level}` : ''}"${level ? ` title="重要度：${esc(LEVEL[level].label)}"` : ''}>${esc(t)}</li>`).join('');
   const cause = VULN[b.vuln_target] ? `${CAUSES[b.cause]}（${VULN[b.vuln_target]}）` : CAUSES[b.cause];
   const facts = [
+    b.disclosure_days != null && ['発生から公表まで', `${nf.format(b.disclosure_days)}日`],
     ['原因', cause],
     b.attack_methods && ['手法', b.attack_methods.map((m) => ATTACK[m] ?? m).join('・')],
     b.vendor && ['委託先', b.vendor.name],

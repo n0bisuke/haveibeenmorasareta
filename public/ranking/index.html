@@ -40,12 +40,14 @@
       <div class="seg" role="radiogroup" aria-label="指標">
         <button type="button" role="radio" data-metric="incidents">事案数</button>
         <button type="button" role="radio" data-metric="affected">漏洩件数の合計</button>
+        <button type="button" role="radio" data-metric="delay">発生から公表までの日数</button>
       </div>
       <div class="seg" role="radiogroup" aria-label="期間">
         <button type="button" role="radio" data-range="12">直近12か月</button>
         <button type="button" role="radio" data-range="all">すべて</button>
       </div>
       <p class="muted ranking-scope" id="scope"></p>
+      <p class="muted ranking-scope delay-note" id="delay-note" hidden></p>
     </div>
 
     <section class="viz-card" aria-labelledby="org-title">
