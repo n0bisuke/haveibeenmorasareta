@@ -4,7 +4,7 @@ industry: 金融・保険
 country: JP
 org_type: regional_bank
 prefecture: 熊本県
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/35
 date_occurred: 2018-05-01
 date_announced: 2024-10-01

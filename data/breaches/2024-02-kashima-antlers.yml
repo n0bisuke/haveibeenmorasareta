@@ -3,7 +3,7 @@ services:
   - SÓCIO・ファンクラブ
 industry: エンタメ・スポーツ
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/33
 date_occurred: 2024-01-08
 date_announced: 2024-02-21

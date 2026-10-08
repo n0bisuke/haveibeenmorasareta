@@ -1,7 +1,7 @@
 organization: ユー・アンド・アース株式会社
 industry: 小売・EC
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-04-08
 affected_count: 1506

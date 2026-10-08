@@ -19,9 +19,9 @@ for (const { file, data, error } of entries) {
   if (entryErrors.length) continue;
 
   for (const { url } of data.sources) {
-    // まとめサイトしか出典が無い「調査中」同士は同じ URL を共有してよい
+    // まとめサイトしか出典が無い事案（信頼度「低」・調査中）同士は同じ URL を共有してよい
     const prev = seenUrls.get(url);
-    const investigating = data.status === 'investigating';
+    const investigating = data.status === 'investigating' || data.reliability === 'low';
     if (prev && prev.file !== file && !(investigating && prev.investigating)) {
       errors.push(`${file}: 出典URLが ${prev.file} と重複しています（同一インシデントの重複登録の可能性）`);
     }

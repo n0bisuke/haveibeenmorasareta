@@ -5,7 +5,7 @@ industry:
 country: JP
 org_type: university
 prefecture: 秋田県
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-05-30
 affected_count: 1500

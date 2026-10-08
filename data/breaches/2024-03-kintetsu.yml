@@ -1,7 +1,7 @@
 organization: 近畿日本鉄道株式会社
 industry: 交通・モビリティ
 country: JP
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/29
 date_announced: 2024-03-06
 affected_count: 1671

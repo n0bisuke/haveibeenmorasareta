@@ -3,7 +3,7 @@ industry: 人材・教育
 country: JP
 org_type: university
 prefecture: 大阪府
-status: investigating
+reliability: low
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/30
 date_announced: 2025-06-13
 affected_count: 9213
