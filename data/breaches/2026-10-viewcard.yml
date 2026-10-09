@@ -1,0 +1,23 @@
+organization: 株式会社ビューカード
+group: JR東日本グループ
+services:
+  - ビューカード
+industry: 金融・保険
+country: JP
+date_occurred: 2026-10-07
+date_announced: 2026-10-09
+affected_count: 4030000
+count_note: 約403万件（会員サイトに登録されたメールアドレス）
+cause: third_party
+root_cause: メール配信に使っていた外部サービスの基盤（IDCFクラウド）へのランサムウェア攻撃
+vendor:
+  name: 株式会社IDCフロンティア
+  group: ソフトバンクグループ
+data_types:
+  - メールアドレス
+summary: IDCフロンティアのクラウドサービスへの不正アクセスの影響で、会員サイトに登録された約403万件のメールアドレスが漏えいした可能性があると公表した。氏名・住所・電話番号・クレジットカード番号は含まれない。対象の会員には個別にメールで連絡し、不審なメールへの注意を呼びかけている。
+sources:
+  - title: 共同通信（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/2c2c52440326e5af3457f36770075127ea91133d
+  - title: デイリースポーツ（共同通信）
+    url: https://www.daily.co.jp/society/economics/2026/10/09/0020910661.shtml

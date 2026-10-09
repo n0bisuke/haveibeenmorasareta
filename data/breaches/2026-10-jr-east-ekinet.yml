@@ -1,0 +1,29 @@
+organization: 東日本旅客鉄道株式会社
+group: JR東日本グループ
+services:
+  - えきねっと
+  - 大人の休日倶楽部
+industry: 交通・モビリティ
+country: JP
+date_occurred: 2026-10-07
+date_announced: 2026-10-09
+affected_count: 2060000
+count_note: 最大約206万件（えきねっと約167万件・大人の休日倶楽部約39万件の合計。重複を除いた人数ではない）
+cause: third_party
+root_cause: メール配信に使っていた外部サービスの基盤（IDCFクラウド）へのランサムウェア攻撃
+vendor:
+  name: 株式会社IDCフロンティア
+  group: ソフトバンクグループ
+data_types:
+  - メールアドレス
+  - 会員ID
+  - 生年月日
+  - クレジットカード情報（番号の一部・有効期限等）
+summary: 会員にメールを送るために使っていた外部サービスが、IDCフロンティアのクラウドサービスへの不正アクセスの影響を受け、保存していた会員情報が第三者に閲覧・取得された可能性があると公表した。えきねっとはメールアドレスのみ、大人の休日倶楽部はメールアドレス・会員番号・クレジットカードの有効期限・生年月日が対象。氏名・住所・電話番号・クレジットカード番号は含まれない。対象の利用者には個別にメールで連絡する。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC0952Q0Z01C26A0000000/
+  - title: ITmedia NEWS（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/d8cb67d2c2246afbb5749f1cc4ee7834012e7f6d
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261009de57177
