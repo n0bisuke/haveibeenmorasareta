@@ -1,0 +1,27 @@
+organization: 小平市
+services:
+  - 小平市公式ホームページ
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 東京都
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/24
+date_occurred: 2026-10-07
+date_announced: 2026-10-08
+cause: third_party
+root_cause: ホームページ保守事業者が使うクラウド基盤（IDCFクラウド）がランサムウェア攻撃を受けた
+vendor:
+  name: 株式会社IDCフロンティア
+  group: ソフトバンクグループ
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+summary: 市のホームページ保守を請け負う事業者が使うクラウド基盤がランサムウェア攻撃を受け、10月7日朝から市のホームページが閲覧できなくなった。市は問い合わせフォームなどで受け取った氏名・住所・電話番号・メールアドレスなどが漏えいしたおそれがあるとして調査している。公表時点で漏えいは確認されていない。
+sources:
+  - title: 日テレNEWS NNN（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/29a5475e9889fdbc8580dc101f5b6db885d28cb8
+  - title: 日テレNEWS NNN 続報（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/ee4cf92bdcefb132b2099f045d6dcd0cf2e0e135

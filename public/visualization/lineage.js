@@ -36,8 +36,26 @@ for (const b of breaches.filter((x) => x.vendor)) {
 }
 const sortNodes = (map) => [...map.values()].sort((a, b) => (b.children.size - a.children.size) || ((b.breach?.affected_count ?? -1) - (a.breach?.affected_count ?? -1)));
 const all = [...families.values()].sort((a, b) => b.size - a.size || a.name.localeCompare(b.name, 'ja'));
-const multi = all.filter((f) => f.size >= 2);
-const single = all.filter((f) => f.size < 2);
+// 同じ会社が複数の委託先から影響を受けている（親が複数ある）場合に、ほかの親を表示するための索引
+const parentsOf = new Map();
+const walk = (fam, map) => {
+  for (const n of map.values()) {
+    if (!parentsOf.has(n.key)) parentsOf.set(n.key, new Set());
+    parentsOf.get(n.key).add(fam.name);
+    walk(fam, n.children);
+  }
+};
+for (const fam of all) walk(fam, fam.children);
+const shared = (fam) => {
+  const keys = [];
+  const collect = (map) => { for (const n of map.values()) { keys.push(n.key); collect(n.children); } };
+  collect(fam.children);
+  return keys.some((k) => parentsOf.get(k).size > 1);
+};
+// 2社以上に広がった委託先と、ほかの系譜と同じ会社を含む委託先を系譜で表示する
+const multi = all.filter((f) => f.size >= 2 || shared(f));
+const single = all.filter((f) => !multi.includes(f));
+const otherParents = (node, fam) => [...(parentsOf.get(node.key) ?? [])].filter((name) => name !== fam.name);
 
 // ---- 描画の部品 ----
 const el = (tag, cls, text) => Object.assign(document.createElement(tag), cls ? { className: cls } : {}, text != null ? { textContent: text } : {});
@@ -47,42 +65,46 @@ function info(b) {
   if (b.affected_count != null) return compact(b.affected_count);
   return b.status === 'investigating' ? '件数調査中' : '件数不明';
 }
-function label(node, kind) {
+function label(node, kind, fam) {
   const b = node.breach;
   const box = b ? Object.assign(el('a', `lin-node ${kind}`), { href: `../breach/${b.id}/` }) : el('span', `lin-node ${kind}`);
   box.append(el('b', '', node.name));
   const t = info(b);
   if (t) box.append(el('small', b?.leaked === false ? 'lin-ok' : '', t));
+  const others = kind === 'root' ? [] : otherParents(node, fam);
+  if (others.length) box.append(el('small', 'lin-also', `${others.join('・')}からも`));
   if (b) box.title = `${b.organization}（${b.date_announced.replaceAll('-', '/')}公表）`;
   return box;
 }
 
 // A: 家系図（上から下）
-function treeA(node, kind = 'root') {
+function treeA(node, fam, kind = 'root') {
   const li = el('li');
-  li.append(label(node, kind));
+  li.append(label(node, kind, fam));
   const kids = sortNodes(node.children);
   if (kids.length) {
     const ul = el('ul');
-    ul.append(...kids.map((c) => treeA(c, c.children.size ? 'mid' : 'leaf')));
+    ul.append(...kids.map((c) => treeA(c, fam, c.children.size ? 'mid' : 'leaf')));
     li.append(ul);
   }
   return li;
 }
 // B: 系譜リスト（左から右）
-function treeB(node, kind = 'root') {
+function treeB(node, fam, kind = 'root') {
   const frag = document.createDocumentFragment();
   const row = el('div', `lin-row ${kind}`);
   const b = node.breach;
   const name = b ? Object.assign(el('a', 'lin-name', node.name), { href: `../breach/${b.id}/` }) : el('span', 'lin-name', node.name);
   row.append(name);
+  const others = kind === 'root' ? [] : otherParents(node, fam);
+  if (others.length) row.append(el('span', 'lin-also', `${others.join('・')}からも`));
   const t = info(b);
   if (t) row.append(el('span', `lin-cnt${b?.leaked === false ? ' lin-ok' : ''}`, t));
   frag.append(row);
   const kids = sortNodes(node.children);
   if (kids.length) {
     const box = el('div', 'lin-kids');
-    for (const c of kids) box.append(treeB(c, c.children.size ? 'mid' : 'leaf'));
+    for (const c of kids) box.append(treeB(c, fam, c.children.size ? 'mid' : 'leaf'));
     frag.append(box);
   }
   return frag;
@@ -100,14 +122,14 @@ function render() {
     out.replaceChildren(...multi.map((f) => {
       const wrap = el('div', 'lin-family');
       const ul = el('ul', 'lin-tree');
-      ul.append(treeA(f));
+      ul.append(treeA(f, f));
       wrap.append(ul);
       return wrap;
     }));
   } else {
     out.replaceChildren(...multi.map((f) => {
       const card = el('div', 'lin-card');
-      card.append(el('span', 'lin-badge', `${f.size}社に影響`), treeB(f));
+      card.append(el('span', 'lin-badge', `${f.size}社に影響`), treeB(f, f));
       return card;
     }));
   }

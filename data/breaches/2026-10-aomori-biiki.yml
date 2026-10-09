@@ -1,0 +1,28 @@
+organization: 青森県
+services:
+  - 青森県公式ファンコミュニティ「青森びいき」
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 青森県
+date_announced: 2026-10-08
+affected_count: 2950
+count_note: 最大2,950人（推計。人数は調査中）。会員数は16,697人
+cause: third_party
+root_cause: 運営会社のシステムの不備を突かれ、第三者が非公開領域へ不正アクセスし管理者等になりすました
+vendor:
+  name: コミューン
+data_types:
+  - メールアドレス
+  - アカウント名
+  - 会員ID
+summary: 県の公式ファンコミュニティ「青森びいき」が10月6日に不正アクセスを受け、最大2,950人分の会員情報が流出した可能性があると、運営会社のコミューンとともに発表した。第三者がシステムの不備を突いて非公開領域に入り、管理者などになりすまして、メールアドレス・ニックネーム・年代などを閲覧した記録が確認された。住所とクレジットカード情報は登録されておらず、パスワードの漏えいは確認されていない。サービスは停止しており、悪用は確認されていない。
+sources:
+  - title: 東奥日報
+    url: https://www.toonippo.co.jp/articles/-/2379511
+  - title: 陸奥新報
+    url: https://mutsushimpo.com/news/nlo9qaor/
+  - title: 青森朝日放送
+    url: https://www.aba-net.com/news/news-201352.html
+  - title: 河北新報
+    url: https://kahoku.news/articles/JY6XUVY443KHN.html

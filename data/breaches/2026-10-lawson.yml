@@ -1,0 +1,27 @@
+organization: 株式会社ローソン
+services:
+  - ローソンID
+  - ローソンアプリ予約
+industry: 小売・EC
+country: JP
+date_occurred: 2026-09-12
+date_announced: 2026-10-08
+affected_count: 2155371
+count_note: ローソンID 215万5,345件、ローソンアプリ予約 26件
+cause: unauthorized_access
+root_cause: アプリ関連システムで利用者本人に情報を表示するための仕組みが第三者に悪用された
+data_types:
+  - 氏名
+  - メールアドレス
+  - 性別
+  - 電話番号
+  - 住所
+  - クレジットカード情報（番号の一部・有効期限等）
+summary: アカウントサービス「ローソンID」と「ローソンアプリ予約」が第三者による不正アクセスを受け、個人情報が漏えいしたと公表した。ローソンIDは9月12日から14日、アプリ予約は9月17日に不正アクセスを受けていた。ローソンIDでは215万5,345件のメールアドレス・氏名など（入力していた人は性別・電話番号・住所も）、アプリ予約では26件の氏名・電話番号・クレジットカード番号の一部が漏えいした。不審なアクセス元を遮断し、予約機能を停止した。
+sources:
+  - title: ローソン 公式発表（お詫びとお知らせ）
+    url: https://www.lawson.co.jp/contents/cont07/1533174_3310.html
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC08A430Y6A001C2000000/
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2146917.html

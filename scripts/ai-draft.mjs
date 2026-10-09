@@ -23,7 +23,14 @@ if (!llmConfig.ready) {
   process.exit(0);
 }
 
-const candidates = JSON.parse(await readFile(IN, 'utf8'));
+// 個別の事案らしい見出し（件数・不正アクセスなど）を優先し、政策・解説・セミナーなどの記事は AI に渡さない
+const NOT_INCIDENT = /首相|大臣|金融相|政府|与党|自民党|戦略本部|委員会が|注意喚起|呼びかけ|ウェビナー|セミナー|まとめ|一覧|随時更新|専門家|教訓|とは|なぜ|方法|対処法|自衛策|備え|コラム|エキスパート|急増|世界で|相次ぐ|ラッシュ|解説|ランキング/;
+const score = (c) => (/\d[\d,.]*\s*万?\s*(件|人|名|社)/.test(c.title) ? 3 : 0)
+  + (/不正アクセス|漏えい|漏洩|流出|ランサムウェア|お詫び|誤送信|紛失/.test(c.title) ? 2 : 0);
+const candidates = JSON.parse(await readFile(IN, 'utf8'))
+  .filter((c) => !NOT_INCIDENT.test(c.title))
+  .map((c, i) => ({ ...c, _score: score(c), _i: i }))
+  .sort((a, b) => b._score - a._score || a._i - b._i);
 const seen = new Set(await readFile(STATE, 'utf8').then(JSON.parse).catch(() => []));
 
 const catalogs = {
@@ -118,6 +125,8 @@ for (const candidate of candidates) {
     // 記事本文に実在することを確かめた根拠の引用（PR に載せ、Web を見られない環境でも照合できるようにする）
     result.evidence = Object.fromEntries(Object.entries(evidence).filter(([k, v]) => k in final.entry && typeof v === 'string').map(([k, v]) => [k, v.slice(0, 300)]));
     result.slug = slugify(draft.slug, fallback);
+    // 同じ事案を報じた別の記事を、この回の後の候補で重複として扱えるようにする
+    existing.push({ id: `(この回の下書き) ${result.slug}`, organization: entry.organization, date_announced: entry.date_announced });
     result.entry = entry;
     result.status = 'draft';
   } catch (e) {

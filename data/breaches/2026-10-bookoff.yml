@@ -1,0 +1,30 @@
+organization: ブックオフグループホールディングス株式会社
+group: ブックオフグループ
+services:
+  - ブックオフ会員サービス
+industry: 小売・EC
+country: JP
+date_announced: 2026-10-09
+affected_count: 6430000
+count_note: 最大約643万件（会員番号の件数で、人数ではない）
+cause: unauthorized_access
+root_cause: 中古品を扱う子会社の会員管理システムへの第三者による不正アクセス（侵入経路は非公表）
+data_types:
+  - 氏名
+  - 生年月日
+  - 性別
+  - メールアドレス
+  - 電話番号
+  - 郵便番号
+  - 住所
+  - パスワード（ハッシュ化・暗号化済み）
+  - 会員ID
+  - ポイント情報
+summary: 中古品を扱う子会社の会員管理システムが第三者による不正アクセスを受け、会員情報が外部に取得されたと公表した。10月6日に不正アクセスを確認した。対象は最大約643万件で、氏名・生年月日・性別・メールアドレス・電話番号・住所・パスワードのハッシュ値・ポイントカード番号・会員番号が含まれる。決済情報はこのシステムに保有していない。攻撃元からの通信を遮断し、脆弱性を是正した。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/09/2000002150/
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2147026.html
+  - title: 共同通信（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/a22c8ee6bd30eeab05d29a450d0c6db872c54167

@@ -135,3 +135,6 @@ a.lin-name:hover { text-decoration: underline; }
 .lin-kids > .lin-row::before { content: ""; position: absolute; left: -14px; top: 0.85em; width: 10px; border-top: 2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
 .lin-single { columns: 2 260px; margin: 8px 0 0; padding-left: 1.2em; font-size: 0.85rem; }
 .lin-vendor { color: var(--muted); }
+.lin-also { font-size: 0.68rem !important; color: var(--accent) !important; font-weight: 700; }
+.lin-row { flex-wrap: wrap; }
+.lin-row .lin-also { order: 3; flex-basis: 100%; margin-top: -2px; }

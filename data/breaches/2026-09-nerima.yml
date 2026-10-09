@@ -1,0 +1,18 @@
+organization: 練馬区
+services:
+  - 女性のためのデジタルスキル習得プログラム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 東京都
+date_announced: 2026-09-09
+affected_count: 71
+count_note: 受講者71名
+cause: unknown
+data_types:
+  - 氏名
+  - メールアドレス
+summary: 男女共同参画センターえーるで実施している「女性のためのデジタルスキル習得プログラム」で、受講者71名の氏名とメールアドレスが、受講者専用チャットツール内で他の受講者と講師から閲覧可能な状態になっていたと発表した。区は対象の受講者に謝罪し、再発防止に取り組むとした。
+sources:
+  - title: 練馬区「講座受講者の個人情報の漏えいについて」
+    url: https://www.city.nerima.tokyo.jp/kurashi/jinken/oshirase/dx-kojinjyoho.html
