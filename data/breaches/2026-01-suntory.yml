@@ -1,0 +1,23 @@
+organization: サントリーホールディングス株式会社
+services:
+  - 広報業務（記者会見・イベントの出席登録、ニュースリリースの配信）
+industry: 食品
+country: JP
+date_announced: 2026-01-21
+affected_count: 914
+count_note: メディア関係者など914人分（漏えいの可能性）。サントリー食品インターナショナルとサントリー芸術財団のニュースリリース配信先を含む。2026年1月20日時点で漏えいや不正利用は確認されていない
+cause: third_party
+root_cause: 広報業務の一部を委託していたジエーピーエスのシステムが第三者の不正アクセスを受け、ランサムウェアの被害が確認された
+vendor:
+  name: 株式会社ジエーピーエス
+data_types:
+  - 氏名
+  - 電話番号
+summary: サントリーホールディングスが広報業務の一部を委託していたジエーピーエスのシステムが第三者の不正アクセスを受けた。2025年6〜12月にサントリーHDが実施した記者会見やイベントに出席したメディア関係者など914人分の氏名、所属会社名、電話番号などの連絡先が流出した可能性がある。サントリー食品インターナショナルとサントリー芸術財団も同じ委託先に業務の一部を委託しており、両者のニュースリリース配信先も対象に含まれる。委託先が2026年1月5日に不正アクセスをサントリーHDへ報告し、その後の委託先の調査でランサムウェアの被害を確認した。サントリーHDは1月9日に個人情報保護委員会へ速報し、1月21日に公表した。1月20日時点で漏えいや不正利用は確認されておらず、1月21日から対象者への連絡を始めた。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC211Y90R20C26A1000000/
+  - title: 共同通信（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/4173d7cb4abd63258929d7a75a2147e877592a4a
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/suntory-holdings-outsourced-vendor-hit-by-ransomware-914-personal-records-at-risk/

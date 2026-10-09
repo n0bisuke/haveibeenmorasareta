@@ -1,0 +1,46 @@
+organization: 株式会社エムケイシステム
+services:
+  - 社労夢
+  - 社労夢 Company Edition
+  - SR-SaaS
+  - ネットde顧問
+  - ネットde事務組合
+  - MYNABOX
+  - MYNABOX CL
+  - DirectHR
+industry: IT・通信
+country: JP
+date_occurred: 2023-06-05
+leaked: false
+date_announced: 2023-06-06
+affected_count: 22420000
+count_note: 最大約2,242万人（社労夢などのシステムで管理していた本人数。2023年6月5日時点で、同社からの情報として個人情報保護委員会が公表）。同委員会が受けた漏えい等報告は3,067件・本人数計7,496,080人（同社の報告を除く。本人数は社労士事務所と顧問先事業者とで重複している可能性あり）。同委員会は事案を「漏えい等のおそれ」としており、同社の調査では情報流出は確認されていない
+cause: ransomware
+attack_methods:
+  - stolen_credentials
+root_cause: サーバーへのアクセス制限の不備、パスワードが脆弱なアカウントの悪用、セキュリティ更新の不備
+data_types:
+  - 氏名
+  - 生年月日
+  - 性別
+  - 住所
+  - 電話番号
+  - 従業員情報
+summary: 社会保険労務士事務所などに提供する社会保険・人事労務業務支援システム「社労夢」のデータセンター上のサーバーが2023年6月5日未明にランサムウェアによる不正アクセスを受けて暗号化され、社労夢やDirectHRなど9サービスに影響が出て、約3,400ユーザーの大半にサービスを提供できなくなった。システムには社労士の顧問先企業などの従業員の氏名・生年月日・性別・住所・基礎年金番号・雇用保険被保険者番号などが取り扱われていた。同社は7月19日、外部専門機関のフォレンジック調査の結果、窃取の可能性は完全には否定できないものの、情報窃取やデータの外部転送の痕跡は確認されず、情報漏えいの事実は確認されていないと報告した。マイナンバーは高度な暗号化処理を施しており、流出のおそれのある範囲に含まれないとしている。個人情報保護委員会は2024年3月25日、パスワードの脆弱さやセキュリティ更新・ログ監視の不備など安全管理措置の不備を認め、同社を指導した。
+sources:
+  - title: 株式会社エムケイシステム 公式発表（第三者によるランサムウェア感染被害のお知らせ）
+    url: https://contents.xj-storage.jp/xcontents/AS97180/bc464498/fb3c/479a/ad33/51ec0cd39818/140120230606596742.pdf
+  - title: 株式会社エムケイシステム 公式発表（対応状況のお知らせ 第2報）
+    url: https://contents.xj-storage.jp/xcontents/AS97180/fd524344/99b9/470f/90e6/a580932b7962/140120230620507046.pdf
+  - title: 株式会社エムケイシステム 公式発表（調査結果のご報告 第3報）
+    url: https://contents.xj-storage.jp/xcontents/AS97180/813d570f/5138/4bc7/a113/f4837598df38/140120230719524126.pdf
+  - title: 株式会社エムケイシステム お知らせ（調査結果のご報告）
+    url: https://www.mks.jp/company/topics/20230731
+  - title: 個人情報保護委員会 公表資料（エムケイシステムに対する行政上の対応）
+    url: https://www.ppc.go.jp/news/press/2023/240325_houdou/
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/articles/2306/22/news163.html
+  - title: 住友林業 お知らせ（エムケイシステムからの報告として原因を記載）
+    url: https://sfc.jp/information/newstopics/pdf/2023-08-22.pdf
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2024/04/03/50811.html
