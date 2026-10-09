@@ -16,7 +16,7 @@ const ISSUE_TITLE = '【自動】未収録の情報漏洩ニュース候補';
 const ISSUE_LABEL = 'ニュース候補';
 const { GITHUB_TOKEN, GITHUB_REPOSITORY } = process.env;
 
-// 調査ソース。NHK・Yahoo!ニュースなどの一般報道は Google ニュースの検索 RSS 経由で拾う
+// 調査ソース。NHK・Yahoo!ニュース・日経（日経クロステック）などの一般報道は Google ニュースの検索 RSS 経由で拾う
 const gnews = (q) => `https://news.google.com/rss/search?q=${encodeURIComponent(`${q} when:${DAYS}d`)}&hl=ja&gl=JP&ceid=JP:ja`;
 const FEEDS = [
   { name: 'Googleニュース「個人情報 漏えい」', url: gnews('個人情報 漏えい') },
@@ -25,6 +25,8 @@ const FEEDS = [
   { name: 'Googleニュース「ランサムウェア」', url: gnews('ランサムウェア 被害') },
   { name: 'Googleニュース「NHK 流出」', url: gnews('流出 site:news.web.nhk') },
   { name: 'Googleニュース「Yahoo!ニュース 漏えい」', url: gnews('漏えい site:news.yahoo.co.jp') },
+  { name: 'Googleニュース「日経 漏洩」', url: gnews('漏洩 OR 漏えい OR 不正アクセス site:nikkei.com') },
+  { name: 'Googleニュース「日経クロステック 漏洩」', url: gnews('漏洩 OR 漏えい OR 不正アクセス site:xtech.nikkei.com') },
   { name: 'NHKニュース 主要', url: 'https://www.nhk.or.jp/rss/news/cat0.xml' },
   { name: 'NHKニュース 社会', url: 'https://www.nhk.or.jp/rss/news/cat1.xml' },
   { name: 'Yahoo!ニュース IT', url: 'https://news.yahoo.co.jp/rss/topics/it.xml' },
