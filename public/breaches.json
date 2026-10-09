@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T09:53:41.000Z",
+  "generated_at": "2026-10-09T10:17:34.000Z",
   "count": 384,
   "severity_levels": [
     {
@@ -3155,11 +3155,23 @@
         "住所",
         "従業員情報"
       ],
-      "summary": "政府共通の業務基盤GSSに、VPN機器の既知の脆弱性を突いて第三者が侵入。保守運用担当者のアカウントでサーバ上の大量のファイルにアクセスされ、職員等の個人情報約24.6万件が漏えいした可能性がある。",
+      "summary": "政府共通の業務基盤GSSに、5月下旬からVPN機器の既知の脆弱性を突いて第三者が侵入していた。6月25日に検知し、7月9日に侵入を確認して保守運用担当者のアカウントを停止した。保守運用担当者のアカウントでサーバ上の大量のファイルにアクセスされ、職員等の個人情報約24.6万件（職員・公務員等約18.9万件、業務に携わった事業者・個人約5.7万件）が漏えいした可能性がある。",
       "sources": [
         {
           "title": "ITmedia NEWS",
           "url": "https://www.itmedia.co.jp/news/article/2609/11/2000001406/"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUA1124Y0R10C26A9000000/"
+        },
+        {
+          "title": "日経クロステック",
+          "url": "https://xtech.nikkei.com/atcl/nxt/news/24/03383/"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2140157.html"
         }
       ],
       "severity": "high",
