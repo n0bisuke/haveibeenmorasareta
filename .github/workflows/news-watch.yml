@@ -69,6 +69,8 @@ jobs:
           LLM_MODEL: ${{ vars.LLM_MODEL }}
           LLM_EDITOR_MODEL: ${{ vars.LLM_EDITOR_MODEL }}
           AI_MAX_ITEMS: ${{ vars.AI_MAX_ITEMS || '5' }}
+          # Groq の無料枠は1分あたりのトークン数（TPM）の上限が小さいため、AI に渡す記事本文の文字数を抑える
+          ARTICLE_MAX_CHARS: ${{ vars.ARTICLE_MAX_CHARS || '3500' }}
       - uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
         if: always()
         with:
