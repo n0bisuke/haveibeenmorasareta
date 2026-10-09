@@ -86,6 +86,10 @@ function prBody(d, file, reasons) {
     `- ライターの判断: ${esc(d.writer?.reason)}`,
     `- 編集者の判定: **${esc(d.editor?.verdict)}**`,
   ];
+  const quotes = Object.entries(d.evidence ?? {});
+  if (quotes.length) {
+    lines.push('', '### 根拠の引用（記事本文に実在することをプログラムで確認済み）', '', '| 項目 | 記事からの引用 |', '|---|---|', ...quotes.map(([k, v]) => `| \`${esc(k).replace(/`/g, '')}\` | ${esc(v)} |`));
+  }
   if (d.editor?.issues?.length) {
     lines.push('', '### 編集者の指摘', ...d.editor.issues.map((i) => `- \`${esc(i.field).replace(/`/g, '')}\` ${esc(i.problem)}`));
   }

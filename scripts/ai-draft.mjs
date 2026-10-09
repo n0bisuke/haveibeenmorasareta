@@ -115,6 +115,8 @@ for (const candidate of candidates) {
     }
     const entry = { ...final.entry, country: 'JP', sources: [{ title: article.title.slice(0, 120), url: article.url }] };
     const fallback = `ai-${Buffer.from(article.url).toString('base64url').replace(/[^a-z0-9]/g, '').slice(-8).toLowerCase()}`;
+    // 記事本文に実在することを確かめた根拠の引用（PR に載せ、Web を見られない環境でも照合できるようにする）
+    result.evidence = Object.fromEntries(Object.entries(evidence).filter(([k, v]) => k in final.entry && typeof v === 'string').map(([k, v]) => [k, v.slice(0, 300)]));
     result.slug = slugify(draft.slug, fallback);
     result.entry = entry;
     result.status = 'draft';
