@@ -1,0 +1,23 @@
+name: Ubuntu 26 check (temporary)
+on:
+  push:
+    branches: [claude/magical-archimedes-7lls9o]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-26.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: 26
+          cache: npm
+      - run: cat /etc/os-release | head -3; which google-chrome chromium || true; google-chrome --version || true
+      - run: npm ci
+      - run: npm run build
+      - run: node scripts/pages.mjs --og
+      - run: node scripts/og-images.mjs --only 2026-10-jr-east-ekinet,2026-10-tobu-railway,2026-10-skyticket
+      - run: node scripts/og-top.mjs
+      - run: node scripts/stamp.mjs
+      - run: ls -la public/og.png public/breach/2026-10-jr-east-ekinet/og.png
