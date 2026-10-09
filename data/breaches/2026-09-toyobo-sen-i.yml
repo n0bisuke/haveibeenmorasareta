@@ -1,0 +1,22 @@
+organization: 東洋紡せんい株式会社
+group: 東洋紡グループ
+industry: 製造
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-09-24
+date_announced: 2026-09-25
+affected_count: null
+count_note: 個人情報等の漏えいの有無は調査中。約1,500件は不審メールの送信件数で、漏えい件数ではない
+cause: unauthorized_access
+root_cause: 従業員のメールアカウントが第三者に不正アクセスされ、フィッシングサイトへ誘導するメールの送信に使われた。侵入経路は公表されていない
+summary: 2026年9月24日、東洋紡せんいの従業員が利用するメールアカウントが第三者の不正アクセスを受け、同アカウントからグループ内外の関係者に約1,500件の不審なメールが送信されたことが確認された。メールには外部サイトへ誘導するPDFファイルが添付され、メールアドレス・ID・パスワードなどの認証情報の入力を求める内容だった。親会社の東洋紡が9月25日に公表し、東洋紡せんいも自社サイトに同趣旨のお詫びを掲載した。当該アカウントのパスワード変更や認証セッションの失効などを行い、保存されていたメールや連絡先情報へのアクセスログをもとに調べており、個人情報等の漏えいの有無も調査している。公表時点で基幹システムや業務システムへの不正アクセスは確認されていない。9月30日には東洋紡エムシーが、この不審メールを受信した同社従業員2名もフィッシング被害に遭い、メールアカウントに不正アクセスを受けていたと公表した。
+sources:
+  - title: 東洋紡 公式発表（お詫び）
+    url: https://www.toyobo.co.jp/system/files/News_Release/202609/press_20260925_3J.pdf
+  - title: 東洋紡せんい 公式発表（お詫び）
+    url: https://toyobo-tex.co.jp/news/%e5%bd%93%e7%a4%be%e3%83%a1%e3%83%bc%e3%83%ab%e3%82%a2%e3%82%ab%e3%82%a6%e3%83%b3%e3%83%88%e3%81%b8%e3%81%ae%e4%b8%8d%e6%ad%a3%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e3%81%8a%e3%82%88%e3%81%b3%e4%b8%8d/
+  - title: 東洋紡エムシー 公式発表（お詫び）
+    url: https://www.toyobo-mc.jp/news/press_release-260930_2/
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/toyobo-textile-email-account-unauthorized-access-phishing/
