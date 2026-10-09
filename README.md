@@ -24,7 +24,7 @@ public/ranking/       … 企業・業界・原因・委託先別のランキン
 - **main へのマージ時**: `Deploy to GitHub Pages` ワークフローが `public/breaches.json` を生成し、`public/` を GitHub Pages に公開します
 - `public/breaches.json` はリポジトリにも含まれ、main へのマージ時に自動で再生成・コミットされます。
   サイト上の https://n0bisuke.github.io/haveibeenmorasareta/breaches.json から API 的に再利用できます
-- 毎日 `News watch` ワークフローがニュースの RSS を巡回し、未収録の情報漏洩ニュースの候補を Issue にまとめます（調査ソースと手順は [RESEARCH.md](RESEARCH.md)）。Secrets に `JINA_API_KEY` を登録すると、[Jina](https://jina.ai/reader) の検索で公式発表などの Web ページと X（旧Twitter）の話題の投稿も探します（X の投稿は出典にできないため Issue の別欄に載せるだけ）。本文を直接取得できないページも Jina Reader で読みます。LLM の API キーを設定すると、候補の記事から AI が事案データの下書きを作って PR にします（下記「AI による下書き」）
+- `News watch` ワークフローが 8〜22時（日本時間）に2時間ごとにニュースの RSS を巡回し、未収録の情報漏洩ニュースの候補を Issue にまとめます（調査ソースと手順は [RESEARCH.md](RESEARCH.md)）。Secrets に `JINA_API_KEY` を登録すると、[Jina](https://jina.ai/reader) の検索で公式発表などの Web ページと X（旧Twitter）の話題の投稿も探します（X の投稿は出典にできないため Issue の別欄に載せるだけ）。本文を直接取得できないページも Jina Reader で読みます。LLM の API キーを設定すると、候補の記事から AI が事案データの下書きを作って PR にします（下記「AI による下書き」）
 - デプロイ時に `scripts/pages.mjs` が事案ごとの個別ページ（`/breach/<事案ID>/`）と `sitemap.xml` を生成します（公開物にだけ含め、コミットはしません）。一覧のカードをクリックすると個別ページに移動します
 - デプロイ時に `scripts/og-images.mjs` が事案ごとのシェア用画像（OGP、1200×630）を生成します。企業側が調査中の事案は速報風、漏洩した情報の重要度が「危険」「高」はダーク（8ビット風）、それ以外はライトのデザインです
 - デプロイ時に `scripts/stamp.mjs` が JS・CSS・JSON の参照に `?v=コミットSHA` を付け、更新直後に古いファイルがキャッシュから読まれないようにします（公開物のみ）
