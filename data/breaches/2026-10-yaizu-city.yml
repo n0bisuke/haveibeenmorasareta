@@ -1,0 +1,36 @@
+organization: 焼津市
+services:
+  - 焼津市立図書館ホームページ（問い合わせフォーム）
+industry:
+  - 行政
+  - 人材・教育
+country: JP
+org_type: local_gov
+prefecture: 静岡県
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/24
+date_occurred: 2026-10-07
+date_announced: 2026-10-07
+affected_count: 50
+count_note: 約50件（過去に図書館ホームページの問い合わせフォームに入力された個人情報）。漏えいは確認されておらず、市が被害状況を調査中
+cause: third_party
+root_cause: 図書館ホームページを収容するクラウド基盤（IDCFクラウド）へのランサムウェア攻撃
+vendor:
+  name: 株式会社IDCフロンティア
+  group: ソフトバンクグループ
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 問い合わせ内容
+summary: 焼津市立図書館のホームページを収容するシステムの一部が第三者から不正アクセスを受け、ホームページが10月7日午前3時40分ごろから閲覧できなくなったと市が同日発表した。過去に問い合わせフォームに入力された約50件の個人情報（氏名・住所・電話番号・メールアドレス・ファクス番号・問い合わせ内容）が漏えいした恐れがある。年齢・生年月日・性別は含まれない。これまでに漏えいは確認されておらず、市が詳しい被害状況を調べている。報道によると、図書館のホームページはIDCフロンティアのクラウドサービスを利用しており、同社のサーバーがランサムウェア攻撃を受けたことが原因とみられる。
+sources:
+  - title: 静岡新聞アットエス（静岡放送）
+    url: https://www.at-s.com/snews/article/ats/2071968.html
+  - title: 静岡新聞アットエス（静岡放送・続報）
+    url: https://www.at-s.com/snews/article/ats/2072555.html
+  - title: 中日新聞
+    url: https://www.chunichi.co.jp/article/1322710
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261008de56663
