@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-10-08T10:32:14.000Z",
-  "count": 371,
+  "count": 373,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,88 @@
   ],
   "breaches": [
     {
+      "id": "2026-10-jr-east-ekinet",
+      "organization": "東日本旅客鉄道株式会社",
+      "group": "JR東日本グループ",
+      "services": [
+        "えきねっと",
+        "大人の休日倶楽部"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2026-10-07",
+      "date_announced": "2026-10-09",
+      "affected_count": 2060000,
+      "count_note": "最大約206万件（えきねっと約167万件・大人の休日倶楽部約39万件の合計。重複を除いた人数ではない）",
+      "cause": "third_party",
+      "root_cause": "メール配信に使っていた外部サービスの基盤（IDCFクラウド）へのランサムウェア攻撃",
+      "vendor": {
+        "name": "株式会社IDCフロンティア",
+        "group": "ソフトバンクグループ"
+      },
+      "data_types": [
+        "メールアドレス",
+        "会員ID",
+        "生年月日",
+        "クレジットカード情報（番号の一部・有効期限等）"
+      ],
+      "summary": "会員にメールを送るために使っていた外部サービスが、IDCフロンティアのクラウドサービスへの不正アクセスの影響を受け、保存していた会員情報が第三者に閲覧・取得された可能性があると公表した。えきねっとはメールアドレスのみ、大人の休日倶楽部はメールアドレス・会員番号・クレジットカードの有効期限・生年月日が対象。氏名・住所・電話番号・クレジットカード番号は含まれない。対象の利用者には個別にメールで連絡する。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC0952Q0Z01C26A0000000/"
+        },
+        {
+          "title": "ITmedia NEWS（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/d8cb67d2c2246afbb5749f1cc4ee7834012e7f6d"
+        },
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261009de57177"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 2,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-viewcard",
+      "organization": "株式会社ビューカード",
+      "group": "JR東日本グループ",
+      "services": [
+        "ビューカード"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-10-07",
+      "date_announced": "2026-10-09",
+      "affected_count": 4030000,
+      "count_note": "約403万件（会員サイトに登録されたメールアドレス）",
+      "cause": "third_party",
+      "root_cause": "メール配信に使っていた外部サービスの基盤（IDCFクラウド）へのランサムウェア攻撃",
+      "vendor": {
+        "name": "株式会社IDCフロンティア",
+        "group": "ソフトバンクグループ"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "IDCフロンティアのクラウドサービスへの不正アクセスの影響で、会員サイトに登録された約403万件のメールアドレスが漏えいした可能性があると公表した。氏名・住所・電話番号・クレジットカード番号は含まれない。対象の会員には個別にメールで連絡し、不審なメールへの注意を呼びかけている。",
+      "sources": [
+        {
+          "title": "共同通信（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/2c2c52440326e5af3457f36770075127ea91133d"
+        },
+        {
+          "title": "デイリースポーツ（共同通信）",
+          "url": "https://www.daily.co.jp/society/economics/2026/10/09/0020910661.shtml"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 2,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-skyticket",
       "organization": "株式会社アドベンチャー",
       "services": [
@@ -547,8 +629,16 @@
       "affected_count": null,
       "count_note": "個人情報の漏えいの有無は調査中（約495の企業・自治体に障害の影響）",
       "cause": "ransomware",
-      "summary": "クラウドサービス「IDCFクラウド」の一部システムが福島県白河市のデータセンターでランサムウェア攻撃を受け、茨城県庁など約495の企業・自治体でホームページが閲覧できないなどの障害が発生した。利用者が預けたデータを含め、個人情報が漏えいしたかどうかは公表されていない。",
+      "summary": "クラウドサービス「IDCFクラウド」の一部システムが福島県白河市のデータセンターでランサムウェア攻撃を受け、茨城県庁など約495の企業・自治体でホームページが閲覧できないなどの障害が発生した。利用者が預けたデータを含め、個人情報が漏えいしたかどうかは公表されていない。利用企業側では、JR東日本・ビューカードがメール配信用に預けていた会員のメールアドレスなどが漏えいした可能性があると公表している。",
       "sources": [
+        {
+          "title": "IDCフロンティア 公式発表（第1報）",
+          "url": "https://www.idcf.jp/news/topics/20261007001"
+        },
+        {
+          "title": "IDCフロンティア 公式発表（第2報）",
+          "url": "https://www.idcf.jp/news/topics/20261007002"
+        },
         {
           "title": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC076WG0X01C26A0000000/"
@@ -560,7 +650,7 @@
       ],
       "severity": null,
       "disclosure_days": 0,
-      "reliability": "mid"
+      "reliability": "high"
     },
     {
       "id": "2026-10-iwate-bank",
