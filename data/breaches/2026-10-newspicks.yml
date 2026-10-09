@@ -1,0 +1,29 @@
+organization: 株式会社ユーザベース
+group: ユーザベースグループ
+services:
+  - NewsPicks
+industry: メディア・出版
+country: JP
+date_occurred: 2026-10-08
+date_announced: 2026-10-08
+affected_count: 362000
+count_note: 項目別の最大想定件数のうち最大のもの（カード情報の一部 36.2万件）。項目別の合計は最大約117万件（重複を含む）。対象人数は調査中
+cause: vulnerability
+root_cause: 業務用の管理ツールの脆弱性を突かれ、第三者に不正アクセスされた（詳細は調査中）
+data_types:
+  - 氏名
+  - メールアドレス
+  - 住所
+  - 電話番号
+  - 生年月日
+  - クレジットカード情報（番号の一部・有効期限等）
+summary: ニュースメディア「NewsPicks」の業務用管理ツールが第三者による不正アクセスを受け、利用者の個人情報が漏えいした可能性があると公表した。10月8日に不正アクセスを検知し、対象サーバーを遮断した。氏名・勤務先・メールアドレス・住所・電話番号・生年月日・カード名義・カード番号の下3桁または4桁などが対象で、翌9日の第二報で項目別の最大想定件数（カード情報の一部36.2万件、メールアドレス32.3万件など）を公表した。カード番号全体とセキュリティコードは保存しておらず、サービス本体への侵入は確認されていない。
+sources:
+  - title: NewsPicks 公式発表（第一報）
+    url: https://corp.newspicks.com/info/20261008
+  - title: NewsPicks 公式発表（第二報）
+    url: https://corp.newspicks.com/info/20261009
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/09/2000002175/
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC08BFS0Y6A001C2000000/

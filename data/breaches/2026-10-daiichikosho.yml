@@ -1,0 +1,30 @@
+organization: 株式会社第一興商
+services:
+  - カラオケ ビッグエコー
+  - メガビッグ
+  - カラオケCLUB DAM
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-10-01
+date_announced: 2026-10-08
+affected_count: 8724000
+count_note: 約872万4,000件（顧客約863万1,000件・従業員約9万3,000件。漏えいのおそれ）
+cause: third_party
+root_cause: 個人情報の取扱いを委託していた日本コロムビアグループの従業員PC1台がマルウェアに感染
+vendor:
+  name: 日本コロムビアグループ株式会社
+data_types:
+  - 氏名
+  - 性別
+  - 生年月日
+  - メールアドレス
+  - 電話番号
+  - 従業員情報
+summary: 個人情報の取扱いを委託していた日本コロムビアグループの従業員PC1台がマルウェアに感染し、顧客と従業員の個人情報計約872万4,000件が漏えいしたおそれがあると公表した。対象は氏名・性別・生年月日・メールアドレス・電話番号で、パスワードは含まれない。感染は10月1日から2日に判明し、委託先は端末を隔離して10月5日に同社へ報告した。公表時点で外部への流出や不正利用は確認されていない。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC088GB0Y6A001C2000000/
+  - title: 朝日新聞（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/c82e529a82d618befd0a25e37158ea9b092ee506
+  - title: 週刊アスキー
+    url: https://weekly.ascii.jp/elem/000/004/441/4441353/

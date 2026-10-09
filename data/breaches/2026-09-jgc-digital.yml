@@ -1,0 +1,27 @@
+organization: JGC Digital株式会社
+group: 日揮グループ
+services:
+  - アザス
+  - するーぷ
+industry: IT・通信
+country: JP
+date_occurred: 2026-09-16
+date_announced: 2026-09-18
+affected_count: 60000
+count_note: アカウント件数（アザス約4万件、するーぷ約2万件）。1人が複数のアカウントを持つ場合があり、人数はこれより少ない見込み
+cause: vulnerability
+root_cause: データ分析用のBIツール「Metabase」の脆弱性を悪用され、顧客情報を取得された
+data_types:
+  - 氏名
+  - 生年月日
+  - 性別
+  - メールアドレス
+  - 郵便番号
+summary: 日揮ホールディングスの子会社JGC Digitalは、データの集計・分析に使っていたBIツール「Metabase」の脆弱性を悪用した不正アクセスを受け、顧客情報が取得されたと公表した。9月16日に異常を検知し、同日中に侵入経路を遮断した。建設現場向けサービス「アザス」の約4万件（氏名・生年月日・性別・メールアドレス・所属など）と衣類回収サービス「するーぷ」の約2万件（メールアドレス・生年月・性別・郵便番号・職業など）の計約6万アカウント分が対象で、パスワードは同社が管理しておらず漏えいしていない。
+sources:
+  - title: JGC Digital 公式発表
+    url: https://jgc-digital.com/topics/topics-3049/
+  - title: 日揮ホールディングス「当社子会社における個人情報流出に関するお知らせ」
+    url: https://www.jgc.com/jp/news/2026/20260918_01.html
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/09/56422.html
