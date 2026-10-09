@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-09T08:32:39.000Z",
-  "count": 374,
+  "generated_at": "2026-10-09T09:53:41.000Z",
+  "count": 384,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,51 @@
   ],
   "breaches": [
     {
+      "id": "2026-10-bookoff",
+      "organization": "ブックオフグループホールディングス株式会社",
+      "group": "ブックオフグループ",
+      "services": [
+        "ブックオフ会員サービス"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-10-09",
+      "affected_count": 6430000,
+      "count_note": "最大約643万件（会員番号の件数で、人数ではない）",
+      "cause": "unauthorized_access",
+      "root_cause": "中古品を扱う子会社の会員管理システムへの第三者による不正アクセス（侵入経路は非公表）",
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "性別",
+        "メールアドレス",
+        "電話番号",
+        "郵便番号",
+        "住所",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "会員ID",
+        "ポイント情報"
+      ],
+      "summary": "中古品を扱う子会社の会員管理システムが第三者による不正アクセスを受け、会員情報が外部に取得されたと公表した。10月6日に不正アクセスを確認した。対象は最大約643万件で、氏名・生年月日・性別・メールアドレス・電話番号・住所・パスワードのハッシュ値・ポイントカード番号・会員番号が含まれる。決済情報はこのシステムに保有していない。攻撃元からの通信を遮断し、脆弱性を是正した。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/09/2000002150/"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2147026.html"
+        },
+        {
+          "title": "共同通信（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/a22c8ee6bd30eeab05d29a450d0c6db872c54167"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-jr-east-ekinet",
       "organization": "東日本旅客鉄道株式会社",
       "group": "JR東日本グループ",
@@ -550,6 +595,267 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-10-aomori-biiki",
+      "organization": "青森県",
+      "services": [
+        "青森県公式ファンコミュニティ「青森びいき」"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "青森県",
+      "date_announced": "2026-10-08",
+      "affected_count": 2950,
+      "count_note": "最大2,950人（推計。人数は調査中）。会員数は16,697人",
+      "cause": "third_party",
+      "root_cause": "運営会社のシステムの不備を突かれ、第三者が非公開領域へ不正アクセスし管理者等になりすました",
+      "vendor": {
+        "name": "コミューン"
+      },
+      "data_types": [
+        "メールアドレス",
+        "アカウント名",
+        "会員ID"
+      ],
+      "summary": "県の公式ファンコミュニティ「青森びいき」が10月6日に不正アクセスを受け、最大2,950人分の会員情報が流出した可能性があると、運営会社のコミューンとともに発表した。第三者がシステムの不備を突いて非公開領域に入り、管理者などになりすまして、メールアドレス・ニックネーム・年代などを閲覧した記録が確認された。住所とクレジットカード情報は登録されておらず、パスワードの漏えいは確認されていない。サービスは停止しており、悪用は確認されていない。",
+      "sources": [
+        {
+          "title": "東奥日報",
+          "url": "https://www.toonippo.co.jp/articles/-/2379511"
+        },
+        {
+          "title": "陸奥新報",
+          "url": "https://mutsushimpo.com/news/nlo9qaor/"
+        },
+        {
+          "title": "青森朝日放送",
+          "url": "https://www.aba-net.com/news/news-201352.html"
+        },
+        {
+          "title": "河北新報",
+          "url": "https://kahoku.news/articles/JY6XUVY443KHN.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-daiichikosho",
+      "organization": "株式会社第一興商",
+      "services": [
+        "カラオケ ビッグエコー",
+        "メガビッグ",
+        "カラオケCLUB DAM"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-10-01",
+      "date_announced": "2026-10-08",
+      "affected_count": 8724000,
+      "count_note": "約872万4,000件（顧客約863万1,000件・従業員約9万3,000件。漏えいのおそれ）",
+      "cause": "third_party",
+      "root_cause": "個人情報の取扱いを委託していた日本コロムビアグループの従業員PC1台がマルウェアに感染",
+      "vendor": {
+        "name": "日本コロムビアグループ株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "性別",
+        "生年月日",
+        "メールアドレス",
+        "電話番号",
+        "従業員情報"
+      ],
+      "summary": "個人情報の取扱いを委託していた日本コロムビアグループの従業員PC1台がマルウェアに感染し、顧客と従業員の個人情報計約872万4,000件が漏えいしたおそれがあると公表した。対象は氏名・性別・生年月日・メールアドレス・電話番号で、パスワードは含まれない。感染は10月1日から2日に判明し、委託先は端末を隔離して10月5日に同社へ報告した。公表時点で外部への流出や不正利用は確認されていない。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC088GB0Y6A001C2000000/"
+        },
+        {
+          "title": "朝日新聞（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/c82e529a82d618befd0a25e37158ea9b092ee506"
+        },
+        {
+          "title": "週刊アスキー",
+          "url": "https://weekly.ascii.jp/elem/000/004/441/4441353/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 7,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-hachijuni-nagano",
+      "organization": "株式会社八十二長野銀行",
+      "group": "八十二グループ",
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "長野県",
+      "date_occurred": "2026-10-07",
+      "date_announced": "2026-10-08",
+      "affected_count": 35,
+      "count_note": "最大35人。預金・融資に関する顧客情報が含まれるかは確認中",
+      "cause": "unauthorized_access",
+      "root_cause": "職員が外部からの不審なメールを開封し、メールアカウントが第三者に不正アクセスされた",
+      "attack_methods": [
+        "phishing"
+      ],
+      "data_types": [
+        "メールアドレス",
+        "取引先情報"
+      ],
+      "summary": "職員のメールアカウントが不正アクセスを受け、経営コンサルティング業務の連携先の従業員など35人分のメールアドレスと、職員とのメールのやり取りが流出した可能性があると発表した。10月7日に職員が外部からの不審メールを開封したことが原因で、同日夜にアカウントを停止した。外部の専門事業者による調査と警察への報告を行い、預金・融資に関する顧客情報が含まれるかは確認中とした。不正利用の被害は確認されていない。",
+      "sources": [
+        {
+          "title": "産経新聞（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/5219f6f5d718105ca9682bd20ecc2d90e117fbca"
+        },
+        {
+          "title": "テレビ信州（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/8a0e0132033bedc9935299137464e114473f104e"
+        },
+        {
+          "title": "NBS長野放送（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/f9ddb4880bc1411497015c13b4d046b10bc40c1c"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 1,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-kodaira",
+      "organization": "小平市",
+      "services": [
+        "小平市公式ホームページ"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "東京都",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/24",
+      "date_occurred": "2026-10-07",
+      "date_announced": "2026-10-08",
+      "cause": "third_party",
+      "root_cause": "ホームページ保守事業者が使うクラウド基盤（IDCFクラウド）がランサムウェア攻撃を受けた",
+      "vendor": {
+        "name": "株式会社IDCフロンティア",
+        "group": "ソフトバンクグループ"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "市のホームページ保守を請け負う事業者が使うクラウド基盤がランサムウェア攻撃を受け、10月7日朝から市のホームページが閲覧できなくなった。市は問い合わせフォームなどで受け取った氏名・住所・電話番号・メールアドレスなどが漏えいしたおそれがあるとして調査している。公表時点で漏えいは確認されていない。",
+      "sources": [
+        {
+          "title": "日テレNEWS NNN（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/29a5475e9889fdbc8580dc101f5b6db885d28cb8"
+        },
+        {
+          "title": "日テレNEWS NNN 続報（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/ee4cf92bdcefb132b2099f045d6dcd0cf2e0e135"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 1,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-lawson",
+      "organization": "株式会社ローソン",
+      "services": [
+        "ローソンID",
+        "ローソンアプリ予約"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-09-12",
+      "date_announced": "2026-10-08",
+      "affected_count": 2155371,
+      "count_note": "ローソンID 215万5,345件、ローソンアプリ予約 26件",
+      "cause": "unauthorized_access",
+      "root_cause": "アプリ関連システムで利用者本人に情報を表示するための仕組みが第三者に悪用された",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "性別",
+        "電話番号",
+        "住所",
+        "クレジットカード情報（番号の一部・有効期限等）"
+      ],
+      "summary": "アカウントサービス「ローソンID」と「ローソンアプリ予約」が第三者による不正アクセスを受け、個人情報が漏えいしたと公表した。ローソンIDは9月12日から14日、アプリ予約は9月17日に不正アクセスを受けていた。ローソンIDでは215万5,345件のメールアドレス・氏名など（入力していた人は性別・電話番号・住所も）、アプリ予約では26件の氏名・電話番号・クレジットカード番号の一部が漏えいした。不審なアクセス元を遮断し、予約機能を停止した。",
+      "sources": [
+        {
+          "title": "ローソン 公式発表（お詫びとお知らせ）",
+          "url": "https://www.lawson.co.jp/contents/cont07/1533174_3310.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC08A430Y6A001C2000000/"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2146917.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 26,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-newspicks",
+      "organization": "株式会社ユーザベース",
+      "group": "ユーザベースグループ",
+      "services": [
+        "NewsPicks"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_occurred": "2026-10-08",
+      "date_announced": "2026-10-08",
+      "affected_count": 362000,
+      "count_note": "項目別の最大想定件数のうち最大のもの（カード情報の一部 36.2万件）。項目別の合計は最大約117万件（重複を含む）。対象人数は調査中",
+      "cause": "vulnerability",
+      "root_cause": "業務用の管理ツールの脆弱性を突かれ、第三者に不正アクセスされた（詳細は調査中）",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "住所",
+        "電話番号",
+        "生年月日",
+        "クレジットカード情報（番号の一部・有効期限等）"
+      ],
+      "summary": "ニュースメディア「NewsPicks」の業務用管理ツールが第三者による不正アクセスを受け、利用者の個人情報が漏えいした可能性があると公表した。10月8日に不正アクセスを検知し、対象サーバーを遮断した。氏名・勤務先・メールアドレス・住所・電話番号・生年月日・カード名義・カード番号の下3桁または4桁などが対象で、翌9日の第二報で項目別の最大想定件数（カード情報の一部36.2万件、メールアドレス32.3万件など）を公表した。カード番号全体とセキュリティコードは保存しておらず、サービス本体への侵入は確認されていない。",
+      "sources": [
+        {
+          "title": "NewsPicks 公式発表（第一報）",
+          "url": "https://corp.newspicks.com/info/20261008"
+        },
+        {
+          "title": "NewsPicks 公式発表（第二報）",
+          "url": "https://corp.newspicks.com/info/20261009"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/09/2000002175/"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC08BFS0Y6A001C2000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 0,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-skyticket",
       "organization": "株式会社アドベンチャー",
       "services": [
@@ -573,6 +879,46 @@
       ],
       "severity": null,
       "disclosure_days": null
+    },
+    {
+      "id": "2026-10-daiei-sangyo",
+      "organization": "大英産業株式会社",
+      "services": [
+        "Grand Inn Canalside"
+      ],
+      "industry": [
+        "不動産",
+        "旅行"
+      ],
+      "country": "JP",
+      "date_occurred": "2026-09-14",
+      "date_announced": "2026-10-07",
+      "count_note": "委託先ホテリエが受託する8施設の合計で7,919人の流出を確認。Grand Inn Canalside単独の人数は未公表",
+      "cause": "third_party",
+      "root_cause": "旧運営会社から引き継がれず把握されていなかったアカウント経由で宿泊管理システムに不正ログインされた",
+      "vendor": {
+        "name": "株式会社ホテリエ"
+      },
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "利用履歴"
+      ],
+      "summary": "所有する宿泊施設「Grand Inn Canalside」の宿泊者の個人情報が漏えいした可能性があると公表した。宿泊管理を委託するホテリエのシステムに、旧運営会社から引き継がれず把握されていなかったアカウント経由で第三者が不正にアクセスした。ホテリエは同施設を含む受託8施設で、2026年4月8日〜9月14日にWebサイトから予約した7,919人の氏名・電話番号・メールアドレス・国籍・宿泊日・宿泊料金などの流出を確認した。該当アカウントは停止し、アクセス元を遮断した。",
+      "sources": [
+        {
+          "title": "大英産業「個人情報漏えいに関するお詫びとお知らせ」",
+          "url": "https://www.daieisangyo.co.jp/news/3218"
+        },
+        {
+          "title": "ホテリエ 公式発表（PDF）",
+          "url": "https://hotel.inc/wp-content/uploads/2026/10/20261007_apology_ja.pdf"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 23,
+      "reliability": "high"
     },
     {
       "id": "2026-10-his",
@@ -2525,6 +2871,48 @@
       "reliability": "high"
     },
     {
+      "id": "2026-09-jgc-digital",
+      "organization": "JGC Digital株式会社",
+      "group": "日揮グループ",
+      "services": [
+        "アザス",
+        "するーぷ"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-09-16",
+      "date_announced": "2026-09-18",
+      "affected_count": 60000,
+      "count_note": "アカウント件数（アザス約4万件、するーぷ約2万件）。1人が複数のアカウントを持つ場合があり、人数はこれより少ない見込み",
+      "cause": "vulnerability",
+      "root_cause": "データ分析用のBIツール「Metabase」の脆弱性を悪用され、顧客情報を取得された",
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "性別",
+        "メールアドレス",
+        "郵便番号"
+      ],
+      "summary": "日揮ホールディングスの子会社JGC Digitalは、データの集計・分析に使っていたBIツール「Metabase」の脆弱性を悪用した不正アクセスを受け、顧客情報が取得されたと公表した。9月16日に異常を検知し、同日中に侵入経路を遮断した。建設現場向けサービス「アザス」の約4万件（氏名・生年月日・性別・メールアドレス・所属など）と衣類回収サービス「するーぷ」の約2万件（メールアドレス・生年月・性別・郵便番号・職業など）の計約6万アカウント分が対象で、パスワードは同社が管理しておらず漏えいしていない。",
+      "sources": [
+        {
+          "title": "JGC Digital 公式発表",
+          "url": "https://jgc-digital.com/topics/topics-3049/"
+        },
+        {
+          "title": "日揮ホールディングス「当社子会社における個人情報流出に関するお知らせ」",
+          "url": "https://www.jgc.com/jp/news/2026/20260918_01.html"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/09/56422.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 2,
+      "reliability": "high"
+    },
+    {
       "id": "2026-09-chibagin-shoten",
       "organization": "株式会社ちばぎん商店",
       "group": "千葉銀行グループ",
@@ -2819,6 +3207,35 @@
       "severity": "critical",
       "disclosure_days": 44,
       "reliability": "high"
+    },
+    {
+      "id": "2026-09-nerima",
+      "organization": "練馬区",
+      "services": [
+        "女性のためのデジタルスキル習得プログラム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "東京都",
+      "date_announced": "2026-09-09",
+      "affected_count": 71,
+      "count_note": "受講者71名",
+      "cause": "unknown",
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "男女共同参画センターえーるで実施している「女性のためのデジタルスキル習得プログラム」で、受講者71名の氏名とメールアドレスが、受講者専用チャットツール内で他の受講者と講師から閲覧可能な状態になっていたと発表した。区は対象の受講者に謝罪し、再発防止に取り組むとした。",
+      "sources": [
+        {
+          "title": "練馬区「講座受講者の個人情報の漏えいについて」",
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/jinken/oshirase/dx-kojinjyoho.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-09-kyoto-sanga",
