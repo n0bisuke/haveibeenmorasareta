@@ -1,0 +1,23 @@
+organization: 株式会社四国銀行
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 高知県
+date_occurred: 2026-10-02
+date_announced: 2026-10-05
+affected_count: null
+count_note: 件数は非公表（大和証券の約11万人と重複する可能性あり）
+cause: third_party
+attack_methods:
+  - stolen_credentials
+root_cause: 提携先の大和証券が利用する委託先スカラコミュニケーションズのFAQシステムへの不正アクセス
+vendor:
+  name: 株式会社スカラコミュニケーションズ
+  group: スカラグループ
+via: 大和証券株式会社
+summary: 包括的業務提携を結ぶ大和証券の問い合わせ管理サービスの委託先が不正アクセスを受け、四国銀行経由で大和証券の口座を持つ顧客の情報が漏えいした可能性があると発表した。証券口座と問い合わせ窓口は大和証券に統合・移管している。対象の人数は公表しておらず、該当する可能性のある顧客には個別に連絡している。
+sources:
+  - title: 四国銀行 お知らせ
+    url: https://www.shikokubank.co.jp/info/post_195.html
+  - title: 朝日新聞（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/36befc286666a7d477029e917e9a88f5a47a6079

@@ -93,3 +93,45 @@ a.tile:hover, a.tile:focus-visible { outline: 2px solid var(--text); outline-off
 .swatch { width: 14px; height: 14px; border-radius: 3px; background: var(--tag-bg); border: 1px solid var(--border); }
 .delay-note { flex-basis: 100%; }
 .noleak-card .rank-bar .bar { background: var(--safe); }
+
+/* ---- 漏洩の系譜 ---- */
+.lineage { margin-top: 12px; }
+.lin-node { display: inline-flex; flex-direction: column; gap: 1px; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 0.75rem; min-width: 76px; text-decoration: none; line-height: 1.35; }
+.lin-node b { font-size: 0.8rem; }
+.lin-node small { color: var(--muted); font-size: 0.7rem; }
+a.lin-node:hover, a.lin-node:focus-visible { border-color: var(--accent); }
+.lin-node.root { background: var(--accent); border-color: var(--accent); color: #fff; }
+.lin-node.root small { color: #fff; opacity: 0.85; }
+.lin-node.mid { background: color-mix(in srgb, var(--accent) 12%, var(--surface)); border-color: color-mix(in srgb, var(--accent) 40%, var(--border)); }
+.lin-ok { color: var(--safe-fg) !important; font-weight: 700; }
+
+/* A: 家系図（上から下）。幅が足りなければ横にスクロール */
+.lineage-tree .lin-family { overflow-x: auto; padding: 4px 0 20px; }
+.lin-tree, .lin-tree ul { display: flex; justify-content: center; margin: 0; padding: 0; position: relative; }
+.lin-tree { width: max-content; min-width: 100%; }
+.lin-tree ul { padding-top: 16px; }
+.lin-tree li { list-style: none; text-align: center; position: relative; padding: 16px 3px 0; }
+.lin-tree > li { padding-top: 0; }
+.lin-tree li::before, .lin-tree li::after { content: ""; position: absolute; top: 0; right: 50%; width: 50%; height: 16px; border-top: 2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+.lin-tree li::after { right: auto; left: 50%; border-left: 2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+.lin-tree > li::before, .lin-tree > li::after, .lin-tree li:only-child::before, .lin-tree li:only-child::after { display: none; }
+.lin-tree li:only-child { padding-top: 0; }
+.lin-tree li:first-child::before, .lin-tree li:last-child::after { border: 0 none; }
+.lin-tree li:last-child::before { border-right: 2px solid color-mix(in srgb, var(--accent) 45%, transparent); border-radius: 0 6px 0 0; }
+.lin-tree li:first-child::after { border-radius: 6px 0 0 0; }
+.lin-tree ul::before { content: ""; position: absolute; top: 0; left: 50%; height: 16px; border-left: 2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+
+/* B: 系譜リスト（左から右） */
+.lineage-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.lin-card { border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; background: var(--surface); }
+.lin-badge { display: inline-block; font-size: 0.7rem; color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent); border-radius: 999px; padding: 1px 8px; margin-bottom: 6px; }
+.lin-row { display: flex; gap: 8px; align-items: baseline; padding: 3px 0; font-size: 0.85rem; position: relative; }
+.lin-row.root .lin-name { font-size: 1rem; font-weight: 800; color: var(--accent); }
+.lin-row.mid .lin-name { font-weight: 700; }
+.lin-name { color: var(--text); text-decoration: none; }
+a.lin-name:hover { text-decoration: underline; }
+.lin-cnt { margin-left: auto; font-size: 0.75rem; color: var(--muted); white-space: nowrap; }
+.lin-kids { margin-left: 8px; padding-left: 14px; border-left: 2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+.lin-kids > .lin-row::before { content: ""; position: absolute; left: -14px; top: 0.85em; width: 10px; border-top: 2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+.lin-single { columns: 2 260px; margin: 8px 0 0; padding-left: 1.2em; font-size: 0.85rem; }
+.lin-vendor { color: var(--muted); }

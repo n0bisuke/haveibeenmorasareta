@@ -114,6 +114,27 @@
         </div>
       </details>
     </section>
+
+    <section class="viz-card" aria-labelledby="lineage-title">
+      <div class="viz-head">
+        <div>
+          <h2 id="lineage-title">漏洩の系譜（委託先・提携先から広がった事案）</h2>
+          <p class="muted viz-sub" id="lineage-sub"></p>
+        </div>
+        <div class="viz-controls">
+          <div class="seg" role="radiogroup" aria-label="表示">
+            <button type="button" role="radio" data-lineage="tree">家系図</button>
+            <button type="button" role="radio" data-lineage="list">リスト</button>
+          </div>
+        </div>
+      </div>
+      <div class="lineage" id="lineage"></div>
+      <p class="muted viz-note">上（左）が原因になった委託先、下（右）が影響を受けて公表した会社です。提携先を経由して広がった事案は、経由した会社の下につないでいます。会社名をクリックすると、その事案の個別ページを表示します。</p>
+      <details class="viz-table">
+        <summary>1社だけに影響した委託先</summary>
+        <ul class="lin-single" id="lineage-single"></ul>
+      </details>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -129,5 +150,6 @@
 
   <script src="monthly.js" type="module"></script>
   <script src="map.js" type="module"></script>
+  <script src="lineage.js" type="module"></script>
 </body>
 </html>
