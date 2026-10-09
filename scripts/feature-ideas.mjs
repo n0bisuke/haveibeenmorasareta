@@ -63,7 +63,7 @@ const existing = issues.filter((i) => !i.pull_request).map((i) => `- [${i.state 
 
 // ---- 材料3: サイトの機能一覧（README の「仕組み」） ----
 const readme = await readFile(path.join(ROOT, 'README.md'), 'utf8');
-const features = readme.slice(readme.indexOf('## 仕組み'), readme.indexOf('## 追加・修正したい場合')).slice(0, 6000);
+const features = readme.slice(readme.indexOf('## 仕組み'), readme.indexOf('## 追加・修正したい場合')).slice(0, 3000);
 
 const system = `あなたは日本の情報漏洩事案データベース「Have I Been Morasareta 日本版（漏らされったー）」の改善を担当するプロダクトマネージャーです。
 アクセス解析の結果とサイトの現状から、次に作るべき機能追加・改善を提案します。
