@@ -7,6 +7,7 @@
 import { writeFile } from 'node:fs/promises';
 import { loadBreaches } from './lib.mjs';
 import { jinaReady, jinaSearch, xPostTime } from './jina.mjs';
+import { mdText, mdUrl } from './md.mjs';
 
 const arg = (name) => (process.argv.includes(name) ? process.argv[process.argv.indexOf(name) + 1] : undefined);
 const DAYS = Number(arg('--days')) || 7;
@@ -155,16 +156,6 @@ if (jinaReady) {
 candidates.sort((a, b) => b.time - a.time);
 if (OUT) await writeFile(OUT, `${JSON.stringify(candidates, null, 2)}\n`);
 
-// 記事の見出しなど外部由来の文字列を Issue に載せる前に無害化する（メンション・HTML・Markdown の装飾を作らせない）
-const mdText = (s) => String(s ?? '').replace(/[\r\n]+/g, ' ').replace(/[\\`*_{}[\]()<>#!|~]/g, '\\$&').replace(/@/g, '@\u200b').slice(0, 200);
-const mdUrl = (u) => {
-  try {
-    const url = new URL(u);
-    return /^https?:$/.test(url.protocol) ? url.href.replace(/[()<> ]/g, (c) => `%${c.charCodeAt(0).toString(16)}`) : '';
-  } catch {
-    return '';
-  }
-};
 const fmt = (t) => (t ? new Date(t).toLocaleDateString('ja-JP', { timeZone: 'Asia/Tokyo' }) : '日付不明');
 const body = [
   `直近 ${DAYS} 日のニュースから、まだ収録されていない可能性がある情報漏洩の記事を自動で集めました（${candidates.length} 件）。`,
