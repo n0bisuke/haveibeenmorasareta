@@ -17,7 +17,7 @@ concurrency:
 jobs:
   # 1. ニュースの候補を集める（プログラムのみ）
   watch:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04 # ubuntu-latest が Ubuntu 26 に移行するまで固定（2026-10-19〜）。問題がなければ ubuntu-latest に戻す
     permissions:
       contents: read
       issues: write
@@ -41,7 +41,7 @@ jobs:
   # 2. AI が下書きを作る。LLM の API キーを持つのはこのジョブだけで、リポジトリへの書き込み権限は持たせない
   draft:
     needs: watch
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04 # ubuntu-latest が Ubuntu 26 に移行するまで固定（2026-10-19〜）。問題がなければ ubuntu-latest に戻す
     permissions:
       contents: read
     steps:
@@ -85,7 +85,7 @@ jobs:
   # 3. 下書きを検証して PR にする（LLM は使わず、API キーも渡さない）
   publish:
     needs: draft
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04 # ubuntu-latest が Ubuntu 26 に移行するまで固定（2026-10-19〜）。問題がなければ ubuntu-latest に戻す
     permissions:
       contents: write
       pull-requests: write

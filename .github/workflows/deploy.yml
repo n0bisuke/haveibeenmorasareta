@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04 # ubuntu-latest が Ubuntu 26 に移行するまで固定（2026-10-19〜）。問題がなければ ubuntu-latest に戻す
     permissions:
       contents: write # breaches.json の再生成をコミットする
     steps:
@@ -62,7 +62,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04 # ubuntu-latest が Ubuntu 26 に移行するまで固定（2026-10-19〜）。問題がなければ ubuntu-latest に戻す
     permissions:
       pages: write
       id-token: write
