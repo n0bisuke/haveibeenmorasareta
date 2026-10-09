@@ -1,0 +1,36 @@
+organization: コミューン株式会社
+services:
+  - Commune
+  - Commune for Work
+industry:
+  - IT・通信
+  - 行政
+  - 製造
+  - 食品
+  - 美容・健康
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-10-05
+date_announced: 2026-10-08
+affected_count: 307000
+count_note: 約30.7万人（推計。同一会員IDの重複と攻撃者が作成したアカウントを除いた実人数で、調査の進展により変わる場合がある。コミュニティごとの人数は利用企業へ個別に案内）。うちメールアドレスを含む情報が約12.6万人（コミューン従業員・テスト用デモアカウント約4.2万人を含む）、メールアドレスを含まない情報が約18.1万人。利用企業・団体が公表した各コミュニティの人数と重複する可能性あり
+cause: vulnerability
+vuln_target: web_app
+root_cause: システムの不備を突かれ、非公開コミュニティの招待リンクを不正に取得しての会員登録と、管理者へのなりすましを許した
+data_types:
+  - 会員ID
+  - アカウント名
+  - メールアドレス
+summary: 2026年10月5日18時ごろから6日にかけて、コミュニティプラットフォーム「Commune」「Commune for Work」が第三者の不正アクセスを受け、一部の利用企業のコミュニティで会員情報が漏えいした。攻撃者はシステムの不備を突き、非公開コミュニティの招待リンクを不正に取得して一般会員として登録したほか、管理者になりすまして会員情報の閲覧・取得やデータの上書きを行った。6日に検知し、21時ごろ全コミュニティを停止したが、7日にもメンテナンス中に残っていた通信経路から不正な会員登録と閲覧があり、同日14時58分に遮断した。漏えいした会員は推計約30.7万人で、うちメールアドレスを含む情報が約12.6万人、表示名・自己紹介・非公開グループの所属などメールアドレスを含まない情報が約18.1万人。144人のパスワードが本人の操作によらず仮パスワードに変更されたが、パスワードそのものやダイレクトメッセージの漏えいは確認されていない。10月8日に青森県から受託運営する「青森びいき」で会員情報が漏えいした可能性を公表し、9日に全体を公表した。調査は継続している。利用企業・団体では青森県・VALX・ウイングアーク１ｓｔ・スズキ・ヤマハ・森永乳業・カルビーなどが自社のコミュニティへの影響を公表している。
+sources:
+  - title: コミューン株式会社 公式発表
+    url: https://communeinc.com/ja/news/2026oct09
+  - title: コミューン株式会社 公式発表（青森びいきのお知らせ・2026年10月8日）
+    url: https://communeinc.com/ja/news/2026oct08
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC0969K0Z01C26A0000000/
+  - title: 青森放送（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/85109258b1dcaec9454ae3f00bf07698141811ef
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/commune_307000_members_data_breach/
