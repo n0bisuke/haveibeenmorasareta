@@ -1,0 +1,25 @@
+organization: ヤマハ株式会社
+group: ヤマハグループ
+services:
+- ヤマハネットワークエンジニア会（YNE）
+industry: 製造
+country: JP
+date_occurred: 2026-10-06
+date_announced: 2026-10-09
+affected_count: 1600
+count_note: 約1,600名
+cause: third_party
+root_cause: 委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした
+vendor:
+  name: コミューン
+data_types:
+- メールアドレス
+- アカウント名
+summary: ヤマハネットワークエンジニア会（YNE）の基盤システムを提供するコミューン株式会社のサーバーが不正アクセスを受け、YNE登録者の情報が流出したと公表した。不正アクセスは10月6日11時59分頃から20時36分頃にかけて行われ、約1,600名分のメールアドレス、表示名、アカウント名、自己紹介、アイコン、所属グループが漏えいした。同社システムへの不正アクセスや情報の不正利用は確認されていない。
+sources:
+- title: ヤマハ 公式発表（PDF）
+  url: https://www.yamaha.com/ja/news_release/files/news/26100901/pdf/2610090101.pdf
+- title: 日本経済新聞
+  url: https://www.nikkei.com/article/DGXZRSP713699_Z01C26A0000000/
+- title: ITmedia NEWS
+  url: https://www.itmedia.co.jp/news/article/2610/09/2000002178/

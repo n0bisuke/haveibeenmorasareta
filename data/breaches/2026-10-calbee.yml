@@ -1,0 +1,18 @@
+organization: カルビー株式会社
+services:
+- 絶品部「やめられない、とまらない」課
+industry: 食品
+country: JP
+date_announced: 2026-10-09
+count_note: 件数は非公表
+cause: third_party
+root_cause: 委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした
+vendor:
+  name: コミューン
+data_types:
+- メールアドレス
+- アカウント名
+summary: ファンサイト『絶品部「やめられない、とまらない」課』で利用するコミュニティシステム「Commune」が外部から不正アクセスを受け、会員情報の一部が閲覧・取得された可能性があると公表した。対象は10月5日時点で登録されていた会員のメールアドレス、表示名、ユーザー名、自己紹介、プロフィール項目、所属グループで、パスワードは含まれない。運営者を装ったフィッシングメールへの注意を呼びかけた。
+sources:
+- title: カルビー 公式発表（PDF）
+  url: https://www.calbee.co.jp/notice/pdf/69-54565.pdf

@@ -1,0 +1,24 @@
+organization: LINEヤフー株式会社
+group: LINEヤフーグループ
+services:
+- DS.INSIGHT（コミュニティ機能「DS.LAB」）
+industry: IT・通信
+country: JP
+date_announced: 2026-10-09
+affected_count: 1750
+count_note: 1,750名（閲覧・取得された可能性）
+cause: third_party
+root_cause: 委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした
+vendor:
+  name: コミューン
+data_types:
+- 氏名
+- メールアドレス
+- アカウント名
+- ポイント情報
+summary: 事業者向けデスクリサーチツール「DS.INSIGHT」のコミュニティ機能「DS.LAB」で、委託先のコミューン株式会社が提供する「Commune」のシステムの不備を第三者に悪用されたと公表した。利用者1,750名の氏名、メールアドレス、ニックネーム、アカウント名、自己紹介、所属グループ、ポイント、最終アクティブ日時などが閲覧・取得された可能性がある。自社システムへの不正アクセスや二次被害は確認されていない。
+sources:
+- title: LINEヤフー 公式発表
+  url: https://www.lycorp.co.jp/ja/privacy-security/announcement/020892/
+- title: 日本経済新聞
+  url: https://www.nikkei.com/article/DGXZQOUC09AUO0Z01C26A0000000/

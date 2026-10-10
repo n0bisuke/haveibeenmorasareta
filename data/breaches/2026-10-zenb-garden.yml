@@ -1,0 +1,23 @@
+organization: 株式会社ZENB JAPAN
+group: ミツカングループ
+services:
+- ZENB GARDEN
+industry: 食品
+country: JP
+date_announced: 2026-10-09
+affected_count: 949
+count_note: 897人は漏えいを確認、最大で全会員949人の可能性
+cause: third_party
+root_cause: 委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした
+vendor:
+  name: コミューン
+data_types:
+- メールアドレス
+- 性別
+- アカウント名
+summary: オンラインコミュニティ「ZENB GARDEN」で利用する外部サービスの提供会社コミューンのシステムが不正アクセスを受け、会員897人のメールアドレス、性別、ニックネーム、アカウント名、自己紹介などが漏えいしたと公表した。最大で全会員949人に及ぶ可能性がある。氏名・住所・電話番号・決済情報は取得しておらず、公式通販サイトへの不正アクセスは確認されていない。
+sources:
+- title: ZENB 公式発表
+  url: https://zenb.jp/blogs/news/20261009
+- title: 日本経済新聞
+  url: https://www.nikkei.com/article/DGXZQOFD098XC0Z01C26A0000000/

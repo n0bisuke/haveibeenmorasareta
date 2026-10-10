@@ -1,0 +1,19 @@
+organization: 森永乳業株式会社
+services:
+- マウントカフェ部
+industry: 食品
+country: JP
+date_announced: 2026-10-09
+affected_count: 291
+count_note: 291名（推定）
+cause: third_party
+root_cause: 委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした
+vendor:
+  name: コミューン
+data_types:
+- メールアドレス
+- アカウント名
+summary: オンラインコミュニティ「マウントカフェ部」の運営に利用しているコミューン株式会社提供のシステム「Commune」が、10月6日に第三者の不正アクセスを受けたと公表した。会員291名分のメールアドレスや表示名などが閲覧・取得された可能性がある。
+sources:
+- title: 森永乳業 公式発表
+  url: https://www.morinagamilk.co.jp/information/newsentry-4168.html
