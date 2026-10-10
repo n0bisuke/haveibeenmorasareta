@@ -1,0 +1,21 @@
+organization: ディップ株式会社
+services:
+  - バイトル
+  - バイトルNEXT
+industry: 人材・教育
+country: JP
+date_announced: 2026-10-09
+affected_count: 3885771
+count_note: 最大388万5,771件（漏えいのおそれ）
+cause: unauthorized_access
+root_cause: システムの一部機能における仕様の不備を突いた、海外からの不正アクセス
+data_types:
+  - メールアドレス
+summary: 求人情報サイト「バイトル」「バイトルNEXT」が第三者から不正アクセスを受け、会員のメールアドレスが最大388万5,771件漏えいしたおそれがあると公表した。原因はシステムの一部機能における仕様の不備を突いた海外からの不正アクセスで、10月6日に確認した。海外からのアクセスをすべて遮断してプログラムを改修し、監視体制を強化した。漏えいのおそれがあるのはメールアドレスのみで、氏名・電話番号・パスワード・クレジットカード情報などは含まれないとしている。対象の会員には順次メールなどで案内している。
+sources:
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261009de57499
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/10/2000002186/
+  - title: TBS NEWS DIG（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/ed64de95a8701945e573e45ded4d90894bbc80ca
