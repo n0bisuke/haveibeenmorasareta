@@ -1,0 +1,15 @@
+organization: 郡山地方広域消防組合
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 福島県
+date_occurred: 2026-07-09
+date_announced: 2026-10-09
+affected_count: 83
+cause: unauthorized_access
+data_types:
+  - メールアドレス
+summary: 郡山地方広域消防組合は、委託先のプロシーズが提供するクラウドシステムが不正アクセスを受け、7月9日から10月7日までに講習を申し込んだ利用者のメールアドレス83件が漏えいした疑いがあると発表した。二次被害は確認されておらず、組合は対象者へ注意喚起のメールを送付した。
+sources:
+  - title: 不正アクセスで講習申込者のアドレス83件漏えいか（福島民友新聞） - Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/2cedb2845b609c66fcebc16a73ab25fbd7e74c79
