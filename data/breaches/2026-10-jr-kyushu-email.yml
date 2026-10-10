@@ -1,0 +1,12 @@
+organization: JR九州
+industry: 交通・モビリティ
+country: JP
+date_announced: 2026-10-10
+affected_count: 1300000
+cause: unauthorized_access
+data_types:
+  - メールアドレス
+summary: JR九州は、ソフトバンク子会社IDCフロンティアが提供するクラウドサービスへの不正アクセスにより、最大約130万件のウェブ会員メールアドレスが漏えいした可能性があると発表した。氏名や住所、電話番号、クレジットカード番号などの他の個人情報は漏えいしていないとされている。
+sources:
+  - title: JR九州ウェブ会員メアド　最大130万件漏えいか（FNNプライムオンライン（フジテレビ系）） - Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/7d1f606b3aff09f74bb9b1fc70ab242451775102
