@@ -164,10 +164,20 @@ for (const d of drafts) {
   git('push', '--force', 'origin', branch);
   git('checkout', base);
   const reasons = autoMergeable(d);
-  const pr = await api('/pulls', {
-    method: 'POST',
-    body: JSON.stringify({ title: `[AI下書き] ${d.entry.organization}（${d.entry.date_announced}公表）`, head: branch, base, body: prBody(d, file, reasons) }),
-  });
+  let pr;
+  try {
+    pr = await api('/pulls', {
+      method: 'POST',
+      body: JSON.stringify({ title: `[AI下書き] ${d.entry.organization}（${d.entry.date_announced}公表）`, head: branch, base, body: prBody(d, file, reasons) }),
+    });
+  } catch (e) {
+    // 同じブランチの PR が既にあるときは、新しく作らずに次へ進む（ブランチは force push 済み）
+    if (e.status === 422 && /already exists/.test(e.message)) {
+      summary.push(`- skipped: ${title}（同じブランチの PR が既にあります: ${branch}）`);
+      continue;
+    }
+    throw e;
+  }
   await api(`/issues/${pr.number}/labels`, { method: 'POST', body: JSON.stringify({ labels: [LABEL] }) });
   // Actions のトークンで作った PR では Validate が自動で動かないので、ブランチを指定して起動する
   await api('/actions/workflows/validate.yml/dispatches', { method: 'POST', body: JSON.stringify({ ref: branch }) });
