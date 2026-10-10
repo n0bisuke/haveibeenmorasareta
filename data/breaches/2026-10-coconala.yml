@@ -1,0 +1,19 @@
+organization: 株式会社ココナラ
+services:
+  - ココナラスキルマーケット
+industry: IT・通信
+country: JP
+date_occurred: 2026-10-08
+date_announced: 2026-10-09
+affected_count: 2294
+count_note: 書類の件数（履歴書449件、職務経歴書関連書類1,845件）。人数ではない
+cause: vulnerability
+root_cause: 第三者に脆弱性を突かれて不正アクセスされ、会員が登録した書類を持ち出された（詳細は未公表）
+data_types:
+  - 保存データ（写真・文書等）
+summary: スキル売買サービス「ココナラスキルマーケット」が第三者の不正アクセスを受け、会員が登録した履歴書449件と職務経歴書関連書類1,845件の計2,294件が外部に持ち出されたと公表した。10月8日未明に不正アクセスを検知して遮断したが、同日午後に再び検知し、持ち出しの形跡を確認した。攻撃経路を遮断し、同日中に脆弱性を修正した。クレジットカード情報やパスワードは対象外で、公開や不正利用は確認されていない。対象者には個別に連絡するとした。
+sources:
+  - title: ココナラ 公式発表
+    url: https://coconala.co.jp/news-20261009/
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/10/2000002188/
