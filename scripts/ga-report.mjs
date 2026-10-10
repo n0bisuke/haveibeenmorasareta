@@ -55,6 +55,9 @@ const diff = (a, b) => {
 // Issue に載せる文字列のうち、外部由来（ページタイトル・参照元）を無害化する
 const esc = (s) => String(s ?? '').replace(/[\r\n|]/g, ' ').replace(/[\\`*_[\]<>]/g, '\\$&').replace(/@/g, '@\u200b').slice(0, 80);
 
+// ページタイトルの末尾のサイト名（「 | Have I Been Morasareta 日本版（漏らされったー）」）は省く
+const pageTitle = (t) => String(t ?? '').replace(/\s*[|｜]\s*Have I Been Morasareta.*$/, '') || String(t ?? '');
+
 const date = new Date(Date.now() - 86400000).toLocaleDateString('ja-JP', { timeZone: 'Asia/Tokyo', year: 'numeric', month: 'long', day: 'numeric', weekday: 'short' });
 const labels = ['訪問者数', '閲覧数（PV）', 'セッション数'];
 const lines = [
@@ -68,7 +71,7 @@ const lines = [
   '',
   '| ページ | PV |',
   '|---|---:|',
-  ...(pages.length ? pages.map((r) => `| ${esc(r.dimensionValues[1].value)}<br><sub>${esc(r.dimensionValues[0].value)}</sub> | ${nf.format(num(r, 0))} |`) : ['| （データなし） | |']),
+  ...(pages.length ? pages.map((r) => `| ${esc(pageTitle(r.dimensionValues[1].value))}<br><sub>${esc(r.dimensionValues[0].value)}</sub> | ${nf.format(num(r, 0))} |`) : ['| （データなし） | |']),
   '',
   '### 流入元',
   '',
@@ -113,6 +116,13 @@ if (!issue) {
       body: `${ym}の Google アナリティクスのアクセスを、毎日コメントで追記します。\n\n<sub>自動で作成された Issue です。月が変わると閉じて、次の月の Issue を作ります。</sub>`,
     }),
   });
+}
+// 手動実行と定期実行が重なっても、同じ日のレポートは1回だけ投稿する
+const heading = lines[0];
+const comments = issue.comments ? await api(`/issues/${issue.number}/comments?per_page=100`) : [];
+if (comments.some((c) => c.user?.login === 'github-actions[bot]' && c.body.startsWith(heading))) {
+  console.log(`Issue #${issue.number} には ${date} のレポートが投稿済みのため、何もしません`);
+  process.exit(0);
 }
 await api(`/issues/${issue.number}/comments`, { method: 'POST', body: JSON.stringify({ body: text }) });
 console.log(`✔ Issue #${issue.number} にレポートを追記しました`);
