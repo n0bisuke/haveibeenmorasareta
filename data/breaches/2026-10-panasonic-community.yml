@@ -1,0 +1,20 @@
+organization: パナソニック
+group: パナソニックグループ
+services:
+- LUMIXコミュニティ
+- ヘアサプ by Panasonic Beauty
+industry: 製造
+country: JP
+date_announced: 2026-10-09
+affected_count: 5000
+count_note: LUMIXコミュニティ約2,000人、ヘアサプ約3,000人（漏えいの可能性）。公表した法人名は未確認
+cause: third_party
+root_cause: 委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした
+vendor:
+  name: コミューン
+data_types:
+- メールアドレス
+summary: コミュニティサイト「LUMIXコミュニティ」約2,000人と「ヘアサプ by Panasonic Beauty」約3,000人について、メールアドレスを含む会員情報が漏えいした可能性があると、委託先のコミューン株式会社から報告を受けたと公表した。コミューンの「Commune」が不正アクセスを受けたことによるもので、関係者を装ったフィッシングメールへの注意を呼びかけた。
+sources:
+- title: ITmedia NEWS
+  url: https://www.itmedia.co.jp/news/article/2610/10/2000002190/

@@ -1,0 +1,25 @@
+organization: 岩手県
+services:
+  - 物価高騰対策賃上げ支援事業
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 岩手県
+date_occurred: 2026-10-06
+date_announced: 2026-10-09
+affected_count: 48
+count_note: 申請事業者1社分（従業員47人と担当者1人。報道により47人とするものもある）
+cause: third_party
+root_cause: 事務局の委託先の担当者が宛先のメールアドレスを手入力で誤り、別の宛先に送信した
+vendor:
+  name: 株式会社テレビ岩手
+data_types:
+  - 氏名
+  - 従業員情報
+  - 口座番号
+summary: 物価高騰対策賃上げ支援事業の事務局を受託したテレビ岩手が、10月6日に申請事業者1社の情報を含むファイルを誤った宛先にメール送信したと発表した。担当者が宛先のアドレスを手入力で誤ったことが原因で、従業員47人分の氏名と時給、担当者名、事業者の口座情報などが含まれていた。送信先は判明しておらず、二次被害は確認されていない。県は複数人での確認を徹底させるとした。
+sources:
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261009de57396
+  - title: Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/397bd52aec23566dbbd9b01374e5b60d840b698d

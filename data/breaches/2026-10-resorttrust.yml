@@ -1,0 +1,19 @@
+organization: リゾートトラスト株式会社
+services:
+  - ザ・カハラ・ホテル＆リゾート 横浜
+industry: 旅行
+country: JP
+date_occurred: 2026-10-05
+date_announced: 2026-10-09
+affected_count: 62000
+count_note: 約6万2,000件（グループの会員情報約2万6,000件、ザ・カハラ・ホテル＆リゾート横浜の予約者情報約3万6,000件）。漏えいした情報の具体的な項目は未確認
+cause: unauthorized_access
+root_cause: 管理するウェブサイトへの外部からの不正アクセス（侵入経路は調査中）
+summary: 管理するウェブサイトが外部から不正アクセスを受け、サーバー上の顧客の個人情報の一部が外部に漏えいしたと発表した。10月5日夜にシステムの異常動作が発生し、10月7日に漏えいを確認した。対象はグループの会員情報約2万6,000件と、ザ・カハラ・ホテル＆リゾート横浜の予約者情報約3万6,000件の計約6万2,000件。クレジットカード情報、口座情報、メールアドレス、本人確認書類は対象システムに含まれていないとした。外部の専門機関と調査を進めている。
+sources:
+  - title: リゾートトラスト 公式発表（PDF）
+    url: https://www.resorttrust.co.jp/wp_api/wp-content/uploads/2026/10/20261009.pdf
+  - title: 共同通信（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/ab40700b4c773538d3d1a1c88022ec7720c9558f
+  - title: 時事通信（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/fb6bc3fbcf1a4b36ee825cea0ee9b00bc488997a

@@ -1,0 +1,31 @@
+organization: Peach Aviation株式会社
+services:
+  - 予約関連メール（旅程表メールなど）の配信システム
+industry:
+  - 交通・モビリティ
+  - 旅行
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/24
+date_occurred: 2026-10-07
+date_announced: 2026-10-09
+affected_count: 1890000
+count_note: 約189万件（影響を受けたシステムに保存されていた件数）。公表時点で外部流出は確認されていない
+cause: third_party
+root_cause: メール配信システムの基盤であるIDCFクラウドがランサムウェア攻撃を受けた
+vendor:
+  name: 株式会社IDCフロンティア
+  group: ソフトバンクグループ
+data_types:
+  - メールアドレス
+  - 氏名
+  - 電話番号
+  - 利用履歴
+summary: 予約関連メールの配信に使うシステムの基盤であるIDCフロンティアの「IDCFクラウド」が10月7日未明にランサムウェア攻撃を受け、新規予約時の旅程表メールなどに送信遅延・不達が発生したと発表した。対象システムにはメールアドレス、アルファベット表記の氏名、電話番号、予約番号、旅程内容の約189万件が保存されていたが、現時点で外部流出は確認されていないとしている。クレジットカード情報やパスポート情報は保存されていなかった。代替サーバーで10月8日から送信を再開した。
+sources:
+  - title: Aviation Wire
+    url: https://www.aviationwire.jp/archives/352202
+  - title: ABCニュース（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/a5f692670a5f18caa2ee8b789128e941c76e00e4
+  - title: TRAICY
+    url: https://www.traicy.com/posts/20261009384525/

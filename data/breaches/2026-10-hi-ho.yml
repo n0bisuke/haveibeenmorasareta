@@ -1,0 +1,22 @@
+organization: 株式会社ハイホー
+services:
+  - hi-ho 会員用マイページ
+industry: IT・通信
+country: JP
+date_announced: 2026-10-08
+affected_count: 38509
+count_note: 38,509件（契約単位）。閲覧された、または閲覧された可能性がある件数
+cause: phishing
+root_cause: 他社への切り替えを勧める電話勧誘で本人からログイン情報を聞き出され、マイページになりすましログインされた
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 契約情報
+summary: 会員用マイページに第三者が顧客になりすましてログインし、38,509件（契約単位）の顧客情報が閲覧された、または閲覧された可能性があると発表した。他社への切り替えを勧める電話勧誘で本人からログイン情報を聞き出す手口とみられる。対象は氏名、住所、電話番号、メールアドレス、契約・請求情報で、クレジットカードと口座情報は含まれない。不正な通信元を遮断し、電話番号などでログインする方式を廃止した。
+sources:
+  - title: ハイホー 公式発表
+    url: https://hi-ho.co.jp/%E3%80%90%E9%87%8D%E8%A6%81%E3%81%AA%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%80%91%E3%81%8A%E5%AE%A2%E6%A7%98%E6%83%85%E5%A0%B1%E3%81%B8%E3%81%AE%E7%AC%AC%E4%B8%89%E8%80%85%E3%81%AB%E3%82%88%E3%82%8B%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%8C%E7%A2%BA%E8%AA%8D%E3%81%95%E3%82%8C%E3%81%9F%E4%BA%8B%E6%A1%88%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%94%E5%A0%B1%E5%91%8A
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/hi-ho-impersonation-login-38509-contracts/

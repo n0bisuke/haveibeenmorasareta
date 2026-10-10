@@ -1,0 +1,23 @@
+organization: ちとせグループ
+services:
+- ちとせアカデミー
+industry: 製造
+country: JP
+date_occurred: 2026-10-06
+date_announced: 2026-10-09
+affected_count: 843
+count_note: 最大843名（可能性）
+cause: third_party
+root_cause: 委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした
+vendor:
+  name: コミューン
+data_types:
+- 氏名
+- 性別
+- メールアドレス
+- アカウント名
+- ポイント情報
+summary: コミュニティサイト「ちとせアカデミー」の運営に利用しているコミューン株式会社の「Commune」が不正アクセスを受け、10月6日に同サイトの管理者アカウント1件が第三者に不正利用されたと公表した。最大843名の氏名、フリガナ、性別、メールアドレス、表示名、プロフィール、ポイントなどの利用状況が閲覧・取得された可能性がある。決済情報は保有していない。サイトは停止している。
+sources:
+- title: ちとせグループ 公式発表
+  url: https://chitose-bio.com/jp/news/12177/

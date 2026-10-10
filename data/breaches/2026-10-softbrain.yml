@@ -1,0 +1,21 @@
+organization: ソフトブレーン株式会社
+services:
+- eセールスマネージャーRemixCLOUD ユーザーコミュニティサイト
+industry: IT・通信
+country: JP
+date_announced: 2026-10-09
+affected_count: 1164
+count_note: 1,164名（漏えいの可能性）
+cause: third_party
+root_cause: 委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした
+vendor:
+  name: コミューン
+data_types:
+- 氏名
+- メールアドレス
+- アカウント名
+- 取引先情報
+summary: 「eセールスマネージャーRemixCLOUD ユーザーコミュニティサイト」で利用する外部クラウドサービスが第三者の不正アクセスを受けたと、10月6日に提供事業者のコミューン株式会社から報告を受けた。サイトの管理者アカウントが不正に利用され、会員1,164名の会社名、氏名、フリガナ、アカウント名、メールアドレス、プロフィール情報が閲覧・取得された可能性がある。製品本体は影響を受けていない。
+sources:
+- title: ソフトブレーン 公式発表
+  url: https://www.softbrain.co.jp/news/topics/2026/20261009_1817/
