@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-09T10:17:34.000Z",
-  "count": 384,
+  "generated_at": "2026-10-10T05:44:53.000Z",
+  "count": 400,
   "severity_levels": [
     {
       "id": "critical",
@@ -513,6 +513,146 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-10-calbee",
+      "organization": "カルビー株式会社",
+      "services": [
+        "絶品部「やめられない、とまらない」課"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2026-10-09",
+      "count_note": "件数は非公表",
+      "cause": "third_party",
+      "root_cause": "委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした",
+      "vendor": {
+        "name": "コミューン"
+      },
+      "data_types": [
+        "メールアドレス",
+        "アカウント名"
+      ],
+      "summary": "ファンサイト『絶品部「やめられない、とまらない」課』で利用するコミュニティシステム「Commune」が外部から不正アクセスを受け、会員情報の一部が閲覧・取得された可能性があると公表した。対象は10月5日時点で登録されていた会員のメールアドレス、表示名、ユーザー名、自己紹介、プロフィール項目、所属グループで、パスワードは含まれない。運営者を装ったフィッシングメールへの注意を呼びかけた。",
+      "sources": [
+        {
+          "title": "カルビー 公式発表（PDF）",
+          "url": "https://www.calbee.co.jp/notice/pdf/69-54565.pdf"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-chitose-academy",
+      "organization": "ちとせグループ",
+      "services": [
+        "ちとせアカデミー"
+      ],
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2026-10-06",
+      "date_announced": "2026-10-09",
+      "affected_count": 843,
+      "count_note": "最大843名（可能性）",
+      "cause": "third_party",
+      "root_cause": "委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした",
+      "vendor": {
+        "name": "コミューン"
+      },
+      "data_types": [
+        "氏名",
+        "性別",
+        "メールアドレス",
+        "アカウント名",
+        "ポイント情報"
+      ],
+      "summary": "コミュニティサイト「ちとせアカデミー」の運営に利用しているコミューン株式会社の「Commune」が不正アクセスを受け、10月6日に同サイトの管理者アカウント1件が第三者に不正利用されたと公表した。最大843名の氏名、フリガナ、性別、メールアドレス、表示名、プロフィール、ポイントなどの利用状況が閲覧・取得された可能性がある。決済情報は保有していない。サイトは停止している。",
+      "sources": [
+        {
+          "title": "ちとせグループ 公式発表",
+          "url": "https://chitose-bio.com/jp/news/12177/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-dip-baitoru",
+      "organization": "ディップ株式会社",
+      "services": [
+        "バイトル",
+        "バイトルNEXT"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_announced": "2026-10-09",
+      "affected_count": 3885771,
+      "count_note": "最大388万5,771件（漏えいのおそれ）",
+      "cause": "unauthorized_access",
+      "root_cause": "システムの一部機能における仕様の不備を突いた、海外からの不正アクセス",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "求人情報サイト「バイトル」「バイトルNEXT」が第三者から不正アクセスを受け、会員のメールアドレスが最大388万5,771件漏えいしたおそれがあると公表した。原因はシステムの一部機能における仕様の不備を突いた海外からの不正アクセスで、10月6日に確認した。海外からのアクセスをすべて遮断してプログラムを改修し、監視体制を強化した。漏えいのおそれがあるのはメールアドレスのみで、氏名・電話番号・パスワード・クレジットカード情報などは含まれないとしている。対象の会員には順次メールなどで案内している。",
+      "sources": [
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261009de57499"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/10/2000002186/"
+        },
+        {
+          "title": "TBS NEWS DIG（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/ed64de95a8701945e573e45ded4d90894bbc80ca"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-iwate-pref-chinage",
+      "organization": "岩手県",
+      "services": [
+        "物価高騰対策賃上げ支援事業"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "岩手県",
+      "date_occurred": "2026-10-06",
+      "date_announced": "2026-10-09",
+      "affected_count": 48,
+      "count_note": "申請事業者1社分（従業員47人と担当者1人。報道により47人とするものもある）",
+      "cause": "third_party",
+      "root_cause": "事務局の委託先の担当者が宛先のメールアドレスを手入力で誤り、別の宛先に送信した",
+      "vendor": {
+        "name": "株式会社テレビ岩手"
+      },
+      "data_types": [
+        "氏名",
+        "従業員情報",
+        "口座番号"
+      ],
+      "summary": "物価高騰対策賃上げ支援事業の事務局を受託したテレビ岩手が、10月6日に申請事業者1社の情報を含むファイルを誤った宛先にメール送信したと発表した。担当者が宛先のアドレスを手入力で誤ったことが原因で、従業員47人分の氏名と時給、担当者名、事業者の口座情報などが含まれていた。送信先は判明しておらず、二次被害は確認されていない。県は複数人での確認を徹底させるとした。",
+      "sources": [
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261009de57396"
+        },
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/397bd52aec23566dbbd9b01374e5b60d840b698d"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-jr-east-ekinet",
       "organization": "東日本旅客鉄道株式会社",
       "group": "JR東日本グループ",
@@ -558,6 +698,333 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-10-jr-kyushu-web",
+      "organization": "九州旅客鉄道株式会社",
+      "group": "JR九州グループ",
+      "services": [
+        "JR九州Web会員"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2026-10-07",
+      "date_announced": "2026-10-09",
+      "affected_count": 1300000,
+      "count_note": "最大約130万件（漏えいの可能性）。メール配信を委託している会社の社名は公表されていない",
+      "cause": "third_party",
+      "root_cause": "メールマガジンの配信委託先が使うIDCFクラウドがランサムウェア攻撃を受けた",
+      "vendor": {
+        "name": "株式会社IDCフロンティア",
+        "group": "ソフトバンクグループ"
+      },
+      "data_types": [
+        "メールアドレス",
+        "利用履歴"
+      ],
+      "summary": "JR九州Web会員向けメールマガジンの配信を委託している会社が使っていた、IDCフロンティアのクラウドサービス「IDCFクラウド」がランサムウェア攻撃を受け、Web会員のメールアドレスが最大約130万件漏えいした可能性があると公表した。対象はメールアドレスとメールのログデータで、第三者に閲覧・取得された可能性を否定できないとしている。氏名・住所・電話番号・クレジットカード番号、メールマガジンの件名・本文は含まれない。被害は確認されておらず、メールマガジンは配信できない状態となっている。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOJC09B7T0Z01C26A0000000/"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261009de57526"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/10/2000002185/"
+        },
+        {
+          "title": "共同通信（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/6e9ae3afa87d6703cc8e8a318ca556a9ada69e34"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 2,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-koikeya",
+      "organization": "株式会社湖池屋",
+      "services": [
+        "湖池屋GOGO！ランド"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2026-10-09",
+      "affected_count": 1800,
+      "count_note": "最大1,800人",
+      "cause": "third_party",
+      "root_cause": "委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした",
+      "vendor": {
+        "name": "コミューン"
+      },
+      "summary": "ファンコミュニティ「湖池屋GOGO！ランド」の運営を委託するコミューン株式会社のシステムが不正アクセスを受け、最大1,800人分の会員情報が漏えいしたと公表した。外部の第三者がシステムの不備を突き、管理者になりすまして会員情報を閲覧・取得した。パスワードそのものの漏えいは確認されていない。全会員をログアウトさせ、データを10月6日18時時点の状態に戻したうえで再開するとした。",
+      "sources": [
+        {
+          "title": "湖池屋 公式発表（PDF）",
+          "url": "https://koikeya.co.jp/images/pdf/info_20261009.pdf"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2147291.html"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-lycorp-ds-lab",
+      "organization": "LINEヤフー株式会社",
+      "group": "LINEヤフーグループ",
+      "services": [
+        "DS.INSIGHT（コミュニティ機能「DS.LAB」）"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-10-09",
+      "affected_count": 1750,
+      "count_note": "1,750名（閲覧・取得された可能性）",
+      "cause": "third_party",
+      "root_cause": "委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした",
+      "vendor": {
+        "name": "コミューン"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "アカウント名",
+        "ポイント情報"
+      ],
+      "summary": "事業者向けデスクリサーチツール「DS.INSIGHT」のコミュニティ機能「DS.LAB」で、委託先のコミューン株式会社が提供する「Commune」のシステムの不備を第三者に悪用されたと公表した。利用者1,750名の氏名、メールアドレス、ニックネーム、アカウント名、自己紹介、所属グループ、ポイント、最終アクティブ日時などが閲覧・取得された可能性がある。自社システムへの不正アクセスや二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "LINEヤフー 公式発表",
+          "url": "https://www.lycorp.co.jp/ja/privacy-security/announcement/020892/"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC09AUO0Z01C26A0000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-morinaga-milk",
+      "organization": "森永乳業株式会社",
+      "services": [
+        "マウントカフェ部"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2026-10-09",
+      "affected_count": 291,
+      "count_note": "291名（推定）",
+      "cause": "third_party",
+      "root_cause": "委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした",
+      "vendor": {
+        "name": "コミューン"
+      },
+      "data_types": [
+        "メールアドレス",
+        "アカウント名"
+      ],
+      "summary": "オンラインコミュニティ「マウントカフェ部」の運営に利用しているコミューン株式会社提供のシステム「Commune」が、10月6日に第三者の不正アクセスを受けたと公表した。会員291名分のメールアドレスや表示名などが閲覧・取得された可能性がある。",
+      "sources": [
+        {
+          "title": "森永乳業 公式発表",
+          "url": "https://www.morinagamilk.co.jp/information/newsentry-4168.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-panasonic-community",
+      "organization": "パナソニック",
+      "group": "パナソニックグループ",
+      "services": [
+        "LUMIXコミュニティ",
+        "ヘアサプ by Panasonic Beauty"
+      ],
+      "industry": "製造",
+      "country": "JP",
+      "date_announced": "2026-10-09",
+      "affected_count": 5000,
+      "count_note": "LUMIXコミュニティ約2,000人、ヘアサプ約3,000人（漏えいの可能性）。公表した法人名は未確認",
+      "cause": "third_party",
+      "root_cause": "委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした",
+      "vendor": {
+        "name": "コミューン"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "コミュニティサイト「LUMIXコミュニティ」約2,000人と「ヘアサプ by Panasonic Beauty」約3,000人について、メールアドレスを含む会員情報が漏えいした可能性があると、委託先のコミューン株式会社から報告を受けたと公表した。コミューンの「Commune」が不正アクセスを受けたことによるもので、関係者を装ったフィッシングメールへの注意を呼びかけた。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/10/2000002190/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-peach",
+      "organization": "Peach Aviation株式会社",
+      "services": [
+        "予約関連メール（旅程表メールなど）の配信システム"
+      ],
+      "industry": [
+        "交通・モビリティ",
+        "旅行"
+      ],
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/24",
+      "date_occurred": "2026-10-07",
+      "date_announced": "2026-10-09",
+      "affected_count": 1890000,
+      "count_note": "約189万件（影響を受けたシステムに保存されていた件数）。公表時点で外部流出は確認されていない",
+      "cause": "third_party",
+      "root_cause": "メール配信システムの基盤であるIDCFクラウドがランサムウェア攻撃を受けた",
+      "vendor": {
+        "name": "株式会社IDCフロンティア",
+        "group": "ソフトバンクグループ"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "電話番号",
+        "利用履歴"
+      ],
+      "summary": "予約関連メールの配信に使うシステムの基盤であるIDCフロンティアの「IDCFクラウド」が10月7日未明にランサムウェア攻撃を受け、新規予約時の旅程表メールなどに送信遅延・不達が発生したと発表した。対象システムにはメールアドレス、アルファベット表記の氏名、電話番号、予約番号、旅程内容の約189万件が保存されていたが、現時点で外部流出は確認されていないとしている。クレジットカード情報やパスポート情報は保存されていなかった。代替サーバーで10月8日から送信を再開した。",
+      "sources": [
+        {
+          "title": "Aviation Wire",
+          "url": "https://www.aviationwire.jp/archives/352202"
+        },
+        {
+          "title": "ABCニュース（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/a5f692670a5f18caa2ee8b789128e941c76e00e4"
+        },
+        {
+          "title": "TRAICY",
+          "url": "https://www.traicy.com/posts/20261009384525/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 2,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-resorttrust",
+      "organization": "リゾートトラスト株式会社",
+      "services": [
+        "ザ・カハラ・ホテル＆リゾート 横浜"
+      ],
+      "industry": "旅行",
+      "country": "JP",
+      "date_occurred": "2026-10-05",
+      "date_announced": "2026-10-09",
+      "affected_count": 62000,
+      "count_note": "約6万2,000件（グループの会員情報約2万6,000件、ザ・カハラ・ホテル＆リゾート横浜の予約者情報約3万6,000件）。漏えいした情報の具体的な項目は未確認",
+      "cause": "unauthorized_access",
+      "root_cause": "管理するウェブサイトへの外部からの不正アクセス（侵入経路は調査中）",
+      "summary": "管理するウェブサイトが外部から不正アクセスを受け、サーバー上の顧客の個人情報の一部が外部に漏えいしたと発表した。10月5日夜にシステムの異常動作が発生し、10月7日に漏えいを確認した。対象はグループの会員情報約2万6,000件と、ザ・カハラ・ホテル＆リゾート横浜の予約者情報約3万6,000件の計約6万2,000件。クレジットカード情報、口座情報、メールアドレス、本人確認書類は対象システムに含まれていないとした。外部の専門機関と調査を進めている。",
+      "sources": [
+        {
+          "title": "リゾートトラスト 公式発表（PDF）",
+          "url": "https://www.resorttrust.co.jp/wp_api/wp-content/uploads/2026/10/20261009.pdf"
+        },
+        {
+          "title": "共同通信（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/ab40700b4c773538d3d1a1c88022ec7720c9558f"
+        },
+        {
+          "title": "時事通信（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/fb6bc3fbcf1a4b36ee825cea0ee9b00bc488997a"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 4,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-sansan-user-forum",
+      "organization": "Sansan株式会社",
+      "services": [
+        "Sansan User Forum"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-10-09",
+      "affected_count": 10012,
+      "count_note": "漏えいを確認した1,325名と、メールアドレスを除く情報が漏えいした可能性がある8,687名の合計",
+      "cause": "third_party",
+      "root_cause": "委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした",
+      "vendor": {
+        "name": "コミューン"
+      },
+      "data_types": [
+        "メールアドレス",
+        "アカウント名"
+      ],
+      "summary": "オンラインコミュニティ「Sansan User Forum」で利用するクラウドサービス「Commune」が第三者の不正アクセスを受け、会員情報が漏えいしたと公表した。10月6日にコミューンから報告を受けた。1,325名分のメールアドレス、アカウント名、自己紹介、プロフィール画像、グループ所属情報の漏えいを確認し、ほかに8,687名分のメールアドレスを除く情報が漏えいした可能性がある。パスワードは含まれず、Sansan・Bill One・Contract One・Eightへの影響はないとした。",
+      "sources": [
+        {
+          "title": "Sansan 公式発表",
+          "url": "https://jp.corp-sansan.com/news/2026/1009.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOMG00015_Z01C26A0000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-softbrain",
+      "organization": "ソフトブレーン株式会社",
+      "services": [
+        "eセールスマネージャーRemixCLOUD ユーザーコミュニティサイト"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-10-09",
+      "affected_count": 1164,
+      "count_note": "1,164名（漏えいの可能性）",
+      "cause": "third_party",
+      "root_cause": "委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした",
+      "vendor": {
+        "name": "コミューン"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "アカウント名",
+        "取引先情報"
+      ],
+      "summary": "「eセールスマネージャーRemixCLOUD ユーザーコミュニティサイト」で利用する外部クラウドサービスが第三者の不正アクセスを受けたと、10月6日に提供事業者のコミューン株式会社から報告を受けた。サイトの管理者アカウントが不正に利用され、会員1,164名の会社名、氏名、フリガナ、アカウント名、メールアドレス、プロフィール情報が閲覧・取得された可能性がある。製品本体は影響を受けていない。",
+      "sources": [
+        {
+          "title": "ソフトブレーン 公式発表",
+          "url": "https://www.softbrain.co.jp/news/topics/2026/20261009_1817/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-viewcard",
       "organization": "株式会社ビューカード",
       "group": "JR東日本グループ",
@@ -593,6 +1060,84 @@
       "severity": "medium",
       "disclosure_days": 2,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-yamaha-yne",
+      "organization": "ヤマハ株式会社",
+      "group": "ヤマハグループ",
+      "services": [
+        "ヤマハネットワークエンジニア会（YNE）"
+      ],
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2026-10-06",
+      "date_announced": "2026-10-09",
+      "affected_count": 1600,
+      "count_note": "約1,600名",
+      "cause": "third_party",
+      "root_cause": "委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした",
+      "vendor": {
+        "name": "コミューン"
+      },
+      "data_types": [
+        "メールアドレス",
+        "アカウント名"
+      ],
+      "summary": "ヤマハネットワークエンジニア会（YNE）の基盤システムを提供するコミューン株式会社のサーバーが不正アクセスを受け、YNE登録者の情報が流出したと公表した。不正アクセスは10月6日11時59分頃から20時36分頃にかけて行われ、約1,600名分のメールアドレス、表示名、アカウント名、自己紹介、アイコン、所属グループが漏えいした。同社システムへの不正アクセスや情報の不正利用は確認されていない。",
+      "sources": [
+        {
+          "title": "ヤマハ 公式発表（PDF）",
+          "url": "https://www.yamaha.com/ja/news_release/files/news/26100901/pdf/2610090101.pdf"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZRSP713699_Z01C26A0000000/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/09/2000002178/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-zenb-garden",
+      "organization": "株式会社ZENB JAPAN",
+      "group": "ミツカングループ",
+      "services": [
+        "ZENB GARDEN"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2026-10-09",
+      "affected_count": 949,
+      "count_note": "897人は漏えいを確認、最大で全会員949人の可能性",
+      "cause": "third_party",
+      "root_cause": "委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした",
+      "vendor": {
+        "name": "コミューン"
+      },
+      "data_types": [
+        "メールアドレス",
+        "性別",
+        "アカウント名"
+      ],
+      "summary": "オンラインコミュニティ「ZENB GARDEN」で利用する外部サービスの提供会社コミューンのシステムが不正アクセスを受け、会員897人のメールアドレス、性別、ニックネーム、アカウント名、自己紹介などが漏えいしたと公表した。最大で全会員949人に及ぶ可能性がある。氏名・住所・電話番号・決済情報は取得しておらず、公式通販サイトへの不正アクセスは確認されていない。",
+      "sources": [
+        {
+          "title": "ZENB 公式発表",
+          "url": "https://zenb.jp/blogs/news/20261009"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOFD098XC0Z01C26A0000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-10-aomori-biiki",
@@ -725,6 +1270,41 @@
       "severity": "medium",
       "disclosure_days": 1,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-hi-ho",
+      "organization": "株式会社ハイホー",
+      "services": [
+        "hi-ho 会員用マイページ"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-10-08",
+      "affected_count": 38509,
+      "count_note": "38,509件（契約単位）。閲覧された、または閲覧された可能性がある件数",
+      "cause": "phishing",
+      "root_cause": "他社への切り替えを勧める電話勧誘で本人からログイン情報を聞き出され、マイページになりすましログインされた",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "契約情報"
+      ],
+      "summary": "会員用マイページに第三者が顧客になりすましてログインし、38,509件（契約単位）の顧客情報が閲覧された、または閲覧された可能性があると発表した。他社への切り替えを勧める電話勧誘で本人からログイン情報を聞き出す手口とみられる。対象は氏名、住所、電話番号、メールアドレス、契約・請求情報で、クレジットカードと口座情報は含まれない。不正な通信元を遮断し、電話番号などでログインする方式を廃止した。",
+      "sources": [
+        {
+          "title": "ハイホー 公式発表",
+          "url": "https://hi-ho.co.jp/%E3%80%90%E9%87%8D%E8%A6%81%E3%81%AA%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%80%91%E3%81%8A%E5%AE%A2%E6%A7%98%E6%83%85%E5%A0%B1%E3%81%B8%E3%81%AE%E7%AC%AC%E4%B8%89%E8%80%85%E3%81%AB%E3%82%88%E3%82%8B%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%8C%E7%A2%BA%E8%AA%8D%E3%81%95%E3%82%8C%E3%81%9F%E4%BA%8B%E6%A1%88%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%94%E5%A0%B1%E5%91%8A"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/hi-ho-impersonation-login-38509-contracts/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-10-kodaira",
