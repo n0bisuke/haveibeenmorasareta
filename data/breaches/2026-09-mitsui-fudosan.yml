@@ -1,0 +1,25 @@
+organization: 三井不動産株式会社
+group: 三井不動産グループ
+industry: 不動産
+country: JP
+date_occurred: 2026-08-28
+date_announced: 2026-09-01
+affected_count: 55000
+count_note: 最大5万5,000件（役職員等が最大1万9,000件、社外関係者が最大3万6,000件）。第一報時点で確認できた範囲の最大値
+cause: unauthorized_access
+root_cause: 不正利用された資格情報（認証情報）でグループ利用の一部システムに不正アクセスされた
+data_types:
+  - 氏名
+  - メールアドレス
+  - 従業員情報
+  - 取引先情報
+summary: グループが利用する一部のシステムへの不正アクセスを8月28日に確認し、9月1日に公表した。不正利用された資格情報を使って情報の一部が第三者に閲覧された可能性があり、対象は役職員等の氏名・メールアドレス・部署・役職が最大1万9,000件、社外関係者のメールアドレスと表示名が最大3万6,000件の計最大5万5,000件とした。メール・チャットなどの業務情報やパスワードの漏えいは確認されていない。資格情報を無効化し、個人情報保護委員会に報告した。
+sources:
+  - title: 三井不動産 公式発表（PDF）
+    url: https://www.mitsuifudosan.co.jp/letter/260901/download/260901.pdf
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2609/02/2000001091/
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/09/07/56140.html
+  - title: Security NEXT
+    url: https://www.security-next.com/189789
