@@ -1,0 +1,31 @@
+organization: 長野都市ガス株式会社
+industry: エネルギー・インフラ
+country: JP
+date_occurred: 2026-08-12
+date_announced: 2026-09-28
+affected_count: 3600
+count_note: 約3,600件（2026年4月1日〜5月16日に実施した保安調査の結果）
+cause: third_party
+attack_methods:
+  - network_device
+  - stolen_credentials
+root_cause: 委託先の両毛システムズがVPN機器のアカウントを悪用されて社内ネットワークに侵入され、ランサムウェア攻撃を受けた
+vendor:
+  name: 株式会社両毛システムズ
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - 契約情報
+summary: 顧客情報の管理を委託している両毛システムズから、同社のネットワークへの不正アクセスによりサーバーに保管されていた顧客情報が流出した可能性があるとの報告を9月24日に受け、9月28日に公表した。10月5日の第二報で、対象は2026年4月1日〜5月16日に実施した保安調査の結果約3,600件で、項目は氏名・住所・電話番号・契約番号だと公表した。金融機関の口座番号やクレジットカード情報は含まれず、現時点で二次被害は確認されていない。両毛システムズは、8月12日にVPN機器のアカウントを悪用されて社内ネットワークに侵入され、外部専門機関の調査でランサムウェア攻撃だったと確認したと公表している。
+sources:
+  - title: 長野都市ガス株式会社 公式発表（第一報）
+    url: https://www.nagano-toshi-gas.co.jp/news/2026/09/post-96.html
+  - title: 長野都市ガス株式会社 公式発表（第二報）
+    url: https://www.nagano-toshi-gas.co.jp/news/2026/10/post-97.html
+  - title: 株式会社両毛システムズ 公式発表（第3報）
+    url: https://www.ryomo.co.jp/news/202609_02.html
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261007de55904
+  - title: NBS長野放送（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/09553358f33443405c1f3a43140aa18742d566f4

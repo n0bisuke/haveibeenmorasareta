@@ -1,0 +1,31 @@
+organization: 株式会社スマレジ
+services:
+  - スマレジEC・リピート
+  - スマレジEC・B2B
+industry:
+  - IT・通信
+  - 小売・EC
+country: JP
+date_announced: 2026-09-25
+affected_count: null
+count_note: 件数は未公表。影響を受けた可能性があるのは「スマレジEC・リピート」「スマレジEC・B2B」を利用する4社の環境
+cause: vulnerability
+root_cause: お客さま管理画面のログイン機能に存在した脆弱性を悪用され、一部の利用企業の環境に不正アクセスされた
+vuln_target: web_app
+data_types:
+  - 住所
+  - 購入履歴
+  - パスワード（ハッシュ化・暗号化済み）
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 性別
+  - アカウント名
+summary: 同社が提供する「スマレジEC・リピート」「スマレジEC・B2B」の一部の利用企業の環境が第三者に不正アクセスされた。同社システムで不審なアクセスを検知して調査し、お客さま管理画面のログイン機能に存在した脆弱性が悪用されたことを確認した。影響を受けた可能性があるのは両サービスを利用する4社の環境で、顧客情報（会社名・氏名・電話番号・住所・メールアドレス・性別・年齢・初回購入日・最新購入日・購入回数・累計購入金額）、受注情報（会社名・氏名・電話番号・住所・メールアドレス・送付先住所）、管理者情報（ログインID・暗号化済みパスワード・氏名）、WordPress情報（ログインID・暗号化済みパスワード・プラグインの秘密鍵）が閲覧または取得された可能性がある。脆弱性は2026年9月18日に修正を完了した。不正に配置されたファイル等の無効化、対象の4社への個別連絡、個人情報保護委員会への報告も行った。クレジットカード情報はシステム内に保持しない仕様のため対象に含まれない。
+sources:
+  - title: 株式会社スマレジ 公式発表（スマレジECにおける不正アクセスについて）
+    url: https://ec.smaregi.jp/repeat/news/2026925-2/
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/09/29/56331.html
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/smaregi-ec-unauthorized-access-login-vulnerability-2026/
