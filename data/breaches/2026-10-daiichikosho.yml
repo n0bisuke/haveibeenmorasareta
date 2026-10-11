@@ -3,8 +3,13 @@ services:
   - カラオケ ビッグエコー
   - メガビッグ
   - カラオケCLUB DAM
+  - バナナクラブ
+  - B-GARAGE
+  - DKダイニング
 industry: エンタメ・スポーツ
 country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
 date_occurred: 2026-10-01
 date_announced: 2026-10-08
 affected_count: 8724000
@@ -22,6 +27,10 @@ data_types:
   - 従業員情報
 summary: 個人情報の取扱いを委託していた日本コロムビアグループの従業員PC1台がマルウェアに感染し、顧客と従業員の個人情報計約872万4,000件が漏えいしたおそれがあると公表した。対象は氏名・性別・生年月日・メールアドレス・電話番号で、パスワードは含まれない。感染は10月1日から2日に判明し、委託先は端末を隔離して10月5日に同社へ報告した。公表時点で外部への流出や不正利用は確認されていない。
 sources:
+  - title: 株式会社第一興商 公式発表
+    url: https://www.dkkaraoke.co.jp/news/newsletter/261008_2.html
+  - title: 株式会社第一興商 公式発表（続報）
+    url: https://www.dkkaraoke.co.jp/news/newsletter/261009_1.html
   - title: 日本経済新聞
     url: https://www.nikkei.com/article/DGXZQOUC088GB0Y6A001C2000000/
   - title: 朝日新聞（Yahoo!ニュース）

@@ -5,6 +5,7 @@ industry: 行政
 country: JP
 org_type: local_gov
 prefecture: 青森県
+date_occurred: 2026-10-06
 date_announced: 2026-10-08
 affected_count: 2950
 count_note: 最大2,950人（推計。人数は調査中）。会員数は16,697人
@@ -15,9 +16,15 @@ vendor:
 data_types:
   - メールアドレス
   - アカウント名
+  - 性別
   - 会員ID
+  - ポイント情報
 summary: 県の公式ファンコミュニティ「青森びいき」が10月6日に不正アクセスを受け、最大2,950人分の会員情報が流出した可能性があると、運営会社のコミューンとともに発表した。第三者がシステムの不備を突いて非公開領域に入り、管理者などになりすまして、メールアドレス・ニックネーム・年代などを閲覧した記録が確認された。住所とクレジットカード情報は登録されておらず、パスワードの漏えいは確認されていない。サービスは停止しており、悪用は確認されていない。
 sources:
+  - title: 青森県 公式発表
+    url: https://www.pref.aomori.lg.jp/release/2026/81561.html
+  - title: 青森県 公式発表（差替）
+    url: https://www.pref.aomori.lg.jp/release/2026/81562.html
   - title: 東奥日報
     url: https://www.toonippo.co.jp/articles/-/2379511
   - title: 陸奥新報

@@ -10,13 +10,13 @@ affected_count: 35
 count_note: 最大35人。預金・融資に関する顧客情報が含まれるかは確認中
 cause: unauthorized_access
 root_cause: 職員が外部からの不審なメールを開封し、メールアカウントが第三者に不正アクセスされた
-attack_methods:
-  - phishing
 data_types:
   - メールアドレス
   - 取引先情報
 summary: 職員のメールアカウントが不正アクセスを受け、経営コンサルティング業務の連携先の従業員など35人分のメールアドレスと、職員とのメールのやり取りが流出した可能性があると発表した。10月7日に職員が外部からの不審メールを開封したことが原因で、同日夜にアカウントを停止した。外部の専門事業者による調査と警察への報告を行い、預金・融資に関する顧客情報が含まれるかは確認中とした。不正利用の被害は確認されていない。
 sources:
+  - title: 株式会社八十二長野銀行 公式発表
+    url: https://bank.82group.jp/file.jsp?id=release/2026/pdf/news20261008.pdf
   - title: 産経新聞（Yahoo!ニュース）
     url: https://news.yahoo.co.jp/articles/5219f6f5d718105ca9682bd20ecc2d90e117fbca
   - title: テレビ信州（Yahoo!ニュース）
