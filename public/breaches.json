@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-10T09:21:35.000Z",
-  "count": 401,
+  "generated_at": "2026-10-11T00:21:48.000Z",
+  "count": 405,
   "severity_levels": [
     {
       "id": "critical",
@@ -776,6 +776,53 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-10-kochi-kochinochi",
+      "organization": "高知県",
+      "services": [
+        "高知県観光ファンサイト「高知の知」"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "高知県",
+      "date_occurred": "2026-10-06",
+      "date_announced": "2026-10-09",
+      "affected_count": 358,
+      "count_note": "全会員358人分",
+      "cause": "third_party",
+      "root_cause": "委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした",
+      "vendor": {
+        "name": "コミューン"
+      },
+      "data_types": [
+        "メールアドレス",
+        "アカウント名",
+        "性別"
+      ],
+      "summary": "観光公式ファンサイト「高知の知」の運営を委託しているコミューン株式会社のサービス「Commune」が不正アクセスを受け、全会員358人分の個人情報が漏えいしたと発表した。10月6日に委託先から報告があり、県はサイトの公開を停止した。7日に、管理者アカウントへのなりすましで会員情報が閲覧・取得されたことが分かった。漏えいしたのはメールアドレス、アカウント名、年齢、性別、自己紹介など11項目で、氏名や住所の流出は確認されていない。県は会員にメールで謝罪した。",
+      "sources": [
+        {
+          "title": "高知県 どっぷり高知旅キャンペーン「高知の知」への不正アクセスによる個人情報漏洩に関するお詫びとご報告",
+          "url": "https://doppuri.kochi-tabi.jp/news/information.html?id=77"
+        },
+        {
+          "title": "RKC高知放送（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/f5b0e94d015659275e99c4e3883634a8d83cee2e"
+        },
+        {
+          "title": "読売新聞（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/c01b60e006fd4acd7e91fa10dda0242b74d654a3"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261010de57670"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-koikeya",
       "organization": "株式会社湖池屋",
       "services": [
@@ -805,6 +852,46 @@
       "severity": null,
       "disclosure_days": null,
       "reliability": "high"
+    },
+    {
+      "id": "2026-10-koriyama-fire",
+      "organization": "郡山地方広域消防組合",
+      "services": [
+        "防火管理オンライン講習"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "福島県",
+      "date_announced": "2026-10-09",
+      "affected_count": 83,
+      "count_note": "7月9日〜10月7日の講習申込者のメールアドレス83件（漏えいの疑い）",
+      "cause": "third_party",
+      "root_cause": "防火管理オンライン講習の委託先が提供するクラウドシステムが不正アクセスを受けた（委託先の公式発表は未確認）",
+      "vendor": {
+        "name": "株式会社プロシーズ"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "防火管理オンライン講習を委託している株式会社プロシーズのクラウドシステムが不正アクセスを受け、講習申込者のメールアドレス83件が漏えいした疑いがあると発表した。10月7日に委託先から「システム障害」の連絡があり、調べたところ不正アクセスによるものと分かった。対象は7月9日から10月7日までの申込者。二次被害は確認されておらず、組合は申込者に注意喚起のメールを送り、委託先に原因究明と再発防止策の徹底を求めた。",
+      "sources": [
+        {
+          "title": "福島民友新聞",
+          "url": "https://www.minyu-net.com/news/detail/2026100919101155822"
+        },
+        {
+          "title": "福島テレビ（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/8db4911121d3d83a7df6450cb79efeca9f58d8d8"
+        },
+        {
+          "title": "福島中央テレビ（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/70d9a962b1168dd480b1d0c47ca4ef928895dd74"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-lycorp-ds-lab",
@@ -1653,6 +1740,28 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-10-kyoto-univ-usb",
+      "organization": "京都大学",
+      "industry": "人材・教育",
+      "country": "JP",
+      "org_type": "university",
+      "prefecture": "京都府",
+      "date_announced": "2026-10-07",
+      "affected_count": 295,
+      "count_note": "学生295人分",
+      "cause": "lost_device",
+      "summary": "非常勤講師が、学生295人分の個人情報が入ったUSBメモリを紛失したと発表した。",
+      "sources": [
+        {
+          "title": "京都新聞（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/e9e8e72f64427e6a795c90b00915c4075f5e1ca6"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-nissui-logistics",
       "organization": "日水物流株式会社",
       "group": "ニッスイグループ",
@@ -2013,6 +2122,30 @@
       ],
       "severity": "high",
       "disclosure_days": 250,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-weathercaster-net",
+      "organization": "特定非営利活動法人気象キャスターネットワーク",
+      "industry": "団体・その他",
+      "country": "JP",
+      "date_announced": "2026-10-06",
+      "count_note": "件数は未確認",
+      "cause": "unauthorized_access",
+      "root_cause": "Webサイトへの第三者による不正アクセス",
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "Webサイトが第三者による不正アクセスを受け、2018年12月以降に取得した会員・申込者の氏名やメールアドレスなどが漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "気象キャスターネットワーク 公式発表（PDF）",
+          "url": "https://weathercaster.jp/notices/20261006_notice.pdf"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
       "reliability": "high"
     },
     {
