@@ -1,0 +1,11 @@
+organization: ID確認のサービス
+country: JP
+date_announced: 2026-10-09
+affected_count: 150000000
+cause: unauthorized_access
+data_types:
+  - 運転免許情報
+summary: 米国南部ルイジアナ州に本社を置くID確認サービスが不正アクセスを受け、1億5000万件以上の個人の運転免許証情報が漏えいした可能性があることが明らかになった。
+sources:
+  - title: アメリカ 運転免許証などの情報 1億5000万件以上が漏えいか | NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261009de57294
