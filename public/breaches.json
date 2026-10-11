@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-11T01:50:31.000Z",
-  "count": 408,
+  "generated_at": "2026-10-11T09:45:32.000Z",
+  "count": 409,
   "severity_levels": [
     {
       "id": "critical",
@@ -6286,6 +6286,67 @@
       "severity": null,
       "disclosure_days": null,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-04-campfire",
+      "organization": "株式会社CAMPFIRE",
+      "services": [
+        "CAMPFIRE"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-03-18",
+      "date_announced": "2026-04-03",
+      "affected_count": 225846,
+      "count_note": "最大22万5,846件（重複を除く。漏えいの可能性）。うち口座情報を含むもの8万2,465件。このほか開発従事者413名分などがGitHub上で閲覧可能な状態だった",
+      "cause": "unauthorized_access",
+      "root_cause": "従業員が発行したGitHubの認証情報が個人開発用サーバに誤ってアップロードされ、第三者に不正利用された",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "口座番号",
+        "従業員情報"
+      ],
+      "summary": "システム管理用のGitHubアカウントが第三者に不正アクセスされ、一部のソースコードが閲覧された可能性があると4月3日に公表した。その後の調査で、攻撃者がGitHub上の情報からクラウド環境の認証情報を取得し、社内業務用クラウドの一部の管理領域と顧客情報管理システムへ不正アクセスしていたことが分かった。クラウドファンディングサイト「CAMPFIRE」のプロジェクトオーナーや支援者など最大22万5,846件の氏名・住所・電話番号・メールアドレスと、一部の口座情報が漏えいした可能性がある。クレジットカード情報は含まれない。6月2日の調査結果では、データの外部転送の痕跡は確認されなかったが、ログの欠落により閲覧の可能性は否定できないとした。",
+      "sources": [
+        {
+          "title": "CAMPFIRE 公式発表（第一報）",
+          "url": "https://campfire.co.jp/press/2026/04/03/campfire/"
+        },
+        {
+          "title": "CAMPFIRE 公式発表（第二報）",
+          "url": "https://campfire.co.jp/press/2026/04/14/campfire/"
+        },
+        {
+          "title": "CAMPFIRE 公式発表（第三報）",
+          "url": "https://campfire.co.jp/press/2026/04/22/campfire/"
+        },
+        {
+          "title": "CAMPFIRE 公式発表（お詫びとご報告・件数）",
+          "url": "https://campfire.co.jp/press/2026/04/24/campfire/"
+        },
+        {
+          "title": "CAMPFIRE 公式発表（調査結果）",
+          "url": "https://campfire.co.jp/press/2026/06/02/campfire/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/articles/2604/24/news126.html"
+        },
+        {
+          "title": "ITmedia NEWS（原因）",
+          "url": "https://www.itmedia.co.jp/news/articles/2606/03/news114.html"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/05/12/55238.html"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 16,
+      "reliability": "high"
     },
     {
       "id": "2026-04-yoshimoto",
