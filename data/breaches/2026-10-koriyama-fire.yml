@@ -1,0 +1,24 @@
+organization: 郡山地方広域消防組合
+services:
+  - 防火管理オンライン講習
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 福島県
+date_announced: 2026-10-09
+affected_count: 83
+count_note: 7月9日〜10月7日の講習申込者のメールアドレス83件（漏えいの疑い）
+cause: third_party
+root_cause: 防火管理オンライン講習の委託先が提供するクラウドシステムが不正アクセスを受けた（委託先の公式発表は未確認）
+vendor:
+  name: 株式会社プロシーズ
+data_types:
+  - メールアドレス
+summary: 防火管理オンライン講習を委託している株式会社プロシーズのクラウドシステムが不正アクセスを受け、講習申込者のメールアドレス83件が漏えいした疑いがあると発表した。10月7日に委託先から「システム障害」の連絡があり、調べたところ不正アクセスによるものと分かった。対象は7月9日から10月7日までの申込者。二次被害は確認されておらず、組合は申込者に注意喚起のメールを送り、委託先に原因究明と再発防止策の徹底を求めた。
+sources:
+  - title: 福島民友新聞
+    url: https://www.minyu-net.com/news/detail/2026100919101155822
+  - title: 福島テレビ（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/8db4911121d3d83a7df6450cb79efeca9f58d8d8
+  - title: 福島中央テレビ（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/70d9a962b1168dd480b1d0c47ca4ef928895dd74
