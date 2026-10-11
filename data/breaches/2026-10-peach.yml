@@ -23,6 +23,8 @@ data_types:
   - 利用履歴
 summary: 予約関連メールの配信に使うシステムの基盤であるIDCフロンティアの「IDCFクラウド」が10月7日未明にランサムウェア攻撃を受け、新規予約時の旅程表メールなどに送信遅延・不達が発生したと発表した。対象システムにはメールアドレス、アルファベット表記の氏名、電話番号、予約番号、旅程内容の約189万件が保存されていたが、現時点で外部流出は確認されていないとしている。クレジットカード情報やパスポート情報は保存されていなかった。代替サーバーで10月8日から送信を再開した。
 sources:
+  - title: Peach Aviation 公式発表
+    url: https://www.flypeach.com/news/20261009
   - title: Aviation Wire
     url: https://www.aviationwire.jp/archives/352202
   - title: ABCニュース（Yahoo!ニュース）
