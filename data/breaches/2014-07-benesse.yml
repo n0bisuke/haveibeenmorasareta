@@ -1,0 +1,41 @@
+organization: 株式会社ベネッセコーポレーション
+group: ベネッセグループ
+services:
+  - こどもちゃれんじ
+  - 進研ゼミ小学講座
+  - 進研ゼミ中学講座
+  - 進研ゼミ高校講座
+industry: 人材・教育
+country: JP
+date_announced: 2014-07-09
+affected_count: 35040000
+count_note: 約3,504万件（名簿業者3社に売却された件数。重複と名寄せで整理した後の件数）。会社は実際に被害を受けた顧客を約2,895万件と推計。調査委員会の人単位の集計では約4,858万人。当初発表は約760万件（最大約2,070万件の可能性）
+cause: third_party
+root_cause: システム開発・運用を担うグループ会社シンフォームの業務委託先の元社員が、顧客情報を業務用PCから私物のスマートフォンに書き出して持ち出した
+vendor:
+  name: 株式会社シンフォーム
+  group: ベネッセグループ
+data_types:
+  - 氏名
+  - 性別
+  - 生年月日
+  - 郵便番号
+  - 住所
+  - 電話番号
+  - メールアドレス
+summary: 「進研ゼミ」「こどもちゃれんじ」などの顧客情報が、システム開発・運用を担うグループ会社シンフォームの業務委託先の元社員により不正に持ち出され、名簿業者3社に売却された。元社員はデータベースから抽出した顧客情報を業務用PCに保存し、USBケーブルで私物のスマートフォンへ転送していた。PCの書き出し制御は一部の新機種のスマートフォンに機能しない状態で、通信量のアラートもこのデータベースとの通信を対象にしていなかった。2014年6月27日に顧客からの問い合わせで漏えいの可能性を認識し、7月9日に公表した。売却された情報は約3,504万件で、会社は実際に被害を受けた顧客を約2,895万件と推計した。クレジットカード情報が名簿業者へ売却された事実は確認されていない。元社員は7月17日に不正競争防止法違反の容疑で逮捕され、9月26日に経済産業省が同社に個人情報保護法に基づく勧告を行った。
+sources:
+  - title: 株式会社ベネッセコーポレーション 公式発表（事故の概要）
+    url: https://www.benesse.co.jp/customer/bcinfo/01.html
+  - title: 株式会社ベネッセホールディングス 公式発表（個人情報漏えい事故調査委員会による調査結果のお知らせ）
+    url: https://www.benesse.co.jp/customer/dl/incident_20140925_release.pdf
+  - title: 株式会社ベネッセホールディングス 公式発表（経済産業省への報告書提出について）
+    url: https://www.benesse.co.jp/customer/dl/incident_20140717_release.pdf
+  - title: ITmedia エンタープライズ（初報）
+    url: https://www.itmedia.co.jp/enterprise/articles/1407/09/news150.html
+  - title: IT Leaders（初報）
+    url: https://it.impress.co.jp/articles/-/11539
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/articles/1409/10/news143.html
+  - title: ScanNetSecurity（経済産業省の勧告）
+    url: https://scan.netsecurity.ne.jp/article/2014/09/30/34906.html
