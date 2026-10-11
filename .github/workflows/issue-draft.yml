@@ -1,0 +1,103 @@
+name: Issue draft
+
+# 新しく立った Issue（と、事案データに紐づく Issue へのコメント）に書かれた記事・公式発表の URL から、
+# AI が事案データの下書き PR（新しい事案）か、既存データの更新 PR（続報）を作り、結果を Issue にコメントする。
+# マージされると Deploy でサイト・ランキング・ビジュアライズに反映される。自動マージはしない。
+# LLM の API キー（Secrets の GROQ_API_KEY、または LLM_API_KEY と Variables の LLM_MODEL）が未設定なら何もしない
+on:
+  issues:
+    types: [opened]
+  issue_comment:
+    types: [created]
+
+permissions: {}
+
+concurrency:
+  group: issue-draft-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  # 1. Issue から URL を取り出す（プログラムのみ。Issue の本文はスクリプトがイベントのファイルから読む）
+  intake:
+    # ボットの投稿（News watch・GA report などの自動 Issue や、このワークフローのコメント）と PR へのコメントは対象外
+    if: github.event.sender.type != 'Bot' && !github.event.issue.pull_request
+    runs-on: ubuntu-26.04 # ubuntu-latest が Ubuntu 26 に移行するまで固定（2026-10-19〜）。問題がなければ ubuntu-latest に戻す
+    permissions:
+      contents: read
+    outputs:
+      count: ${{ steps.intake.outputs.count }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: 26
+          cache: npm
+      - run: npm ci
+      - id: intake
+        run: |
+          node scripts/issue-intake.mjs --out issue-in
+          echo "count=$(node -p "require('./issue-in/meta.json').count")" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: issue-in
+          path: issue-in
+          retention-days: 7
+
+  # 2. AI が下書き・更新案を作る。LLM の API キーを持つのはこのジョブだけで、リポジトリへの書き込み権限は持たせない
+  draft:
+    needs: intake
+    if: needs.intake.outputs.count != '0'
+    runs-on: ubuntu-26.04 # ubuntu-latest が Ubuntu 26 に移行するまで固定（2026-10-19〜）。問題がなければ ubuntu-latest に戻す
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: 26
+          cache: npm
+      - run: npm ci
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
+        with:
+          name: issue-in
+          path: issue-in
+      - run: node scripts/ai-draft.mjs --in issue-in/candidates.json --out ai-out --state issue-state/seen.json
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          LLM_EDITOR_MODEL: ${{ vars.LLM_EDITOR_MODEL }}
+          AI_MAX_ITEMS: '3'
+          ARTICLE_MAX_CHARS: ${{ vars.ARTICLE_MAX_CHARS || '3500' }}
+      - run: cp issue-in/meta.json ai-out/meta.json
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: ai-out
+          path: ai-out
+          retention-days: 14
+
+  # 3. 下書き・更新案を検証して PR にし、Issue に結果をコメントする（LLM は使わず、API キーも渡さない）
+  publish:
+    needs: draft
+    runs-on: ubuntu-26.04 # ubuntu-latest が Ubuntu 26 に移行するまで固定（2026-10-19〜）。問題がなければ ubuntu-latest に戻す
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write   # PR へのラベル付けと、Issue へのコメント
+      actions: write  # Validate の起動（Actions のトークンで作った PR では自動で動かないため）
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: 26
+          cache: npm
+      - run: npm ci
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
+        with:
+          name: ai-out
+          path: ai-out
+      - run: node scripts/ai-publish.mjs --in ai-out/drafts.json --issue "$(node -p "require('./ai-out/meta.json').issue")"
+        env:
+          GITHUB_TOKEN: ${{ github.token }}

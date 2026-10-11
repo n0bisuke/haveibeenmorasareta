@@ -119,3 +119,45 @@ ${article.text}
 }
 
 export const CAUSE_IDS = Object.keys(CAUSES);
+
+// 続報の記事で既存の事案データを更新するときのプロンプト（項目ごとに記事本文の根拠を求める）
+export const UPDATE_FIELDS = ['affected_count', 'count_note', 'date_occurred', 'cause', 'root_cause', 'attack_methods', 'vendor', 'data_types'];
+export function updaterSystem(c) {
+  return `あなたは日本の情報漏洩事案データベース「Have I Been Morasareta 日本版」の編集者です。
+既存の事案データと、その続報とみられる記事を照合し、記事で新しく分かったことだけを反映した更新案を作ります。
+${COMMON_RULES}
+- 記事が既存データと同じ組織の同じ事案でなければ、same_incident を false にしてください。
+- changes には、記事で値が新しく分かった・変わった項目だけを入れてください。既存データと同じ値や、記事に書かれていない項目は入れないでください。
+- 各項目の evidence には、その値の根拠になった記事本文の一文をそのまま（一字一句変えずに）引用してください。
+- data_types は、新しく漏えいが分かった情報の種類だけを書いてください（既存の種類は消えません）。
+- summary_addition には、続報で分かった事実を「〜した。」の常体で1〜2文（200文字以内、改行・URLなし）書いてください。新しい事実が無ければ空文字にしてください。
+
+# 更新してよい項目
+${UPDATE_FIELDS.join(' / ')}
+
+# 出力形式
+{
+  "same_incident": true または false,
+  "reason": "判断の理由（1文）",
+  "changes": { "項目名": { "value": 新しい値, "evidence": "根拠の引用" } },
+  "summary_addition": "続報で分かった事実（1〜2文）",
+  "summary_evidence": "summary_addition の根拠の引用"
+}
+
+# 一覧
+cause: ${Object.entries(CAUSES).map(([id, label]) => `${id}（${label}）`).join(' / ')}
+attack_methods: ${c.attackMethods.map((t) => `${t.id}（${t.label}）`).join(' / ')}
+data_types: ${c.dataTypes.join(' / ')}`;
+}
+
+export function updaterUser({ article, entry }) {
+  return `# 既存の事案データ
+${JSON.stringify(entry, null, 2)}
+
+# 続報とみられる記事
+タイトル: ${article.title}
+公開日時: ${article.published || '不明'}
+<article>
+${article.text}
+</article>`;
+}

@@ -30,9 +30,9 @@ export function slugify(slug, fallback) {
   return /^[a-z0-9]+(-[a-z0-9]+)*$/.test(s) ? s : fallback;
 }
 
-// writer / editor の出力した entry を、一覧・形式・根拠の引用で絞り込む
-// 戻り値: { entry, dropped: [{ field, reason }], reject: 理由 or null }
-export function sanitizeEntry(raw, { evidence = {}, text, catalogs, published, causes }) {
+// 項目を一覧・形式・根拠の引用で絞り込む（必須項目の補完はしない。続報で一部の項目だけを直すときにも使う）
+// 戻り値: { entry, dropped: [{ field, reason }] }
+export function sanitizeFields(raw, { evidence = {}, text, catalogs, causes }) {
   const dropped = [];
   const drop = (field, reason) => dropped.push({ field, reason });
   const entry = {};
@@ -103,7 +103,15 @@ export function sanitizeEntry(raw, { evidence = {}, text, catalogs, published, c
     drop('summary', '形式が不正（改行・URL・HTML・記号の装飾、文字数）'); delete entry.summary;
   }
 
-  // 必須項目の補完と判定
+  return { entry, dropped };
+}
+
+// writer / editor の出力した entry を、一覧・形式・根拠の引用で絞り込み、必須項目を補完する
+// 戻り値: { entry, dropped: [{ field, reason }], reject: 理由 or null }
+export function sanitizeEntry(raw, opts) {
+  const { entry, dropped } = sanitizeFields(raw, opts);
+  const drop = (field, reason) => dropped.push({ field, reason });
+  const { published } = opts;
   if (!entry.cause) entry.cause = 'unknown';
   if (!('affected_count' in entry)) entry.affected_count = null;
   if (!entry.date_announced && isDate(published?.slice(0, 10))) {

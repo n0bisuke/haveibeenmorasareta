@@ -2,13 +2,15 @@
 // このスクリプトは読み取り権限だけのジョブで動かす。結果はファイルに書き出すだけで、リポジトリには書き込まない
 //   node scripts/ai-draft.mjs --in candidates.json --out ai-out [--state ai-state/seen.json]
 //   環境変数は scripts/ai/llm.mjs を参照。AI_MAX_ITEMS で1回に処理する候補の数を変更（既定 5）
+//   候補に issue（Issue から寄せられた URL）があるものは、見出しによる絞り込みをせずに処理し、
+//   既存の事案の続報と判断したときは、既存データの更新案（status: update）を作る
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { loadBreaches, loadIndustries, loadAttackMethods, loadVulnTargets, loadOrgTypes, loadPrefectures, loadDataTypes } from './lib.mjs';
 import { llmConfig, chatJson } from './ai/llm.mjs';
 import { loadArticle } from './ai/article.mjs';
-import { writerSystem, writerUser, editorSystem, editorUser, CAUSE_IDS } from './ai/prompts.mjs';
-import { sanitizeEntry, findInjection, slugify } from './ai/guard.mjs';
+import { writerSystem, writerUser, editorSystem, editorUser, updaterSystem, updaterUser, UPDATE_FIELDS, CAUSE_IDS } from './ai/prompts.mjs';
+import { sanitizeEntry, sanitizeFields, findInjection, slugify, quoteFound } from './ai/guard.mjs';
 
 const arg = (name, def) => (process.argv.includes(name) ? process.argv[process.argv.indexOf(name) + 1] : def);
 const IN = arg('--in', 'candidates.json');
@@ -28,7 +30,7 @@ const NOT_INCIDENT = /首相|大臣|金融相|政府|与党|自民党|戦略本�
 const score = (c) => (/\d[\d,.]*\s*万?\s*(件|人|名|社)/.test(c.title) ? 3 : 0)
   + (/不正アクセス|漏えい|漏洩|流出|ランサムウェア|お詫び|誤送信|紛失/.test(c.title) ? 2 : 0);
 const candidates = JSON.parse(await readFile(IN, 'utf8'))
-  .filter((c) => !NOT_INCIDENT.test(c.title))
+  .filter((c) => c.issue || !NOT_INCIDENT.test(c.title))
   .map((c, i) => ({ ...c, _score: score(c), _i: i }))
   .sort((a, b) => b._score - a._score || a._i - b._i);
 const seen = new Set(await readFile(STATE, 'utf8').then(JSON.parse).catch(() => []));
@@ -47,6 +49,44 @@ const recentSince = new Date(Date.now() - 120 * 86400000).toISOString().slice(0,
 const existing = breaches
   .filter((b) => b.data.date_announced >= recentSince)
   .map((b) => ({ id: b.id, organization: b.data.organization, date_announced: b.data.date_announced }));
+// Issue に紐づく既存の事案は、公表日が古くても重複・続報の確認に使う
+const related = new Set(candidates.flatMap((c) => c.related ?? []));
+for (const b of breaches) {
+  if (related.has(b.id) && !existing.some((e) => e.id === b.id)) existing.push({ id: b.id, organization: b.data.organization, date_announced: b.data.date_announced });
+}
+const byId = new Map(breaches.map((b) => [b.id, b.data]));
+
+// 続報の記事から、既存の事案データの更新案を作る（記事本文に根拠のある項目だけ）
+async function makeUpdate(article, id, catalogs) {
+  const current = byId.get(id);
+  const res = await chatJson({ model: llmConfig.editorModel, system: updaterSystem(catalogs), user: updaterUser({ article, entry: current }) });
+  if (res.same_incident !== true) return { reject: `同じ事案ではないと判断（${String(res.reason ?? '').slice(0, 100)}）` };
+  const raw = {};
+  const evidence = {};
+  for (const [field, c] of Object.entries(res.changes && typeof res.changes === 'object' ? res.changes : {})) {
+    if (!UPDATE_FIELDS.includes(field) || c === null || typeof c !== 'object') continue;
+    raw[field] = c.value;
+    evidence[field] = c.evidence;
+  }
+  const { entry, dropped } = sanitizeFields(raw, { evidence, text: article.text, catalogs, causes: CAUSE_IDS });
+  // 既存と同じ値は変更しない。情報の種類は追加だけ
+  if (entry.data_types) {
+    entry.data_types = entry.data_types.filter((t) => !(current.data_types ?? []).includes(t));
+    if (!entry.data_types.length) delete entry.data_types;
+  }
+  for (const k of Object.keys(entry)) if (JSON.stringify(entry[k]) === JSON.stringify(current[k])) delete entry[k];
+  if (entry.date_occurred && entry.date_occurred > current.date_announced) { dropped.push({ field: 'date_occurred', reason: '公表日より後' }); delete entry.date_occurred; }
+  let addition = String(res.summary_addition ?? '').trim();
+  if (addition) {
+    const ok = addition.length <= 200 && !/[\n\r<>`]|https?:|www\.|\]\(/.test(addition) && quoteFound(res.summary_evidence, article.text)
+      && `${current.summary}${addition}`.length <= 600;
+    if (ok) evidence.summary = res.summary_evidence;
+    else { dropped.push({ field: 'summary', reason: '追記の形式・根拠・文字数の検査に合わない' }); addition = ''; }
+  }
+  if (!Object.keys(entry).length && !addition) return { reject: '記事で新しく分かった項目がない（出典の追加だけになる）', dropped, sourceOnly: true };
+  const used = Object.fromEntries(Object.entries(evidence).filter(([k, v]) => (k in entry || (k === 'summary' && addition)) && typeof v === 'string').map(([k, v]) => [k, v.slice(0, 300)]));
+  return { update: { id, changes: entry, summary_addition: addition || undefined }, evidence: used, dropped };
+}
 
 const results = [];
 let processed = 0;
@@ -80,6 +120,17 @@ for (const candidate of candidates) {
     if (draft.duplicate_of && existing.some((e) => e.id === draft.duplicate_of)) {
       result.status = 'skipped';
       result.notes.push(`ライター: 既存の ${draft.duplicate_of} と同じ事案（続報）と判断`);
+      // Issue から寄せられた記事は、続報として既存データの更新案を作る
+      if (candidate.issue && byId.has(draft.duplicate_of)) {
+        const u = await makeUpdate(article, draft.duplicate_of, catalogs);
+        result.dropped = u.dropped ?? [];
+        if (u.reject) {
+          result.notes.push(`更新案: ${u.reject}`);
+          if (u.sourceOnly) Object.assign(result, { status: 'update', update: { id: draft.duplicate_of, changes: {} }, evidence: {} });
+        } else {
+          Object.assign(result, { status: 'update', update: u.update, evidence: u.evidence });
+        }
+      }
       continue;
     }
     const ctx = { text: article.text, catalogs, published: article.published, causes: CAUSE_IDS };
