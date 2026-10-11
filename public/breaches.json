@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-11T00:30:33.000Z",
-  "count": 406,
+  "generated_at": "2026-10-11T01:50:31.000Z",
+  "count": 408,
   "severity_levels": [
     {
       "id": "critical",
@@ -4025,6 +4025,49 @@
       "reliability": "high"
     },
     {
+      "id": "2026-09-rohto",
+      "organization": "ロート製薬株式会社",
+      "services": [
+        "通信販売"
+      ],
+      "industry": [
+        "美容・健康",
+        "小売・EC"
+      ],
+      "country": "JP",
+      "date_occurred": "2026-09-10",
+      "date_announced": "2026-09-11",
+      "affected_count": null,
+      "count_note": "件数・対象の顧客は調査中（公式発表）",
+      "cause": "unauthorized_access",
+      "root_cause": "通信販売で利用しているシステムへの第三者による不正アクセス（侵入経路は未公表）",
+      "data_types": [
+        "問い合わせ内容"
+      ],
+      "summary": "通信販売で利用しているシステムに第三者による不正アクセスの可能性がある事象を9月10日に確認し、11日に公表した。15日の続報で、通販の顧客対応システムに保存されていた顧客との通話音声データと付随情報が不正に取得された可能性があると明らかにし、顧客管理システムの情報も取得された可能性があるとした。取得された可能性がある情報の範囲や件数、対象の顧客は調査中としている。個人情報保護委員会に報告し、警察と連携して対応している。",
+      "sources": [
+        {
+          "title": "ロート製薬 公式発表（第一報）",
+          "url": "https://www.rohto.co.jp/news/whatsnew/2026/0911_01"
+        },
+        {
+          "title": "ロート製薬 公式発表（調査状況）",
+          "url": "https://www.rohto.co.jp/news/whatsnew/2026/0915_01"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2142865.html"
+        },
+        {
+          "title": "Security NEXT",
+          "url": "https://www.security-next.com/190377"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 1,
+      "reliability": "high"
+    },
+    {
       "id": "2026-09-nerima",
       "organization": "練馬区",
       "services": [
@@ -4149,6 +4192,47 @@
       ],
       "severity": "high",
       "disclosure_days": 2
+    },
+    {
+      "id": "2026-09-mitsui-fudosan",
+      "organization": "三井不動産株式会社",
+      "group": "三井不動産グループ",
+      "industry": "不動産",
+      "country": "JP",
+      "date_occurred": "2026-08-28",
+      "date_announced": "2026-09-01",
+      "affected_count": 55000,
+      "count_note": "最大5万5,000件（役職員等が最大1万9,000件、社外関係者が最大3万6,000件）。第一報時点で確認できた範囲の最大値",
+      "cause": "unauthorized_access",
+      "root_cause": "不正利用された資格情報（認証情報）でグループ利用の一部システムに不正アクセスされた",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "従業員情報",
+        "取引先情報"
+      ],
+      "summary": "グループが利用する一部のシステムへの不正アクセスを8月28日に確認し、9月1日に公表した。不正利用された資格情報を使って情報の一部が第三者に閲覧された可能性があり、対象は役職員等の氏名・メールアドレス・部署・役職が最大1万9,000件、社外関係者のメールアドレスと表示名が最大3万6,000件の計最大5万5,000件とした。メール・チャットなどの業務情報やパスワードの漏えいは確認されていない。資格情報を無効化し、個人情報保護委員会に報告した。",
+      "sources": [
+        {
+          "title": "三井不動産 公式発表（PDF）",
+          "url": "https://www.mitsuifudosan.co.jp/letter/260901/download/260901.pdf"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2609/02/2000001091/"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/09/07/56140.html"
+        },
+        {
+          "title": "Security NEXT",
+          "url": "https://www.security-next.com/189789"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 4,
+      "reliability": "high"
     },
     {
       "id": "2026-08-corona",
