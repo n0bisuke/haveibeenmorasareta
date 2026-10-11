@@ -1,0 +1,47 @@
+organization: 株式会社快活フロンティア
+group: AOKIグループ
+services:
+  - 快活CLUB
+  - 快活CLUBアプリ
+  - FiT24
+  - FiT24インドアゴルフ
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2025-01-18
+date_announced: 2025-01-21
+affected_count: 7290087
+count_note: 漏えいの可能性がある件数（快活CLUB会員・仮会員、FiT24会員・FiT24インドアゴルフ会員の一部）。2025年3月の調査完了時点で、同社は漏えいした事実や二次被害は確認されていないとしている
+cause: unauthorized_access
+root_cause: 会員アカウントを管理するシステムへの不正アクセス。報道では公式アプリのサーバーに会員情報を取得する不正な指令が約724万回送られた
+attack_methods:
+  - brute_force
+data_types:
+  - 氏名
+  - 性別
+  - 郵便番号
+  - 住所
+  - 電話番号
+  - 生年月日
+  - 会員ID
+  - ポイント情報
+  - 利用履歴
+summary: 複合カフェ「快活CLUB」を運営する同社のサーバーが不正アクセスを受け、会員アカウントを管理するシステムから会員の個人情報が漏えいした可能性がある。2025年1月18日夕刻に検知してサーバーをネットワークから切り離し、20日にDDoS攻撃によるネットワーク障害で公式アプリの機能を会員証の表示のみに制限したと告知、21日に不正アクセスと個人情報漏えいの可能性を公表した。28日の続報で対象を快活CLUB会員・仮会員とFiT24・FiT24インドアゴルフ会員の一部の計7,290,087件とした。項目は氏名・カナ氏名・性別・郵便番号・住所・電話番号・生年月日・会員番号・保有ポイント・店舗コード・最終会計日時など。身分証明書情報・クレジットカード情報・メールアドレス・アプリのパスワードは含まれない。3月17日に調査完了を公表し、漏えいした事実や二次被害は確認されていないとした。一方、警視庁は2025年12月以降、アプリのサーバーに会員情報を取得する不正な指令を約724万回送ったなどとして不正アクセス禁止法違反と偽計業務妨害の疑いで容疑者を逮捕しており、攻撃には生成AIを悪用して作ったプログラムが使われたと報じられた。警察庁の資料は会員情報を漏えいさせたと記している。
+sources:
+  - title: 株式会社快活フロンティア 公式発表（不正アクセスの発生及び個人情報漏えいの可能性に関するお知らせ・2025年1月21日）
+    url: https://ir.aoki-hd.co.jp/ja/news/topics/topics20250121kfi/main/0/link/20250121_information.pdf
+  - title: 株式会社快活フロンティア 公式発表（続報・2025年1月28日）
+    url: https://ir.aoki-hd.co.jp/ja/news/topics/topics20250128kfi/main/0/link/2025.01.28_KCinformation.pdf
+  - title: 株式会社快活フロンティア 公式発表（一部訂正・2025年1月31日）
+    url: https://ir.aoki-hd.co.jp/ja/news/topics/topics20250131kfi/main/00/link/2025.01.31_KCinformation.pdf
+  - title: 株式会社快活フロンティア 公式発表（第五報・2025年3月17日）
+    url: https://ir.aoki-hd.co.jp/ja/news/topics/topics20250317kfi/main/0/link/2025.03.17_KCinformation.pdf
+  - title: 快活CLUB お知らせ（不正アクセスの発生及び個人情報漏えいの可能性に関するお知らせとお問い合わせ）
+    url: https://www.kaikatsu.jp/info/detail/ddos.html
+  - title: ITmedia NEWS（2025年1月28日）
+    url: https://www.itmedia.co.jp/news/articles/2501/28/news121.html
+  - title: 日本経済新聞（2025年12月5日）
+    url: https://www.nikkei.com/article/DGXZQOUD041W30U5A201C2000000/
+  - title: ITmedia NEWS（2026年7月9日）
+    url: https://www.itmedia.co.jp/news/articles/2607/09/news103.html
+  - title: 警察庁「令和7年におけるサイバー空間をめぐる脅威の情勢等について」
+    url: https://www.npa.go.jp/publications/statistics/cybersecurity/data/R7/R07_cyber_jousei.pdf

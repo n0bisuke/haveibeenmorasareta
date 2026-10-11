@@ -1,0 +1,31 @@
+organization: 楽天モバイル株式会社
+group: 楽天グループ
+services:
+  - 楽天モバイル
+  - my楽天モバイル
+industry: IT・通信
+country: JP
+date_announced: 2025-02-27
+affected_count: 4609
+count_note: 総務省の指導文書による。楽天モバイルが把握する範囲で、少なくとも4,609人（7,002回線）分のIDが不正に入手された。入手されたID・パスワードの総数は把握できておらず、各IDのパスワードがすべて真正（ログインできるもの）かも確認できていない
+cause: unauthorized_access
+attack_methods:
+  - credential_stuffing
+root_cause: 第三者が不正に入手したID・パスワードでログインされ、本人確認書類なしで申し込める2回線目以降のeSIM契約の仕組みを悪用された
+data_types:
+  - 電話番号
+  - 利用履歴
+summary: 楽天モバイルは2025年2月27日、第三者が不正に入手したID・パスワードを使って複数の回線を契約し、モバイル通信サービスを利用していたことを確認したと公表した。報道によると、警視庁が同日までに逮捕した中高生3人は、通信アプリ「テレグラム」で入手した他人のID・パスワードを自作プログラムで機械的に入力して回線を契約し、転売していたとされる。総務省の2025年8月19日の行政指導によると、2023年11月から2025年2月にかけて少年らの犯行グループが少なくとも7,002回線（4,609人）分のID・パスワードを何らかの方法で不正に入手し、本人確認書類なしで2回線目以降のeSIM回線を申し込める仕組みを悪用して不正に契約した。これらのID・パスワードで「my楽天モバイル」にもログインでき、通話先電話番号・SMS送受信先・通信時間が閲覧可能な状態だったため、通信の秘密の漏えいと認定された。同社は遅くとも2025年2月27日に漏えいを認知しながら総務省への第一報が6月17日となり、報告義務違反とされた。同社は自社からID・パスワードが流出した事実は確認されていないとしている。
+sources:
+  - title: 楽天モバイル株式会社 公式発表（身に覚えのない回線契約にご注意ください）
+    url: https://network.mobile.rakuten.co.jp/information/news/other/3300/
+  - title: 総務省 報道資料（楽天モバイルへの行政指導）
+    url: https://www.soumu.go.jp/menu_news/s-news/01kiban18_01000261.html
+  - title: 総務省 指導文書（PDF）
+    url: https://www.soumu.go.jp/main_content/001024708.pdf
+  - title: ケータイ Watch
+    url: https://k-tai.watch.impress.co.jp/docs/news/1666213.html
+  - title: INTERNET Watch（総務省の行政指導）
+    url: https://internet.watch.impress.co.jp/docs/news/2040240.html
+  - title: 日本経済新聞（中高生の逮捕）
+    url: https://www.nikkei.com/article/DGXZQOUE271BZ0X20C25A2000000/
