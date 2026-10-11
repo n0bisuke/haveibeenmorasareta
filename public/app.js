@@ -17,9 +17,16 @@ function reliabilityEl(b) {
   return span;
 }
 
-const { breaches, generated_at, severity_levels: LEVELS, data_types: TYPES, vuln_targets: VULN = [], attack_methods: ATTACKS = [] } = await fetch('breaches.json').then((r) => r.json());
-// データを追加した人（デプロイ時に生成。無ければアイコンを出さない）
-const CONTRIBUTORS = await fetch('contributors.json').then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
+// 共有された URL の検索語（?q=）は、データの読み込みを待たずにすぐ入れる。
+// 読み込み中に入力欄が空のまま見えたり、ブラウザのフォーム復元で空に戻されたりしないようにする
+const params = new URLSearchParams(location.search);
+if (params.has('q')) $('q').value = params.get('q');
+
+// 事案データと、データを追加した人（デプロイ時に生成。無ければアイコンを出さない）は並行して読み込む
+const [{ breaches, generated_at, severity_levels: LEVELS, data_types: TYPES, vuln_targets: VULN = [], attack_methods: ATTACKS = [] }, CONTRIBUTORS] = await Promise.all([
+  fetch('breaches.json').then((r) => r.json()),
+  fetch('contributors.json').then((r) => (r.ok ? r.json() : {})).catch(() => ({})),
+]);
 const VULN_LABEL = Object.fromEntries(VULN.map((t) => [t.id, t.label]));
 const ATTACK_LABEL = Object.fromEntries(ATTACKS.map((t) => [t.id, t.label]));
 const RANK = Object.fromEntries(LEVELS.map((l, i) => [l.id, i]));
@@ -47,8 +54,7 @@ $('legend').replaceChildren(...LEVELS.map((l) => {
   return li;
 }));
 
-// URL のクエリと状態を同期（共有用）
-const params = new URLSearchParams(location.search);
+// URL のクエリと状態を同期（共有用）。選択肢はデータから作るので、作ったあとに選ぶ
 for (const key of ['q', 'year', 'cause', 'sev', 'sort']) if (params.has(key)) $(key).value = params.get(key);
 // 「企業側が調査中」の事案だけに絞る（統計の「企業側が調査中」から切り替え）
 let onlyInvestigating = params.get('status') === 'investigating';
