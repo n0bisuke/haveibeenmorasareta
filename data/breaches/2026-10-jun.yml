@@ -1,0 +1,28 @@
+organization: 株式会社ジュン
+services:
+  - 会員向けメールマガジン
+industry: 小売・EC
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/24
+date_occurred: 2026-10-07
+date_announced: 2026-10-08
+affected_count: null
+count_note: 件数は非公表（クラウド基盤に保管されていた顧客のメールアドレスの一部）。現時点で流出は確認されていないが、外部に流出した可能性もあるとして調査中
+cause: third_party
+root_cause: メール配信の業務委託先が利用するクラウド基盤（IDCFクラウド）へのランサムウェア攻撃
+vendor:
+  name: 株式会社IDCフロンティア
+  group: ソフトバンクグループ
+data_types:
+  - メールアドレス
+summary: 業務委託先が利用するクラウド基盤（IDCFクラウド）で10月7日にシステム障害が発生し、原因は同基盤への第三者による不正アクセスとの報告を受けたと公表した。会員へのメール配信を緊急停止して調べたところ、障害が発生したクラウド基盤に顧客のメールアドレスの一部が保管されていたことが分かった。現時点でメールアドレスの流出は確認されていないが、外部に流出した可能性もあるとして調査を続けている。障害が起きたのはメールマガジン用のサーバーだけで、オンラインストア「J'aDoRe JUN ONLINE」の注文に関するメールは別のしくみで送っており影響はないとしている。件数は公表していない。
+sources:
+  - title: 株式会社ジュン 公式発表（第1報）
+    url: https://www.jun.co.jp/news/1/
+  - title: FASHIONSNAP
+    url: https://www.fashionsnap.com/article/2026-10-09/jun-system-failure/
+  - title: FASHIONSNAP（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/742ffbab55c6646922a5a684a47ddc26d071ec71
+  - title: IDCフロンティア 公式発表（第2報）
+    url: https://www.idcf.jp/news/topics/20261007002
