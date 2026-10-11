@@ -212,7 +212,7 @@ function render() {
   if (state.metric !== 'incidents') next.set('metric', state.metric);
   if (state.range !== '12') next.set('range', state.range);
   const qs = next.toString();
-  history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+  history.replaceState(null, '', `${location.pathname}${qs ? `?${qs}` : ''}`);
 
   // 「お漏らし無し」の事案は通常のランキングから外し、お漏らししなかったランキングだけで数える
   const inScope = breaches.filter(inRange);

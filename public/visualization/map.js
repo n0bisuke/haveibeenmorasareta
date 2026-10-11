@@ -54,7 +54,7 @@ function render() {
   if (state.type === 'all') next.delete('org'); else next.set('org', state.type);
   if (state.range === 'all') next.delete('map_range'); else next.set('map_range', state.range);
   const qs = next.toString();
-  history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+  history.replaceState(null, '', `${location.pathname}${qs ? `?${qs}` : ''}`);
   for (const btn of document.querySelectorAll('[data-map-range]')) btn.setAttribute('aria-checked', String(btn.dataset.mapRange === state.range));
 
   const byPref = aggregate();
