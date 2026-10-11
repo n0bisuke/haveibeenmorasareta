@@ -1,0 +1,33 @@
+organization: スズキ株式会社
+services:
+  - スズキヴィレッジ（四輪公式コミュニティサイト）
+industry:
+  - 製造
+  - 交通・モビリティ
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-10-05
+date_announced: 2026-10-09
+affected_count: 3000
+count_note: 約3,000名（閲覧・取得された可能性）。スズキは影響範囲の確認を継続中
+cause: third_party
+root_cause: 委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした
+vendor:
+  name: コミューン
+data_types:
+  - メールアドレス
+  - アカウント名
+  - 入会・退会年月日
+  - 性別
+  - 車両情報
+summary: スズキの四輪公式コミュニティサイト「スズキヴィレッジ」のサービス提供事業者であるコミューン株式会社のサービスが、2026年10月5日から6日にかけて第三者による不正アクセスを受け、約3,000名分の会員情報が閲覧・取得された可能性がある。対象はメールアドレス・ニックネーム・参加日・性別・年代・居住地（都道府県）・所有車名で、クレジットカード情報や決済情報は含まれない。コミューンは6日に全コミュニティのサービスを停止し、スズキは7日に調査報告を受けた。コミューンによると、第三者が同社システムの不備を突き、管理者になりすますなどして会員情報を閲覧・取得した。不正アクセスを受けたのはコミューンのサーバーで、スズキのシステムとは直接接続しておらず、スズキのシステムへの侵入は確認されていない。スズキはサイトを停止したまま影響範囲の確認を進めている。現時点で悪用や二次被害は確認されていない。コミューンは同社サービス全体で約30.7万人（推計）の会員情報が漏えいしたと公表している。
+sources:
+  - title: スズキ株式会社 公式発表
+    url: https://www.suzuki.co.jp/release/d/2026/1009/
+  - title: コミューン株式会社 公式発表
+    url: https://communeinc.com/ja/news/2026oct09
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC0969K0Z01C26A0000000/
+  - title: レスポンス（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/3d01414587b00b6fa3f85d6ce582e69112cafa54
