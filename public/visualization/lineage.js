@@ -154,7 +154,7 @@ for (const btn of document.querySelectorAll('[data-lineage]')) {
     const next = new URLSearchParams(location.search);
     if (view === 'list') next.set('lineage', 'list'); else next.delete('lineage');
     const qs = next.toString();
-    history.replaceState(null, '', `${qs ? `?${qs}` : location.pathname}${location.hash}`);
+    history.replaceState(null, '', `${location.pathname}${qs ? `?${qs}` : ''}${location.hash}`);
     render();
   });
 }

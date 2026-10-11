@@ -138,3 +138,7 @@ a.lin-name:hover { text-decoration: underline; }
 .lin-also { font-size: 0.68rem !important; color: var(--accent) !important; font-weight: 700; }
 .lin-row { flex-wrap: wrap; }
 .lin-row .lin-also { order: 3; flex-basis: 100%; margin-top: -2px; }
+/* セクションの個別ページへのリンクと、個別ページの戻るリンク */
+.viz-permalink { display: inline-block; margin-top: 4px; font-size: 0.78rem; color: var(--accent); }
+.section-back { margin: 16px 0 12px; font-size: 0.85rem; }
+.section-back a { color: var(--accent); }

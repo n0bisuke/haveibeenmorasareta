@@ -77,7 +77,7 @@ function syncControls() {
   if (state.metric !== 'incidents') next.set('metric', state.metric); else next.delete('metric');
   if (state.range !== '12') next.set('range', state.range); else next.delete('range');
   const qs = next.toString();
-  history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+  history.replaceState(null, '', `${location.pathname}${qs ? `?${qs}` : ''}`);
 }
 
 for (const btn of document.querySelectorAll('[data-metric]')) {

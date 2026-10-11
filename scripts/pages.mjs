@@ -1,7 +1,8 @@
-// 事案ごとの個別ページ（public/breach/<id>/index.html）と sitemap.xml を生成する
+// 事案ごとの個別ページ（public/breach/<id>/index.html）、ランキング・ビジュアライズのセクションごとの個別ページ、sitemap.xml を生成する
 // デプロイ時に実行し、公開物にだけ含める（リポジトリにはコミットしない）
 //   SITE_URL … 公開 URL（canonical・OGP・sitemap に使う。既定 https://morasaretter.suke.dev）
 import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { writeSectionPages, sectionUrls } from './sections.mjs';
 import path from 'node:path';
 import { ROOT } from './lib.mjs';
 import { CAUSES } from '../public/labels.js';
@@ -209,9 +210,12 @@ for (const b of breaches) {
   await writeFile(path.join(dir, 'index.html'), page(b));
 }
 
-const urls = ['/', '/ranking/', '/visualization/', ...breaches.map((b) => `/breach/${b.id}/`)];
+// ランキング・ビジュアライズのセクションごとの個別ページ
+const sections = await writeSectionPages({ publicDir: PUBLIC, siteUrl: SITE_URL, siteName: SITE_NAME, og: hasOg });
+
+const urls = ['/', '/ranking/', ...sectionUrls().filter((u) => u.startsWith('/ranking/')), '/visualization/', ...sectionUrls().filter((u) => u.startsWith('/visualization/')), ...breaches.map((b) => `/breach/${b.id}/`)];
 await writeFile(
   path.join(PUBLIC, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${esc(SITE_URL + u)}</loc></url>`).join('\n')}\n</urlset>\n`,
 );
-console.log(`✔ 個別ページ ${breaches.length} 件と sitemap.xml を出力しました`);
+console.log(`✔ 個別ページ ${breaches.length} 件、ランキング・ビジュアライズの個別ページ ${sections} 件と sitemap.xml を出力しました`);
