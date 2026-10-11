@@ -1,0 +1,13 @@
+organization: 京都大学
+industry: 人材・教育
+country: JP
+org_type: university
+prefecture: 京都府
+date_announced: 2026-10-07
+affected_count: 295
+count_note: 学生295人分
+cause: lost_device
+summary: 非常勤講師が、学生295人分の個人情報が入ったUSBメモリを紛失したと発表した。
+sources:
+  - title: 京都新聞（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/e9e8e72f64427e6a795c90b00915c4075f5e1ca6
