@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-11T10:00:19.000Z",
-  "count": 426,
+  "generated_at": "2026-10-11T10:01:15.000Z",
+  "count": 431,
   "severity_levels": [
     {
       "id": "critical",
@@ -496,6 +496,10 @@
       "summary": "中古品を扱う子会社の会員管理システムが第三者による不正アクセスを受け、会員情報が外部に取得されたと公表した。10月6日に不正アクセスを確認した。対象は最大約643万件で、氏名・生年月日・性別・メールアドレス・電話番号・住所・パスワードのハッシュ値・ポイントカード番号・会員番号が含まれる。決済情報はこのシステムに保有していない。攻撃元からの通信を遮断し、脆弱性を是正した。",
       "sources": [
         {
+          "title": "ブックオフグループホールディングス株式会社 公式発表（適時開示）",
+          "url": "https://ssl4.eir-parts.net/doc/9278/tdnet/2893077/00.pdf"
+        },
+        {
           "title": "ITmedia NEWS",
           "url": "https://www.itmedia.co.jp/news/article/2610/09/2000002150/"
         },
@@ -510,7 +514,7 @@
       ],
       "severity": "high",
       "disclosure_days": null,
-      "reliability": "mid"
+      "reliability": "high"
     },
     {
       "id": "2026-10-calbee",
@@ -1363,6 +1367,7 @@
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "青森県",
+      "date_occurred": "2026-10-06",
       "date_announced": "2026-10-08",
       "affected_count": 2950,
       "count_note": "最大2,950人（推計。人数は調査中）。会員数は16,697人",
@@ -1374,10 +1379,20 @@
       "data_types": [
         "メールアドレス",
         "アカウント名",
-        "会員ID"
+        "性別",
+        "会員ID",
+        "ポイント情報"
       ],
       "summary": "県の公式ファンコミュニティ「青森びいき」が10月6日に不正アクセスを受け、最大2,950人分の会員情報が流出した可能性があると、運営会社のコミューンとともに発表した。第三者がシステムの不備を突いて非公開領域に入り、管理者などになりすまして、メールアドレス・ニックネーム・年代などを閲覧した記録が確認された。住所とクレジットカード情報は登録されておらず、パスワードの漏えいは確認されていない。サービスは停止しており、悪用は確認されていない。",
       "sources": [
+        {
+          "title": "青森県 公式発表",
+          "url": "https://www.pref.aomori.lg.jp/release/2026/81561.html"
+        },
+        {
+          "title": "青森県 公式発表（差替）",
+          "url": "https://www.pref.aomori.lg.jp/release/2026/81562.html"
+        },
         {
           "title": "東奥日報",
           "url": "https://www.toonippo.co.jp/articles/-/2379511"
@@ -1396,8 +1411,8 @@
         }
       ],
       "severity": "medium",
-      "disclosure_days": null,
-      "reliability": "mid"
+      "disclosure_days": 2,
+      "reliability": "high"
     },
     {
       "id": "2026-10-commune",
@@ -1461,10 +1476,15 @@
       "services": [
         "カラオケ ビッグエコー",
         "メガビッグ",
-        "カラオケCLUB DAM"
+        "カラオケCLUB DAM",
+        "バナナクラブ",
+        "B-GARAGE",
+        "DKダイニング"
       ],
       "industry": "エンタメ・スポーツ",
       "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
       "date_occurred": "2026-10-01",
       "date_announced": "2026-10-08",
       "affected_count": 8724000,
@@ -1485,6 +1505,14 @@
       "summary": "個人情報の取扱いを委託していた日本コロムビアグループの従業員PC1台がマルウェアに感染し、顧客と従業員の個人情報計約872万4,000件が漏えいしたおそれがあると公表した。対象は氏名・性別・生年月日・メールアドレス・電話番号で、パスワードは含まれない。感染は10月1日から2日に判明し、委託先は端末を隔離して10月5日に同社へ報告した。公表時点で外部への流出や不正利用は確認されていない。",
       "sources": [
         {
+          "title": "株式会社第一興商 公式発表",
+          "url": "https://www.dkkaraoke.co.jp/news/newsletter/261008_2.html"
+        },
+        {
+          "title": "株式会社第一興商 公式発表（続報）",
+          "url": "https://www.dkkaraoke.co.jp/news/newsletter/261009_1.html"
+        },
+        {
           "title": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC088GB0Y6A001C2000000/"
         },
@@ -1499,7 +1527,7 @@
       ],
       "severity": "high",
       "disclosure_days": 7,
-      "reliability": "mid"
+      "reliability": "high"
     },
     {
       "id": "2026-10-hachijuni-nagano",
@@ -1515,15 +1543,16 @@
       "count_note": "最大35人。預金・融資に関する顧客情報が含まれるかは確認中",
       "cause": "unauthorized_access",
       "root_cause": "職員が外部からの不審なメールを開封し、メールアカウントが第三者に不正アクセスされた",
-      "attack_methods": [
-        "phishing"
-      ],
       "data_types": [
         "メールアドレス",
         "取引先情報"
       ],
       "summary": "職員のメールアカウントが不正アクセスを受け、経営コンサルティング業務の連携先の従業員など35人分のメールアドレスと、職員とのメールのやり取りが流出した可能性があると発表した。10月7日に職員が外部からの不審メールを開封したことが原因で、同日夜にアカウントを停止した。外部の専門事業者による調査と警察への報告を行い、預金・融資に関する顧客情報が含まれるかは確認中とした。不正利用の被害は確認されていない。",
       "sources": [
+        {
+          "title": "株式会社八十二長野銀行 公式発表",
+          "url": "https://bank.82group.jp/file.jsp?id=release/2026/pdf/news20261008.pdf"
+        },
         {
           "title": "産経新聞（Yahoo!ニュース）",
           "url": "https://news.yahoo.co.jp/articles/5219f6f5d718105ca9682bd20ecc2d90e117fbca"
@@ -1539,7 +1568,7 @@
       ],
       "severity": "medium",
       "disclosure_days": 1,
-      "reliability": "mid"
+      "reliability": "high"
     },
     {
       "id": "2026-10-hi-ho",
@@ -1637,11 +1666,7 @@
       "date_occurred": "2026-10-07",
       "date_announced": "2026-10-08",
       "cause": "third_party",
-      "root_cause": "ホームページ保守事業者が使うクラウド基盤（IDCFクラウド）がランサムウェア攻撃を受けた",
-      "vendor": {
-        "name": "株式会社IDCフロンティア",
-        "group": "ソフトバンクグループ"
-      },
+      "root_cause": "市ホームページの保守管理を受託する事業者が使用するクラウド基盤サービスがランサムウェア攻撃を受けた",
       "data_types": [
         "氏名",
         "住所",
@@ -1720,13 +1745,15 @@
       "count_note": "項目別の最大想定件数のうち最大のもの（カード情報の一部 36.2万件）。項目別の合計は最大約117万件（重複を含む）。対象人数は調査中",
       "cause": "vulnerability",
       "root_cause": "業務用の管理ツールの脆弱性を突かれ、第三者に不正アクセスされた（詳細は調査中）",
+      "vuln_target": "business_tool",
       "data_types": [
         "氏名",
         "メールアドレス",
         "住所",
         "電話番号",
         "生年月日",
-        "クレジットカード情報（番号の一部・有効期限等）"
+        "クレジットカード情報（番号の一部・有効期限等）",
+        "取引先情報"
       ],
       "summary": "ニュースメディア「NewsPicks」の業務用管理ツールが第三者による不正アクセスを受け、利用者の個人情報が漏えいした可能性があると公表した。10月8日に不正アクセスを検知し、対象サーバーを遮断した。氏名・勤務先・メールアドレス・住所・電話番号・生年月日・カード名義・カード番号の下3桁または4桁などが対象で、翌9日の第二報で項目別の最大想定件数（カード情報の一部36.2万件、メールアドレス32.3万件など）を公表した。カード番号全体とセキュリティコードは保存しておらず、サービス本体への侵入は確認されていない。",
       "sources": [
@@ -7807,6 +7834,45 @@
       "reliability": "high"
     },
     {
+      "id": "2026-01-suntory",
+      "organization": "サントリーホールディングス株式会社",
+      "services": [
+        "広報業務（記者会見・イベントの出席登録、ニュースリリースの配信）"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2026-01-21",
+      "affected_count": 914,
+      "count_note": "メディア関係者など914人分（漏えいの可能性）。サントリー食品インターナショナルとサントリー芸術財団のニュースリリース配信先を含む。2026年1月20日時点で漏えいや不正利用は確認されていない",
+      "cause": "third_party",
+      "root_cause": "広報業務の一部を委託していたジエーピーエスのシステムが第三者の不正アクセスを受け、ランサムウェアの被害が確認された",
+      "vendor": {
+        "name": "株式会社ジエーピーエス"
+      },
+      "data_types": [
+        "氏名",
+        "電話番号"
+      ],
+      "summary": "サントリーホールディングスが広報業務の一部を委託していたジエーピーエスのシステムが第三者の不正アクセスを受けた。2025年6〜12月にサントリーHDが実施した記者会見やイベントに出席したメディア関係者など914人分の氏名、所属会社名、電話番号などの連絡先が流出した可能性がある。サントリー食品インターナショナルとサントリー芸術財団も同じ委託先に業務の一部を委託しており、両者のニュースリリース配信先も対象に含まれる。委託先が2026年1月5日に不正アクセスをサントリーHDへ報告し、その後の委託先の調査でランサムウェアの被害を確認した。サントリーHDは1月9日に個人情報保護委員会へ速報し、1月21日に公表した。1月20日時点で漏えいや不正利用は確認されておらず、1月21日から対象者への連絡を始めた。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC211Y90R20C26A1000000/"
+        },
+        {
+          "title": "共同通信（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/4173d7cb4abd63258929d7a75a2147e877592a4a"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/suntory-holdings-outsourced-vendor-hit-by-ransomware-914-personal-records-at-risk/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-01-jr-kyushu",
       "organization": "九州旅客鉄道株式会社（JR九州）",
       "group": "JR九州グループ",
@@ -9902,6 +9968,59 @@
       "reliability": "mid"
     },
     {
+      "id": "2025-02-rakuten-mobile-esim",
+      "organization": "楽天モバイル株式会社",
+      "group": "楽天グループ",
+      "services": [
+        "楽天モバイル",
+        "my楽天モバイル"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2025-02-27",
+      "affected_count": 4609,
+      "count_note": "総務省の指導文書による。楽天モバイルが把握する範囲で、少なくとも4,609人（7,002回線）分のIDが不正に入手された。入手されたID・パスワードの総数は把握できておらず、各IDのパスワードがすべて真正（ログインできるもの）かも確認できていない",
+      "cause": "unauthorized_access",
+      "attack_methods": [
+        "credential_stuffing"
+      ],
+      "root_cause": "第三者が不正に入手したID・パスワードでログインされ、本人確認書類なしで申し込める2回線目以降のeSIM契約の仕組みを悪用された",
+      "data_types": [
+        "電話番号",
+        "利用履歴"
+      ],
+      "summary": "楽天モバイルは2025年2月27日、第三者が不正に入手したID・パスワードを使って複数の回線を契約し、モバイル通信サービスを利用していたことを確認したと公表した。報道によると、警視庁が同日までに逮捕した中高生3人は、通信アプリ「テレグラム」で入手した他人のID・パスワードを自作プログラムで機械的に入力して回線を契約し、転売していたとされる。総務省の2025年8月19日の行政指導によると、2023年11月から2025年2月にかけて少年らの犯行グループが少なくとも7,002回線（4,609人）分のID・パスワードを何らかの方法で不正に入手し、本人確認書類なしで2回線目以降のeSIM回線を申し込める仕組みを悪用して不正に契約した。これらのID・パスワードで「my楽天モバイル」にもログインでき、通話先電話番号・SMS送受信先・通信時間が閲覧可能な状態だったため、通信の秘密の漏えいと認定された。同社は遅くとも2025年2月27日に漏えいを認知しながら総務省への第一報が6月17日となり、報告義務違反とされた。同社は自社からID・パスワードが流出した事実は確認されていないとしている。",
+      "sources": [
+        {
+          "title": "楽天モバイル株式会社 公式発表（身に覚えのない回線契約にご注意ください）",
+          "url": "https://network.mobile.rakuten.co.jp/information/news/other/3300/"
+        },
+        {
+          "title": "総務省 報道資料（楽天モバイルへの行政指導）",
+          "url": "https://www.soumu.go.jp/menu_news/s-news/01kiban18_01000261.html"
+        },
+        {
+          "title": "総務省 指導文書（PDF）",
+          "url": "https://www.soumu.go.jp/main_content/001024708.pdf"
+        },
+        {
+          "title": "ケータイ Watch",
+          "url": "https://k-tai.watch.impress.co.jp/docs/news/1666213.html"
+        },
+        {
+          "title": "INTERNET Watch（総務省の行政指導）",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2040240.html"
+        },
+        {
+          "title": "日本経済新聞（中高生の逮捕）",
+          "url": "https://www.nikkei.com/article/DGXZQOUE271BZ0X20C25A2000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2025-02-kashiwazaki-seika",
       "organization": "有限会社柏崎青果",
       "industry": "小売・EC",
@@ -10186,6 +10305,81 @@
       "severity": "critical",
       "disclosure_days": 52,
       "reliability": "mid"
+    },
+    {
+      "id": "2025-01-kaikatsu-club",
+      "organization": "株式会社快活フロンティア",
+      "group": "AOKIグループ",
+      "services": [
+        "快活CLUB",
+        "快活CLUBアプリ",
+        "FiT24",
+        "FiT24インドアゴルフ"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2025-01-18",
+      "date_announced": "2025-01-21",
+      "affected_count": 7290087,
+      "count_note": "漏えいの可能性がある件数（快活CLUB会員・仮会員、FiT24会員・FiT24インドアゴルフ会員の一部）。2025年3月の調査完了時点で、同社は漏えいした事実や二次被害は確認されていないとしている",
+      "cause": "unauthorized_access",
+      "root_cause": "会員アカウントを管理するシステムへの不正アクセス。報道では公式アプリのサーバーに会員情報を取得する不正な指令が約724万回送られた",
+      "attack_methods": [
+        "brute_force"
+      ],
+      "data_types": [
+        "氏名",
+        "性別",
+        "郵便番号",
+        "住所",
+        "電話番号",
+        "生年月日",
+        "会員ID",
+        "ポイント情報",
+        "利用履歴"
+      ],
+      "summary": "複合カフェ「快活CLUB」を運営する同社のサーバーが不正アクセスを受け、会員アカウントを管理するシステムから会員の個人情報が漏えいした可能性がある。2025年1月18日夕刻に検知してサーバーをネットワークから切り離し、20日にDDoS攻撃によるネットワーク障害で公式アプリの機能を会員証の表示のみに制限したと告知、21日に不正アクセスと個人情報漏えいの可能性を公表した。28日の続報で対象を快活CLUB会員・仮会員とFiT24・FiT24インドアゴルフ会員の一部の計7,290,087件とした。項目は氏名・カナ氏名・性別・郵便番号・住所・電話番号・生年月日・会員番号・保有ポイント・店舗コード・最終会計日時など。身分証明書情報・クレジットカード情報・メールアドレス・アプリのパスワードは含まれない。3月17日に調査完了を公表し、漏えいした事実や二次被害は確認されていないとした。一方、警視庁は2025年12月以降、アプリのサーバーに会員情報を取得する不正な指令を約724万回送ったなどとして不正アクセス禁止法違反と偽計業務妨害の疑いで容疑者を逮捕しており、攻撃には生成AIを悪用して作ったプログラムが使われたと報じられた。警察庁の資料は会員情報を漏えいさせたと記している。",
+      "sources": [
+        {
+          "title": "株式会社快活フロンティア 公式発表（不正アクセスの発生及び個人情報漏えいの可能性に関するお知らせ・2025年1月21日）",
+          "url": "https://ir.aoki-hd.co.jp/ja/news/topics/topics20250121kfi/main/0/link/20250121_information.pdf"
+        },
+        {
+          "title": "株式会社快活フロンティア 公式発表（続報・2025年1月28日）",
+          "url": "https://ir.aoki-hd.co.jp/ja/news/topics/topics20250128kfi/main/0/link/2025.01.28_KCinformation.pdf"
+        },
+        {
+          "title": "株式会社快活フロンティア 公式発表（一部訂正・2025年1月31日）",
+          "url": "https://ir.aoki-hd.co.jp/ja/news/topics/topics20250131kfi/main/00/link/2025.01.31_KCinformation.pdf"
+        },
+        {
+          "title": "株式会社快活フロンティア 公式発表（第五報・2025年3月17日）",
+          "url": "https://ir.aoki-hd.co.jp/ja/news/topics/topics20250317kfi/main/0/link/2025.03.17_KCinformation.pdf"
+        },
+        {
+          "title": "快活CLUB お知らせ（不正アクセスの発生及び個人情報漏えいの可能性に関するお知らせとお問い合わせ）",
+          "url": "https://www.kaikatsu.jp/info/detail/ddos.html"
+        },
+        {
+          "title": "ITmedia NEWS（2025年1月28日）",
+          "url": "https://www.itmedia.co.jp/news/articles/2501/28/news121.html"
+        },
+        {
+          "title": "日本経済新聞（2025年12月5日）",
+          "url": "https://www.nikkei.com/article/DGXZQOUD041W30U5A201C2000000/"
+        },
+        {
+          "title": "ITmedia NEWS（2026年7月9日）",
+          "url": "https://www.itmedia.co.jp/news/articles/2607/09/news103.html"
+        },
+        {
+          "title": "警察庁「令和7年におけるサイバー空間をめぐる脅威の情勢等について」",
+          "url": "https://www.npa.go.jp/publications/statistics/cybersecurity/data/R7/R07_cyber_jousei.pdf"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 3,
+      "reliability": "high"
     },
     {
       "id": "2025-01-mie-kosei",
@@ -14088,6 +14282,78 @@
       "disclosure_days": null
     },
     {
+      "id": "2023-06-mk-system",
+      "organization": "株式会社エムケイシステム",
+      "services": [
+        "社労夢",
+        "社労夢 Company Edition",
+        "SR-SaaS",
+        "ネットde顧問",
+        "ネットde事務組合",
+        "MYNABOX",
+        "MYNABOX CL",
+        "DirectHR"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2023-06-05",
+      "leaked": false,
+      "date_announced": "2023-06-06",
+      "affected_count": 22420000,
+      "count_note": "最大約2,242万人（社労夢などのシステムで管理していた本人数。2023年6月5日時点で、同社からの情報として個人情報保護委員会が公表）。同委員会が受けた漏えい等報告は3,067件・本人数計7,496,080人（同社の報告を除く。本人数は社労士事務所と顧問先事業者とで重複している可能性あり）。同委員会は事案を「漏えい等のおそれ」としており、同社の調査では情報流出は確認されていない",
+      "cause": "ransomware",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "root_cause": "サーバーへのアクセス制限の不備、パスワードが脆弱なアカウントの悪用、セキュリティ更新の不備",
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "性別",
+        "住所",
+        "電話番号",
+        "従業員情報"
+      ],
+      "summary": "社会保険労務士事務所などに提供する社会保険・人事労務業務支援システム「社労夢」のデータセンター上のサーバーが2023年6月5日未明にランサムウェアによる不正アクセスを受けて暗号化され、社労夢やDirectHRなど9サービスに影響が出て、約3,400ユーザーの大半にサービスを提供できなくなった。システムには社労士の顧問先企業などの従業員の氏名・生年月日・性別・住所・基礎年金番号・雇用保険被保険者番号などが取り扱われていた。同社は7月19日、外部専門機関のフォレンジック調査の結果、窃取の可能性は完全には否定できないものの、情報窃取やデータの外部転送の痕跡は確認されず、情報漏えいの事実は確認されていないと報告した。マイナンバーは高度な暗号化処理を施しており、流出のおそれのある範囲に含まれないとしている。個人情報保護委員会は2024年3月25日、パスワードの脆弱さやセキュリティ更新・ログ監視の不備など安全管理措置の不備を認め、同社を指導した。",
+      "sources": [
+        {
+          "title": "株式会社エムケイシステム 公式発表（第三者によるランサムウェア感染被害のお知らせ）",
+          "url": "https://contents.xj-storage.jp/xcontents/AS97180/bc464498/fb3c/479a/ad33/51ec0cd39818/140120230606596742.pdf"
+        },
+        {
+          "title": "株式会社エムケイシステム 公式発表（対応状況のお知らせ 第2報）",
+          "url": "https://contents.xj-storage.jp/xcontents/AS97180/fd524344/99b9/470f/90e6/a580932b7962/140120230620507046.pdf"
+        },
+        {
+          "title": "株式会社エムケイシステム 公式発表（調査結果のご報告 第3報）",
+          "url": "https://contents.xj-storage.jp/xcontents/AS97180/813d570f/5138/4bc7/a113/f4837598df38/140120230719524126.pdf"
+        },
+        {
+          "title": "株式会社エムケイシステム お知らせ（調査結果のご報告）",
+          "url": "https://www.mks.jp/company/topics/20230731"
+        },
+        {
+          "title": "個人情報保護委員会 公表資料（エムケイシステムに対する行政上の対応）",
+          "url": "https://www.ppc.go.jp/news/press/2023/240325_houdou/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/articles/2306/22/news163.html"
+        },
+        {
+          "title": "住友林業 お知らせ（エムケイシステムからの報告として原因を記載）",
+          "url": "https://sfc.jp/information/newstopics/pdf/2023-08-22.pdf"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2024/04/03/50811.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 1,
+      "reliability": "high"
+    },
+    {
       "id": "2023-05-smbc-card",
       "organization": "三井住友カード株式会社",
       "group": "SMBCグループ",
@@ -14165,6 +14431,71 @@
       "severity": "high",
       "disclosure_days": 1,
       "reliability": "mid"
+    },
+    {
+      "id": "2014-07-benesse",
+      "organization": "株式会社ベネッセコーポレーション",
+      "group": "ベネッセグループ",
+      "services": [
+        "こどもちゃれんじ",
+        "進研ゼミ小学講座",
+        "進研ゼミ中学講座",
+        "進研ゼミ高校講座"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_announced": "2014-07-09",
+      "affected_count": 35040000,
+      "count_note": "約3,504万件（名簿業者3社に売却された件数。重複と名寄せで整理した後の件数）。会社は実際に被害を受けた顧客を約2,895万件と推計。調査委員会の人単位の集計では約4,858万人。当初発表は約760万件（最大約2,070万件の可能性）",
+      "cause": "third_party",
+      "root_cause": "システム開発・運用を担うグループ会社シンフォームの業務委託先の元社員が、顧客情報を業務用PCから私物のスマートフォンに書き出して持ち出した",
+      "vendor": {
+        "name": "株式会社シンフォーム",
+        "group": "ベネッセグループ"
+      },
+      "data_types": [
+        "氏名",
+        "性別",
+        "生年月日",
+        "郵便番号",
+        "住所",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "「進研ゼミ」「こどもちゃれんじ」などの顧客情報が、システム開発・運用を担うグループ会社シンフォームの業務委託先の元社員により不正に持ち出され、名簿業者3社に売却された。元社員はデータベースから抽出した顧客情報を業務用PCに保存し、USBケーブルで私物のスマートフォンへ転送していた。PCの書き出し制御は一部の新機種のスマートフォンに機能しない状態で、通信量のアラートもこのデータベースとの通信を対象にしていなかった。2014年6月27日に顧客からの問い合わせで漏えいの可能性を認識し、7月9日に公表した。売却された情報は約3,504万件で、会社は実際に被害を受けた顧客を約2,895万件と推計した。クレジットカード情報が名簿業者へ売却された事実は確認されていない。元社員は7月17日に不正競争防止法違反の容疑で逮捕され、9月26日に経済産業省が同社に個人情報保護法に基づく勧告を行った。",
+      "sources": [
+        {
+          "title": "株式会社ベネッセコーポレーション 公式発表（事故の概要）",
+          "url": "https://www.benesse.co.jp/customer/bcinfo/01.html"
+        },
+        {
+          "title": "株式会社ベネッセホールディングス 公式発表（個人情報漏えい事故調査委員会による調査結果のお知らせ）",
+          "url": "https://www.benesse.co.jp/customer/dl/incident_20140925_release.pdf"
+        },
+        {
+          "title": "株式会社ベネッセホールディングス 公式発表（経済産業省への報告書提出について）",
+          "url": "https://www.benesse.co.jp/customer/dl/incident_20140717_release.pdf"
+        },
+        {
+          "title": "ITmedia エンタープライズ（初報）",
+          "url": "https://www.itmedia.co.jp/enterprise/articles/1407/09/news150.html"
+        },
+        {
+          "title": "IT Leaders（初報）",
+          "url": "https://it.impress.co.jp/articles/-/11539"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/articles/1409/10/news143.html"
+        },
+        {
+          "title": "ScanNetSecurity（経済産業省の勧告）",
+          "url": "https://scan.netsecurity.ne.jp/article/2014/09/30/34906.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
     }
   ]
 }
