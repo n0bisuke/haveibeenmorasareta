@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-11T09:59:40.000Z",
-  "count": 420,
+  "generated_at": "2026-10-11T10:00:19.000Z",
+  "count": 426,
   "severity_levels": [
     {
       "id": "critical",
@@ -1577,6 +1577,52 @@
       "reliability": "high"
     },
     {
+      "id": "2026-10-jun",
+      "organization": "株式会社ジュン",
+      "services": [
+        "会員向けメールマガジン"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/24",
+      "date_occurred": "2026-10-07",
+      "date_announced": "2026-10-08",
+      "affected_count": null,
+      "count_note": "件数は非公表（クラウド基盤に保管されていた顧客のメールアドレスの一部）。現時点で流出は確認されていないが、外部に流出した可能性もあるとして調査中",
+      "cause": "third_party",
+      "root_cause": "メール配信の業務委託先が利用するクラウド基盤（IDCFクラウド）へのランサムウェア攻撃",
+      "vendor": {
+        "name": "株式会社IDCフロンティア",
+        "group": "ソフトバンクグループ"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "業務委託先が利用するクラウド基盤（IDCFクラウド）で10月7日にシステム障害が発生し、原因は同基盤への第三者による不正アクセスとの報告を受けたと公表した。会員へのメール配信を緊急停止して調べたところ、障害が発生したクラウド基盤に顧客のメールアドレスの一部が保管されていたことが分かった。現時点でメールアドレスの流出は確認されていないが、外部に流出した可能性もあるとして調査を続けている。障害が起きたのはメールマガジン用のサーバーだけで、オンラインストア「J'aDoRe JUN ONLINE」の注文に関するメールは別のしくみで送っており影響はないとしている。件数は公表していない。",
+      "sources": [
+        {
+          "title": "株式会社ジュン 公式発表（第1報）",
+          "url": "https://www.jun.co.jp/news/1/"
+        },
+        {
+          "title": "FASHIONSNAP",
+          "url": "https://www.fashionsnap.com/article/2026-10-09/jun-system-failure/"
+        },
+        {
+          "title": "FASHIONSNAP（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/742ffbab55c6646922a5a684a47ddc26d071ec71"
+        },
+        {
+          "title": "IDCフロンティア 公式発表（第2報）",
+          "url": "https://www.idcf.jp/news/topics/20261007002"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 1,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-kodaira",
       "organization": "小平市",
       "services": [
@@ -1703,6 +1749,56 @@
       ],
       "severity": "high",
       "disclosure_days": 0,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-orix-life",
+      "organization": "オリックス生命保険株式会社",
+      "group": "オリックスグループ",
+      "services": [
+        "公式ウェブサイトのお問い合わせ"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-10-02",
+      "date_announced": "2026-10-08",
+      "affected_count": 26500,
+      "count_note": "約26,500件（同一の顧客による複数回の問い合わせを含む延べ件数。漏えいの可能性）。対象の人数は公表されていない",
+      "cause": "third_party",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "root_cause": "委託先のFAQシステム「i-ask」管理サイトへの不正ログインと不正プログラムの設置",
+      "vendor": {
+        "name": "株式会社スカラコミュニケーションズ",
+        "group": "スカラグループ"
+      },
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "契約情報",
+        "問い合わせ内容",
+        "健康・医療情報"
+      ],
+      "summary": "公式ウェブサイトで受け付けた問い合わせ内容の管理などに利用していた委託先スカラコミュニケーションズが不正アクセスを受け、顧客情報約26,500件（同一の顧客による複数回の問い合わせを含む）が漏えいした可能性があると発表した。対象は氏名、生年月日、住所、電話番号、メールアドレス、証券番号、問い合わせ内容（顧客が申告した医療情報等を含む）。オリックス生命のシステムへの不正アクセスは確認されておらず、マイナンバーやクレジットカード番号は含まれない。発表時点で二次被害は確認されていない。原因と影響範囲は委託先が調査中としている。発表が案内する委託先の公表によると、2026年10月2日夜から3日朝にかけて同社のFAQシステム「i-ask」の管理サイトに不正ログインされ、不正なプログラムを設置された。大和証券・シチズン時計・損害保険ジャパンなども同じ委託先の件で漏えいの可能性を公表している。",
+      "sources": [
+        {
+          "title": "オリックス生命 公式発表（2026年10月8日）",
+          "url": "https://www.orixlife.co.jp/b3cd698c38a74ebea491976d56455ecd/77eb698f1d9543a39440e414940f9f4d/n261008.pdf"
+        }
+      ],
+      "related": [
+        {
+          "title": "株式会社スカラコミュニケーションズ 公式発表（2026年10月6日）",
+          "url": "https://scala-com.jp/news/2026/10-1/",
+          "note": "オリックス生命の発表が委託先の公表として案内しているページ。不正アクセスの期間（2026年10月2日20時30分頃〜3日8時頃）、i-ask管理サイトへの不正ログインと不正プログラムの設置を説明している"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 6,
       "reliability": "high"
     },
     {
@@ -2205,6 +2301,61 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-10-yaizu-city",
+      "organization": "焼津市",
+      "services": [
+        "焼津市立図書館ホームページ（問い合わせフォーム）"
+      ],
+      "industry": [
+        "行政",
+        "人材・教育"
+      ],
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "静岡県",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/24",
+      "date_occurred": "2026-10-07",
+      "date_announced": "2026-10-07",
+      "affected_count": 50,
+      "count_note": "約50件（過去に図書館ホームページの問い合わせフォームに入力された個人情報）。漏えいは確認されておらず、市が被害状況を調査中",
+      "cause": "third_party",
+      "root_cause": "図書館ホームページを収容するクラウド基盤（IDCFクラウド）へのランサムウェア攻撃",
+      "vendor": {
+        "name": "株式会社IDCフロンティア",
+        "group": "ソフトバンクグループ"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "問い合わせ内容"
+      ],
+      "summary": "焼津市立図書館のホームページを収容するシステムの一部が第三者から不正アクセスを受け、ホームページが10月7日午前3時40分ごろから閲覧できなくなったと市が同日発表した。過去に問い合わせフォームに入力された約50件の個人情報（氏名・住所・電話番号・メールアドレス・ファクス番号・問い合わせ内容）が漏えいした恐れがある。年齢・生年月日・性別は含まれない。これまでに漏えいは確認されておらず、市が詳しい被害状況を調べている。報道によると、図書館のホームページはIDCフロンティアのクラウドサービスを利用しており、同社のサーバーがランサムウェア攻撃を受けたことが原因とみられる。",
+      "sources": [
+        {
+          "title": "静岡新聞アットエス（静岡放送）",
+          "url": "https://www.at-s.com/snews/article/ats/2071968.html"
+        },
+        {
+          "title": "静岡新聞アットエス（静岡放送・続報）",
+          "url": "https://www.at-s.com/snews/article/ats/2072555.html"
+        },
+        {
+          "title": "中日新聞",
+          "url": "https://www.chunichi.co.jp/article/1322710"
+        },
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261008de56663"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 0,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-active-takamatsu",
       "organization": "株式会社アクティブ",
       "services": [
@@ -2470,6 +2621,52 @@
       ],
       "severity": "high",
       "disclosure_days": 250,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-scala-com",
+      "organization": "株式会社スカラコミュニケーションズ",
+      "group": "スカラグループ",
+      "services": [
+        "FAQシステム「i-ask」"
+      ],
+      "industry": [
+        "IT・通信",
+        "金融・保険",
+        "製造"
+      ],
+      "country": "JP",
+      "date_occurred": "2026-10-02",
+      "date_announced": "2026-10-06",
+      "affected_count": 713126,
+      "count_note": "最大713,126件（利用企業最大5社分。問い合わせ単位の延べ件数で、同じ人の複数回の問い合わせを重複して含む）。実際の対象人数は名寄せ中。大和証券・シチズン時計・損害保険ジャパン・オリックス生命が公表した件数と重なる",
+      "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "root_cause": "FAQシステム「i-ask」管理サイトへの不正ログインと不正プログラムの設置",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "問い合わせ内容"
+      ],
+      "summary": "2026年10月2日20時30分頃から3日8時頃にかけて、第三者がFAQシステム「i-ask」の管理サイトに不正ログインし、同社が管理するサーバー上に不正なプログラムを設置した。同じサーバー上で稼働していた利用企業最大5社のシステム環境のデータベースから、氏名・メールアドレス・問い合わせ内容など（項目は利用企業により異なる）の問い合わせ情報を取得された可能性がある。10月3日朝にデータベースの監視アラートを契機に調査を始め、同日8時頃に不正アクセスを遮断した。発表時点で二次被害は確認されていない。個人情報保護委員会に報告し、警察に相談している。利用企業名は発表に書かれていないが、大和証券・シチズン時計・損害保険ジャパン・オリックス生命が自社の顧客情報が漏えいした可能性を、東武鉄道が問い合わせフォームでスカラコミュニケーションズのサービスを利用していたこと（現時点で東武鉄道に関する情報の閲覧・取得の形跡は確認されていない）をそれぞれ公表している。",
+      "sources": [
+        {
+          "title": "株式会社スカラコミュニケーションズ 公式発表",
+          "url": "https://www.scala-com.jp/news/2026/10-1/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/07/2000002074/"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2146225.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 4,
       "reliability": "high"
     },
     {
@@ -4442,6 +4639,60 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-09-shimada-city",
+      "organization": "島田市",
+      "services": [
+        "令和4年度職員採用試験（Web動画による選考）",
+        "採用管理プラットフォーム「ApplyNow」"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "静岡県",
+      "date_occurred": "2026-08-09",
+      "date_announced": "2026-09-15",
+      "affected_count": 113,
+      "count_note": "令和4年度（2022年度）の職員採用試験（一般事務／大学卒）一次試験の申込者等の情報の件数。第1報（9/15）では約130人分の漏えいの可能性としていた。市役所側のユーザー情報（ユーザー名・パスワード等）も漏えいした内容に挙げられているが、113件に含まれるかは公表されていない",
+      "cause": "third_party",
+      "root_cause": "委託先の採用管理プラットフォームでデータ分析ツールの脆弱性を悪用された",
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "生年月日",
+        "アカウント名",
+        "パスワード（保管形式不明）"
+      ],
+      "summary": "島田市は、2022年度の職員採用試験（Web動画による選考）で利用したApplyNowの採用管理システムが第三者による不正アクセスを受け、申込者の個人情報が漏えいした可能性があると9月15日に発表した。市が同システムを利用したのは2022年度のみで、9月14日に事業者から連絡を受けた。10月7日の続報で、事業者から外部への漏えいが報告されたとして、一般事務（大学卒）一次試験の申込者等113件の氏名（漢字・カナ）、電話番号、メールアドレス、生年月日、電子申請の受付番号と、市役所側のユーザー名、パスワード、メールアドレス、権限が漏えいしたと公表した。同社への不正アクセスはデータ分析ツールの脆弱性を悪用したもので、面接動画データは別の保管領域にあり対象外とされる。",
+      "sources": [
+        {
+          "title": "島田市 公式発表（続報）",
+          "url": "https://www.city.shimada.shizuoka.jp/gyosei-docs/915543770.html"
+        },
+        {
+          "title": "静岡第一テレビ（Yahoo!ニュース・第1報）",
+          "url": "https://news.yahoo.co.jp/articles/09e63eed0664b0bdab9aa0761b5c337f3a670306"
+        },
+        {
+          "title": "静岡第一テレビ（Infoseekニュース・続報）",
+          "url": "https://news.infoseek.co.jp/article/sdt_2026100805965378"
+        }
+      ],
+      "related": [
+        {
+          "title": "株式会社ApplyNow 公式発表（2026年9月9日）",
+          "url": "https://applynow.co.jp/news/20260909",
+          "note": "委託先の発表。不正アクセスの期間（2026年8月9日〜9月7日）、データ分析ツールの脆弱性の悪用、面接動画データが対象外であることを説明している"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 37,
+      "reliability": "high"
+    },
+    {
       "id": "2026-09-digital-agency-gss",
       "organization": "デジタル庁",
       "services": [
@@ -4491,6 +4742,62 @@
       "severity": "high",
       "disclosure_days": 78,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-09-fuji-city",
+      "organization": "富士市",
+      "services": [
+        "職員採用試験（プレゼンテーション動画試験）",
+        "採用管理プラットフォーム「ApplyNow」"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "静岡県",
+      "date_occurred": "2026-08-09",
+      "date_announced": "2026-09-11",
+      "affected_count": 815,
+      "count_note": "令和4〜8年度（2022〜2026年度）にプレゼンテーション動画試験へ申し込んだ人の申込時の情報。第1報（9/11）では約800件の流出の可能性としていた",
+      "cause": "third_party",
+      "root_cause": "委託先の採用管理プラットフォームでデータ分析ツールの脆弱性を悪用された",
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号"
+      ],
+      "summary": "富士市が職員採用試験のプレゼンテーション動画試験で利用しているApplyNowの採用管理プラットフォームが第三者による不正アクセスを受け、2022〜2026年度に同試験へ申し込んだ815件の氏名（漢字・カナ）、メールアドレス、電話番号、受験番号が外部へ漏えいした。市は9月11日に約800件の流出の可能性を公表し、10月7日の続報で同社から漏えいの報告を受けたと公表した。第1報では、企業情報（担当者ユーザー名、メールアドレス、権限）も持ち出された可能性があるとしていた。動画データは別の保存領域にあり対象外とされる。同社への不正アクセスはデータ分析ツールの脆弱性を悪用したもので、他の自治体や企業にも影響した。",
+      "sources": [
+        {
+          "title": "富士市 公式発表（第1報）",
+          "url": "https://www.city.fuji.shizuoka.jp/1005250000/p007780.html"
+        },
+        {
+          "title": "富士市 公式発表（続報）",
+          "url": "https://www.city.fuji.shizuoka.jp/1005250000/p007783.html"
+        },
+        {
+          "title": "株式会社ApplyNow 公式発表",
+          "url": "https://applynow.co.jp/news/20260909"
+        },
+        {
+          "title": "静岡朝日テレビ",
+          "url": "https://look.satv.co.jp/content_news/incident/99975"
+        },
+        {
+          "title": "静岡第一テレビ（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/86564dd1b9c4915294722b10ce628b05bf982f13"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/?p=41076"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 33,
+      "reliability": "high"
     },
     {
       "id": "2026-09-ieej",
