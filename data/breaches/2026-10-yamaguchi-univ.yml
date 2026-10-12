@@ -1,0 +1,20 @@
+organization: 山口大学
+industry: 人材・教育
+country: JP
+org_type: university
+prefecture: 山口県
+date_occurred: 2026-08-26
+date_announced: 2026-10-06
+affected_count: 967
+count_note: 連絡先967件（氏名とメールアドレス631件、メールアドレスのみ336件）
+cause: phishing
+root_cause: 教職員が偽サイトにIDとパスワードを入力し、メールアカウントを乗っ取られた
+data_types:
+  - 氏名
+  - メールアドレス
+summary: 教職員1名のメールアカウントがフィッシングで乗っ取られ、連絡先に登録されていた学内外のメールアドレス967件（うち631件は氏名付き）が第三者に取得されたと公表した。教職員が偽サイトにIDとパスワードを入力したことが原因で、8月26日にそのアカウントから463件の宛先へ不審メールが送られた。ほかの不審な操作は確認されていないとした。
+sources:
+  - title: 山口大学「本学教職員になりすました不審メール発信に関するお詫びとご報告」
+    url: https://www.yamaguchi-u.ac.jp/news/52728/index.html
+  - title: 中国新聞
+    url: https://www.chugoku-np.co.jp/articles/-/906298
