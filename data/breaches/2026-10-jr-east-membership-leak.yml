@@ -1,0 +1,19 @@
+organization: 東日本旅客鉄道株式会社
+services:
+  - えきねっと
+  - 大人の休日倶楽部
+industry: 交通・モビリティ
+country: JP
+date_announced: 2026-10-09
+affected_count: 2060000
+count_note: 最大で約206万件（えきねっと会員約167万件、大人の休日倶楽部会員約39万件）
+cause: unauthorized_access
+root_cause: IDCフロンティアのシステムへの不正アクセス
+data_types:
+  - メールアドレス
+  - 会員ID
+  - 生年月日
+summary: JR東日本は、10月9日に「えきねっと」と「大人の休日倶楽部」の会員情報が漏えいした可能性があると発表した。IDCフロンティアでの不正アクセスにより、約206万件の会員のメールアドレスや会員番号、クレジットカード有効期限、生年月日が閲覧・取得された可能性がある。氏名・住所・電話番号・クレジットカード番号などは漏えいしていないとされている。
+sources:
+  - title: JR東日本、会員情報最大206万件に漏えいの可能性 外部メール配信サービスに影響（日本ネット経済新聞） - Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/7d845726987dc6f50f84cd7aa43d38f9a1e16469
