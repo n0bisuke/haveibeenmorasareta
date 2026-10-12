@@ -3,14 +3,27 @@ services:
   - skyticket
 industry: 旅行
 country: JP
-status: investigating
-reliability: low
-issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/69
+date_occurred: 2026-09-20
 date_announced: 2026-10-08
-affected_count: null
-count_note: 件数・流出した情報の種類は未確認（会員向けメールのみ確認）
+affected_count: 14640000
+count_note: 管理機能への不正操作で約1,464万件（うち約413万件はハッシュ化されたパスワードを含む）。このほか業務管理システムの脆弱性で返金先の口座情報など17,780件、バス予約完了ページの閲覧で約1.2万件
 cause: unauthorized_access
-summary: 旅行予約サイト「skyticket」の会員に、同社が管理するサーバーの一部が第三者による不正アクセスを受け、登録会員の情報が外部に流出したと知らせるメールが届き、パスワードの変更を求めた。公式サイトのお知らせや適時開示、報道は確認できておらず、件数や情報の種類は分かっていない。
+root_cause: 管理機能の不正操作、業務管理システムの脆弱性、ログインなしで開けたバス予約完了ページの3つの経路による不正アクセス
+data_types:
+  - 氏名
+  - 生年月日
+  - メールアドレス
+  - パスワード（ハッシュ化・暗号化済み）
+  - 口座番号
+summary: 旅行予約サイト「skyticket」で、経路の異なる3件の不正アクセスがあったと10月9日に公表した（会員には8日にメールで通知していた）。10月2日〜4日に管理機能が不正に操作され、氏名・生年月日・メールアドレスなど約1,464万件が流出し、うち約413万件にはハッシュ化されたパスワードが含まれていた。9月20日には業務管理システムの脆弱性を突かれ返金先の口座情報など17,780件が対象となり、バス予約完了ページの約1.2万件の予約情報も機械的に閲覧されていた。クレジットカード番号とパスポートの画像は保存しておらず、流出していないとした。
 sources:
-  - title: skyticket 会員向けメール「不正アクセスによるお客様情報流出のお詫びとパスワード変更のお願い」（2026/10/08 受信。Web 上の公式発表は未確認）
+  - title: skyticket 公式発表
+    url: https://skyticket.jp/news/maintenance/67603/
+  - title: skyticket 会員向けメール「不正アクセスによるお客様情報流出のお詫びとパスワード変更のお願い」（2026/10/08 受信）
     url: https://skyticket.jp/
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2147116.html
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/09/2000002168/
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261009de57110
