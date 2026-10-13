@@ -1,0 +1,16 @@
+organization: アルカディア（大阪府箕面市）
+services:
+  - SpeeCAN RAIDEN
+  - ライデン・スクール
+country: JP
+date_announced: 2026-10-13
+affected_count: 3136000
+count_note: 約313万6千件のメールアドレスが漏洩した可能性がある
+cause: unauthorized_access
+data_types:
+  - メールアドレス
+  - 電話番号
+summary: アルカディアが提供する自治体向け防災情報配信サービス『SpeeCAN RAIDEN』が2026年10月11日に不正アクセスを受け、メールアドレス約313万6千件と電話番号約10万5千件が漏洩した可能性があると発表した。影響を受けた自治体はサービスを停止し、調査を進めている。
+sources:
+  - title: 防災情報サービスに不正アクセス　自治体向け、メアド313万件漏洩か - 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUF139TI0T11C26A0000000/
