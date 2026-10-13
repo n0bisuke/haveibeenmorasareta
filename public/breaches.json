@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-12T02:16:48.000Z",
-  "count": 433,
+  "generated_at": "2026-10-13T02:29:57.000Z",
+  "count": 435,
   "severity_levels": [
     {
       "id": "critical",
@@ -467,6 +467,55 @@
     }
   ],
   "breaches": [
+    {
+      "id": "2026-10-yamaha-motor-pas-life",
+      "organization": "ヤマハ発動機株式会社",
+      "group": "ヤマハ発動機グループ",
+      "services": [
+        "YAMAHA PAS Life"
+      ],
+      "industry": [
+        "製造",
+        "交通・モビリティ"
+      ],
+      "country": "JP",
+      "date_occurred": "2026-10-06",
+      "date_announced": "2026-10-12",
+      "affected_count": 1600,
+      "count_note": "約1,600名",
+      "cause": "third_party",
+      "root_cause": "委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした",
+      "vendor": {
+        "name": "コミューン"
+      },
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "性別",
+        "住所",
+        "メールアドレス",
+        "会員ID",
+        "アカウント名"
+      ],
+      "summary": "電動アシスト自転車のユーザーコミュニティ「YAMAHA PAS Life」で利用するコミューン株式会社のサービス「Commune」が第三者の不正アクセスを受け、約1,600名分の会員情報が漏えいしたと公表した。不正アクセスは10月6日19時18分頃から21時2分頃にかけて行われ、氏名・生年月日・性別・住所・メールアドレス・会員ID・ニックネームなどが対象となった。クレジットカードなどの決済情報は含まれない。",
+      "sources": [
+        {
+          "title": "ヤマハ発動機 公式発表",
+          "url": "https://global.yamaha-motor.com/jp/news/2026/1012/leakage.html"
+        },
+        {
+          "title": "レスポンス",
+          "url": "https://response.jp/article/2026/10/13/417681.html"
+        },
+        {
+          "title": "テレ東BIZ",
+          "url": "https://txbiz.tv-tokyo.co.jp/nms/news/post_350387"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 6,
+      "reliability": "high"
+    },
     {
       "id": "2026-10-bookoff",
       "organization": "ブックオフグループホールディングス株式会社",
@@ -3341,6 +3390,38 @@
       "severity": "high",
       "disclosure_days": 2335,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-wondertable",
+      "organization": "株式会社ワンダーテーブル",
+      "industry": "飲食",
+      "country": "JP",
+      "date_occurred": "2026-09-07",
+      "date_announced": "2026-10-02",
+      "count_note": "件数は未確認",
+      "cause": "third_party",
+      "root_cause": "アルバイト採用業務の委託先の採用管理サービスで、利用するデータ分析ツールの脆弱性を悪用された",
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "生年月日",
+        "性別",
+        "住所"
+      ],
+      "summary": "アルバイト採用の面接や契約締結などを委託する株式会社ApplyNowの採用管理サービスが第三者の不正アクセスを受け、同サービスで管理していた応募者の個人情報の一部が外部に流出したと公表した。ApplyNowは9月7日に不正アクセスを検知し、利用するデータ分析ツールの脆弱性が悪用されたことを確認した。流出した可能性がある情報は氏名、メールアドレス、電話番号、生年月日、性別、住所、職業などで、対象者によって異なる。ApplyNowが10月2日に対象者へメールで個別に通知した。",
+      "sources": [
+        {
+          "title": "ワンダーテーブル「個人情報漏えいについてお知らせとお詫び」",
+          "url": "https://wondertable.com/blogs/news-release/%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%A8%E3%81%8A%E8%A9%AB%E3%81%B3"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 25,
+      "reliability": "high"
     },
     {
       "id": "2026-10-jaea",
