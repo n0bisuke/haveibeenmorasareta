@@ -1,0 +1,12 @@
+organization: 神戸市
+industry: 行政
+country: JP
+date_announced: 2026-10-14
+affected_count: 434
+cause: unknown
+data_types:
+  - 住所
+summary: 神戸市は、市ホームページと内閣府サイトで公開したNPO法人の役員・社員名簿において、住所のマスキング処理が解除可能な状態で掲載され、61法人計434人の住所が閲覧できたことを発表した。2024年4月以降、処理後データをそのまま公開したことが原因で、同年9月10日に発覚した。市は対象者へ謝罪文を送付し、編集ソフトの導入で再発防止策を講じた。
+sources:
+  - title: 神戸市、NPO役員らの住所漏えい　61法人の434人、市HPや内閣府サイトで　マスキング外せるデータ公開（神戸新聞NEXT） - Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/cc8bb85934d2f3d7bc183112adb1d26d489291bf
