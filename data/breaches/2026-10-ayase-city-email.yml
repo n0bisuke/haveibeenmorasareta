@@ -1,0 +1,15 @@
+organization: 神奈川県綾瀬市
+services:
+  - あやせ安全・安心メールサービス
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 神奈川県
+date_occurred: 2026-10-11
+date_announced: 2026-10-13
+affected_count: 11053
+cause: unauthorized_access
+summary: 神奈川県綾瀬市が運営する「あやせ安全・安心メールサービス」に対し、2026年10月11日に不正アクセスが発生し、利用者約1万1053人の居住地区名やメールアドレスが漏えいした可能性があると市が発表した。市職員数百人分のメールアドレス、氏名、居住地区名も同様に漏えいした可能性がある。サービスは大阪府内の委託会社が運営していた。
+sources:
+  - title: 安全メールに不正アクセス　綾瀬市民1.1万人の個人情報流出か（毎日新聞） - Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/e2cdb155b0bf87a12f96a7a3e39df39ad3563117
