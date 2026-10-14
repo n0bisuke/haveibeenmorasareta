@@ -1,0 +1,15 @@
+organization: アルカディア
+services:
+  - まつやま防災メール
+  - まつやま防災イベントメール
+  - いまばり火災メール
+industry: IT・通信
+country: JP
+date_announced: 2026-10-14
+affected_count: null
+count_note: 最大で310万件以上にのぼる可能性がある
+cause: unauthorized_access
+summary: 大阪のIT企業アルカディアが不正アクセスを受け、松山市や今治市など複数の自治体で登録されたメールアドレスや氏名、住所、職員番号などの個人情報が漏洩した可能性があると報告された。影響を受けた自治体の配信サービスは停止され、現在までに不正利用は確認されていない。全国の自治体で最大310万件以上が対象になる可能性があるとされている。
+sources:
+  - title: 「アルカディア」不正アクセス　松山市2万件のアドレス漏えいの可能性など　愛媛県内自治体にも影響拡大（南海放送） - Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/621e96544e5322b2fccf47ba0f60407c48aa4321
