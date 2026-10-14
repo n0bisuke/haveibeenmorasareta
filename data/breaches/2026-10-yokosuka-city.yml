@@ -1,0 +1,16 @@
+organization: 神奈川県横須賀市
+services:
+  - 防災情報メール
+  - 防犯あんしんメール
+country: JP
+org_type: local_gov
+prefecture: 神奈川県
+date_announced: 2026-10-13
+affected_count: 59000
+cause: unauthorized_access
+data_types:
+  - メールアドレス
+summary: 神奈川県横須賀市は、防災情報メールや防犯あんしんメールの配信システムを提供する会社が第三者による不正アクセスを受け、最大約5万9000件のメールアドレスが漏洩した可能性があると発表した。漏洩は不審なメールが配信されたことから判明し、市はサービスを停止し原因究明に努めている。
+sources:
+  - title: 神奈川県横須賀市の防災情報メールで最大でおよそ5万9000件の個人情報が漏えいか　メール配信システムの提供会社に不正アクセス 利用者への不審メールで発覚（日テレNEWS NNN） - Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/2f2f31ec4617da7bb7cba8a3cb985e3d578d860b
