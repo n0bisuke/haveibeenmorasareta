@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-13T02:29:57.000Z",
-  "count": 435,
+  "generated_at": "2026-10-14T04:06:37.000Z",
+  "count": 438,
   "severity_levels": [
     {
       "id": "critical",
@@ -467,6 +467,91 @@
     }
   ],
   "breaches": [
+    {
+      "id": "2026-10-jr-kyushu-foodservice",
+      "organization": "JR九州フードサービス",
+      "services": [
+        "トイポアプリ"
+      ],
+      "country": "JP",
+      "date_occurred": "2026-10-04",
+      "date_announced": "2026-10-13",
+      "affected_count": 26900,
+      "count_note": "約2万6900人分の個人情報が流出した可能性（記事では「流出の可能性」）",
+      "cause": "third_party",
+      "vendor": {
+        "name": "トイポ"
+      },
+      "data_types": [
+        "電話番号",
+        "会員ID"
+      ],
+      "summary": "JR九州フードサービスは、和食店「うまや」などで導入しているトイポアプリに登録された約2万6900人分の個人情報が流出した可能性があると発表した。原因はアプリ提供元のトイポ社への不正アクセスで、流出の恐れがあるのはユーザーIDや電話番号などである。",
+      "sources": [
+        {
+          "title": "JR九州の飲食店子会社、個人情報2万6900人分漏洩か - 日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOJC140JR0U6A011C2000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 9,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-kakogawa-city",
+      "organization": "兵庫県加古川市",
+      "services": [
+        "一斉メール配信サービス"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "兵庫県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-13",
+      "affected_count": 2000,
+      "cause": "unauthorized_access",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "summary": "兵庫県加古川市は、同市職員約2000人が登録している一斉メール配信サービスがサイバー攻撃を受け、氏名や個人メールアドレスなどの個人情報が漏洩した恐れがあると発表した。サービスは大阪府箕面市の事業者アルカディアが運用しており、10月11日に不正アクセスが確認され、同社は応急措置を経て13日に配信サービスを停止した。市は職員に対し不審なメールへの注意喚起を行っている。",
+      "sources": [
+        {
+          "title": "職員2000人分の個人情報漏洩の恐れ　「アルカディア」サイバー攻撃で　兵庫・加古川市（産経新聞） - Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/678c5b7997683169cd9b6823a4acfa97c9b91af8"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 2,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-yokosuka-city",
+      "organization": "神奈川県横須賀市",
+      "services": [
+        "防災情報メール",
+        "防犯あんしんメール"
+      ],
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "神奈川県",
+      "date_announced": "2026-10-13",
+      "affected_count": 59000,
+      "cause": "unauthorized_access",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "神奈川県横須賀市は、防災情報メールや防犯あんしんメールの配信システムを提供する会社が第三者による不正アクセスを受け、最大約5万9000件のメールアドレスが漏洩した可能性があると発表した。漏洩は不審なメールが配信されたことから判明し、市はサービスを停止し原因究明に努めている。",
+      "sources": [
+        {
+          "title": "神奈川県横須賀市の防災情報メールで最大でおよそ5万9000件の個人情報が漏えいか　メール配信システムの提供会社に不正アクセス 利用者への不審メールで発覚（日テレNEWS NNN） - Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2f2f31ec4617da7bb7cba8a3cb985e3d578d860b"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
     {
       "id": "2026-10-yamaha-motor-pas-life",
       "organization": "ヤマハ発動機株式会社",
