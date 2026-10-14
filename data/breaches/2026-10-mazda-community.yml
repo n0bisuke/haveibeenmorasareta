@@ -1,0 +1,16 @@
+organization: マツダ
+services:
+  - クラブマツダコミュニティ
+country: JP
+date_announced: 2026-10-14
+affected_count: 4103
+cause: unknown
+vendor:
+  name: コミューン
+data_types:
+  - 氏名
+  - メールアドレス
+summary: マツダは2026年10月14日、コミュニティーサイト「クラブマツダコミュニティ」の会員情報が流出した可能性を公表した。4103人の氏名とメールアドレスが第三者に閲覧・取得された恐れがあるとし、サイト運営を委託しているコミューンが不正アクセスを受けたことが原因とされている。
+sources:
+  - title: マツダ、4103人の情報流出か　交流サイトの委託先に不正アクセス - 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC147350U6A011C2000000/
