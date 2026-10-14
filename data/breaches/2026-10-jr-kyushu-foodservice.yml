@@ -1,0 +1,13 @@
+organization: JR九州フードサービス
+country: JP
+date_occurred: 2026-10-04
+date_announced: 2026-10-14
+affected_count: 26900
+cause: unknown
+data_types:
+  - 電話番号
+  - 会員ID
+summary: JR九州フードサービスは、和食店「うまや」などで提供しているトイポアプリに登録された約2万6900人分の個人情報が流出した可能性があると発表した。原因はトイポ社への不正アクセスで、漏洩したとされる情報はユーザーIDや電話番号で、パスワードやクレジットカード情報は含まれていない。現在、新規会員登録は停止している。
+sources:
+  - title: JR九州の飲食店子会社、個人情報2万6900人分漏洩か - 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOJC140JR0U6A011C2000000/
