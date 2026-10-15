@@ -4,7 +4,7 @@ services:
 country: JP
 date_announced: 2026-10-14
 affected_count: 4103
-cause: unknown
+cause: third_party
 vendor:
   name: コミューン
 data_types:
