@@ -1,0 +1,14 @@
+organization: 株式会社キングプリンターズ
+industry: 製造
+country: JP
+date_occurred: 2026-09-10
+leaked: false
+date_announced: 2026-09-25
+cause: unauthorized_access
+root_cause: システム基盤への不正アクセス。同社の認証情報を使った生成AIサービスの不正利用が目的とみられる
+summary: 9月10日に同社が管理するシステム基盤への不正アクセスを検知し、9月14日までサービスを停止した。同社が持つ認証情報を使った生成AIサービスの不正利用が目的とみられる。顧客情報への不正アクセスや外部送信の痕跡はなく、個人情報の漏えいは確認されていないとしている。クレジットカード情報は保有しておらず、パスワードはハッシュ化して保管している。
+sources:
+  - title: キングプリンターズ 公式発表（第2報）
+    url: https://kingprinters.com/news/2026/oshirase_20260925
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/15/56458.html

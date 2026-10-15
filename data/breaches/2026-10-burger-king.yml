@@ -1,0 +1,26 @@
+organization: 株式会社ビーケー・ジャパン
+services:
+  - バーガーキング公式アプリ
+industry: 飲食
+country: JP
+date_occurred: 2026-10-02
+date_announced: 2026-10-15
+affected_count: 11180000
+count_note: 約1,118万件
+cause: unauthorized_access
+data_types:
+  - 会員ID
+  - メールアドレス
+  - 性別
+  - 生年月日
+  - 氏名
+  - 電話番号
+  - 利用履歴
+summary: バーガーキング公式アプリの会員情報を管理するシステムが第三者による不正アクセスを受け、約1,118万件の会員情報が漏えいしたと公表した。不正アクセスは10月2日から7日にかけて行われ、10月13日に判明した。漏えいしたのは会員ID、メールアドレス、都道府県、性別、生年月日、氏名（漢字・カナ）、電話番号、モバイルオーダーの利用履歴の有無で、クレジットカード番号は保有しておらず、ログインパスワードの漏えいは確認されていない。経緯と詳しい原因は調査中としている。
+sources:
+  - title: バーガーキング 公式発表
+    url: https://www.burgerking.co.jp/images/notice/2026/10/15/d4d114ca-ebd7-4f3d-94ef-c4ea7a84a139.pdf
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/15/2000002306/
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2148458.html

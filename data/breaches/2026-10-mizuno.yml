@@ -1,0 +1,13 @@
+organization: ミズノ株式会社
+services:
+  - ミズノ公式オンライン
+industry: 製造
+country: JP
+date_occurred: 2026-10-13
+leaked: false
+date_announced: 2026-10-13
+cause: unauthorized_access
+summary: 10月13日朝から夜にかけて「ミズノ公式オンライン」など公式サイトが停止した。当初はサーバー障害として、サイバー攻撃の可能性を含めて調査するとしていたが、原因は外部からの不正アクセスだったと明らかにした。13日夜に復旧し、個人情報の流出がないことと、サイトの安全性を確認したとしている。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUF137PD0T11C26A0000000/

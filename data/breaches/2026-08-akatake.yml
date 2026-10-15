@@ -1,0 +1,25 @@
+organization: 赤武エンジニアリング株式会社
+industry: 製造
+country: JP
+date_occurred: 2026-08-10
+date_announced: 2026-08-13
+affected_count: 11712
+count_note: 漏えいのおそれ11,712件（従業員125件、取引先担当者11,587件）
+cause: ransomware
+data_types:
+  - 氏名
+  - 住所
+  - 生年月日
+  - 性別
+  - 電話番号
+  - メールアドレス
+  - 従業員情報
+  - 取引先情報
+summary: 8月10日にサーバー内のファイルの一部が暗号化されるランサムウェア被害を受けたと公表した。攻撃者が何らかの方法で管理者権限を取得し、ランサムウェアを配布したとみられる。10月13日の最終報で、従業員125件（氏名・住所・生年月日・性別・電話番号・メールアドレス・暗号化して保管していたマイナンバー）と取引先担当者11,587件（氏名・電話番号・メールアドレス）の計11,712件に漏えいのおそれがあるとした。外部送信の明確な痕跡はないが、窃取の可能性を否定できないとしている。
+sources:
+  - title: 赤武エンジニアリング 公式発表（第1弾）
+    url: https://www.akatake.co.jp/news/2026/4527/
+  - title: 赤武エンジニアリング 公式発表（最終報）
+    url: https://akatake.co.jp/news/2026/4531/
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/09/02/56105.html
