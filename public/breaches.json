@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-15T04:06:28.000Z",
-  "count": 439,
+  "generated_at": "2026-10-15T10:20:36.000Z",
+  "count": 488,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,1314 @@
   ],
   "breaches": [
     {
+      "id": "2026-10-burger-king",
+      "organization": "株式会社ビーケー・ジャパン",
+      "services": [
+        "バーガーキング公式アプリ"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_occurred": "2026-10-02",
+      "date_announced": "2026-10-15",
+      "affected_count": 11180000,
+      "count_note": "約1,118万件",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "会員ID",
+        "メールアドレス",
+        "性別",
+        "生年月日",
+        "氏名",
+        "電話番号",
+        "利用履歴"
+      ],
+      "summary": "バーガーキング公式アプリの会員情報を管理するシステムが第三者による不正アクセスを受け、約1,118万件の会員情報が漏えいしたと公表した。不正アクセスは10月2日から7日にかけて行われ、10月13日に判明した。漏えいしたのは会員ID、メールアドレス、都道府県、性別、生年月日、氏名（漢字・カナ）、電話番号、モバイルオーダーの利用履歴の有無で、クレジットカード番号は保有しておらず、ログインパスワードの漏えいは確認されていない。経緯と詳しい原因は調査中としている。",
+      "sources": [
+        {
+          "title": "バーガーキング 公式発表",
+          "url": "https://www.burgerking.co.jp/images/notice/2026/10/15/d4d114ca-ebd7-4f3d-94ef-c4ea7a84a139.pdf"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/15/2000002306/"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2148458.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 13,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-hamamatsu-fire",
+      "organization": "静岡県浜松市（浜松市消防局）",
+      "services": [
+        "119RAIDEN",
+        "NET119緊急通報システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "静岡県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-15",
+      "affected_count": 2397,
+      "count_note": "計2,397人（119RAIDEN 2,223人、NET119 174人）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号"
+      ],
+      "summary": "浜松市消防局が利用する消防の一斉連絡システム「119RAIDEN」と、聴覚・言語に障害のある人向けの「NET119緊急通報システム」を運営するアルカディアが不正アクセスを受け、計2,397人の氏名、メールアドレス、電話番号などが漏えいした可能性があることが分かった。",
+      "sources": [
+        {
+          "title": "静岡放送（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/0282b32569c1ce91811e937aa0ef2e78a725c74a"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 4,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-medley-atlink",
+      "organization": "株式会社メドレー",
+      "services": [
+        "@link（アットリンク）",
+        "アットリンクアプリ"
+      ],
+      "industry": [
+        "IT・通信",
+        "医療"
+      ],
+      "country": "JP",
+      "date_announced": "2026-10-15",
+      "affected_count": null,
+      "count_note": "利用する最大787の医療機関が対象となる可能性。人数は調査中",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "健康・医療情報"
+      ],
+      "summary": "産婦人科向けの医療機関向けサービス「@link（アットリンク）」と患者向けの「アットリンクアプリ」などが第三者による不正アクセスを受け、登録された患者の個人情報が漏えいした可能性があると公表した。10月11日に外部の専門機関から情報提供を受けて調査を始め、不正アクセスを確認した。10月14日深夜にサービスを一時停止した。対象となり得るのはサービスを利用する最大787の医療機関で、漏えいした可能性がある情報の項目や人数は調査中としている。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC152JY0V11C26A0000000/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/15/2000002293/"
+        },
+        {
+          "title": "共同通信（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/9c17657bb7e048c97683e377a5b889ee41d93221"
+        },
+        {
+          "title": "CBnews",
+          "url": "https://www.cbnews.jp/news/entry/20261015173958"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-aena",
+      "organization": "株式会社アエナ",
+      "services": [
+        "アエナ公式ECアプリ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-10-14",
+      "affected_count": 817215,
+      "count_note": "最大817,215人（閲覧された可能性）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "生年月日",
+        "クレジットカード情報（番号の一部・有効期限等）"
+      ],
+      "summary": "公式ECアプリの会員マイページが第三者による不正アクセスを受け、最大81万7,215人分の会員情報が閲覧された可能性があると公表した。10月13日にシステムログの解析で判明した。対象は氏名、住所、電話番号、生年月日などと、登録したクレジットカードの下4桁・有効期限・名義で、カード番号の全桁とセキュリティコードは保持していない。ログインパスワードの流出は確認されていない。",
+      "sources": [
+        {
+          "title": "アエナ 公式発表",
+          "url": "https://www.aena.co.jp/news/detail/7826/"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC146230U6A011C2000000/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/14/2000002268/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-aomori-city",
+      "organization": "青森県青森市",
+      "services": [
+        "市メールマガジン（防災情報）",
+        "電話・FAX配信",
+        "職員安否確認メール"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "青森県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 7900,
+      "count_note": "延べ約7,900人（メールマガジン約4,900人、電話・FAX配信約100人、職員約2,900人）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "電話番号",
+        "従業員情報"
+      ],
+      "summary": "防災情報のメールマガジンなどを運営するアルカディアが不正アクセスを受け、メールマガジン登録者約4,900人のメールアドレス、電話・FAX配信の登録者約100人の氏名と電話・FAX番号、職員約2,900人の氏名・メールアドレス・所属の、延べ約7,900人分が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "青森市 お知らせ",
+          "url": "https://www.city.aomori.aomori.jp/anzen_kinkyu/bousai_shoubou/1002609/1002610/1011518.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-chiba-city",
+      "organization": "千葉県千葉市",
+      "services": [
+        "ちばし安全・安心メール",
+        "電話・FAXによる緊急情報配信"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "千葉県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": null,
+      "count_note": "件数は未確認",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "電話番号"
+      ],
+      "summary": "「ちばし安全・安心メール」と電話・FAXによる緊急情報配信のサービスを運営するアルカディアが不正アクセスを受け、登録者のメールアドレスと配信を希望する地域、電話・FAXの登録者の氏名と電話番号などが漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "千葉市 お知らせ",
+          "url": "https://www.city.chiba.jp/shimin/shimin/chiikianzen/chiba-an_oshirase1.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-chiba-pref",
+      "organization": "千葉県",
+      "services": [
+        "職員参集システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "千葉県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 4300,
+      "count_note": "約4,300人（職員）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "従業員情報"
+      ],
+      "summary": "職員参集システムを運営するアルカディアが不正アクセスを受け、職員約4,300人の情報が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/0daae6be07efc9822d8c9c8440a674304dcd9bf4"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-fujisawa-city",
+      "organization": "神奈川県藤沢市",
+      "services": [
+        "防災・健康情報メールマガジン",
+        "職員用メーリングリスト"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "神奈川県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 7060,
+      "count_note": "延べ7,060件",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "電話番号",
+        "従業員情報"
+      ],
+      "summary": "防災・健康情報のメールマガジンと職員用メーリングリストを運営するアルカディアが不正アクセスを受け、市民のメールアドレスと職員の氏名・メールアドレス・電話番号など、延べ7,060件が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/c3c39d6c0c85817132df81eed72395da12630abc"
+        },
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/cb31428272794f05dc8ee754854038acb0a6c779"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-hakodate-city",
+      "organization": "北海道函館市",
+      "services": [
+        "防災メール"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "北海道",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 12000,
+      "count_note": "約1万2,000件",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "防災メールの配信サービスを運営するアルカディアが不正アクセスを受け、登録者のメールアドレス約1万2,000件が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261014de59411"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-higashine-city",
+      "organization": "山形県東根市",
+      "services": [
+        "東根市登録制メール"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "山形県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 600,
+      "count_note": "約600人（3月以降の登録分）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "「東根市登録制メール」を運営するアルカディアが不正アクセスを受け、3月以降に登録した約600人のメールアドレスが漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "東根市 お知らせ",
+          "url": "https://www.city.higashine.yamagata.jp/news/3873"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-hiroshima-pref-police",
+      "organization": "広島県警察",
+      "services": [
+        "災害時の職員安否確認システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "広島県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 5700,
+      "count_note": "約5,700人（警察官・職員）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "氏名",
+        "従業員情報",
+        "メールアドレス"
+      ],
+      "summary": "災害時の職員安否確認システムを委託していたアルカディアが不正アクセスを受け、警察官・職員約5,700人の氏名、所属、私用メールアドレスが漏えいした可能性があることが分かった。",
+      "sources": [
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261014de59273"
+        },
+        {
+          "title": "FNNプライムオンライン（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/3e509b6dbe802030061a35eb5b128b5eb5be36ce"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-hyogo-pref-police",
+      "organization": "兵庫県警察",
+      "services": [
+        "災害時の安否確認システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "兵庫県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 13000,
+      "count_note": "約1万3,000人（職員）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "従業員情報"
+      ],
+      "summary": "災害時の安否確認システムを委託していたアルカディアが不正アクセスを受け、職員約1万3,000人のメールアドレス、氏名の一部、所属コードが漏えいした可能性があることが分かった。",
+      "sources": [
+        {
+          "title": "山陽新聞（共同通信）",
+          "url": "https://www.sanyonews.jp/article/2005064"
+        },
+        {
+          "title": "nippon.com（共同通信）",
+          "url": "https://www.nippon.com/ja/news/kd1483316459534943019/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-ibaraki-pref",
+      "organization": "茨城県",
+      "services": [
+        "茨城県防災情報メール",
+        "河川課の情報配信"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "茨城県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 19400,
+      "count_note": "約1万9,400件（職員などのメールアドレス約800件、防災情報メール登録者1万8,600件）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "配信サービスを運営するアルカディアが不正アクセスを受け、10月14日に職員などのメールアドレス約800件、15日に茨城県防災情報メールの登録者1万8,600件のメールアドレスが漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/56603cff9d64e0af95e699bc5d4cf177165a1da2"
+        },
+        {
+          "title": "LuckyFM茨城放送",
+          "url": "https://lucky-ibaraki.com/news_list/859373/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-imabari-city",
+      "organization": "愛媛県今治市",
+      "services": [
+        "いまばり火災メール"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "愛媛県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 4000,
+      "count_note": "約4,000件（登録者約2,700人、職員約1,300人）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "従業員情報"
+      ],
+      "summary": "「いまばり火災メール」などの配信サービスを提供するアルカディアが不正アクセスを受け、登録者約2,700人のメールアドレスと居住地、職員約1,300人の氏名と所属など、約4,000件が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/50dc7a091f7fd7c2f7ad607de2c9cbc8be87846a"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-izumi",
+      "organization": "株式会社イズミ",
+      "services": [
+        "ゆめオンライン",
+        "ゆめデリバリー"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-10-14",
+      "affected_count": 400000,
+      "count_note": "最大約40万件（漏えいの可能性）",
+      "cause": "third_party",
+      "root_cause": "メールマガジン配信の委託先が使うIDCFクラウドへのランサムウェア攻撃",
+      "vendor": {
+        "name": "株式会社IDCフロンティア",
+        "group": "ソフトバンクグループ"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "「ゆめタウン」を展開するイズミは、通販「ゆめオンライン」と配送サービス「ゆめデリバリー」の会員の氏名とメールアドレスが、最大約40万件漏えいした可能性があると公表した。メールマガジンの配信を委託する事業者が使うIDCフロンティアのクラウドが不正アクセスを受けた。住所・電話番号・クレジットカード番号は含まれない。外部への漏えいや不正利用は確認されておらず、メールマガジンの配信を停止している。",
+      "sources": [
+        {
+          "title": "イズミ 公式発表",
+          "url": "https://www.izumi.co.jp/news_release/assets/dc18e543b048e2f1a4d596bb0035aaaf.pdf"
+        },
+        {
+          "title": "時事通信",
+          "url": "https://sp.m.jiji.com/article/show/3888812"
+        },
+        {
+          "title": "中国新聞",
+          "url": "https://www.chugoku-np.co.jp/articles/-/909401"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261014de59111"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-kanuma-city",
+      "organization": "栃木県鹿沼市",
+      "services": [
+        "市防災情報配信サービス"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "栃木県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 7800,
+      "count_note": "約7,800人",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "防災情報配信サービス（防災メール）を運営するアルカディアが不正アクセスを受け、登録者約7,800人の氏名とメールアドレスが漏えいした可能性があると臨時の記者会見で公表した。",
+      "sources": [
+        {
+          "title": "下野新聞",
+          "url": "https://www.shimotsuke.co.jp/articles/-/1440273"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-kobe-city-npo",
+      "organization": "兵庫県神戸市",
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "兵庫県",
+      "date_announced": "2026-10-14",
+      "affected_count": 434,
+      "count_note": "61法人の役員・社員計434人",
+      "cause": "human_error",
+      "root_cause": "住所をマスキングした名簿を、マスキングを外せる状態のまま公開した",
+      "data_types": [
+        "住所"
+      ],
+      "summary": "市のホームページと内閣府のサイトで公開していたNPO法人の役員・社員名簿で、住所のマスキング処理が外せる状態のまま掲載され、61法人計434人の住所が閲覧できる状態だったと公表した。マスキング処理後のデータをそのまま公開したことが原因で、市は対象者に謝罪文を送り、編集ソフトの導入などの再発防止策をとるとしている。",
+      "sources": [
+        {
+          "title": "神戸新聞NEXT（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/cc8bb85934d2f3d7bc183112adb1d26d489291bf"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-kobe-city-staff",
+      "organization": "兵庫県神戸市",
+      "services": [
+        "職員情報伝達メールシステム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "兵庫県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 13000,
+      "count_note": "約1万3,000人（職員）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "従業員情報"
+      ],
+      "summary": "職員情報伝達メールシステムに使っていたアルカディアのSpeeCAN RAIDENが不正アクセスを受け、職員約1万3,000人分の情報が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "神戸市 お知らせ",
+          "url": "https://www.city.kobe.lg.jp/a95474/496502948727.html"
+        },
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4238d4d032dc9d9f75cc71053fd408a4610f7ef1"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-matsusaka-city",
+      "organization": "三重県松阪市",
+      "services": [
+        "SpeeCAN RAIDEN",
+        "おかえりSOSネットワークまつさか"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "三重県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 8363,
+      "count_note": "8,363件（5サービス。うち「おかえりSOSネットワークまつさか」の1,043件は顔写真を含む）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "保存データ（写真・文書等）"
+      ],
+      "summary": "松阪市と松阪地区広域消防組合は、アルカディアが運営する5つのサービスで計8,363件の氏名やメールアドレスなどが漏えいした可能性があると公表した。行方不明者の早期発見のための「おかえりSOSネットワークまつさか」の1,043件には顔写真が含まれる。",
+      "sources": [
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/20b812ef8219fec5c9d23a098e5f0e1aa1472d2b"
+        },
+        {
+          "title": "中日新聞",
+          "url": "https://www.chunichi.co.jp/article/1325192"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-matsuyama-city",
+      "organization": "愛媛県松山市",
+      "services": [
+        "まつやま防災メール",
+        "まつやま防災イベントメール",
+        "職員参集メール"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "愛媛県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 20000,
+      "count_note": "のべ約2万件（防災メールなどの登録者と職員約4,000件）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "「まつやま防災メール」などの配信サービスを提供するアルカディアが不正アクセスを受け、防災メールなどの登録者と職員のメールアドレスなど、のべ約2万件が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "南海放送（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/621e96544e5322b2fccf47ba0f60407c48aa4321"
+        },
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/9640b19a809c0799c3b18df27e24a037b44cae7d"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-mazda-community",
+      "organization": "マツダ株式会社",
+      "services": [
+        "CLUB MAZDA COMMUNITY"
+      ],
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2026-10-05",
+      "date_announced": "2026-10-14",
+      "affected_count": 4103,
+      "count_note": "最大4,103名（会員と、運営を担当するマツダ従業員）",
+      "cause": "third_party",
+      "root_cause": "委託先のシステムの不備を突かれ、第三者が管理者等になりすまして不正アクセスした",
+      "vendor": {
+        "name": "コミューン"
+      },
+      "data_types": [
+        "メールアドレス",
+        "会員ID",
+        "利用履歴"
+      ],
+      "summary": "会員向けコミュニティサイト「CLUB MAZDA COMMUNITY」で、運営を委託するコミューン株式会社の「Commune」が不正アクセスを受け、会員と運営を担当する従業員の最大4,103名分の情報が閲覧・取得された可能性があると公表した。対象はメールアドレス、会員ID、居住地（都道府県）、購買・利用状況の履歴、趣味・嗜好、アンケートの回答などで、クレジットカード情報は含まない。",
+      "sources": [
+        {
+          "title": "マツダ 公式発表",
+          "url": "https://newsroom.mazda.com/ja/publicity/release/2026/202610/261014a.pdf"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC147350U6A011C2000000/"
+        },
+        {
+          "title": "RCC中国放送（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/3f93e03469df320160ecc8472a5179bc3232e5da"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 9,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-miyagi-pref",
+      "organization": "宮城県",
+      "services": [
+        "職員安否確認システム",
+        "総合防災情報システム「MIDORI」"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "宮城県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 13000,
+      "count_note": "職員・教職員など約1万3,000人。ほかに配信先の市町村・消防機関のアドレス約300件",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "従業員情報"
+      ],
+      "summary": "職員安否確認システムなどを運営するアルカディアが不正アクセスを受け、職員・教職員など約1万3,000人の所属、氏名、メールアドレスと、総合防災情報システム「MIDORI」の配信先である市町村・消防機関のメールアドレス約300件が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/265c8a28ad9822c96eef6be9131ec868623cee9c"
+        },
+        {
+          "title": "Yahoo!ニュース（MIDORI）",
+          "url": "https://news.yahoo.co.jp/articles/bf2c9fc8cd1eee33ae3667d2c80294f2527ea816"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-nagaoka-city",
+      "organization": "新潟県長岡市",
+      "services": [
+        "ながおかDメールプラス"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "新潟県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 15608,
+      "count_note": "のべ1万5,608件（Dメールのアドレス1万1,492件を含む）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名"
+      ],
+      "summary": "「ながおかDメールプラス」などの配信サービスを運営するアルカディアが不正アクセスを受け、メールアドレスや氏名など、のべ1万5,608件が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b3954394fa7c012e2f44edc4636e2a5d252ebf56"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-nagasaki-city",
+      "organization": "長崎県長崎市",
+      "services": [
+        "防災メール"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "長崎県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 28432,
+      "count_note": "2万8,432人",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "防災メールの配信サービスを運営するアルカディアが不正アクセスを受け、登録者2万8,432人のメールアドレスが漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "KTNテレビ長崎（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/8e913b5ef87a8d7890ab590e0bd15762ed784b6c"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-naka-town",
+      "organization": "徳島県那賀町",
+      "services": [
+        "認知症高齢者の行方不明時の情報配信"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "徳島県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 165,
+      "count_note": "氏名・メールアドレス165人（うち住所49人）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "住所"
+      ],
+      "summary": "認知症の高齢者が行方不明になったときの情報配信サービスを運営するアルカディアが不正アクセスを受け、165人の氏名とメールアドレス、うち49人の住所が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/92b9fffe5fc807e06d51c0d82b4d3ec8ce18ce63"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-oita-city",
+      "organization": "大分県大分市",
+      "services": [
+        "防災メール",
+        "電話・FAX配信サービス",
+        "職員参集システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "大分県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 32000,
+      "count_note": "約3万2,000件（防災メールのアドレス約2万8,200件を含む）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "メールアドレス",
+        "電話番号",
+        "従業員情報"
+      ],
+      "summary": "防災メールや職員参集システムなどを運営するアルカディアが不正アクセスを受け、防災メールの登録者のメールアドレス約2万8,200件を含む約3万2,000件の情報が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a9ae71fee766a56031131cabf909f0b7a5d7511d"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-okayama-pref-police",
+      "organization": "岡山県警察",
+      "services": [
+        "安否確認システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "岡山県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 4000,
+      "count_note": "約4,000人（職員）。県民の情報は含まない",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "氏名",
+        "従業員情報",
+        "メールアドレス"
+      ],
+      "summary": "安否確認システムを委託していたアルカディアが不正アクセスを受け、職員約4,000人の氏名、所属、個人の携帯電話のメールアドレスが漏えいした可能性があるとして、全職員に通知した。県民の情報は含まれない。",
+      "sources": [
+        {
+          "title": "KSB瀬戸内海放送",
+          "url": "https://news.ksb.co.jp/article/16966396"
+        },
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2e102875a18e6663831e89b189313c9a9c48fdfb"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-osaki-fire",
+      "organization": "大崎地域広域行政事務組合",
+      "services": [
+        "NET119緊急通報システム",
+        "消防職員などの連絡システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "宮城県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 125,
+      "count_note": "125人",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "住所",
+        "電話番号",
+        "健康・医療情報",
+        "従業員情報"
+      ],
+      "summary": "大崎地域広域行政事務組合消防本部が利用するNET119緊急通報システムなどを運営するアルカディアが不正アクセスを受け、125人分の住所、電話番号、障害の状況、血液型、勤務先などが漏えいした可能性があることが分かった。",
+      "sources": [
+        {
+          "title": "仙台放送（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/abfa1a10564cf33a026339498b38f563f8e785fd"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-sapporo-city",
+      "organization": "北海道札幌市",
+      "services": [
+        "避難連絡関連のサービス"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "北海道",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": null,
+      "count_note": "報道により522人・約500人・2,500件と異なる",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "氏名",
+        "電話番号"
+      ],
+      "summary": "避難連絡に関するサービスを運営するアルカディアが不正アクセスを受け、氏名や電話番号などが漏えいした可能性があると公表した。件数は報道により522人、約500人、2,500件と異なる。",
+      "sources": [
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/29449d188ecd71601b9d4f2c715caa016c8afb45"
+        },
+        {
+          "title": "北海道新聞",
+          "url": "https://www.hokkaido-np.co.jp/article/1389475/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-suzuka-city",
+      "organization": "三重県鈴鹿市",
+      "services": [
+        "災害メール",
+        "職員参集システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "三重県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 11841,
+      "count_note": "約1万1,841件（市民のメールアドレス1万396件、職員1,445人）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "従業員情報"
+      ],
+      "summary": "災害メールと職員参集システムを運営するアルカディアが不正アクセスを受け、市民のメールアドレス1万396件と職員1,445人の氏名・所属など、計約1万1,841件が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "伊勢新聞",
+          "url": "https://www.isenp.co.jp/2026/10/15/154579/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-tahara-city",
+      "organization": "愛知県田原市",
+      "services": [
+        "防災情報配信サービス"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "愛知県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 13600,
+      "count_note": "約1万3,600件",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "防災情報配信サービスを運営するアルカディアが不正アクセスを受け、登録者のメールアドレスなど約1万3,600件が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/cb9bd9a1cb59d84923d26108b2349f62c82826d6"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-transcosmos",
+      "organization": "トランスコスモス株式会社",
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-10-14",
+      "affected_count": 4682,
+      "cause": "third_party",
+      "root_cause": "委託先の動画面接サービスで、利用するデータ分析ツールの脆弱性を悪用された",
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "生年月日",
+        "性別"
+      ],
+      "summary": "2019年11月から2021年12月にコールセンターの契約社員に応募した4,682名の氏名、メールアドレス、電話番号、生年月日、性別が流出したと公表した。委託先の株式会社ApplyNowが提供する動画面接のサービスで、データ分析ツールの脆弱性を悪用した不正アクセスがあった。9月16日に判明した。画像や面接の動画は流出していない。",
+      "sources": [
+        {
+          "title": "トランスコスモス 公式発表",
+          "url": "https://www.trans-cosmos.co.jp/company/news/pdf/2026/261014.pdf"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC146Y60U6A011C2000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-yatsushiro-city",
+      "organization": "熊本県八代市",
+      "services": [
+        "メール配信サービス"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "熊本県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 15000,
+      "count_note": "メールアドレス約1万5,000件（うち約400件は氏名・電話番号も）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "電話番号"
+      ],
+      "summary": "メール配信サービスを運営するアルカディアが不正アクセスを受け、メールアドレス約1万5,000件と、うち約400件の氏名・電話番号が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "熊本日日新聞（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/670fc599647b974f8f6e4b189f08dd6b92bee3da"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-yokohama-city",
+      "organization": "神奈川県横浜市",
+      "services": [
+        "区の緊急時情報伝達システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "神奈川県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 2000,
+      "count_note": "約2,000人（鶴見・西・中・港南・磯子・戸塚・栄・瀬谷の8区）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "summary": "鶴見・西・中・港南・磯子・戸塚・栄・瀬谷の8区が使う緊急時の情報伝達システムを運営するアルカディアが不正アクセスを受け、約2,000人分の情報が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "横浜市磯子区 お知らせ",
+          "url": "https://www.city.yokohama.lg.jp/isogo/bosai_bohan/saigai/sonota/20261014.html"
+        },
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/08cb1789bc2d70dc163543913a42cdca4a0f6c6a"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 3,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-arcadia",
+      "organization": "株式会社アルカディア",
+      "services": [
+        "SpeeCAN RAIDEN",
+        "ライデン・スクール",
+        "119RAIDEN",
+        "NET119緊急通報システム"
+      ],
+      "industry": [
+        "IT・通信",
+        "行政"
+      ],
+      "country": "JP",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-13",
+      "affected_count": 3136000,
+      "count_note": "SpeeCAN RAIDENでメールアドレス約313万6,000件、電話番号約10万5,000件、FAX番号約1万5,000件（いずれも漏えいの可能性がある最大値）。ほかにNET119約1万3,000件、119RAIDENでメールアドレス最大約9万7,000件など",
+      "cause": "unauthorized_access",
+      "root_cause": "自治体向け配信サービスへの第三者による不正アクセス（侵入経路は非公表）",
+      "data_types": [
+        "メールアドレス",
+        "電話番号",
+        "氏名",
+        "住所",
+        "生年月日",
+        "健康・医療情報"
+      ],
+      "summary": "大阪府箕面市のアルカディアは、自治体向けの防災情報配信サービス「SpeeCAN RAIDEN」などが第三者による不正アクセスを受けたと公表した。10月11日16時30分に不審な挙動を確認し、13日にSpeeCAN RAIDENの一部環境と「ライデン・スクール」を緊急停止した。SpeeCAN RAIDENのメールアドレス約313万6,000件、電話番号約10万5,000件、FAX番号約1万5,000件が漏えいした可能性がある。14日には、聴覚・言語に障害のある人向けの「NET119緊急通報システム」約1万3,000件（利用者名・生年月日・住所など）と、消防の一斉連絡システム「119RAIDEN」にも影響があると公表した。総務省によると、情報漏えいのおそれを報告した自治体は14日時点で111にのぼる。サービスは15日に復旧した。",
+      "sources": [
+        {
+          "title": "アルカディア 公式発表",
+          "url": "https://www.arcadia.co.jp/info/4076"
+        },
+        {
+          "title": "アルカディア 公式発表（PDF）",
+          "url": "https://www.arcadia.co.jp/wp-content/uploads/2026/10/20261012_SpeeCANRAIDEN_cyberattack.pdf"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF139TI0T11C26A0000000/"
+        },
+        {
+          "title": "ITmedia NEWS（NET119・119RAIDEN）",
+          "url": "https://www.itmedia.co.jp/news/article/2610/15/2000002288/"
+        },
+        {
+          "title": "TBS NEWS DIG（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/778a96e2435cea30e59cd43e8263172829d3411a"
+        },
+        {
+          "title": "日本経済新聞（復旧）",
+          "url": "https://www.nikkei.com/article/DGXZQOUF1550O0V11C26A0000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 2,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-ayase-city-email",
       "organization": "神奈川県綾瀬市",
       "services": [
@@ -480,9 +1788,17 @@
       "date_occurred": "2026-10-11",
       "date_announced": "2026-10-13",
       "affected_count": 11053,
-      "cause": "unauthorized_access",
-      "summary": "神奈川県綾瀬市が運営する「あやせ安全・安心メールサービス」に対し、2026年10月11日に不正アクセスが発生し、利用者約1万1053人の居住地区名やメールアドレスが漏えいした可能性があると市が発表した。市職員数百人分のメールアドレス、氏名、居住地区名も同様に漏えいした可能性がある。サービスは大阪府内の委託会社が運営していた。",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "summary": "神奈川県綾瀬市が運営する「あやせ安全・安心メールサービス」に対し、2026年10月11日に不正アクセスが発生し、利用者約1万1053人の居住地区名やメールアドレスが漏えいした可能性があると市が発表した。市職員数百人分のメールアドレス、氏名、居住地区名も同様に漏えいした可能性がある。サービスは委託先のアルカディアが運営していた。",
       "sources": [
+        {
+          "title": "綾瀬市 お知らせ",
+          "url": "https://www.city.ayase.kanagawa.jp/soshiki/kikikanrika/bosai_bohan_anzen_anshin/1/25245.html"
+        },
         {
           "title": "安全メールに不正アクセス　綾瀬市民1.1万人の個人情報流出か（毎日新聞） - Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/e2cdb155b0bf87a12f96a7a3e39df39ad3563117"
@@ -490,7 +1806,95 @@
       ],
       "severity": null,
       "disclosure_days": 2,
-      "reliability": "mid"
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-idare",
+      "organization": "株式会社Fivot",
+      "services": [
+        "IDARE"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-08-10",
+      "date_announced": "2026-10-13",
+      "affected_count": 129659,
+      "count_note": "129,659人（退会者を含む9月27日までの登録者）",
+      "cause": "vulnerability",
+      "root_cause": "カスタマーサポートなどに使っていた外部ソフトウェアの脆弱性を悪用された",
+      "data_types": [
+        "電話番号",
+        "メールアドレス",
+        "生年月日",
+        "資産・取引情報",
+        "氏名",
+        "住所",
+        "クレジットカード情報（番号の一部・有効期限等）"
+      ],
+      "summary": "キャッシュレスサービス「IDARE」で、カスタマーサポートなどに使っていた外部ソフトウェアの脆弱性を悪用され、8月10日から9月27日にかけて複数回データベースから情報を取得されたと公表した。対象は退会者を含む12万9,659人で、全員分の電話番号・メールアドレス・生年月日・残高・取引履歴など、一部の人の氏名・住所・クレジットカード番号の一部が含まれる。ログインパスワード、本人確認書類の画像、カード番号の全桁、セキュリティコードは含まれない。",
+      "sources": [
+        {
+          "title": "IDARE 公式発表",
+          "url": "https://idare.jp/news/1926/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/13/2000002233/"
+        },
+        {
+          "title": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2148121.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 64,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-jr-central-market",
+      "organization": "東海旅客鉄道株式会社",
+      "group": "JR東海グループ",
+      "services": [
+        "JR東海MARKET",
+        "いいもの探訪"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2026-10-07",
+      "date_announced": "2026-10-13",
+      "affected_count": 15000,
+      "count_note": "最大約1万5000件（10月7日時点のデータで算出）",
+      "cause": "third_party",
+      "root_cause": "メール配信を担う事業者が使っていたIDCFクラウドへのランサムウェア攻撃",
+      "vendor": {
+        "name": "株式会社IDCフロンティア",
+        "group": "ソフトバンクグループ"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "住所",
+        "電話番号",
+        "購入履歴"
+      ],
+      "summary": "ECサイト「JR東海MARKET」「いいもの探訪」で、メール配信を担う事業者が使っていたIDCフロンティアのクラウドが不正アクセスを受け、最大約1万5000件の情報が漏えいした可能性があると公表した。対象は配信先のメールアドレスと、配信メールの本文に含まれていた氏名・住所・電話番号・注文内容・配送先・アンケートの回答などで、クレジットカード情報とログインパスワードは含まれない。外部への流出は確認されておらず、別のクラウドでのメール配信に切り替えた。",
+      "sources": [
+        {
+          "title": "JR東海 公式発表",
+          "url": "https://jr-central.co.jp/news/release/_pdf/000046058.pdf"
+        },
+        {
+          "title": "JR東海MARKET お知らせ",
+          "url": "https://market.jr-central.co.jp/shop/pages/20261013.aspx"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/14/2000002237/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 6,
+      "reliability": "high"
     },
     {
       "id": "2026-10-jr-kyushu-foodservice",
@@ -534,13 +1938,19 @@
       "prefecture": "兵庫県",
       "date_occurred": "2026-10-11",
       "date_announced": "2026-10-13",
-      "affected_count": 2000,
-      "cause": "unauthorized_access",
+      "affected_count": 2200,
+      "count_note": "職員情報約2,200件（市の発表）。市民の情報の漏えいは確認されていない",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
       "vendor": {
         "name": "アルカディア"
       },
-      "summary": "兵庫県加古川市は、同市職員約2000人が登録している一斉メール配信サービスがサイバー攻撃を受け、氏名や個人メールアドレスなどの個人情報が漏洩した恐れがあると発表した。サービスは大阪府箕面市の事業者アルカディアが運用しており、10月11日に不正アクセスが確認され、同社は応急措置を経て13日に配信サービスを停止した。市は職員に対し不審なメールへの注意喚起を行っている。",
+      "summary": "兵庫県加古川市は、同市職員約2,200人が登録している一斉メール配信サービスがサイバー攻撃を受け、氏名や個人メールアドレスなどの個人情報が漏洩した恐れがあると発表した。サービスは大阪府箕面市の事業者アルカディアが運用しており、10月11日に不正アクセスが確認され、同社は応急措置を経て13日に配信サービスを停止した。市は職員に対し不審なメールへの注意喚起を行っている。",
       "sources": [
+        {
+          "title": "加古川市 お知らせ",
+          "url": "https://www.city.kakogawa.lg.jp/soshikikarasagasu/bousai/kikikanrisitsu/sizensaigai/kikikanrikakaranooshirase/51199.html"
+        },
         {
           "title": "職員2000人分の個人情報漏洩の恐れ　「アルカディア」サイバー攻撃で　兵庫・加古川市（産経新聞） - Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/678c5b7997683169cd9b6823a4acfa97c9b91af8"
@@ -548,6 +1958,224 @@
       ],
       "severity": null,
       "disclosure_days": 2,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-mizuno",
+      "organization": "ミズノ株式会社",
+      "services": [
+        "ミズノ公式オンライン"
+      ],
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2026-10-13",
+      "leaked": false,
+      "date_announced": "2026-10-13",
+      "cause": "unauthorized_access",
+      "summary": "10月13日朝から夜にかけて「ミズノ公式オンライン」など公式サイトが停止した。当初はサーバー障害として、サイバー攻撃の可能性を含めて調査するとしていたが、原因は外部からの不正アクセスだったと明らかにした。13日夜に復旧し、個人情報の流出がないことと、サイトの安全性を確認したとしている。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF137PD0T11C26A0000000/"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 0,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-ntt-exc-lstep",
+      "organization": "株式会社NTT ExCパートナー",
+      "group": "NTTグループ",
+      "services": [
+        "LStep"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2026-10-07",
+      "date_announced": "2026-10-13",
+      "affected_count": 90000,
+      "count_note": "最大約9万件（漏えいの可能性）",
+      "cause": "third_party",
+      "root_cause": "学習管理システムのメール配信サービスの提供事業者が使うIDCFクラウドへのランサムウェア攻撃",
+      "vendor": {
+        "name": "株式会社IDCフロンティア",
+        "group": "ソフトバンクグループ"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "クラウド型学習管理システム「LStep」のメール配信サービスの提供事業者がIDCフロンティアの環境を使っており、同社で発生した不正アクセスに伴い、利用者のメールアドレス最大約9万件が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "NTT ExCパートナー 公式発表",
+          "url": "https://www.nttexc.co.jp/news/detail20261013/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 6,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-rideon-express",
+      "organization": "株式会社ライドオンエクスプレスホールディングス",
+      "services": [
+        "銀のさら",
+        "釜寅",
+        "すし上等"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_occurred": "2026-10-07",
+      "date_announced": "2026-10-13",
+      "affected_count": 6500000,
+      "count_note": "最大約650万件（漏えいの可能性）",
+      "cause": "third_party",
+      "root_cause": "サーバー運営会社（委託先）がランサムウェア攻撃を受けた。報道では委託先が使うIDCFクラウドへの攻撃とされる",
+      "vendor": {
+        "name": "株式会社IDCフロンティア",
+        "group": "ソフトバンクグループ"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "生年月日",
+        "性別",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "購入履歴",
+        "会員ID"
+      ],
+      "summary": "宅配の「銀のさら」「釜寅」「すし上等」の公式サイト・公式アプリの登録者情報が、最大約650万件漏えいした可能性があると公表した。10月5日以降に不審なアクセスを検知し、7日早朝にサーバー障害が発生、サーバー運営会社からランサムウェア攻撃を受けたと報告を受けた。対象は氏名、住所、電話番号、メールアドレス、生年月日、性別、パスワードのハッシュ値、注文履歴などで、クレジットカード情報は保有していない。同社は委託先の社名を公表していないが、時事通信などはIDCフロンティアへの不正アクセスが原因と報じている。",
+      "sources": [
+        {
+          "title": "ライドオンエクスプレスホールディングス 公式発表（第3報）",
+          "url": "https://www.rideonexpresshd.co.jp/news/2026/10/3-33.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC138WT0T11C26A0000000/"
+        },
+        {
+          "title": "時事通信",
+          "url": "https://www.jiji.com/jc/article?k=2026101300974&g=eco"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2147767.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 6,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-saitama-city",
+      "organization": "埼玉県さいたま市",
+      "services": [
+        "防災行政無線メール",
+        "災害時防災情報電話サービス"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "埼玉県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-13",
+      "affected_count": 34856,
+      "count_note": "メールアドレス3万4,783件、氏名・電話番号73件",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "電話番号"
+      ],
+      "summary": "防災行政無線メールと災害時防災情報電話サービスを運営するアルカディアが不正アクセスを受け、メールアドレス3万4,783件と、氏名・電話番号73件が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "さいたま市 お知らせ",
+          "url": "https://www.city.saitama.lg.jp/001/011/015/004/002/p134482.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 2,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-shizuoka-city",
+      "organization": "静岡県静岡市",
+      "services": [
+        "防災メール"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "静岡県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-13",
+      "affected_count": 43000,
+      "count_note": "約4万3,000人（市民と職員）。10月14日に別の2サービスで700件以上を追加",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "防災メールなどを運営するアルカディアが不正アクセスを受け、市民と職員の約4万3,000人分のメールアドレスなどが漏えいした可能性があると公表した。10月14日には別の2つのサービスで700件以上が追加で判明した。",
+      "sources": [
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/bad822ff6a471025a7ed9ac1d4a215c8ce3ee857"
+        },
+        {
+          "title": "中日新聞",
+          "url": "https://www.chunichi.co.jp/article/1325173"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 2,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-skyperfectjsat",
+      "organization": "スカパーJSAT株式会社",
+      "services": [
+        "スカパー!メンバーズ"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_occurred": "2026-10-07",
+      "date_announced": "2026-10-13",
+      "count_note": "件数は非公表",
+      "cause": "third_party",
+      "root_cause": "メール配信用の外部サービスの一部が使うIDCFクラウドへのランサムウェア攻撃",
+      "vendor": {
+        "name": "株式会社IDCフロンティア",
+        "group": "ソフトバンクグループ"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "会員サービス「スカパー!メンバーズ」の会員（一部の退会者を含む）のメールアドレスが漏えいした可能性があると公表した。メール配信に使う外部サービスの一部がIDCフロンティアのクラウド基盤を使っていた。氏名、住所、電話番号、クレジットカード番号は含まれない。漏えいの有無は業務委託先と調査している。放送・動画配信の視聴には影響はない。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC1364V0T11C26A0000000/"
+        },
+        {
+          "title": "読売新聞（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/dce6ba1779f39dccf795b0671f05340e23aeb9fe"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 6,
       "reliability": "mid"
     },
     {
@@ -557,17 +2185,27 @@
         "防災情報メール",
         "防犯あんしんメール"
       ],
+      "industry": "行政",
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "神奈川県",
       "date_announced": "2026-10-13",
       "affected_count": 59000,
-      "cause": "unauthorized_access",
+      "count_note": "最大約5万9000件（防災情報メール4万7,065人、防犯あんしんメール1万848人など）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
       "data_types": [
         "メールアドレス"
       ],
       "summary": "神奈川県横須賀市は、防災情報メールや防犯あんしんメールの配信システムを提供する会社が第三者による不正アクセスを受け、最大約5万9000件のメールアドレスが漏洩した可能性があると発表した。漏洩は不審なメールが配信されたことから判明し、市はサービスを停止し原因究明に努めている。",
       "sources": [
+        {
+          "title": "横須賀市 お知らせ",
+          "url": "https://www.city.yokosuka.kanagawa.jp/0525/nagekomi/20261013_roueinoosore.html"
+        },
         {
           "title": "神奈川県横須賀市の防災情報メールで最大でおよそ5万9000件の個人情報が漏えいか　メール配信システムの提供会社に不正アクセス 利用者への不審メールで発覚（日テレNEWS NNN） - Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/2f2f31ec4617da7bb7cba8a3cb985e3d578d860b"
@@ -575,7 +2213,44 @@
       ],
       "severity": "medium",
       "disclosure_days": null,
-      "reliability": "mid"
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-tobu-leisure",
+      "organization": "東武レジャー企画株式会社",
+      "group": "東武グループ",
+      "services": [
+        "東武動物公園 公式サイトのお問い合わせフォーム"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-10-07",
+      "date_announced": "2026-10-12",
+      "affected_count": 600,
+      "count_note": "最大約600件（2026年3月以降にお問い合わせフォームを使った件数。漏えいの可能性）",
+      "cause": "third_party",
+      "root_cause": "利用していたIDCFクラウドへのランサムウェア攻撃",
+      "vendor": {
+        "name": "株式会社IDCフロンティア",
+        "group": "ソフトバンクグループ"
+      },
+      "data_types": [
+        "氏名",
+        "性別",
+        "電話番号",
+        "メールアドレス",
+        "保存データ（写真・文書等）"
+      ],
+      "summary": "東武動物公園の公式サイトのお問い合わせフォームについて、IDCフロンティアで発生した不正アクセスに伴い、最大約600件の情報が閲覧・取得された可能性を否定できないと公表した。対象は2026年3月以降にフォームを使った人の氏名、年齢、性別、電話番号、メールアドレス、添付画像などで、クレジットカード情報やパスワードは取得していない。漏えいは確認されていない。",
+      "sources": [
+        {
+          "title": "東武レジャー企画 公式発表",
+          "url": "https://www.tobuzoo.com/pdf/sS3zHUaAFnwIDQTkpLlXiGbgPc.pdf"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 5,
+      "reliability": "high"
     },
     {
       "id": "2026-10-yamaha-motor-pas-life",
@@ -636,8 +2311,8 @@
       "industry": "小売・EC",
       "country": "JP",
       "date_announced": "2026-10-09",
-      "affected_count": 6430000,
-      "count_note": "最大約643万件（会員番号の件数で、人数ではない）",
+      "affected_count": 6383279,
+      "count_note": "6,383,279人（10月13日の第2報。うち退会済みの会員212,371人）。外部への送信が確認された会員データは6,427,735件（会員番号ベース。初報では最大約643万件）",
       "cause": "unauthorized_access",
       "root_cause": "中古品を扱う子会社の会員管理システムへの第三者による不正アクセス（侵入経路は非公表）",
       "data_types": [
@@ -652,7 +2327,7 @@
         "会員ID",
         "ポイント情報"
       ],
-      "summary": "中古品を扱う子会社の会員管理システムが第三者による不正アクセスを受け、会員情報が外部に取得されたと公表した。10月6日に不正アクセスを確認した。対象は最大約643万件で、氏名・生年月日・性別・メールアドレス・電話番号・住所・パスワードのハッシュ値・ポイントカード番号・会員番号が含まれる。決済情報はこのシステムに保有していない。攻撃元からの通信を遮断し、脆弱性を是正した。",
+      "summary": "中古品を扱う子会社の会員管理システムが第三者による不正アクセスを受け、会員情報が外部に取得されたと公表した。10月6日に不正アクセスを確認した。対象は最大約643万件で、氏名・生年月日・性別・メールアドレス・電話番号・住所・パスワードのハッシュ値・ポイントカード番号・会員番号が含まれる。決済情報はこのシステムに保有していない。攻撃元からの通信を遮断し、脆弱性を是正した。10月13日の第2報で、対象者を退会済みの会員21万2,371人を含む638万3,279人と公表した。",
       "sources": [
         {
           "title": "ブックオフグループホールディングス株式会社 公式発表（適時開示）",
@@ -669,6 +2344,10 @@
         {
           "title": "共同通信（Yahoo!ニュース）",
           "url": "https://news.yahoo.co.jp/articles/a22c8ee6bd30eeab05d29a450d0c6db872c54167"
+        },
+        {
+          "title": "ネットショップ担当者フォーラム（第2報）",
+          "url": "https://netshop.impress.co.jp/n/2026/10/13/16850"
         }
       ],
       "severity": "high",
@@ -902,9 +2581,10 @@
       "industry": "交通・モビリティ",
       "country": "JP",
       "date_occurred": "2026-10-07",
+      "leaked": false,
       "date_announced": "2026-10-09",
       "affected_count": 1300000,
-      "count_note": "最大約130万件（漏えいの可能性）。メール配信を委託している会社の社名は公表されていない",
+      "count_note": "最大約130万件（漏えいの可能性。10月15日、漏えいの事実は確認されなかったと発表）。メール配信を委託している会社の社名は公表されていない",
       "cause": "third_party",
       "root_cause": "メールマガジンの配信委託先が使うIDCFクラウドがランサムウェア攻撃を受けた",
       "vendor": {
@@ -915,7 +2595,7 @@
         "メールアドレス",
         "利用履歴"
       ],
-      "summary": "JR九州Web会員向けメールマガジンの配信を委託している会社が使っていた、IDCフロンティアのクラウドサービス「IDCFクラウド」がランサムウェア攻撃を受け、Web会員のメールアドレスが最大約130万件漏えいした可能性があると公表した。対象はメールアドレスとメールのログデータで、第三者に閲覧・取得された可能性を否定できないとしている。氏名・住所・電話番号・クレジットカード番号、メールマガジンの件名・本文は含まれない。被害は確認されておらず、メールマガジンは配信できない状態となっている。",
+      "summary": "JR九州Web会員向けメールマガジンの配信を委託している会社が使っていた、IDCフロンティアのクラウドサービス「IDCFクラウド」がランサムウェア攻撃を受け、Web会員のメールアドレスが最大約130万件漏えいした可能性があると公表した。対象はメールアドレスとメールのログデータで、第三者に閲覧・取得された可能性を否定できないとしている。氏名・住所・電話番号・クレジットカード番号、メールマガジンの件名・本文は含まれない。被害は確認されておらず、メールマガジンは配信できない状態となっている。10月15日、IDCフロンティアの調査で個人情報が漏えいした事実は確認されなかったとの報告を受けたと発表した。",
       "sources": [
         {
           "title": "日本経済新聞",
@@ -932,6 +2612,10 @@
         {
           "title": "共同通信（Yahoo!ニュース）",
           "url": "https://news.yahoo.co.jp/articles/6e9ae3afa87d6703cc8e8a318ca556a9ada69e34"
+        },
+        {
+          "title": "NHKニュース（漏えい確認されず）",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261015de59858"
         }
       ],
       "severity": "high",
@@ -2213,7 +3897,7 @@
       "affected_count": null,
       "count_note": "個人情報の漏えいの有無は調査中（約495の企業・自治体に障害の影響）",
       "cause": "ransomware",
-      "summary": "クラウドサービス「IDCFクラウド」の一部システムが福島県白河市のデータセンターでランサムウェア攻撃を受け、茨城県庁など約495の企業・自治体でホームページが閲覧できないなどの障害が発生した。10月8日の第3報で、対象を東日本リージョン1の4ゾーンと特定し、そこに置かれた一部の顧客データは取り出しや復元が困難な見通しだとした。管理画面には攻撃者のものとみられる英語のメッセージが表示されたと報じられている。利用者が預けたデータを含め、個人情報が漏えいしたかどうかは公表されていない。利用企業側では、JR東日本・ビューカードがメール配信用に預けていた会員のメールアドレスなどが漏えいした可能性があると公表している。",
+      "summary": "クラウドサービス「IDCFクラウド」の一部システムが福島県白河市のデータセンターでランサムウェア攻撃を受け、茨城県庁など約495の企業・自治体でホームページが閲覧できないなどの障害が発生した。10月8日の第3報で、対象を東日本リージョン1の4ゾーンと特定し、そこに置かれた一部の顧客データは取り出しや復元が困難な見通しだとした。管理画面には攻撃者のものとみられる英語のメッセージが表示されたと報じられている。10月14日の第5報では、東日本リージョン1の4ゾーンで利用者の仮想サーバー内のデータが照会・持ち出しされた痕跡は確認されなかったとした。また、管理用のIDCFクラウドポータルで48社の登録情報に不正な照会があったが、外部へ持ち出された痕跡は確認されなかったとしている。東日本リージョン2・3と西日本リージョン1は調査を続けている。利用企業側では、JR東日本・ビューカードがメール配信用に預けていた会員のメールアドレスなどが漏えいした可能性があると公表している。",
       "sources": [
         {
           "title": "IDCフロンティア 公式発表（第1報）",
@@ -2232,6 +3916,10 @@
           "url": "https://www.idcf.jp/news/topics/20261009001"
         },
         {
+          "title": "IDCフロンティア 公式発表（第5報）",
+          "url": "https://www.idcf.jp/news/topics/20261014001"
+        },
+        {
           "title": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC076WG0X01C26A0000000/"
         },
@@ -2246,6 +3934,14 @@
         {
           "title": "ITmedia NEWS（攻撃者のメッセージ）",
           "url": "https://www.itmedia.co.jp/news/article/2610/09/2000002184/"
+        },
+        {
+          "title": "INTERNET Watch（第5報）",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2148166.html"
+        },
+        {
+          "title": "日本経済新聞（第5報）",
+          "url": "https://www.nikkei.com/article/DGXZQOUC147GX0U6A011C2000000/"
         }
       ],
       "severity": null,
@@ -2438,6 +4134,7 @@
     {
       "id": "2026-10-tobu-railway",
       "organization": "東武鉄道株式会社",
+      "group": "東武グループ",
       "industry": "交通・モビリティ",
       "country": "JP",
       "date_occurred": "2026-10-02",
@@ -4465,6 +6162,31 @@
       "reliability": "high"
     },
     {
+      "id": "2026-09-kingprinters",
+      "organization": "株式会社キングプリンターズ",
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2026-09-10",
+      "leaked": false,
+      "date_announced": "2026-09-25",
+      "cause": "unauthorized_access",
+      "root_cause": "システム基盤への不正アクセス。同社の認証情報を使った生成AIサービスの不正利用が目的とみられる",
+      "summary": "9月10日に同社が管理するシステム基盤への不正アクセスを検知し、9月14日までサービスを停止した。同社が持つ認証情報を使った生成AIサービスの不正利用が目的とみられる。顧客情報への不正アクセスや外部送信の痕跡はなく、個人情報の漏えいは確認されていないとしている。クレジットカード情報は保有しておらず、パスワードはハッシュ化して保管している。",
+      "sources": [
+        {
+          "title": "キングプリンターズ 公式発表（第2報）",
+          "url": "https://kingprinters.com/news/2026/oshirase_20260925"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/15/56458.html"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 15,
+      "reliability": "high"
+    },
+    {
       "id": "2026-09-legoland-japan",
       "organization": "LEGOLAND Japan合同会社",
       "services": [
@@ -4625,6 +6347,36 @@
       "reliability": "high"
     },
     {
+      "id": "2026-09-edogawa-naitei",
+      "organization": "東京都江戸川区",
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "東京都",
+      "date_occurred": "2026-09-18",
+      "date_announced": "2026-09-24",
+      "affected_count": 96,
+      "cause": "human_error",
+      "root_cause": "内定者への案内メールで、BCCではなく宛先欄にメールアドレスを入れて送信した",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "正規職員の内定者96名に「採用内定式」の案内メールを送る際、BCCではなく宛先欄にメールアドレスを入れて送信し、内定者のメールアドレスが互いに見える状態になったと公表した。9月18日に送信し、9月21日に担当者が気づいた。メールアドレス以外の個人情報は含まれない。",
+      "sources": [
+        {
+          "title": "江戸川区 公式発表",
+          "url": "https://www.city.edogawa.tokyo.jp/e004/kuseijoho/kohokocho/press/2026/09/0924.html"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/14/56452.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 6,
+      "reliability": "high"
+    },
+    {
       "id": "2026-09-ikegami",
       "organization": "池上通信機株式会社",
       "industry": "製造",
@@ -4650,6 +6402,40 @@
       ],
       "severity": null,
       "disclosure_days": 3,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-09-osaka-city-museum",
+      "organization": "大阪市",
+      "services": [
+        "大阪市立美術館"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "大阪府",
+      "date_occurred": "2026-09-10",
+      "date_announced": "2026-09-24",
+      "affected_count": 30,
+      "cause": "human_error",
+      "root_cause": "受講者1人への返信で、講座受講者のグループメールを宛先にしたまま確認せず送信した",
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "大阪市立美術館で、講座の受講者1人に返信する際に同じ講座の受講者のグループメールを宛先に設定したまま送信し、受講者30人の氏名とメールアドレスが漏えいしたと大阪市が公表した。9月10日に送信し、9月16日に受信者からの問い合わせで判明した。担当者は当日に気づいて謝罪と削除依頼をしたが、上司に報告していなかった。",
+      "sources": [
+        {
+          "title": "大阪市 報道発表",
+          "url": "https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000687654.html"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/14/56451.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 14,
       "reliability": "high"
     },
     {
@@ -5153,6 +6939,43 @@
       ],
       "severity": "medium",
       "disclosure_days": 1,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-09-mitsui-ocean-cruises",
+      "organization": "商船三井クルーズ株式会社",
+      "group": "商船三井グループ",
+      "services": [
+        "MITSUI OCEAN CRUISES"
+      ],
+      "industry": "旅行",
+      "country": "JP",
+      "date_announced": "2026-09-10",
+      "count_note": "件数は調査中（本社サーバー上の約20万ファイルを対象に調査）",
+      "cause": "lost_device",
+      "root_cause": "船内PCのデータ移行に使った外部記憶媒体の一部が見当たらなくなった",
+      "data_types": [
+        "氏名",
+        "住所",
+        "パスポート番号",
+        "健康・医療情報",
+        "アレルギー情報",
+        "口座番号",
+        "従業員情報"
+      ],
+      "summary": "「にっぽん丸」の船内PCのデータを移すために使った外部記憶媒体の一部が見当たらず、顧客と乗組員の個人情報が含まれていた可能性があると公表した。2026年7月に「MITSUI OCEAN SAKURA」の船内で確認した。顧客・乗組員の氏名、住所、旅券番号、医療・アレルギー情報など、乗組員の銀行口座や給与関係の情報が含まれる可能性がある。流出や不正利用は確認されておらず、個人情報保護委員会と警察に届け出た。",
+      "sources": [
+        {
+          "title": "商船三井クルーズ 公式発表",
+          "url": "https://www.mitsuioceancruises.com/news/20260910.html"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/09/29/56328.html"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": null,
       "reliability": "high"
     },
     {
@@ -5813,6 +7636,45 @@
       "severity": "high",
       "disclosure_days": null,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-08-akatake",
+      "organization": "赤武エンジニアリング株式会社",
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2026-08-10",
+      "date_announced": "2026-08-13",
+      "affected_count": 11712,
+      "count_note": "漏えいのおそれ11,712件（従業員125件、取引先担当者11,587件）",
+      "cause": "ransomware",
+      "data_types": [
+        "氏名",
+        "住所",
+        "生年月日",
+        "性別",
+        "電話番号",
+        "メールアドレス",
+        "従業員情報",
+        "取引先情報"
+      ],
+      "summary": "8月10日にサーバー内のファイルの一部が暗号化されるランサムウェア被害を受けたと公表した。攻撃者が何らかの方法で管理者権限を取得し、ランサムウェアを配布したとみられる。10月13日の最終報で、従業員125件（氏名・住所・生年月日・性別・電話番号・メールアドレス・暗号化して保管していたマイナンバー）と取引先担当者11,587件（氏名・電話番号・メールアドレス）の計11,712件に漏えいのおそれがあるとした。外部送信の明確な痕跡はないが、窃取の可能性を否定できないとしている。",
+      "sources": [
+        {
+          "title": "赤武エンジニアリング 公式発表（第1弾）",
+          "url": "https://www.akatake.co.jp/news/2026/4527/"
+        },
+        {
+          "title": "赤武エンジニアリング 公式発表（最終報）",
+          "url": "https://akatake.co.jp/news/2026/4531/"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/09/02/56105.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 3,
+      "reliability": "high"
     },
     {
       "id": "2026-08-charm",
