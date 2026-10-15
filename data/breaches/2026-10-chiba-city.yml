@@ -1,0 +1,24 @@
+organization: 千葉県千葉市
+services:
+  - ちばし安全・安心メール
+  - 電話・FAXによる緊急情報配信
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 千葉県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: null
+count_note: 件数は未確認
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - メールアドレス
+  - 氏名
+  - 電話番号
+summary: 「ちばし安全・安心メール」と電話・FAXによる緊急情報配信のサービスを運営するアルカディアが不正アクセスを受け、登録者のメールアドレスと配信を希望する地域、電話・FAXの登録者の氏名と電話番号などが漏えいした可能性があると公表した。
+sources:
+  - title: 千葉市 お知らせ
+    url: https://www.city.chiba.jp/shimin/shimin/chiikianzen/chiba-an_oshirase1.html

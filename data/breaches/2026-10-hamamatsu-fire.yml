@@ -1,0 +1,24 @@
+organization: 静岡県浜松市（浜松市消防局）
+services:
+  - 119RAIDEN
+  - NET119緊急通報システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 静岡県
+date_occurred: 2026-10-11
+date_announced: 2026-10-15
+affected_count: 2397
+count_note: 計2,397人（119RAIDEN 2,223人、NET119 174人）
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+summary: 浜松市消防局が利用する消防の一斉連絡システム「119RAIDEN」と、聴覚・言語に障害のある人向けの「NET119緊急通報システム」を運営するアルカディアが不正アクセスを受け、計2,397人の氏名、メールアドレス、電話番号などが漏えいした可能性があることが分かった。
+sources:
+  - title: 静岡放送（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/0282b32569c1ce91811e937aa0ef2e78a725c74a

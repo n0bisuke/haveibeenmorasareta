@@ -1,0 +1,21 @@
+organization: 長崎県長崎市
+services:
+  - 防災メール
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 長崎県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 28432
+count_note: 2万8,432人
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - メールアドレス
+summary: 防災メールの配信サービスを運営するアルカディアが不正アクセスを受け、登録者2万8,432人のメールアドレスが漏えいした可能性があると公表した。
+sources:
+  - title: KTNテレビ長崎（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/8e913b5ef87a8d7890ab590e0bd15762ed784b6c

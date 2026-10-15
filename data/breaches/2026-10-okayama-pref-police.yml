@@ -1,0 +1,25 @@
+organization: 岡山県警察
+services:
+  - 安否確認システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 岡山県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 4000
+count_note: 約4,000人（職員）。県民の情報は含まない
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - 氏名
+  - 従業員情報
+  - メールアドレス
+summary: 安否確認システムを委託していたアルカディアが不正アクセスを受け、職員約4,000人の氏名、所属、個人の携帯電話のメールアドレスが漏えいした可能性があるとして、全職員に通知した。県民の情報は含まれない。
+sources:
+  - title: KSB瀬戸内海放送
+    url: https://news.ksb.co.jp/article/16966396
+  - title: Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/2e102875a18e6663831e89b189313c9a9c48fdfb

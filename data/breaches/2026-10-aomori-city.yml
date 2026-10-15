@@ -1,0 +1,26 @@
+organization: 青森県青森市
+services:
+  - 市メールマガジン（防災情報）
+  - 電話・FAX配信
+  - 職員安否確認メール
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 青森県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 7900
+count_note: 延べ約7,900人（メールマガジン約4,900人、電話・FAX配信約100人、職員約2,900人）
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - メールアドレス
+  - 氏名
+  - 電話番号
+  - 従業員情報
+summary: 防災情報のメールマガジンなどを運営するアルカディアが不正アクセスを受け、メールマガジン登録者約4,900人のメールアドレス、電話・FAX配信の登録者約100人の氏名と電話・FAX番号、職員約2,900人の氏名・メールアドレス・所属の、延べ約7,900人分が漏えいした可能性があると公表した。
+sources:
+  - title: 青森市 お知らせ
+    url: https://www.city.aomori.aomori.jp/anzen_kinkyu/bousai_shoubou/1002609/1002610/1011518.html
