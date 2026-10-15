@@ -1,0 +1,23 @@
+organization: 株式会社アエナ
+services:
+  - アエナ公式ECアプリ
+industry: 小売・EC
+country: JP
+date_announced: 2026-10-14
+affected_count: 817215
+count_note: 最大817,215人（閲覧された可能性）
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - 生年月日
+  - クレジットカード情報（番号の一部・有効期限等）
+summary: 公式ECアプリの会員マイページが第三者による不正アクセスを受け、最大81万7,215人分の会員情報が閲覧された可能性があると公表した。10月13日にシステムログの解析で判明した。対象は氏名、住所、電話番号、生年月日などと、登録したクレジットカードの下4桁・有効期限・名義で、カード番号の全桁とセキュリティコードは保持していない。ログインパスワードの流出は確認されていない。
+sources:
+  - title: アエナ 公式発表
+    url: https://www.aena.co.jp/news/detail/7826/
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC146230U6A011C2000000/
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/14/2000002268/

@@ -1,0 +1,24 @@
+organization: 株式会社メドレー
+services:
+  - "@link（アットリンク）"
+  - アットリンクアプリ
+industry:
+  - IT・通信
+  - 医療
+country: JP
+date_announced: 2026-10-15
+affected_count: null
+count_note: 利用する最大787の医療機関が対象となる可能性。人数は調査中
+cause: unauthorized_access
+data_types:
+  - 健康・医療情報
+summary: 産婦人科向けの医療機関向けサービス「@link（アットリンク）」と患者向けの「アットリンクアプリ」などが第三者による不正アクセスを受け、登録された患者の個人情報が漏えいした可能性があると公表した。10月11日に外部の専門機関から情報提供を受けて調査を始め、不正アクセスを確認した。10月14日深夜にサービスを一時停止した。対象となり得るのはサービスを利用する最大787の医療機関で、漏えいした可能性がある情報の項目や人数は調査中としている。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC152JY0V11C26A0000000/
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/15/2000002293/
+  - title: 共同通信（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/9c17657bb7e048c97683e377a5b889ee41d93221
+  - title: CBnews
+    url: https://www.cbnews.jp/news/entry/20261015173958

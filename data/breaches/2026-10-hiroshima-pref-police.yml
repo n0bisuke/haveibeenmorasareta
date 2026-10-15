@@ -1,0 +1,25 @@
+organization: 広島県警察
+services:
+  - 災害時の職員安否確認システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 広島県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 5700
+count_note: 約5,700人（警察官・職員）
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - 氏名
+  - 従業員情報
+  - メールアドレス
+summary: 災害時の職員安否確認システムを委託していたアルカディアが不正アクセスを受け、警察官・職員約5,700人の氏名、所属、私用メールアドレスが漏えいした可能性があることが分かった。
+sources:
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261014de59273
+  - title: FNNプライムオンライン（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/3e509b6dbe802030061a35eb5b128b5eb5be36ce

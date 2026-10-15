@@ -1,0 +1,25 @@
+organization: 愛媛県松山市
+services:
+  - まつやま防災メール
+  - まつやま防災イベントメール
+  - 職員参集メール
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 愛媛県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 20000
+count_note: のべ約2万件（防災メールなどの登録者と職員約4,000件）
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - メールアドレス
+summary: 「まつやま防災メール」などの配信サービスを提供するアルカディアが不正アクセスを受け、防災メールなどの登録者と職員のメールアドレスなど、のべ約2万件が漏えいした可能性があると公表した。
+sources:
+  - title: 南海放送（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/621e96544e5322b2fccf47ba0f60407c48aa4321
+  - title: Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/9640b19a809c0799c3b18df27e24a037b44cae7d

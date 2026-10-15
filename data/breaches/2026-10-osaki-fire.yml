@@ -1,0 +1,25 @@
+organization: 大崎地域広域行政事務組合
+services:
+  - NET119緊急通報システム
+  - 消防職員などの連絡システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 宮城県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 125
+count_note: 125人
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - 住所
+  - 電話番号
+  - 健康・医療情報
+  - 従業員情報
+summary: 大崎地域広域行政事務組合消防本部が利用するNET119緊急通報システムなどを運営するアルカディアが不正アクセスを受け、125人分の住所、電話番号、障害の状況、血液型、勤務先などが漏えいした可能性があることが分かった。
+sources:
+  - title: 仙台放送（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/abfa1a10564cf33a026339498b38f563f8e785fd

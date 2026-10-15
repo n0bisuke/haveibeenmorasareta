@@ -1,0 +1,26 @@
+organization: 宮城県
+services:
+  - 職員安否確認システム
+  - "総合防災情報システム「MIDORI」"
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 宮城県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 13000
+count_note: 職員・教職員など約1万3,000人。ほかに配信先の市町村・消防機関のアドレス約300件
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - 氏名
+  - メールアドレス
+  - 従業員情報
+summary: 職員安否確認システムなどを運営するアルカディアが不正アクセスを受け、職員・教職員など約1万3,000人の所属、氏名、メールアドレスと、総合防災情報システム「MIDORI」の配信先である市町村・消防機関のメールアドレス約300件が漏えいした可能性があると公表した。
+sources:
+  - title: Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/265c8a28ad9822c96eef6be9131ec868623cee9c
+  - title: Yahoo!ニュース（MIDORI）
+    url: https://news.yahoo.co.jp/articles/bf2c9fc8cd1eee33ae3667d2c80294f2527ea816

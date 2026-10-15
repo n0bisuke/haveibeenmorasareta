@@ -1,0 +1,22 @@
+organization: 新潟県長岡市
+services:
+  - ながおかDメールプラス
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 新潟県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 15608
+count_note: のべ1万5,608件（Dメールのアドレス1万1,492件を含む）
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - メールアドレス
+  - 氏名
+summary: 「ながおかDメールプラス」などの配信サービスを運営するアルカディアが不正アクセスを受け、メールアドレスや氏名など、のべ1万5,608件が漏えいした可能性があると公表した。
+sources:
+  - title: Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/b3954394fa7c012e2f44edc4636e2a5d252ebf56

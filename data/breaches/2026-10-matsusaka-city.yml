@@ -1,0 +1,26 @@
+organization: 三重県松阪市
+services:
+  - SpeeCAN RAIDEN
+  - おかえりSOSネットワークまつさか
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 三重県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 8363
+count_note: 8,363件（5サービス。うち「おかえりSOSネットワークまつさか」の1,043件は顔写真を含む）
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - 氏名
+  - メールアドレス
+  - 保存データ（写真・文書等）
+summary: 松阪市と松阪地区広域消防組合は、アルカディアが運営する5つのサービスで計8,363件の氏名やメールアドレスなどが漏えいした可能性があると公表した。行方不明者の早期発見のための「おかえりSOSネットワークまつさか」の1,043件には顔写真が含まれる。
+sources:
+  - title: Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/20b812ef8219fec5c9d23a098e5f0e1aa1472d2b
+  - title: 中日新聞
+    url: https://www.chunichi.co.jp/article/1325192

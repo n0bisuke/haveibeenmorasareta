@@ -1,0 +1,24 @@
+organization: 三重県鈴鹿市
+services:
+  - 災害メール
+  - 職員参集システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 三重県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 11841
+count_note: 約1万1,841件（市民のメールアドレス1万396件、職員1,445人）
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - メールアドレス
+  - 氏名
+  - 従業員情報
+summary: 災害メールと職員参集システムを運営するアルカディアが不正アクセスを受け、市民のメールアドレス1万396件と職員1,445人の氏名・所属など、計約1万1,841件が漏えいした可能性があると公表した。
+sources:
+  - title: 伊勢新聞
+    url: https://www.isenp.co.jp/2026/10/15/154579/

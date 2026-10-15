@@ -1,0 +1,18 @@
+organization: 東京都江戸川区
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 東京都
+date_occurred: 2026-09-18
+date_announced: 2026-09-24
+affected_count: 96
+cause: human_error
+root_cause: 内定者への案内メールで、BCCではなく宛先欄にメールアドレスを入れて送信した
+data_types:
+  - メールアドレス
+summary: 正規職員の内定者96名に「採用内定式」の案内メールを送る際、BCCではなく宛先欄にメールアドレスを入れて送信し、内定者のメールアドレスが互いに見える状態になったと公表した。9月18日に送信し、9月21日に担当者が気づいた。メールアドレス以外の個人情報は含まれない。
+sources:
+  - title: 江戸川区 公式発表
+    url: https://www.city.edogawa.tokyo.jp/e004/kuseijoho/kohokocho/press/2026/09/0924.html
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/14/56452.html

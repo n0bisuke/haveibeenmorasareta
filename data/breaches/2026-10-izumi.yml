@@ -1,0 +1,27 @@
+organization: 株式会社イズミ
+services:
+  - ゆめオンライン
+  - ゆめデリバリー
+industry: 小売・EC
+country: JP
+date_announced: 2026-10-14
+affected_count: 400000
+count_note: 最大約40万件（漏えいの可能性）
+cause: third_party
+root_cause: メールマガジン配信の委託先が使うIDCFクラウドへのランサムウェア攻撃
+vendor:
+  name: 株式会社IDCフロンティア
+  group: ソフトバンクグループ
+data_types:
+  - 氏名
+  - メールアドレス
+summary: 「ゆめタウン」を展開するイズミは、通販「ゆめオンライン」と配送サービス「ゆめデリバリー」の会員の氏名とメールアドレスが、最大約40万件漏えいした可能性があると公表した。メールマガジンの配信を委託する事業者が使うIDCフロンティアのクラウドが不正アクセスを受けた。住所・電話番号・クレジットカード番号は含まれない。外部への漏えいや不正利用は確認されておらず、メールマガジンの配信を停止している。
+sources:
+  - title: イズミ 公式発表
+    url: https://www.izumi.co.jp/news_release/assets/dc18e543b048e2f1a4d596bb0035aaaf.pdf
+  - title: 時事通信
+    url: https://sp.m.jiji.com/article/show/3888812
+  - title: 中国新聞
+    url: https://www.chugoku-np.co.jp/articles/-/909401
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261014de59111

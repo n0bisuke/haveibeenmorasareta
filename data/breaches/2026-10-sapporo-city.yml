@@ -1,0 +1,24 @@
+organization: 北海道札幌市
+services:
+  - 避難連絡関連のサービス
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 北海道
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: null
+count_note: 報道により522人・約500人・2,500件と異なる
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - 氏名
+  - 電話番号
+summary: 避難連絡に関するサービスを運営するアルカディアが不正アクセスを受け、氏名や電話番号などが漏えいした可能性があると公表した。件数は報道により522人、約500人、2,500件と異なる。
+sources:
+  - title: Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/29449d188ecd71601b9d4f2c715caa016c8afb45
+  - title: 北海道新聞
+    url: https://www.hokkaido-np.co.jp/article/1389475/
