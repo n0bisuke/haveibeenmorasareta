@@ -1,0 +1,22 @@
+organization: 東京都江東区
+services:
+  - こうとう安全・安心メール
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 東京都
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 33541
+count_note: 33,541人分（報道の値）
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - メールアドレス
+  - 従業員情報
+summary: 登録制メール配信「こうとう安全・安心メール」を運営するアルカディアが不正アクセスを受け、登録者のメールアドレスと区の担当者の情報が漏えいした可能性があると公表した。報道では対象は3万3,541人分とされる。
+sources:
+  - title: 江東区 お知らせ
+    url: https://www.city.koto.lg.jp/056100/bosai/20261014.html

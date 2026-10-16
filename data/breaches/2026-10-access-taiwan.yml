@@ -1,0 +1,25 @@
+organization: 株式会社ACCESS
+services:
+  - CROS（ACCESS AP TAIWAN（台湾子会社））
+industry: IT・通信
+country: JP
+date_occurred: 2026-09-11
+date_announced: 2026-10-15
+affected_count: 155280
+count_note: 顧客ID155,280件、受注ID231,998件。うちクレジットカード情報は1,305アカウント分（4件はセキュリティコードを含む）。台湾・香港・マカオ・シンガポールの通販利用者
+cause: unauthorized_access
+root_cause: 取引先1社に提供していたBIツールを起点とした不正アクセス
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 購入履歴
+  - クレジットカード番号
+  - クレジットカードのセキュリティコード
+summary: 台湾の連結子会社ACCESS AP TAIWANが提供するEC事業者向け支援サービス「CROS」が不正アクセスを受け、台湾・香港・マカオ・シンガポールの通販利用者の顧客ID15万5,280件分の氏名、住所、電話番号、メールアドレス、受注情報などが流出したと公表した。うち1,305アカウント分はクレジットカード番号・有効期限などを含み、4件はセキュリティコードも含む。9月11日に不正アクセスの兆候を検知した。取引先1社に提供していたBIツールが起点で、窃取されたメール送信サービスの鍵を使った不正メール1万1,441件が送られた。
+sources:
+  - title: ACCESS 公式発表（適時開示）
+    url: https://www.access-company.com/wp-content/blogs.dir/3/files/2026/10/n261015.pdf
+  - title: アスキー（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/b5a64e64a0ed111fc064d96c7aff81534d4c287f

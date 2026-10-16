@@ -1,0 +1,19 @@
+organization: 八王子学園八王子中学校・高等学校
+industry: 人材・教育
+country: JP
+org_type: university
+prefecture: 東京都
+date_announced: 2026-07-13
+count_note: 件数は未公表（在校生・卒業生と保護者、受験生と保護者、教職員、退職者の個人情報を含むファイルが暗号化された）
+cause: ransomware
+root_cause: ファイアウォールを突破され、リモートデスクトップ接続を介して内部に侵入された
+data_types:
+  - 従業員情報
+summary: ランサムウェア攻撃を受け、在校生・卒業生とその保護者、受験生とその保護者、教職員、退職者の個人情報を含むファイルが暗号化されたと公表した。第2報で、ファイアウォールを突破されリモートデスクトップ接続を介して侵入されたことが判明し、同接続を遮断したとした。外部調査では個人情報ファイルの外部流出は確認されなかったが、攻撃者が一部のログを消しているため流出を完全には否定できないとしている。
+sources:
+  - title: 八王子学園 公式発表（第2報）
+    url: https://www.hachioji.ed.jp/information/information-junr/5111/
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/15/56465.html
+  - title: Security NEXT
+    url: https://www.security-next.com/187991

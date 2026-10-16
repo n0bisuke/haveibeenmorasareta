@@ -1,0 +1,23 @@
+organization: 愛知県知多市
+services:
+  - 職員向け連絡システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 愛知県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 700
+count_note: 職員約700人
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - 氏名
+  - メールアドレス
+  - 従業員情報
+summary: 職員向けの連絡に使うアルカディアのサービスが不正アクセスを受け、職員約700人の氏名とメールアドレスなどが漏えいした可能性があることが分かった。
+sources:
+  - title: 東海テレビ（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/81b6796960a98105be6494ed610b3a7cd47448e9

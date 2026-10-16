@@ -1,0 +1,29 @@
+organization: 北海道釧路市
+services:
+  - 学習用端末（市立小中学校）
+industry:
+  - 行政
+  - 人材・教育
+country: JP
+org_type: local_gov
+prefecture: 北海道
+date_occurred: 2026-08-29
+date_announced: 2026-10-15
+affected_count: 31233
+count_note: 児童生徒・教職員らのアカウント情報31,233件（漏えいの可能性）。ほかに市立小中学校39校の管理用パスワード
+cause: third_party
+root_cause: 学習用端末の管理運用の委託先の社内サーバーがランサムウェア被害を受けた
+vendor:
+  name: 株式会社ポータス
+data_types:
+  - 氏名
+  - アカウント名
+  - パスワード（保管形式不明）
+summary: 学習用端末の管理運用を委託する株式会社ポータスの社内サーバーがランサムウェア被害を受け、児童生徒・教職員らのアカウント情報3万1,233件（氏名、学校名、アカウント名、パスワード）と市立小中学校39校の管理用パスワードが漏えいした可能性があると市教育委員会が公表した。ポータスは8月29日に被害を確認し、10月13日に市へ影響の可能性を報告した。住所や生年月日などは含まれず、外部への流出や不正利用は確認されていない。
+sources:
+  - title: 共同通信（東京新聞）
+    url: https://www.tokyo-np.co.jp/article/521730
+  - title: 共同通信（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/36af47ecb7dc3ca07ac132c572e51463bf4ffbb5
+  - title: 釧路新聞
+    url: https://kushironews.jp/2026/10/16/709813/

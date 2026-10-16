@@ -1,0 +1,29 @@
+organization: ソースネクスト株式会社
+services:
+  - ソースネクスト会員サービス
+industry: IT・通信
+country: JP
+date_occurred: 2026-10-09
+date_announced: 2026-10-15
+affected_count: 22519960
+count_note: 最大22,519,960件（漏えいの可能性。登録内容により対象の項目は異なる）
+cause: unauthorized_access
+root_cause: 会員情報取得APIを第三者に不正利用された
+data_types:
+  - メールアドレス
+  - パスワード（保管形式不明）
+  - 氏名
+  - 住所
+  - 電話番号
+  - 生年月日
+  - 取引先情報
+summary: 会員情報を取得するAPIが第三者に不正利用され、最大2,251万9,960件の会員情報が流出した可能性があると公表した。不正アクセスは10月9日午前10時ごろに始まり、13日に検知して封じ込めた。対象はメールアドレス、パスワード、氏名、住所、電話番号・FAX番号、生年月日、会社名・役職などで、登録内容により異なる。クレジットカード情報は対象システムに保存していない。利用者にパスワードの再設定を求めている。
+sources:
+  - title: ソースネクスト 公式発表
+    url: https://www.sourcenext.com/support/i/2026/1015_info/
+  - title: ITmedia PC USER
+    url: https://www.itmedia.co.jp/pcuser/articles/2610/15/news100.html
+  - title: Impress Watch
+    url: https://www.watch.impress.co.jp/docs/news/2148547.html
+  - title: 時事通信
+    url: https://www.jiji.com/jc/article?k=2026101501201&g=eco

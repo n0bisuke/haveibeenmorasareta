@@ -1,0 +1,22 @@
+organization: エムスリー株式会社
+services:
+  - MR君
+industry:
+  - IT・通信
+  - 医療
+country: JP
+date_announced: 2026-10-15
+count_note: 医師会員全体の1割未満と、製薬企業の担当者数百名（人数は調査中）
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - 従業員情報
+  - メールアドレス
+summary: 製薬企業向けサービス「MR君」が不正アクセスを受け、医師会員の一部（会員全体の1割未満）と製薬企業の担当者数百名の氏名、勤務先、一部の人のメールアドレスが漏えいしたと公表した。10月14日に検知し、侵入経路を遮断した。ログインパスワードとm3ポイントは対象外で、クレジットカード番号は保有していない。
+sources:
+  - title: エムスリー 公式発表
+    url: https://corporate.m3.com/assets.ctfassets.net/1pwj74siywcy/4YBQ3JACTocGVgQmIVkSHe/bed9ff0b11db690e1217e0329c484104/20261015_Public_J.pdf
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC15BGA0V11C26A0000000/
+  - title: アスキー
+    url: https://ascii.jp/elem/000/004/443/4443124/

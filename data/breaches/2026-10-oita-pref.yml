@@ -1,0 +1,26 @@
+organization: 大分県
+services:
+  - 県民安全・安心メール
+  - 職員の連絡システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 大分県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 37936
+count_note: 37,936件（県民27,667件、県職員など10,269件）
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - メールアドレス
+  - 氏名
+  - 従業員情報
+summary: 「県民安全・安心メール」などを運営するアルカディアが不正アクセスを受け、県民2万7,667件と県職員など1万269件の計3万7,936件のメールアドレスなどが漏えいした可能性があると公表した。県と14市町の合計は延べ約9万件とされる。
+sources:
+  - title: 大分合同新聞
+    url: https://www.oita-press.co.jp/1010000000/2026/10/14/JDC2026101402890
+  - title: TOSテレビ大分
+    url: https://tosonline.jp/news/20261015/00000007.html

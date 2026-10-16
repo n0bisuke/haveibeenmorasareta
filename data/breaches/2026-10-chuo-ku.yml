@@ -1,0 +1,20 @@
+organization: 東京都中央区
+services:
+  - ちゅうおう安全・安心メール
+  - 職員参集メール
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 東京都
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 10005
+count_note: 区民7,315人、職員2,690人
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+summary: 「ちゅうおう安全・安心メール」と職員参集メールを運営するアルカディアが不正アクセスを受け、区民7,315人と職員2,690人の個人情報が漏えいした可能性があることが分かった。
+sources:
+  - title: 東京新聞
+    url: https://www.tokyo-np.co.jp/article/521892
