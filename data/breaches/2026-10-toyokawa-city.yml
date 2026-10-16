@@ -1,0 +1,21 @@
+organization: 愛知県豊川市
+services:
+  - とよかわ安心メール
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 愛知県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 36328
+count_note: 36,328件（市民32,576件、職員3,752件）
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - メールアドレス
+summary: 「とよかわ安心メール」を運営するアルカディアが不正アクセスを受け、市民3万2,576件と職員3,752件の計3万6,328件のメールアドレスなどの連絡先が漏えいした可能性があると公表した。
+sources:
+  - title: 豊川市 お知らせ
+    url: https://www.city.toyokawa.lg.jp/soshiki/kikaku/johoseisaku/2/31497.html

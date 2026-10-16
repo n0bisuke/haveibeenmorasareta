@@ -1,0 +1,26 @@
+organization: 群馬県前橋市
+services:
+  - まちの安全ひろメール
+  - 職員参集メール
+  - 高齢者コールサービス
+  - 消防団連絡網
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 群馬県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 22800
+count_note: 約2万2,800件（報道の値）
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - メールアドレス
+  - 氏名
+  - 電話番号
+summary: 「まちの安全ひろメール」や職員参集メールなどを運営するアルカディアが不正アクセスを受け、登録者のメールアドレスと一部の氏名・電話番号など約2万2,800件が漏えいした可能性があると公表した。
+sources:
+  - title: 前橋市 お知らせ
+    url: https://www.city.maebashi.gunma.jp/soshiki/somu/bousaikikikanrika/gyomu/2/saigainikansurujohonohaishin/51466.html

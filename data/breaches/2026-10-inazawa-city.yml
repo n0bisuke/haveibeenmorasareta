@@ -1,0 +1,24 @@
+organization: 愛知県稲沢市
+services:
+  - NET119緊急通報システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 愛知県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 59
+count_note: 登録件数59件
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - 氏名
+  - 住所
+  - メールアドレス
+  - 電話番号
+summary: NET119緊急通報システムを運営するアルカディアが不正アクセスを受け、登録者59件の氏名、住所、メールアドレス、電話番号などが漏えいした可能性があると公表した。
+sources:
+  - title: 稲沢市 お知らせ
+    url: https://www.city.inazawa.aichi.jp/0000006091.html

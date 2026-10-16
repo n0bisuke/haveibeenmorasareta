@@ -1,0 +1,25 @@
+organization: 北海道小樽市
+services:
+  - 登録制メール
+  - 職員参集メール
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 北海道
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: null
+count_note: 件数は未確認
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 従業員情報
+summary: 登録制メールと職員参集メールを運営するアルカディアが不正アクセスを受け、登録者の氏名・メールアドレスと、職員の氏名・所属・携帯電話番号・メールアドレスが漏えいした可能性があると公表した。
+sources:
+  - title: 小樽市 お知らせ
+    url: https://www.city.otaru.lg.jp/docs/2026101400011

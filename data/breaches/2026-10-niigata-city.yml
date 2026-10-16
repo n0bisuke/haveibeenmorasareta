@@ -1,0 +1,28 @@
+organization: 新潟県新潟市
+services:
+  - にいがた防災メール
+  - 避難情報の電話配信
+  - 職員参集システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 新潟県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 53576
+count_note: 計53,576件（メールアドレス42,472件、電話122件、FAX53件、職員10,929件）
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - メールアドレス
+  - 電話番号
+  - 氏名
+  - 従業員情報
+summary: 「にいがた防災メール」や職員参集システムなどを運営するアルカディアが不正アクセスを受け、メールアドレス4万2,472件、電話番号122件、FAX番号53件、職員1万929件の計5万3,576件が漏えいした可能性があると公表した。
+sources:
+  - title: BSN新潟放送（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/35f8af39341da42f8ed59631032d7681fc2f71fc
+  - title: Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/23e6b464c201117cf779bdd29b308ab2b64c7dad
