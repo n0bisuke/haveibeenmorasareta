@@ -1,0 +1,25 @@
+organization: 和歌山県
+services:
+  - WAKAYAMA外国人材雇用サポートデスク
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 和歌山県
+date_occurred: 2026-09-30
+date_announced: 2026-10-16
+affected_count: 2166
+count_note: 2,166件（417企業、外国人の登録者1,749人）
+cause: third_party
+root_cause: Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった
+vendor:
+  name: Studio株式会社
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+summary: 「WAKAYAMA外国人材雇用サポートデスク」のホームページのシステムを運営するStudio株式会社が不正アクセスを受け、登録した417企業と外国人の登録者1,749人の計2,166件の名前、メールアドレス、電話番号、国籍、所属学校などが漏えいした可能性があると公表した。被害は確認されていない。
+sources:
+  - title: 産経新聞（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/7baeef660f88580e96b245983871730da7eb6773
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261016de60598

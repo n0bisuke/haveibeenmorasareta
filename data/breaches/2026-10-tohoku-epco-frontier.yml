@@ -1,0 +1,21 @@
+organization: 東北電力フロンティア株式会社
+group: 東北電力グループ
+services:
+  - マッチングイベントの問い合わせフォーム
+industry: エネルギー・インフラ
+country: JP
+date_occurred: 2026-09-30
+date_announced: 2026-10-17
+affected_count: 182
+count_note: 延べ182人
+cause: third_party
+root_cause: Webサイトの制作・運営に使う外部サービスの事業者が不正アクセスを受けた
+data_types:
+  - 氏名
+  - 電話番号
+summary: 2024年以降に宮城県や山形県などで開いた男女のマッチングイベントのホームページの問い合わせフォームについて、ホームページの運営に関わる東京都内の企業が9月30日から10月1日にかけて不正アクセスを受け、延べ182人分の氏名や電話番号などが漏えいした可能性があると公表した。10月14日まで外部から取得できる状態だった。
+sources:
+  - title: 東北電力フロンティア お知らせ
+    url: https://www.tohoku-frontier.co.jp/news/1947/
+  - title: 共同通信（東京新聞）
+    url: https://www.tokyo-np.co.jp/article/522287

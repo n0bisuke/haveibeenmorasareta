@@ -1,0 +1,23 @@
+organization: Astemo株式会社
+industry: 製造
+country: JP
+date_occurred: 2026-09-02
+date_announced: 2026-10-16
+affected_count: 350
+count_note: 約350人分（従業員、仕入先・協力会社の関係者）
+cause: third_party
+attack_methods:
+  - stolen_credentials
+root_cause: 業務委託会社の従業員アカウントが侵害され、データ共有クラウド環境から情報が流出した
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 従業員情報
+  - 取引先情報
+summary: 利用するデータ共有クラウド環境が不正アクセスを受け、従業員や仕入先・協力会社の関係者など約350人分の氏名、メールアドレス、電話番号、所属などが流出したと公表した。9月2日ごろ業務委託会社の従業員アカウントでログイン異常や身に覚えのない多要素認証の通知があり、9月17日にデータを入手したと主張する第三者から従業員に公開をほのめかす連絡があった。社内ネットワークへの侵入やランサムウェア感染の痕跡は確認されていない。
+sources:
+  - title: Astemo 公式発表
+    url: https://www.astemo.com/jp/news/pdf/20261016-01.pdf
+  - title: レスポンス
+    url: https://response.jp/article/2026/10/16/417897.html

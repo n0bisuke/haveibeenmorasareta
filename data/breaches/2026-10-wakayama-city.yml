@@ -1,0 +1,19 @@
+organization: 和歌山県和歌山市
+services:
+  - 防災情報などの配信サービス
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 和歌山県
+date_occurred: 2026-10-11
+date_announced: 2026-10-14
+affected_count: 23000
+count_note: 延べ2万3,000件超
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+summary: 防災情報などの配信サービスを運営するアルカディアが不正アクセスを受け、延べ2万3,000件超の登録情報が漏えいした可能性があると公表した。
+sources:
+  - title: わかやま新報
+    url: https://wakayamashimpo.co.jp/2026/10/20261014_139791.html

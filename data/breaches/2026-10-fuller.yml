@@ -1,0 +1,17 @@
+organization: フラー株式会社
+services:
+  - コーポレートサイトのフォーム
+industry: IT・通信
+country: JP
+date_occurred: 2026-09-30
+date_announced: 2026-10-16
+affected_count: 6029
+count_note: 6,029件（日本語版5,948件、英語版20件、高専キャラバン61件）
+cause: third_party
+root_cause: Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった
+vendor:
+  name: Studio株式会社
+summary: コーポレートサイトのフォームに使っていたStudioが不正アクセスを受け、フォームに送信された6,029件の情報が漏えいした可能性があると公表した。
+sources:
+  - title: フラー お知らせ
+    url: https://www.fuller-inc.com/news/202610-studio-unauthorized-access

@@ -1,0 +1,19 @@
+organization: 滋賀県立北大津高等学校
+industry: 人材・教育
+country: JP
+org_type: university
+prefecture: 滋賀県
+date_announced: 2026-10-16
+affected_count: 1
+cause: lost_device
+root_cause: 校長室の金庫で保管していた書類が、他の書類に紛れるなどして所在不明になった
+data_types:
+  - 氏名
+  - 生年月日
+  - 住所
+summary: 校長室の金庫で保管していた2年生の生徒1人分の中学校の生徒指導要録の抄本（氏名、生年月日、中学時代の住所、評価や出欠の記録など）を紛失したと滋賀県教育委員会が公表した。9月10日に紛失に気づいた。外部への流出は確認されていない。
+sources:
+  - title: 京都新聞
+    url: https://www.kyoto-np.co.jp/articles/-/1809478
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261016de60630
