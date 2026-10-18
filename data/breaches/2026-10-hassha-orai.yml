@@ -1,0 +1,27 @@
+organization: 株式会社工房
+services:
+  - 発車オーライネット
+industry:
+  - IT・通信
+  - 交通・モビリティ
+country: JP
+date_occurred: 2026-09-16
+date_announced: 2026-10-15
+affected_count: 5614
+count_note: 最大8,341件・5,614人（うち発車オーライネット自体の予約は548件・448人。残りは連携先のバス事業者などの予約。北陸鉄道は998件・660人）
+cause: unauthorized_access
+root_cause: 外部の取引先と連携するためのAPIサーバーへの不正アクセス
+data_types:
+  - 氏名
+  - 電話番号
+  - 利用履歴
+summary: 高速バス予約サイト「発車オーライネット」の、外部の取引先と連携するためのAPIサーバーに9月16日から19日にかけて不審なアクセスがあり、最大8,341件・5,614人分の予約情報が流出した可能性があると公表した。10月13日に検知した。対象は予約名（カタカナ）、電話番号、乗車日・路線・予約番号などで、クレジットカード、口座、住所、メールアドレス、パスワードはサーバーに保存されていない。北陸鉄道（660人）や防長交通など連携するバス事業者も影響を公表した。
+sources:
+  - title: 防長交通 公式発表
+    url: https://www.bochobus.co.jp/files/libs/8616/202610151930521986.pdf
+  - title: NHKニュース（北陸鉄道）
+    url: https://news.web.nhk/newsweb/na/nd-20261016de60615
+  - title: 北國新聞
+    url: https://www.hokkoku.co.jp/articles/-/2261105
+  - title: アスキー
+    url: https://ascii.jp/elem/000/004/443/4443128/

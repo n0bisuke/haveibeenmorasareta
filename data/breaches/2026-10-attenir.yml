@@ -1,0 +1,26 @@
+organization: 株式会社アテニア
+group: キリングループ
+services:
+  - アテニア 通販サイト
+industry: 美容・健康
+country: JP
+date_occurred: 2026-10-03
+date_announced: 2026-10-16
+affected_count: 417312
+count_note: 441,162件（417,312人）
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 生年月日
+  - 会員ID
+summary: ファンケルの子会社アテニアの通販サイトが10月3日から10日にかけて第三者による不正アクセスを受け、会員41万7,312人分（44万1,162件）の氏名、住所、電話番号、メールアドレス、生年月日、顧客番号などが漏えいしたと公表した。決済情報は含まれない。
+sources:
+  - title: 共同通信（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/b01f044283b1bdcb8b3e817ca698c7f626043059
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261016de60600
+  - title: WWDJAPAN
+    url: https://www.wwdjapan.com/articles/2528854

@@ -1,0 +1,26 @@
+organization: 株式会社ファンケル
+group: キリングループ
+services:
+  - ファンケル 通販サイト
+industry: 美容・健康
+country: JP
+date_occurred: 2026-10-03
+date_announced: 2026-10-16
+affected_count: 368184
+count_note: 393,785件（368,184人）
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 生年月日
+  - 会員ID
+summary: 通販サイトが10月3日から10日にかけて第三者による不正アクセスを受け、会員36万8,184人分（39万3,785件）の氏名、住所、電話番号、メールアドレス、生年月日、顧客番号などが漏えいしたと公表した。10月15日の内部調査で発覚した。決済情報は含まれない。子会社のアテニアでも同様の被害があった。
+sources:
+  - title: ファンケル・アテニア 公式発表
+    url: https://www.attenir.co.jp/corporate/news/data/20261016kinnkyu.pdf
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC167FL0W6A011C2000000/
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/16/2000002340/

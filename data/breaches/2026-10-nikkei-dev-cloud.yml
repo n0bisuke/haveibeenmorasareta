@@ -1,0 +1,34 @@
+organization: 株式会社日本経済新聞社
+group: 日経グループ
+services:
+  - システム開発用のクラウドサービス
+industry: メディア・出版
+country: JP
+date_occurred: 2026-10-07
+date_announced: 2026-10-16
+affected_count: 1830000
+count_note: 約183万件（うち氏名・メールアドレス・住所・電話番号・生年月日のいずれかを含むものが約15万件、単体では個人を特定できない識別子のみが約168万件）。件数は人数とは限らない
+cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
+root_cause: システム開発に使うクラウドの認証情報が盗まれ、不正アクセスに使われた
+data_types:
+  - 氏名
+  - メールアドレス
+  - 住所
+  - 電話番号
+  - 生年月日
+summary: システム開発に使うクラウドサービスが10月7日未明から朝にかけて不正アクセスを受け、約183万件の個人情報が漏えいしたと公表した。何らかの手段で盗まれたクラウドの認証情報が使われた。約15万件は氏名・メールアドレス・住所・電話番号・生年月日のいずれかを含み、約168万件は単体では個人を特定できない識別子のみ。クレジットカード情報は含まない。テレビ東京・BSテレ東、日経BPも、自社サービスの利用者情報が含まれている可能性があると発表した。
+sources:
+  - title: 日本経済新聞社 公式発表
+    url: https://www.nikkei.co.jp/nikkeiinfo/news/information/1561.html
+  - title: 日経BP 公式発表
+    url: https://www.nikkeibp.co.jp/atcl/newsrelease/corp/20261017/
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/16/2000002337/
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2148878.html
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261016de60531
+  - title: オリコン（テレ東の発表、Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/0fc9d13f9b4c834b529fe48a740a6b39827a7552
