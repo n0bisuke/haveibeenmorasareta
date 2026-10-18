@@ -1,4 +1,7 @@
+# 自動での取得は利用規約（https://morasaretter.suke.dev/terms/）の第5条に従ってください。
+# データを集める場合は HTML をスクレイピングせず、/breaches.json・/news/*.json か GitHub のリポジトリを使ってください。
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
 Sitemap: https://morasaretter.suke.dev/sitemap.xml
