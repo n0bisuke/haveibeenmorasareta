@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-17T02:05:08.000Z",
-  "count": 519,
+  "generated_at": "2026-10-18T10:52:57.000Z",
+  "count": 541,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,649 @@
   ],
   "breaches": [
     {
+      "id": "2026-10-tohoku-epco-frontier",
+      "organization": "東北電力フロンティア株式会社",
+      "group": "東北電力グループ",
+      "services": [
+        "マッチングイベントの問い合わせフォーム"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-17",
+      "affected_count": 182,
+      "count_note": "延べ182人",
+      "cause": "third_party",
+      "root_cause": "Webサイトの制作・運営に使う外部サービスの事業者が不正アクセスを受けた",
+      "data_types": [
+        "氏名",
+        "電話番号"
+      ],
+      "summary": "2024年以降に宮城県や山形県などで開いた男女のマッチングイベントのホームページの問い合わせフォームについて、ホームページの運営に関わる東京都内の企業が9月30日から10月1日にかけて不正アクセスを受け、延べ182人分の氏名や電話番号などが漏えいした可能性があると公表した。10月14日まで外部から取得できる状態だった。",
+      "sources": [
+        {
+          "title": "東北電力フロンティア お知らせ",
+          "url": "https://www.tohoku-frontier.co.jp/news/1947/"
+        },
+        {
+          "title": "共同通信（東京新聞）",
+          "url": "https://www.tokyo-np.co.jp/article/522287"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 17,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-astemo",
+      "organization": "Astemo株式会社",
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2026-09-02",
+      "date_announced": "2026-10-16",
+      "affected_count": 350,
+      "count_note": "約350人分（従業員、仕入先・協力会社の関係者）",
+      "cause": "third_party",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "root_cause": "業務委託会社の従業員アカウントが侵害され、データ共有クラウド環境から情報が流出した",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "従業員情報",
+        "取引先情報"
+      ],
+      "summary": "利用するデータ共有クラウド環境が不正アクセスを受け、従業員や仕入先・協力会社の関係者など約350人分の氏名、メールアドレス、電話番号、所属などが流出したと公表した。9月2日ごろ業務委託会社の従業員アカウントでログイン異常や身に覚えのない多要素認証の通知があり、9月17日にデータを入手したと主張する第三者から従業員に公開をほのめかす連絡があった。社内ネットワークへの侵入やランサムウェア感染の痕跡は確認されていない。",
+      "sources": [
+        {
+          "title": "Astemo 公式発表",
+          "url": "https://www.astemo.com/jp/news/pdf/20261016-01.pdf"
+        },
+        {
+          "title": "レスポンス",
+          "url": "https://response.jp/article/2026/10/16/417897.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 44,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-attenir",
+      "organization": "株式会社アテニア",
+      "group": "キリングループ",
+      "services": [
+        "アテニア 通販サイト"
+      ],
+      "industry": "美容・健康",
+      "country": "JP",
+      "date_occurred": "2026-10-03",
+      "date_announced": "2026-10-16",
+      "affected_count": 417312,
+      "count_note": "441,162件（417,312人）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "生年月日",
+        "会員ID"
+      ],
+      "summary": "ファンケルの子会社アテニアの通販サイトが10月3日から10日にかけて第三者による不正アクセスを受け、会員41万7,312人分（44万1,162件）の氏名、住所、電話番号、メールアドレス、生年月日、顧客番号などが漏えいしたと公表した。決済情報は含まれない。",
+      "sources": [
+        {
+          "title": "共同通信（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/b01f044283b1bdcb8b3e817ca698c7f626043059"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261016de60600"
+        },
+        {
+          "title": "WWDJAPAN",
+          "url": "https://www.wwdjapan.com/articles/2528854"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 13,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-daily-tohoku",
+      "organization": "株式会社デーリー東北新聞社",
+      "services": [
+        "Webサイトのフォーム"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-16",
+      "affected_count": 423,
+      "count_note": "423件",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "Webサイトのフォームに使っていたStudio株式会社のクラウドサービスが不正アクセスを受け、フォームに入力された423件の氏名、電話番号、メールアドレスが漏えいした可能性があると公表した。クレジットカード情報は含まない。",
+      "sources": [
+        {
+          "title": "Web東奥",
+          "url": "https://www.toonippo.co.jp/articles/-/2385213"
+        },
+        {
+          "title": "青森放送（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/e5604aeb162cf87a18c6343e12edaeac52b5a76c"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 16,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-fancl",
+      "organization": "株式会社ファンケル",
+      "group": "キリングループ",
+      "services": [
+        "ファンケル 通販サイト"
+      ],
+      "industry": "美容・健康",
+      "country": "JP",
+      "date_occurred": "2026-10-03",
+      "date_announced": "2026-10-16",
+      "affected_count": 368184,
+      "count_note": "393,785件（368,184人）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "生年月日",
+        "会員ID"
+      ],
+      "summary": "通販サイトが10月3日から10日にかけて第三者による不正アクセスを受け、会員36万8,184人分（39万3,785件）の氏名、住所、電話番号、メールアドレス、生年月日、顧客番号などが漏えいしたと公表した。10月15日の内部調査で発覚した。決済情報は含まれない。子会社のアテニアでも同様の被害があった。",
+      "sources": [
+        {
+          "title": "ファンケル・アテニア 公式発表",
+          "url": "https://www.attenir.co.jp/corporate/news/data/20261016kinnkyu.pdf"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC167FL0W6A011C2000000/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/16/2000002340/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 13,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-fuller",
+      "organization": "フラー株式会社",
+      "services": [
+        "コーポレートサイトのフォーム"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-16",
+      "affected_count": 6029,
+      "count_note": "6,029件（日本語版5,948件、英語版20件、高専キャラバン61件）",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "summary": "コーポレートサイトのフォームに使っていたStudioが不正アクセスを受け、フォームに送信された6,029件の情報が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "フラー お知らせ",
+          "url": "https://www.fuller-inc.com/news/202610-studio-unauthorized-access"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 16,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-isahaya-michinoeki",
+      "organization": "長崎県諫早市",
+      "services": [
+        "道の駅「251いいもりじゃがーロード」の問い合わせフォーム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "長崎県",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-16",
+      "affected_count": 51,
+      "count_note": "51件",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "住所",
+        "電話番号"
+      ],
+      "summary": "道の駅「251いいもりじゃがーロード」のWebサイトの問い合わせフォームに使っていたStudioが不正アクセスを受け、フォームに入力された51件の氏名、フリガナ、メールアドレス、住所、電話番号が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "諫早市 お知らせ",
+          "url": "https://www.city.isahaya.nagasaki.jp/soshiki/43/50518.html"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261016de60766"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 16,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-itoigawa-city",
+      "organization": "新潟県糸魚川市",
+      "services": [
+        "移住サイト",
+        "ワーケーションサイト"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "新潟県",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-16",
+      "affected_count": 60,
+      "count_note": "60人（移住サイト21人、ワーケーションサイト39人）",
+      "cause": "third_party",
+      "root_cause": "Webサイトの制作・運営に使う外部サービスの事業者が不正アクセスを受けた",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号"
+      ],
+      "summary": "移住サイトとワーケーションサイトに使っていたホームページ制作サービスが不正アクセスを受け、60人分の氏名やメールアドレス（移住サイトは電話番号も）が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "新潟日報",
+          "url": "https://www.niigata-nippo.co.jp/articles/-/925916"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 16,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-iwai-cosmo",
+      "organization": "岩井コスモ証券株式会社",
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-10-16",
+      "affected_count": 4611,
+      "cause": "third_party",
+      "attack_methods": [
+        "broken_access_control"
+      ],
+      "root_cause": "インターネット取引システムの運用・保守の委託先のシステムで、一部の管理機能の設定不備を悪用された",
+      "vendor": {
+        "name": "株式会社トレードワークス"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "インターネット取引システムの運用・保守を委託するトレードワークスのシステムが不正アクセスを受け、顧客4,611人の氏名やメールアドレスなどが漏えいしたと公表した。システムの一部の管理機能の設定不備が悪用された。10月14日に検知した。パスワードが取得された事実は確認されておらず、漏えいした情報だけでは口座へのログインや売買はできないとしている。",
+      "sources": [
+        {
+          "title": "トレードワークス 適時開示",
+          "url": "https://www.release.tdnet.info/inbs/140120261016552448.pdf"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB1692W0W6A011C2000000/"
+        },
+        {
+          "title": "共同通信（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/268965bb6132151517ed5893adfaa7fd93ec5d8d"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-kitaotsu-hs",
+      "organization": "滋賀県立北大津高等学校",
+      "industry": "人材・教育",
+      "country": "JP",
+      "org_type": "university",
+      "prefecture": "滋賀県",
+      "date_announced": "2026-10-16",
+      "affected_count": 1,
+      "cause": "lost_device",
+      "root_cause": "校長室の金庫で保管していた書類が、他の書類に紛れるなどして所在不明になった",
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "住所"
+      ],
+      "summary": "校長室の金庫で保管していた2年生の生徒1人分の中学校の生徒指導要録の抄本（氏名、生年月日、中学時代の住所、評価や出欠の記録など）を紛失したと滋賀県教育委員会が公表した。9月10日に紛失に気づいた。外部への流出は確認されていない。",
+      "sources": [
+        {
+          "title": "京都新聞",
+          "url": "https://www.kyoto-np.co.jp/articles/-/1809478"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261016de60630"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-kyoto-city-studio",
+      "organization": "京都府京都市",
+      "services": [
+        "アート×ビジネス推進事業",
+        "京の伝統文化体験事業"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "京都府",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-16",
+      "affected_count": 30,
+      "count_note": "30件",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "summary": "「アート×ビジネス推進事業」と「京の伝統文化体験事業」のWebサイトのフォームに使っていたStudioが不正アクセスを受け、30件の情報が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "京都市 お知らせ",
+          "url": "https://www.city.kyoto.lg.jp/bunshi/page/0000359411.html"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 16,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-luup",
+      "organization": "株式会社Luup",
+      "services": [
+        "ポート設置リクエストのフォーム",
+        "Unimoへの問い合わせフォーム"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-16",
+      "affected_count": 21368,
+      "count_note": "21,368件（同じ人の複数回の送信を含む）。アプリの登録情報は対象外",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "summary": "Webサイトのフォームに使っていたStudioが不正アクセスを受け、2022年5月〜2024年5月のポート設置リクエストと2025年8月〜12月のUnimoへの問い合わせの計2万1,368件の情報が漏えいした可能性があると公表した。アプリの登録情報は対象外。",
+      "sources": [
+        {
+          "title": "Luup お知らせ",
+          "url": "https://luup.sc/news/2026-10-16/"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 16,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-nikkei-dev-cloud",
+      "organization": "株式会社日本経済新聞社",
+      "group": "日経グループ",
+      "services": [
+        "システム開発用のクラウドサービス"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_occurred": "2026-10-07",
+      "date_announced": "2026-10-16",
+      "affected_count": 1830000,
+      "count_note": "約183万件（うち氏名・メールアドレス・住所・電話番号・生年月日のいずれかを含むものが約15万件、単体では個人を特定できない識別子のみが約168万件）。件数は人数とは限らない",
+      "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "root_cause": "システム開発に使うクラウドの認証情報が盗まれ、不正アクセスに使われた",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "住所",
+        "電話番号",
+        "生年月日"
+      ],
+      "summary": "システム開発に使うクラウドサービスが10月7日未明から朝にかけて不正アクセスを受け、約183万件の個人情報が漏えいしたと公表した。何らかの手段で盗まれたクラウドの認証情報が使われた。約15万件は氏名・メールアドレス・住所・電話番号・生年月日のいずれかを含み、約168万件は単体では個人を特定できない識別子のみ。クレジットカード情報は含まない。テレビ東京・BSテレ東、日経BPも、自社サービスの利用者情報が含まれている可能性があると発表した。",
+      "sources": [
+        {
+          "title": "日本経済新聞社 公式発表",
+          "url": "https://www.nikkei.co.jp/nikkeiinfo/news/information/1561.html"
+        },
+        {
+          "title": "日経BP 公式発表",
+          "url": "https://www.nikkeibp.co.jp/atcl/newsrelease/corp/20261017/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/16/2000002337/"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2148878.html"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261016de60531"
+        },
+        {
+          "title": "オリコン（テレ東の発表、Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/0fc9d13f9b4c834b529fe48a740a6b39827a7552"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 9,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-raksul",
+      "organization": "ラクスル株式会社",
+      "services": [
+        "Webサイトのフォーム"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-16",
+      "affected_count": 6412,
+      "count_note": "6,412件（2024年6月3日〜2026年10月15日にフォームに送信されたもの）。印刷通販の会員・注文・支払い情報は対象外",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "summary": "Webサイトのフォームに使っていたStudioが不正アクセスを受け、2024年6月から2026年10月にフォームに送信された6,412件の情報が漏えいした可能性があると公表した。印刷通販の会員情報、注文情報、支払い情報は対象外。",
+      "sources": [
+        {
+          "title": "ラクスル プレスリリース",
+          "url": "https://corp.raksul.com/news/press/261016raksul_studio/"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 16,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-ryukyushimpo",
+      "organization": "株式会社琉球新報社",
+      "services": [
+        "コーポレートサイトの申込・問い合わせフォーム"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-16",
+      "affected_count": null,
+      "count_note": "件数は未公表",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "メールアドレス",
+        "取引先情報",
+        "電話番号",
+        "問い合わせ内容"
+      ],
+      "summary": "コーポレートサイトの申込・問い合わせフォームに使っていたStudio株式会社のサービスが不正アクセスを受け、フォームに入力された名前、住所、メールアドレス、会社名、電話番号、問い合わせ内容が流出した可能性があると公表した。",
+      "sources": [
+        {
+          "title": "琉球新報社 お知らせ",
+          "url": "https://corp.ryukyushimpo.jp/news/posts/Er2BSBOp"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 16,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-saitama-pref-midorinomori",
+      "organization": "埼玉県",
+      "services": [
+        "さいたま緑の森博物館のイベント申込・問い合わせフォーム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "埼玉県",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-16",
+      "affected_count": 162,
+      "count_note": "162件",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "summary": "さいたま緑の森博物館のイベント申込・問い合わせフォームに使っていたStudioが不正アクセスを受け、162件の情報が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "埼玉県 報道発表",
+          "url": "https://www.pref.saitama.lg.jp/a0508/news/page/news2026101603.html"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 16,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-studio",
+      "organization": "Studio株式会社",
+      "services": [
+        "Studio"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-16",
+      "count_note": "件数は調査中（Studioに登録するすべての顧客が対象となる可能性）",
+      "cause": "vulnerability",
+      "root_cause": "クラウド環境にある一部機能の脆弱性を悪用された",
+      "data_types": [
+        "アカウント名",
+        "メールアドレス",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "問い合わせ内容",
+        "保存データ（写真・文書等）"
+      ],
+      "summary": "ノーコードのWeb制作プラットフォーム「Studio」のクラウド環境で、一部機能の脆弱性が9月30日から10月1日にかけて悪用され、すべての顧客の情報が流出した可能性があると公表した。10月13日に確認し、14日までに修正した。対象はユーザー名、メールアドレス、ハッシュ化パスワード、Studioで作ったサイトのフォームに送信された内容、CMS・デザインデータ、外部サービスのAPIキーやトークンなどで、暗号化したデータも復号に必要な鍵ごと読み出された恐れがある。Studioで作ったサイトのフォームを使う企業・自治体が相次いで影響を公表している。",
+      "sources": [
+        {
+          "title": "Studio 公式発表（第一報）",
+          "url": "https://studio.design/ja/whats-new/unauthorized-access-2026-10"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/16/2000002332/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 16,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-wakayama-pref-gaikokujin",
+      "organization": "和歌山県",
+      "services": [
+        "WAKAYAMA外国人材雇用サポートデスク"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "和歌山県",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-16",
+      "affected_count": 2166,
+      "count_note": "2,166件（417企業、外国人の登録者1,749人）",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号"
+      ],
+      "summary": "「WAKAYAMA外国人材雇用サポートデスク」のホームページのシステムを運営するStudio株式会社が不正アクセスを受け、登録した417企業と外国人の登録者1,749人の計2,166件の名前、メールアドレス、電話番号、国籍、所属学校などが漏えいした可能性があると公表した。被害は確認されていない。",
+      "sources": [
+        {
+          "title": "産経新聞（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/7baeef660f88580e96b245983871730da7eb6773"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261016de60598"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 16,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-access-taiwan",
       "organization": "株式会社ACCESS",
       "services": [
@@ -656,6 +1299,44 @@
       "reliability": "high"
     },
     {
+      "id": "2026-10-cmoa",
+      "organization": "NTTソルマーレ株式会社",
+      "group": "NTTグループ",
+      "services": [
+        "コミックシーモア"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2026-10-15",
+      "count_note": "件数は精査中",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "メールアドレス",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "生年月日",
+        "性別",
+        "アカウント名"
+      ],
+      "summary": "電子書籍サービス「コミックシーモア」の会員情報を管理するシステムが第三者による不正アクセスを受けたとして、10月15日にサービスを緊急停止し、16日に会員情報の流出を発表した。流出したのはメールアドレス、ハッシュ化したパスワード、生年月日、性別、ニックネームで、クレジットカード情報と購入履歴の流出は確認されていない。再開時に会員全員にパスワードの再設定を求めるとしている。",
+      "sources": [
+        {
+          "title": "NTTソルマーレ 公式発表",
+          "url": "https://www.nttsolmare.com/press/2026/1016.html"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/16/2000002345/"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261016de60212"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-hamamatsu-fire",
       "organization": "静岡県浜松市（浜松市消防局）",
       "services": [
@@ -690,6 +1371,51 @@
       "severity": "medium",
       "disclosure_days": 4,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-hassha-orai",
+      "organization": "株式会社工房",
+      "services": [
+        "発車オーライネット"
+      ],
+      "industry": [
+        "IT・通信",
+        "交通・モビリティ"
+      ],
+      "country": "JP",
+      "date_occurred": "2026-09-16",
+      "date_announced": "2026-10-15",
+      "affected_count": 5614,
+      "count_note": "最大8,341件・5,614人（うち発車オーライネット自体の予約は548件・448人。残りは連携先のバス事業者などの予約。北陸鉄道は998件・660人）",
+      "cause": "unauthorized_access",
+      "root_cause": "外部の取引先と連携するためのAPIサーバーへの不正アクセス",
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "利用履歴"
+      ],
+      "summary": "高速バス予約サイト「発車オーライネット」の、外部の取引先と連携するためのAPIサーバーに9月16日から19日にかけて不審なアクセスがあり、最大8,341件・5,614人分の予約情報が流出した可能性があると公表した。10月13日に検知した。対象は予約名（カタカナ）、電話番号、乗車日・路線・予約番号などで、クレジットカード、口座、住所、メールアドレス、パスワードはサーバーに保存されていない。北陸鉄道（660人）や防長交通など連携するバス事業者も影響を公表した。",
+      "sources": [
+        {
+          "title": "防長交通 公式発表",
+          "url": "https://www.bochobus.co.jp/files/libs/8616/202610151930521986.pdf"
+        },
+        {
+          "title": "NHKニュース（北陸鉄道）",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261016de60615"
+        },
+        {
+          "title": "北國新聞",
+          "url": "https://www.hokkoku.co.jp/articles/-/2261105"
+        },
+        {
+          "title": "アスキー",
+          "url": "https://ascii.jp/elem/000/004/443/4443128/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 29,
+      "reliability": "high"
     },
     {
       "id": "2026-10-kamisunagawa-town",
@@ -1067,6 +1793,47 @@
         }
       ],
       "severity": "high",
+      "disclosure_days": 4,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-wakayama-pref-schools",
+      "organization": "和歌山県教育委員会",
+      "services": [
+        "県立学校の連絡メール"
+      ],
+      "industry": [
+        "行政",
+        "人材・教育"
+      ],
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "和歌山県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-15",
+      "affected_count": 16000,
+      "count_note": "約1万6,000人（県立17高校・4中学校の連絡メール登録者）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "県立の17高校・4中学校の計21校が使う連絡メールを運営するアルカディアが不正アクセスを受け、登録者約1万6,000人分の氏名、メールアドレス、在籍校名、学年などが漏えいした可能性があると県教育委員会が公表した。",
+      "sources": [
+        {
+          "title": "紀伊民報",
+          "url": "https://www.agara.co.jp/article/699991"
+        },
+        {
+          "title": "産経新聞（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/111efc879642532ca8e9382819b95b744e91fcb1"
+        }
+      ],
+      "severity": "medium",
       "disclosure_days": 4,
       "reliability": "mid"
     },
@@ -2750,6 +3517,36 @@
       "severity": "high",
       "disclosure_days": null,
       "reliability": "high"
+    },
+    {
+      "id": "2026-10-wakayama-city",
+      "organization": "和歌山県和歌山市",
+      "services": [
+        "防災情報などの配信サービス"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "和歌山県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 23000,
+      "count_note": "延べ2万3,000件超",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "summary": "防災情報などの配信サービスを運営するアルカディアが不正アクセスを受け、延べ2万3,000件超の登録情報が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "わかやま新報",
+          "url": "https://wakayamashimpo.co.jp/2026/10/20261014_139791.html"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 3,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-yatsushiro-city",
@@ -4806,7 +5603,7 @@
       "date_occurred": "2026-09-20",
       "date_announced": "2026-10-08",
       "affected_count": 14640000,
-      "count_note": "管理機能への不正操作で約1,464万件（うち約413万件はハッシュ化されたパスワードを含む）。このほか業務管理システムの脆弱性で返金先の口座情報など17,780件、バス予約完了ページの閲覧で約1.2万件",
+      "count_note": "管理機能への不正操作で約1,464万件（うち約413万件はハッシュ化されたパスワードを含む）。このほか業務管理システムの脆弱性で返金先の口座情報など17,780件、バス予約完了ページの閲覧で約1.2万件。10月16日の第2報で、2017年2月〜2018年6月にskyticketプレミアムの会費支払いでカードを登録・利用した最大6,140人のクレジットカード情報の流出を追加",
       "cause": "unauthorized_access",
       "root_cause": "管理機能の不正操作、業務管理システムの脆弱性、ログインなしで開けたバス予約完了ページの3つの経路による不正アクセス",
       "data_types": [
@@ -4814,9 +5611,10 @@
         "生年月日",
         "メールアドレス",
         "パスワード（ハッシュ化・暗号化済み）",
-        "口座番号"
+        "口座番号",
+        "クレジットカード番号"
       ],
-      "summary": "旅行予約サイト「skyticket」で、経路の異なる3件の不正アクセスがあったと10月9日に公表した（会員には8日にメールで通知していた）。10月2日〜4日に管理機能が不正に操作され、氏名・生年月日・メールアドレスなど約1,464万件が流出し、うち約413万件にはハッシュ化されたパスワードが含まれていた。9月20日には業務管理システムの脆弱性を突かれ返金先の口座情報など17,780件が対象となり、バス予約完了ページの約1.2万件の予約情報も機械的に閲覧されていた。クレジットカード番号とパスポートの画像は保存しておらず、流出していないとした。",
+      "summary": "旅行予約サイト「skyticket」で、経路の異なる3件の不正アクセスがあったと10月9日に公表した（会員には8日にメールで通知していた）。10月2日〜4日に管理機能が不正に操作され、氏名・生年月日・メールアドレスなど約1,464万件が流出し、うち約413万件にはハッシュ化されたパスワードが含まれていた。9月20日には業務管理システムの脆弱性を突かれ返金先の口座情報など17,780件が対象となり、バス予約完了ページの約1.2万件の予約情報も機械的に閲覧されていた。当初はクレジットカード番号は流出していないとしていたが、10月16日の第2報で、2018年の決済移行の際に削除されず会費支払いのログに残っていたカード番号・名義・有効期限が、最大6,140人分流出したと訂正した。セキュリティコードは含まれない。",
       "sources": [
         {
           "title": "skyticket 公式発表",
@@ -4837,6 +5635,14 @@
         {
           "title": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261009de57110"
+        },
+        {
+          "title": "skyticket 公式発表（第2報）",
+          "url": "https://skyticket.jp/news/world/67630/"
+        },
+        {
+          "title": "ITmedia NEWS（第2報）",
+          "url": "https://www.itmedia.co.jp/news/article/2610/17/2000002350/"
         }
       ],
       "severity": "critical",
@@ -6907,8 +7713,8 @@
       "country": "JP",
       "date_occurred": "2026-09-28",
       "date_announced": "2026-09-29",
-      "affected_count": null,
-      "count_note": "件数は調査中（公表時点）",
+      "affected_count": 5310000,
+      "count_note": "約531万件（購入者情報約526万件〈うちメールアドレスを含むもの約49万件〉、届け先情報約5万件、加盟店情報約4,100件。概数で人数ではない）",
       "cause": "unauthorized_access",
       "data_types": [
         "氏名",
@@ -6917,8 +7723,20 @@
         "メールアドレス",
         "購入履歴"
       ],
-      "summary": "通販向けの「クロネコ代金後払いサービス」への第三者からの不正アクセスを9月28日に確認し、同日中にサービスを停止。保存されていた氏名・住所や請求金額・商品明細などが対象となる可能性がある。",
+      "summary": "通販向けの「クロネコ代金後払いサービス」への第三者からの不正アクセスを9月28日に確認し、同日中にサービスを停止。10月16日の第4報で、2018年10月から2026年9月の一部利用者の氏名、住所、電話番号、商品明細など約531万件が漏えいしたと公表した。クレジットカード情報とパスワードは含まれず、請求金額・債権残高は持ち出しが確認されなかった。10月9日にサービスを再開した。",
       "sources": [
+        {
+          "title": "ヤマトホールディングス 公式発表（第4報）",
+          "url": "https://www.yamato-hd.co.jp/important/info_260929_1.html"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/16/2000002339/"
+        },
+        {
+          "title": "時事通信",
+          "url": "https://www.jiji.com/jc/article?k=2026101600745&g=eco"
+        },
         {
           "title": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56361.html"
@@ -6926,7 +7744,7 @@
       ],
       "severity": "high",
       "disclosure_days": 1,
-      "reliability": "mid"
+      "reliability": "high"
     },
     {
       "id": "2026-09-nagano-toshigas",
@@ -7168,8 +7986,12 @@
       "affected_count": null,
       "count_note": "公表時点で個人情報の漏えいは確認されていない（顧客情報の流出を含めて調査中）",
       "cause": "ransomware",
-      "summary": "グループ会社のサーバーがランサムウェア攻撃を受け、京王ストアの現金以外の決済や京王プラザホテルの新規予約など、一部グループ会社の営業システムに障害が出た。鉄道の運行に影響はない。公表時点で個人情報などの漏えいは確認されていないが、事業の機密事項や顧客情報の流出を含めて外部の専門家と影響範囲を調査している。",
+      "summary": "グループ会社のサーバーがランサムウェア攻撃を受け、京王ストアの現金以外の決済や京王プラザホテルの新規予約など、一部グループ会社の営業システムに障害が出た。鉄道の運行に影響はない。公表時点で個人情報などの漏えいは確認されていないが、事業の機密事項や顧客情報の流出を含めて外部の専門家と影響範囲を調査している。10月16日の第2報で、攻撃を行ったと名乗る組織がグループの情報の一部を公開したと主張しているのを確認し、事実関係を確認中とした。",
       "sources": [
+        {
+          "title": "京王電鉄 公式発表（第2報）",
+          "url": "https://www.keio.co.jp/news/update/news_release/news_release2026/pdf/nr20261016_newsrelease.pdf"
+        },
         {
           "title": "京王電鉄 ランサムウェア攻撃によるシステム障害に関するお知らせとお詫び",
           "url": "https://www.keio.co.jp/news/update/announce/nr260926v13404/"
@@ -9036,11 +9858,11 @@
       "country": "JP",
       "date_occurred": "2026-05-21",
       "date_announced": "2026-08-01",
-      "affected_count": 8853839,
-      "count_note": "延べ最大8,853,839件（8月2日の第2報）。ショップサーブを利用する多数の店舗の購入者・会員の情報を含む",
+      "affected_count": 23356000,
+      "count_note": "約2,335万6,000人（10月16日の最終報。購入者・会員、店舗運営者、アフィリエイターを名寄せした概数。対象店舗7,858店）。うち約209万6,900人はクレジットカード情報の一部。8月2日の第2報では延べ最大8,853,839件としていた",
       "cause": "unauthorized_access",
+      "root_cause": "サーバー上のアプリケーションの脆弱性を悪用され、不正なプログラムを実行された",
       "data_types": [
-        "口座番号",
         "住所",
         "パスワード（ハッシュ化・暗号化済み）",
         "クレジットカード情報（番号の一部・有効期限等）",
@@ -9049,8 +9871,16 @@
         "メールアドレス",
         "会員ID"
       ],
-      "summary": "ECサイト構築サービス「ショップサーブ」のサーバー上で第三者が不正なプログラムを実行し、2026年5月21日から8月1日にかけて購入者情報を外部へ送信していた。クレジットカードはカード名義・有効期限・番号の先頭6桁と下4桁が対象。店舗の管理画面・FTPの認証情報や振込先口座情報も流出した。",
+      "summary": "ECサイト構築サービス「ショップサーブ」のサーバー上で第三者が不正なプログラムを実行し、2026年5月21日から8月1日にかけて購入者情報を外部へ送信していた。クレジットカードはカード名義・有効期限・番号の先頭6桁と下4桁が対象。10月16日の最終報で、漏えい対象は約2,335万6,000人（対象店舗7,858店）、うち約209万6,900人分がカード情報の一部と確定した。購入者・会員の氏名、住所、電話番号、メールアドレス、勤務先、会員ID、暗号化されたパスワードと、店舗の管理画面のログインIDとパスワードなどが含まれる。第2報で対象としていた店舗のメールシステム・FTPの認証情報と振込先口座情報は、調査の結果、対象から外れた。",
       "sources": [
+        {
+          "title": "BASE 公式発表（最終報）",
+          "url": "https://binc.jp/press-room/news/notice/news_20261016"
+        },
+        {
+          "title": "ITmedia NEWS（最終報）",
+          "url": "https://www.itmedia.co.jp/news/article/2610/17/2000002349/"
+        },
         {
           "title": "ネットショップ担当者フォーラム",
           "url": "https://netshop.impress.co.jp/n/2026/08/05/16526"
@@ -9060,9 +9890,9 @@
           "url": "https://netkeizai.com/articles/detail/19430"
         }
       ],
-      "severity": "critical",
+      "severity": "high",
       "disclosure_days": 72,
-      "reliability": "mid"
+      "reliability": "high"
     },
     {
       "id": "2026-07-epark",
