@@ -1,0 +1,22 @@
+organization: Studio株式会社
+services:
+  - Studio
+industry: IT・通信
+country: JP
+date_occurred: 2026-09-30
+date_announced: 2026-10-16
+count_note: 件数は調査中（Studioに登録するすべての顧客が対象となる可能性）
+cause: vulnerability
+root_cause: クラウド環境にある一部機能の脆弱性を悪用された
+data_types:
+  - アカウント名
+  - メールアドレス
+  - パスワード（ハッシュ化・暗号化済み）
+  - 問い合わせ内容
+  - 保存データ（写真・文書等）
+summary: ノーコードのWeb制作プラットフォーム「Studio」のクラウド環境で、一部機能の脆弱性が9月30日から10月1日にかけて悪用され、すべての顧客の情報が流出した可能性があると公表した。10月13日に確認し、14日までに修正した。対象はユーザー名、メールアドレス、ハッシュ化パスワード、Studioで作ったサイトのフォームに送信された内容、CMS・デザインデータ、外部サービスのAPIキーやトークンなどで、暗号化したデータも復号に必要な鍵ごと読み出された恐れがある。Studioで作ったサイトのフォームを使う企業・自治体が相次いで影響を公表している。
+sources:
+  - title: Studio 公式発表（第一報）
+    url: https://studio.design/ja/whats-new/unauthorized-access-2026-10
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/16/2000002332/
