@@ -1,0 +1,13 @@
+organization: 株式会社石川コンピュータ・センター
+industry: IT・通信
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-10-16
+date_announced: 2026-10-17
+count_note: 影響範囲は調査中
+cause: unauthorized_access
+summary: 顧客向けのサポートサイトへの不正アクセスを10月16日に確認し、サービスを停止してサーバーを遮断したと公表した。影響範囲は調査中としている。
+sources:
+  - title: 石川コンピュータ・センター 公式発表
+    url: https://www.icc.co.jp/news/2026/20261017.html
