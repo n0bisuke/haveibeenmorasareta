@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-19T01:49:10.000Z",
-  "count": 546,
+  "generated_at": "2026-10-20T02:08:50.000Z",
+  "count": 563,
   "severity_levels": [
     {
       "id": "critical",
@@ -467,6 +467,555 @@
     }
   ],
   "breaches": [
+    {
+      "id": "2026-10-entouch",
+      "organization": "エンタッチ株式会社",
+      "group": "東邦ホールディングス",
+      "services": [
+        "MRのリモート活動支援サービス"
+      ],
+      "industry": [
+        "医療",
+        "IT・通信"
+      ],
+      "country": "JP",
+      "date_occurred": "2026-10-13",
+      "date_announced": "2026-10-19",
+      "count_note": "件数は調査中",
+      "cause": "ransomware",
+      "data_types": [
+        "氏名",
+        "従業員情報",
+        "メールアドレス"
+      ],
+      "summary": "東邦ホールディングスの子会社エンタッチが運営する、MR（医薬情報担当者）のリモート活動支援サービスが、ランサムウェア攻撃を行う第三者の不正アクセスを受け、サービスを利用した医療従事者の氏名、所属医療機関、所在地の都道府県、メールアドレスと、担当MRの氏名・メールアドレスが流出したと公表した。10月13日に判明した。件数は調査中。",
+      "sources": [
+        {
+          "title": "東邦ホールディングス 適時開示",
+          "url": "https://www.release.tdnet.info/inbs/140120261019553091.pdf"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC196ES0Z11C26A0000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 6,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-fukuoka-convention",
+      "organization": "一般財団法人福岡コンベンションセンター",
+      "services": [
+        "福岡国際会議場・マリンメッセ福岡・福岡国際センターの問い合わせフォーム"
+      ],
+      "industry": "団体・その他",
+      "country": "JP",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-19",
+      "affected_count": 2239,
+      "count_note": "2,239件",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "data_types": [
+        "取引先情報",
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "問い合わせ内容"
+      ],
+      "summary": "福岡国際会議場やマリンメッセ福岡などを運営する福岡コンベンションセンターは、Webサイトの制作に使っていたStudioが不正アクセスを受け、施設利用の問い合わせや落とし物の確認などでフォームに入力された2,239件の会社名、氏名、メールアドレス、電話番号、記載内容が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOJC1952H0Z11C26A0000000/"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261019de61779"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 19,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-furusato-choice",
+      "organization": "株式会社トラストバンク",
+      "services": [
+        "ふるさとチョイス"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-10-19",
+      "date_announced": "2026-10-19",
+      "count_note": "個人情報の漏えいの有無は調査中",
+      "cause": "unauthorized_access",
+      "summary": "ふるさと納税ポータル「ふるさとチョイス」で、10月19日のサーバー点検中に不正アクセスの疑いを検知し、同日午後からサービスを一時停止したと公表した。個人情報の漏えいの有無や侵入経路は調査中。データ連携している他社のふるさと納税サイトでも、一部自治体への寄付ができなくなった。",
+      "sources": [
+        {
+          "title": "トラストバンク 公式発表",
+          "url": "https://www.trustbank.co.jp/newsroom/news/news261019/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/19/2000002391/"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261019de61781"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 0,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-h2o-id",
+      "organization": "株式会社阪急阪神百貨店",
+      "group": "H2Oリテイリンググループ",
+      "services": [
+        "H2O ID",
+        "阪急百貨店・阪神百貨店予約サイト",
+        "HANKYU HANSHIN E-STORES",
+        "Remo Order"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-10-16",
+      "date_announced": "2026-10-19",
+      "affected_count": 1260000,
+      "count_note": "約126万件（共通ID「H2O ID」の会員のほぼ全員分）",
+      "cause": "unauthorized_access",
+      "root_cause": "予約サイトを入口に顧客管理システムへ侵入された",
+      "data_types": [
+        "会員ID",
+        "氏名",
+        "性別",
+        "生年月日",
+        "メールアドレス",
+        "住所",
+        "電話番号"
+      ],
+      "summary": "阪急阪神百貨店と親会社のエイチ・ツー・オー リテイリングは、予約サイトや公式通販サイトなど3サイトが不正アクセスを受け、共通ID「H2O ID」の会員約126万件のID、氏名、性別、生年月日、メールアドレス、住所、電話番号が漏えいしたと公表した。10月16日に最初の異常を確認した。予約サイトを入口に顧客管理システムへ侵入されたとしている。クレジットカード番号の全桁とセキュリティコードは保持していない。通販サイトの注文履歴などの漏えいの有無は調査中。",
+      "sources": [
+        {
+          "title": "エイチ・ツー・オー リテイリング 公式発表",
+          "url": "https://data.swcms.net/file/h2o-retailing/ja/news/auto_20261019552921/pdfFile.pdf"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/19/2000002398/"
+        },
+        {
+          "title": "時事通信",
+          "url": "https://www.jiji.com/jc/article?k=2026101900640&g=eco"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261019de61658"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 3,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-ishikawa-boe",
+      "organization": "石川県教育委員会",
+      "services": [
+        "県立学校のWebサイト"
+      ],
+      "industry": [
+        "行政",
+        "人材・教育"
+      ],
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "石川県",
+      "date_announced": "2026-10-19",
+      "affected_count": 138,
+      "count_note": "県立7校で計138人（うち盲学校110人）",
+      "cause": "human_error",
+      "root_cause": "教職員が非公開にすべきファイルを公開設定で投稿した・ファイルを消し忘れた",
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "健康・医療情報"
+      ],
+      "summary": "県立盲学校など県立7校のWebサイトで、教職員の設定ミスなどにより個人情報を含むファイルが外部から閲覧できる状態になっていたと公表した。盲学校では2026年1月のシステム改修以降、児童生徒110人の氏名、成績、出欠状況、保護者の氏名などが閲覧可能で、一部は検索エンジンからも見られた。ほかの6校では消し忘れたファイルで計28人の氏名や生年月日などが閲覧可能だった。8月に匿名の情報提供で判明した。不正アクセスではなく、二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "北國新聞",
+          "url": "https://www.hokkoku.co.jp/articles/-/2264372"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261019de61772"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-jetro",
+      "organization": "独立行政法人日本貿易振興機構",
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "public_agency",
+      "prefecture": "東京都",
+      "date_occurred": "2026-10-14",
+      "date_announced": "2026-10-19",
+      "affected_count": 743,
+      "cause": "unauthorized_access",
+      "data_types": [
+        "取引先情報",
+        "メールアドレス"
+      ],
+      "summary": "10月14日に外部から不正アクセスを受け、企業名や担当者のメールアドレスなど743件の個人情報の漏えいを確認したと公表した。10月17日から公式サイトを停止し、臨時サイトで運用している。侵入経路や原因は調査中で、対象の企業には通知した。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUA19A950Z11C26A0000000/"
+        },
+        {
+          "title": "共同通信（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/c6488e7435d344c861fc7014705c40562d70a967"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 5,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-my-softbank",
+      "organization": "ソフトバンク株式会社",
+      "group": "ソフトバンクグループ",
+      "services": [
+        "My SoftBank",
+        "My Y!mobile"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-10-17",
+      "date_announced": "2026-10-19",
+      "count_note": "個人情報の漏えいの有無は未公表",
+      "cause": "unauthorized_access",
+      "summary": "10月17日に監視システムが異常を検知し、「My SoftBank」「My Y!mobile」などのWeb版を同日から停止したと公表した。疑わしい通信経路を遮断した。不正アクセスの成否や個人情報の漏えいの有無は明らかにしていない。アプリ版は利用できる。",
+      "sources": [
+        {
+          "title": "ソフトバンク 公式発表",
+          "url": "https://www.softbank.jp/corp/news/press/sbkk/2026/20261019_01/"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2149432.html"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 2,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-nagasaki-city-studio",
+      "organization": "長崎県長崎市",
+      "services": [
+        "長崎満喫！アウェイ遠征応援キャンペーン"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "長崎県",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-19",
+      "affected_count": 19,
+      "count_note": "問い合わせフォームの入力22件・19人分",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "問い合わせ内容"
+      ],
+      "summary": "市が管理する「長崎満喫！アウェイ遠征応援キャンペーン」サイトの制作・運営に使っていたStudioが不正アクセスを受け、問い合わせフォームに入力された22件・19人分の名前、メールアドレス、問い合わせ内容が漏えいした可能性があると公表した。市は10月16日にStudioからの通知を受け取っていたが気づかず、18日夜の報道で把握した。",
+      "sources": [
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261019de61695"
+        },
+        {
+          "title": "NBC長崎放送（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/c790aca34995af487db8d76ca7c84a78a84e96bc"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 19,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-nifty",
+      "organization": "ニフティ株式会社",
+      "services": [
+        "回線申込・受付管理システム"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-10-19",
+      "affected_count": 542513,
+      "count_note": "最大542,513件（漏えいの可能性。2019年以降に @nifty光 などを同社Webサイト以外から申し込んだ人）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "会員ID",
+        "氏名",
+        "性別",
+        "生年月日",
+        "住所",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "回線申込・受付管理システムが不正アクセスを受け、最大54万2,513件の個人情報が漏えいした可能性があると公表した。対象は2019年以降に「@nifty光」「@nifty MAX光」「@nifty auひかりプラス」を同社Webサイト以外から申し込んだ人の会員ID、氏名、性別、生年月日、住所、電話番号、メールアドレス。10月19日に検知し、通信元を遮断した。口座情報とクレジットカード情報は対象外。",
+      "sources": [
+        {
+          "title": "ニフティ 公式発表",
+          "url": "https://www.nifty.co.jp/newsrelease/nifty202610195434.htm"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2149373.html"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/19/2000002399/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-papyless-renta",
+      "organization": "株式会社パピレス",
+      "services": [
+        "Renta!"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-10-18",
+      "date_announced": "2026-10-19",
+      "count_note": "個人情報の漏えいの有無は調査中",
+      "cause": "unauthorized_access",
+      "summary": "電子書籍販売サイト「Renta!」で、10月18日にサーバーへの外部からの不正アクセスの可能性を把握し、サービスを停止したと公表した。個人情報の漏えいの有無は調査中で、再開時期は未定としている。",
+      "sources": [
+        {
+          "title": "パピレス 適時開示",
+          "url": "https://www.release.tdnet.info/inbs/140120261019552777.pdf"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC193FH0Z11C26A0000000/"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 1,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-skymark",
+      "organization": "スカイマーク株式会社",
+      "services": [
+        "採用問い合わせフォームの管理画面"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_announced": "2026-10-19",
+      "affected_count": 488,
+      "count_note": "488人（2016年3月〜2020年2月の新卒・既卒の採用問い合わせ者）。第三者に閲覧されたかは確認できない",
+      "cause": "misconfiguration",
+      "root_cause": "採用問い合わせフォームの管理画面のアクセス制限の設定不備",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "問い合わせ内容",
+        "従業員情報"
+      ],
+      "summary": "採用問い合わせフォームの管理画面がアクセス制限の設定不備により、2016年3月から2026年10月16日まで外部から閲覧可能な状態だったと公表した。対象は2016年3月から2020年2月の採用問い合わせ者488人の氏名、メールアドレス、問い合わせ内容、学校名・勤務先など。他社への不正アクセスが相次いだことを受けた点検で社員が見つけた。外部からの攻撃の痕跡はないが、記録がない期間があり、第三者に閲覧されたかは確認できないとしている。",
+      "sources": [
+        {
+          "title": "共同通信（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/0e876a635ef76490a8bc9b5005bf3a0c8439f9f6"
+        },
+        {
+          "title": "TRAICY",
+          "url": "https://www.traicy.com/posts/20261019385236/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-xmile",
+      "organization": "X Mile株式会社",
+      "services": [
+        "公式サイトの問い合わせフォーム"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-19",
+      "count_note": "件数は未公表",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "取引先情報",
+        "メールアドレス",
+        "電話番号",
+        "問い合わせ内容"
+      ],
+      "summary": "公式サイトの制作・運用に使っていたStudioが不正アクセスを受け、10月14日までに問い合わせフォームに入力された名前、企業名、メールアドレス、電話番号、問い合わせ内容が漏えいした可能性があると公表した。クレジットカード、銀行口座、パスワードは対象外。",
+      "sources": [
+        {
+          "title": "LNEWS",
+          "url": "https://www.lnews.jp/2026/10/s1019703.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 19,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-yumiru-link",
+      "organization": "ユミルリンク株式会社",
+      "services": [
+        "Cuenote FC（専用ASPプラン）"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-10-16",
+      "date_announced": "2026-10-19",
+      "affected_count": 9000000,
+      "count_note": "メールアドレスを含む情報が延べ約900万件出力されたとの試算（5システム。内訳は調査中）",
+      "cause": "vulnerability",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "root_cause": "プログラムの脆弱性を突いてサポート担当者の認証情報を取得され、不正なプログラムを置かれてデータベースから出力された",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "メール配信サービス「Cuenote FC」の専用ASPプランの5システムが不正アクセスを受け、メールアドレスを含む情報が延べ約900万件出力されたとみられると公表した。10月16日未明に検知した。攻撃者はプログラムの脆弱性を突いてサポート・品質管理担当者の認証情報を取得し、不正なプログラムを置いてデータベースから情報を出力した。同サービスは企業や自治体が利用しており、影響の範囲は調査中としている。",
+      "sources": [
+        {
+          "title": "ユミルリンク 適時開示（第一報）",
+          "url": "https://www.release.tdnet.info/inbs/140120261019553124.pdf"
+        },
+        {
+          "title": "Cuenote お知らせ",
+          "url": "https://www.cuenote.jp/information/news/unauthorizedaccess.html"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/20/2000002409/"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261019de61855"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-yuyu-point",
+      "organization": "日本郵政株式会社",
+      "group": "日本郵政グループ",
+      "services": [
+        "ゆうゆうポイント",
+        "ゆうID"
+      ],
+      "industry": "物流",
+      "country": "JP",
+      "date_occurred": "2026-10-15",
+      "date_announced": "2026-10-19",
+      "affected_count": 249,
+      "count_note": "249アカウント（会員情報が閲覧された可能性）。うち1アカウントでは住所録の83件の住所情報も取得された可能性",
+      "cause": "unauthorized_access",
+      "attack_methods": [
+        "credential_stuffing"
+      ],
+      "root_cause": "外部で流出したIDとパスワードを使ったなりすましログイン（リスト型攻撃）",
+      "data_types": [
+        "氏名",
+        "住所",
+        "生年月日",
+        "電話番号",
+        "性別",
+        "メールアドレス"
+      ],
+      "summary": "「ゆうゆうポイント」の公式サイトで、外部で流出したとみられるIDとパスワードを使った「ゆうID」へのなりすましログインがあり、249アカウントの会員情報（氏名、住所、生年月日、電話番号、性別、メールアドレスなど）が閲覧された可能性があると公表した。10月15日に検知し、16日からサイトを停止した。20日から「ゆうID」のログインに2段階認証を必須にした。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUA198R00Z11C26A0000000/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/20/2000002412/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 4,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-zigzag",
+      "organization": "株式会社ジグザグ",
+      "services": [
+        "WorldShopping"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-10-15",
+      "date_announced": "2026-10-19",
+      "affected_count": 301,
+      "count_note": "海外の顧客301人（最終確認中）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "住所",
+        "電話番号",
+        "購入履歴"
+      ],
+      "summary": "越境EC購入代行サービス「WorldShopping」が10月15日から16日にかけて第三者による不正アクセスを受け、台湾・香港・米国などの海外の顧客301人のメールアドレス、氏名、住所、電話番号、注文情報が漏えいしたと公表した。クレジットカード情報とパスワードは含まれない。メール配信システムと入力フォームの不備を修正し、攻撃者が使った認証情報を無効化した。",
+      "sources": [
+        {
+          "title": "ジグザグ 適時開示",
+          "url": "https://www.release.tdnet.info/inbs/140120261019553141.pdf"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 4,
+      "reliability": "high"
+    },
     {
       "id": "2026-10-jfa-passport",
       "organization": "公益財団法人日本サッカー協会",
@@ -3854,6 +4403,38 @@
       "reliability": "high"
     },
     {
+      "id": "2026-10-gdo",
+      "organization": "株式会社ゴルフダイジェスト・オンライン",
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-10-13",
+      "date_announced": "2026-10-13",
+      "count_note": "従業員・退職者・委託先などの情報を含むファイルがダウンロードされた（件数は未公表）。別のサーバーで会員情報55件が照会された",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "従業員情報",
+        "取引先情報"
+      ],
+      "summary": "10月13日朝に外部からの不正アクセスの兆候を検知して通信を遮断し、システム障害としてクーポンや配送などのサービスに影響が出たと公表した。16日、操作ログの調査で従業員・退職者・委託先・パートナー企業の個人情報を含むファイルが攻撃者にダウンロードされたことを確認し、別のサーバーでは会員情報55件が照会されたと発表した。",
+      "sources": [
+        {
+          "title": "ゴルフダイジェスト・オンライン 公式発表（10月16日）",
+          "url": "https://company.golfdigest.co.jp/corp/pr/2026101601.html"
+        },
+        {
+          "title": "ゴルフダイジェスト・オンライン お知らせ（10月13日）",
+          "url": "https://company.golfdigest.co.jp/brand/news/2026101301.html"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56514.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 0,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-idare",
       "organization": "株式会社Fivot",
       "services": [
@@ -5444,16 +6025,25 @@
       "prefecture": "長野県",
       "date_occurred": "2026-10-07",
       "date_announced": "2026-10-08",
-      "affected_count": 35,
-      "count_note": "最大35人。預金・融資に関する顧客情報が含まれるかは確認中",
+      "affected_count": 672,
+      "count_note": "10月19日の第2報で法人取引先627社、個人34名、関係機関11機関。うち法人96社分は預金・融資残高などの取引情報を含む（第1報では最大35人）",
       "cause": "unauthorized_access",
       "root_cause": "職員が外部からの不審なメールを開封し、メールアカウントが第三者に不正アクセスされた",
       "data_types": [
         "メールアドレス",
+        "資産・取引情報",
         "取引先情報"
       ],
-      "summary": "職員のメールアカウントが不正アクセスを受け、経営コンサルティング業務の連携先の従業員など35人分のメールアドレスと、職員とのメールのやり取りが流出した可能性があると発表した。10月7日に職員が外部からの不審メールを開封したことが原因で、同日夜にアカウントを停止した。外部の専門事業者による調査と警察への報告を行い、預金・融資に関する顧客情報が含まれるかは確認中とした。不正利用の被害は確認されていない。",
+      "summary": "職員のメールアカウントが不正アクセスを受け、経営コンサルティング業務の連携先の従業員など35人分のメールアドレスと、職員とのメールのやり取りが流出した可能性があると発表した。10月7日に職員が外部からの不審メールを開封したことが原因で、同日夜にアカウントを停止した。外部の専門事業者による調査と警察への報告を行い、預金・融資に関する顧客情報が含まれるかは確認中とした。不正利用の被害は確認されていない。10月19日の第2報で、対象は法人取引先627社、個人34名、関係機関11機関に広がり、うち法人96社については預金・融資残高などの取引情報が含まれると公表した。口座情報と暗証番号の漏えいは確認されていない。",
       "sources": [
+        {
+          "title": "株式会社八十二長野銀行 公式発表（第2報）",
+          "url": "https://bank.82group.jp/file.jsp?id=release%2F2026%2Fpdf%2Fnews20261019.pdf"
+        },
+        {
+          "title": "NHKニュース（第2報）",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261019de61701"
+        },
         {
           "title": "株式会社八十二長野銀行 公式発表",
           "url": "https://bank.82group.jp/file.jsp?id=release/2026/pdf/news20261008.pdf"
@@ -5471,7 +6061,7 @@
           "url": "https://news.yahoo.co.jp/articles/f9ddb4880bc1411497015c13b4d046b10bc40c1c"
         }
       ],
-      "severity": "medium",
+      "severity": "high",
       "disclosure_days": 1,
       "reliability": "high"
     },
@@ -10032,6 +10622,47 @@
       ],
       "severity": "high",
       "disclosure_days": 72,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-07-alsok-joylife",
+      "organization": "ALSOKジョイライフ株式会社",
+      "group": "ALSOKグループ",
+      "services": [
+        "ベルパージュ奈良あやめ池"
+      ],
+      "industry": "福祉・介護",
+      "country": "JP",
+      "date_occurred": "2026-07-04",
+      "date_announced": "2026-07-31",
+      "affected_count": 134,
+      "count_note": "過去・現在の入居者134件（閲覧された可能性）",
+      "cause": "unauthorized_access",
+      "root_cause": "社内端末への侵入と不正な遠隔操作",
+      "data_types": [
+        "氏名",
+        "性別",
+        "生年月日",
+        "会員ID",
+        "契約情報"
+      ],
+      "summary": "有料老人ホーム「ベルパージュ奈良あやめ池」の社内端末が侵入を受けて不正に遠隔操作され、過去・現在の入居者134件の氏名、フリガナ、性別、生年月日、居室番号、入退去日、契約日などが閲覧された可能性があると公表した。7月4日に把握した。10月1日の調査結果の報告で、フォレンジック調査では個人情報が流出した事実は確認されなかったとした。",
+      "sources": [
+        {
+          "title": "ALSOKジョイライフ 公式発表",
+          "url": "https://joylife.alsok.co.jp/files/optionallink/00005870_file.pdf"
+        },
+        {
+          "title": "ALSOKジョイライフ 調査結果のご報告",
+          "url": "https://joylife.alsok.co.jp/files/optionallink/00006134_file.pdf"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56509.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 27,
       "reliability": "high"
     },
     {
