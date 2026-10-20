@@ -1,0 +1,24 @@
+organization: 石川県教育委員会
+services:
+  - 県立学校のWebサイト
+industry:
+  - 行政
+  - 人材・教育
+country: JP
+org_type: local_gov
+prefecture: 石川県
+date_announced: 2026-10-19
+affected_count: 138
+count_note: 県立7校で計138人（うち盲学校110人）
+cause: human_error
+root_cause: 教職員が非公開にすべきファイルを公開設定で投稿した・ファイルを消し忘れた
+data_types:
+  - 氏名
+  - 生年月日
+  - 健康・医療情報
+summary: 県立盲学校など県立7校のWebサイトで、教職員の設定ミスなどにより個人情報を含むファイルが外部から閲覧できる状態になっていたと公表した。盲学校では2026年1月のシステム改修以降、児童生徒110人の氏名、成績、出欠状況、保護者の氏名などが閲覧可能で、一部は検索エンジンからも見られた。ほかの6校では消し忘れたファイルで計28人の氏名や生年月日などが閲覧可能だった。8月に匿名の情報提供で判明した。不正アクセスではなく、二次被害は確認されていない。
+sources:
+  - title: 北國新聞
+    url: https://www.hokkoku.co.jp/articles/-/2264372
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261019de61772
