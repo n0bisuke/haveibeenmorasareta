@@ -1,0 +1,25 @@
+organization: ユミルリンク株式会社
+services:
+  - Cuenote FC（専用ASPプラン）
+industry: IT・通信
+country: JP
+date_occurred: 2026-10-16
+date_announced: 2026-10-19
+affected_count: 9000000
+count_note: メールアドレスを含む情報が延べ約900万件出力されたとの試算（5システム。内訳は調査中）
+cause: vulnerability
+attack_methods:
+  - stolen_credentials
+root_cause: プログラムの脆弱性を突いてサポート担当者の認証情報を取得され、不正なプログラムを置かれてデータベースから出力された
+data_types:
+  - メールアドレス
+summary: メール配信サービス「Cuenote FC」の専用ASPプランの5システムが不正アクセスを受け、メールアドレスを含む情報が延べ約900万件出力されたとみられると公表した。10月16日未明に検知した。攻撃者はプログラムの脆弱性を突いてサポート・品質管理担当者の認証情報を取得し、不正なプログラムを置いてデータベースから情報を出力した。同サービスは企業や自治体が利用しており、影響の範囲は調査中としている。
+sources:
+  - title: ユミルリンク 適時開示（第一報）
+    url: https://www.release.tdnet.info/inbs/140120261019553124.pdf
+  - title: Cuenote お知らせ
+    url: https://www.cuenote.jp/information/news/unauthorizedaccess.html
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/20/2000002409/
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261019de61855

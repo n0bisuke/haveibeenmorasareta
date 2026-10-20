@@ -1,0 +1,21 @@
+organization: スカイマーク株式会社
+services:
+  - 採用問い合わせフォームの管理画面
+industry: 交通・モビリティ
+country: JP
+date_announced: 2026-10-19
+affected_count: 488
+count_note: 488人（2016年3月〜2020年2月の新卒・既卒の採用問い合わせ者）。第三者に閲覧されたかは確認できない
+cause: misconfiguration
+root_cause: 採用問い合わせフォームの管理画面のアクセス制限の設定不備
+data_types:
+  - 氏名
+  - メールアドレス
+  - 問い合わせ内容
+  - 従業員情報
+summary: 採用問い合わせフォームの管理画面がアクセス制限の設定不備により、2016年3月から2026年10月16日まで外部から閲覧可能な状態だったと公表した。対象は2016年3月から2020年2月の採用問い合わせ者488人の氏名、メールアドレス、問い合わせ内容、学校名・勤務先など。他社への不正アクセスが相次いだことを受けた点検で社員が見つけた。外部からの攻撃の痕跡はないが、記録がない期間があり、第三者に閲覧されたかは確認できないとしている。
+sources:
+  - title: 共同通信（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/0e876a635ef76490a8bc9b5005bf3a0c8439f9f6
+  - title: TRAICY
+    url: https://www.traicy.com/posts/20261019385236/

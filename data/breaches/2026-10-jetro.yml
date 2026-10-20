@@ -1,0 +1,18 @@
+organization: 独立行政法人日本貿易振興機構
+industry: 行政
+country: JP
+org_type: public_agency
+prefecture: 東京都
+date_occurred: 2026-10-14
+date_announced: 2026-10-19
+affected_count: 743
+cause: unauthorized_access
+data_types:
+  - 取引先情報
+  - メールアドレス
+summary: 10月14日に外部から不正アクセスを受け、企業名や担当者のメールアドレスなど743件の個人情報の漏えいを確認したと公表した。10月17日から公式サイトを停止し、臨時サイトで運用している。侵入経路や原因は調査中で、対象の企業には通知した。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUA19A950Z11C26A0000000/
+  - title: 共同通信（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/c6488e7435d344c861fc7014705c40562d70a967

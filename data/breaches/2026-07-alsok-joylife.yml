@@ -1,0 +1,26 @@
+organization: ALSOKジョイライフ株式会社
+group: ALSOKグループ
+services:
+  - ベルパージュ奈良あやめ池
+industry: 福祉・介護
+country: JP
+date_occurred: 2026-07-04
+date_announced: 2026-07-31
+affected_count: 134
+count_note: 過去・現在の入居者134件（閲覧された可能性）
+cause: unauthorized_access
+root_cause: 社内端末への侵入と不正な遠隔操作
+data_types:
+  - 氏名
+  - 性別
+  - 生年月日
+  - 会員ID
+  - 契約情報
+summary: 有料老人ホーム「ベルパージュ奈良あやめ池」の社内端末が侵入を受けて不正に遠隔操作され、過去・現在の入居者134件の氏名、フリガナ、性別、生年月日、居室番号、入退去日、契約日などが閲覧された可能性があると公表した。7月4日に把握した。10月1日の調査結果の報告で、フォレンジック調査では個人情報が流出した事実は確認されなかったとした。
+sources:
+  - title: ALSOKジョイライフ 公式発表
+    url: https://joylife.alsok.co.jp/files/optionallink/00005870_file.pdf
+  - title: ALSOKジョイライフ 調査結果のご報告
+    url: https://joylife.alsok.co.jp/files/optionallink/00006134_file.pdf
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/20/56509.html

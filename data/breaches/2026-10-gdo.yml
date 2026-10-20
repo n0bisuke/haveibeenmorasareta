@@ -1,0 +1,18 @@
+organization: 株式会社ゴルフダイジェスト・オンライン
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-10-13
+date_announced: 2026-10-13
+count_note: 従業員・退職者・委託先などの情報を含むファイルがダウンロードされた（件数は未公表）。別のサーバーで会員情報55件が照会された
+cause: unauthorized_access
+data_types:
+  - 従業員情報
+  - 取引先情報
+summary: 10月13日朝に外部からの不正アクセスの兆候を検知して通信を遮断し、システム障害としてクーポンや配送などのサービスに影響が出たと公表した。16日、操作ログの調査で従業員・退職者・委託先・パートナー企業の個人情報を含むファイルが攻撃者にダウンロードされたことを確認し、別のサーバーでは会員情報55件が照会されたと発表した。
+sources:
+  - title: ゴルフダイジェスト・オンライン 公式発表（10月16日）
+    url: https://company.golfdigest.co.jp/corp/pr/2026101601.html
+  - title: ゴルフダイジェスト・オンライン お知らせ（10月13日）
+    url: https://company.golfdigest.co.jp/brand/news/2026101301.html
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/20/56514.html

@@ -1,0 +1,22 @@
+organization: X Mile株式会社
+services:
+  - 公式サイトの問い合わせフォーム
+industry: IT・通信
+country: JP
+date_occurred: 2026-09-30
+date_announced: 2026-10-19
+count_note: 件数は未公表
+cause: third_party
+root_cause: Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった
+vendor:
+  name: Studio株式会社
+data_types:
+  - 氏名
+  - 取引先情報
+  - メールアドレス
+  - 電話番号
+  - 問い合わせ内容
+summary: 公式サイトの制作・運用に使っていたStudioが不正アクセスを受け、10月14日までに問い合わせフォームに入力された名前、企業名、メールアドレス、電話番号、問い合わせ内容が漏えいした可能性があると公表した。クレジットカード、銀行口座、パスワードは対象外。
+sources:
+  - title: LNEWS
+    url: https://www.lnews.jp/2026/10/s1019703.html

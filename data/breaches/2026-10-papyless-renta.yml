@@ -1,0 +1,17 @@
+organization: 株式会社パピレス
+services:
+  - Renta!
+industry: メディア・出版
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-10-18
+date_announced: 2026-10-19
+count_note: 個人情報の漏えいの有無は調査中
+cause: unauthorized_access
+summary: 電子書籍販売サイト「Renta!」で、10月18日にサーバーへの外部からの不正アクセスの可能性を把握し、サービスを停止したと公表した。個人情報の漏えいの有無は調査中で、再開時期は未定としている。
+sources:
+  - title: パピレス 適時開示
+    url: https://www.release.tdnet.info/inbs/140120261019552777.pdf
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC193FH0Z11C26A0000000/
