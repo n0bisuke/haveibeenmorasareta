@@ -1,0 +1,33 @@
+organization: 株式会社阪急阪神百貨店
+group: H2Oリテイリンググループ
+services:
+  - H2O ID
+  - 阪急百貨店・阪神百貨店予約サイト
+  - HANKYU HANSHIN E-STORES
+  - Remo Order
+industry: 小売・EC
+country: JP
+date_occurred: 2026-10-16
+date_announced: 2026-10-19
+affected_count: 1260000
+count_note: 約126万件（共通ID「H2O ID」の会員のほぼ全員分）
+cause: unauthorized_access
+root_cause: 予約サイトを入口に顧客管理システムへ侵入された
+data_types:
+  - 会員ID
+  - 氏名
+  - 性別
+  - 生年月日
+  - メールアドレス
+  - 住所
+  - 電話番号
+summary: 阪急阪神百貨店と親会社のエイチ・ツー・オー リテイリングは、予約サイトや公式通販サイトなど3サイトが不正アクセスを受け、共通ID「H2O ID」の会員約126万件のID、氏名、性別、生年月日、メールアドレス、住所、電話番号が漏えいしたと公表した。10月16日に最初の異常を確認した。予約サイトを入口に顧客管理システムへ侵入されたとしている。クレジットカード番号の全桁とセキュリティコードは保持していない。通販サイトの注文履歴などの漏えいの有無は調査中。
+sources:
+  - title: エイチ・ツー・オー リテイリング 公式発表
+    url: https://data.swcms.net/file/h2o-retailing/ja/news/auto_20261019552921/pdfFile.pdf
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/19/2000002398/
+  - title: 時事通信
+    url: https://www.jiji.com/jc/article?k=2026101900640&g=eco
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261019de61658

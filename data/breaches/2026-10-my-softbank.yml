@@ -1,0 +1,19 @@
+organization: ソフトバンク株式会社
+group: ソフトバンクグループ
+services:
+  - My SoftBank
+  - My Y!mobile
+industry: IT・通信
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-10-17
+date_announced: 2026-10-19
+count_note: 個人情報の漏えいの有無は未公表
+cause: unauthorized_access
+summary: 10月17日に監視システムが異常を検知し、「My SoftBank」「My Y!mobile」などのWeb版を同日から停止したと公表した。疑わしい通信経路を遮断した。不正アクセスの成否や個人情報の漏えいの有無は明らかにしていない。アプリ版は利用できる。
+sources:
+  - title: ソフトバンク 公式発表
+    url: https://www.softbank.jp/corp/news/press/sbkk/2026/20261019_01/
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2149432.html

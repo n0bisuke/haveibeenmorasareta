@@ -1,0 +1,19 @@
+organization: 株式会社トラストバンク
+services:
+  - ふるさとチョイス
+industry: IT・通信
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-10-19
+date_announced: 2026-10-19
+count_note: 個人情報の漏えいの有無は調査中
+cause: unauthorized_access
+summary: ふるさと納税ポータル「ふるさとチョイス」で、10月19日のサーバー点検中に不正アクセスの疑いを検知し、同日午後からサービスを一時停止したと公表した。個人情報の漏えいの有無や侵入経路は調査中。データ連携している他社のふるさと納税サイトでも、一部自治体への寄付ができなくなった。
+sources:
+  - title: トラストバンク 公式発表
+    url: https://www.trustbank.co.jp/newsroom/news/news261019/
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/19/2000002391/
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261019de61781
