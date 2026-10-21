@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "セキュリティ注意喚起（/alerts/）1件分のデータ",
+  "description": "漏洩事案（data/breaches/）とは別物。広く使われるソフトの重大な脆弱性など、情報漏洩の背景になりやすい話題を注意喚起として収録する。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["title", "date", "severity", "category", "audience", "affected", "summary", "sources"],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 120,
+      "description": "注意喚起の見出し"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "掲載日・公表日（YYYY-MM-DD）。ファイル名の年月と一致させる"
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["critical", "high", "medium", "low", "info"],
+      "description": "深刻度"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["脆弱性", "証明書", "サプライチェーン", "設定不備", "その他"],
+      "description": "注意喚起の種類"
+    },
+    "audience": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "enum": ["サーバー管理者", "個人・アプリ利用者"] },
+      "description": "誰に関係するか"
+    },
+    "affected": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1, "maxLength": 40 },
+      "description": "影響するソフト・製品（表示用のタグ）"
+    },
+    "cve": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^CVE-[0-9]{4}-[0-9]+$" },
+      "description": "関連する CVE 番号（任意）"
+    },
+    "fixed": {
+      "type": "string",
+      "maxLength": 120,
+      "description": "修正版の表記（任意）"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 600,
+      "description": "概要。常体で事実を簡潔に"
+    },
+    "risk": {
+      "type": "string",
+      "maxLength": 300,
+      "description": "放置するとどうなるか（任意・事実ベースで短く）"
+    },
+    "action_admin": {
+      "type": "string",
+      "maxLength": 300,
+      "description": "サーバー管理者向けの対応（任意）"
+    },
+    "action_user": {
+      "type": "string",
+      "maxLength": 300,
+      "description": "個人・一般利用者向けの対応（任意）"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["url"],
+        "properties": {
+          "title": { "type": "string", "minLength": 1, "maxLength": 120 },
+          "url": { "type": "string", "format": "uri", "pattern": "^https?://" }
+        }
+      },
+      "description": "公式・信頼できる情報源"
+    }
+  }
+}

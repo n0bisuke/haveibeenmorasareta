@@ -1,0 +1,22 @@
+# セキュリティ注意喚起（/alerts/）のテンプレート。data/alerts/YYYY-MM-slug.yml にコピーして使う。
+# 漏洩事案（data/breaches/）とは別物。項目の詳細は schema/alert.schema.json を参照。
+title: 〇〇に重大な脆弱性        # 見出し（5〜120文字）
+date: 2026-10-21               # 掲載日・公表日。ファイル名の年月と一致させる
+severity: high                 # critical / high / medium / low / info
+category: 脆弱性               # 脆弱性 / 証明書 / サプライチェーン / 設定不備 / その他
+audience:                      # 誰に関係するか（1つ以上）
+  - サーバー管理者
+  - 個人・アプリ利用者
+affected:                      # 影響するソフト・製品（表示用のタグ）
+  - 〇〇
+# cve:                         # 任意
+#   - CVE-2026-00000
+# fixed: 〇〇 1.2.3             # 任意：修正版の表記
+summary: >-                    # 概要。常体で事実を簡潔に（10〜600文字）
+  〇〇に〜〜の脆弱性が見つかった。
+# risk: 放置すると〜〜のおそれがある。      # 任意：放置するとどうなるか
+# action_admin: 修正版へ更新する。          # 任意：サーバー管理者向けの対応
+# action_user: アプリを最新版に更新する。     # 任意：個人・一般利用者向けの対応
+sources:                       # 公式・信頼できる情報源（1つ以上）
+  - title: 公式発表
+    url: https://example.com/

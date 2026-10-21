@@ -5,6 +5,7 @@
 import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { writeSectionPages, sectionUrls } from './sections.mjs';
 import { writeNewsPages } from './news.mjs';
+import { writeAlertsPage } from './alerts.mjs';
 import path from 'node:path';
 import { ROOT } from './lib.mjs';
 import { CAUSES } from '../public/labels.js';
@@ -121,6 +122,7 @@ function page(b) {
       <nav class="site-nav" aria-label="ページ">
         <a href="../../">一覧</a>
         <a href="../../news/">ニュース</a>
+        <a href="../../alerts/">注意喚起</a>
         <a href="../../visualization/">ビジュアライズ</a>
         <a href="../../ranking/">ランキング</a>
       </nav>
@@ -220,9 +222,12 @@ const sections = await writeSectionPages({ publicDir: PUBLIC, siteUrl: SITE_URL,
 // 公表日ごとのニュースページ
 const newsDays = await writeNewsPages({ publicDir: PUBLIC, breaches, siteUrl: SITE_URL, siteName: SITE_NAME, ga: GA });
 
-const urls = ['/', '/terms/', '/releases/', '/news/', ...newsDays.map((d) => `/news/${d}/`), '/ranking/', ...sectionUrls().filter((u) => u.startsWith('/ranking/')), '/visualization/', ...sectionUrls().filter((u) => u.startsWith('/visualization/')), ...breaches.map((b) => `/breach/${b.id}/`)];
+// セキュリティ注意喚起ページ
+const alertsCount = await writeAlertsPage({ publicDir: PUBLIC, siteUrl: SITE_URL, siteName: SITE_NAME, ga: GA });
+
+const urls = ['/', '/terms/', '/releases/', '/news/', ...newsDays.map((d) => `/news/${d}/`), ...(alertsCount ? ['/alerts/'] : []), '/ranking/', ...sectionUrls().filter((u) => u.startsWith('/ranking/')), '/visualization/', ...sectionUrls().filter((u) => u.startsWith('/visualization/')), ...breaches.map((b) => `/breach/${b.id}/`)];
 await writeFile(
   path.join(PUBLIC, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${esc(SITE_URL + u)}</loc></url>`).join('\n')}\n</urlset>\n`,
 );
-console.log(`✔ 個別ページ ${breaches.length} 件、ランキング・ビジュアライズの個別ページ ${sections} 件、ニュース ${newsDays.length} 日分と sitemap.xml を出力しました`);
+console.log(`✔ 個別ページ ${breaches.length} 件、ランキング・ビジュアライズの個別ページ ${sections} 件、ニュース ${newsDays.length} 日分、注意喚起 ${alertsCount} 件と sitemap.xml を出力しました`);

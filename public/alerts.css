@@ -1,0 +1,40 @@
+/* セキュリティ注意喚起（/alerts/）。ページは scripts/alerts.mjs が生成する */
+.alerts-main { padding-top: 24px; padding-bottom: 48px; max-width: 760px; }
+.al-title { font-size: 1.5rem; margin: 0 0 10px; }
+.al-note { margin: 0 0 20px; padding: 10px 14px; border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 10px; background: var(--surface); font-size: 0.85rem; color: var(--muted); }
+.al-note b { color: var(--text); }
+
+.al-list { list-style: none; margin: 0; padding: 0; }
+.al-row { background: var(--surface); border: 1px solid var(--border); border-left: 5px solid var(--low); border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+.al-row.sev-critical { border-left-color: var(--critical); }
+.al-row.sev-high { border-left-color: var(--high); }
+.al-row.sev-medium { border-left-color: var(--medium); }
+.al-row.sev-low { border-left-color: var(--low); }
+.al-row.sev-info { border-left-color: var(--low); }
+
+.al-r1 { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.al-r1 h2 { margin: 0; font-size: 1.02rem; line-height: 1.5; flex: 1 1 auto; }
+.al-date { font-size: 0.75rem; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+.al-sev { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 2px 10px; border-radius: 999px; white-space: nowrap; background: var(--tag-bg); color: var(--muted); }
+.al-sev.sev-critical { background: var(--critical-bg); color: var(--critical-fg); }
+.al-sev.sev-high { background: var(--high-bg); color: var(--high-fg); }
+.al-sev.sev-medium { background: var(--medium-bg); color: var(--medium-fg); }
+.al-sev.sev-low, .al-sev.sev-info { background: var(--low-bg); color: var(--low-fg); }
+
+.al-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 0; align-items: center; }
+.al-soft { background: var(--accent); color: var(--surface); font-weight: 600; font-size: 0.72rem; padding: 1px 8px; border-radius: 999px; }
+.al-aud { font-size: 0.72rem; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); }
+.al-cve { font-size: 0.72rem; padding: 1px 8px; border-radius: 6px; background: var(--tag-bg); color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.al-sum { margin: 8px 0 0; font-size: 0.86rem; color: var(--muted); line-height: 1.7; }
+.al-risk { margin: 10px 0 0; font-size: 0.82rem; color: var(--critical-fg); line-height: 1.7; }
+.al-risk b { color: var(--critical-fg); }
+.al-act { margin: 8px 0 0; font-size: 0.82rem; display: grid; gap: 4px; line-height: 1.7; }
+.al-act b { color: var(--text); font-weight: 600; }
+.al-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-top: 10px; padding-top: 9px; border-top: 1px solid var(--border); font-size: 0.8rem; }
+.al-fixed { color: var(--muted); }
+.al-fixed b { color: var(--text); font-weight: 600; }
+.al-sources { margin: 8px 0 0; padding-left: 1.2em; font-size: 0.78rem; }
+.al-sources a { color: var(--muted); }
+.al-data { font-size: 0.75rem; margin-top: 18px; }

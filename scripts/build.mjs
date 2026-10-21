@@ -1,7 +1,7 @@
 import { execFileSync } from 'node:child_process';
 import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { ROOT, loadBreaches, loadDataTypes, loadIndustries, loadVulnTargets, loadAttackMethods, loadOrgTypes, loadPrefectures } from './lib.mjs';
+import { ROOT, loadBreaches, loadAlerts, loadDataTypes, loadIndustries, loadVulnTargets, loadAttackMethods, loadOrgTypes, loadPrefectures } from './lib.mjs';
 
 const PUBLIC = path.join(ROOT, 'public');
 
@@ -32,13 +32,20 @@ const breaches = (await loadBreaches())
   .sort((a, b) => b.date_announced.localeCompare(a.date_announced) || a.id.localeCompare(b.id));
 
 // データ変更がない限り出力が変わらないよう、更新日時は data/ の最終コミット日時を使う
-function lastDataUpdate() {
+function lastDataUpdate(dir = 'data/breaches') {
   try {
-    const out = execFileSync('git', ['log', '-1', '--format=%cI', '--', 'data/breaches'], { cwd: ROOT, encoding: 'utf8' }).trim();
+    const out = execFileSync('git', ['log', '-1', '--format=%cI', '--', dir], { cwd: ROOT, encoding: 'utf8' }).trim();
     if (out) return new Date(out).toISOString();
   } catch {}
   return new Date().toISOString();
 }
+
+// セキュリティ注意喚起（data/alerts/）。深刻度の高い順の並び替えに使う
+const SEV_RANK = { critical: 0, high: 1, medium: 2, low: 3, info: 4 };
+const alerts = (await loadAlerts())
+  .filter(({ data }) => data)
+  .map(({ id, data }) => ({ id, ...data }))
+  .sort((a, b) => b.date.localeCompare(a.date) || (SEV_RANK[a.severity] ?? 9) - (SEV_RANK[b.severity] ?? 9) || a.id.localeCompare(b.id));
 
 // public/ の静的ファイルはそのまま公開し、データだけを生成する
 await writeFile(
@@ -46,3 +53,9 @@ await writeFile(
   JSON.stringify({ generated_at: lastDataUpdate(), count: breaches.length, severity_levels: levels, data_types: types, industries, vuln_targets: vulnTargets, attack_methods: attackMethods, org_types: orgTypes, prefectures, breaches }, null, 2) + '\n',
 );
 console.log(`✔ public/breaches.json に ${breaches.length} 件を出力しました`);
+
+await writeFile(
+  path.join(PUBLIC, 'alerts.json'),
+  JSON.stringify({ generated_at: lastDataUpdate('data/alerts'), count: alerts.length, alerts }, null, 2) + '\n',
+);
+console.log(`✔ public/alerts.json に ${alerts.length} 件を出力しました`);
