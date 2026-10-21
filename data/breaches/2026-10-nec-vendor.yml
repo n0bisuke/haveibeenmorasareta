@@ -1,0 +1,20 @@
+organization: 日本電気株式会社
+group: NECグループ
+industry: IT・通信
+country: JP
+date_announced: 2026-10-20
+count_note: 顧客3社の情報が漏えいし、うち2社で個人情報の漏えいを確認（件数は未公表）
+cause: third_party
+attack_methods:
+  - stolen_credentials
+root_cause: システム開発・保守の委託先の端末から、盗まれた正規アカウントで顧客のシステム環境に侵入された
+data_types:
+  - 保存データ（写真・文書等）
+summary: システム開発・保守の委託先が9月下旬にサイバー攻撃を受け、委託先の端末から盗まれた正規アカウントの認証情報で顧客のシステム環境に侵入され、顧客サーバー内のファイルが暗号化されてシステムが停止したと公表した。NEC・顧客・委託先が情報共有に使っていたクラウドストレージからもファイルが流出し、顧客3社の情報が漏えいし、うち2社で個人情報の漏えいを確認した。委託先名・顧客名・件数は公表していない。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC2081V0Q6A021C2000000/
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/20/2000002433/
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2149941.html

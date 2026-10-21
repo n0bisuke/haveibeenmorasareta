@@ -1,0 +1,27 @@
+organization: 新潟県
+services:
+  - チャレンジ新潟
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 新潟県
+date_occurred: 2026-09-30
+date_announced: 2026-10-20
+affected_count: 2
+count_note: 2件（10月19日時点。範囲は確認中）
+cause: third_party
+root_cause: Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった
+vendor:
+  name: Studio株式会社
+data_types:
+  - 取引先情報
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 問い合わせ内容
+summary: ポータルサイト「チャレンジ新潟」の維持管理を受託した事業者が使うStudioが不正アクセスを受け、問い合わせフォームに送信された会社名、担当者氏名、メールアドレス、電話番号、問い合わせ本文が漏えいした可能性があると公表した。10月19日時点で2件が対象で、範囲は確認中。
+sources:
+  - title: 新潟県 お知らせ
+    url: https://www.pref.niigata.lg.jp/sec/sangyoritchi/challenge-niigata-husei.html
+  - title: 新潟日報
+    url: https://www.niigata-nippo.co.jp/articles/-/927942

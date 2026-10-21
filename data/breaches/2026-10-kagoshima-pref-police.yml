@@ -1,0 +1,23 @@
+organization: 鹿児島県警察
+services:
+  - 災害時の安否確認システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 鹿児島県
+date_occurred: 2026-10-11
+date_announced: 2026-10-20
+affected_count: 2200
+count_note: 約2,200人
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - 氏名
+  - メールアドレス
+  - 従業員情報
+summary: 災害時の安否確認システムを運営するアルカディアが不正アクセスを受け、警察官・職員約2,200人分の名前やメールアドレスなどが漏えいした可能性があることが分かった。
+sources:
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261020de62082

@@ -2,17 +2,28 @@ organization: 株式会社リクルート
 group: リクルートグループ
 services:
   - カーセンサーnet
+  - C-MATCH
 industry:
   - IT・通信
   - 交通・モビリティ
 country: JP
-status: investigating
-issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
 date_occurred: 2026-10-17
 date_announced: 2026-10-17
-count_note: 情報漏えいは確認されておらず、調査中
+affected_count: 3709551
+count_note: 最大3,709,551件（漏えいの可能性。カーセンサーnetで販売店に問い合わせた利用者約321万件、販売店向けC-MATCH側約48万件など）
 cause: unauthorized_access
-summary: 中古車情報サイト「カーセンサーnet」で10月17日に外部からの不審なアクセスを検知し、同日17時ごろからサイト・アプリと販売店向けサービスを含む関連サービスをすべて停止した。情報漏えいは確認されておらず、調査中としている。
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - 問い合わせ内容
+summary: 中古車情報サイト「カーセンサーnet」で10月17日に関連システムへの不審なアクセスを検知し、同日17時ごろからサイト・アプリと販売店向けサービス「C-MATCH」を含む関連サービスをすべて停止した。10月21日、販売店に問い合わせた利用者などの氏名、住所、電話番号、問い合わせ内容など最大370万9,551件が漏えいした可能性があると公表した。決済情報とログインパスワードは対象外。原因は調査中。リクルートのシステムを使う日産・三菱自動車の中古車検索サイトも一時停止した。
 sources:
+  - title: リクルート 公式発表
+    url: https://www.recruit.co.jp/newsroom/pressrelease/2026/1021_149447.html
   - title: ITmedia NEWS
     url: https://www.itmedia.co.jp/news/article/2610/19/2000002354/
+  - title: ITmedia NEWS（件数）
+    url: https://www.itmedia.co.jp/news/article/2610/21/2000002456/
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261021de62694

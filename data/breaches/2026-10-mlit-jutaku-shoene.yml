@@ -1,0 +1,27 @@
+organization: 国土交通省
+services:
+  - 住宅省エネ2024キャンペーン 事務局システム
+industry: 行政
+country: JP
+org_type: national_gov
+prefecture: 東京都
+date_announced: 2026-10-20
+affected_count: 23918
+count_note: 23,918名（16,950事業者、速報値）
+cause: third_party
+root_cause: 事務局を運営する委託先のシステムへの不正アクセス
+vendor:
+  name: 株式会社博報堂
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 取引先情報
+summary: 経済産業省・環境省と連携して実施した「住宅省エネ2024キャンペーン」の事務局システムが外部から不正に操作され、登録事業者1万6,950事業者の代表者氏名、担当社員らの氏名・電話番号・メールアドレスなど2万3,918名分が漏えいしたおそれがあると発表した。事務局とシステムの運営は博報堂が担い、システムの全機能を停止した。一般消費者の情報の漏えいはない。
+sources:
+  - title: 国土交通省 報道発表
+    url: https://www.mlit.go.jp/report/press/house04_hh_001366.html
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUA210AX0R21C26A0000000/
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261020de62509

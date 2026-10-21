@@ -1,0 +1,13 @@
+organization: 幼児活動研究会株式会社
+industry: 人材・教育
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-10-14
+date_announced: 2026-10-20
+count_note: 個人情報・取引先情報への影響は調査中
+cause: unauthorized_access
+summary: 10月14日に社内ネットワークで第三者による不正アクセスの痕跡を確認し、対象システムを隔離してアカウントを無効化したと公表した。個人情報と取引先情報への影響は調査中で、現時点で漏えいは確認されていない。
+sources:
+  - title: 幼児活動研究会 適時開示
+    url: https://www.release.tdnet.info/inbs/140120261020553396.pdf

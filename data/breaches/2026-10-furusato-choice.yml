@@ -3,16 +3,28 @@ services:
   - ふるさとチョイス
 industry: IT・通信
 country: JP
-status: investigating
-issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
-date_occurred: 2026-10-19
+date_occurred: 2026-10-17
 date_announced: 2026-10-19
-count_note: 個人情報の漏えいの有無は調査中
+affected_count: 4454097
+count_note: 寄附者（会員）の個人情報4,454,097件が外部に流出（10月20日発表）
 cause: unauthorized_access
-summary: ふるさと納税ポータル「ふるさとチョイス」で、10月19日のサーバー点検中に不正アクセスの疑いを検知し、同日午後からサービスを一時停止したと公表した。個人情報の漏えいの有無や侵入経路は調査中。データ連携している他社のふるさと納税サイトでも、一部自治体への寄付ができなくなった。
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - パスワード（ハッシュ化・暗号化済み）
+  - 資産・取引情報
+summary: ふるさと納税ポータル「ふるさとチョイス」で、10月19日に通常と異なるアクセスの傾向を把握し、同日午後からサービスを一時停止した。10月20日、10月17日に第三者による不正アクセスがあり、寄附者の氏名、住所、電話番号、メールアドレス、ハッシュ化されたパスワード、寄附控除の試算額など445万4,097件が外部に流出したと発表した。侵入経路は調査中。データ連携している他社のふるさと納税サイトでも、一部自治体への寄付ができなくなった。
 sources:
-  - title: トラストバンク 公式発表
+  - title: トラストバンク 公式発表（サービス停止）
     url: https://www.trustbank.co.jp/newsroom/news/news261019/
+  - title: トラストバンク 公式発表（流出のお詫び）
+    url: https://www.trustbank.co.jp/newsroom/newsrelease/news261020/
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC208WP0Q6A021C2000000/
+  - title: Impress Watch
+    url: https://www.watch.impress.co.jp/docs/news/2149772.html
   - title: ITmedia NEWS
     url: https://www.itmedia.co.jp/news/article/2610/19/2000002391/
   - title: NHKニュース

@@ -1,0 +1,31 @@
+organization: 富士急ハイランド
+group: 富士急行グループ
+services:
+  - 富士急ハイランド公式アプリ
+  - CLUB フジQ
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-09-04
+date_announced: 2026-10-20
+affected_count: 159
+count_note: 159アカウント（閲覧された可能性）
+cause: unauthorized_access
+attack_methods:
+  - credential_stuffing
+root_cause: 外部で入手されたメールアドレスとパスワードを使ったパスワードリスト型攻撃
+data_types:
+  - 氏名
+  - メールアドレス
+  - 生年月日
+  - 性別
+  - 電話番号
+  - 郵便番号
+  - 会員ID
+  - 購入履歴
+  - クレジットカード情報（番号の一部・有効期限等）
+summary: 公式アプリと会員サイト「CLUB フジQ」で、9月4日から7日にかけてパスワードリスト型攻撃による不正ログインがあり、159アカウントの氏名、メールアドレス、生年月日、電話番号、会員番号などと、一部はチケット購入履歴やクレジットカードの下4桁・有効期限・名義が閲覧された可能性があると公表した。カード番号の全桁とセキュリティコードは含まれない。
+sources:
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261021de62670
+  - title: UTYテレビ山梨（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/49f8f107abacd8bc6e721f5a4271506f148ed59e

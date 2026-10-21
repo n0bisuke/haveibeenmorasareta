@@ -1,0 +1,19 @@
+organization: 株式会社フジテレビジョン
+services:
+  - 番組宣伝システム
+industry: メディア・出版
+country: JP
+date_announced: 2026-10-20
+affected_count: 730
+count_note: 最大730件（推定）
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - 取引先情報
+  - メールアドレス
+summary: 番組宣伝業務の関係者向けの番組宣伝システムが第三者による不正アクセスを受け、メディア関係者の氏名・会社名・メールアドレスなど最大730件が漏えいした可能性があると公表した。視聴者の個人情報は登録されていない。システムは利用を停止し、調査している。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/21/2000002449/
+  - title: 日刊スポーツ（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/1329fed12faeb2723987259a50ff7da0a7a704fd
