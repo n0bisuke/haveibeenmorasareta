@@ -222,12 +222,12 @@ const sections = await writeSectionPages({ publicDir: PUBLIC, siteUrl: SITE_URL,
 // 公表日ごとのニュースページ
 const newsDays = await writeNewsPages({ publicDir: PUBLIC, breaches, siteUrl: SITE_URL, siteName: SITE_NAME, ga: GA });
 
-// セキュリティ注意喚起ページ
-const alertsCount = await writeAlertsPage({ publicDir: PUBLIC, siteUrl: SITE_URL, siteName: SITE_NAME, ga: GA });
+// セキュリティ注意喚起ページ（一覧と個別）
+const alertIds = await writeAlertsPage({ publicDir: PUBLIC, siteUrl: SITE_URL, siteName: SITE_NAME, ga: GA });
 
-const urls = ['/', '/terms/', '/releases/', '/news/', ...newsDays.map((d) => `/news/${d}/`), ...(alertsCount ? ['/alerts/'] : []), '/ranking/', ...sectionUrls().filter((u) => u.startsWith('/ranking/')), '/visualization/', ...sectionUrls().filter((u) => u.startsWith('/visualization/')), ...breaches.map((b) => `/breach/${b.id}/`)];
+const urls = ['/', '/terms/', '/releases/', '/news/', ...newsDays.map((d) => `/news/${d}/`), ...(alertIds.length ? ['/alerts/', ...alertIds.map((id) => `/alerts/${id}/`)] : []), '/ranking/', ...sectionUrls().filter((u) => u.startsWith('/ranking/')), '/visualization/', ...sectionUrls().filter((u) => u.startsWith('/visualization/')), ...breaches.map((b) => `/breach/${b.id}/`)];
 await writeFile(
   path.join(PUBLIC, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${esc(SITE_URL + u)}</loc></url>`).join('\n')}\n</urlset>\n`,
 );
-console.log(`✔ 個別ページ ${breaches.length} 件、ランキング・ビジュアライズの個別ページ ${sections} 件、ニュース ${newsDays.length} 日分、注意喚起 ${alertsCount} 件と sitemap.xml を出力しました`);
+console.log(`✔ 個別ページ ${breaches.length} 件、ランキング・ビジュアライズの個別ページ ${sections} 件、ニュース ${newsDays.length} 日分、注意喚起 ${alertIds.length} 件（一覧＋個別）と sitemap.xml を出力しました`);
