@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-10-21T23:49:58.300Z",
+  "count": 2,
+  "alerts": [
+    {
+      "id": "2026-10-php2shell",
+      "title": "PHP 本体に認証不要の重大なリモートコード実行の脆弱性（php2shell）",
+      "date": "2026-10-21",
+      "severity": "critical",
+      "category": "脆弱性",
+      "audience": [
+        "サーバー管理者"
+      ],
+      "affected": [
+        "PHP",
+        "WordPress"
+      ],
+      "cve": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "fixed": "PHP 8.5.12 / 8.4.27 / 8.3.36 / 8.2.35",
+      "summary": "PHP 本体の session.upload_progress の処理に、認証なしのリクエストだけで リモートコード実行ができる脆弱性が2件見つかった。mod_php・PHP-FPM・php-cgi など Web リクエストを処理する構成が広く対象になる。CVSS は 9.2（緊急）。",
+      "risk": "公開中のサイトがログインもされないまま乗っ取られ、改ざんや情報の持ち出しに つながるおそれがある。公開より前に詳細が漏れ、すでに攻撃の探索が観測されている。",
+      "action_admin": "PHP を修正版へ更新して再起動する。更新できない古い版は公開を止める。",
+      "action_user": "自分で WordPress などを立てている場合のみ対象。レンタルサーバー任せなら事業者の対応を確認する。",
+      "sources": [
+        {
+          "title": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html"
+        },
+        {
+          "title": "Qualys ブログ（PHP の緊急セキュリティリリース）",
+          "url": "https://blog.qualys.com/vulnerabilities-threat-research/2026/10/20/php-announces-critical-security-release-for-two-vulnerabilities"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-nodejs-security-release",
+      "title": "Node.js が10月のセキュリティリリース（RCE を含む計10件を修正）",
+      "date": "2026-10-21",
+      "severity": "high",
+      "category": "脆弱性",
+      "audience": [
+        "個人・アプリ利用者",
+        "サーバー管理者"
+      ],
+      "affected": [
+        "Node.js",
+        "Node-RED",
+        "Electron 製アプリ"
+      ],
+      "cve": [
+        "CVE-2026-111497",
+        "CVE-2026-105483",
+        "CVE-2026-106069",
+        "CVE-2026-105482"
+      ],
+      "fixed": "v26.12.1 / v24.22.1 / v22.23.4",
+      "summary": "Node.js が計10件の脆弱性を修正するセキュリティリリースを公開した。Brotli 展開の 範囲外書き込み（リモートコード実行につながる）や、TLS 証明書のホスト名確認を すり抜ける問題などを含む。VS Code・Slack・Notion などの Electron 製アプリや デスクトップアプリも、内部に Node.js を含むため関係する。",
+      "risk": "更新が来ても古いまま使い続けると、細工されたデータを開く・受け取るだけで 端末やサーバーを乗っ取られるおそれがある。「あとで」のまま数週間放置するのが 一番あぶない状態。",
+      "action_admin": "本番の Node.js を修正版へ更新して再起動する。常時公開している Node-RED は優先して更新する。",
+      "action_user": "Electron 製アプリは自動更新を有効にし、更新が来たら必ず再起動する。Homebrew などで入れた Node.js も最新版へ更新する。",
+      "sources": [
+        {
+          "title": "Node.js 公式ブログ（October 2026 Security Releases）",
+          "url": "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
+        }
+      ]
+    }
+  ]
+}
