@@ -195,7 +195,7 @@ function page({ date, list, breaches, counts, days, siteUrl, siteName, ga, index
         <a href="https://github.com/n0bisuke/haveibeenmorasareta">GitHub</a>
         へのプルリクエストでお願いします（<a href="https://github.com/n0bisuke/haveibeenmorasareta/blob/main/CONTRIBUTING.md">書き方</a>）。
       </p>
-      <p class="muted"><a href="${root}terms/">利用規約</a>（データの利用・スクレイピングのルール）</p>
+      <p class="muted"><a href="${root}terms/">利用規約</a>（データの利用・スクレイピングのルール）・<a href="${root}releases/">リリースノート</a></p>
     </div>
   </footer>
 </body>

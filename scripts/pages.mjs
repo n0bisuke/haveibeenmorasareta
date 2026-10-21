@@ -183,7 +183,7 @@ function page(b) {
         へのプルリクエストでお願いします（<a href="${REPO}/blob/main/CONTRIBUTING.md">書き方</a>）。
       </p>
       <p class="muted">海外のサービスの漏洩は <a href="https://haveibeenpwned.com/" target="_blank" rel="noopener noreferrer">Have I Been Pwned</a> で調べられます（メールアドレスで、自分の情報が含まれていたかを確認できます）。</p>
-      <p class="muted"><a href="../../terms/">利用規約</a>（データの利用・スクレイピングのルール）</p>
+      <p class="muted"><a href="../../terms/">利用規約</a>（データの利用・スクレイピングのルール）・<a href="../../releases/">リリースノート</a></p>
     </div>
   </footer>
   <script>
@@ -220,7 +220,7 @@ const sections = await writeSectionPages({ publicDir: PUBLIC, siteUrl: SITE_URL,
 // 公表日ごとのニュースページ
 const newsDays = await writeNewsPages({ publicDir: PUBLIC, breaches, siteUrl: SITE_URL, siteName: SITE_NAME, ga: GA });
 
-const urls = ['/', '/terms/', '/news/', ...newsDays.map((d) => `/news/${d}/`), '/ranking/', ...sectionUrls().filter((u) => u.startsWith('/ranking/')), '/visualization/', ...sectionUrls().filter((u) => u.startsWith('/visualization/')), ...breaches.map((b) => `/breach/${b.id}/`)];
+const urls = ['/', '/terms/', '/releases/', '/news/', ...newsDays.map((d) => `/news/${d}/`), '/ranking/', ...sectionUrls().filter((u) => u.startsWith('/ranking/')), '/visualization/', ...sectionUrls().filter((u) => u.startsWith('/visualization/')), ...breaches.map((b) => `/breach/${b.id}/`)];
 await writeFile(
   path.join(PUBLIC, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${esc(SITE_URL + u)}</loc></url>`).join('\n')}\n</urlset>\n`,
