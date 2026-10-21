@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-20T02:08:50.000Z",
-  "count": 563,
+  "generated_at": "2026-10-21T11:02:50.000Z",
+  "count": 584,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,691 @@
   ],
   "breaches": [
     {
+      "id": "2026-10-digital-arts",
+      "organization": "デジタルアーツ株式会社",
+      "services": [
+        "i-FILTER@Cloud などクラウドサービス"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-10-21",
+      "count_note": "件数は未公表（一部の顧客情報が閲覧された可能性）",
+      "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "root_cause": "クラウドサービスの運用に使う認証情報を不正に入手され、運用環境に侵入された",
+      "summary": "i-FILTER@Cloud などクラウドの6サービスの運用環境に第三者が侵入し、一部の顧客情報が閲覧された可能性があると公表した。10月9日にシステムの総点検で痕跡を確認し、痕跡は2025年7月ごろまでさかのぼる。運用に使う認証情報が不正に入手されていた。外部への持ち出しは確認されておらず、全利用顧客にパスワードの変更を依頼した。",
+      "sources": [
+        {
+          "title": "デジタルアーツ 公式発表",
+          "url": "https://www.daj.jp/webtopics/1354/"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-gmo-desktop-cloud",
+      "organization": "GMOインターネット株式会社",
+      "group": "GMOインターネットグループ",
+      "services": [
+        "お名前.com デスクトップクラウド"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-10-20",
+      "date_announced": "2026-10-21",
+      "count_note": "影響の可能性があるのは最大26,739サーバー。個人情報の漏えいは確認されていない（調査中）",
+      "cause": "unauthorized_access",
+      "summary": "FX自動売買向けのVPS「お名前.com デスクトップクラウド」で、10月20日に一部の利用者のサーバー環境に不正なプログラムが置かれているのを確認し、サーバー内に保管された情報が閲覧された可能性があると公表した。影響の可能性があるのは最大2万6,739サーバーで、全プランを停止した。預かっている個人情報の漏えいは確認されていない。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC2155P0R21C26A0000000/"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2149829.html"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 1,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-iwaki-city",
+      "organization": "福島県いわき市",
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "福島県",
+      "date_occurred": "2026-10-01",
+      "date_announced": "2026-10-21",
+      "affected_count": 5,
+      "count_note": "5人",
+      "cause": "human_error",
+      "root_cause": "会議資料をメールで送る際に、委員1人に誤ったアドレスで送信した",
+      "data_types": [
+        "氏名"
+      ],
+      "summary": "市が事務を担う協議会の委員会の会議資料をメールで送る際、委員1人に誤ったアドレスで送信し、資料に載っていた農業者など5人の氏名が第三者に漏えいした可能性があると公表した。10月16日の確認の電話で判明した。",
+      "sources": [
+        {
+          "title": "福島民友",
+          "url": "https://www.minyu-net.com/news/detail/2026102116194556280"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 20,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-fujikyu-clubq",
+      "organization": "富士急ハイランド",
+      "group": "富士急行グループ",
+      "services": [
+        "富士急ハイランド公式アプリ",
+        "CLUB フジQ"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-09-04",
+      "date_announced": "2026-10-20",
+      "affected_count": 159,
+      "count_note": "159アカウント（閲覧された可能性）",
+      "cause": "unauthorized_access",
+      "attack_methods": [
+        "credential_stuffing"
+      ],
+      "root_cause": "外部で入手されたメールアドレスとパスワードを使ったパスワードリスト型攻撃",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "生年月日",
+        "性別",
+        "電話番号",
+        "郵便番号",
+        "会員ID",
+        "購入履歴",
+        "クレジットカード情報（番号の一部・有効期限等）"
+      ],
+      "summary": "公式アプリと会員サイト「CLUB フジQ」で、9月4日から7日にかけてパスワードリスト型攻撃による不正ログインがあり、159アカウントの氏名、メールアドレス、生年月日、電話番号、会員番号などと、一部はチケット購入履歴やクレジットカードの下4桁・有効期限・名義が閲覧された可能性があると公表した。カード番号の全桁とセキュリティコードは含まれない。",
+      "sources": [
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261021de62670"
+        },
+        {
+          "title": "UTYテレビ山梨（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/49f8f107abacd8bc6e721f5a4271506f148ed59e"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 46,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-fujitv-bansen",
+      "organization": "株式会社フジテレビジョン",
+      "services": [
+        "番組宣伝システム"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2026-10-20",
+      "affected_count": 730,
+      "count_note": "最大730件（推定）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "取引先情報",
+        "メールアドレス"
+      ],
+      "summary": "番組宣伝業務の関係者向けの番組宣伝システムが第三者による不正アクセスを受け、メディア関係者の氏名・会社名・メールアドレスなど最大730件が漏えいした可能性があると公表した。視聴者の個人情報は登録されていない。システムは利用を停止し、調査している。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/21/2000002449/"
+        },
+        {
+          "title": "日刊スポーツ（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/1329fed12faeb2723987259a50ff7da0a7a704fd"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-fukuoka-pref-police",
+      "organization": "福岡県警察",
+      "services": [
+        "災害時の安否確認システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "福岡県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-20",
+      "affected_count": 11000,
+      "count_note": "約1万1,000人",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "従業員情報"
+      ],
+      "summary": "災害時の安否確認システムを運営するアルカディアが不正アクセスを受け、警察官・職員約1万1,000人分の氏名、メールアドレス、所属が漏えいした可能性があることが分かった。",
+      "sources": [
+        {
+          "title": "TNCテレビ西日本（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/9694378ab6c80652870f51b6e0ce83df82654f18"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 9,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-globee-abceed",
+      "organization": "株式会社Globee",
+      "services": [
+        "abceed"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2026-10-17",
+      "date_announced": "2026-10-20",
+      "affected_count": 10834,
+      "count_note": "最大10,834アカウント（うち90アカウントはユーザー名も対象）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "メールアドレス",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "アカウント名"
+      ],
+      "summary": "英語学習サービス「abceed」の関連システムが、設定などを悪用した不正アクセスを受け、最大1万834アカウントのメールアドレスとハッシュ化されたパスワード（うち90アカウントはユーザー名も）が漏えいしたおそれがあると公表した。10月17日に検知した。",
+      "sources": [
+        {
+          "title": "Globee 適時開示",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261020553707/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 3,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-hachinohe-city",
+      "organization": "青森県八戸市",
+      "services": [
+        "kanaeruKOSEI 八戸とつながる同窓会in東京"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "青森県",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-20",
+      "affected_count": 49,
+      "count_note": "49人",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "性別"
+      ],
+      "summary": "八戸産学官連携推進会議が主催する同窓会イベントの募集ページの作成に委託先が使っていたStudioが不正アクセスを受け、参加者49人の氏名、メールアドレス、出身校、性別などが漏えいした可能性があると八戸市が発表した。",
+      "sources": [
+        {
+          "title": "青森放送（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/434f6dc5432e1698132bdb51dc82357782859e64"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 20,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-hiroshima-boe-bag",
+      "organization": "広島県教育委員会",
+      "services": [
+        "県立高校の修学旅行"
+      ],
+      "industry": [
+        "行政",
+        "人材・教育"
+      ],
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "広島県",
+      "date_announced": "2026-10-20",
+      "affected_count": 226,
+      "count_note": "2年生226人全員",
+      "cause": "lost_device",
+      "root_cause": "修学旅行中に教員が名簿やタブレットの入ったリュックサックを紛失した",
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "健康・医療情報",
+        "保存データ（写真・文書等）"
+      ],
+      "summary": "県立高校の修学旅行中に、担任教員がJR新横浜駅で生徒の名簿や写真を撮ったタブレットなどが入ったリュックサックを紛失し、2年生226人全員の氏名や保護者の連絡先などの個人情報が流出した可能性があると広島県教育委員会が発表した。一部の生徒の病気・受診歴の資料も入っていたと報じられている。警察に届け出たが見つかっておらず、被害は確認されていない。",
+      "sources": [
+        {
+          "title": "RCC中国放送（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/6517996581c146685dda087f9ee139a63fd6aff2"
+        },
+        {
+          "title": "広島テレビ（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/4f4c033d20808ae6df0250d2e7e9ffa1bced564f"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-kagoshima-pref-police",
+      "organization": "鹿児島県警察",
+      "services": [
+        "災害時の安否確認システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "鹿児島県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-20",
+      "affected_count": 2200,
+      "count_note": "約2,200人",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "従業員情報"
+      ],
+      "summary": "災害時の安否確認システムを運営するアルカディアが不正アクセスを受け、警察官・職員約2,200人分の名前やメールアドレスなどが漏えいした可能性があることが分かった。",
+      "sources": [
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261020de62082"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 9,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-kanagawa-pref-police",
+      "organization": "神奈川県警察",
+      "services": [
+        "災害時の安否確認システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "神奈川県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-20",
+      "affected_count": 16000,
+      "count_note": "約1万6,000人（安否確認システムの登録者）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "従業員情報"
+      ],
+      "summary": "災害時の安否確認システムを運営するアルカディアが不正アクセスを受け、登録していた警察官・職員約1万6,000人分の氏名やメールアドレスなどが漏えいした可能性があることが分かった。10月13日にアルカディアから連絡を受け、同日から利用を停止した。",
+      "sources": [
+        {
+          "title": "毎日新聞（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/dd4dc1f525a1676ac1f28580d9b3d850cf5591d4"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 9,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-mlit-jutaku-shoene",
+      "organization": "国土交通省",
+      "services": [
+        "住宅省エネ2024キャンペーン 事務局システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "national_gov",
+      "prefecture": "東京都",
+      "date_announced": "2026-10-20",
+      "affected_count": 23918,
+      "count_note": "23,918名（16,950事業者、速報値）",
+      "cause": "third_party",
+      "root_cause": "事務局を運営する委託先のシステムへの不正アクセス",
+      "vendor": {
+        "name": "株式会社博報堂"
+      },
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "取引先情報"
+      ],
+      "summary": "経済産業省・環境省と連携して実施した「住宅省エネ2024キャンペーン」の事務局システムが外部から不正に操作され、登録事業者1万6,950事業者の代表者氏名、担当社員らの氏名・電話番号・メールアドレスなど2万3,918名分が漏えいしたおそれがあると発表した。事務局とシステムの運営は博報堂が担い、システムの全機能を停止した。一般消費者の情報の漏えいはない。",
+      "sources": [
+        {
+          "title": "国土交通省 報道発表",
+          "url": "https://www.mlit.go.jp/report/press/house04_hh_001366.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUA210AX0R21C26A0000000/"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261020de62509"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-nec-vendor",
+      "organization": "日本電気株式会社",
+      "group": "NECグループ",
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-10-20",
+      "count_note": "顧客3社の情報が漏えいし、うち2社で個人情報の漏えいを確認（件数は未公表）",
+      "cause": "third_party",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "root_cause": "システム開発・保守の委託先の端末から、盗まれた正規アカウントで顧客のシステム環境に侵入された",
+      "data_types": [
+        "保存データ（写真・文書等）"
+      ],
+      "summary": "システム開発・保守の委託先が9月下旬にサイバー攻撃を受け、委託先の端末から盗まれた正規アカウントの認証情報で顧客のシステム環境に侵入され、顧客サーバー内のファイルが暗号化されてシステムが停止したと公表した。NEC・顧客・委託先が情報共有に使っていたクラウドストレージからもファイルが流出し、顧客3社の情報が漏えいし、うち2社で個人情報の漏えいを確認した。委託先名・顧客名・件数は公表していない。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC2081V0Q6A021C2000000/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/20/2000002433/"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2149941.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-niigata-pref-challenge",
+      "organization": "新潟県",
+      "services": [
+        "チャレンジ新潟"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "新潟県",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-20",
+      "affected_count": 2,
+      "count_note": "2件（10月19日時点。範囲は確認中）",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "data_types": [
+        "取引先情報",
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "問い合わせ内容"
+      ],
+      "summary": "ポータルサイト「チャレンジ新潟」の維持管理を受託した事業者が使うStudioが不正アクセスを受け、問い合わせフォームに送信された会社名、担当者氏名、メールアドレス、電話番号、問い合わせ本文が漏えいした可能性があると公表した。10月19日時点で2件が対象で、範囲は確認中。",
+      "sources": [
+        {
+          "title": "新潟県 お知らせ",
+          "url": "https://www.pref.niigata.lg.jp/sec/sangyoritchi/challenge-niigata-husei.html"
+        },
+        {
+          "title": "新潟日報",
+          "url": "https://www.niigata-nippo.co.jp/articles/-/927942"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 20,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-ots",
+      "organization": "沖縄ツーリスト株式会社",
+      "group": "丸紅グループ",
+      "services": [
+        "OTSレンタカー",
+        "OTS HOTEL",
+        "OTS ACTIVITIES",
+        "OTS Club"
+      ],
+      "industry": "旅行",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-10-20",
+      "count_note": "件数・情報の種類は未公表",
+      "cause": "unauthorized_access",
+      "summary": "サイバー攻撃を受けた恐れがあり、個人情報が漏えいした可能性を確認したと公表した。社外からの問い合わせで調査を始め、10月18日から当該サイトへの外部アクセスを遮断し、20日からレンタカー、ホテル、アクティビティなど5サービスの新規予約を停止した。件数や情報の種類は調査中。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOJC213SY0R21C26A0000000/"
+        },
+        {
+          "title": "沖縄タイムス",
+          "url": "https://www.okinawatimes.co.jp/articles/-/1949170"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-schoo",
+      "organization": "株式会社Schoo",
+      "services": [
+        "グループサイトの問い合わせ・資料請求・イベント申し込みフォーム"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-20",
+      "count_note": "件数は未公表",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "data_types": [
+        "問い合わせ内容"
+      ],
+      "summary": "グループサイトの制作・運用に使っていたStudioが不正アクセスを受け、問い合わせ・資料請求・イベント申し込みのフォームに入力された情報が漏えいした可能性があると公表した。学習者会員のログイン情報や受講履歴はStudioで管理しておらず、影響はない。",
+      "sources": [
+        {
+          "title": "Schoo 適時開示",
+          "url": "https://www.nikkei.com/markets/ir/irftp/data/tdnr/tdnetg3/20261020/g6udfw/140120261020553612.pdf"
+        },
+        {
+          "title": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000380.000006391.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 20,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-tochigi-pref-police",
+      "organization": "栃木県警察",
+      "services": [
+        "災害時の安否確認システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "栃木県",
+      "date_occurred": "2026-10-11",
+      "date_announced": "2026-10-20",
+      "affected_count": 3900,
+      "count_note": "約3,900人（全職員）",
+      "cause": "third_party",
+      "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アルカディア"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "従業員情報"
+      ],
+      "summary": "災害時の安否確認システムを運営するアルカディアが不正アクセスを受け、全職員約3,900人分の氏名やメールアドレスなどが漏えいした可能性があることが分かった。",
+      "sources": [
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261020de62334"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 9,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-tohogas",
+      "organization": "東邦ガス株式会社",
+      "services": [
+        "シャインマスカット生産事業の問い合わせフォーム",
+        "イエラボ"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-20",
+      "affected_count": 100,
+      "count_note": "100件",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "取引先情報"
+      ],
+      "summary": "新規事業のシャインマスカット生産と住宅メーカーのマッチングサービス「イエラボ」で使っていたStudioのクラウドが不正アクセスを受け、問い合わせ者の氏名・メールアドレスと住宅メーカー担当者の会社名・氏名・メールアドレスの計100件が漏えいした可能性があると公表した。同社のシステムとは接続しておらず、ガス・電気の供給への影響はない。",
+      "sources": [
+        {
+          "title": "東邦ガス プレスリリース",
+          "url": "https://www.tohogas.co.jp/corporate-n/press/1262174_1342.html"
+        },
+        {
+          "title": "共同通信（東京新聞）",
+          "url": "https://www.tokyo-np.co.jp/article/522843"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 20,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-youji-katsudou",
+      "organization": "幼児活動研究会株式会社",
+      "industry": "人材・教育",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-10-14",
+      "date_announced": "2026-10-20",
+      "count_note": "個人情報・取引先情報への影響は調査中",
+      "cause": "unauthorized_access",
+      "summary": "10月14日に社内ネットワークで第三者による不正アクセスの痕跡を確認し、対象システムを隔離してアカウントを無効化したと公表した。個人情報と取引先情報への影響は調査中で、現時点で漏えいは確認されていない。",
+      "sources": [
+        {
+          "title": "幼児活動研究会 適時開示",
+          "url": "https://www.release.tdnet.info/inbs/140120261020553396.pdf"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 6,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-yuzawa-town-studio",
+      "organization": "新潟県湯沢町",
+      "services": [
+        "湯沢町移住定住ポータルサイト",
+        "YuzaWork"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "新潟県",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-20",
+      "affected_count": 202,
+      "count_note": "202名（問い合わせフォームの利用者）",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "移住定住ポータルサイトと「YuzaWork」に使っていたStudioが不正アクセスを受け、問い合わせフォームの利用者202名の氏名、住所、電話番号、メールアドレスなどと、管理者用アカウントのパスワードが漏えいしたおそれがあると公表した。",
+      "sources": [
+        {
+          "title": "湯沢町 お知らせ",
+          "url": "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kikakukankouka/4/4/8110.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 20,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-entouch",
       "organization": "エンタッチ株式会社",
       "group": "東邦ホールディングス",
@@ -550,17 +1235,36 @@
       ],
       "industry": "IT・通信",
       "country": "JP",
-      "status": "investigating",
-      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
-      "date_occurred": "2026-10-19",
+      "date_occurred": "2026-10-17",
       "date_announced": "2026-10-19",
-      "count_note": "個人情報の漏えいの有無は調査中",
+      "affected_count": 4454097,
+      "count_note": "寄附者（会員）の個人情報4,454,097件が外部に流出（10月20日発表）",
       "cause": "unauthorized_access",
-      "summary": "ふるさと納税ポータル「ふるさとチョイス」で、10月19日のサーバー点検中に不正アクセスの疑いを検知し、同日午後からサービスを一時停止したと公表した。個人情報の漏えいの有無や侵入経路は調査中。データ連携している他社のふるさと納税サイトでも、一部自治体への寄付ができなくなった。",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "資産・取引情報"
+      ],
+      "summary": "ふるさと納税ポータル「ふるさとチョイス」で、10月19日に通常と異なるアクセスの傾向を把握し、同日午後からサービスを一時停止した。10月20日、10月17日に第三者による不正アクセスがあり、寄附者の氏名、住所、電話番号、メールアドレス、ハッシュ化されたパスワード、寄附控除の試算額など445万4,097件が外部に流出したと発表した。侵入経路は調査中。データ連携している他社のふるさと納税サイトでも、一部自治体への寄付ができなくなった。",
       "sources": [
         {
-          "title": "トラストバンク 公式発表",
+          "title": "トラストバンク 公式発表（サービス停止）",
           "url": "https://www.trustbank.co.jp/newsroom/news/news261019/"
+        },
+        {
+          "title": "トラストバンク 公式発表（流出のお詫び）",
+          "url": "https://www.trustbank.co.jp/newsroom/newsrelease/news261020/"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC208WP0Q6A021C2000000/"
+        },
+        {
+          "title": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2149772.html"
         },
         {
           "title": "ITmedia NEWS",
@@ -571,8 +1275,8 @@
           "url": "https://news.web.nhk/newsweb/na/nd-20261019de61781"
         }
       ],
-      "severity": null,
-      "disclosure_days": 0,
+      "severity": "high",
+      "disclosure_days": 2,
       "reliability": "high"
     },
     {
@@ -867,6 +1571,41 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-10-sonicwire",
+      "organization": "クリプトン・フューチャー・メディア株式会社",
+      "services": [
+        "SONICWIRE",
+        "D2R"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-10-17",
+      "date_announced": "2026-10-19",
+      "affected_count": 420000,
+      "count_note": "SONICWIRE会員（ニュースレター購読者を含む）最大約42万件。D2R登録店舗は件数非公表",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "住所"
+      ],
+      "summary": "音源販売サイト「SONICWIRE」と関連サービス「D2R」が不正アクセスを受け、SONICWIRE会員最大約42万件の氏名、メールアドレス、ハッシュ化されたパスワード、住所（請求書などの発行時に入力した場合）が閲覧・取得された可能性があると公表した。10月17日に確認し、サーバーを停止した。クレジットカード情報は保存していない。全会員のパスワードを無効化した。",
+      "sources": [
+        {
+          "title": "クリプトン・フューチャー・メディア 公式発表",
+          "url": "https://www.crypton.co.jp/cfm/news/2026/10/20info"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/20/2000002406/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 2,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-xmile",
       "organization": "X Mile株式会社",
       "services": [
@@ -1052,29 +1791,47 @@
       "organization": "株式会社リクルート",
       "group": "リクルートグループ",
       "services": [
-        "カーセンサーnet"
+        "カーセンサーnet",
+        "C-MATCH"
       ],
       "industry": [
         "IT・通信",
         "交通・モビリティ"
       ],
       "country": "JP",
-      "status": "investigating",
-      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
       "date_occurred": "2026-10-17",
       "date_announced": "2026-10-17",
-      "count_note": "情報漏えいは確認されておらず、調査中",
+      "affected_count": 3709551,
+      "count_note": "最大3,709,551件（漏えいの可能性。カーセンサーnetで販売店に問い合わせた利用者約321万件、販売店向けC-MATCH側約48万件など）",
       "cause": "unauthorized_access",
-      "summary": "中古車情報サイト「カーセンサーnet」で10月17日に外部からの不審なアクセスを検知し、同日17時ごろからサイト・アプリと販売店向けサービスを含む関連サービスをすべて停止した。情報漏えいは確認されておらず、調査中としている。",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "問い合わせ内容"
+      ],
+      "summary": "中古車情報サイト「カーセンサーnet」で10月17日に関連システムへの不審なアクセスを検知し、同日17時ごろからサイト・アプリと販売店向けサービス「C-MATCH」を含む関連サービスをすべて停止した。10月21日、販売店に問い合わせた利用者などの氏名、住所、電話番号、問い合わせ内容など最大370万9,551件が漏えいした可能性があると公表した。決済情報とログインパスワードは対象外。原因は調査中。リクルートのシステムを使う日産・三菱自動車の中古車検索サイトも一時停止した。",
       "sources": [
+        {
+          "title": "リクルート 公式発表",
+          "url": "https://www.recruit.co.jp/newsroom/pressrelease/2026/1021_149447.html"
+        },
         {
           "title": "ITmedia NEWS",
           "url": "https://www.itmedia.co.jp/news/article/2610/19/2000002354/"
+        },
+        {
+          "title": "ITmedia NEWS（件数）",
+          "url": "https://www.itmedia.co.jp/news/article/2610/21/2000002456/"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261021de62694"
         }
       ],
-      "severity": null,
+      "severity": "high",
       "disclosure_days": 0,
-      "reliability": "mid"
+      "reliability": "high"
     },
     {
       "id": "2026-10-icc-ishikawa",
@@ -1452,7 +2209,8 @@
       "industry": "金融・保険",
       "country": "JP",
       "date_announced": "2026-10-16",
-      "affected_count": 4611,
+      "affected_count": 4975,
+      "count_note": "4,975人（10月20日の第2報で4,611人から364人増加）",
       "cause": "third_party",
       "attack_methods": [
         "broken_access_control"
@@ -1465,8 +2223,16 @@
         "氏名",
         "メールアドレス"
       ],
-      "summary": "インターネット取引システムの運用・保守を委託するトレードワークスのシステムが不正アクセスを受け、顧客4,611人の氏名やメールアドレスなどが漏えいしたと公表した。システムの一部の管理機能の設定不備が悪用された。10月14日に検知した。パスワードが取得された事実は確認されておらず、漏えいした情報だけでは口座へのログインや売買はできないとしている。",
+      "summary": "インターネット取引システムの運用・保守を委託するトレードワークスのシステムが不正アクセスを受け、顧客4,611人の氏名やメールアドレスなどが漏えいしたと公表した。システムの一部の管理機能の設定不備が悪用された。10月14日に検知した。パスワードが取得された事実は確認されておらず、漏えいした情報だけでは口座へのログインや売買はできないとしている。10月20日の第2報で、対象は364人増えて4,975人になった。また10月14日に売買管理システムが攻撃され、7口座で顧客が意図しない売買注文が出され、うち5口座で約定したが、取引前の状態に戻したとしている。",
       "sources": [
+        {
+          "title": "岩井コスモ証券 公式発表（第2報）",
+          "url": "https://www.iwaicosmo.net/info/2_9214.html"
+        },
+        {
+          "title": "INTERNET Watch（第2報）",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2149845.html"
+        },
         {
           "title": "トレードワークス 適時開示",
           "url": "https://www.release.tdnet.info/inbs/140120261016552448.pdf"
@@ -4334,7 +5100,7 @@
         "生年月日",
         "健康・医療情報"
       ],
-      "summary": "大阪府箕面市のアルカディアは、自治体向けの防災情報配信サービス「SpeeCAN RAIDEN」などが第三者による不正アクセスを受けたと公表した。10月11日16時30分に不審な挙動を確認し、13日にSpeeCAN RAIDENの一部環境と「ライデン・スクール」を緊急停止した。SpeeCAN RAIDENのメールアドレス約313万6,000件、電話番号約10万5,000件、FAX番号約1万5,000件が漏えいした可能性がある。14日には、聴覚・言語に障害のある人向けの「NET119緊急通報システム」約1万3,000件（利用者名・生年月日・住所など）と、消防の一斉連絡システム「119RAIDEN」にも影響があると公表した。総務省によると、情報漏えいのおそれを報告した自治体は14日時点で111にのぼる。共同通信によると、15日17時時点では192自治体が配信停止や情報漏えいの恐れを報告した。サービスは15日に復旧した。",
+      "summary": "大阪府箕面市のアルカディアは、自治体向けの防災情報配信サービス「SpeeCAN RAIDEN」などが第三者による不正アクセスを受けたと公表した。10月11日16時30分に不審な挙動を確認し、13日にSpeeCAN RAIDENの一部環境と「ライデン・スクール」を緊急停止した。SpeeCAN RAIDENのメールアドレス約313万6,000件、電話番号約10万5,000件、FAX番号約1万5,000件が漏えいした可能性がある。14日には、聴覚・言語に障害のある人向けの「NET119緊急通報システム」約1万3,000件（利用者名・生年月日・住所など）と、消防の一斉連絡システム「119RAIDEN」にも影響があると公表した。総務省によると、情報漏えいのおそれを報告した自治体は14日時点で111にのぼる。共同通信によると、15日17時時点では192自治体が配信停止や情報漏えいの恐れを報告した。警察庁は10月21日、安否確認サービスを使っていた20府県警の警察官・職員の氏名・メールアドレスなど約12万5,000件と、防犯メールを使っていた4府県警の住民らのメールアドレス約1万8,000件が漏えいした可能性があると公表した。捜査情報の流出は確認されていない。サービスは15日に復旧した。",
       "sources": [
         {
           "title": "アルカディア 公式発表",
@@ -4363,6 +5129,10 @@
         {
           "title": "共同通信（nippon.com、192自治体）",
           "url": "https://www.nippon.com/ja/news/kd1483405297648239133/"
+        },
+        {
+          "title": "時事通信（警察庁の公表）",
+          "url": "https://www.jiji.com/jc/article?k=2026102100348&g=soc"
         }
       ],
       "severity": "high",
