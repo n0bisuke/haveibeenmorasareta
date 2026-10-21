@@ -1,0 +1,17 @@
+organization: 福島県いわき市
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 福島県
+date_occurred: 2026-10-01
+date_announced: 2026-10-21
+affected_count: 5
+count_note: 5人
+cause: human_error
+root_cause: 会議資料をメールで送る際に、委員1人に誤ったアドレスで送信した
+data_types:
+  - 氏名
+summary: 市が事務を担う協議会の委員会の会議資料をメールで送る際、委員1人に誤ったアドレスで送信し、資料に載っていた農業者など5人の氏名が第三者に漏えいした可能性があると公表した。10月16日の確認の電話で判明した。
+sources:
+  - title: 福島民友
+    url: https://www.minyu-net.com/news/detail/2026102116194556280

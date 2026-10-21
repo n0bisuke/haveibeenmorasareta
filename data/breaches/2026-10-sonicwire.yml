@@ -1,0 +1,22 @@
+organization: クリプトン・フューチャー・メディア株式会社
+services:
+  - SONICWIRE
+  - D2R
+industry: 小売・EC
+country: JP
+date_occurred: 2026-10-17
+date_announced: 2026-10-19
+affected_count: 420000
+count_note: SONICWIRE会員（ニュースレター購読者を含む）最大約42万件。D2R登録店舗は件数非公表
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - メールアドレス
+  - パスワード（ハッシュ化・暗号化済み）
+  - 住所
+summary: 音源販売サイト「SONICWIRE」と関連サービス「D2R」が不正アクセスを受け、SONICWIRE会員最大約42万件の氏名、メールアドレス、ハッシュ化されたパスワード、住所（請求書などの発行時に入力した場合）が閲覧・取得された可能性があると公表した。10月17日に確認し、サーバーを停止した。クレジットカード情報は保存していない。全会員のパスワードを無効化した。
+sources:
+  - title: クリプトン・フューチャー・メディア 公式発表
+    url: https://www.crypton.co.jp/cfm/news/2026/10/20info
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/20/2000002406/

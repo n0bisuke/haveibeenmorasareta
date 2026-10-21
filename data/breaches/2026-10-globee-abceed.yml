@@ -1,0 +1,18 @@
+organization: 株式会社Globee
+services:
+  - abceed
+industry: 人材・教育
+country: JP
+date_occurred: 2026-10-17
+date_announced: 2026-10-20
+affected_count: 10834
+count_note: 最大10,834アカウント（うち90アカウントはユーザー名も対象）
+cause: unauthorized_access
+data_types:
+  - メールアドレス
+  - パスワード（ハッシュ化・暗号化済み）
+  - アカウント名
+summary: 英語学習サービス「abceed」の関連システムが、設定などを悪用した不正アクセスを受け、最大1万834アカウントのメールアドレスとハッシュ化されたパスワード（うち90アカウントはユーザー名も）が漏えいしたおそれがあると公表した。10月17日に検知した。
+sources:
+  - title: Globee 適時開示
+    url: https://www.nikkei.com/nkd/disclosure/tdnr/20261020553707/

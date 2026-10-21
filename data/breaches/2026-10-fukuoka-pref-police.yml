@@ -1,0 +1,23 @@
+organization: 福岡県警察
+services:
+  - 災害時の安否確認システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 福岡県
+date_occurred: 2026-10-11
+date_announced: 2026-10-20
+affected_count: 11000
+count_note: 約1万1,000人
+cause: third_party
+root_cause: 委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - 氏名
+  - メールアドレス
+  - 従業員情報
+summary: 災害時の安否確認システムを運営するアルカディアが不正アクセスを受け、警察官・職員約1万1,000人分の氏名、メールアドレス、所属が漏えいした可能性があることが分かった。
+sources:
+  - title: TNCテレビ西日本（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/9694378ab6c80652870f51b6e0ce83df82654f18
