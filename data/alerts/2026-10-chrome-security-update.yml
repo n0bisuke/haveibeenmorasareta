@@ -19,16 +19,17 @@ fixed: Windows・macOS 156.0.8078.47（.48）/ Linux・Android 156.0.8078.47
 summary: >-
   Google が Chrome の更新を公開し、深刻度「重大」6件を含む計353件の脆弱性を修正した
   （内訳は重大6・高61・中197・低89）。Skia や Accessibility のメモリ破損などを含む。
-  Chrome だけでなく、Chromium をもとにした Microsoft Edge・Brave などのブラウザや、
-  Chromium を内蔵する Electron 製アプリにも、同種の修正が順次反映される。
+  Chrome だけでなく、同じ Chromium をもとにした Microsoft Edge（Windows 標準ブラウザ）や
+  Brave などのブラウザ、Chromium を内蔵する Electron 製アプリにも、同種の修正が順次
+  反映される。Edge・Brave も同じ土台のため、同様に影響すると考えてよい。
 risk: >-
   古いブラウザのまま使っていると、細工された Web ページを開くだけで、パソコンを
   乗っ取られたり情報を盗まれたりするおそれがある。更新は数日〜数週間かけて順次
   配られるため、設定画面から手動で確認・再起動すると早い。
 action_user: >-
-  Chrome は「設定→Chromeについて」で更新を確認して再起動する。Edge・Brave なども
-  それぞれ最新へ更新する（Chrome を更新しただけでは直らない）。Electron 製アプリも
-  更新が来たら入れる。
+  Chrome は「設定→Chromeについて」、Microsoft Edge は「設定→Microsoft Edge について」、
+  Brave は「設定→Braveについて」で更新を確認して再起動する。Edge・Brave は Chrome を
+  更新しても直らないので、それぞれ別に最新へ更新する。Electron 製アプリも更新が来たら入れる。
 sources:
   - title: Chrome Releases（Google 公式ブログ）
     url: https://chromereleases.googleblog.com/
