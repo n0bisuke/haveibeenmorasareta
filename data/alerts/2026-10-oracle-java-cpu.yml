@@ -1,0 +1,23 @@
+title: Oracle Java の10月パッチ、Java SE に55件の修正（多くが未認証で悪用可能）
+date: 2026-10-20
+severity: medium
+category: 脆弱性
+audience:
+  - サーバー管理者
+affected:
+  - Oracle Java SE
+  - OpenJDK
+fixed: Java SE 27.0.1 / 25.0.5 / 21.0.13 / 17.0.21 / 11.0.33 / 8u511
+summary: >-
+  Oracle の四半期セキュリティ更新（Critical Patch Update、10月20日）で、Java SE に
+  55件の修正が含まれた。今回 Java SE に「重大（Critical）」評価の脆弱性はないものの、
+  うち49件はネットワーク経由で認証なしに悪用され得るとされる。Java で動くサーバー
+  アプリ（Tomcat 上のアプリや各種 Java 製システム）は更新が推奨される。
+risk: >-
+  古い Java のままだと、認証なしの通信だけで Java 製システムが攻撃を受けるおそれがある。
+action_admin: >-
+  Java SE を 27.0.1 / 25.0.5 / 21.0.13 / 17.0.21 / 11.0.33 / 8u511 以降へ更新する。
+  OpenJDK ディストリ（Temurin など）を使っている場合も、対応する更新版へ上げる。
+sources:
+  - title: Oracle Critical Patch Update Advisory - October 2026（公式）
+    url: https://www.oracle.com/security-alerts/cpuoct2026.html

@@ -1,0 +1,25 @@
+title: Apache Tomcat に脆弱性8件、認証バイパスなど重要3件（修正版へ更新を）
+date: 2026-10-20
+severity: high
+category: 脆弱性
+audience:
+  - サーバー管理者
+affected:
+  - Apache Tomcat
+cve:
+  - CVE-2026-101296
+  - CVE-2026-101356
+  - CVE-2026-103119
+fixed: Tomcat 11.0.27 / 10.1.61 / 9.0.123
+summary: >-
+  Apache Tomcat が脆弱性8件（重要3件・低5件）を修正した。JNDIRealm で特定条件下に
+  パスワードなしで認証が通る認証バイパス（CVE-2026-101296）、HTTP/2 の非同期処理で
+  利用者間のリクエスト/レスポンスが混ざる問題（CVE-2026-101356）、AJP のバッファ処理で
+  応答がリクエストをまたいで漏れる問題（CVE-2026-103119）を含む。
+risk: >-
+  認証バイパスでは、正しいパスワードを知らなくても管理機能などに入られるおそれがある。
+  HTTP/2 の問題では、他人のログイン後の画面やデータが別の利用者に見えてしまう可能性がある。
+action_admin: Tomcat を 11.0.27 / 10.1.61 / 9.0.123 以降へアップグレードして再起動する。
+sources:
+  - title: Apache Tomcat 11 Security（公式）
+    url: https://tomcat.apache.org/security-11.html
