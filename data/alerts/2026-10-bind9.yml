@@ -1,0 +1,32 @@
+title: BIND 9 に脆弱性、named のメモリ破壊でRCEの恐れ（JPRSが緊急告知）
+date: 2026-10-22
+severity: high
+category: 脆弱性
+audience:
+  - サーバー管理者
+affected:
+  - ISC BIND 9
+cve:
+  - CVE-2026-94300
+  - CVE-2026-19630
+  - CVE-2026-96888
+  - CVE-2026-97313
+fixed: BIND 9.20.30 / 9.21.27（プレビュー版 9.20.30-S1）
+summary: >-
+  ISC の DNS サーバー「BIND 9」に、GSS-TSIG で署名された UDP メッセージを再送されると
+  named のメモリが破壊される脆弱性が見つかった（CVE-2026-94300、CVSS 8.1・高）。
+  プログラムの異常終了や、場合によってはリモートコード実行につながる恐れがある。同じ
+  リリースで、DNS サービスを停止させる脆弱性3件（CVE-2026-19630 ほか）も修正された。
+  JPRS は緊急としてバージョンアップを強く推奨している。
+risk: >-
+  DNS サーバーが落とされると、そのネットワークの名前解決が止まり、Web やメールなど
+  広範囲のサービスが使えなくなる。さらに場合によっては DNS サーバー上で任意のコードを
+  実行される恐れもある。
+action_admin: >-
+  BIND 9 を 9.20.30 または 9.21.27 以降へアップデートする（プレビュー版は 9.20.30-S1）。
+  サポート終了の 9.18 系は 9.20 系へ移行する。回避策はないため更新が必須。
+sources:
+  - title: JPRS（緊急・CVE-2026-94300）
+    url: https://jprs.jp/tech/security/2026-10-22-bind9-cve-2026-94300.html
+  - title: ISC Knowledge Base（CVE-2026-94300・公式）
+    url: https://kb.isc.org/docs/cve-2026-94300
