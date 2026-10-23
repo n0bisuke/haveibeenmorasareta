@@ -22,6 +22,11 @@ risk: >-
   漏れ、すでに攻撃の下見が観測されている。
 action_admin: PHP を修正版へ更新して再起動する。更新できない古い版は公開を止める。
 action_user: 自分で WordPress などを立てている場合のみ対象。レンタルサーバー任せなら事業者の対応を確認する。
+checklist:
+  - 自分で WordPress などのサイトを立てているか確認する
+  - 立てているなら PHP を修正版（8.5.12 / 8.4.27 / 8.3.36 / 8.2.35 以降）に更新する
+  - すぐ更新できない古い版は、いったん公開を止める
+  - レンタルサーバー利用なら、事業者の対応状況を確認する
 sources:
   - title: The Hacker News
     url: https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html

@@ -18,6 +18,10 @@ risk: >-
 action_admin: >-
   Java SE を 27.0.1 / 25.0.5 / 21.0.13 / 17.0.21 / 11.0.33 / 8u511 以降へ更新する。
   OpenJDK ディストリ（Temurin など）を使っている場合も、対応する更新版へ上げる。
+checklist:
+  - 自分の環境に Java（JDK/JRE）が入っているか確認する（java -version）
+  - サーバーで使っているなら修正版へ更新する
+  - OpenJDK（Temurin など）を使っている場合も対応版へ上げる
 sources:
   - title: Oracle Critical Patch Update Advisory - October 2026（公式）
     url: https://www.oracle.com/security-alerts/cpuoct2026.html

@@ -58,3 +58,15 @@
 .al-share a, .al-share button { color: var(--accent); text-decoration: none; background: none; border: none; font: inherit; padding: 0; cursor: pointer; }
 .al-share .edit { margin-left: auto; color: var(--muted); }
 .alerts-page .al-detail + .al-note { margin-top: 20px; }
+
+/* 個人の対応チェックリスト */
+.al-check { margin-top: 20px; padding: 14px 16px; border: 1px solid var(--border); border-radius: 10px; background: var(--bg); }
+.al-check .al-h { margin: 0 0 10px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.al-check-count { font-size: 0.78rem; font-weight: 400; color: var(--muted); font-variant-numeric: tabular-nums; }
+.al-check-list { list-style: none; margin: 0; padding: 0; }
+.al-check-list li { margin: 0; }
+.al-check-list li + li { border-top: 1px solid var(--border); }
+.al-check-list label { display: flex; align-items: flex-start; gap: 10px; padding: 9px 2px; font-size: 0.9rem; line-height: 1.6; cursor: pointer; }
+.al-check-list input { margin: 0.25em 0 0; width: 18px; height: 18px; flex: none; accent-color: var(--accent); cursor: pointer; }
+.al-check-list input:checked + span { color: var(--muted); text-decoration: line-through; text-decoration-color: var(--border); }
+.al-check-note { margin: 10px 0 0; font-size: 0.72rem; }
