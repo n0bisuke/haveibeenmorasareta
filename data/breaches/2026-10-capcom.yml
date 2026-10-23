@@ -1,0 +1,17 @@
+organization: 株式会社カプコン
+services:
+  - CAPCOM ID
+industry: エンタメ・スポーツ
+country: JP
+date_announced: 2026-10-22
+affected_count: 11774247
+count_note: 全世界合計。メールアドレスとシステム固有の識別情報。うち43件は生年月日・性別・国地域・ニックネームも対象、196件はログインパスワードが不正に変更された（リセット済み）
+cause: unauthorized_access
+data_types:
+  - メールアドレス
+summary: オンライン会員サービス「CAPCOM ID」が第三者による不正アクセスを受け、全世界で1,177万4,247件のメールアドレスとシステム固有の識別情報が漏えいした可能性があると公表した。うち43件は生年月日・性別・国地域・ニックネームも含み、196件はログインパスワードが不正に変更されていた（該当アカウントはリセット済み）。10月19日に不正アクセスの痕跡を発見。クレジットカード情報は対象外で、CAPCOM IDを使うサービスは引き続き利用できるとしている。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/22/2000002523/
+  - title: ファミ通
+    url: https://www.famitsu.com/article/202610/91777
