@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-10-21T11:37:36.000Z",
-  "count": 584,
+  "count": 586,
   "severity_levels": [
     {
       "id": "critical",
@@ -467,6 +467,71 @@
     }
   ],
   "breaches": [
+    {
+      "id": "2026-10-capcom",
+      "organization": "株式会社カプコン",
+      "services": [
+        "CAPCOM ID"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_announced": "2026-10-22",
+      "affected_count": 11774247,
+      "count_note": "全世界合計。メールアドレスとシステム固有の識別情報。うち43件は生年月日・性別・国地域・ニックネームも対象、196件はログインパスワードが不正に変更された（リセット済み）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "オンライン会員サービス「CAPCOM ID」が第三者による不正アクセスを受け、全世界で1,177万4,247件のメールアドレスとシステム固有の識別情報が漏えいした可能性があると公表した。うち43件は生年月日・性別・国地域・ニックネームも含み、196件はログインパスワードが不正に変更されていた（該当アカウントはリセット済み）。10月19日に不正アクセスの痕跡を発見。クレジットカード情報は対象外で、CAPCOM IDを使うサービスは引き続き利用できるとしている。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/22/2000002523/"
+        },
+        {
+          "title": "ファミ通",
+          "url": "https://www.famitsu.com/article/202610/91777"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-tohoku-frontier-epoint",
+      "organization": "東北電力フロンティア株式会社",
+      "group": "東北電力グループ",
+      "services": [
+        "eポイントモール"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_announced": "2026-10-22",
+      "affected_count": 100000,
+      "count_note": "最大約10万件。メールアドレスと会員の内部管理ID。eポイントモール会員が対象に含まれるかはラクスライトクラウドが調査中",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信リストが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "ポイントサイト「eポイントモール」のメールマガジン配信に使っていたメール配信サービス「ブラストメール」の運営会社ラクスライトクラウドが不正アクセスを受け、最大約10万件のメールアドレスと会員の内部管理IDが漏えいした可能性があると公表した。氏名・住所・電話番号・パスワード・クレジットカード情報・口座情報は含まれないとしている。会社はメールマガジンの配信を停止し、サイトを一時閉鎖した。",
+      "sources": [
+        {
+          "title": "福島民友新聞",
+          "url": "https://www.minyu-net.com/news/detail/2026102308455356341"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOCC228JF0S6A021C2000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
     {
       "id": "2026-10-digital-arts",
       "organization": "デジタルアーツ株式会社",

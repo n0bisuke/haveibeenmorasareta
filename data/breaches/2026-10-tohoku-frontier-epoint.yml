@@ -1,0 +1,21 @@
+organization: 東北電力フロンティア株式会社
+group: 東北電力グループ
+services:
+  - eポイントモール
+industry: エネルギー・インフラ
+country: JP
+date_announced: 2026-10-22
+affected_count: 100000
+count_note: 最大約10万件。メールアドレスと会員の内部管理ID。eポイントモール会員が対象に含まれるかはラクスライトクラウドが調査中
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信リストが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+data_types:
+  - メールアドレス
+summary: ポイントサイト「eポイントモール」のメールマガジン配信に使っていたメール配信サービス「ブラストメール」の運営会社ラクスライトクラウドが不正アクセスを受け、最大約10万件のメールアドレスと会員の内部管理IDが漏えいした可能性があると公表した。氏名・住所・電話番号・パスワード・クレジットカード情報・口座情報は含まれないとしている。会社はメールマガジンの配信を停止し、サイトを一時閉鎖した。
+sources:
+  - title: 福島民友新聞
+    url: https://www.minyu-net.com/news/detail/2026102308455356341
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOCC228JF0S6A021C2000000/
