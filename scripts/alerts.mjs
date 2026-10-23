@@ -60,6 +60,19 @@ function actsHtml(a) {
   return acts.length ? `<div class="al-act">${acts.map(([k, v]) => `<span><b>${esc(k)}：</b>${esc(v)}</span>`).join('')}</div>` : '';
 }
 
+// 個別ページの「個人の対応チェックリスト」。チェック状態は端末のブラウザ（localStorage）に保存する
+function checklistHtml(a) {
+  if (!a.checklist?.length) return '';
+  const items = a.checklist
+    .map((t, i) => `<li><label><input type="checkbox" data-alc="${esc(a.id)}:${i}"><span>${esc(t)}</span></label></li>`)
+    .join('');
+  return `<section class="al-check">
+        <h2 class="al-h">個人の対応チェックリスト <span class="al-check-count" aria-live="polite"></span></h2>
+        <ul class="al-check-list">${items}</ul>
+        <p class="al-check-note muted">チェックの状態はこの端末のブラウザにのみ保存されます（他の人には共有されません）。</p>
+      </section>`;
+}
+
 // 一覧のカード（見出しは個別ページへリンク）
 function card(a) {
   const sev = SEV[a.severity] ?? SEV.info;
@@ -123,6 +136,7 @@ function detailPage(a, { siteUrl, siteName, ga }) {
       ${a.risk ? `<p class="al-risk"><b>放置すると：</b>${esc(a.risk)}</p>` : ''}
       ${actsHtml(a)}
       ${a.fixed ? `<p class="al-fixed-line">修正版：<b>${esc(a.fixed)}</b></p>` : ''}
+      ${checklistHtml(a)}
       <h2 class="al-h">出典</h2>
       <ul class="al-sources">${(a.sources ?? []).map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title || s.url)}</a></li>`).join('')}</ul>
       <div class="al-share">
@@ -147,6 +161,25 @@ function detailPage(a, { siteUrl, siteName, ga }) {
       const btn = e.currentTarget;
       try { await navigator.clipboard.writeText(btn.dataset.url); btn.textContent = 'コピーしました'; }
       catch { prompt('このリンクをコピーしてください', btn.dataset.url); }
+    });
+    // 個人の対応チェックリスト：チェック状態を端末のブラウザに保存する
+    document.querySelectorAll('.al-check').forEach((sec) => {
+      const boxes = sec.querySelectorAll('input[type=checkbox][data-alc]');
+      const count = sec.querySelector('.al-check-count');
+      const update = () => {
+        let done = 0;
+        boxes.forEach((b) => { if (b.checked) done++; });
+        if (count) count.textContent = done + '/' + boxes.length + ' 完了';
+      };
+      boxes.forEach((b) => {
+        const key = 'alert-check:' + b.dataset.alc;
+        try { if (localStorage.getItem(key) === '1') b.checked = true; } catch (e) {}
+        b.addEventListener('change', () => {
+          try { b.checked ? localStorage.setItem(key, '1') : localStorage.removeItem(key); } catch (e) {}
+          update();
+        });
+      });
+      update();
     });
   </script>
 </body>

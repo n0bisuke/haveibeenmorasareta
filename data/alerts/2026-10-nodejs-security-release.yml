@@ -27,6 +27,11 @@ risk: >-
   放置するのが一番あぶない。
 action_admin: 本番の Node.js を修正版へ更新して再起動する。常時公開している Node-RED は優先して更新する。
 action_user: Electron 製アプリは自動更新を有効にし、更新が来たら必ず再起動する。Homebrew などで入れた Node.js も最新版へ更新する。
+checklist:
+  - VS Code・Slack・Notion などのアプリの自動更新をオンにする
+  - 更新が来ているアプリを入れて再起動する
+  - Homebrew で入れた Node.js を更新する（brew upgrade node）
+  - 更新後に node -v が v22.23.4 / v24.22.1 / v26.12.1 以降か確認する
 sources:
   - title: Node.js 公式ブログ（October 2026 Security Releases）
     url: https://nodejs.org/en/blog/vulnerability/october-2026-security-releases

@@ -30,6 +30,11 @@ action_user: >-
   Chrome は「設定→Chromeについて」、Microsoft Edge は「設定→Microsoft Edge について」、
   Brave は「設定→Braveについて」で更新を確認して再起動する。Edge・Brave は Chrome を
   更新しても直らないので、それぞれ別に最新へ更新する。Electron 製アプリも更新が来たら入れる。
+checklist:
+  - Chrome を「設定→Chromeについて」で更新して再起動する
+  - Microsoft Edge を「設定→Microsoft Edge について」で更新する
+  - Brave など他の Chromium 系ブラウザも最新にする
+  - VS Code・Slack などの Electron 製アプリも更新が来たら入れる
 sources:
   - title: Chrome Releases（Google 公式ブログ）
     url: https://chromereleases.googleblog.com/
