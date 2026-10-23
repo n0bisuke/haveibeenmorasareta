@@ -1,7 +1,51 @@
 {
   "generated_at": "2026-10-23T08:06:10.000Z",
-  "count": 6,
+  "count": 8,
   "alerts": [
+    {
+      "id": "2026-10-ruby-onigmo-gitlab",
+      "title": "Ruby の正規表現エンジン Onigmo に脆弱性、GitLab では認証なしRCE（CVSS 10.0）",
+      "date": "2026-10-23",
+      "severity": "critical",
+      "category": "脆弱性",
+      "audience": [
+        "サーバー管理者"
+      ],
+      "affected": [
+        "Ruby",
+        "GitLab"
+      ],
+      "cve": [
+        "CVE-2026-110264",
+        "CVE-2026-89078",
+        "CVE-2026-93577",
+        "CVE-2026-97229"
+      ],
+      "fixed": "Ruby 4.0.9 / 3.4.12 / 3.3.13、GitLab 19.5.1 / 19.4.3 / 19.3.6 / 19.2.9 / 19.1.9 / 19.0.10 / 18.11.13",
+      "summary": "Ruby の正規表現エンジン「Onigmo」に複数のバグが見つかり、Ruby 4.0.9 / 3.4.12 / 3.3.13 で 修正された。攻撃者が制御できる文字列を正規表現としてコンパイルするアプリ（Regexp.new や /#{input}/ など）が対象で、固定の正規表現だけを使うアプリは影響を受けない。発見した GitLab では、この問題を使って認証なしでサーバー上の任意のコードを実行できる状態だった （CVE-2026-110264、CVSS 10.0）とされ、10月21日に修正版が公開された。",
+      "risk": "自前で運用している GitLab を古いまま公開していると、ログインなしでサーバーを乗っ取られ、 ソースコードや社内の認証情報、CI の秘密情報などをまとめて盗まれるおそれがある。",
+      "action_admin": "自己管理版 GitLab を修正版へ更新する（18.10 以前は 18.11.13 以降へ）。Ruby アプリは 4.0.9 / 3.4.12 / 3.3.13 へ更新し、利用者の入力から正規表現を組み立てていないか確認する。",
+      "checklist": [
+        "自分で GitLab（自己管理版）を運用しているか確認する",
+        "していれば修正版（19.5.1 / 19.4.3 / 18.11.13 など）へ更新する",
+        "Ruby を使っていれば 4.0.9 / 3.4.12 / 3.3.13 へ更新する（rbenv・Homebrew なども）",
+        "利用者の入力を正規表現に埋め込んでいるコードがないか確認する"
+      ],
+      "sources": [
+        {
+          "title": "Ruby 公式（Regexp compilation fixes related to GitLab's CVEs）",
+          "url": "https://www.ruby-lang.org/en/news/2026/10/23/regexp-fixes-for-gitlab-cves/"
+        },
+        {
+          "title": "窓の杜",
+          "url": "https://forest.watch.impress.co.jp/docs/news/2150800.html"
+        },
+        {
+          "title": "The Hacker News（GitLab CVSS 10.0）",
+          "url": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html"
+        }
+      ]
+    },
     {
       "id": "2026-10-bind9",
       "title": "BIND 9 に脆弱性、named のメモリ破壊でRCEの恐れ（JPRSが緊急告知）",
@@ -115,6 +159,40 @@
         {
           "title": "Node.js 公式ブログ（October 2026 Security Releases）",
           "url": "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-python",
+      "title": "Python が前倒しで更新版を公開（eMudhra 証明書の問題に対応）",
+      "date": "2026-10-21",
+      "severity": "medium",
+      "category": "証明書",
+      "audience": [
+        "個人・アプリ利用者",
+        "サーバー管理者"
+      ],
+      "affected": [
+        "Python"
+      ],
+      "fixed": "Python 3.15.1 / 3.14.9 / 3.13.17",
+      "summary": "Python の開発チームが、認証局 eMudhra の中間CA証明書の秘密鍵が復元可能だった問題に 対応するため、3.15.1 / 3.14.9 / 3.13.17 を予定を前倒しして公開した。9月30日には 深刻度「Critical」を含む脆弱性を修正した 3.14.8 / 3.13.16 / 3.12.15 も公開されている。",
+      "risk": "古い Python のままだと、偽の証明書を使った通信の盗み見・改ざんを見抜けないおそれがある。 Python で動く社内ツールやサーバーが、知らないうちに偽のサイトとやり取りする可能性がある。",
+      "action_admin": "サーバーや CI で使う Python を 3.15.1 / 3.14.9 / 3.13.17 以降へ更新する。",
+      "action_user": "Homebrew や公式インストーラーで入れた Python を最新版へ更新する。",
+      "checklist": [
+        "python3 --version で使っている版を確認する",
+        "3.15.1 / 3.14.9 / 3.13.17 より古ければ更新する（brew upgrade python など）",
+        "Homebrew 利用者は brew upgrade ca-certificates も実行する"
+      ],
+      "sources": [
+        {
+          "title": "窓の杜（Python 3.15.1 などが前倒しで公開）",
+          "url": "https://forest.watch.impress.co.jp/docs/news/2150177.html"
+        },
+        {
+          "title": "窓の杜（9月30日のセキュリティアップデート）",
+          "url": "https://forest.watch.impress.co.jp/docs/news/2144739.html"
         }
       ]
     },

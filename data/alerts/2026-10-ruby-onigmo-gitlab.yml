@@ -1,0 +1,39 @@
+title: Ruby の正規表現エンジン Onigmo に脆弱性、GitLab では認証なしRCE（CVSS 10.0）
+date: 2026-10-23
+severity: critical
+category: 脆弱性
+audience:
+  - サーバー管理者
+affected:
+  - Ruby
+  - GitLab
+cve:
+  - CVE-2026-110264
+  - CVE-2026-89078
+  - CVE-2026-93577
+  - CVE-2026-97229
+fixed: Ruby 4.0.9 / 3.4.12 / 3.3.13、GitLab 19.5.1 / 19.4.3 / 19.3.6 / 19.2.9 / 19.1.9 / 19.0.10 / 18.11.13
+summary: >-
+  Ruby の正規表現エンジン「Onigmo」に複数のバグが見つかり、Ruby 4.0.9 / 3.4.12 / 3.3.13 で
+  修正された。攻撃者が制御できる文字列を正規表現としてコンパイルするアプリ（Regexp.new や
+  /#{input}/ など）が対象で、固定の正規表現だけを使うアプリは影響を受けない。発見した
+  GitLab では、この問題を使って認証なしでサーバー上の任意のコードを実行できる状態だった
+  （CVE-2026-110264、CVSS 10.0）とされ、10月21日に修正版が公開された。
+risk: >-
+  自前で運用している GitLab を古いまま公開していると、ログインなしでサーバーを乗っ取られ、
+  ソースコードや社内の認証情報、CI の秘密情報などをまとめて盗まれるおそれがある。
+action_admin: >-
+  自己管理版 GitLab を修正版へ更新する（18.10 以前は 18.11.13 以降へ）。Ruby アプリは
+  4.0.9 / 3.4.12 / 3.3.13 へ更新し、利用者の入力から正規表現を組み立てていないか確認する。
+checklist:
+  - 自分で GitLab（自己管理版）を運用しているか確認する
+  - していれば修正版（19.5.1 / 19.4.3 / 18.11.13 など）へ更新する
+  - Ruby を使っていれば 4.0.9 / 3.4.12 / 3.3.13 へ更新する（rbenv・Homebrew なども）
+  - 利用者の入力を正規表現に埋め込んでいるコードがないか確認する
+sources:
+  - title: Ruby 公式（Regexp compilation fixes related to GitLab's CVEs）
+    url: https://www.ruby-lang.org/en/news/2026/10/23/regexp-fixes-for-gitlab-cves/
+  - title: 窓の杜
+    url: https://forest.watch.impress.co.jp/docs/news/2150800.html
+  - title: The Hacker News（GitLab CVSS 10.0）
+    url: https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html
