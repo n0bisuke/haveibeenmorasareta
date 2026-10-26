@@ -1,0 +1,25 @@
+organization: デジタル庁
+services:
+  - デジタル庁ホームページの問い合わせフォーム
+industry: 行政
+country: JP
+org_type: national_gov
+prefecture: 東京都
+date_announced: 2026-10-22
+affected_count: 13323
+count_note: 最大値（区分ごとの合計）。2021年5月〜2023年3月にフォームに入力された情報。ほかに職員・委託事業従事者のStudioアカウント情報35件
+cause: third_party
+root_cause: Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった
+vendor:
+  name: Studio株式会社
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 問い合わせ内容
+summary: ホームページの問い合わせフォームを構築していたWeb制作サービス「Studio」が不正アクセスを受け、2021年5月〜2023年3月にフォームに入力された最大1万3,323件の氏名・メールアドレス・電話番号・問い合わせ内容が漏えいした可能性があると公表した。内訳は意見・要望8,833件、接種証明書アプリ3,661件など。二次被害は確認されていない。9月公表のガバメントソリューションサービス（GSS）への不正アクセスとは別の事案。
+sources:
+  - title: 時事通信
+    url: https://www.jiji.com/jc/article?k=2026102300416&g=pol
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/23/2000002543/
