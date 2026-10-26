@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-26T08:22:02.000Z",
-  "count": 594,
+  "generated_at": "2026-10-26T08:24:58.000Z",
+  "count": 615,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,153 @@
   ],
   "breaches": [
     {
+      "id": "2026-10-piccoma",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "株式会社カカオピッコマ",
+      "services": [
+        "ピッコマ（メールマガジン）"
+      ],
+      "industry": "メディア・出版",
+      "date_occurred": "2026-10-21",
+      "date_announced": "2026-10-24",
+      "affected_count": 1002404,
+      "count_note": "メルマガ1回分の配信先の件数で、重複を除いた人数ではない（第1報）",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "電子マンガ・ノベルサービス「ピッコマ」のメールマガジンの配信先として登録された100万2,404件のメールアドレスが、配信を委託するブラストメールへの不正アクセスにより流出したと公表した。パスワード・氏名・カード情報・購入情報は含まれず、ピッコマのアプリとWebサイトは侵害されていない。",
+      "sources": [
+        {
+          "title": "ピッコマ お知らせ",
+          "url": "https://piccoma.com/web/notice_detail/7503"
+        },
+        {
+          "title": "ビジネス＋IT",
+          "url": "https://www.sbbit.jp/article/cont1/187769"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 3,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-ehealthcare",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "株式会社eヘルスケア",
+      "group": "東邦ホールディングス",
+      "services": [
+        "医療機関検索サイト関連のメール配信"
+      ],
+      "industry": "医療",
+      "date_occurred": "2026-10-21",
+      "date_announced": "2026-10-23",
+      "affected_count": 8000,
+      "count_note": "医師の氏名とメールアドレス約8000件（可能性）。ほかに医療機関名約1000件、アンケート管理画面のURL約7000件、生年月日約30人分",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "生年月日",
+        "取引先情報"
+      ],
+      "summary": "東邦ホールディングスの子会社で、メール配信に使っていたブラストメールが不正アクセスを受け、医師の氏名とメールアドレス約8000件などが漏えいした可能性があると公表した。住所・電話番号・クレジットカード情報は含まれない。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC237PD0T21C26A0000000/"
+        },
+        {
+          "title": "ミクスOnline",
+          "url": "https://www.mixonline.jp/tabid55.html?artid=81069"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 2,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-ehime-np",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "株式会社愛媛新聞社",
+      "services": [
+        "メールマガジン（ニュース速報など）"
+      ],
+      "industry": "メディア・出版",
+      "date_occurred": "2026-10-21",
+      "date_announced": "2026-10-23",
+      "affected_count": 32000,
+      "count_note": "約3万2千人分",
+      "data_types": [
+        "氏名",
+        "会員ID",
+        "メールアドレス",
+        "性別",
+        "生年月日",
+        "契約情報"
+      ],
+      "summary": "メールマガジンの配信に使っていたブラストメールが不正アクセスを受け、約3万2千人分の氏名・会員ID・会員区分・メールアドレス・性別・生年月日・契約しているサービス・購読しているメルマガ名・新聞配達の担当エリアが漏えいしたと公表した。クレジットカード情報・電話番号・口座番号・パスワードは含まれない。",
+      "sources": [
+        {
+          "title": "愛媛新聞",
+          "url": "https://www.ehime-np.co.jp/article/news202610230205"
+        },
+        {
+          "title": "eat愛媛朝日テレビ（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/95cca201b2a33ec466b01311500e4bba1366cc4b"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 2,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-env-mailmag",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "環境省",
+      "org_type": "national_gov",
+      "prefecture": "東京都",
+      "services": [
+        "地球環境パートナーシッププラザ（GEOC）などのメールマガジン"
+      ],
+      "industry": "行政",
+      "date_announced": "2026-10-23",
+      "affected_count": 22000,
+      "count_note": "最大約2万2千件（最大値）。流出は確認されていない",
+      "data_types": [
+        "メールアドレス",
+        "氏名"
+      ],
+      "summary": "地球環境パートナーシッププラザ（GEOC）や地域循環共生圏などのメールマガジンの配信に使っていたブラストメールが不正アクセスを受け、登録者のメールアドレスなど最大約2万2千件が漏えいした可能性があると公表した。地域循環共生圏のメルマガは氏名も含む。現時点で流出は確認されていない。",
+      "sources": [
+        {
+          "title": "環境省 報道発表",
+          "url": "https://www.env.go.jp/press/press_05784.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-goodsmile",
       "organization": "株式会社グッドスマイルカンパニー",
       "services": [
@@ -530,6 +677,244 @@
         }
       ],
       "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-hiroshima-isc",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "公益財団法人広島市産業振興センター",
+      "org_type": "public_org",
+      "prefecture": "広島県",
+      "services": [
+        "広島市産業振興センターNEWS",
+        "産学官連携ネットワークニュース"
+      ],
+      "industry": "団体・その他",
+      "date_announced": "2026-10-23",
+      "affected_count": 4424,
+      "count_note": "登録者延べ4,424件（流出したかは確認中）",
+      "data_types": [
+        "メールアドレス",
+        "取引先情報"
+      ],
+      "summary": "メールマガジンの配信に使っていたラクスライトクラウドのシステムが不正アクセスを受け、登録者延べ4,424件のメールアドレスと、任意で登録された社名・所在地・担当者名が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "中国新聞",
+          "url": "https://www.chugoku-np.co.jp/articles/-/914021"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261023de64542"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-hyogo-pref-mailmag",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "兵庫県",
+      "org_type": "local_gov",
+      "prefecture": "兵庫県",
+      "services": [
+        "自治体・経済団体向けメルマガ、介護保険サービス事業所への連絡メール"
+      ],
+      "industry": "行政",
+      "date_announced": "2026-10-23",
+      "affected_count": 14700,
+      "count_note": "延べ約1万4700件（漏えいの恐れ）。企業・事業所の代表アドレスが中心",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "メールマガジンなどの配信に使っていたブラストメールが不正アクセスを受け、配信先のメールアドレスなど延べ約1万4700件が漏えいした恐れがあると公表した。企業・事業所の代表アドレスが中心で、一部に担当者個人のアドレスを含む。10月14日に公表したアルカディア経由の事案とは別の事案。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF239Y80T21C26A0000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-ichinoseki-city",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "岩手県一関市",
+      "org_type": "local_gov",
+      "prefecture": "岩手県",
+      "services": [
+        "いちのせきメール（防災情報など）"
+      ],
+      "industry": "行政",
+      "date_announced": "2026-10-23",
+      "affected_count": 5839,
+      "count_note": "登録されていた全件",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "防災情報などを配信する「いちのせきメール」のシステムの提供元ラクスライトクラウド（ブラストメール）が不正アクセスを受け、登録されていた5,839件のメールアドレスが漏えいしたと報じられた。",
+      "sources": [
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261023de64030"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-kagoshima-city-furespo",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "鹿児島県鹿児島市",
+      "org_type": "local_gov",
+      "prefecture": "鹿児島県",
+      "services": [
+        "鹿児島ふれあいスポーツランド（教室の応募者への連絡）"
+      ],
+      "industry": "行政",
+      "date_announced": "2026-10-23",
+      "affected_count": 3000,
+      "count_note": "最大約3000人（2025年12月〜2026年9月の応募者）",
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "鹿児島ふれあいスポーツランドの指定管理者が契約するラクスライトクラウド（ブラストメール）のサーバーが不正アクセスを受け、水泳・エアロビクス教室などへの応募者最大約3000人分の氏名とメールアドレスが漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "MBC南日本放送（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/7a8c3eeae6b2d4dff28b86ce044ba0437c12bb31"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-kyodo-47gyosei",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "一般社団法人共同通信社",
+      "services": [
+        "47行政ジャーナル"
+      ],
+      "industry": "メディア・出版",
+      "date_announced": "2026-10-23",
+      "affected_count": 500,
+      "count_note": "最大約500人分",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "会員制の行政情報サイト「47行政ジャーナル」のメール配信に使っていたブラストメールが不正アクセスを受け、会員のメールアドレスなど最大約500人分が漏えいした可能性があると公表した。クレジットカード情報と電話番号は登録していない。",
+      "sources": [
+        {
+          "title": "新潟日報",
+          "url": "https://www.niigata-nippo.co.jp/articles/-/930171"
+        },
+        {
+          "title": "山陰中央新報",
+          "url": "https://www.sanin-chuo.co.jp/articles/-/1103083"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-kyoto-city-mailmag",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "京都府京都市",
+      "org_type": "local_gov",
+      "prefecture": "京都府",
+      "services": [
+        "ワールドマスターズゲームズ2027関西のボランティア応募",
+        "京の食文化ミュージアム・あじわい館のメルマガ"
+      ],
+      "industry": "行政",
+      "date_announced": "2026-10-23",
+      "affected_count": 1788,
+      "count_note": "ボランティア応募代表者288人とメルマガ会員約1500件の合計",
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "ブラストメールへの不正アクセスにより、ワールドマスターズゲームズ2027関西・京都エリアのボランティア応募代表者288人の氏名・メールアドレスと、京の食文化ミュージアム・あじわい館のメルマガなどの会員のメールアドレス約1500件が漏えいした可能性があると公表した。Studio経由の「IVS KYOTO」などの事案とは別の事案。",
+      "sources": [
+        {
+          "title": "京都新聞",
+          "url": "https://www.kyoto-np.co.jp/articles/-/1813882"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-kyoto-pref-recurrent",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "京都府",
+      "org_type": "local_gov",
+      "prefecture": "京都府",
+      "services": [
+        "京都府生涯現役クリエイティブセンターのメール配信"
+      ],
+      "industry": "行政",
+      "date_announced": "2026-10-23",
+      "affected_count": 15576,
+      "count_note": "10月14日時点の登録数（漏えいは確定していない）",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "生年月日",
+        "住所"
+      ],
+      "summary": "京都府生涯現役クリエイティブセンターがリカレント研修の受講生などへのメール配信に使っていたブラストメールが不正アクセスを受け、登録者1万5,576人のメールアドレス・氏名、一部の生年月日・年齢・居住地が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "京都府生涯現役クリエイティブセンター お知らせ",
+          "url": "https://recurrent-kyoto.com/news/8826/"
+        }
+      ],
+      "severity": "high",
       "disclosure_days": null,
       "reliability": "high"
     },
@@ -608,6 +993,84 @@
       "reliability": "high"
     },
     {
+      "id": "2026-10-nagano-pref-mailmag",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "長野県",
+      "org_type": "local_gov",
+      "prefecture": "長野県",
+      "services": [
+        "チアフルながの",
+        "シューカツNAGANO",
+        "デジタル農活信州"
+      ],
+      "industry": "行政",
+      "date_announced": "2026-10-23",
+      "affected_count": 4300,
+      "count_note": "計約4300件（のべ件数。重複登録を含む可能性あり）",
+      "data_types": [
+        "氏名",
+        "性別",
+        "メールアドレス",
+        "住所"
+      ],
+      "summary": "県の委託事業者がメールマガジンの配信に使っていたブラストメールが不正アクセスを受け、「チアフルながの」「シューカツNAGANO」「デジタル農活信州」の登録者計約4300件の氏名・性別・メールアドレス・居住地（都道府県・市町村）が漏えいした可能性があると公表した。10月22日に公表したStudio経由の事案とは別の事案。",
+      "sources": [
+        {
+          "title": "中日新聞",
+          "url": "https://www.chunichi.co.jp/article/1329428"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261023de64571"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-nhk-publishing",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "株式会社NHK出版",
+      "services": [
+        "みんなの趣味の園芸（メールマガジン）"
+      ],
+      "industry": "メディア・出版",
+      "date_occurred": "2026-10-21",
+      "date_announced": "2026-10-23",
+      "affected_count": 127000,
+      "count_note": "約12万7千件。委託先から送付先リスト全件の漏えいと報告があった",
+      "data_types": [
+        "メールアドレス",
+        "性別",
+        "アカウント名"
+      ],
+      "summary": "園芸情報サイト「みんなの趣味の園芸」のメールマガジンの配信を委託していたブラストメールが不正アクセスを受け、送付先リストの約12万7千件のメールアドレス、ニックネーム、性別、居住地の都道府県名が漏えいしたと公表した。",
+      "sources": [
+        {
+          "title": "共同通信（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/a4ff2ab3d5908c9a5afe9bbfc89a9a46d4aac10b"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC236GC0T21C26A0000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 2,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-nomura-iport",
       "organization": "野村證券株式会社",
       "group": "野村グループ",
@@ -677,6 +1140,113 @@
       "severity": "high",
       "disclosure_days": 4,
       "reliability": "high"
+    },
+    {
+      "id": "2026-10-sannichi-ybs",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "株式会社山梨日日新聞社",
+      "group": "山日YBSグループ",
+      "services": [
+        "グループ各社のメール配信"
+      ],
+      "industry": "メディア・出版",
+      "date_announced": "2026-10-23",
+      "affected_count": 15040,
+      "count_note": "約1万5040人分（報道）",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "山日YBSグループの各社がメール配信に使っていたブラストメールが不正アクセスを受け、登録者約1万5040人分のメールアドレスなどが漏えいしたと公表した。",
+      "sources": [
+        {
+          "title": "山梨日日新聞 お知らせ",
+          "url": "https://www2.sannichi.co.jp/GUIDANCE/2027/info/cd/90001/seq/17"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261023de64557"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-tokyo-agri-volunteer",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "公益財団法人東京都農林水産振興財団",
+      "org_type": "public_org",
+      "prefecture": "東京都",
+      "services": [
+        "東京広域援農ボランティア事業のメール配信"
+      ],
+      "industry": "団体・その他",
+      "date_announced": "2026-10-23",
+      "affected_count": 16000,
+      "count_note": "最大約1万6千件（生産者とボランティア参加者。対象になりうる最大値）",
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "東京都の政策連携団体で、東京広域援農ボランティア事業のメール配信に使っていたブラストメールが不正アクセスを受け、生産者とボランティア参加者の氏名・メールアドレスなど最大約1万6千件が漏えいした可能性があると東京都が公表した。",
+      "sources": [
+        {
+          "title": "東京都 報道発表",
+          "url": "https://www.metro.tokyo.lg.jp/information/press/2026/10/2026102317"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOCC235V40T21C26A0000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-tokyo-metro-mailmag",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "東京地下鉄株式会社",
+      "services": [
+        "イベント案内のメールマガジン"
+      ],
+      "industry": "交通・モビリティ",
+      "date_occurred": "2026-10-21",
+      "date_announced": "2026-10-23",
+      "affected_count": 80000,
+      "count_note": "約8万件（退会者のアドレスを含む可能性あり）",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "イベント案内のメールマガジンの配信を委託していたブラストメールが不正アクセスを受け、約8万件のメールアドレスが流出したと公表した。メールアドレス以外の登録情報は取得されていない。9月に公表したポイントサービス「メトポ」の事案とは別の事案。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC23A0P0T21C26A0000000/"
+        },
+        {
+          "title": "共同通信（東京新聞）",
+          "url": "https://www.tokyo-np.co.jp/article/523562"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 2,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-treasure-factory",
@@ -779,6 +1349,111 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-10-hiroshima-pref-mailmag",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "広島県",
+      "org_type": "local_gov",
+      "prefecture": "広島県",
+      "services": [
+        "消費者被害防止の啓発メルマガ"
+      ],
+      "industry": "行政",
+      "date_announced": "2026-10-22",
+      "affected_count": 1624,
+      "count_note": "登録者数（流出したかは確認中）",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "県の委託を受けたNPO法人が消費者被害防止の啓発メールマガジンの配信に使っていたラクスライトクラウドのシステムが不正アクセスを受け、登録者1,624件の情報が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "中国新聞",
+          "url": "https://www.chugoku-np.co.jp/articles/-/913368"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-his-hotel",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "株式会社H.I.S.ホテルホールディングス",
+      "group": "HISグループ",
+      "services": [
+        "ホテル会員向けメールマガジン"
+      ],
+      "industry": "旅行",
+      "date_announced": "2026-10-22",
+      "affected_count": 140000,
+      "count_note": "約14万人（流出の可能性）",
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "「変なホテル」などを運営するエイチ・アイ・エスの子会社で、メールマガジンの配信委託先（ブラストメールを運営するラクスライトクラウド）が不正アクセスを受け、ホテル会員約14万人分の氏名とメールアドレスが流出した可能性があると公表した。クレジットカード情報は含まれない。",
+      "sources": [
+        {
+          "title": "H.I.S.ホテルホールディングス お知らせ",
+          "url": "https://www.hishotelgroup.com/news/3359/"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/23/2000002549/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-nagaoka-city-mailmag",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "新潟県長岡市",
+      "org_type": "local_gov",
+      "prefecture": "新潟県",
+      "services": [
+        "Gekkanながおか（市外在住者向けメルマガ）"
+      ],
+      "industry": "行政",
+      "date_announced": "2026-10-22",
+      "affected_count": 2628,
+      "data_types": [
+        "メールアドレス",
+        "性別",
+        "住所"
+      ],
+      "summary": "市外在住者向けメールマガジン「Gekkanながおか」の配信に使っていたラクスライトクラウドのシステムが不正アクセスを受け、2,628件のメールアドレス・生まれた年・性別・居住都道府県が漏えいした可能性があると公表した。氏名と電話番号は含まれない。10月14日に公表したアルカディア経由の事案とは別の事案。",
+      "sources": [
+        {
+          "title": "新潟日報",
+          "url": "https://www.niigata-nippo.co.jp/articles/-/929370"
+        },
+        {
+          "title": "UX新潟テレビ21（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/2ecfd0168e2ea05cd9bb5b6cdc4986aa4a0e68bd"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-tohoku-frontier-epoint",
       "organization": "東北電力フロンティア株式会社",
       "group": "東北電力グループ",
@@ -812,6 +1487,40 @@
       "severity": "medium",
       "disclosure_days": null,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-tokamachi-city-agri",
+      "country": "JP",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "organization": "新潟県十日町市",
+      "org_type": "local_gov",
+      "prefecture": "新潟県",
+      "services": [
+        "農業者向けの一斉配信"
+      ],
+      "industry": "行政",
+      "date_announced": "2026-10-22",
+      "affected_count": 599,
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "住所"
+      ],
+      "summary": "農林課が農業者向けの一斉配信に使っていたブラストメールが不正アクセスを受け、599人の氏名・メールアドレス・電話番号・居住地域・認定農業者かどうかの回答が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "十日町市 お知らせ",
+          "url": "https://www.city.tokamachi.lg.jp/soshiki/sangyokankobu/norinka/1/gyomu/11410.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-10-digital-arts",
@@ -907,6 +1616,46 @@
       "severity": "medium",
       "disclosure_days": 20,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-rakus-light-cloud",
+      "organization": "株式会社ラクスライトクラウド",
+      "services": [
+        "ブラストメール"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-10-21",
+      "date_announced": "2026-10-21",
+      "affected_count": null,
+      "count_note": "配信先リストなどの漏えいを確認した契約は344件（10月26日時点の報道）。漏えいしたアドレスの件数は非公表",
+      "cause": "unauthorized_access",
+      "root_cause": "外部の第三者がAPI用サーバー2台に侵入し、販売管理システムとサービスのデータベースからデータを持ち出した",
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "契約情報",
+        "取引先情報"
+      ],
+      "summary": "メール配信サービス「ブラストメール」で10月21日未明に不審なアクセスを検知し、管理画面とAPI、メール配信を停止した。外部の第三者がAPI用サーバー2台に侵入して販売管理システムとサービスのデータベースからデータを持ち出しており、全契約者の会社名・担当者名・電話番号・メールアドレス・契約と支払いの履歴と、一部の契約者のメルマガなどの配信先リストが漏えいした。配信先リストの漏えいを確認した契約は344件と報じられている。侵入経路は調査中で、サービスの再開は未定。利用していた企業・自治体が相次いで影響を公表している。",
+      "sources": [
+        {
+          "title": "ラクス お知らせ（第2報）",
+          "url": "https://www.rakus.co.jp/news/2026/1021-3.html"
+        },
+        {
+          "title": "ブラストメール お知らせ",
+          "url": "https://info.blastmail.jp/information_20261021.html"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/23/2000002551/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 0,
+      "reliability": "high"
     },
     {
       "id": "2026-10-fujikyu-clubq",
