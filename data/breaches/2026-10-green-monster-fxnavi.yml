@@ -1,0 +1,17 @@
+organization: グリーンモンスター株式会社
+services:
+  - FXなび
+industry: IT・通信
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_announced: 2026-10-23
+affected_count: null
+count_note: 報道では約619万件の取得の「おそれ」とされるが確定値ではない（第一報・調査中）
+cause: unauthorized_access
+data_types:
+  - メールアドレス
+summary: FXデモトレードアプリ「FXなび」で、第三者によりユーザーのメールアドレスなどの情報が取得されたおそれがあると適時開示（第一報）で公表した。件数や原因は調査中としている。
+sources:
+  - title: グリーンモンスター 適時開示（第一報）
+    url: https://www.release.tdnet.info/inbs/140120261023555394.pdf

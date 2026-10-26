@@ -1,0 +1,25 @@
+organization: 株式会社グッドスマイルカンパニー
+services:
+  - グッドスマイルカンパニー公式ショップ
+industry: 小売・EC
+country: JP
+date_occurred: 2026-10-19
+date_announced: 2026-10-23
+affected_count: null
+count_note: 件数は非公表
+cause: vulnerability
+root_cause: 公式ショップのシステムの脆弱性を突かれ、管理情報を複数回不正に閲覧された
+vuln_target: web_app
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 購入履歴
+  - クレジットカード情報（番号の一部・有効期限等）
+summary: フィギュアメーカーの公式オンラインショップのシステムの脆弱性を突かれ、10月19日〜22日に管理情報が複数回不正に閲覧されたと公表した。会員の氏名・住所・電話番号・メールアドレス、注文日・商品名・金額・配送先・決済方法、クレジットカードのブランド・番号の下4桁・有効期限が閲覧された可能性がある。カード名義、下4桁以外の番号、セキュリティコードは含まれない。公式ショップは閉鎖し、再開は未定。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/26/2000002577/
+  - title: 電ファミニコゲーマー
+    url: https://news.denfaminicogamer.jp/news/2610233k

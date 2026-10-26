@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-23T08:12:17.000Z",
-  "count": 586,
+  "generated_at": "2026-10-26T08:20:20.000Z",
+  "count": 594,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,248 @@
   ],
   "breaches": [
     {
+      "id": "2026-10-goodsmile",
+      "organization": "株式会社グッドスマイルカンパニー",
+      "services": [
+        "グッドスマイルカンパニー公式ショップ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-10-19",
+      "date_announced": "2026-10-23",
+      "affected_count": null,
+      "count_note": "件数は非公表",
+      "cause": "vulnerability",
+      "root_cause": "公式ショップのシステムの脆弱性を突かれ、管理情報を複数回不正に閲覧された",
+      "vuln_target": "web_app",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "購入履歴",
+        "クレジットカード情報（番号の一部・有効期限等）"
+      ],
+      "summary": "フィギュアメーカーの公式オンラインショップのシステムの脆弱性を突かれ、10月19日〜22日に管理情報が複数回不正に閲覧されたと公表した。会員の氏名・住所・電話番号・メールアドレス、注文日・商品名・金額・配送先・決済方法、クレジットカードのブランド・番号の下4桁・有効期限が閲覧された可能性がある。カード名義、下4桁以外の番号、セキュリティコードは含まれない。公式ショップは閉鎖し、再開は未定。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/26/2000002577/"
+        },
+        {
+          "title": "電ファミニコゲーマー",
+          "url": "https://news.denfaminicogamer.jp/news/2610233k"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 4,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-green-monster-fxnavi",
+      "organization": "グリーンモンスター株式会社",
+      "services": [
+        "FXなび"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-10-23",
+      "affected_count": null,
+      "count_note": "報道では約619万件の取得の「おそれ」とされるが確定値ではない（第一報・調査中）",
+      "cause": "unauthorized_access",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "FXデモトレードアプリ「FXなび」で、第三者によりユーザーのメールアドレスなどの情報が取得されたおそれがあると適時開示（第一報）で公表した。件数や原因は調査中としている。",
+      "sources": [
+        {
+          "title": "グリーンモンスター 適時開示（第一報）",
+          "url": "https://www.release.tdnet.info/inbs/140120261023555394.pdf"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-mizkan-asia-pacific",
+      "organization": "Mizkan Asia Pacific",
+      "group": "ミツカングループ",
+      "services": [
+        "アジア事業のホームページの問い合わせフォーム"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_occurred": "2026-09-30",
+      "date_announced": "2026-10-23",
+      "affected_count": 355,
+      "count_note": "最大355件（時事通信）。日経はテスト送信などを除くと約330件と報道",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "取引先情報"
+      ],
+      "summary": "ミツカングループのアジア事業（Mizkan Asia Pacific）のホームページで使う外部サービス「Studio」が9月30日〜10月1日に不正アクセスを受け、問い合わせフォームから連絡した顧客の氏名・メールアドレス・電話番号・会社名など最大355件が漏えいしたおそれがあると公表した。二次被害は確認されていない。10月9日公表のZENB会員の事案（委託先コミューン）とは別の事案。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOFD238VQ0T21C26A0000000/"
+        },
+        {
+          "title": "時事通信",
+          "url": "https://news.yahoo.co.jp/articles/cb89d04f96e03c7a6ad70565002f93ac241f0c66"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 23,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-mos-card",
+      "organization": "株式会社モスフードサービス",
+      "services": [
+        "モスカード（プリペイドカード）"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_occurred": "2026-10-14",
+      "date_announced": "2026-10-23",
+      "affected_count": 1133070,
+      "count_note": "カードの枚数（人数ではない）。流通済み約57万件と未流通約56万件の合計",
+      "cause": "third_party",
+      "root_cause": "プリペイドカードシステムの運用・保守の委託先が不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社バリューデザイン"
+      },
+      "data_types": [
+        "資産・取引情報"
+      ],
+      "summary": "プリペイドカード「モスカード」の運用・保守を委託しているバリューデザインのシステムが不正アクセスを受け、カード113万3,070件の16桁のカード番号、6桁のPIN、残高情報が流出したと公表した。流通済みのカードは約57万件。委託先が10月14日〜18日に不審なアクセスと不正ログインの試行を検知した。氏名・住所・電話番号・クレジットカード情報は含まれない。PINは強制的に変更した。",
+      "sources": [
+        {
+          "title": "モスフードサービス 適時開示（日経会社情報DIGITAL）",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261023555430/"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC238H90T21C26A0000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 9,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-nomura-iport",
+      "organization": "野村證券株式会社",
+      "group": "野村グループ",
+      "services": [
+        "i-Port（金融機関など向けのポートフォリオ管理ツール）"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-10-16",
+      "date_announced": "2026-10-23",
+      "affected_count": null,
+      "count_note": "件数は非公表（調査中）。ユミルリンクの「延べ約900万件」は5システム全体の推計でi-Portの件数ではない",
+      "cause": "third_party",
+      "root_cause": "メール配信の委託先ユミルリンクのシステムが不正アクセスを受け、データベースから情報を持ち出された",
+      "vendor": {
+        "name": "ユミルリンク株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "金融機関など向けのポートフォリオ管理ツール「i-Port」のメール配信を委託しているユミルリンクのシステムが不正アクセスを受け、利用者のメールアドレスなどが漏えいした可能性があると公表した。ポートフォリオ情報や証券取引口座の情報は含まれず、不正利用は確認されていない。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB233Q60T21C26A0000000/"
+        },
+        {
+          "title": "ビジネス＋IT",
+          "url": "https://www.sbbit.jp/article/fj/187752"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 7,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-pizzahut",
+      "organization": "日本ピザハット株式会社",
+      "services": [
+        "ピザハット オンライン注文"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_occurred": "2026-10-19",
+      "date_announced": "2026-10-23",
+      "affected_count": 4480000,
+      "count_note": "最大約448万件は報道（ANNなど）による数字で、公式発表には件数の記載がない",
+      "cause": "unauthorized_access",
+      "root_cause": "オンライン注文の決済APIに第三者が不正アクセスし、データベースの一部を取得した（原因は調査中）",
+      "data_types": [
+        "会員ID",
+        "メールアドレス",
+        "電話番号",
+        "購入履歴"
+      ],
+      "summary": "オンライン注文サービスの決済APIが第三者による不正アクセスを受け、データベースの一部を取得されたと公表した。対象は顧客ID、メールアドレス、電話番号、削除済みの顧客情報に関する記録、ログイン用のセッショントークン、取引記録。クレジットカード情報は含まれない。10月19日に不正アクセスがあった。",
+      "sources": [
+        {
+          "title": "日本ピザハット お知らせ",
+          "url": "https://corp.pizzahut.jp/info/5540"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC23BAT0T21C26A0000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 4,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-treasure-factory",
+      "organization": "株式会社トレジャー・ファクトリー",
+      "services": [
+        "出張買取・トレファク引越の案件管理システム"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-10-23",
+      "affected_count": 746277,
+      "count_note": "746,277件（大半はメールアドレスのみで、氏名・住所を含むのは11件）。ほかに取引先・従業員などの情報1,750件",
+      "cause": "vulnerability",
+      "root_cause": "出張買取などの案件管理システムのデータベースへのアクセスに関する脆弱性を悪用されたとみられる",
+      "vuln_target": "business_tool",
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "住所",
+        "従業員情報"
+      ],
+      "summary": "「出張買取」「トレファク引越」の案件管理システムが外部から不正アクセスを受け、74万6,277件の個人情報が漏えいしたと公表した。大半はメールアドレスで、氏名・住所を含むものは11件。このほか取引先業者や従業員などの氏名・メールアドレスや端末の識別情報も取得された。10月20日に攻撃を把握した。決済情報や、店舗・アプリで管理する顧客情報は別システムのため対象外としている。PHPの脆弱性によるものではないと説明している。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC236QG0T21C26A0000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-capcom",
       "organization": "株式会社カプコン",
       "services": [
@@ -491,6 +733,45 @@
         {
           "title": "ファミ通",
           "url": "https://www.famitsu.com/article/202610/91777"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-digital-agency-studio",
+      "organization": "デジタル庁",
+      "services": [
+        "デジタル庁ホームページの問い合わせフォーム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "national_gov",
+      "prefecture": "東京都",
+      "date_announced": "2026-10-22",
+      "affected_count": 13323,
+      "count_note": "最大値（区分ごとの合計）。2021年5月〜2023年3月にフォームに入力された情報。ほかに職員・委託事業従事者のStudioアカウント情報35件",
+      "cause": "third_party",
+      "root_cause": "Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "問い合わせ内容"
+      ],
+      "summary": "ホームページの問い合わせフォームを構築していたWeb制作サービス「Studio」が不正アクセスを受け、2021年5月〜2023年3月にフォームに入力された最大1万3,323件の氏名・メールアドレス・電話番号・問い合わせ内容が漏えいした可能性があると公表した。内訳は意見・要望8,833件、接種証明書アプリ3,661件など。二次被害は確認されていない。9月公表のガバメントソリューションサービス（GSS）への不正アクセスとは別の事案。",
+      "sources": [
+        {
+          "title": "時事通信",
+          "url": "https://www.jiji.com/jc/article?k=2026102300416&g=pol"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/23/2000002543/"
         }
       ],
       "severity": "medium",
