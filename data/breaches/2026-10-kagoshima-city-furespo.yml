@@ -1,0 +1,21 @@
+country: JP
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+organization: 鹿児島県鹿児島市
+org_type: local_gov
+prefecture: 鹿児島県
+services:
+  - 鹿児島ふれあいスポーツランド（教室の応募者への連絡）
+industry: 行政
+date_announced: "2026-10-23"
+affected_count: 3000
+count_note: 最大約3000人（2025年12月〜2026年9月の応募者）
+data_types:
+  - 氏名
+  - メールアドレス
+summary: 鹿児島ふれあいスポーツランドの指定管理者が契約するラクスライトクラウド（ブラストメール）のサーバーが不正アクセスを受け、水泳・エアロビクス教室などへの応募者最大約3000人分の氏名とメールアドレスが漏えいした可能性があると公表した。
+sources:
+  - title: MBC南日本放送（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/7a8c3eeae6b2d4dff28b86ce044ba0437c12bb31

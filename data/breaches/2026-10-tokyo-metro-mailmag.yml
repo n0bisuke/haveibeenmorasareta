@@ -1,0 +1,21 @@
+country: JP
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+organization: 東京地下鉄株式会社
+services:
+  - イベント案内のメールマガジン
+industry: 交通・モビリティ
+date_occurred: "2026-10-21"
+date_announced: "2026-10-23"
+affected_count: 80000
+count_note: 約8万件（退会者のアドレスを含む可能性あり）
+data_types:
+  - メールアドレス
+summary: イベント案内のメールマガジンの配信を委託していたブラストメールが不正アクセスを受け、約8万件のメールアドレスが流出したと公表した。メールアドレス以外の登録情報は取得されていない。9月に公表したポイントサービス「メトポ」の事案とは別の事案。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC23A0P0T21C26A0000000/
+  - title: 共同通信（東京新聞）
+    url: https://www.tokyo-np.co.jp/article/523562

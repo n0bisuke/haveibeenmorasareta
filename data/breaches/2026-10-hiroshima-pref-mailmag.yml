@@ -1,0 +1,20 @@
+country: JP
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+organization: 広島県
+org_type: local_gov
+prefecture: 広島県
+services:
+  - 消費者被害防止の啓発メルマガ
+industry: 行政
+date_announced: "2026-10-22"
+affected_count: 1624
+count_note: 登録者数（流出したかは確認中）
+data_types:
+  - メールアドレス
+summary: 県の委託を受けたNPO法人が消費者被害防止の啓発メールマガジンの配信に使っていたラクスライトクラウドのシステムが不正アクセスを受け、登録者1,624件の情報が漏えいした可能性があると公表した。
+sources:
+  - title: 中国新聞
+    url: https://www.chugoku-np.co.jp/articles/-/913368

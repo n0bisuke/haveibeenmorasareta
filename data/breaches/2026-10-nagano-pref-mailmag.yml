@@ -1,0 +1,27 @@
+country: JP
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+organization: 長野県
+org_type: local_gov
+prefecture: 長野県
+services:
+  - チアフルながの
+  - シューカツNAGANO
+  - デジタル農活信州
+industry: 行政
+date_announced: "2026-10-23"
+affected_count: 4300
+count_note: 計約4300件（のべ件数。重複登録を含む可能性あり）
+data_types:
+  - 氏名
+  - 性別
+  - メールアドレス
+  - 住所
+summary: 県の委託事業者がメールマガジンの配信に使っていたブラストメールが不正アクセスを受け、「チアフルながの」「シューカツNAGANO」「デジタル農活信州」の登録者計約4300件の氏名・性別・メールアドレス・居住地（都道府県・市町村）が漏えいした可能性があると公表した。10月22日に公表したStudio経由の事案とは別の事案。
+sources:
+  - title: 中日新聞
+    url: https://www.chunichi.co.jp/article/1329428
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261023de64571

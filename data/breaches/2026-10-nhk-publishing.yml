@@ -1,0 +1,23 @@
+country: JP
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+organization: 株式会社NHK出版
+services:
+  - みんなの趣味の園芸（メールマガジン）
+industry: メディア・出版
+date_occurred: "2026-10-21"
+date_announced: "2026-10-23"
+affected_count: 127000
+count_note: 約12万7千件。委託先から送付先リスト全件の漏えいと報告があった
+data_types:
+  - メールアドレス
+  - 性別
+  - アカウント名
+summary: 園芸情報サイト「みんなの趣味の園芸」のメールマガジンの配信を委託していたブラストメールが不正アクセスを受け、送付先リストの約12万7千件のメールアドレス、ニックネーム、性別、居住地の都道府県名が漏えいしたと公表した。
+sources:
+  - title: 共同通信（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/a4ff2ab3d5908c9a5afe9bbfc89a9a46d4aac10b
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC236GC0T21C26A0000000/

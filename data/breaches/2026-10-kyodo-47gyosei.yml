@@ -1,0 +1,20 @@
+country: JP
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+organization: 一般社団法人共同通信社
+services:
+  - 47行政ジャーナル
+industry: メディア・出版
+date_announced: "2026-10-23"
+affected_count: 500
+count_note: 最大約500人分
+data_types:
+  - メールアドレス
+summary: 会員制の行政情報サイト「47行政ジャーナル」のメール配信に使っていたブラストメールが不正アクセスを受け、会員のメールアドレスなど最大約500人分が漏えいした可能性があると公表した。クレジットカード情報と電話番号は登録していない。
+sources:
+  - title: 新潟日報
+    url: https://www.niigata-nippo.co.jp/articles/-/930171
+  - title: 山陰中央新報
+    url: https://www.sanin-chuo.co.jp/articles/-/1103083

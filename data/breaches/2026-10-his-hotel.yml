@@ -1,0 +1,22 @@
+country: JP
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+organization: 株式会社H.I.S.ホテルホールディングス
+group: HISグループ
+services:
+  - ホテル会員向けメールマガジン
+industry: 旅行
+date_announced: "2026-10-22"
+affected_count: 140000
+count_note: 約14万人（流出の可能性）
+data_types:
+  - 氏名
+  - メールアドレス
+summary: 「変なホテル」などを運営するエイチ・アイ・エスの子会社で、メールマガジンの配信委託先（ブラストメールを運営するラクスライトクラウド）が不正アクセスを受け、ホテル会員約14万人分の氏名とメールアドレスが流出した可能性があると公表した。クレジットカード情報は含まれない。
+sources:
+  - title: H.I.S.ホテルホールディングス お知らせ
+    url: https://www.hishotelgroup.com/news/3359/
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/23/2000002549/

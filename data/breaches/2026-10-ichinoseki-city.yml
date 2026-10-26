@@ -1,0 +1,20 @@
+country: JP
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+organization: 岩手県一関市
+org_type: local_gov
+prefecture: 岩手県
+services:
+  - いちのせきメール（防災情報など）
+industry: 行政
+date_announced: "2026-10-23"
+affected_count: 5839
+count_note: 登録されていた全件
+data_types:
+  - メールアドレス
+summary: 防災情報などを配信する「いちのせきメール」のシステムの提供元ラクスライトクラウド（ブラストメール）が不正アクセスを受け、登録されていた5,839件のメールアドレスが漏えいしたと報じられた。
+sources:
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261023de64030

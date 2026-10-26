@@ -1,0 +1,21 @@
+country: JP
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+organization: 株式会社山梨日日新聞社
+group: 山日YBSグループ
+services:
+  - グループ各社のメール配信
+industry: メディア・出版
+date_announced: "2026-10-23"
+affected_count: 15040
+count_note: 約1万5040人分（報道）
+data_types:
+  - メールアドレス
+summary: 山日YBSグループの各社がメール配信に使っていたブラストメールが不正アクセスを受け、登録者約1万5040人分のメールアドレスなどが漏えいしたと公表した。
+sources:
+  - title: 山梨日日新聞 お知らせ
+    url: https://www2.sannichi.co.jp/GUIDANCE/2027/info/cd/90001/seq/17
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261023de64557

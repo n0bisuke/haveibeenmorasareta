@@ -1,0 +1,20 @@
+country: JP
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+organization: 兵庫県
+org_type: local_gov
+prefecture: 兵庫県
+services:
+  - 自治体・経済団体向けメルマガ、介護保険サービス事業所への連絡メール
+industry: 行政
+date_announced: "2026-10-23"
+affected_count: 14700
+count_note: 延べ約1万4700件（漏えいの恐れ）。企業・事業所の代表アドレスが中心
+data_types:
+  - メールアドレス
+summary: メールマガジンなどの配信に使っていたブラストメールが不正アクセスを受け、配信先のメールアドレスなど延べ約1万4700件が漏えいした恐れがあると公表した。企業・事業所の代表アドレスが中心で、一部に担当者個人のアドレスを含む。10月14日に公表したアルカディア経由の事案とは別の事案。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUF239Y80T21C26A0000000/
