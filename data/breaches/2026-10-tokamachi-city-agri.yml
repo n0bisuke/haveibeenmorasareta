@@ -1,0 +1,22 @@
+country: JP
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+organization: 新潟県十日町市
+org_type: local_gov
+prefecture: 新潟県
+services:
+  - 農業者向けの一斉配信
+industry: 行政
+date_announced: "2026-10-22"
+affected_count: 599
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 住所
+summary: 農林課が農業者向けの一斉配信に使っていたブラストメールが不正アクセスを受け、599人の氏名・メールアドレス・電話番号・居住地域・認定農業者かどうかの回答が漏えいした可能性があると公表した。
+sources:
+  - title: 十日町市 お知らせ
+    url: https://www.city.tokamachi.lg.jp/soshiki/sangyokankobu/norinka/1/gyomu/11410.html

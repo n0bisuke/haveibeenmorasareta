@@ -1,0 +1,23 @@
+country: JP
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+organization: 京都府
+org_type: local_gov
+prefecture: 京都府
+services:
+  - 京都府生涯現役クリエイティブセンターのメール配信
+industry: 行政
+date_announced: "2026-10-23"
+affected_count: 15576
+count_note: 10月14日時点の登録数（漏えいは確定していない）
+data_types:
+  - 氏名
+  - メールアドレス
+  - 生年月日
+  - 住所
+summary: 京都府生涯現役クリエイティブセンターがリカレント研修の受講生などへのメール配信に使っていたブラストメールが不正アクセスを受け、登録者1万5,576人のメールアドレス・氏名、一部の生年月日・年齢・居住地が漏えいした可能性があると公表した。
+sources:
+  - title: 京都府生涯現役クリエイティブセンター お知らせ
+    url: https://recurrent-kyoto.com/news/8826/

@@ -1,0 +1,25 @@
+organization: 株式会社ラクスライトクラウド
+services:
+  - ブラストメール
+industry: IT・通信
+country: JP
+date_occurred: "2026-10-21"
+date_announced: "2026-10-21"
+affected_count: null
+count_note: 配信先リストなどの漏えいを確認した契約は344件（10月26日時点の報道）。漏えいしたアドレスの件数は非公表
+cause: unauthorized_access
+root_cause: 外部の第三者がAPI用サーバー2台に侵入し、販売管理システムとサービスのデータベースからデータを持ち出した
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 契約情報
+  - 取引先情報
+summary: メール配信サービス「ブラストメール」で10月21日未明に不審なアクセスを検知し、管理画面とAPI、メール配信を停止した。外部の第三者がAPI用サーバー2台に侵入して販売管理システムとサービスのデータベースからデータを持ち出しており、全契約者の会社名・担当者名・電話番号・メールアドレス・契約と支払いの履歴と、一部の契約者のメルマガなどの配信先リストが漏えいした。配信先リストの漏えいを確認した契約は344件と報じられている。侵入経路は調査中で、サービスの再開は未定。利用していた企業・自治体が相次いで影響を公表している。
+sources:
+  - title: ラクス お知らせ（第2報）
+    url: https://www.rakus.co.jp/news/2026/1021-3.html
+  - title: ブラストメール お知らせ
+    url: https://info.blastmail.jp/information_20261021.html
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/23/2000002551/

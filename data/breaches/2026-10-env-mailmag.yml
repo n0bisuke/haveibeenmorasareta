@@ -1,0 +1,21 @@
+country: JP
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+organization: 環境省
+org_type: national_gov
+prefecture: 東京都
+services:
+  - 地球環境パートナーシッププラザ（GEOC）などのメールマガジン
+industry: 行政
+date_announced: "2026-10-23"
+affected_count: 22000
+count_note: 最大約2万2千件（最大値）。流出は確認されていない
+data_types:
+  - メールアドレス
+  - 氏名
+summary: 地球環境パートナーシッププラザ（GEOC）や地域循環共生圏などのメールマガジンの配信に使っていたブラストメールが不正アクセスを受け、登録者のメールアドレスなど最大約2万2千件が漏えいした可能性があると公表した。地域循環共生圏のメルマガは氏名も含む。現時点で流出は確認されていない。
+sources:
+  - title: 環境省 報道発表
+    url: https://www.env.go.jp/press/press_05784.html

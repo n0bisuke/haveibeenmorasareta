@@ -1,0 +1,21 @@
+country: JP
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+organization: 株式会社カカオピッコマ
+services:
+  - ピッコマ（メールマガジン）
+industry: メディア・出版
+date_occurred: "2026-10-21"
+date_announced: "2026-10-24"
+affected_count: 1002404
+count_note: メルマガ1回分の配信先の件数で、重複を除いた人数ではない（第1報）
+data_types:
+  - メールアドレス
+summary: 電子マンガ・ノベルサービス「ピッコマ」のメールマガジンの配信先として登録された100万2,404件のメールアドレスが、配信を委託するブラストメールへの不正アクセスにより流出したと公表した。パスワード・氏名・カード情報・購入情報は含まれず、ピッコマのアプリとWebサイトは侵害されていない。
+sources:
+  - title: ピッコマ お知らせ
+    url: https://piccoma.com/web/notice_detail/7503
+  - title: ビジネス＋IT
+    url: https://www.sbbit.jp/article/cont1/187769

@@ -1,0 +1,23 @@
+country: JP
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+organization: 新潟県長岡市
+org_type: local_gov
+prefecture: 新潟県
+services:
+  - Gekkanながおか（市外在住者向けメルマガ）
+industry: 行政
+date_announced: "2026-10-22"
+affected_count: 2628
+data_types:
+  - メールアドレス
+  - 性別
+  - 住所
+summary: 市外在住者向けメールマガジン「Gekkanながおか」の配信に使っていたラクスライトクラウドのシステムが不正アクセスを受け、2,628件のメールアドレス・生まれた年・性別・居住都道府県が漏えいした可能性があると公表した。氏名と電話番号は含まれない。10月14日に公表したアルカディア経由の事案とは別の事案。
+sources:
+  - title: 新潟日報
+    url: https://www.niigata-nippo.co.jp/articles/-/929370
+  - title: UX新潟テレビ21（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/2ecfd0168e2ea05cd9bb5b6cdc4986aa4a0e68bd

@@ -1,0 +1,22 @@
+country: JP
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+organization: 京都府京都市
+org_type: local_gov
+prefecture: 京都府
+services:
+  - ワールドマスターズゲームズ2027関西のボランティア応募
+  - 京の食文化ミュージアム・あじわい館のメルマガ
+industry: 行政
+date_announced: "2026-10-23"
+affected_count: 1788
+count_note: ボランティア応募代表者288人とメルマガ会員約1500件の合計
+data_types:
+  - 氏名
+  - メールアドレス
+summary: ブラストメールへの不正アクセスにより、ワールドマスターズゲームズ2027関西・京都エリアのボランティア応募代表者288人の氏名・メールアドレスと、京の食文化ミュージアム・あじわい館のメルマガなどの会員のメールアドレス約1500件が漏えいした可能性があると公表した。Studio経由の「IVS KYOTO」などの事案とは別の事案。
+sources:
+  - title: 京都新聞
+    url: https://www.kyoto-np.co.jp/articles/-/1813882
