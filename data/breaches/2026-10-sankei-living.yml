@@ -1,0 +1,27 @@
+organization: 株式会社サンケイリビング新聞社
+services:
+  - リビングWeb
+  - シティリビングWeb
+  - まちっと
+  - アンケート・プレゼント応募・イベント申込のシステム
+industry: メディア・出版
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: '2026-10-16'
+date_announced: '2026-10-22'
+affected_count: null
+count_note: 全体の件数は調査中。委託元の自治体などが個別に件数を公表している
+cause: unauthorized_access
+root_cause: 自社サーバーが第三者の不正アクセスを受けた（侵入経路は未公表）
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 住所
+summary: 「リビングWeb」などを運営する同社のサーバーが10月16日に第三者の不正アクセスを受けた疑いがあり、会員、退会済みの利用者、アンケートシステムの利用者の氏名・連絡先などが漏えいした可能性があると公表し、サービスを停止した。クレジットカード情報は預かっていない。件数は調査中で、グループ会社に業務を委託していた三重県・島根県・広島県・宮城県登米市などが影響を公表している。
+sources:
+  - title: サンケイリビング新聞社 お知らせ
+    url: https://oshirase.living.jp/
+  - title: 福島リビング新聞社 お知らせ
+    url: https://f-living.co.jp/news_i/1097/

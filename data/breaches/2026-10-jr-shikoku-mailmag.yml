@@ -1,0 +1,21 @@
+organization: 四国旅客鉄道株式会社
+services:
+  - JR四国ツアーWeb メールマガジン
+industry: 交通・モビリティ
+country: JP
+date_announced: '2026-10-22'
+affected_count: 30000
+count_note: 約3万件（最大値、可能性）
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+data_types:
+  - 氏名
+  - 生年月日
+  - 住所
+  - メールアドレス
+summary: 「JR四国ツアーWeb」のメールマガジンの配信に使っていたブラストメールが不正アクセスを受け、登録者約3万件の氏名・生年月日・住所・メールアドレスが漏えいした可能性があると公表した。
+sources:
+  - title: JR四国 お知らせ
+    url: https://www.jr-shikoku.co.jp/emc_info/assets/2026/10/22/0d2c20563ba3a1dafd421b6e36d48dad53dcd273.pdf

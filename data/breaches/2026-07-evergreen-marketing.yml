@@ -1,0 +1,22 @@
+organization: エバーグリーン・マーケティング株式会社
+services:
+  - 従業員のメールアカウント
+industry: エネルギー・インフラ
+country: JP
+date_occurred: '2026-06-26'
+date_announced: '2026-07-31'
+affected_count: 1000
+count_note: 最大1,000件（法人顧客763件と取引先関係者237件。閲覧された可能性）
+cause: unauthorized_access
+root_cause: 従業員のメールアカウントに不正ログインされ、社内外にフィッシングメールを送られた
+data_types:
+  - 取引先情報
+  - 住所
+  - 口座番号
+  - メールアドレス
+summary: 従業員1人のメールアカウントに6月26日に不正ログインされ、社内外にフィッシングメールを送られたと7月31日に公表した。10月6日の追加公表で、電力の需給契約を結ぶ法人顧客763件の会社名・住所・口座情報・請求金額などと、代理店などの取引先関係者237件の会社名・メールアドレスが閲覧された可能性があると公表した。
+sources:
+  - title: エバーグリーン・マーケティング お知らせ（追加公表）
+    url: https://www.egmkt.co.jp/newsroom/news/2026/10982/
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/27/56578.html

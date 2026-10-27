@@ -1,0 +1,26 @@
+organization: 宮城県登米市
+org_type: local_gov
+prefecture: 宮城県
+services:
+  - 結婚支援事業の申込
+industry: 行政
+country: JP
+date_announced: '2026-10-23'
+affected_count: 39
+count_note: 令和8年度の結婚支援事業の申込者（可能性）
+cause: third_party
+root_cause: 委託先の仙台リビング新聞社が使う親会社サンケイリビング新聞社のサーバーが不正アクセスを受けた
+vendor:
+  name: 株式会社サンケイリビング新聞社
+data_types:
+  - 氏名
+  - 住所
+  - 生年月日
+  - 電話番号
+  - メールアドレス
+summary: 結婚支援事業を委託していた仙台リビング新聞社が使う親会社サンケイリビング新聞社のサーバーが不正アクセスを受け、申込者39人の氏名・住所・生年月日・電話番号・勤務先または業種・メールアドレスが漏えいした可能性があると公表した。不正利用は確認されていない。
+sources:
+  - title: ミヤギテレビ（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/544a07c28ed8b4d12920e197ab94fa48d659a0ad
+  - title: 仙台放送（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/003180416ae59078168f06d8033e980b9d9839db
