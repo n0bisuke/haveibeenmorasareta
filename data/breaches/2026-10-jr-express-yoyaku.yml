@@ -1,0 +1,25 @@
+organization: 東海旅客鉄道株式会社・西日本旅客鉄道株式会社・九州旅客鉄道株式会社
+services:
+  - エクスプレス予約
+  - スマートEX
+industry: 交通・モビリティ
+country: JP
+date_occurred: 2026-10-02
+date_announced: 2026-10-26
+affected_count: 170000
+count_note: 約17万件（JR東海への報告による報道の数字。確定値ではない）
+cause: third_party
+root_cause: メール配信の委託先ユミルリンクの「Cuenote FC」が不正アクセスを受け、配信データが閲覧・取得された
+vendor:
+  name: ユミルリンク株式会社
+data_types:
+  - メールアドレス
+  - 会員ID
+  - 氏名
+  - 契約情報
+summary: 新幹線のネット予約「エクスプレス予約」「スマートEX」の会員向けメールの配信を委託していたユミルリンクのシステムが不正アクセスを受け、配信メールを受け取った一部の会員約17万件のメールアドレス・会員ID・カタカナの氏名・会員種別が閲覧・取得されたとJR東海・JR西日本・JR九州の3社が公表した。漢字の氏名、生年月日、住所、電話番号、クレジットカード情報は含まれず、予約システムからの漏えいは確認されていない。
+sources:
+  - title: JR東海・JR西日本・JR九州 お知らせ
+    url: https://jr-central.co.jp/news/release/_pdf/000046119.pdf
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/27/2000002615/

@@ -1,0 +1,24 @@
+organization: 株式会社バンダイロジパル
+group: バンダイナムコグループ
+services:
+  - 一番くじ ONLINE の配送
+industry: 物流
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-10-21
+date_announced: 2026-10-26
+affected_count: null
+count_note: 件数は調査中
+cause: unauthorized_access
+root_cause: 物流システム内のサーバーが不正アクセスを受けた（原因は未公表）
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+summary: バンダイナムコグループの物流子会社で、10月21日に物流システム内のサーバーで不正アクセスが疑われる痕跡を見つけ、サーバーを停止した。その後「一番くじ ONLINE」の配送情報を格納するサーバーにも痕跡が見つかり、氏名・住所・電話番号が漏えいした可能性があるとバンダイナムコホールディングスが公表した。クレジットカード情報は含まれない。件数は調査中。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/27/2000002608/
+  - title: HOBBY Watch
+    url: https://hobby.watch.impress.co.jp/docs/news/2151390.html
