@@ -1,0 +1,22 @@
+organization: 損保ジャパンDC証券株式会社
+group: SOMPOグループ
+services:
+  - 企業型確定拠出年金の通知メール
+industry: 金融・保険
+country: JP
+date_announced: 2026-10-22
+affected_count: 250000
+count_note: 最大約25万件（うち氏名を含む送信履歴は約1万件分）。漏えいは確認されていない
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+data_types:
+  - メールアドレス
+  - 氏名
+summary: 企業型確定拠出年金の顧客への通知メールの配信に使っていた外部のメール配信サービスが不正アクセスを受け、2022年9月以降に通知メールを受け取った顧客のメールアドレスなど最大約25万件（うち約1万件は氏名を含む）が漏えいした可能性があると公表した。漏えいは確認されていない。企業型DCを共同運営する名古屋銀行なども顧客への影響を公表している。
+sources:
+  - title: 損保ジャパンDC証券 お知らせ
+    url: https://www.sjdc.co.jp/-/media/sjnkdc/files/information/20261022_03.pdf?la=ja-JP
+  - title: 名古屋銀行 お知らせ
+    url: https://www.meigin.com/news/files/20261023_oshirase_2.pdf

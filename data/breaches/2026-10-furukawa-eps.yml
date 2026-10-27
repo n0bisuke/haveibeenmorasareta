@@ -1,0 +1,24 @@
+organization: 古河電工パワーシステムズ株式会社
+services:
+  - 防災製品の出荷管理用Webシステム
+industry: 製造
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-10-14
+date_announced: 2026-10-26
+affected_count: null
+count_note: 件数は精査中
+cause: unauthorized_access
+root_cause: 防災製品部の出荷管理用Webシステムで不正アクセスが疑われる事象が起きた（原因は未公表）
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - 取引先情報
+summary: 火災防止用品などの防災製品の出荷管理用Webシステムで10月14日に異常を検知してシステムを停止し、発注者と製品送付先の会社名・氏名・住所・電話番号が漏えいした可能性があると公表した。クレジットカード情報と口座情報は扱っていない。件数は精査中で、公開や不正利用は確認されていない。
+sources:
+  - title: 古河電工パワーシステムズ お知らせ
+    url: https://www.feps.co.jp/news/20261026/
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC135LB0T10C26A1000000/

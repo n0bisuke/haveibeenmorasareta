@@ -1,0 +1,20 @@
+organization: 株式会社読宣WEST
+services:
+  - 四国支社のウェブサイト（ヨミポスト）
+industry: メディア・出版
+country: JP
+date_announced: 2026-10-26
+affected_count: 1700
+count_note: 少なくとも約1,700人
+cause: unauthorized_access
+root_cause: 四国支社のウェブサイトが不正アクセスを受けた（原因は調査中）
+data_types:
+  - 氏名
+  - 住所
+  - 性別
+  - 電話番号
+  - メールアドレス
+summary: 四国支社のウェブサイト（ヨミポスト）が不正アクセスを受け、ウェブ経由で入会・退会した少なくとも約1,700人の住所・氏名・年齢・性別・電話番号・メールアドレスが流出した可能性があると公表した。10月14日にサイトが正常に表示されず、復旧作業中に不正アクセスの痕跡を見つけた。
+sources:
+  - title: KSB瀬戸内海放送
+    url: https://news.ksb.co.jp/article/16994741
