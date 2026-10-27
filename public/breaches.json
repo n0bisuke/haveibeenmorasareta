@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-26T10:25:10.000Z",
-  "count": 615,
+  "generated_at": "2026-10-27T05:45:49.000Z",
+  "count": 627,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,44 @@
   ],
   "breaches": [
     {
+      "id": "2026-10-hiroshima-boe-living",
+      "organization": "広島県教育委員会",
+      "org_type": "local_gov",
+      "prefecture": "広島県",
+      "services": [
+        "家庭教育支援の啓発資料のアンケートモニター申込"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "date_announced": "2026-10-26",
+      "affected_count": 65,
+      "count_note": "可能性",
+      "cause": "third_party",
+      "root_cause": "委託先の広島リビング新聞社が使う親会社サンケイリビング新聞社のサーバーが不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社サンケイリビング新聞社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "アカウント名"
+      ],
+      "summary": "家庭教育支援の啓発資料のアンケートモニターの募集を委託していた広島リビング新聞社が使う親会社サンケイリビング新聞社のサーバーが不正アクセスを受け、申込者65件の氏名・メールアドレス・ニックネームが漏えいした可能性があると公表した。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "広島県教育委員会 発表資料",
+          "url": "https://www.pref.hiroshima.lg.jp/uploaded/attachment/687440.pdf"
+        },
+        {
+          "title": "中国新聞",
+          "url": "https://www.chugoku-np.co.jp/articles/-/915182"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-piccoma",
       "country": "JP",
       "cause": "third_party",
@@ -715,6 +753,44 @@
         }
       ],
       "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-hiroshima-pref-kenmindayori",
+      "organization": "広島県",
+      "org_type": "local_gov",
+      "prefecture": "広島県",
+      "services": [
+        "ひろしま県民だより（プレゼント応募）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "date_announced": "2026-10-23",
+      "affected_count": 1470,
+      "count_note": "夏号・秋号のプレゼント応募者の延べ件数（可能性）。RCCは計747件と報道",
+      "cause": "third_party",
+      "root_cause": "企画・編集の委託先の広島リビング新聞社が使う親会社サンケイリビング新聞社のサーバーが不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社サンケイリビング新聞社"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号"
+      ],
+      "summary": "広報誌「ひろしま県民だより」の企画・編集を委託していた広島リビング新聞社が使う親会社サンケイリビング新聞社のサーバーが不正アクセスを受け、夏号・秋号のプレゼント応募者延べ1,470件の氏名・年齢・住所・電話番号などが漏えいした可能性があると公表した。ブラストメール経由の消費者啓発メルマガの事案とは別の事案。",
+      "sources": [
+        {
+          "title": "中国新聞",
+          "url": "https://www.chugoku-np.co.jp/articles/-/914139"
+        },
+        {
+          "title": "テレビ新広島（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/30223545f8bec292c119616869cf1c06d0e7dc41"
+        }
+      ],
+      "severity": "high",
       "disclosure_days": null,
       "reliability": "mid"
     },
@@ -1177,6 +1253,43 @@
       "reliability": "high"
     },
     {
+      "id": "2026-10-shimane-pref-living",
+      "organization": "島根県",
+      "org_type": "local_gov",
+      "prefecture": "島根県",
+      "services": [
+        "歴史・文化オンラインセミナー",
+        "関係人口セミナー（美保関）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "date_announced": "2026-10-23",
+      "affected_count": 471,
+      "count_note": "歴史・文化オンラインセミナー335件と関係人口セミナー136件の合計（可能性）",
+      "cause": "third_party",
+      "root_cause": "委託先が使うサンケイリビング新聞社のサーバーが第三者の不正アクセスを受けた（侵入経路は未公表）",
+      "vendor": {
+        "name": "株式会社サンケイリビング新聞社"
+      },
+      "data_types": [
+        "氏名"
+      ],
+      "summary": "セミナーの運営を委託していたサンケイリビング新聞社のサーバーが不正アクセスを受け、歴史・文化オンラインセミナーと関係人口セミナーの応募者計471人の個人情報が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "山陰中央新報",
+          "url": "https://www.sanin-chuo.co.jp/articles/-/1103104"
+        },
+        {
+          "title": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261023de64579"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-tokyo-agri-volunteer",
       "country": "JP",
       "cause": "third_party",
@@ -1246,6 +1359,46 @@
       ],
       "severity": "medium",
       "disclosure_days": 2,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-tome-city-living",
+      "organization": "宮城県登米市",
+      "org_type": "local_gov",
+      "prefecture": "宮城県",
+      "services": [
+        "結婚支援事業の申込"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "date_announced": "2026-10-23",
+      "affected_count": 39,
+      "count_note": "令和8年度の結婚支援事業の申込者（可能性）",
+      "cause": "third_party",
+      "root_cause": "委託先の仙台リビング新聞社が使う親会社サンケイリビング新聞社のサーバーが不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社サンケイリビング新聞社"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "生年月日",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "結婚支援事業を委託していた仙台リビング新聞社が使う親会社サンケイリビング新聞社のサーバーが不正アクセスを受け、申込者39人の氏名・住所・生年月日・電話番号・勤務先または業種・メールアドレスが漏えいした可能性があると公表した。不正利用は確認されていない。",
+      "sources": [
+        {
+          "title": "ミヤギテレビ（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/544a07c28ed8b4d12920e197ab94fa48d659a0ad"
+        },
+        {
+          "title": "仙台放送（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/003180416ae59078168f06d8033e980b9d9839db"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
       "reliability": "mid"
     },
     {
@@ -1417,6 +1570,120 @@
       "reliability": "high"
     },
     {
+      "id": "2026-10-jr-shikoku-mailmag",
+      "organization": "四国旅客鉄道株式会社",
+      "services": [
+        "JR四国ツアーWeb メールマガジン"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_announced": "2026-10-22",
+      "affected_count": 30000,
+      "count_note": "約3万件（最大値、可能性）",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "住所",
+        "メールアドレス"
+      ],
+      "summary": "「JR四国ツアーWeb」のメールマガジンの配信に使っていたブラストメールが不正アクセスを受け、登録者約3万件の氏名・生年月日・住所・メールアドレスが漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "JR四国 お知らせ",
+          "url": "https://www.jr-shikoku.co.jp/emc_info/assets/2026/10/22/0d2c20563ba3a1dafd421b6e36d48dad53dcd273.pdf"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-mhlw-1fedu",
+      "organization": "厚生労働省",
+      "org_type": "national_gov",
+      "prefecture": "東京都",
+      "services": [
+        "1FEdu（東電福島第一原発廃炉等作業の被ばく低減対策の教育サイト）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "date_announced": "2026-10-22",
+      "affected_count": 595,
+      "count_note": "最大595人。うち6人はメールアドレスとパスワードの漏えいと不正ログインを確認",
+      "cause": "third_party",
+      "root_cause": "委託先テクノヒルが運営する教育サイトが第三者のサイバー攻撃を受けた（手口は未公表）",
+      "vendor": {
+        "name": "テクノヒル株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "パスワード（保管形式不明）",
+        "電話番号",
+        "性別",
+        "従業員情報"
+      ],
+      "summary": "委託事業「東電福島第一原発廃炉等作業における被ばく低減対策普及啓発事業」の受託先テクノヒルが運営する教育サイト「1FEdu」がサイバー攻撃を受け、受講者最大595人の氏名・年代・性別・所属組織・役職・メールアドレス・パスワード・電話番号などが漏えいした可能性があると公表した。うち6人はメールアドレスとパスワードの漏えいと、それを使った不正ログインを確認した。発電所の設備への影響は公表されていない。",
+      "sources": [
+        {
+          "title": "厚生労働省 報道発表",
+          "url": "https://www.mhlw.go.jp/stf/newpage_76892.html"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56565.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-mie-pref-living",
+      "organization": "三重県",
+      "org_type": "local_gov",
+      "prefecture": "三重県",
+      "services": [
+        "移住セミナーの申込・アンケート"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "date_occurred": "2026-10-16",
+      "date_announced": "2026-10-22",
+      "affected_count": 231,
+      "count_note": "セミナー申込者延べ156人と参加者アンケート延べ75人の合計（可能性）",
+      "cause": "third_party",
+      "root_cause": "委託先が使うサンケイリビング新聞社のサーバーが第三者の不正アクセスを受けた（侵入経路は未公表）",
+      "vendor": {
+        "name": "株式会社サンケイリビング新聞社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "住所",
+        "電話番号"
+      ],
+      "summary": "移住セミナーの運営を委託していたサンケイリビング新聞社のサーバーが不正アクセスを受け、セミナー申込者延べ156人の氏名・メールアドレス（任意で住所・電話番号）と、参加者アンケート延べ75人分の情報が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "三重県 報道発表",
+          "url": "https://www.pref.mie.lg.jp/TOPICS/m0346800027.htm"
+        },
+        {
+          "title": "中日新聞",
+          "url": "https://www.chunichi.co.jp/article/1328859"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 6,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-nagaoka-city-mailmag",
       "country": "JP",
       "cause": "third_party",
@@ -1452,6 +1719,83 @@
       "severity": "high",
       "disclosure_days": null,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-niigata-nippo-passport",
+      "organization": "株式会社新潟日報社",
+      "services": [
+        "新潟日報パスポート"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2026-10-22",
+      "affected_count": 253000,
+      "count_note": "最大約25万3,000人（全会員）",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "メールアドレス",
+        "性別"
+      ],
+      "summary": "会員サービス「新潟日報パスポート」のメール配信に使っていたブラストメールが不正アクセスを受け、全会員最大約25万3,000人の氏名（カタカナ）・市区町村・メールアドレス・性別・年代などが漏えいしたと公表した。詳しい住所・生年月日・電話番号・クレジットカード情報は含まれない。",
+      "sources": [
+        {
+          "title": "新潟日報（第2報）",
+          "url": "https://www.niigata-nippo.co.jp/articles/-/929006"
+        },
+        {
+          "title": "新潟日報",
+          "url": "https://www.niigata-nippo.co.jp/articles/-/929355"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-sankei-living",
+      "organization": "株式会社サンケイリビング新聞社",
+      "services": [
+        "リビングWeb",
+        "シティリビングWeb",
+        "まちっと",
+        "アンケート・プレゼント応募・イベント申込のシステム"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-10-16",
+      "date_announced": "2026-10-22",
+      "affected_count": null,
+      "count_note": "全体の件数は調査中。委託元の自治体などが個別に件数を公表している",
+      "cause": "unauthorized_access",
+      "root_cause": "自社サーバーが第三者の不正アクセスを受けた（侵入経路は未公表）",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "住所"
+      ],
+      "summary": "「リビングWeb」などを運営する同社のサーバーが10月16日に第三者の不正アクセスを受けた疑いがあり、会員、退会済みの利用者、アンケートシステムの利用者の氏名・連絡先などが漏えいした可能性があると公表し、サービスを停止した。クレジットカード情報は預かっていない。件数は調査中で、グループ会社に業務を委託していた三重県・島根県・広島県・宮城県登米市などが影響を公表している。",
+      "sources": [
+        {
+          "title": "サンケイリビング新聞社 お知らせ",
+          "url": "https://oshirase.living.jp/"
+        },
+        {
+          "title": "福島リビング新聞社 お知らせ",
+          "url": "https://f-living.co.jp/news_i/1097/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 6,
+      "reliability": "high"
     },
     {
       "id": "2026-10-tohoku-frontier-epoint",
@@ -1519,6 +1863,39 @@
         }
       ],
       "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-yokohama-expo-volunteer",
+      "organization": "神奈川県横浜市",
+      "org_type": "local_gov",
+      "prefecture": "神奈川県",
+      "services": [
+        "GREEN×EXPO 2027 市出展エリアのボランティア募集"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "date_announced": "2026-10-22",
+      "affected_count": 6334,
+      "count_note": "ボランティア応募者（可能性）",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "GREEN×EXPO 2027 の市出展エリアのボランティア応募者への一斉メールを受託事業者がブラストメールで送っており、ブラストメールへの不正アクセスにより応募者6,334人の氏名とメールアドレスが漏えいした可能性があると公表した。10月14日に公表したアルカディア経由の事案とは別の事案。",
+      "sources": [
+        {
+          "title": "横浜市 記者発表",
+          "url": "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/kankyo/2026/1022expovolunteer.html"
+        }
+      ],
+      "severity": "medium",
       "disclosure_days": null,
       "reliability": "high"
     },
@@ -9295,6 +9672,41 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-10-kufu-machitalk",
+      "organization": "株式会社くふうカンパニー",
+      "services": [
+        "くふう まちトークβ版"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-10-02",
+      "date_announced": "2026-10-05",
+      "affected_count": 308,
+      "count_note": "308人分の生年月日・性別が外部から閲覧できる状態。うち1人はメールアドレスも取得された",
+      "cause": "vulnerability",
+      "root_cause": "システムの一部の脆弱性を突かれ、第三者に不正アクセスされた",
+      "vuln_target": "web_app",
+      "data_types": [
+        "生年月日",
+        "性別",
+        "メールアドレス"
+      ],
+      "summary": "地域情報サービス「くふう まちトークβ版」で10月2日に不審なアクセスを確認し、5日にサービスを停止して公表した。13日の調査結果で、システムの脆弱性を突かれ、308人分の生年月日と性別が外部から閲覧できる状態だったと公表した。うち1人はメールアドレスも取得され、生年月日・性別と結びつけられる状態だった。",
+      "sources": [
+        {
+          "title": "くふうカンパニー お知らせ（調査結果）",
+          "url": "https://kufu.co.jp/2026/10/13/kufu-announce-2/"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/27/56583.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 3,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-omu",
       "organization": "大阪公立大学",
       "industry": "人材・教育",
@@ -12625,6 +13037,41 @@
       ],
       "severity": "high",
       "disclosure_days": 4,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-07-evergreen-marketing",
+      "organization": "エバーグリーン・マーケティング株式会社",
+      "services": [
+        "従業員のメールアカウント"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_occurred": "2026-06-26",
+      "date_announced": "2026-07-31",
+      "affected_count": 1000,
+      "count_note": "最大1,000件（法人顧客763件と取引先関係者237件。閲覧された可能性）",
+      "cause": "unauthorized_access",
+      "root_cause": "従業員のメールアカウントに不正ログインされ、社内外にフィッシングメールを送られた",
+      "data_types": [
+        "取引先情報",
+        "住所",
+        "口座番号",
+        "メールアドレス"
+      ],
+      "summary": "従業員1人のメールアカウントに6月26日に不正ログインされ、社内外にフィッシングメールを送られたと7月31日に公表した。10月6日の追加公表で、電力の需給契約を結ぶ法人顧客763件の会社名・住所・口座情報・請求金額などと、代理店などの取引先関係者237件の会社名・メールアドレスが閲覧された可能性があると公表した。",
+      "sources": [
+        {
+          "title": "エバーグリーン・マーケティング お知らせ（追加公表）",
+          "url": "https://www.egmkt.co.jp/newsroom/news/2026/10982/"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/27/56578.html"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 35,
       "reliability": "high"
     },
     {
