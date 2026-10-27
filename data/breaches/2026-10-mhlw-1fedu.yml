@@ -1,0 +1,27 @@
+organization: 厚生労働省
+org_type: national_gov
+prefecture: 東京都
+services:
+  - 1FEdu（東電福島第一原発廃炉等作業の被ばく低減対策の教育サイト）
+industry: 行政
+country: JP
+date_announced: '2026-10-22'
+affected_count: 595
+count_note: 最大595人。うち6人はメールアドレスとパスワードの漏えいと不正ログインを確認
+cause: third_party
+root_cause: 委託先テクノヒルが運営する教育サイトが第三者のサイバー攻撃を受けた（手口は未公表）
+vendor:
+  name: テクノヒル株式会社
+data_types:
+  - 氏名
+  - メールアドレス
+  - パスワード（保管形式不明）
+  - 電話番号
+  - 性別
+  - 従業員情報
+summary: 委託事業「東電福島第一原発廃炉等作業における被ばく低減対策普及啓発事業」の受託先テクノヒルが運営する教育サイト「1FEdu」がサイバー攻撃を受け、受講者最大595人の氏名・年代・性別・所属組織・役職・メールアドレス・パスワード・電話番号などが漏えいした可能性があると公表した。うち6人はメールアドレスとパスワードの漏えいと、それを使った不正ログインを確認した。発電所の設備への影響は公表されていない。
+sources:
+  - title: 厚生労働省 報道発表
+    url: https://www.mhlw.go.jp/stf/newpage_76892.html
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/26/56565.html

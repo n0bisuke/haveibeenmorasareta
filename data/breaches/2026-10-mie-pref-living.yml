@@ -1,0 +1,26 @@
+organization: 三重県
+org_type: local_gov
+prefecture: 三重県
+services:
+  - 移住セミナーの申込・アンケート
+industry: 行政
+country: JP
+date_occurred: '2026-10-16'
+date_announced: '2026-10-22'
+affected_count: 231
+count_note: セミナー申込者延べ156人と参加者アンケート延べ75人の合計（可能性）
+cause: third_party
+root_cause: 委託先が使うサンケイリビング新聞社のサーバーが第三者の不正アクセスを受けた（侵入経路は未公表）
+vendor:
+  name: 株式会社サンケイリビング新聞社
+data_types:
+  - 氏名
+  - メールアドレス
+  - 住所
+  - 電話番号
+summary: 移住セミナーの運営を委託していたサンケイリビング新聞社のサーバーが不正アクセスを受け、セミナー申込者延べ156人の氏名・メールアドレス（任意で住所・電話番号）と、参加者アンケート延べ75人分の情報が漏えいした可能性があると公表した。
+sources:
+  - title: 三重県 報道発表
+    url: https://www.pref.mie.lg.jp/TOPICS/m0346800027.htm
+  - title: 中日新聞
+    url: https://www.chunichi.co.jp/article/1328859

@@ -1,0 +1,23 @@
+organization: 島根県
+org_type: local_gov
+prefecture: 島根県
+services:
+  - 歴史・文化オンラインセミナー
+  - 関係人口セミナー（美保関）
+industry: 行政
+country: JP
+date_announced: '2026-10-23'
+affected_count: 471
+count_note: 歴史・文化オンラインセミナー335件と関係人口セミナー136件の合計（可能性）
+cause: third_party
+root_cause: 委託先が使うサンケイリビング新聞社のサーバーが第三者の不正アクセスを受けた（侵入経路は未公表）
+vendor:
+  name: 株式会社サンケイリビング新聞社
+data_types:
+  - 氏名
+summary: セミナーの運営を委託していたサンケイリビング新聞社のサーバーが不正アクセスを受け、歴史・文化オンラインセミナーと関係人口セミナーの応募者計471人の個人情報が漏えいした可能性があると公表した。
+sources:
+  - title: 山陰中央新報
+    url: https://www.sanin-chuo.co.jp/articles/-/1103104
+  - title: NHKニュース
+    url: https://news.web.nhk/newsweb/na/nd-20261023de64579

@@ -1,0 +1,23 @@
+organization: 株式会社新潟日報社
+services:
+  - 新潟日報パスポート
+industry: メディア・出版
+country: JP
+date_announced: '2026-10-22'
+affected_count: 253000
+count_note: 最大約25万3,000人（全会員）
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+data_types:
+  - 氏名
+  - 住所
+  - メールアドレス
+  - 性別
+summary: 会員サービス「新潟日報パスポート」のメール配信に使っていたブラストメールが不正アクセスを受け、全会員最大約25万3,000人の氏名（カタカナ）・市区町村・メールアドレス・性別・年代などが漏えいしたと公表した。詳しい住所・生年月日・電話番号・クレジットカード情報は含まれない。
+sources:
+  - title: 新潟日報（第2報）
+    url: https://www.niigata-nippo.co.jp/articles/-/929006
+  - title: 新潟日報
+    url: https://www.niigata-nippo.co.jp/articles/-/929355
