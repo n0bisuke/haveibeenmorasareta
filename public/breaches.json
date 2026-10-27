@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-27T05:45:49.000Z",
-  "count": 627,
+  "generated_at": "2026-10-27T05:49:34.000Z",
+  "count": 634,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,115 @@
   ],
   "breaches": [
     {
+      "id": "2026-10-bandai-logipal",
+      "organization": "株式会社バンダイロジパル",
+      "group": "バンダイナムコグループ",
+      "services": [
+        "一番くじ ONLINE の配送"
+      ],
+      "industry": "物流",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-10-21",
+      "date_announced": "2026-10-26",
+      "affected_count": null,
+      "count_note": "件数は調査中",
+      "cause": "unauthorized_access",
+      "root_cause": "物流システム内のサーバーが不正アクセスを受けた（原因は未公表）",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号"
+      ],
+      "summary": "バンダイナムコグループの物流子会社で、10月21日に物流システム内のサーバーで不正アクセスが疑われる痕跡を見つけ、サーバーを停止した。その後「一番くじ ONLINE」の配送情報を格納するサーバーにも痕跡が見つかり、氏名・住所・電話番号が漏えいした可能性があるとバンダイナムコホールディングスが公表した。クレジットカード情報は含まれない。件数は調査中。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/27/2000002608/"
+        },
+        {
+          "title": "HOBBY Watch",
+          "url": "https://hobby.watch.impress.co.jp/docs/news/2151390.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 5,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-chuden-mailmag",
+      "organization": "中部電力株式会社",
+      "group": "中部電力グループ",
+      "services": [
+        "静岡県内のイベントのメールマガジン"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_announced": "2026-10-26",
+      "affected_count": 324,
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "11月に静岡県内で開くイベントのメールマガジンの配信を担う再委託先が使っていたブラストメールが不正アクセスを受け、324人の氏名とメールアドレスが漏えいした可能性があると公表した。不正利用は確認されていない。8月に公表した社内システムの事案とは別の事案。",
+      "sources": [
+        {
+          "title": "中部電力 プレスリリース",
+          "url": "https://www.chuden.co.jp/publicity/press/1218551_3273.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOFD2686X0W6A021C2000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-furukawa-eps",
+      "organization": "古河電工パワーシステムズ株式会社",
+      "services": [
+        "防災製品の出荷管理用Webシステム"
+      ],
+      "industry": "製造",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-10-14",
+      "date_announced": "2026-10-26",
+      "affected_count": null,
+      "count_note": "件数は精査中",
+      "cause": "unauthorized_access",
+      "root_cause": "防災製品部の出荷管理用Webシステムで不正アクセスが疑われる事象が起きた（原因は未公表）",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "取引先情報"
+      ],
+      "summary": "火災防止用品などの防災製品の出荷管理用Webシステムで10月14日に異常を検知してシステムを停止し、発注者と製品送付先の会社名・氏名・住所・電話番号が漏えいした可能性があると公表した。クレジットカード情報と口座情報は扱っていない。件数は精査中で、公開や不正利用は確認されていない。",
+      "sources": [
+        {
+          "title": "古河電工パワーシステムズ お知らせ",
+          "url": "https://www.feps.co.jp/news/20261026/"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC135LB0T10C26A1000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 12,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-hiroshima-boe-living",
       "organization": "広島県教育委員会",
       "org_type": "local_gov",
@@ -504,6 +613,120 @@
       "severity": "medium",
       "disclosure_days": null,
       "reliability": "high"
+    },
+    {
+      "id": "2026-10-jr-express-yoyaku",
+      "organization": "東海旅客鉄道株式会社・西日本旅客鉄道株式会社・九州旅客鉄道株式会社",
+      "services": [
+        "エクスプレス予約",
+        "スマートEX"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2026-10-02",
+      "date_announced": "2026-10-26",
+      "affected_count": 170000,
+      "count_note": "約17万件（JR東海への報告による報道の数字。確定値ではない）",
+      "cause": "third_party",
+      "root_cause": "メール配信の委託先ユミルリンクの「Cuenote FC」が不正アクセスを受け、配信データが閲覧・取得された",
+      "vendor": {
+        "name": "ユミルリンク株式会社"
+      },
+      "data_types": [
+        "メールアドレス",
+        "会員ID",
+        "氏名",
+        "契約情報"
+      ],
+      "summary": "新幹線のネット予約「エクスプレス予約」「スマートEX」の会員向けメールの配信を委託していたユミルリンクのシステムが不正アクセスを受け、配信メールを受け取った一部の会員約17万件のメールアドレス・会員ID・カタカナの氏名・会員種別が閲覧・取得されたとJR東海・JR西日本・JR九州の3社が公表した。漢字の氏名、生年月日、住所、電話番号、クレジットカード情報は含まれず、予約システムからの漏えいは確認されていない。",
+      "sources": [
+        {
+          "title": "JR東海・JR西日本・JR九州 お知らせ",
+          "url": "https://jr-central.co.jp/news/release/_pdf/000046119.pdf"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/27/2000002615/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 24,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-rakuten-travel",
+      "organization": "楽天グループ株式会社",
+      "group": "楽天グループ",
+      "services": [
+        "楽天トラベル 海外ホテル予約サイトの一部ページ",
+        "楽天トラベル 多言語予約サイト"
+      ],
+      "industry": "旅行",
+      "country": "JP",
+      "date_occurred": "2026-09-10",
+      "date_announced": "2026-10-26",
+      "affected_count": 3540000,
+      "count_note": "2つのサイトの最大件数の合計（重複の可能性あり、人数ではない）。海外ホテル予約サイトはログイン利用者約260万件と予約者約4万件（うちカード情報の一部約3万6千件）、多言語予約サイトはログイン利用者約86万件と宿泊施設従業員約4万件",
+      "cause": "unauthorized_access",
+      "root_cause": "海外ホテル予約サイトの一部ページと多言語予約サイトが第三者の不正アクセスを受けた（原因は未公表）",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "会員ID",
+        "購入履歴",
+        "クレジットカード情報（番号の一部・有効期限等）",
+        "アカウント名"
+      ],
+      "summary": "「楽天トラベル」の2つのサイトが不正アクセスを受け、個人情報が漏えいした可能性があると公表した。子会社が運営する海外ホテル予約サイトの一部ページでは、9月10日に異常を検知し、ログインした利用者最大約260万件の氏名・メールアドレス・電話番号と、予約者最大約4万件の予約情報が対象となり、うち最大約3万6千件はクレジットカードの番号の一部（先頭6桁と下4桁）・名義・有効期限を含む。多言語予約サイトでは10月20日に検知し、ログインした利用者最大約86万件のメールアドレスと、宿泊施設の従業員最大約4万件のアカウント名・メールアドレスが対象となった。カード番号の全桁、セキュリティコード、パスワード、住所は含まれない。",
+      "sources": [
+        {
+          "title": "楽天トラベル お詫びとお知らせ",
+          "url": "https://travel.rakuten.co.jp/info/announce/20261026.html"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2151305.html"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/27/2000002606/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 46,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-yomisen-west",
+      "organization": "株式会社読宣WEST",
+      "services": [
+        "四国支社のウェブサイト（ヨミポスト）"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2026-10-26",
+      "affected_count": 1700,
+      "count_note": "少なくとも約1,700人",
+      "cause": "unauthorized_access",
+      "root_cause": "四国支社のウェブサイトが不正アクセスを受けた（原因は調査中）",
+      "data_types": [
+        "氏名",
+        "住所",
+        "性別",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "四国支社のウェブサイト（ヨミポスト）が不正アクセスを受け、ウェブ経由で入会・退会した少なくとも約1,700人の住所・氏名・年齢・性別・電話番号・メールアドレスが流出した可能性があると公表した。10月14日にサイトが正常に表示されず、復旧作業中に不正アクセスの痕跡を見つけた。",
+      "sources": [
+        {
+          "title": "KSB瀬戸内海放送",
+          "url": "https://news.ksb.co.jp/article/16994741"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-piccoma",
@@ -1795,6 +2018,42 @@
       ],
       "severity": "high",
       "disclosure_days": 6,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-sjdc-mail",
+      "organization": "損保ジャパンDC証券株式会社",
+      "group": "SOMPOグループ",
+      "services": [
+        "企業型確定拠出年金の通知メール"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-10-22",
+      "affected_count": 250000,
+      "count_note": "最大約25万件（うち氏名を含む送信履歴は約1万件分）。漏えいは確認されていない",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名"
+      ],
+      "summary": "企業型確定拠出年金の顧客への通知メールの配信に使っていた外部のメール配信サービスが不正アクセスを受け、2022年9月以降に通知メールを受け取った顧客のメールアドレスなど最大約25万件（うち約1万件は氏名を含む）が漏えいした可能性があると公表した。漏えいは確認されていない。企業型DCを共同運営する名古屋銀行なども顧客への影響を公表している。",
+      "sources": [
+        {
+          "title": "損保ジャパンDC証券 お知らせ",
+          "url": "https://www.sjdc.co.jp/-/media/sjnkdc/files/information/20261022_03.pdf?la=ja-JP"
+        },
+        {
+          "title": "名古屋銀行 お知らせ",
+          "url": "https://www.meigin.com/news/files/20261023_oshirase_2.pdf"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
       "reliability": "high"
     },
     {
@@ -3131,10 +3390,10 @@
       ],
       "industry": "IT・通信",
       "country": "JP",
-      "date_occurred": "2026-10-16",
+      "date_occurred": "2026-10-02",
       "date_announced": "2026-10-19",
-      "affected_count": 9000000,
-      "count_note": "メールアドレスを含む情報が延べ約900万件出力されたとの試算（5システム。内訳は調査中）",
+      "affected_count": 51628280,
+      "count_note": "延べ51,628,280件（49システム。うち16システムは件数を調査中で今後増える可能性。重複を含む）。第一報は5システム・延べ約900万件",
       "cause": "vulnerability",
       "attack_methods": [
         "stolen_credentials"
@@ -3143,7 +3402,7 @@
       "data_types": [
         "メールアドレス"
       ],
-      "summary": "メール配信サービス「Cuenote FC」の専用ASPプランの5システムが不正アクセスを受け、メールアドレスを含む情報が延べ約900万件出力されたとみられると公表した。10月16日未明に検知した。攻撃者はプログラムの脆弱性を突いてサポート・品質管理担当者の認証情報を取得し、不正なプログラムを置いてデータベースから情報を出力した。同サービスは企業や自治体が利用しており、影響の範囲は調査中としている。",
+      "summary": "メール配信サービス「Cuenote FC」の専用ASPプランの5システムが不正アクセスを受け、メールアドレスを含む情報が延べ約900万件出力されたとみられると公表した。10月16日未明に検知した。攻撃者はプログラムの脆弱性を突いてサポート・品質管理担当者の認証情報を取得し、不正なプログラムを置いてデータベースから情報を出力した。同サービスは企業や自治体が利用しており、影響の範囲は調査中としている。10月26日の第二報で、侵入は10月2日〜7日で、漏えいは49システム・延べ5,162万8,280件に拡大したと公表した。新幹線予約のエクスプレス予約・スマートEXや野村證券など、利用企業が相次いで影響を公表している。",
       "sources": [
         {
           "title": "ユミルリンク 適時開示（第一報）",
@@ -3160,10 +3419,18 @@
         {
           "title": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261019de61855"
+        },
+        {
+          "title": "ユミルリンク お知らせ（第二報）",
+          "url": "https://www.ymir.co.jp/info/ymir-information20261027.html"
+        },
+        {
+          "title": "INTERNET Watch（第二報）",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2151309.html"
         }
       ],
       "severity": "medium",
-      "disclosure_days": 3,
+      "disclosure_days": 17,
       "reliability": "high"
     },
     {
@@ -3344,14 +3611,28 @@
       "organization": "株式会社Joshin",
       "industry": "小売・EC",
       "country": "JP",
-      "status": "investigating",
-      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
       "date_occurred": "2026-10-16",
       "date_announced": "2026-10-17",
-      "count_note": "情報流出の有無は調査中",
+      "affected_count": 6230000,
+      "count_note": "最大約623万件（会員情報約600万件、サブスク約23万件、リフォーム写真アップロード約800件の合計。可能性の上限）",
       "cause": "unauthorized_access",
-      "summary": "10月16日に不正アクセスを認識し、外部からのアクセスを制限した結果、一部のサービスが停止したと公表した。情報流出の有無は外部の専門機関と確認中で、個人情報保護委員会に第一報を提出した。",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "会員ID",
+        "パスワード（保管形式不明）",
+        "契約情報",
+        "運転免許情報",
+        "本人確認書類画像",
+        "口座番号"
+      ],
+      "summary": "10月16日に不正アクセスを認識し、外部からのアクセスを制限した結果、一部のサービスが停止したと公表した。情報流出の有無は外部の専門機関と確認中で、個人情報保護委員会に第一報を提出した。10月26日の第2報で、会員情報データベースの最大約600万件（氏名・住所・電話番号・会員番号）、「ジョーシンのサブスク」の最大約23万件（会員番号・電話番号・手書きサイン・ログインIDと初期パスワード・請求履歴など）、リフォーム写真アップロードシステムの最大約800件（運転免許証画像2件、マイナンバーカード1件、口座番号5件を含む）の計最大約623万件が漏えいした可能性があると公表した。クレジットカード情報は保持していない。",
       "sources": [
+        {
+          "title": "Joshin 適時開示（第2報）",
+          "url": "https://www.joshin.co.jp/ja/ir/news/auto_20261026556267/pdfFile.pdf"
+        },
         {
           "title": "Joshin 公式発表",
           "url": "https://www.joshin.co.jp/ja/news/info/info-20261017/main/0/link/20261017Notice%20and%20Apology%20Regarding%20System%20Disruption%20Caused%20by%20Unauthorized%20Access.pdf"
@@ -3359,9 +3640,18 @@
         {
           "title": "アスキー",
           "url": "https://ascii.jp/elem/000/004/443/4443599"
+        },
+        {
+          "title": "ITmedia NEWS（第2報）",
+          "url": "https://www.itmedia.co.jp/news/article/2610/26/2000002601/"
         }
       ],
-      "severity": null,
+      "services": [
+        "会員情報データベース",
+        "ジョーシンのサブスク",
+        "リフォーム写真アップロードシステム"
+      ],
+      "severity": "critical",
       "disclosure_days": 1,
       "reliability": "high"
     },
