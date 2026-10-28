@@ -1,0 +1,21 @@
+organization: いわきフィルム・コミッション協議会
+services:
+  - エキストラ登録者へのメール配信
+industry: 団体・その他
+country: JP
+date_announced: 2026-10-26
+affected_count: 300
+count_note: 約300人
+cause: third_party
+root_cause: 契約するメール配信サービスの運営会社が不正アクセスを受けた（運営会社名は未公表）
+data_types:
+  - 氏名
+  - 生年月日
+  - メールアドレス
+  - 電話番号
+summary: 契約するメール配信サービスの運営会社が不正アクセスを受け、エキストラ登録者約300人の氏名・生年月日・メールアドレス・電話番号などが漏えいした可能性があると公表した。運営会社の調査では漏えいは確認されなかったが、外部の専門家の再調査で否定できないとされた。被害は確認されていない。
+sources:
+  - title: 福島テレビ
+    url: https://news.yahoo.co.jp/articles/eeda667c44bb5574e7f8176c8406ccc3136a9d57
+  - title: 福島民友新聞
+    url: https://news.yahoo.co.jp/articles/8490e0c7428f683a5580934d124c72474cab0a00

@@ -1,0 +1,24 @@
+organization: ダイハツ工業株式会社
+group: トヨタグループ
+services:
+  - ダイハツメディアサイト
+  - ダイハツプレスインフォメーション
+industry: 製造
+country: JP
+date_announced: 2026-10-27
+affected_count: null
+count_note: 件数は調査中
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+data_types:
+  - 氏名
+  - メールアドレス
+  - 取引先情報
+summary: 報道関係者向けの「ダイハツメディアサイト」「ダイハツプレスインフォメーション」で使っていたブラストメールが不正アクセスを受け、登録者の氏名・会社名・役職・メールアドレスが漏えいした可能性があると公表した。件数は調査中で、二次被害は確認されていない。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUF277DU0X21C26A0000000/
+  - title: レスポンス
+    url: https://response.jp/article/2026/10/27/418277.html

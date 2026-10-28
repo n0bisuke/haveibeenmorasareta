@@ -1,0 +1,27 @@
+organization: 株式会社NTTドコモ
+group: NTTグループ
+services:
+  - ドコモ光 plala（Sコース）
+industry: IT・通信
+country: JP
+date_occurred: 2026-10-19
+date_announced: 2026-10-27
+affected_count: 443495
+count_note: 現利用者422,365件と2026年3月以降の解約者21,130件
+cause: third_party
+root_cause: 運営を委託するソニーネットワークコミュニケーションズの会員データベースが不正アクセスを受けた
+vendor:
+  name: ソニーネットワークコミュニケーションズ株式会社
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 会員ID
+  - 生年月日
+  - 性別
+summary: ドコモ光のプロバイダー「plala（Sコース）」の運営を委託するソニーネットワークコミュニケーションズの会員データベースが不正アクセスを受け、443,495件の氏名・電話番号・メールアドレス・ユーザーID・生年月日・性別・接続用IDなどが流出したと公表した。パスワードは含まれない。不正利用は確認されていない。
+sources:
+  - title: NTTドコモ お知らせ
+    url: https://www.docomo.ne.jp/info/notice/page/261027_05_m.html
+  - title: ケータイ Watch
+    url: https://k-tai.watch.impress.co.jp/docs/news/2151662.html
