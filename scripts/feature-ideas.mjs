@@ -17,6 +17,17 @@ if (!gaConfigured || !llmConfig.ready) {
   process.exit(0);
 }
 
+// どの段階で失敗したか分かるよう、エラーに段階名を付けて Actions の注釈（::error::）にも出す
+async function stage(name, fn) {
+  try {
+    return await fn();
+  } catch (e) {
+    const msg = `[${name}] ${e?.message ?? e}`;
+    console.error(`::error title=Feature ideas の失敗（${name}）::${msg.replace(/[\r\n]+/g, ' ')}`);
+    throw new Error(msg, { cause: e });
+  }
+}
+
 async function api(p, init = {}) {
   const res = await fetch(`https://api.github.com/repos/${GITHUB_REPOSITORY}${p}`, {
     ...init,
@@ -27,7 +38,7 @@ async function api(p, init = {}) {
 }
 
 // ---- 材料1: GA の直近28日間の傾向 ----
-const call = await gaClient();
+const call = await stage('GA認証（GA_CREDENTIALS）', () => gaClient());
 const R28 = { startDate: '28daysAgo', endDate: 'yesterday' };
 const report = (dimensions, metrics, limit = 10) => call('runReport', {
   dateRanges: [R28],
@@ -36,13 +47,13 @@ const report = (dimensions, metrics, limit = 10) => call('runReport', {
   orderBys: [{ metric: { metricName: metrics[0] }, desc: true }],
   limit,
 });
-const [total, pages, channels, devices, sources] = await Promise.all([
+const [total, pages, channels, devices, sources] = await stage('GA取得（GA_PROPERTY_ID・権限）', () => Promise.all([
   call('runReport', { dateRanges: [R28], metrics: ['activeUsers', 'screenPageViews', 'sessions', 'averageSessionDuration', 'bounceRate'].map((name) => ({ name })) }),
   report(['pagePath'], ['screenPageViews', 'averageSessionDuration'], 15),
   report(['sessionDefaultChannelGroup'], ['sessions']),
   report(['deviceCategory'], ['sessions'], 5),
   report(['sessionSource'], ['sessions']),
-]);
+]));
 const rows = (rs) => rs.map((r) => [...(r.dimensionValues ?? []).map((d) => d.value), ...r.metricValues.map((m) => m.value)].join(' | ')).join('\n');
 // 外部由来の文字列（参照元など）は LLM への指示として扱わせないよう、区切りの中にデータとして渡す
 const analytics = `合計（訪問者 | PV | セッション | 平均セッション秒 | 直帰率）: ${rows(total)}
@@ -57,7 +68,7 @@ ${rows(sources)}`;
 
 // ---- 材料2: 既存の要望（重複を避ける） ----
 const issues = ONLINE
-  ? await api(`/issues?state=all&labels=${encodeURIComponent('機能追加')}&per_page=50`)
+  ? await stage('GitHub Issue 取得', () => api(`/issues?state=all&labels=${encodeURIComponent('機能追加')}&per_page=50`))
   : [];
 const existing = issues.filter((i) => !i.pull_request).map((i) => `- [${i.state === 'open' ? '未対応' : '対応済み・見送り'}] ${i.title}`).join('\n') || '（なし）';
 
@@ -98,7 +109,7 @@ ${existing}
 ${analytics}
 </analytics>`;
 
-const out = await chatJson({ model: llmConfig.writerModel, system, user });
+const out = await stage(`LLM（${llmConfig.baseUrl} / ${llmConfig.writerModel}）`, () => chatJson({ model: llmConfig.writerModel, system, user }));
 
 // LLM の出力を Issue に載せる前に無害化する（メンション・HTML・画像を作らせない）
 const clean = (s, max) => String(s ?? '').replace(/[\r\n]+/g, ' ').replace(/[<>]/g, (c) => (c === '<' ? '&lt;' : '&gt;')).replace(/@/g, '@​').replace(/!\[/g, '[').replace(/https?:\/\//g, (m) => m.replace('//', '/\u200b/')).slice(0, max);
@@ -127,8 +138,8 @@ if (!ONLINE) {
   console.log(body);
   process.exit(0);
 }
-const created = await api('/issues', {
+const created = await stage('GitHub Issue 作成', () => api('/issues', {
   method: 'POST',
   body: JSON.stringify({ title: `【AI提案】機能追加の提案（${date}）`, body, labels: LABELS }),
-});
+}));
 console.log(`✔ Issue #${created.number} を作成しました`);
