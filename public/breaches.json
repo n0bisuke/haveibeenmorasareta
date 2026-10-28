@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-27T05:49:34.000Z",
-  "count": 634,
+  "generated_at": "2026-10-28T02:15:40.000Z",
+  "count": 650,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,341 @@
   ],
   "breaches": [
     {
+      "id": "2026-10-daihatsu-media",
+      "organization": "ダイハツ工業株式会社",
+      "group": "トヨタグループ",
+      "services": [
+        "ダイハツメディアサイト",
+        "ダイハツプレスインフォメーション"
+      ],
+      "industry": "製造",
+      "country": "JP",
+      "date_announced": "2026-10-27",
+      "affected_count": null,
+      "count_note": "件数は調査中",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "取引先情報"
+      ],
+      "summary": "報道関係者向けの「ダイハツメディアサイト」「ダイハツプレスインフォメーション」で使っていたブラストメールが不正アクセスを受け、登録者の氏名・会社名・役職・メールアドレスが漏えいした可能性があると公表した。件数は調査中で、二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF277DU0X21C26A0000000/"
+        },
+        {
+          "title": "レスポンス",
+          "url": "https://response.jp/article/2026/10/27/418277.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-docomo-plala-s",
+      "organization": "株式会社NTTドコモ",
+      "group": "NTTグループ",
+      "services": [
+        "ドコモ光 plala（Sコース）"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-10-19",
+      "date_announced": "2026-10-27",
+      "affected_count": 443495,
+      "count_note": "現利用者422,365件と2026年3月以降の解約者21,130件",
+      "cause": "third_party",
+      "root_cause": "運営を委託するソニーネットワークコミュニケーションズの会員データベースが不正アクセスを受けた",
+      "vendor": {
+        "name": "ソニーネットワークコミュニケーションズ株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "会員ID",
+        "生年月日",
+        "性別"
+      ],
+      "summary": "ドコモ光のプロバイダー「plala（Sコース）」の運営を委託するソニーネットワークコミュニケーションズの会員データベースが不正アクセスを受け、443,495件の氏名・電話番号・メールアドレス・ユーザーID・生年月日・性別・接続用IDなどが流出したと公表した。パスワードは含まれない。不正利用は確認されていない。",
+      "sources": [
+        {
+          "title": "NTTドコモ お知らせ",
+          "url": "https://www.docomo.ne.jp/info/notice/page/261027_05_m.html"
+        },
+        {
+          "title": "ケータイ Watch",
+          "url": "https://k-tai.watch.impress.co.jp/docs/news/2151662.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 8,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-gifu-pref-stamprally",
+      "organization": "岐阜県",
+      "services": [
+        "清流の国ぎふ 地産地消デジタルスタンプラリー（令和6年度）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "岐阜県",
+      "date_occurred": "2026-08-09",
+      "date_announced": "2026-10-27",
+      "affected_count": 1135,
+      "cause": "third_party",
+      "root_cause": "データ管理の再委託先palanが社内で使うデータ分析ツールが不正アクセスを受けた。委託終了後もデータが残っていた",
+      "vendor": {
+        "name": "株式会社palan"
+      },
+      "data_types": [
+        "メールアドレス",
+        "性別"
+      ],
+      "summary": "県が岐阜新聞社に委託したデジタルスタンプラリーで、データ管理を再委託された株式会社palanのデータ分析ツールが8月9日から10月21日にかけて不正アクセスを受け、参加者1,135人のメールアドレス・年齢層・性別・居住市町村が漏えいしたと公表した。氏名・住所・電話番号は含まれない。県は委託終了時に破棄証明書を受け取っていたが、palanにデータが残っていた。",
+      "sources": [
+        {
+          "title": "岐阜県 報道発表",
+          "url": "https://www.pref.gifu.lg.jp/site/pressrelease/524450.html"
+        },
+        {
+          "title": "中日新聞",
+          "url": "https://www.chunichi.co.jp/article/1331234"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 79,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-mos-ownly",
+      "organization": "株式会社モスフードサービス",
+      "services": [
+        "SNSキャンペーン（モスでハロウィンプレゼントキャンペーンなど3件）"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_occurred": "2026-10-16",
+      "date_announced": "2026-10-27",
+      "affected_count": 14034,
+      "cause": "third_party",
+      "root_cause": "SNSキャンペーンで使っていたスマートシェアのツール「OWNLY」が不正アクセスを受けた",
+      "vendor": {
+        "name": "スマートシェア株式会社"
+      },
+      "data_types": [
+        "アカウント名",
+        "連携サービスID"
+      ],
+      "summary": "SNSキャンペーンで使っていた外部ツール「OWNLY」が10月16日に不正アクセスを受け、「モスでハロウィンプレゼントキャンペーン」など3つのキャンペーンの参加者14,034件のユーザー名・ユーザーIDなどが漏えいしたと公表した。氏名やカード情報は含まれない。10月23日公表のモスカードの事案とは別。",
+      "sources": [
+        {
+          "title": "モスフードサービス お知らせ",
+          "url": "https://www.mos.co.jp/company/pr_pdf/pr_261027_1.pdf"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC2770G0X21C26A0000000/"
+        }
+      ],
+      "severity": "low",
+      "disclosure_days": 11,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-resona-cuenote",
+      "organization": "株式会社りそな銀行・株式会社埼玉りそな銀行・株式会社関西みらい銀行",
+      "group": "りそなグループ",
+      "services": [
+        "顧客向けメール配信"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-10-27",
+      "affected_count": null,
+      "count_note": "件数は未公表",
+      "cause": "third_party",
+      "root_cause": "メール配信の委託先ユミルリンクの「Cuenote FC」が不正アクセスを受け、配信データが持ち出された",
+      "vendor": {
+        "name": "ユミルリンク株式会社"
+      },
+      "data_types": [
+        "メールアドレス",
+        "会員ID"
+      ],
+      "summary": "メール配信サービス「Cuenote FC」を提供するユミルリンクが不正アクセスを受け、3行の顧客のメールアドレスと顧客の管理番号が持ち出された可能性が高いと公表した。当初はグループの情報は含まれないと説明を受けていたが、10月26日に判断が変わった。口座番号・暗証番号・パスワード・クレジットカード情報は含まれない。",
+      "sources": [
+        {
+          "title": "りそなホールディングス お知らせ",
+          "url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB271L20X21C26A0000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-so-net",
+      "organization": "ソニーネットワークコミュニケーションズ株式会社",
+      "group": "ソニーグループ",
+      "services": [
+        "So-net",
+        "メールサービス(G)",
+        "A-Box",
+        "ソネット VAIO メール",
+        "PostPet メールアカウントサービス"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-10-19",
+      "date_announced": "2026-10-27",
+      "affected_count": 2141986,
+      "count_note": "So-net会員情報2,141,986件（2026年3月以降の退会者を含む）。別にメールアドレスとパスワード54,401アドレス、銀行口座情報16件、パスワード再設定用の通知書情報7件。ドコモから委託されたplala（Sコース）の443,495件は別ファイル",
+      "cause": "unauthorized_access",
+      "root_cause": "会員データベースが不正アクセスを受けた（侵入経路は調査中）",
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "会員ID",
+        "生年月日",
+        "性別",
+        "パスワード（保管形式不明）",
+        "口座番号"
+      ],
+      "summary": "会員データベースが不正アクセスを受け、So-net会員2,141,986件の氏名・電話番号・メールアドレス・ユーザーID・生年月日・性別・接続用IDなどが漏えいしたと公表した。ドコモから運営を受託するplala（Sコース）の443,495件と合わせて計2,585,481件。メールサービス4種の54,401アドレスではメールアドレスとパスワードも漏えいし、パスワードを初期化した。銀行口座情報16件も含まれる。会員情報のパスワードとクレジットカード情報は含まれない。10月19日に不正アクセスが発生し、23日に確認した。",
+      "sources": [
+        {
+          "title": "So-net お知らせ",
+          "url": "https://www.so-net.ne.jp/info/2026/20261027_0001.html"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2151585.html"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/27/2000002643/"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 8,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-sukesan",
+      "organization": "株式会社資さん",
+      "services": [
+        "従業員情報の管理サーバー"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_announced": "2026-10-27",
+      "affected_count": 20000,
+      "count_note": "約2万人（2021年10月〜2026年10月に在籍した従業員・退職者）",
+      "cause": "third_party",
+      "root_cause": "サーバーの管理・運営の委託先の設定ミスで情報が外部から閲覧できる状態だった",
+      "vendor": {
+        "name": "株式会社カホエンタープライズ"
+      },
+      "data_types": [
+        "従業員情報",
+        "氏名",
+        "生年月日",
+        "電話番号"
+      ],
+      "summary": "「資さんうどん」を運営する同社のサーバー管理を委託する会社の設定ミスにより、2021年10月以降に在籍した従業員・退職者約2万人の氏名・生年月日・電話番号・賃金履歴・退職理由・勤怠実績が流出した可能性があると公表した。不正アクセスではないとしている。不正利用は確認されていない。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC279TQ0X21C26A0000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-tfd-levelenter",
+      "organization": "東京消防庁",
+      "services": [
+        "採用試験の論文添削サービス（導入試験）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "東京都",
+      "date_announced": "2026-10-27",
+      "affected_count": 198,
+      "count_note": "過去の採用試験の論文答案画像と添削結果198件（うち1件に職員の氏名）",
+      "cause": "third_party",
+      "root_cause": "論文添削サービスの委託先レベルエンターの自社サーバーが不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社レベルエンター"
+      },
+      "data_types": [
+        "保存データ（写真・文書等）",
+        "氏名"
+      ],
+      "summary": "採用試験の論文添削サービスの導入を試すため委託先に提出していた過去の採用試験の論文答案画像と添削結果198件が、委託先レベルエンターのサーバーへの不正アクセスにより漏えいした可能性があると公表した。うち1件には職員の氏名が含まれる。悪用は確認されておらず、採用試験への影響もないとしている。",
+      "sources": [
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261027de66627"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-upsider-bgrid",
+      "organization": "株式会社UPSIDER",
+      "services": [
+        "Breakthrough GRID"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-10-27",
+      "affected_count": 544,
+      "count_note": "544人（報道。退会者を含む）",
+      "cause": "unauthorized_access",
+      "root_cause": "経営者向けの会員制交流サイトが不正アクセスを受けた（侵入方法は未公表）",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "取引先情報",
+        "保存データ（写真・文書等）"
+      ],
+      "summary": "経営者向けの会員制交流サービス「Breakthrough GRID」が不正アクセスを受け、退会者を含む会員544人の氏名・メールアドレス・所属企業・部署やイベント情報、議事録が外部に持ち出されたと公表した。サイトの全機能を停止した。法人カードと決済情報への影響はないとしている。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB2795D0X21C26A0000000/"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/upsider-breakthrough-grid-unauthorized-acess-meeting-minutes-data-leak/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-bandai-logipal",
       "organization": "株式会社バンダイロジパル",
       "group": "バンダイナムコグループ",
@@ -615,6 +950,40 @@
       "reliability": "high"
     },
     {
+      "id": "2026-10-iwaki-fc",
+      "organization": "いわきフィルム・コミッション協議会",
+      "services": [
+        "エキストラ登録者へのメール配信"
+      ],
+      "industry": "団体・その他",
+      "country": "JP",
+      "date_announced": "2026-10-26",
+      "affected_count": 300,
+      "count_note": "約300人",
+      "cause": "third_party",
+      "root_cause": "契約するメール配信サービスの運営会社が不正アクセスを受けた（運営会社名は未公表）",
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "メールアドレス",
+        "電話番号"
+      ],
+      "summary": "契約するメール配信サービスの運営会社が不正アクセスを受け、エキストラ登録者約300人の氏名・生年月日・メールアドレス・電話番号などが漏えいした可能性があると公表した。運営会社の調査では漏えいは確認されなかったが、外部の専門家の再調査で否定できないとされた。被害は確認されていない。",
+      "sources": [
+        {
+          "title": "福島テレビ",
+          "url": "https://news.yahoo.co.jp/articles/eeda667c44bb5574e7f8176c8406ccc3136a9d57"
+        },
+        {
+          "title": "福島民友新聞",
+          "url": "https://news.yahoo.co.jp/articles/8490e0c7428f683a5580934d124c72474cab0a00"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-jr-express-yoyaku",
       "organization": "東海旅客鉄道株式会社・西日本旅客鉄道株式会社・九州旅客鉄道株式会社",
       "services": [
@@ -698,6 +1067,109 @@
       "reliability": "high"
     },
     {
+      "id": "2026-10-shizuoka-gas",
+      "organization": "静岡ガス株式会社",
+      "services": [
+        "会員サイト「Webエネリア」のメール配信"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_announced": "2026-10-26",
+      "affected_count": 95412,
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "メール配信に使っていたラクスライトクラウドのサービスが不正アクセスを受け、会員サイト「Webエネリア」登録者95,412件のメールアドレスが持ち出されたと公表した。氏名・住所・電話番号・口座・クレジットカード情報は含まれない。不正利用は確認されていない。",
+      "sources": [
+        {
+          "title": "静岡ガス お知らせ",
+          "url": "https://www.shizuokagas.co.jp/news/documents/20261026_1.pdf"
+        },
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261027de66185"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-tsukutsuku",
+      "organization": "TSUKU TSUKU株式会社",
+      "services": [
+        "ツクツク!!!"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2025-05-10",
+      "date_announced": "2026-10-26",
+      "affected_count": 19115,
+      "count_note": "クレジットカード情報19,115件（2025年5月10日〜9月9日に新規登録）。別に個人情報362,750件も漏えいの可能性を否定できない（外部送信の痕跡は未確認）",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "システムの脆弱性を突かれ、カード情報の入力ページが改ざんされた",
+      "data_types": [
+        "クレジットカード番号",
+        "クレジットカードのセキュリティコード",
+        "氏名",
+        "住所",
+        "アカウント名"
+      ],
+      "summary": "通販・ウェブチケットサービス「ツクツク!!!」で、システムの脆弱性を突かれてカード情報の入力ページが改ざんされ、2025年5月10日〜9月9日にカードを新規登録した19,115件のクレジットカード情報（セキュリティコードを含む）が漏えいした可能性が極めて高いと公表した。氏名・住所・ログイン情報など362,750件の個人情報も漏えいの可能性を否定できないとしている。2025年9月にカード会社からの連絡で発覚した。",
+      "sources": [
+        {
+          "title": "ライフカード お知らせ",
+          "url": "https://www.lifecard.co.jp/info/261026.html"
+        },
+        {
+          "title": "楽天カード お知らせ",
+          "url": "https://www.rakuten-card.co.jp/info/news/20261027/"
+        },
+        {
+          "title": "ABEMA TIMES",
+          "url": "https://times.abema.tv/articles/-/10284370"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 534,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-yakult",
+      "organization": "株式会社ヤクルト本社",
+      "services": [
+        "公式ホームページ"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-10-26",
+      "affected_count": null,
+      "count_note": "顧客情報への影響は調査中",
+      "cause": "unauthorized_access",
+      "summary": "公式ホームページへの不正アクセスを確認し、10月26日夜から公式サイトを緊急メンテナンスとして停止した。顧客情報への影響は調査中としている。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC27AK90X21C26A0000000/"
+        },
+        {
+          "title": "アスキー",
+          "url": "https://ascii.jp/elem/000/004/446/4446256/"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-yomisen-west",
       "organization": "株式会社読宣WEST",
       "services": [
@@ -727,6 +1199,44 @@
       "severity": "high",
       "disclosure_days": null,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-futaba-town-mailmag",
+      "organization": "福島県双葉町",
+      "services": [
+        "町のメールマガジン"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "福島県",
+      "date_occurred": "2026-10-24",
+      "date_announced": "2026-10-24",
+      "affected_count": 60,
+      "count_note": "最大60件",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ワイメール」を運営するイグレックスが不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社イグレックス"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "町のメールマガジンに使う配信サービス「ワイメール」が10月24日未明に不正アクセスを受け、登録者にクレジットカード会社を装った不審メールが届いた。10月27日の調査で、最大60件の登録名とメールアドレスが流出した可能性があると判明した。メールマガジンの配信を停止した。",
+      "sources": [
+        {
+          "title": "双葉町 お知らせ",
+          "url": "https://www.town.fukushima-futaba.lg.jp/item/17805.htm"
+        },
+        {
+          "title": "福島民友新聞",
+          "url": "https://www.minyu-net.com/news/detail/2026102809425156547"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 0,
+      "reliability": "high"
     },
     {
       "id": "2026-10-piccoma",
@@ -1656,6 +2166,38 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-10-yamada-video",
+      "organization": "株式会社ヤマダデンキ",
+      "group": "ヤマダホールディングス",
+      "services": [
+        "ヤマダビデオ",
+        "スマホゴールド会員"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-10-22",
+      "date_announced": "2026-10-23",
+      "affected_count": null,
+      "count_note": "個人情報・カード情報への影響は調査中",
+      "cause": "unauthorized_access",
+      "summary": "「ヤマダビデオ」と「スマホゴールド会員」の各種手続き画面が10月22日に外部から不正アクセスを受け、両サービスを一時停止した。個人情報やクレジットカード情報への影響は調査中としている。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/28/56609.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC250U50V21C26A0000000/"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 1,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-capcom",
       "organization": "株式会社カプコン",
       "services": [
@@ -2199,7 +2741,7 @@
       "date_announced": "2026-10-21",
       "count_note": "影響の可能性があるのは最大26,739サーバー（被害を確認した件数ではない）。外部への持ち出しは確認されたが、情報の種類と件数は調査中",
       "cause": "unauthorized_access",
-      "summary": "FX自動売買向けのVPS「お名前.com デスクトップクラウド」で、10月20日に一部の利用者のサーバー環境に不正なプログラムが置かれているのを確認し、サーバー内に保管された情報が閲覧された可能性があると公表した。影響の可能性があるのは最大2万6,739サーバーで、全プランを停止した。10月24日の第4報で、システムにセキュリティ上の問題があり、顧客の情報が外部に持ち出されたことを確認したと公表した。サーバー内に保存されたFXなどの取引口座のログイン情報が不正に使われた可能性があり、一部の顧客から身に覚えのない取引の報告を受けている。全利用者に見舞金5,000円を支払い、不正アクセスに起因すると認めた取引の損失を補償する。",
+      "summary": "FX自動売買向けのVPS「お名前.com デスクトップクラウド」で、10月20日に一部の利用者のサーバー環境に不正なプログラムが置かれているのを確認し、サーバー内に保管された情報が閲覧された可能性があると公表した。影響の可能性があるのは最大2万6,739サーバーで、全プランを停止した。10月24日の第4報で、システムにセキュリティ上の問題があり、顧客の情報が外部に持ち出されたことを確認したと公表した。サーバー内に保存されたFXなどの取引口座のログイン情報が不正に使われた可能性があり、一部の顧客から身に覚えのない取引の報告を受けている。全利用者に見舞金5,000円を支払い、不正アクセスに起因すると認めた取引の損失を補償する。10月27日には攻撃者とみられる者が顧客情報と称するものを公開し、公開された情報に含まれる利用者に1回の公開につき最大300万円の特別見舞金を支払うと発表した。攻撃者の特定につながる情報に総額100万米ドルの懸賞金を設けた。金融庁によると10月26日までにFX会社5社で被害が確認され、警視庁が捜査している。",
       "sources": [
         {
           "title": "GMOインターネット お知らせ（第4報）",
@@ -2220,6 +2762,22 @@
         {
           "title": "ITmedia NEWS（第4報）",
           "url": "https://www.itmedia.co.jp/news/article/2610/24/2000002566/"
+        },
+        {
+          "title": "GMOインターネットグループ お知らせ（第10報）",
+          "url": "https://group.gmo/info/alert/2026102703/"
+        },
+        {
+          "title": "GMOインターネットグループ お知らせ（第11報）",
+          "url": "https://group.gmo/info/alert/2026102704/"
+        },
+        {
+          "title": "日本経済新聞（FX5社で被害）",
+          "url": "https://www.nikkei.com/article/DGXZQOUB270N70X21C26A0000000/"
+        },
+        {
+          "title": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2151655.html"
         }
       ],
       "severity": null,
@@ -2252,6 +2810,39 @@
       "severity": "medium",
       "disclosure_days": 20,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-jfe-chemical",
+      "organization": "JFEケミカル株式会社",
+      "group": "JFEグループ",
+      "industry": "製造",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-10-14",
+      "date_announced": "2026-10-21",
+      "affected_count": null,
+      "count_note": "件数・個人情報の範囲は調査中",
+      "cause": "unauthorized_access",
+      "root_cause": "社内のIT環境が不正アクセスを受けた（手口は未公表）",
+      "data_types": [
+        "取引先情報",
+        "従業員情報"
+      ],
+      "summary": "10月14日に社内のIT環境への不正アクセスの可能性を認識し、19日にデータが不正に取得されたことが判明したと公表した。社外関係者や同社・社員の情報が含まれる可能性があり、範囲は調査中としている。",
+      "sources": [
+        {
+          "title": "JFEケミカル お知らせ",
+          "url": "https://www.jfe-chem.com/uploads/2026/10/baa6f7b08015cd87b11014e01d51141e.pdf"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/28/56607.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 7,
+      "reliability": "high"
     },
     {
       "id": "2026-10-rakus-light-cloud",
@@ -7298,16 +7889,17 @@
       "date_occurred": "2026-10-11",
       "date_announced": "2026-10-13",
       "affected_count": 43000,
-      "count_note": "約4万3,000人（市民と職員）。10月14日に別の2サービスで700件以上を追加",
+      "count_note": "約4万3,000人（市民と職員）。10月14日に別の2サービスで700件以上を追加。10月27日にさらに1万件以上（件数は調査中）",
       "cause": "third_party",
       "root_cause": "委託先のアルカディアが運営する配信サービス（SpeeCAN RAIDENなど）が第三者の不正アクセスを受けた",
       "vendor": {
         "name": "アルカディア"
       },
       "data_types": [
-        "メールアドレス"
+        "メールアドレス",
+        "氏名"
       ],
-      "summary": "防災メールなどを運営するアルカディアが不正アクセスを受け、市民と職員の約4万3,000人分のメールアドレスなどが漏えいした可能性があると公表した。10月14日には別の2つのサービスで700件以上が追加で判明した。",
+      "summary": "防災メールなどを運営するアルカディアが不正アクセスを受け、市民と職員の約4万3,000人分のメールアドレスなどが漏えいした可能性があると公表した。10月14日には別の2つのサービスで700件以上が追加で判明した。10月27日には、ふるさと納税サイト「ふるさとチョイス」、体験施設「まある」と産学交流センターのメール配信、静岡マラソンの問い合わせフォームの利用者について、複数の委託先への不正アクセスでさらに1万件以上の氏名・メールアドレスなどが漏えいした可能性があると公表した。",
       "sources": [
         {
           "title": "Yahoo!ニュース",
@@ -7316,6 +7908,14 @@
         {
           "title": "中日新聞",
           "url": "https://www.chunichi.co.jp/article/1325173"
+        },
+        {
+          "title": "静岡新聞（10月27日）",
+          "url": "https://news.at-s.com/article/2085445"
+        },
+        {
+          "title": "NHK（10月27日）",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261027de66442"
         }
       ],
       "severity": "medium",
