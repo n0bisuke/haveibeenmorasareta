@@ -1,0 +1,26 @@
+organization: TSUKU TSUKU株式会社
+services:
+  - ツクツク!!!
+industry: 小売・EC
+country: JP
+date_occurred: 2025-05-10
+date_announced: 2026-10-26
+affected_count: 19115
+count_note: クレジットカード情報19,115件（2025年5月10日〜9月9日に新規登録）。別に個人情報362,750件も漏えいの可能性を否定できない（外部送信の痕跡は未確認）
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: システムの脆弱性を突かれ、カード情報の入力ページが改ざんされた
+data_types:
+  - クレジットカード番号
+  - クレジットカードのセキュリティコード
+  - 氏名
+  - 住所
+  - アカウント名
+summary: 通販・ウェブチケットサービス「ツクツク!!!」で、システムの脆弱性を突かれてカード情報の入力ページが改ざんされ、2025年5月10日〜9月9日にカードを新規登録した19,115件のクレジットカード情報（セキュリティコードを含む）が漏えいした可能性が極めて高いと公表した。氏名・住所・ログイン情報など362,750件の個人情報も漏えいの可能性を否定できないとしている。2025年9月にカード会社からの連絡で発覚した。
+sources:
+  - title: ライフカード お知らせ
+    url: https://www.lifecard.co.jp/info/261026.html
+  - title: 楽天カード お知らせ
+    url: https://www.rakuten-card.co.jp/info/news/20261027/
+  - title: ABEMA TIMES
+    url: https://times.abema.tv/articles/-/10284370

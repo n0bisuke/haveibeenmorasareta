@@ -1,0 +1,22 @@
+organization: 株式会社りそな銀行・株式会社埼玉りそな銀行・株式会社関西みらい銀行
+group: りそなグループ
+services:
+  - 顧客向けメール配信
+industry: 金融・保険
+country: JP
+date_announced: 2026-10-27
+affected_count: null
+count_note: 件数は未公表
+cause: third_party
+root_cause: メール配信の委託先ユミルリンクの「Cuenote FC」が不正アクセスを受け、配信データが持ち出された
+vendor:
+  name: ユミルリンク株式会社
+data_types:
+  - メールアドレス
+  - 会員ID
+summary: メール配信サービス「Cuenote FC」を提供するユミルリンクが不正アクセスを受け、3行の顧客のメールアドレスと顧客の管理番号が持ち出された可能性が高いと公表した。当初はグループの情報は含まれないと説明を受けていたが、10月26日に判断が変わった。口座番号・暗証番号・パスワード・クレジットカード情報は含まれない。
+sources:
+  - title: りそなホールディングス お知らせ
+    url: https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUB271L20X21C26A0000000/

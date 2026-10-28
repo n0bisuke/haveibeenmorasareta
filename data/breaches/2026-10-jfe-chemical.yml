@@ -1,0 +1,21 @@
+organization: JFEケミカル株式会社
+group: JFEグループ
+industry: 製造
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-10-14
+date_announced: 2026-10-21
+affected_count: null
+count_note: 件数・個人情報の範囲は調査中
+cause: unauthorized_access
+root_cause: 社内のIT環境が不正アクセスを受けた（手口は未公表）
+data_types:
+  - 取引先情報
+  - 従業員情報
+summary: 10月14日に社内のIT環境への不正アクセスの可能性を認識し、19日にデータが不正に取得されたことが判明したと公表した。社外関係者や同社・社員の情報が含まれる可能性があり、範囲は調査中としている。
+sources:
+  - title: JFEケミカル お知らせ
+    url: https://www.jfe-chem.com/uploads/2026/10/baa6f7b08015cd87b11014e01d51141e.pdf
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/28/56607.html

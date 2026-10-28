@@ -1,0 +1,19 @@
+organization: 静岡ガス株式会社
+services:
+  - 会員サイト「Webエネリア」のメール配信
+industry: エネルギー・インフラ
+country: JP
+date_announced: 2026-10-26
+affected_count: 95412
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+data_types:
+  - メールアドレス
+summary: メール配信に使っていたラクスライトクラウドのサービスが不正アクセスを受け、会員サイト「Webエネリア」登録者95,412件のメールアドレスが持ち出されたと公表した。氏名・住所・電話番号・口座・クレジットカード情報は含まれない。不正利用は確認されていない。
+sources:
+  - title: 静岡ガス お知らせ
+    url: https://www.shizuokagas.co.jp/news/documents/20261026_1.pdf
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261027de66185

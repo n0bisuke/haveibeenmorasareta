@@ -1,0 +1,21 @@
+organization: 株式会社UPSIDER
+services:
+  - Breakthrough GRID
+industry: 金融・保険
+country: JP
+date_announced: 2026-10-27
+affected_count: 544
+count_note: 544人（報道。退会者を含む）
+cause: unauthorized_access
+root_cause: 経営者向けの会員制交流サイトが不正アクセスを受けた（侵入方法は未公表）
+data_types:
+  - 氏名
+  - メールアドレス
+  - 取引先情報
+  - 保存データ（写真・文書等）
+summary: 経営者向けの会員制交流サービス「Breakthrough GRID」が不正アクセスを受け、退会者を含む会員544人の氏名・メールアドレス・所属企業・部署やイベント情報、議事録が外部に持ち出されたと公表した。サイトの全機能を停止した。法人カードと決済情報への影響はないとしている。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUB2795D0X21C26A0000000/
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/upsider-breakthrough-grid-unauthorized-acess-meeting-minutes-data-leak/

@@ -1,0 +1,21 @@
+organization: 株式会社モスフードサービス
+services:
+  - SNSキャンペーン（モスでハロウィンプレゼントキャンペーンなど3件）
+industry: 飲食
+country: JP
+date_occurred: 2026-10-16
+date_announced: 2026-10-27
+affected_count: 14034
+cause: third_party
+root_cause: SNSキャンペーンで使っていたスマートシェアのツール「OWNLY」が不正アクセスを受けた
+vendor:
+  name: スマートシェア株式会社
+data_types:
+  - アカウント名
+  - 連携サービスID
+summary: SNSキャンペーンで使っていた外部ツール「OWNLY」が10月16日に不正アクセスを受け、「モスでハロウィンプレゼントキャンペーン」など3つのキャンペーンの参加者14,034件のユーザー名・ユーザーIDなどが漏えいしたと公表した。氏名やカード情報は含まれない。10月23日公表のモスカードの事案とは別。
+sources:
+  - title: モスフードサービス お知らせ
+    url: https://www.mos.co.jp/company/pr_pdf/pr_261027_1.pdf
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC2770G0X21C26A0000000/

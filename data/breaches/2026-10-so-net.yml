@@ -1,0 +1,33 @@
+organization: ソニーネットワークコミュニケーションズ株式会社
+group: ソニーグループ
+services:
+  - So-net
+  - メールサービス(G)
+  - A-Box
+  - ソネット VAIO メール
+  - PostPet メールアカウントサービス
+industry: IT・通信
+country: JP
+date_occurred: 2026-10-19
+date_announced: 2026-10-27
+affected_count: 2141986
+count_note: So-net会員情報2,141,986件（2026年3月以降の退会者を含む）。別にメールアドレスとパスワード54,401アドレス、銀行口座情報16件、パスワード再設定用の通知書情報7件。ドコモから委託されたplala（Sコース）の443,495件は別ファイル
+cause: unauthorized_access
+root_cause: 会員データベースが不正アクセスを受けた（侵入経路は調査中）
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 会員ID
+  - 生年月日
+  - 性別
+  - パスワード（保管形式不明）
+  - 口座番号
+summary: 会員データベースが不正アクセスを受け、So-net会員2,141,986件の氏名・電話番号・メールアドレス・ユーザーID・生年月日・性別・接続用IDなどが漏えいしたと公表した。ドコモから運営を受託するplala（Sコース）の443,495件と合わせて計2,585,481件。メールサービス4種の54,401アドレスではメールアドレスとパスワードも漏えいし、パスワードを初期化した。銀行口座情報16件も含まれる。会員情報のパスワードとクレジットカード情報は含まれない。10月19日に不正アクセスが発生し、23日に確認した。
+sources:
+  - title: So-net お知らせ
+    url: https://www.so-net.ne.jp/info/2026/20261027_0001.html
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2151585.html
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/27/2000002643/
