@@ -1,0 +1,28 @@
+organization: 日本航空株式会社・日本トランスオーシャン航空株式会社
+services:
+  - 旅客サービスシステム（予約情報）
+industry: 交通・モビリティ
+country: JP
+date_occurred: 2023-08-10
+date_announced: 2026-10-28
+affected_count: 92000
+count_note: 延べ約9万2,000人。うち約2,000人はパスポート番号・国籍・メールアドレス・電話番号なども対象。外部から参照された形跡がある期間は2023年8月10日〜2026年9月23日
+cause: third_party
+root_cause: 旅客サービスシステムの委託先アマデウスのシステムが不正アクセスを受け、予約情報が外部から参照された
+vendor:
+  name: Amadeus IT Group
+data_types:
+  - 氏名
+  - 利用履歴
+  - メールアドレス
+  - 電話番号
+  - パスポート番号
+  - 会員ID
+summary: 旅客サービスシステムの委託先であるアマデウスのシステムが不正アクセスを受け、JALとJTAの顧客延べ約9万2,000人分の予約情報が外部から参照された可能性があると公表した。約9万人は予約番号・氏名・搭乗日・搭乗区間・搭乗クラス、約2,000人はこれに加えてメールアドレス・電話番号・パスポート番号・国籍・マイレージ番号・航空券番号・座席番号なども対象。10月23日にアマデウスから報告を受けた。クレジットカード番号とパスワードは含まれず、不正利用は確認されていない。
+sources:
+  - title: ITmedia ビジネスオンライン
+    url: https://www.itmedia.co.jp/business/articles/2610/28/news078.html
+  - title: トラベルボイス
+    url: https://www.travelvoice.jp/20261028-160759
+  - title: Aviation Wire
+    url: https://news.yahoo.co.jp/articles/91b7e600e44309559c8ebf158533b66e1dec2a9f
