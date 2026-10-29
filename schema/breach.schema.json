@@ -213,6 +213,37 @@
         }
       }
     },
+    "checklist": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "description": "個人の対応チェックリスト（任意）。利用者が自分でできる対策を1項目ずつ書く。手続きのページがあれば当事者の公式ページの URL を url に付ける",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "text"
+        ],
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 120
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https?://"
+          },
+          "link_title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40,
+            "description": "リンクの表示名（省略時は「公式ページ」）"
+          }
+        }
+      }
+    },
     "related": {
       "type": "array",
       "minItems": 1,

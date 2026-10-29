@@ -26,3 +26,21 @@ sources:
     url: https://www.travelvoice.jp/20261028-160759
   - title: Aviation Wire
     url: https://news.yahoo.co.jp/articles/91b7e600e44309559c8ebf158533b66e1dec2a9f
+checklist:
+  - text: JALのお知らせで対象範囲を確認し、JALからの個別の連絡（メール・郵送）を待つ
+    url: https://www.jal.co.jp/ja-jp/news/general/2026/other/261028.html
+    link_title: JALのお知らせ
+  - text: JALを名乗るメール・SMS・電話のリンクは開かず、会員番号やパスワードを入力しない
+    url: https://www.jal.co.jp/jp/ja/footer/phishing/
+    link_title: 偽サイト・偽メールの注意
+  - text: JALマイレージバンクへのログインは公式アプリかブックマークした公式サイトから行う
+    url: https://www.jal.co.jp/jp/ja/jmb/jmb-login/info/
+    link_title: ログイン方法の案内
+  - text: パスワードは漏えいしていないが、ほかのサービスと使い回しているなら再設定する
+    url: https://faq.jal.co.jp/app/answers/detail/a_id/3456/~/jal-web%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E3%81%AE%E5%A4%89%E6%9B%B4%E6%96%B9%E6%B3%95%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82
+    link_title: パスワードの変更方法
+  - text: ログインにパスキーを登録する（ログイン後「会員登録情報」→「パスキー登録・変更・削除」）
+    url: https://www.jal.co.jp/jp/ja/jmb/jmb-login/passkey/
+    link_title: パスキーの設定
+  - text: マイル残高と利用履歴に身に覚えのない交換・チャージがないか確認する
+  - text: パスポート番号が対象の場合は、パスポート番号を聞き出す連絡や不審な郵便物に特に注意する

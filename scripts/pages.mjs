@@ -60,6 +60,17 @@ function related(b) {
     .slice(0, 3);
 }
 
+// 個人の対応チェックリスト。チェックの状態は localStorage に保存する（この端末だけ）
+function checklistHtml(b) {
+  if (!b.checklist?.length) return '';
+  const items = b.checklist.map((c, i) => `<li><label><input type="checkbox" data-bc="${esc(b.id)}:${i}"><span>${esc(c.text)}</span></label>${c.url ? `<a class="b-check-link" href="${esc(c.url)}" target="_blank" rel="noopener noreferrer">${esc(c.link_title || '公式ページ')} ↗</a>` : ''}</li>`).join('');
+  return `<section class="b-check">
+          <h2 class="detail-h">個人の対応チェックリスト <span class="b-check-count" aria-live="polite"></span></h2>
+          <ul class="b-check-list">${items}</ul>
+          <p class="b-check-note muted">リンク先は各社の公式ページです。メールや SMS のリンクではなく、ここや公式アプリ・ブックマークから開いてください。チェックの状態はこの端末のブラウザにのみ保存されます。</p>
+        </section>`;
+}
+
 function page(b) {
   const url = `${SITE_URL}/breach/${b.id}/`;
   const sev = b.severity ? RANK[b.severity] : null;
@@ -147,6 +158,7 @@ function page(b) {
         ${b.status === 'investigating' ? `<p class="investigating">企業が件数・漏えいの有無などを調査中と公表しています。続報の情報を${b.issue ? ` <a href="${esc(b.issue)}" target="_blank" rel="noopener noreferrer">Issue #${esc(b.issue.split('/').pop())}</a> ` : ' Issue '}で募集しています。</p>` : ''}
         ${b.leaked === false ? '<p class="noleak">※ 不正アクセスなどを受けたものの、調査の結果、情報が閲覧・持ち出された形跡は確認されなかったと公表されています。漏洩件数の合計やランキングには含めていません。</p>' : ''}
         ${b.reliability === 'low' ? `<p class="low-reliability">※ 公式発表や信頼できる報道（一次情報）をまだ確認できていない情報です。一次情報をご存じの方は${b.issue ? ` <a href="${esc(b.issue)}" target="_blank" rel="noopener noreferrer">Issue #${esc(b.issue.split('/').pop())}</a> ` : ' Issue '}で教えてください。</p>` : ''}
+        ${checklistHtml(b)}
         <ol class="timeline">${timeline.map(([d, t]) => `<li><time datetime="${esc(d)}">${esc(fmtDate(d))}</time>${esc(t)}</li>`).join('')}</ol>
         <h2 class="detail-h">出典</h2>
         <ul class="sources">${b.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title || s.url)}</a></li>`).join('')}</ul>
@@ -195,6 +207,20 @@ function page(b) {
       share.hidden = false;
       share.addEventListener('click', () => navigator.share({ title: share.dataset.text, text: share.dataset.text, url: share.dataset.url }).catch(() => {}));
     }
+    document.querySelectorAll('.b-check').forEach((sec) => {
+      const boxes = sec.querySelectorAll('input[data-bc]');
+      const count = sec.querySelector('.b-check-count');
+      const update = () => { count.textContent = \`\${[...boxes].filter((x) => x.checked).length} / \${boxes.length}\`; };
+      boxes.forEach((box) => {
+        const key = 'breach-check:' + box.dataset.bc;
+        try { box.checked = localStorage.getItem(key) === '1'; } catch {}
+        box.addEventListener('change', () => {
+          try { box.checked ? localStorage.setItem(key, '1') : localStorage.removeItem(key); } catch {}
+          update();
+        });
+      });
+      update();
+    });
     document.querySelector('.copy-link')?.addEventListener('click', async (e) => {
       const btn = e.currentTarget;
       try { await navigator.clipboard.writeText(btn.dataset.url); btn.textContent = 'コピーしました'; }

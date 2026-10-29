@@ -36,6 +36,10 @@ summary: ここに概要を書きます。         # 必須: 10〜600文字。�
 sources:                                  # 必須: 1件以上。公式発表を最初に
   - title: 株式会社サンプル 公式発表
     url: https://example.com/news/2025/0131
+# checklist:                                # 任意: 個人の対応チェックリスト（最大10項目）
+#   - text: パスワードを変更する
+#     url: https://example.com/password/      # 任意: 当事者の公式の手続きページ
+#     link_title: パスワード再設定             # 任意: リンクの表示名（省略時は「公式ページ」）
 # related:                                  # 任意: 関連ページ（導入事例など。出典ではないもの）
 #   - title: 株式会社サンプル開発 導入事例（アーカイブ）
 #     url: https://web.archive.org/web/20250101000000/https://example.com/case/
