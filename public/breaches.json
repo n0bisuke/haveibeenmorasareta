@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-28T12:02:39.000Z",
-  "count": 651,
+  "generated_at": "2026-10-29T07:28:02.000Z",
+  "count": 665,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,191 @@
   ],
   "breaches": [
     {
+      "id": "2026-10-ana-amadeus",
+      "organization": "全日本空輸株式会社",
+      "group": "ANAグループ",
+      "services": [
+        "旅客サービスシステム（予約情報）"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-10-29",
+      "affected_count": null,
+      "count_note": "件数・情報の範囲は精査中",
+      "cause": "third_party",
+      "root_cause": "旅客サービスシステムの委託先アマデウスのシステムが不正アクセスを受け、予約情報が外部から参照された",
+      "vendor": {
+        "name": "Amadeus IT Group"
+      },
+      "summary": "旅客サービスシステムの委託先アマデウスのシステムが不正アクセスを受け、ANA便の予約情報の一部が外部から参照された形跡があると公表した。件数と範囲は精査中で、判明次第公表し対象者に通知するとしている。同じ委託先の件はJAL・JTAも公表している。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC295CD0Z21C26A0000000/"
+        },
+        {
+          "title": "TRAICY",
+          "url": "https://www.traicy.com/posts/20261029386286/"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-donki-watch-repair",
+      "organization": "株式会社ドン・キホーテ・株式会社長崎屋・株式会社橘百貨店",
+      "services": [
+        "時計修理サービス"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-09-15",
+      "date_announced": "2026-10-28",
+      "affected_count": null,
+      "count_note": "件数は未公表（2025年9月以降に時計修理を依頼した顧客）",
+      "cause": "third_party",
+      "root_cause": "時計修理の委託先のサーバーがランサムウェアで暗号化された",
+      "vendor": {
+        "name": "コックス"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号"
+      ],
+      "summary": "時計修理を委託する会社のサーバーがランサムウェア攻撃を受けて暗号化され、2025年9月以降にグループ店舗で時計修理を依頼した顧客の氏名・一部の住所・電話番号が漏えいした可能性があると公表した。委託先は9月15日に攻撃の可能性を検知し、9月25日に報告した。報道ではUDリテールを含む4社が対象とされる。漏えいの事実は確認されていない。",
+      "sources": [
+        {
+          "title": "ドン・キホーテ お知らせ",
+          "url": "https://www.donki.com/updata/news/info_84zw5.pdf"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC285ZR0Y6A021C2000000/"
+        },
+        {
+          "title": "アスキー",
+          "url": "https://ascii.jp/elem/000/004/446/4446479/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 43,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-doutor",
+      "organization": "株式会社ドトールコーヒー",
+      "services": [
+        "社内システム（従業員情報）"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_occurred": "2026-10-20",
+      "date_announced": "2026-10-28",
+      "affected_count": 951,
+      "count_note": "最大951名（4店舗の従業員・退職者）",
+      "cause": "unauthorized_access",
+      "root_cause": "社内システムが不正アクセスを受けた（手口は未公表）",
+      "data_types": [
+        "従業員情報",
+        "氏名",
+        "生年月日",
+        "住所",
+        "メールアドレス",
+        "電話番号",
+        "口座番号"
+      ],
+      "summary": "社内システムへの不正アクセスにより、4店舗の従業員・退職者最大951名の氏名・生年月日・住所・メールアドレス・電話番号・銀行口座番号が流出した可能性があると公表した。10月20日に検知した。顧客情報への不正アクセスや二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261028de67114"
+        },
+        {
+          "title": "日テレNEWS",
+          "url": "https://news.infoseek.co.jp/article/ntv_2026102801568155/"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 8,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-hanacupid",
+      "organization": "花キューピット株式会社",
+      "services": [
+        "インターネット花キューピット",
+        "ビジネス花キューピット"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-10-14",
+      "date_announced": "2026-10-28",
+      "affected_count": 4238242,
+      "count_note": "最大4,238,242件（公式サイトでメールアドレスを登録した会員）",
+      "cause": "unauthorized_access",
+      "root_cause": "ECサイトの管理システムが不正アクセスを受けた（手口は未公表）",
+      "data_types": [
+        "会員ID",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "メールアドレス"
+      ],
+      "summary": "「インターネット花キューピット」「ビジネス花キューピット」の管理システムが10月14日〜15日に不正アクセスを受け、最大4,238,242件のログインID・暗号化またはハッシュ化されたパスワード・メールアドレスが漏えいした可能性があると公表した。氏名・住所・電話番号・クレジットカード情報は含まれない。電話注文や外部サイトからの注文者は対象外。",
+      "sources": [
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2152032.html"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/29/2000002711/"
+        },
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261028de67215"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 14,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-hiroshima-city-nisshi",
+      "organization": "広島県広島市",
+      "services": [
+        "児童館・放課後児童クラブの日誌"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "広島県",
+      "date_announced": "2026-10-28",
+      "affected_count": 437,
+      "count_note": "最大437人分",
+      "cause": "lost_device",
+      "root_cause": "閲覧のため持ち出した日誌を速やかに返却しないなど管理が徹底されず、4施設で日誌を紛失した",
+      "data_types": [
+        "氏名"
+      ],
+      "summary": "市が運営する放課後児童クラブ3施設と児童館1施設で、2023年度または2024年度の日誌を紛失し、在籍児童最大437人分の姓・学年・欠席の状況などが漏えいしたおそれがあると公表した。8月に安佐北区の施設から報告があり、点検で計4施設の紛失が判明した。ほかに2施設で保存期間内の日誌を誤って廃棄していた。悪用は確認されていない。",
+      "sources": [
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261028de67372"
+        },
+        {
+          "title": "中国新聞",
+          "url": "https://www.chugoku-np.co.jp/articles/-/916353"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-jal-amadeus",
       "organization": "日本航空株式会社・日本トランスオーシャン航空株式会社",
       "services": [
@@ -510,6 +695,181 @@
       "severity": "critical",
       "disclosure_days": 1175,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-lifecard-cuenote",
+      "organization": "ライフカード株式会社",
+      "services": [
+        "会員向けメール配信"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-10-28",
+      "affected_count": 339610,
+      "count_note": "339,610契約（人数ではない）。うち60件はETCカード番号の一部も対象",
+      "cause": "third_party",
+      "root_cause": "メール配信の委託先ユミルリンクの「Cuenote FC」が不正アクセスを受け、配信データが持ち出された",
+      "vendor": {
+        "name": "ユミルリンク株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "契約情報"
+      ],
+      "summary": "メール配信を委託するユミルリンクの「Cuenote FC」が不正アクセスを受け、339,610契約分の氏名・メールアドレス・カード名称が漏えいした可能性があると公表した。うち60件はETCカード番号の一部も含む。自社のカード会員情報システムへの不正アクセスは確認されておらず、二次被害も確認されていない。",
+      "sources": [
+        {
+          "title": "ライフカード 重要なお知らせ",
+          "url": "https://www.lifecard.co.jp/info/important-notice.html"
+        },
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261029de67594"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-moi-twitcasting",
+      "organization": "モイ株式会社",
+      "services": [
+        "ツイキャス"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-10-28",
+      "date_announced": "2026-10-28",
+      "affected_count": null,
+      "count_note": "利用者情報への影響は調査中",
+      "cause": "unauthorized_access",
+      "summary": "10月28日午前に自社サーバーへの外部からの不正アクセスの痕跡を確認し、ライブ配信サービス「ツイキャス」とコーポレートサイトを停止したと適時開示した。侵入経路と利用者情報への影響は調査中としている。",
+      "sources": [
+        {
+          "title": "モイ 適時開示（日本経済新聞）",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261028558252/"
+        },
+        {
+          "title": "gamebiz",
+          "url": "https://gamebiz.jp/news/434737"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 0,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-sony-life",
+      "organization": "ソニー生命保険株式会社",
+      "group": "ソニーグループ",
+      "services": [
+        "契約者専用サイトなどのシステム（代理店として販売したメディケア生命の契約）"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-10-27",
+      "date_announced": "2026-10-28",
+      "affected_count": 385000,
+      "count_note": "約38.5万件（メディケア生命保険の契約者・被保険者）",
+      "cause": "unauthorized_access",
+      "root_cause": "契約者専用サイトなどのシステムが不正アクセスを受けた（侵入経路は未公表）",
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "性別",
+        "住所",
+        "電話番号",
+        "契約情報"
+      ],
+      "summary": "契約者専用サイトなどのシステムが不正アクセスを受け、保険代理店として販売したメディケア生命保険の契約者・被保険者の約38.5万件の氏名・生年月日・性別・住所・電話番号・証券番号・契約内容が漏えいしたと公表した。マイナンバー、クレジットカード情報、保険料振替口座の情報は含まれない。外部からのアクセスを遮断し、Webサービスやアプリなど6サービスを停止した。不正利用は確認されていない。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/29/2000002717/"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB28AZ30Y6A021C2000000/"
+        },
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261028dw67390"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 1,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-tbs-shopping",
+      "organization": "株式会社TBSグロウディア",
+      "services": [
+        "TBSショッピング"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-10-28",
+      "affected_count": 49995,
+      "count_note": "延べ最大49,995人分（会員は約110万人）",
+      "cause": "third_party",
+      "root_cause": "業務委託先のメール配信システムが不正アクセスを受けた（委託先名は未確認）",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "通販サイト「TBSショッピング」で、業務委託先のメール配信システムが不正アクセスを受け、延べ最大49,995人分のメールアドレスなどが外部に流出したと公表した。氏名・住所・電話番号・クレジットカード情報は含まれず、TBS側のシステムに被害はない。不正利用は確認されていない。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC289AW0Y6A021C2000000/"
+        },
+        {
+          "title": "東京新聞",
+          "url": "https://www.tokyo-np.co.jp/article/524519"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-bushiroad-bandori-ournotes",
+      "organization": "株式会社ブシロード",
+      "services": [
+        "バンドリ！ アワーノーツ（クローズドβテスト・カスタマーサポート）"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_announced": "2026-10-27",
+      "affected_count": 13304,
+      "count_note": "CBT応募者10,194名、運営関係者71名、アンケート回答者5名、2026年9月24日〜10月14日のサポート問い合わせ者3,034名の合計",
+      "cause": "third_party",
+      "root_cause": "開発を委託する外部企業のシステムが管理上の不備から第三者の不正アクセスを受けた（委託先名は非公表）",
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "電話番号",
+        "住所",
+        "郵便番号",
+        "会員ID"
+      ],
+      "summary": "『バンドリ！ アワーノーツ』の開発を委託する外部企業のシステムが不正アクセスを受け、クローズドβテストの応募者・関係者とカスタマーサポートの問い合わせ者の計約1万3,000名分のメールアドレス・IPアドレス・端末情報・氏名・電話番号・住所・プレイヤーIDなどが漏えいしたと公表した。パスワードとクレジットカード情報の漏えいは確認されていない。",
+      "sources": [
+        {
+          "title": "ブシロード お知らせ",
+          "url": "https://bushiroad.co.jp/media/a87298c628c65925"
+        },
+        {
+          "title": "インサイド",
+          "url": "https://www.inside-games.jp/article/2026/10/28/189992.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-10-daihatsu-media",
@@ -625,6 +985,73 @@
       ],
       "severity": "medium",
       "disclosure_days": 79,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-gundam-base-members",
+      "organization": "株式会社バンダイナムコエンターテインメント・株式会社BANDAI SPIRITS",
+      "group": "バンダイナムコグループ",
+      "services": [
+        "THE GUNDAM BASE MEMBERS"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_announced": "2026-10-27",
+      "affected_count": 346247,
+      "cause": "third_party",
+      "root_cause": "メール配信の委託先ユミルリンクの「Cuenote FC」が不正アクセスを受け、配信データが持ち出された",
+      "vendor": {
+        "name": "ユミルリンク株式会社"
+      },
+      "data_types": [
+        "メールアドレス",
+        "会員ID"
+      ],
+      "summary": "バンダイナムコIDのメール配信を委託するユミルリンクの「Cuenote FC」が不正アクセスを受け、「THE GUNDAM BASE MEMBERS」登録者346,247件のメールアドレスとバンダイナムコID管理用の内部識別子が漏えいしたと公表した。氏名・住所・購入履歴・パスワード・クレジットカード情報は含まれない。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/29/2000002694/"
+        },
+        {
+          "title": "電ファミニコゲーマー",
+          "url": "https://news.denfaminicogamer.jp/news/2610273f"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-jetro-evenue",
+      "organization": "独立行政法人日本貿易振興機構",
+      "services": [
+        "ビジネスマッチングサイト「e-Venue」"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "public_agency",
+      "prefecture": "東京都",
+      "date_occurred": "2026-09-24",
+      "date_announced": "2026-10-27",
+      "affected_count": 133,
+      "count_note": "最大133件",
+      "cause": "unauthorized_access",
+      "root_cause": "委託先が構築・運用する外部環境上の「e-Venue」が不正アクセスを受けた（侵入経路は未公表）",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号"
+      ],
+      "summary": "ビジネスマッチングサイト「e-Venue」が9月24日・25日と10月14日に不正アクセスを受け、最大133件の氏名・メールアドレス・電話番号・FAX番号が漏えいした可能性があると公表した。サービスを停止した。10月19日に公表したウェブサイトへの不正アクセスとは別の事案としている。",
+      "sources": [
+        {
+          "title": "ジェトロ お知らせ",
+          "url": "https://www.jetro.go.jp/news/announcement/2026/5eebe72f41bc2230.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 33,
       "reliability": "high"
     },
     {
@@ -2564,6 +2991,39 @@
       ],
       "severity": "high",
       "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-np-atobarai",
+      "organization": "株式会社ネットプロテクションズ",
+      "services": [
+        "NP後払い 請求書再発行システム"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-10-14",
+      "date_announced": "2026-10-22",
+      "affected_count": 28884,
+      "cause": "unauthorized_access",
+      "root_cause": "請求書再発行システムに第三者が機械的に連続したリクエストを送り、取引情報を閲覧した",
+      "data_types": [
+        "氏名",
+        "住所",
+        "取引先情報"
+      ],
+      "summary": "後払い決済「NP後払い」の請求書再発行システムに第三者が想定外の機械的で連続したリクエストを送り、一部の取引28,884件の氏名・住所（法人は会社名・部署名も）が閲覧されたと公表した。10月14日に不審なリクエストを把握し、同システムを停止した。決済サービスは通常どおり提供しており、不正利用は確認されていない。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56616.html"
+        },
+        {
+          "title": "日本ネット経済新聞",
+          "url": "https://news.yahoo.co.jp/articles/c06607f0aaa4cc726fadb887b5e3f597d6a4eefc"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 8,
       "reliability": "mid"
     },
     {
@@ -9521,7 +9981,7 @@
       "date_occurred": "2026-09-20",
       "date_announced": "2026-10-08",
       "affected_count": 14640000,
-      "count_note": "管理機能への不正操作で約1,464万件（うち約413万件はハッシュ化されたパスワードを含む）。このほか業務管理システムの脆弱性で返金先の口座情報など17,780件、バス予約完了ページの閲覧で約1.2万件。10月16日の第2報で、2017年2月〜2018年6月にskyticketプレミアムの会費支払いでカードを登録・利用した最大6,140人のクレジットカード情報の流出を追加",
+      "count_note": "管理機能への不正操作で約1,464万件（うち約413万件はハッシュ化されたパスワードを含む）。このほか業務管理システムの脆弱性で返金先の口座情報など17,780件、バス予約完了ページの閲覧で約1.2万件。10月16日の第2報で、2017年2月〜2018年6月にskyticketプレミアムの会費支払いでカードを登録・利用した最大6,140人のクレジットカード情報の流出を追加。10月28日の第3報で、返金先の銀行口座情報3万2,341件の流出、クレジットカード情報（一部を伏せた番号）約93.6万件（約41.4万人分）と旅行保険の申込情報約11.8万件の流出のおそれを追加",
       "cause": "unauthorized_access",
       "root_cause": "管理機能の不正操作、業務管理システムの脆弱性、ログインなしで開けたバス予約完了ページの3つの経路による不正アクセス",
       "data_types": [
@@ -9530,9 +9990,10 @@
         "メールアドレス",
         "パスワード（ハッシュ化・暗号化済み）",
         "口座番号",
-        "クレジットカード番号"
+        "クレジットカード番号",
+        "クレジットカード情報（番号の一部・有効期限等）"
       ],
-      "summary": "旅行予約サイト「skyticket」で、経路の異なる3件の不正アクセスがあったと10月9日に公表した（会員には8日にメールで通知していた）。10月2日〜4日に管理機能が不正に操作され、氏名・生年月日・メールアドレスなど約1,464万件が流出し、うち約413万件にはハッシュ化されたパスワードが含まれていた。9月20日には業務管理システムの脆弱性を突かれ返金先の口座情報など17,780件が対象となり、バス予約完了ページの約1.2万件の予約情報も機械的に閲覧されていた。当初はクレジットカード番号は流出していないとしていたが、10月16日の第2報で、2018年の決済移行の際に削除されず会費支払いのログに残っていたカード番号・名義・有効期限が、最大6,140人分流出したと訂正した。セキュリティコードは含まれない。",
+      "summary": "旅行予約サイト「skyticket」で、経路の異なる3件の不正アクセスがあったと10月9日に公表した（会員には8日にメールで通知していた）。10月2日〜4日に管理機能が不正に操作され、氏名・生年月日・メールアドレスなど約1,464万件が流出し、うち約413万件にはハッシュ化されたパスワードが含まれていた。9月20日には業務管理システムの脆弱性を突かれ返金先の口座情報など17,780件が対象となり、バス予約完了ページの約1.2万件の予約情報も機械的に閲覧されていた。当初はクレジットカード番号は流出していないとしていたが、10月16日の第2報で、2018年の決済移行の際に削除されず会費支払いのログに残っていたカード番号・名義・有効期限が、最大6,140人分流出したと訂正した。セキュリティコードは含まれない。10月28日の第3報で、削除されずにクラウドに残っていたデータベースの複製が不正に取得された認証情報で読み取られ、2022年3月〜2024年5月に登録された返金先の銀行口座情報3万2,341件が流出したと公表した。一部を伏せたクレジットカード番号約93.6万件（約41.4万人分）と旅行保険の申込情報約11.8万件も流出したおそれがある。",
       "sources": [
         {
           "title": "skyticket 公式発表",
@@ -9561,6 +10022,14 @@
         {
           "title": "ITmedia NEWS（第2報）",
           "url": "https://www.itmedia.co.jp/news/article/2610/17/2000002350/"
+        },
+        {
+          "title": "時事通信（第3報）",
+          "url": "https://news.yahoo.co.jp/articles/8bf3e97d894efb234427e4f524ce8287dd3f5004"
+        },
+        {
+          "title": "TRAICY（第3報）",
+          "url": "https://www.traicy.com/posts/20261029386203/"
         }
       ],
       "severity": "critical",
@@ -14646,6 +15115,39 @@
       ],
       "severity": "high",
       "disclosure_days": 38,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-06-gendai-butsudan",
+      "organization": "株式会社現代仏壇",
+      "group": "はせがわグループ",
+      "services": [
+        "オンラインショップ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-06-19",
+      "affected_count": null,
+      "count_note": "件数は未公表",
+      "cause": "unauthorized_access",
+      "root_cause": "ウェブサイト管理システムに不正ログインされ、サイト内に不正なプログラムが設置された",
+      "summary": "サービス用ネットワークへの第三者の不正アクセスで個人情報が流出した可能性があると6月19日に公表した。10月28日の最終報で、ウェブサイト管理システムへの不正ログインとサイト内への不正なプログラムの設置を確認したと公表した。対象サーバーで情報窃取の明確な痕跡は見つからなかったが、メールサーバーにアクセスできる状態だったため漏えいの可能性を否定できないとしている。クレジットカード情報と親会社はせがわの顧客情報は含まれない。",
+      "sources": [
+        {
+          "title": "現代仏壇 お知らせ（最終報）",
+          "url": "https://www.ec-gendaibutsudan.com/view/news/20261028155202"
+        },
+        {
+          "title": "はせがわ 適時開示（日本経済新聞）",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261028558482/"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/07/03/55630.html"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
       "reliability": "high"
     },
     {
