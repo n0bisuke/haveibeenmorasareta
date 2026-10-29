@@ -1,0 +1,18 @@
+organization: 株式会社TBSグロウディア
+services:
+  - TBSショッピング
+industry: 小売・EC
+country: JP
+date_announced: 2026-10-28
+affected_count: 49995
+count_note: 延べ最大49,995人分（会員は約110万人）
+cause: third_party
+root_cause: 業務委託先のメール配信システムが不正アクセスを受けた（委託先名は未確認）
+data_types:
+  - メールアドレス
+summary: 通販サイト「TBSショッピング」で、業務委託先のメール配信システムが不正アクセスを受け、延べ最大49,995人分のメールアドレスなどが外部に流出したと公表した。氏名・住所・電話番号・クレジットカード情報は含まれず、TBS側のシステムに被害はない。不正利用は確認されていない。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC289AW0Y6A021C2000000/
+  - title: 東京新聞
+    url: https://www.tokyo-np.co.jp/article/524519

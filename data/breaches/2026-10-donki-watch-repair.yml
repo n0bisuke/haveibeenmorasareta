@@ -1,0 +1,25 @@
+organization: 株式会社ドン・キホーテ・株式会社長崎屋・株式会社橘百貨店
+services:
+  - 時計修理サービス
+industry: 小売・EC
+country: JP
+date_occurred: 2026-09-15
+date_announced: 2026-10-28
+affected_count: null
+count_note: 件数は未公表（2025年9月以降に時計修理を依頼した顧客）
+cause: third_party
+root_cause: 時計修理の委託先のサーバーがランサムウェアで暗号化された
+vendor:
+  name: コックス
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+summary: 時計修理を委託する会社のサーバーがランサムウェア攻撃を受けて暗号化され、2025年9月以降にグループ店舗で時計修理を依頼した顧客の氏名・一部の住所・電話番号が漏えいした可能性があると公表した。委託先は9月15日に攻撃の可能性を検知し、9月25日に報告した。報道ではUDリテールを含む4社が対象とされる。漏えいの事実は確認されていない。
+sources:
+  - title: ドン・キホーテ お知らせ
+    url: https://www.donki.com/updata/news/info_84zw5.pdf
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC285ZR0Y6A021C2000000/
+  - title: アスキー
+    url: https://ascii.jp/elem/000/004/446/4446479/

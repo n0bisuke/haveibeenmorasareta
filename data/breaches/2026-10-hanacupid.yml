@@ -1,0 +1,24 @@
+organization: 花キューピット株式会社
+services:
+  - インターネット花キューピット
+  - ビジネス花キューピット
+industry: 小売・EC
+country: JP
+date_occurred: 2026-10-14
+date_announced: 2026-10-28
+affected_count: 4238242
+count_note: 最大4,238,242件（公式サイトでメールアドレスを登録した会員）
+cause: unauthorized_access
+root_cause: ECサイトの管理システムが不正アクセスを受けた（手口は未公表）
+data_types:
+  - 会員ID
+  - パスワード（ハッシュ化・暗号化済み）
+  - メールアドレス
+summary: 「インターネット花キューピット」「ビジネス花キューピット」の管理システムが10月14日〜15日に不正アクセスを受け、最大4,238,242件のログインID・暗号化またはハッシュ化されたパスワード・メールアドレスが漏えいした可能性があると公表した。氏名・住所・電話番号・クレジットカード情報は含まれない。電話注文や外部サイトからの注文者は対象外。
+sources:
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2152032.html
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/29/2000002711/
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261028de67215
