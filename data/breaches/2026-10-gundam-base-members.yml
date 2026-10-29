@@ -1,0 +1,21 @@
+organization: 株式会社バンダイナムコエンターテインメント・株式会社BANDAI SPIRITS
+group: バンダイナムコグループ
+services:
+  - THE GUNDAM BASE MEMBERS
+industry: エンタメ・スポーツ
+country: JP
+date_announced: 2026-10-27
+affected_count: 346247
+cause: third_party
+root_cause: メール配信の委託先ユミルリンクの「Cuenote FC」が不正アクセスを受け、配信データが持ち出された
+vendor:
+  name: ユミルリンク株式会社
+data_types:
+  - メールアドレス
+  - 会員ID
+summary: バンダイナムコIDのメール配信を委託するユミルリンクの「Cuenote FC」が不正アクセスを受け、「THE GUNDAM BASE MEMBERS」登録者346,247件のメールアドレスとバンダイナムコID管理用の内部識別子が漏えいしたと公表した。氏名・住所・購入履歴・パスワード・クレジットカード情報は含まれない。二次被害は確認されていない。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2610/29/2000002694/
+  - title: 電ファミニコゲーマー
+    url: https://news.denfaminicogamer.jp/news/2610273f

@@ -1,0 +1,25 @@
+organization: 株式会社ドトールコーヒー
+services:
+  - 社内システム（従業員情報）
+industry: 飲食
+country: JP
+date_occurred: 2026-10-20
+date_announced: 2026-10-28
+affected_count: 951
+count_note: 最大951名（4店舗の従業員・退職者）
+cause: unauthorized_access
+root_cause: 社内システムが不正アクセスを受けた（手口は未公表）
+data_types:
+  - 従業員情報
+  - 氏名
+  - 生年月日
+  - 住所
+  - メールアドレス
+  - 電話番号
+  - 口座番号
+summary: 社内システムへの不正アクセスにより、4店舗の従業員・退職者最大951名の氏名・生年月日・住所・メールアドレス・電話番号・銀行口座番号が流出した可能性があると公表した。10月20日に検知した。顧客情報への不正アクセスや二次被害は確認されていない。
+sources:
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261028de67114
+  - title: 日テレNEWS
+    url: https://news.infoseek.co.jp/article/ntv_2026102801568155/
