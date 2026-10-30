@@ -1,0 +1,22 @@
+organization: 株式会社鹿児島銀行・株式会社南日本銀行・鹿児島相互信用金庫・鹿児島信用金庫
+services:
+  - 決済アプリ「Payどん」のメール通知
+industry: 金融・保険
+country: JP
+date_announced: 2026-10-28
+affected_count: null
+count_note: 件数は未公表
+cause: third_party
+root_cause: メール配信の委託先アララの「アララ メッセージ」のWebサーバーが脆弱性を悪用され、メールアドレスなどが流出した
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+  - 利用履歴
+  - 取引先情報
+summary: 鹿児島の決済アプリ「Payどん」のメール通知を委託していたアララのサービスが不正アクセスを受け、利用者と加盟店のメールアドレス、決済日時・店舗名・支払金額が漏えいした可能性があると公表した。メール通知と新規登録を停止し、プレミアム付商品券の発売を延期した。決済への影響はない。
+sources:
+  - title: 鹿児島銀行 お知らせ
+    url: https://www.kagin.co.jp/important/emergency_20261029_3.html
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261029de67972

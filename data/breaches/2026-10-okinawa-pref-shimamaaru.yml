@@ -1,0 +1,19 @@
+organization: 沖縄県
+services:
+  - 離島とのつながり促進事業「島まーる」メールマガジン
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 沖縄県
+date_announced: 2026-10-29
+affected_count: 2560
+cause: third_party
+root_cause: 受託業者がメールマガジンの配信に使っていた外部サービスが不正アクセスを受けた（サービス名は未確認）
+data_types:
+  - メールアドレス
+summary: 離島とのつながり促進事業「島まーる」で、受託業者がメールマガジンの配信に使っていた外部サービスが不正アクセスを受け、会員2,560件のメールアドレスが漏えいした可能性があると公表した。メールアドレス以外の情報は含まれないとしている。
+sources:
+  - title: 琉球新報
+    url: https://ryukyushimpo.jp/national/entry-5582125.html
+  - title: 沖縄タイムス
+    url: https://www.okinawatimes.co.jp/articles/-/1955631

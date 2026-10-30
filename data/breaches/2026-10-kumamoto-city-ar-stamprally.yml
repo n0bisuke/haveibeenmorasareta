@@ -1,0 +1,23 @@
+organization: 熊本県熊本市
+services:
+  - 熊本城・中心商店街ARスタンプラリー（2024年度）
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 熊本県
+date_occurred: 2026-08-09
+date_announced: 2026-10-30
+affected_count: 1084
+cause: third_party
+root_cause: 委託先TOPPANの再委託先palanのシステムが不正アクセスを受けた
+vendor:
+  name: 株式会社palan
+data_types:
+  - メールアドレス
+  - アカウント名
+summary: 2024年度に実施したARスタンプラリーの委託先TOPPANから再委託されたpalanのシステムが8月9日〜10月21日に不正アクセスを受け、参加者1,084人のメールアドレス・ユーザー名（一部は本名）・年代などが漏えいしたと公表した。palanはシステムを停止し、個人情報を削除した。二次被害は確認されていない。同じpalanの事案は岐阜県も公表している。
+sources:
+  - title: RKK熊本放送
+    url: https://news.yahoo.co.jp/articles/7a85a93dde3aca573c7cbd8304dfd9c3d8bf3ebe
+  - title: 熊本日日新聞
+    url: https://news.yahoo.co.jp/articles/f4d8e2a56f5befc21e71bf3eee72edd1836131c8

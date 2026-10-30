@@ -1,0 +1,25 @@
+organization: 株式会社Gunosy
+services:
+  - 社内業務用アカウント（クラウド環境・業務ツール）
+industry: IT・通信
+country: JP
+date_occurred: 2026-10-21
+date_announced: 2026-10-26
+affected_count: 132
+count_note: 取引先担当者25名、役員・従業員・退職者など107名
+cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
+root_cause: 不正に入手された社内業務用アカウントのIDとパスワードでログインされた
+data_types:
+  - 氏名
+  - メールアドレス
+  - 取引先情報
+  - 従業員情報
+  - メッセージ・チャット履歴
+summary: 不正に入手された社内業務用アカウントのIDとパスワードでクラウド環境や業務ツールにログインされ、取引先担当者25名の氏名・メールアドレス・署名欄の会社名や連絡先とメール本文の一部、役員・従業員・退職者など107名の業務ツールの利用者情報が流出したと公表した。10月21日に監視システムで検知した。「グノシー」などのサービス利用者の情報の流出は確認されていない。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/30/56634.html
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/gunosy-business-account-unauthorized-access-132/
