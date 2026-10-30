@@ -1,0 +1,25 @@
+organization: 株式会社ディーエイチシー
+services:
+  - DHC公式オンラインショップ
+industry: 小売・EC
+country: JP
+date_occurred: 2026-10-28
+date_announced: 2026-10-30
+affected_count: 5096
+count_note: 会員情報が書き換えられたアカウント5,096件。ほかに不審な注文27件、不正な新規会員登録71件
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: オンラインショップの脆弱性を悪用され、会員情報が書き換えられた
+data_types:
+  - 会員ID
+  - 氏名
+  - 住所
+  - 電話番号
+  - 購入履歴
+  - クレジットカード情報（番号の一部・有効期限等）
+summary: 公式オンラインショップが脆弱性を悪用した不正アクセスを受け、5,096件の会員情報が書き換えられ、不審な注文27件と不正な新規会員登録71件が見つかったと公表した。会員番号・お届け先の氏名・住所・電話番号・購入履歴・カード番号の下4桁などが閲覧された可能性がある。会員情報を復元し、不審な注文と不正登録を取り消した。外部への持ち出しは確認されていない。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC307DC0Q6A031C2000000/
+  - title: WWDJAPAN
+    url: https://www.wwdjapan.com/articles/2540414

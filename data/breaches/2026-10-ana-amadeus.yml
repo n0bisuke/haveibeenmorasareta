@@ -4,18 +4,28 @@ services:
   - 旅客サービスシステム（予約情報）
 industry: 交通・モビリティ
 country: JP
-status: investigating
-issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
 date_announced: 2026-10-29
-affected_count: null
-count_note: 件数・情報の範囲は精査中
+affected_count: 37800
+count_note: 約37,800人（2023年8月10日〜2026年9月23日にANA便を予約した人の一部）。うち約1,700人はパスポート番号なども対象
 cause: third_party
 root_cause: 旅客サービスシステムの委託先アマデウスのシステムが不正アクセスを受け、予約情報が外部から参照された
 vendor:
   name: Amadeus IT Group
-summary: 旅客サービスシステムの委託先アマデウスのシステムが不正アクセスを受け、ANA便の予約情報の一部が外部から参照された形跡があると公表した。件数と範囲は精査中で、判明次第公表し対象者に通知するとしている。同じ委託先の件はJAL・JTAも公表している。
+summary: 旅客サービスシステムの委託先アマデウスのシステムが不正アクセスを受け、ANA便の予約情報の一部が外部から参照された形跡があると公表した。件数と範囲は精査中で、判明次第公表し対象者に通知するとしている。同じ委託先の件はJAL・JTAも公表している。10月30日の続報で、約37,800人の予約情報が参照された形跡があり、約36,100人は氏名・予約番号・搭乗日・区間・クラス、約1,700人はこれに加えてパスポート番号・国籍・メールアドレス・電話番号・マイレージ番号も対象だと公表した。クレジットカード情報とパスワードは含まれない。
 sources:
   - title: 日本経済新聞
     url: https://www.nikkei.com/article/DGXZQOUC295CD0Z21C26A0000000/
   - title: TRAICY
     url: https://www.traicy.com/posts/20261029386286/
+  - title: 日本経済新聞（10月30日）
+    url: https://www.nikkei.com/article/DGXZQOUC308F40Q6A031C2000000/
+  - title: トラベルボイス
+    url: https://www.travelvoice.jp/20261030-160771
+date_occurred: 2023-08-10
+data_types:
+  - 氏名
+  - 利用履歴
+  - メールアドレス
+  - 電話番号
+  - パスポート番号
+  - 会員ID
