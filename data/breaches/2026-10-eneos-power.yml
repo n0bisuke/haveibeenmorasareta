@@ -1,0 +1,22 @@
+organization: ENEOS Power株式会社
+services:
+  - ENEOSでんき お客さまページ
+industry: エネルギー・インフラ
+country: JP
+date_occurred: 2026-10-19
+date_announced: 2026-10-28
+affected_count: 57
+cause: unauthorized_access
+root_cause: お客さまページが第三者の不正アクセスを受けた（詳細は調査中）
+data_types:
+  - 氏名
+  - 住所
+  - 会員ID
+  - パスワード（保管形式不明）
+  - 契約情報
+summary: 「ENEOSでんき」のお客さまページが10月19日夜〜20日朝に不正アクセスを受け、57名の氏名・住所・ログインIDとパスワード・使用量や請求金額などの利用明細が漏えいしたと公表した。銀行口座とクレジットカード情報は含まれない。マイページと新規申込を停止した。
+sources:
+  - title: ENEOS Power お知らせ
+    url: https://www.eneos-power.co.jp/denkigas/information/uploads/denki-important-20261028-394.pdf
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC293YO0Z21C26A0000000/

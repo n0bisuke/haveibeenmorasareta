@@ -1,0 +1,54 @@
+title: Linux カーネルの TCP 処理に深刻度9.8の脆弱性、認証なしで root 奪取の実証も
+date: 2026-10-30
+severity: critical
+category: 脆弱性
+audience:
+  - サーバー管理者
+affected:
+  - Linux カーネル（4.4 以降）
+  - Ubuntu
+  - Red Hat Enterprise Linux
+  - Debian
+  - SUSE
+cve:
+  - CVE-2026-98432
+  - CVE-2026-46300
+fixed: 上流カーネル 5.10.272 / 5.15.223 / 6.1.190 / 6.6.159 / 6.12.113 / 6.18.56 / 7.2.10 / 7.3（各ディストリビューションの修正版カーネル）
+summary: >-
+  Linux カーネルの IPv4 TCP の接続処理に、解放済みメモリを使ってしまう脆弱性が見つかった
+  （CVE-2026-98432、カーネルの CVE チームによる評価は CVSS 9.8）。Linux 4.4 以降が対象で、
+  IPv6 は影響を受けない。Anthropic は10月27日、Multipath TCP（MPTCP）の待ち受けがある
+  サーバーで、認証なしに外部から root 権限でコマンドを実行できることを実証したと発表した。
+  Red Hat などは深刻度を 5.9〜8.1 と評価しており、ディストリビューションによって修正版の
+  提供状況が異なる。別に、ローカルで権限を昇格できる「Fragnesia」（CVE-2026-46300、CVSS 7.8）が
+  10月28日に米 CISA の悪用確認済み脆弱性リスト（KEV）に追加された。
+risk: >-
+  インターネットに公開している Linux サーバーが、ログインなしで乗っ取られる恐れがある。
+  乗っ取られると、サーバー上のデータや認証情報を盗まれたり、ランサムウェアや踏み台に
+  使われたりする。Fragnesia は実際に悪用されており、一般ユーザーやコンテナから root を
+  奪われる恐れがある。
+action_admin: >-
+  ディストリビューションが配布する修正版カーネルに更新し、再起動する（更新だけでは反映されない）。
+  修正版がまだ出ていない場合は、インターネットに公開しているサーバーを優先し、MPTCP の
+  待ち受けを止める（net.mptcp.enabled の値を記録してから無効化を検討）、外部からの到達を
+  制限するなどで当座をしのぎ、配布元のセキュリティ情報を毎日確認する。
+action_user: >-
+  レンタルサーバー・VPS・クラウドで自分の Linux サーバーを持っている場合は、管理画面や
+  事業者のお知らせで対応状況を確認する。Android やパソコンの Linux は、OS の更新が届いたら適用する。
+checklist:
+  - 自分が管理している Linux サーバー（VPS・クラウド・自宅サーバー）を洗い出す
+  - uname -r で動いているカーネルの版を確認する
+  - 配布元（Ubuntu・Red Hat・Debian など）のセキュリティ情報で CVE-2026-98432 の修正状況を確認する
+  - 修正版カーネルが出ていれば更新して再起動する
+  - 修正版が無ければ、MPTCP を使っていないか確認し、外部に公開するポートを絞る
+  - Fragnesia（CVE-2026-46300）の修正版カーネルも当てる
+  - VPS・レンタルサーバーは事業者のお知らせも確認する
+sources:
+  - title: The Hacker News
+    url: https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html
+  - title: アスキー（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/9d3373a46cfea4887461fe664f375c01b34080ce
+  - title: SecurityOnline
+    url: https://securityonline.info/linux-kernel-cve-2026-98432/
+  - title: カーリル（影響の説明）
+    url: https://blog.calil.jp/2026/10/linux-kernel.html

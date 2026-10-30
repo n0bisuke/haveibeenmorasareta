@@ -1,0 +1,23 @@
+organization: 中国電力株式会社
+group: 中国電力グループ
+services:
+  - 会員制サイト「ぐっとずっと。クラブ」のポイント交換商品の配送
+industry: エネルギー・インフラ
+country: JP
+date_announced: 2026-10-29
+affected_count: 17600
+count_note: 延べ約17,600件（重複を含む。6月21日〜9月30日に佐川急便が配送した分）
+cause: third_party
+root_cause: 配送委託先の佐川急便「お荷物問い合わせサービス」が不正アクセスを受けた
+vendor:
+  name: 佐川急便株式会社
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+summary: 会員制サイト「ぐっとずっと。クラブ」のポイント交換で商品を受け取った人の届け先情報について、配送を委託した佐川急便の「お荷物問い合わせサービス」への不正アクセスにより、延べ約17,600件の氏名・住所・電話番号が流出した可能性があると公表した。クレジットカード情報やパスワードは含まれない。二次被害は確認されていない。
+sources:
+  - title: 中国新聞
+    url: https://www.chugoku-np.co.jp/articles/-/917012
+  - title: 山陰中央新報
+    url: https://www.sanin-chuo.co.jp/articles/-/1106568

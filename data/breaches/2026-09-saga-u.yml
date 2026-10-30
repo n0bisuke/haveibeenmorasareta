@@ -1,0 +1,28 @@
+organization: 国立大学法人佐賀大学
+services:
+  - 事務部門のNAS
+  - 医学部附属病院
+industry: 人材・教育
+country: JP
+org_type: university
+prefecture: 佐賀県
+date_occurred: 2026-09-24
+date_announced: 2026-09-28
+affected_count: 80000
+count_note: 学生・教職員ら約8万人分。附属病院の患者の人数は調査中
+cause: ransomware
+root_cause: 事務部門のNASがランサムウェアの被害を受けた（侵入経路は未公表）
+data_types:
+  - 氏名
+  - 住所
+  - メールアドレス
+  - パスワード（保管形式不明）
+  - 健康・医療情報
+summary: 9月24日に事務部門のNASでランサムウェアの被害を確認し、28日に公表した。10月30日に、学生・教職員ら約8万人分の氏名・住所・メールアドレス・パスワードなどと、附属病院の患者の診療科・傷病名・受診日などが流出した可能性があると公表した。脅迫文があり、県警に相談した。
+sources:
+  - title: 佐賀大学 お知らせ
+    url: https://www.saga-u.ac.jp/koho/press/2026092841520
+  - title: 佐賀大学医学部附属病院 お知らせ
+    url: https://www.hospital.med.saga-u.ac.jp/ransomware/
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOCC302V40Q6A031C2000000/

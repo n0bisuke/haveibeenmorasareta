@@ -1,0 +1,31 @@
+organization: 株式会社松屋フーズホールディングス
+services:
+  - 松弁ネット
+  - モバイルオーダー
+  - 松弁デリバリー
+  - 松屋公式アプリ
+industry: 飲食
+country: JP
+date_occurred: 2026-10-28
+date_announced: 2026-10-29
+affected_count: 2379127
+count_note: 松弁ネット・モバイルオーダー・松弁デリバリーの利用者2,377,127件とアプリ会員約2,000件（最大3,000件の可能性）の合計
+cause: unauthorized_access
+root_cause: 公式アプリの管理システムが第三者の不正アクセスを受けた（原因は調査中）
+data_types:
+  - 会員ID
+  - 氏名
+  - 住所
+  - 電話番号
+  - ポイント情報
+  - 生年月日
+  - メールアドレス
+  - パスワード（ハッシュ化・暗号化済み）
+summary: 10月28日に公式アプリの管理システムへの不正アクセスを検知し、アプリやWebサービスを停止したと29日に公表した。30日の第2報で、松弁ネット・モバイルオーダー・松弁デリバリーの利用者2,377,127件の会員ID・届け先の氏名・住所・電話番号・松屋ポイントと、アプリ会員約2,000件の生年月日・メールアドレス・暗号化済みパスワードなどが漏えいしたと公表した。クレジットカード情報は保持していない。アプリ会員には停止期間中の補償を予定している。
+sources:
+  - title: ITmedia NEWS（第2報）
+    url: https://www.itmedia.co.jp/news/article/2610/30/2000002753/
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2152679.html
+  - title: ITmedia NEWS（初報）
+    url: https://www.itmedia.co.jp/news/article/2610/29/2000002714/

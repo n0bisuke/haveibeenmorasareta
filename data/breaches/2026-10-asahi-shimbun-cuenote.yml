@@ -1,0 +1,21 @@
+organization: 株式会社朝日新聞社
+services:
+  - 顧客向けメール配信
+industry: メディア・出版
+country: JP
+date_announced: 2026-10-29
+affected_count: 70921
+count_note: 延べ70,921件（重複を含む）
+cause: third_party
+root_cause: メール配信の委託先ユミルリンクの「Cuenote FC」が不正アクセスを受け、配信データが持ち出された
+vendor:
+  name: ユミルリンク株式会社
+data_types:
+  - メールアドレス
+  - 氏名
+summary: メール配信を委託するユミルリンクの「Cuenote FC」が不正アクセスを受け、延べ70,921件の顧客情報が流出したおそれがあると公表した。9割超はメールアドレスのみで、一部に氏名や学校名を含む。クレジットカード情報とパスワードは含まれない。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC29AZD0Z21C26A0000000/
+  - title: 東京新聞
+    url: https://www.tokyo-np.co.jp/article/524863

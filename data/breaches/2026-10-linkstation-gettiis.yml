@@ -1,0 +1,31 @@
+organization: 株式会社リンクステーション
+services:
+  - チケット販売サービス「GETTIIS」
+  - Gettii-Lite
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-10-18
+date_announced: 2026-10-19
+affected_count: 317971
+count_note: 会員ID 317,971件（項目別の最大値。ハッシュ化パスワード311,451件、メールアドレス311,426件、氏名309,759件、カード関連29,515件で重複あり）
+cause: vulnerability
+vuln_target: web_app
+root_cause: 主催者向けサービス「Gettii-Lite」のプログラムの脆弱性を悪用された
+data_types:
+  - 会員ID
+  - パスワード（ハッシュ化・暗号化済み）
+  - メールアドレス
+  - 氏名
+  - クレジットカード情報（番号の一部・有効期限等）
+  - 電話番号
+  - 郵便番号
+  - 性別
+  - 生年月日
+summary: チケット販売サービス「GETTIIS」で、主催者向けサービス「Gettii-Lite」のプログラムの脆弱性を悪用され、会員317,971件の会員ID、ハッシュ化パスワード、メールアドレス、氏名、電話番号、生年月日などが流出したと公表した。29,515件はクレジットカード番号の先頭・末尾4桁や名義・有効期限（暗号化済み）も含む。10月18日未明に不審なアクセスを確認した。不正利用は確認されていない。
+sources:
+  - title: 東奥日報
+    url: https://www.toonippo.co.jp/articles/-/2387825
+  - title: 青森放送
+    url: https://news.yahoo.co.jp/articles/d661dd2ce683b67677feb26ce278c6da97e5103a
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/30/56631.html
