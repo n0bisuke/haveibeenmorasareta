@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-29T07:48:23.000Z",
-  "count": 665,
+  "generated_at": "2026-10-30T10:20:19.000Z",
+  "count": 681,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,191 @@
   ],
   "breaches": [
     {
+      "id": "2026-10-dhc",
+      "organization": "株式会社ディーエイチシー",
+      "services": [
+        "DHC公式オンラインショップ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-10-28",
+      "date_announced": "2026-10-30",
+      "affected_count": 5096,
+      "count_note": "会員情報が書き換えられたアカウント5,096件。ほかに不審な注文27件、不正な新規会員登録71件",
+      "cause": "vulnerability",
+      "vuln_target": "ec_payment",
+      "root_cause": "オンラインショップの脆弱性を悪用され、会員情報が書き換えられた",
+      "data_types": [
+        "会員ID",
+        "氏名",
+        "住所",
+        "電話番号",
+        "購入履歴",
+        "クレジットカード情報（番号の一部・有効期限等）"
+      ],
+      "summary": "公式オンラインショップが脆弱性を悪用した不正アクセスを受け、5,096件の会員情報が書き換えられ、不審な注文27件と不正な新規会員登録71件が見つかったと公表した。会員番号・お届け先の氏名・住所・電話番号・購入履歴・カード番号の下4桁などが閲覧された可能性がある。会員情報を復元し、不審な注文と不正登録を取り消した。外部への持ち出しは確認されていない。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC307DC0Q6A031C2000000/"
+        },
+        {
+          "title": "WWDJAPAN",
+          "url": "https://www.wwdjapan.com/articles/2540414"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 2,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-kumamoto-city-ar-stamprally",
+      "organization": "熊本県熊本市",
+      "services": [
+        "熊本城・中心商店街ARスタンプラリー（2024年度）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "熊本県",
+      "date_occurred": "2026-08-09",
+      "date_announced": "2026-10-30",
+      "affected_count": 1084,
+      "cause": "third_party",
+      "root_cause": "委託先TOPPANの再委託先palanのシステムが不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社palan"
+      },
+      "data_types": [
+        "メールアドレス",
+        "アカウント名"
+      ],
+      "summary": "2024年度に実施したARスタンプラリーの委託先TOPPANから再委託されたpalanのシステムが8月9日〜10月21日に不正アクセスを受け、参加者1,084人のメールアドレス・ユーザー名（一部は本名）・年代などが漏えいしたと公表した。palanはシステムを停止し、個人情報を削除した。二次被害は確認されていない。同じpalanの事案は岐阜県も公表している。",
+      "sources": [
+        {
+          "title": "RKK熊本放送",
+          "url": "https://news.yahoo.co.jp/articles/7a85a93dde3aca573c7cbd8304dfd9c3d8bf3ebe"
+        },
+        {
+          "title": "熊本日日新聞",
+          "url": "https://news.yahoo.co.jp/articles/f4d8e2a56f5befc21e71bf3eee72edd1836131c8"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 82,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-mofa",
+      "organization": "外務省",
+      "services": [
+        "外部とやり取りできるネットワーク"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "national_gov",
+      "prefecture": "東京都",
+      "date_occurred": "2026-07-27",
+      "date_announced": "2026-10-30",
+      "affected_count": 3600,
+      "count_note": "約3,600件（うち約900件は外務省員以外）",
+      "cause": "unauthorized_access",
+      "root_cause": "外部とやり取りできるネットワークが不正アクセスを受けた（侵入経路は未公表）",
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "外部とやり取りできるネットワークが不正アクセスを受け、外務省員以外の約900件を含む約3,600件の氏名・メールアドレスなどが漏えいした可能性があると公表した。7月27日に検知して遮断し、外部の専門事業者と調査していた。機密性の高い情報や、旅券・たびレジを扱う領事システムの情報は含まれない。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2152757.html"
+        },
+        {
+          "title": "時事通信",
+          "url": "https://www.jiji.com/jc/article?k=2026103000922&g=pol&m=rss"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 95,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-ryohin-keikaku-app",
+      "organization": "株式会社良品計画",
+      "services": [
+        "MUJIアプリ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-10-30",
+      "affected_count": 27260000,
+      "count_note": "最大約2,726万件（退会済みの利用者を含む）",
+      "cause": "unauthorized_access",
+      "root_cause": "公式アプリのシステムが不正アクセスを受けた（侵入経路は未公表）",
+      "data_types": [
+        "メールアドレス",
+        "生年月日",
+        "性別"
+      ],
+      "summary": "無印良品の公式アプリのシステムが不正アクセスを受け、退会済みの利用者を含む最大約2,726万件のメールアドレス・生年月日・性別が流出した可能性があると公表した。氏名・住所・電話番号・クレジットカード情報は含まれない。該当箇所への接続を遮断して修正を適用した。悪用は確認されていない。",
+      "sources": [
+        {
+          "title": "良品計画 お知らせ",
+          "url": "https://www.ryohin-keikaku.jp/news/articles/2026_1030_01"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2152666.html"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/30/2000002756/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-tinpan-alley-ragtag",
+      "organization": "株式会社ティンパンアレイ",
+      "group": "ワールドグループ",
+      "services": [
+        "RAGTAG"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-10-17",
+      "date_announced": "2026-10-30",
+      "affected_count": 1200000,
+      "count_note": "延べ約120万件",
+      "cause": "unauthorized_access",
+      "root_cause": "業務サーバーが第三者の不正アクセスを受け、データを抽出する操作が行われた",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "生年月日",
+        "性別",
+        "メールアドレス"
+      ],
+      "summary": "ワールドの連結子会社で、ブランド古着店「RAGTAG」を運営する同社の業務サーバーが10月17日に不正アクセスを受け、会員情報延べ約120万件の氏名・住所・電話番号・生年月日・性別・メールアドレスが流出した可能性があると公表した。28日に検知した。決済情報の流出は確認されていない。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC303310Q6A031C2000000/"
+        },
+        {
+          "title": "WWDJAPAN",
+          "url": "https://www.wwdjapan.com/articles/2539583"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 13,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-ana-amadeus",
       "organization": "全日本空輸株式会社",
       "group": "ANAグループ",
@@ -476,17 +661,15 @@
       ],
       "industry": "交通・モビリティ",
       "country": "JP",
-      "status": "investigating",
-      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
       "date_announced": "2026-10-29",
-      "affected_count": null,
-      "count_note": "件数・情報の範囲は精査中",
+      "affected_count": 37800,
+      "count_note": "約37,800人（2023年8月10日〜2026年9月23日にANA便を予約した人の一部）。うち約1,700人はパスポート番号なども対象",
       "cause": "third_party",
       "root_cause": "旅客サービスシステムの委託先アマデウスのシステムが不正アクセスを受け、予約情報が外部から参照された",
       "vendor": {
         "name": "Amadeus IT Group"
       },
-      "summary": "旅客サービスシステムの委託先アマデウスのシステムが不正アクセスを受け、ANA便の予約情報の一部が外部から参照された形跡があると公表した。件数と範囲は精査中で、判明次第公表し対象者に通知するとしている。同じ委託先の件はJAL・JTAも公表している。",
+      "summary": "旅客サービスシステムの委託先アマデウスのシステムが不正アクセスを受け、ANA便の予約情報の一部が外部から参照された形跡があると公表した。件数と範囲は精査中で、判明次第公表し対象者に通知するとしている。同じ委託先の件はJAL・JTAも公表している。10月30日の続報で、約37,800人の予約情報が参照された形跡があり、約36,100人は氏名・予約番号・搭乗日・区間・クラス、約1,700人はこれに加えてパスポート番号・国籍・メールアドレス・電話番号・マイレージ番号も対象だと公表した。クレジットカード情報とパスワードは含まれない。",
       "sources": [
         {
           "title": "日本経済新聞",
@@ -495,11 +678,214 @@
         {
           "title": "TRAICY",
           "url": "https://www.traicy.com/posts/20261029386286/"
+        },
+        {
+          "title": "日本経済新聞（10月30日）",
+          "url": "https://www.nikkei.com/article/DGXZQOUC308F40Q6A031C2000000/"
+        },
+        {
+          "title": "トラベルボイス",
+          "url": "https://www.travelvoice.jp/20261030-160771"
         }
       ],
-      "severity": null,
+      "date_occurred": "2023-08-10",
+      "data_types": [
+        "氏名",
+        "利用履歴",
+        "メールアドレス",
+        "電話番号",
+        "パスポート番号",
+        "会員ID"
+      ],
+      "severity": "critical",
+      "disclosure_days": 1176,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-asahi-shimbun-cuenote",
+      "organization": "株式会社朝日新聞社",
+      "services": [
+        "顧客向けメール配信"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2026-10-29",
+      "affected_count": 70921,
+      "count_note": "延べ70,921件（重複を含む）",
+      "cause": "third_party",
+      "root_cause": "メール配信の委託先ユミルリンクの「Cuenote FC」が不正アクセスを受け、配信データが持ち出された",
+      "vendor": {
+        "name": "ユミルリンク株式会社"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名"
+      ],
+      "summary": "メール配信を委託するユミルリンクの「Cuenote FC」が不正アクセスを受け、延べ70,921件の顧客情報が流出したおそれがあると公表した。9割超はメールアドレスのみで、一部に氏名や学校名を含む。クレジットカード情報とパスワードは含まれない。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC29AZD0Z21C26A0000000/"
+        },
+        {
+          "title": "東京新聞",
+          "url": "https://www.tokyo-np.co.jp/article/524863"
+        }
+      ],
+      "severity": "medium",
       "disclosure_days": null,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-chugoku-electric-sagawa",
+      "organization": "中国電力株式会社",
+      "group": "中国電力グループ",
+      "services": [
+        "会員制サイト「ぐっとずっと。クラブ」のポイント交換商品の配送"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_announced": "2026-10-29",
+      "affected_count": 17600,
+      "count_note": "延べ約17,600件（重複を含む。6月21日〜9月30日に佐川急便が配送した分）",
+      "cause": "third_party",
+      "root_cause": "配送委託先の佐川急便「お荷物問い合わせサービス」が不正アクセスを受けた",
+      "vendor": {
+        "name": "佐川急便株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号"
+      ],
+      "summary": "会員制サイト「ぐっとずっと。クラブ」のポイント交換で商品を受け取った人の届け先情報について、配送を委託した佐川急便の「お荷物問い合わせサービス」への不正アクセスにより、延べ約17,600件の氏名・住所・電話番号が流出した可能性があると公表した。クレジットカード情報やパスワードは含まれない。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "中国新聞",
+          "url": "https://www.chugoku-np.co.jp/articles/-/917012"
+        },
+        {
+          "title": "山陰中央新報",
+          "url": "https://www.sanin-chuo.co.jp/articles/-/1106568"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-matsuya-foods",
+      "organization": "株式会社松屋フーズホールディングス",
+      "services": [
+        "松弁ネット",
+        "モバイルオーダー",
+        "松弁デリバリー",
+        "松屋公式アプリ"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_occurred": "2026-10-28",
+      "date_announced": "2026-10-29",
+      "affected_count": 2379127,
+      "count_note": "松弁ネット・モバイルオーダー・松弁デリバリーの利用者2,377,127件とアプリ会員約2,000件（最大3,000件の可能性）の合計",
+      "cause": "unauthorized_access",
+      "root_cause": "公式アプリの管理システムが第三者の不正アクセスを受けた（原因は調査中）",
+      "data_types": [
+        "会員ID",
+        "氏名",
+        "住所",
+        "電話番号",
+        "ポイント情報",
+        "生年月日",
+        "メールアドレス",
+        "パスワード（ハッシュ化・暗号化済み）"
+      ],
+      "summary": "10月28日に公式アプリの管理システムへの不正アクセスを検知し、アプリやWebサービスを停止したと29日に公表した。30日の第2報で、松弁ネット・モバイルオーダー・松弁デリバリーの利用者2,377,127件の会員ID・届け先の氏名・住所・電話番号・松屋ポイントと、アプリ会員約2,000件の生年月日・メールアドレス・暗号化済みパスワードなどが漏えいしたと公表した。クレジットカード情報は保持していない。アプリ会員には停止期間中の補償を予定している。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS（第2報）",
+          "url": "https://www.itmedia.co.jp/news/article/2610/30/2000002753/"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2152679.html"
+        },
+        {
+          "title": "ITmedia NEWS（初報）",
+          "url": "https://www.itmedia.co.jp/news/article/2610/29/2000002714/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 1,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-okinawa-pref-shimamaaru",
+      "organization": "沖縄県",
+      "services": [
+        "離島とのつながり促進事業「島まーる」メールマガジン"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "沖縄県",
+      "date_announced": "2026-10-29",
+      "affected_count": 2560,
+      "cause": "third_party",
+      "root_cause": "受託業者がメールマガジンの配信に使っていた外部サービスが不正アクセスを受けた（サービス名は未確認）",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "離島とのつながり促進事業「島まーる」で、受託業者がメールマガジンの配信に使っていた外部サービスが不正アクセスを受け、会員2,560件のメールアドレスが漏えいした可能性があると公表した。メールアドレス以外の情報は含まれないとしている。",
+      "sources": [
+        {
+          "title": "琉球新報",
+          "url": "https://ryukyushimpo.jp/national/entry-5582125.html"
+        },
+        {
+          "title": "沖縄タイムス",
+          "url": "https://www.okinawatimes.co.jp/articles/-/1955631"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-arara-message",
+      "organization": "アララ株式会社",
+      "services": [
+        "アララ メッセージ"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-10-28",
+      "affected_count": 3010000,
+      "count_note": "約301万件（環境「bvam001」のエンドユーザーリスト）",
+      "cause": "vulnerability",
+      "vuln_target": "web_app",
+      "root_cause": "メール配信サービスのWebサーバーの脆弱性を悪用され、データが持ち出された",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "メール配信サービス「アララ メッセージ」の1つの環境のWebサーバーが脆弱性を悪用した不正アクセスを受け、エンドユーザーのメールアドレス約301万件が流出したと公表した。10月22日から緊急メンテナンスで停止していた。メールアドレス以外の流出は確認されていない。鹿児島の決済アプリ「Payどん」なども利用企業として影響を公表している。",
+      "sources": [
+        {
+          "title": "アララ お知らせ",
+          "url": "https://www.arara.com/news/info/20261029_arara"
+        },
+        {
+          "title": "アララ メッセージ お知らせ",
+          "url": "https://am.arara.com/news/2026102802"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC29A9Q0Z21C26A0000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-10-donki-watch-repair",
@@ -579,6 +965,41 @@
       "severity": "critical",
       "disclosure_days": 8,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-eneos-power",
+      "organization": "ENEOS Power株式会社",
+      "services": [
+        "ENEOSでんき お客さまページ"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_occurred": "2026-10-19",
+      "date_announced": "2026-10-28",
+      "affected_count": 57,
+      "cause": "unauthorized_access",
+      "root_cause": "お客さまページが第三者の不正アクセスを受けた（詳細は調査中）",
+      "data_types": [
+        "氏名",
+        "住所",
+        "会員ID",
+        "パスワード（保管形式不明）",
+        "契約情報"
+      ],
+      "summary": "「ENEOSでんき」のお客さまページが10月19日夜〜20日朝に不正アクセスを受け、57名の氏名・住所・ログインIDとパスワード・使用量や請求金額などの利用明細が漏えいしたと公表した。銀行口座とクレジットカード情報は含まれない。マイページと新規申込を停止した。",
+      "sources": [
+        {
+          "title": "ENEOS Power お知らせ",
+          "url": "https://www.eneos-power.co.jp/denkigas/information/uploads/denki-important-20261028-394.pdf"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC293YO0Z21C26A0000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 9,
+      "reliability": "high"
     },
     {
       "id": "2026-10-hanacupid",
@@ -796,6 +1217,42 @@
       "reliability": "high"
     },
     {
+      "id": "2026-10-payodon-arara",
+      "organization": "株式会社鹿児島銀行・株式会社南日本銀行・鹿児島相互信用金庫・鹿児島信用金庫",
+      "services": [
+        "決済アプリ「Payどん」のメール通知"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-10-28",
+      "affected_count": null,
+      "count_note": "件数は未公表",
+      "cause": "third_party",
+      "root_cause": "メール配信の委託先アララの「アララ メッセージ」のWebサーバーが脆弱性を悪用され、メールアドレスなどが流出した",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス",
+        "利用履歴",
+        "取引先情報"
+      ],
+      "summary": "鹿児島の決済アプリ「Payどん」のメール通知を委託していたアララのサービスが不正アクセスを受け、利用者と加盟店のメールアドレス、決済日時・店舗名・支払金額が漏えいした可能性があると公表した。メール通知と新規登録を停止し、プレミアム付商品券の発売を延期した。決済への影響はない。",
+      "sources": [
+        {
+          "title": "鹿児島銀行 お知らせ",
+          "url": "https://www.kagin.co.jp/important/emergency_20261029_3.html"
+        },
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261029de67972"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-sony-life",
       "organization": "ソニー生命保険株式会社",
       "group": "ソニーグループ",
@@ -836,6 +1293,46 @@
       "severity": "high",
       "disclosure_days": 1,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-subway-dirigio",
+      "organization": "WATAMI FAST CASUAL MANAGEMENT",
+      "services": [
+        "SUBWAY公式モバイルオーダー"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_occurred": "2026-10-27",
+      "date_announced": "2026-10-28",
+      "affected_count": 7,
+      "count_note": "3店舗の注文7件・7名",
+      "cause": "third_party",
+      "root_cause": "モバイルオーダー基盤「PICKS」を提供するDIRIGIOのAPIが不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社DIRIGIO"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "生年月日",
+        "性別",
+        "購入履歴"
+      ],
+      "summary": "モバイルオーダー基盤「PICKS」を提供するDIRIGIOのAPIが不正アクセスを受け、3店舗の注文7件・7名の氏名・メールアドレス・電話番号・生年月日・性別・注文内容が流出した可能性があると公表した。カード情報は含まれない。10月27日に検知し、モバイルオーダーを停止した。",
+      "sources": [
+        {
+          "title": "サブウェイ お知らせ",
+          "url": "https://subway.co.jp/news/bhi2h9kf00mf/"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC297O60Z21C26A0000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 1,
+      "reliability": "high"
     },
     {
       "id": "2026-10-tbs-shopping",
@@ -1416,6 +1913,45 @@
       "reliability": "high"
     },
     {
+      "id": "2026-10-gunosy",
+      "organization": "株式会社Gunosy",
+      "services": [
+        "社内業務用アカウント（クラウド環境・業務ツール）"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-10-21",
+      "date_announced": "2026-10-26",
+      "affected_count": 132,
+      "count_note": "取引先担当者25名、役員・従業員・退職者など107名",
+      "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "root_cause": "不正に入手された社内業務用アカウントのIDとパスワードでログインされた",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "取引先情報",
+        "従業員情報",
+        "メッセージ・チャット履歴"
+      ],
+      "summary": "不正に入手された社内業務用アカウントのIDとパスワードでクラウド環境や業務ツールにログインされ、取引先担当者25名の氏名・メールアドレス・署名欄の会社名や連絡先とメール本文の一部、役員・従業員・退職者など107名の業務ツールの利用者情報が流出したと公表した。10月21日に監視システムで検知した。「グノシー」などのサービス利用者の情報の流出は確認されていない。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/30/56634.html"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/gunosy-business-account-unauthorized-access-132/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 5,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-hiroshima-boe-living",
       "organization": "広島県教育委員会",
       "org_type": "local_gov",
@@ -1648,17 +2184,17 @@
       "id": "2026-10-yakult",
       "organization": "株式会社ヤクルト本社",
       "services": [
-        "公式ホームページ"
+        "公式ホームページ",
+        "給食サイト「たのしい給食」",
+        "問い合わせフォーム"
       ],
       "industry": "食品",
       "country": "JP",
-      "status": "investigating",
-      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
       "date_announced": "2026-10-26",
-      "affected_count": null,
-      "count_note": "顧客情報への影響は調査中",
+      "affected_count": 40000,
+      "count_note": "約4万件（暫定。最終件数と対象期間は精査中）",
       "cause": "unauthorized_access",
-      "summary": "公式ホームページへの不正アクセスを確認し、10月26日夜から公式サイトを緊急メンテナンスとして停止した。顧客情報への影響は調査中としている。",
+      "summary": "公式ホームページへの不正アクセスを確認し、10月26日夜から公式サイトを緊急メンテナンスとして停止した。顧客情報への影響は調査中としている。10月30日の第2報で、問い合わせフォームの利用者、給食サイト「たのしい給食」の会員、報道関係者向けフォームの利用者、対応した社員の約4万件の氏名・住所・電話番号・メールアドレス・問い合わせ内容などが漏えいしたと公表した。会員は暗号化された登録パスワードも含む。クレジットカード・口座情報は預かっていない。",
       "sources": [
         {
           "title": "日本経済新聞",
@@ -1667,9 +2203,23 @@
         {
           "title": "アスキー",
           "url": "https://ascii.jp/elem/000/004/446/4446256/"
+        },
+        {
+          "title": "ITmedia NEWS（第2報）",
+          "url": "https://www.itmedia.co.jp/news/article/2610/30/2000002739/"
         }
       ],
-      "severity": null,
+      "root_cause": "公式サイトが不正アクセスを受けた（侵入経路は未公表）",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "問い合わせ内容",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "従業員情報"
+      ],
+      "severity": "high",
       "disclosure_days": null,
       "reliability": "mid"
     },
@@ -1899,8 +2449,8 @@
       "country": "JP",
       "date_occurred": "2026-10-19",
       "date_announced": "2026-10-23",
-      "affected_count": null,
-      "count_note": "件数は非公表",
+      "affected_count": 402466,
+      "count_note": "過去に登録されたカード情報（下4桁・有効期限）約402,466件（名寄せ後）。うち約2,800名は決済ページの改ざんでカード番号全桁・セキュリティコードも対象。10月22日の一定期間の注文者7,673名は氏名・住所なども対象。いずれも可能性",
       "cause": "vulnerability",
       "root_cause": "公式ショップのシステムの脆弱性を突かれ、管理情報を複数回不正に閲覧された",
       "vuln_target": "web_app",
@@ -1910,9 +2460,11 @@
         "電話番号",
         "メールアドレス",
         "購入履歴",
-        "クレジットカード情報（番号の一部・有効期限等）"
+        "クレジットカード情報（番号の一部・有効期限等）",
+        "クレジットカード番号",
+        "クレジットカードのセキュリティコード"
       ],
-      "summary": "フィギュアメーカーの公式オンラインショップのシステムの脆弱性を突かれ、10月19日〜22日に管理情報が複数回不正に閲覧されたと公表した。会員の氏名・住所・電話番号・メールアドレス、注文日・商品名・金額・配送先・決済方法、クレジットカードのブランド・番号の下4桁・有効期限が閲覧された可能性がある。カード名義、下4桁以外の番号、セキュリティコードは含まれない。公式ショップは閉鎖し、再開は未定。",
+      "summary": "フィギュアメーカーの公式オンラインショップのシステムの脆弱性を突かれ、10月19日〜22日に管理情報が複数回不正に閲覧されたと公表した。会員の氏名・住所・電話番号・メールアドレス、注文日・商品名・金額・配送先・決済方法、クレジットカードのブランド・番号の下4桁・有効期限が閲覧された可能性がある。カード名義、下4桁以外の番号、セキュリティコードは含まれない。公式ショップは閉鎖し、再開は未定。10月29日の第3報で、管理者権限を取得されて決済ページに不正なプログラムが置かれ、10月21日〜23日にカード情報を入力した約2,800名のカード番号全桁・有効期限・セキュリティコードが漏えいした可能性があると公表した。過去に登録されたカード約402,466件の下4桁と有効期限、10月22日の注文者7,673名の氏名・住所・電話番号・メールアドレス・注文内容も漏えいした可能性がある。",
       "sources": [
         {
           "title": "ITmedia NEWS",
@@ -1921,9 +2473,17 @@
         {
           "title": "電ファミニコゲーマー",
           "url": "https://news.denfaminicogamer.jp/news/2610233k"
+        },
+        {
+          "title": "アスキー（第3報）",
+          "url": "https://ascii.jp/elem/000/004/446/4446932/"
+        },
+        {
+          "title": "NHK（第3報）",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261029de67768"
         }
       ],
-      "severity": "high",
+      "severity": "critical",
       "disclosure_days": 4,
       "reliability": "mid"
     },
@@ -4266,6 +4826,52 @@
       ],
       "severity": "medium",
       "disclosure_days": 5,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-linkstation-gettiis",
+      "organization": "株式会社リンクステーション",
+      "services": [
+        "チケット販売サービス「GETTIIS」",
+        "Gettii-Lite"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-10-18",
+      "date_announced": "2026-10-19",
+      "affected_count": 317971,
+      "count_note": "会員ID 317,971件（項目別の最大値。ハッシュ化パスワード311,451件、メールアドレス311,426件、氏名309,759件、カード関連29,515件で重複あり）",
+      "cause": "vulnerability",
+      "vuln_target": "web_app",
+      "root_cause": "主催者向けサービス「Gettii-Lite」のプログラムの脆弱性を悪用された",
+      "data_types": [
+        "会員ID",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "メールアドレス",
+        "氏名",
+        "クレジットカード情報（番号の一部・有効期限等）",
+        "電話番号",
+        "郵便番号",
+        "性別",
+        "生年月日"
+      ],
+      "summary": "チケット販売サービス「GETTIIS」で、主催者向けサービス「Gettii-Lite」のプログラムの脆弱性を悪用され、会員317,971件の会員ID、ハッシュ化パスワード、メールアドレス、氏名、電話番号、生年月日などが流出したと公表した。29,515件はクレジットカード番号の先頭・末尾4桁や名義・有効期限（暗号化済み）も含む。10月18日未明に不審なアクセスを確認した。不正利用は確認されていない。",
+      "sources": [
+        {
+          "title": "東奥日報",
+          "url": "https://www.toonippo.co.jp/articles/-/2387825"
+        },
+        {
+          "title": "青森放送",
+          "url": "https://news.yahoo.co.jp/articles/d661dd2ce683b67677feb26ce278c6da97e5103a"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/30/56631.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 1,
       "reliability": "mid"
     },
     {
@@ -12287,6 +12893,49 @@
       "severity": "critical",
       "disclosure_days": null,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-09-saga-u",
+      "organization": "国立大学法人佐賀大学",
+      "services": [
+        "事務部門のNAS",
+        "医学部附属病院"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "org_type": "university",
+      "prefecture": "佐賀県",
+      "date_occurred": "2026-09-24",
+      "date_announced": "2026-09-28",
+      "affected_count": 80000,
+      "count_note": "学生・教職員ら約8万人分。附属病院の患者の人数は調査中",
+      "cause": "ransomware",
+      "root_cause": "事務部門のNASがランサムウェアの被害を受けた（侵入経路は未公表）",
+      "data_types": [
+        "氏名",
+        "住所",
+        "メールアドレス",
+        "パスワード（保管形式不明）",
+        "健康・医療情報"
+      ],
+      "summary": "9月24日に事務部門のNASでランサムウェアの被害を確認し、28日に公表した。10月30日に、学生・教職員ら約8万人分の氏名・住所・メールアドレス・パスワードなどと、附属病院の患者の診療科・傷病名・受診日などが流出した可能性があると公表した。脅迫文があり、県警に相談した。",
+      "sources": [
+        {
+          "title": "佐賀大学 お知らせ",
+          "url": "https://www.saga-u.ac.jp/koho/press/2026092841520"
+        },
+        {
+          "title": "佐賀大学医学部附属病院 お知らせ",
+          "url": "https://www.hospital.med.saga-u.ac.jp/ransomware/"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOCC302V40Q6A031C2000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 4,
+      "reliability": "high"
     },
     {
       "id": "2026-09-shueisha",
