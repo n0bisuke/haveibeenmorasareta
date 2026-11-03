@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-03T03:31:34.000Z",
-  "count": 709,
+  "generated_at": "2026-11-03T09:54:13.000Z",
+  "count": 714,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,106 @@
   ],
   "breaches": [
     {
+      "id": "2026-11-akita-pref-shibata",
+      "organization": "秋田県",
+      "services": [
+        "県発注の測量など公共工事関連業務"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "秋田県",
+      "date_occurred": "2026-09-20",
+      "date_announced": "2026-11-03",
+      "affected_count": 956,
+      "count_note": "県が発注した53契約の956件",
+      "cause": "third_party",
+      "root_cause": "業務委託先の建設コンサルタント会社の社内サーバーが不正アクセスを受けた（原因は未公表）",
+      "vendor": {
+        "name": "柴田工事調査"
+      },
+      "summary": "測量などを委託していた建設コンサルタント会社の社内サーバーが9月20日未明に不正アクセスを受け、県の農林部や建設部などが発注した53契約に関する956件の個人情報が漏えいした恐れがあると公表した。委託先から県への報告は約1か月後の10月23日だった。侵入経路は分かっていない。",
+      "sources": [
+        {
+          "title": "秋田朝日放送",
+          "url": "https://news.yahoo.co.jp/articles/30cfddf0280a850caee91da679ee9ba856914675"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 44,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-himeji-city-online",
+      "organization": "兵庫県姫路市",
+      "services": [
+        "姫路市オンライン手続ポータルサイト"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "兵庫県",
+      "date_announced": "2026-11-03",
+      "affected_count": null,
+      "count_note": "件数は未公表",
+      "cause": "third_party",
+      "root_cause": "オンライン手続サイトが使う外部のメール配信サービスが不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "オンライン手続ポータルサイトが使う外部のメール配信サービスが不正アクセスを受け、登録者の氏名やメールアドレスなどが漏えいした可能性があると公表した。フィッシングメールへの注意を呼びかけている。",
+      "sources": [
+        {
+          "title": "神戸新聞",
+          "url": "https://www.kobe-np.co.jp/news/society/202611/0020995366.shtml"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-yokohama-city-e-shinsei",
+      "organization": "神奈川県横浜市",
+      "services": [
+        "横浜市電子申請・届出システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "神奈川県",
+      "date_announced": "2026-11-03",
+      "affected_count": 820000,
+      "count_note": "約82万件",
+      "cause": "third_party",
+      "root_cause": "システム内のメール送信サービスを提供するアララが第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "住民票やマイナンバー関連の手続きなどをオンラインで受け付ける「電子申請・届出システム」で、メール送信サービスを提供するアララへの不正アクセスにより、登録された利用者名やメールアドレスなど約82万件が漏えいした可能性があると公表した。市は総務省の手引書に基づき適切に業務委託していたとしている。",
+      "sources": [
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261103de70016"
+        },
+        {
+          "title": "TBS NEWS DIG",
+          "url": "https://news.infoseek.co.jp/article/tbs_3057984/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-11-daily-umasaburo",
       "organization": "株式会社ネットドリーマーズ",
       "services": [
@@ -501,6 +601,70 @@
       ],
       "severity": "critical",
       "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-fukui-shimbun-passport",
+      "organization": "株式会社福井新聞社",
+      "services": [
+        "福井新聞パスポート"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2026-11-02",
+      "affected_count": 11084,
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「アララメッセージ」を提供するアララが不正アクセスを受け、データが持ち出された",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "委託先システム会社が使うアララのメール配信サービスが不正アクセスを受け、「福井新聞パスポート」の一部会員のメールアドレス11,084件が漏えいしたと公表した。氏名・住所・生年月日・クレジットカード情報・電話番号・口座番号・パスワードは含まれない。",
+      "sources": [
+        {
+          "title": "福井新聞 おわびとお知らせ",
+          "url": "https://www.fukuishimbun.co.jp/articles/-/2737551"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-hokuriku-electric-hokulink",
+      "organization": "北陸電力株式会社",
+      "services": [
+        "ほくリンク"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_occurred": "2026-10-28",
+      "date_announced": "2026-11-02",
+      "affected_count": 550000,
+      "count_note": "約55万件",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「アララメッセージ」を提供するアララが不正アクセスを受け、データが持ち出された",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "会員サービス「ほくリンク」のメール配信を委託した業者が使うアララのサーバーが10月28日〜31日に不正アクセスを受け、会員のメールアドレス約55万件が外部に流出したと公表した。氏名・住所・電話番号・クレジットカード番号などの流出は確認されていない。ほくリンクのメール配信を停止した。",
+      "sources": [
+        {
+          "title": "北日本新聞",
+          "url": "https://webun.jp/articles/-/1122098"
+        },
+        {
+          "title": "中日新聞",
+          "url": "https://www.chunichi.co.jp/article/1334063"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 5,
       "reliability": "mid"
     },
     {
