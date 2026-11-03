@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-02T09:44:34.000Z",
-  "count": 681,
+  "generated_at": "2026-11-03T03:31:34.000Z",
+  "count": 709,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,694 @@
   ],
   "breaches": [
     {
+      "id": "2026-11-daily-umasaburo",
+      "organization": "株式会社ネットドリーマーズ",
+      "services": [
+        "競馬新聞デイリー馬三郎（ネット版）"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2026-11-02",
+      "affected_count": 152500,
+      "count_note": "最大約15万2,500件",
+      "cause": "unauthorized_access",
+      "root_cause": "ネット版の会員システムが第三者の不正アクセスを受けた（侵入経路は未公表）",
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "メールアドレス",
+        "パスワード（保管形式不明）",
+        "契約情報",
+        "口座番号"
+      ],
+      "summary": "ネット版「競馬新聞デイリー馬三郎」が第三者の不正アクセスを受け、最大約15万2,500件の氏名・生年月日・メールアドレス・パスワード・契約や課金の履歴、口座振替利用者の口座番号・支店番号が漏えいしたおそれがあると公表した。全会員のパスワードをリセットした。クレジットカード情報は保有していない。",
+      "sources": [
+        {
+          "title": "神戸新聞",
+          "url": "https://www.kobe-np.co.jp/news/information/202611/0020993863.shtml"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/daily-umasaburo-netdreamers-152500-data-leak-risk-20261102/"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-istyle-cosme",
+      "organization": "株式会社アイスタイル",
+      "services": [
+        "@cosme（@cosme共通ID）"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-10-28",
+      "date_announced": "2026-11-02",
+      "affected_count": 3000000,
+      "count_note": "約300万人（不正アクセス時点の会員。その後の退会者を含む）",
+      "cause": "unauthorized_access",
+      "root_cause": "会員情報が第三者の不正アクセスを受けた（原因は調査中）",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "生年月日",
+        "性別",
+        "健康・医療情報"
+      ],
+      "summary": "「@cosme共通ID」に登録された会員約300万人の氏名・住所・電話番号・メールアドレス・生年月日・性別・肌質・髪質が、第三者の不正アクセスにより外部に漏えいしたと公表した。10月28日に確認した。パスワードとクレジットカード情報は含まれない。対象者には11月6日までに個別に連絡する。",
+      "sources": [
+        {
+          "title": "アイスタイル お知らせ",
+          "url": "https://www.istyle.co.jp/news/info/2026/11/1102.html"
+        },
+        {
+          "title": "@cosme お知らせ",
+          "url": "https://www.cosme.net/help/info/id/17117"
+        },
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261102de69567"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 5,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-kumamoto-pref-kumamon-ar",
+      "organization": "熊本県",
+      "services": [
+        "ARスタンプラリー「くまモンテクテク」（2025年1〜3月）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "熊本県",
+      "date_announced": "2026-11-02",
+      "affected_count": 478,
+      "cause": "third_party",
+      "root_cause": "委託先JTBパブリッシングの再委託先palanが消去すべきデータを保持し、そこが不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社palan"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "2025年1〜3月に実施したARスタンプラリーで、委託先JTBパブリッシングから再委託されたpalanが契約で消去すべきデータを保持したままにしており、そこへの不正アクセスで参加者478人のメールアドレス・年代・居住地などが漏えいしたと公表した。二次被害は確認されていない。同じpalanの事案は熊本市や岐阜県も公表している。",
+      "sources": [
+        {
+          "title": "KKT熊本県民テレビ",
+          "url": "https://news.yahoo.co.jp/articles/1e84256b8f77921faaf8ebdb5ab877cd5ad41ad4"
+        },
+        {
+          "title": "KAB熊本朝日放送",
+          "url": "https://news.yahoo.co.jp/articles/600dbdb220eb157d3a6ffcfda65e6029ef298e68"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-m-league",
+      "organization": "Mリーグ機構",
+      "services": [
+        "Mリーグ公式オンラインショップ",
+        "Mリーグ公式サイト会員"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-10-29",
+      "date_announced": "2026-11-02",
+      "affected_count": 9502,
+      "count_note": "ショップ9,497件と会員サイト5件（2019年10月〜2026年10月29日の利用者）。ほかに注文履歴13,922件",
+      "cause": "unauthorized_access",
+      "root_cause": "公式サイト・オンラインショップのサーバーが攻撃を受けた（侵入経路は未公表）",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "会員ID",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "購入履歴"
+      ],
+      "summary": "公式サイトとオンラインショップが10月29日夜に攻撃を受け、2019年10月以降の利用者9,502人の氏名・住所・電話番号・メールアドレス・ログインID・パスワードのハッシュ値と注文履歴13,922件が漏えいしたと公表した。クレジットカード情報は対象外。サーバーを停止し、別環境で再構築する。",
+      "sources": [
+        {
+          "title": "Mリーグ お知らせ",
+          "url": "https://m-league.jp/news/article/?id=article-8d1eb109-c366-444e-8525-c30a6e9ec8ff"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mleague-official-shop-9502-data-breach-personal-risks-20261102/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 4,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-marui-securitize",
+      "organization": "株式会社丸井グループ",
+      "services": [
+        "デジタル社債"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-10-29",
+      "date_announced": "2026-11-02",
+      "affected_count": 9086,
+      "count_note": "最大9,086人（デジタル社債の応募者）。うち54人は銀行口座番号も対象の可能性",
+      "cause": "third_party",
+      "root_cause": "委託先Securitize JapanのSaaSが認証機能の脆弱性を悪用され、管理者権限で情報を持ち出された",
+      "vendor": {
+        "name": "Securitize Japan株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "生年月日",
+        "性別",
+        "口座番号"
+      ],
+      "summary": "デジタル社債の業務委託先Securitize Japanのサーバーが不正アクセスを受け、応募者最大9,086人の氏名・住所・電話番号・メールアドレス・生年月日・性別などが漏えいした可能性があると公表した。うち54人分は銀行口座番号を含む可能性がある。自社システムからの漏えいと二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "丸井グループ ニュースリリース",
+          "url": "https://www.0101maruigroup.co.jp/nr/o-20-0zfdye"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC028RZ0S6A101C2000000/"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 4,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-mizkan-sagawa",
+      "organization": "株式会社Mizkan",
+      "services": [
+        "景品・商品の発送"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2026-11-02",
+      "affected_count": null,
+      "count_note": "件数・範囲は調査中",
+      "cause": "third_party",
+      "root_cause": "発送を委託していた佐川急便の「お荷物問い合わせサービス」が不正アクセスを受けた",
+      "vendor": {
+        "name": "佐川急便株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号"
+      ],
+      "summary": "景品や商品の発送を委託していた佐川急便のシステムへの不正アクセスにより、顧客の個人情報が漏えいした可能性があると公表した。件数と範囲は調査中。",
+      "sources": [
+        {
+          "title": "時事通信",
+          "url": "https://sp.m.jiji.com/article/show/3903214?free=1"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-netmile",
+      "organization": "株式会社ウィルズ",
+      "services": [
+        "ネットマイル"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-11-02",
+      "affected_count": 5490000,
+      "count_note": "最大約549万人（退会者を含む）",
+      "cause": "unauthorized_access",
+      "root_cause": "ポイント交換サービス「ネットマイル」のシステム環境が第三者の不正アクセスを受けた",
+      "summary": "ポイント交換サービス「ネットマイル」のシステム環境が第三者の不正アクセスを受け、退会者を含む最大約549万人分の個人情報が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261102de69784"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-nojima",
+      "organization": "株式会社ノジマ",
+      "services": [
+        "ノジマオンライン",
+        "中古スマホ買取サイト"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-11-01",
+      "date_announced": "2026-11-02",
+      "affected_count": 7000000,
+      "count_note": "約700万件（退会者は含まない）",
+      "cause": "unauthorized_access",
+      "root_cause": "「ノジマオンライン」の会員管理システムが第三者の不正アクセスを受けた（侵入経路は未公表）",
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "性別",
+        "郵便番号",
+        "住所",
+        "電話番号",
+        "会員ID",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "メールアドレス"
+      ],
+      "summary": "「ノジマオンライン」の会員管理システムへの不正アクセスを11月1日に検知し、通販サイトと中古スマホ買取サイトの会員約700万件の氏名・生年月日・性別・住所・電話番号・ログインID・暗号化されたパスワード・メールアドレスが外部に流出したと公表した。クレジットカード情報は保持していない。2サイトを休止した。",
+      "sources": [
+        {
+          "title": "ノジマ お知らせ",
+          "url": "https://www.nojima.co.jp/wp-content/uploads/2026/11/fa47750556e505f2ddb83dc080a6420f.pdf"
+        },
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261102de69780"
+        },
+        {
+          "title": "GAME Watch",
+          "url": "https://game.watch.impress.co.jp/docs/news/2153243.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 1,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-osaka-gas-fitdish",
+      "organization": "大阪ガス株式会社",
+      "services": [
+        "FitDish（フィットディッシュ）"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_announced": "2026-11-02",
+      "affected_count": 34489,
+      "count_note": "10月8日〜29日にFitDishから配信したメールアドレス",
+      "cause": "third_party",
+      "root_cause": "メール配信の委託先アララの「アララメッセージ」が不正アクセスを受け、データが持ち出された",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "おかずの定期便「FitDish」のメール配信を委託していたアララが不正アクセスを受け、10月8日〜29日に配信したメールアドレス34,489件が流出したと公表した。氏名・住所・電話番号・カード情報・購買データは含まれない。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF029DM0S6A101C2000000/"
+        },
+        {
+          "title": "東京新聞",
+          "url": "https://www.tokyo-np.co.jp/article/525650"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-prestige-international",
+      "organization": "株式会社プレステージ・インターナショナル",
+      "services": [
+        "ロードサービス業務の業務システム"
+      ],
+      "industry": "生活サービス",
+      "country": "JP",
+      "date_occurred": "2026-10-29",
+      "date_announced": "2026-11-02",
+      "affected_count": 5500000,
+      "count_note": "最大約550万件（重複を含む。実人数は精査中）",
+      "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "root_cause": "不正利用された認証情報でグループの業務システムに侵入された",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "車両情報",
+        "口座番号"
+      ],
+      "summary": "取引先企業から受託しているロードサービス業務の業務システムが不正アクセスを受け、顧客最大約550万件の氏名・住所・電話番号・メールアドレス・車両登録番号・車台番号・事故や故障の受付情報、一部の金融機関口座情報が外部に持ち出されたと公表した。10月29日に検知し、認証情報を無効化したがアクセスが続いたため30日にシステムを停止した。クレジットカード情報の漏えいは確認されていない。",
+      "sources": [
+        {
+          "title": "プレステージ・インターナショナル 適時開示",
+          "url": "https://www.release.tdnet.info/inbs/140120261102563007.pdf"
+        },
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261102de69807"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC02A8X0S6A101C2000000/"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 4,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-shimane-boe-kodai-tour",
+      "organization": "島根県教育委員会",
+      "services": [
+        "古代文化探訪ツアー"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "島根県",
+      "date_announced": "2026-11-02",
+      "affected_count": 150,
+      "cause": "third_party",
+      "root_cause": "バスツアーの委託事業者が不正アクセスを受けた（委託先名は未確認）",
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "石見地域を巡る古代文化探訪バスツアーの委託事業者が不正アクセスを受け、過去のツアーを含む応募者150人分の個人情報が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "山陰中央新報",
+          "url": "https://www.sanin-chuo.co.jp/articles/-/1108936"
+        },
+        {
+          "title": "中国新聞",
+          "url": "https://www.chugoku-np.co.jp/articles/-/918704"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-shimane-furusato-chokusobin",
+      "organization": "島根県物産協会",
+      "services": [
+        "しまねのふるさと直送便"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-08-13",
+      "date_announced": "2026-11-02",
+      "affected_count": 7,
+      "count_note": "8月13日〜15日に購入手続きをした7人",
+      "cause": "third_party",
+      "root_cause": "ECサイト運営の委託先がサイバー攻撃を受けた（委託先名は未確認）",
+      "data_types": [
+        "クレジットカード番号",
+        "クレジットカードのセキュリティコード"
+      ],
+      "summary": "ECサイト「しまねのふるさと直送便」の運営委託先がサイバー攻撃を受け、8月13日〜15日に購入手続きをした7人のクレジットカード番号・セキュリティコードなどが漏えいした疑いがあると島根県が公表した。利用者への連絡は約2か月遅れた。",
+      "sources": [
+        {
+          "title": "山陰中央新報",
+          "url": "https://www.sanin-chuo.co.jp/articles/-/1108937"
+        },
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a0e5dca24e5a4e0ad8529c4f4dce1f225afb6a4a"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 81,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-suntory",
+      "organization": "サントリーホールディングス株式会社・サントリービバレッジ＆フード株式会社",
+      "group": "サントリーグループ",
+      "services": [
+        "グループで利用する外部クラウドサービス"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_occurred": "2026-10-28",
+      "date_announced": "2026-11-02",
+      "affected_count": 100000,
+      "count_note": "約10万人（グループ従業員やパートナー企業の従業員約9万人、2026年新卒採用の応募者、企業活動体験プログラムの登録者）",
+      "cause": "unauthorized_access",
+      "root_cause": "グループが利用する外部クラウドサービスが不正アクセスを受けた（攻撃者は未特定）",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "従業員情報"
+      ],
+      "summary": "グループが利用する外部クラウドサービスへの不正アクセスを10月28日に検知し、グループ従業員やパートナー企業の従業員約9万人の氏名・メールアドレス、2026年新卒採用の応募者の氏名・メールアドレス・電話番号、企業活動体験プログラムの登録者のメールアドレスなど約10万人分が漏えいしたと公表した。決済情報は含まれず、二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "サントリー お知らせ",
+          "url": "https://www.suntory.co.jp/note/detail/261102_008203.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC0254H0S6A101C2000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 5,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-valuegolf",
+      "organization": "株式会社バリューゴルフ",
+      "services": [
+        "1人予約ランド"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-11-01",
+      "date_announced": "2026-11-02",
+      "affected_count": null,
+      "count_note": "件数は未公表",
+      "cause": "unauthorized_access",
+      "root_cause": "ゴルフ場予約サービスが第三者の不正アクセスを受けた（原因の詳細は未公表）",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "ゴルフ場予約サービス「1人予約ランド」で11月1日に不正アクセスの痕跡を見つけ、ログイン用のメールアドレスが閲覧・取得された可能性があると適時開示した。氏名などは含まれない。経路を遮断し、不備を修正した。",
+      "sources": [
+        {
+          "title": "バリューゴルフ 適時開示",
+          "url": "https://www.release.tdnet.info/inbs/140120261102563148.pdf"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 1,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-club-tourism",
+      "organization": "クラブツーリズム株式会社",
+      "services": [
+        "ネット予約システムの会員情報"
+      ],
+      "industry": "旅行",
+      "country": "JP",
+      "date_occurred": "2026-10-30",
+      "date_announced": "2026-10-31",
+      "affected_count": 4320000,
+      "count_note": "最大約432万件",
+      "cause": "unauthorized_access",
+      "root_cause": "ネット予約システムのサーバーが外部から不正アクセスを受けた（手口は未公表）",
+      "data_types": [
+        "氏名",
+        "性別",
+        "生年月日",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "会員ID"
+      ],
+      "summary": "ネット予約システムのサーバーが10月30日早朝に不正アクセスを受け、登録会員最大約432万件の氏名・国籍・性別・生年月日・住所・電話番号・メールアドレス・会員ID・緊急連絡先が流出した可能性があると公表した。パスポート情報、ログインパスワード、クレジットカード情報、口座番号は含まれない。サーバーを隔離し、サイトを停止した。",
+      "sources": [
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261031de69034"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2611/02/2000002782/"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC0106W0R01C26A1000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 1,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-10-jr-west-securitize",
+      "organization": "西日本旅客鉄道株式会社",
+      "services": [
+        "社債購入者向け特典"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_announced": "2026-10-31",
+      "affected_count": 2,
+      "cause": "third_party",
+      "root_cause": "NTTデータの委託先Securitize Japanのプラットフォームが不正アクセスを受けた",
+      "vendor": {
+        "name": "Securitize Japan株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "住所"
+      ],
+      "summary": "社債購入者向けの特典付与に使う外部サービスへの不正アクセスにより、投資家2件の氏名・住所などが漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "JR西日本 プレスリリース",
+          "url": "https://www.westjr.co.jp/press/article/2026/10/31/items/261031_00_press_gaibuservice.pdf"
+        },
+        {
+          "title": "ビジネス＋IT",
+          "url": "https://news.yahoo.co.jp/articles/ae96548beb14f3e1215f9399170bb98ff11eedf3"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-nomura-securitize",
+      "organization": "野村證券株式会社",
+      "services": [
+        "デジタル特典付き社債"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-10-31",
+      "affected_count": null,
+      "count_note": "件数は確認中",
+      "cause": "third_party",
+      "root_cause": "NTTデータの委託先Securitize Japanのプラットフォームが不正アクセスを受けた",
+      "vendor": {
+        "name": "Securitize Japan株式会社"
+      },
+      "summary": "デジタル特典付き社債を購入した一部の顧客について、NTTデータの委託先が提供するプラットフォームへの不正アクセスにより、情報が漏えいした可能性があると公表した。件数と内容は確認中。証券口座番号やパスワードはプラットフォームに保持していない。10月23日公表のi-Portの件とは別の事案。",
+      "sources": [
+        {
+          "title": "野村ホールディングス お知らせ",
+          "url": "https://www.nomuraholdings.com/jp/news/topics/20261031.html"
+        },
+        {
+          "title": "アスキー",
+          "url": "https://ascii.jp/elem/000/004/447/4447736/"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-nttdata-securitize",
+      "organization": "株式会社NTTデータ",
+      "group": "NTTグループ",
+      "services": [
+        "STdirectServices（社債購入者向け特典付与サービス）"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-10-29",
+      "date_announced": "2026-10-31",
+      "affected_count": 2789,
+      "count_note": "社債発行体1社分2,678名と2社分111名の計2,789人（11月2日の第2報）。発行体・金融機関の担当者は調査中",
+      "cause": "third_party",
+      "root_cause": "委託先Securitize JapanのSaaSが認証機能の脆弱性を悪用され、管理者権限で情報を持ち出された",
+      "vendor": {
+        "name": "Securitize Japan株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "資産・取引情報"
+      ],
+      "summary": "社債購入者への特典付与を支援する「STdirectServices」の委託先Securitize JapanのSaaSが不正アクセスを受けたとしてサービスを停止し、11月2日の第2報で社債購入者計2,789人の情報の漏えいを確認したと公表した。近鉄グループホールディングス、JR西日本、丸井グループなどの社債発行体や、楽天証券・野村證券などの販売会社が影響を公表している。",
+      "sources": [
+        {
+          "title": "NTTデータ ニュースリリース（第1報）",
+          "url": "https://www.nttdata.com/global/ja/news/release/2026/103101/"
+        },
+        {
+          "title": "NTTデータ ニュースリリース（第2報）",
+          "url": "https://www.nttdata.com/global/ja/news/release/2026/110200/"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC029OO0S6A101C2000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 2,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-rakuten-sec-securitize",
+      "organization": "楽天証券株式会社",
+      "group": "楽天グループ",
+      "services": [
+        "デジタル特典付き社債"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-10-31",
+      "affected_count": 362,
+      "count_note": "延べ362件（3銘柄の購入者の一部）",
+      "cause": "third_party",
+      "root_cause": "NTTデータの委託先Securitize Japanのプラットフォームが不正アクセスを受けた",
+      "vendor": {
+        "name": "Securitize Japan株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "資産・取引情報"
+      ],
+      "summary": "デジタル特典付き社債3銘柄を購入した一部の顧客について、NTTデータの委託先が提供するプラットフォームへの不正アクセスにより、延べ362件の情報が漏えいした可能性があると公表した。自社システムへの不正アクセスではなく、ID・パスワード・口座情報は含まれない。",
+      "sources": [
+        {
+          "title": "楽天証券 お知らせ",
+          "url": "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2611/02/2000002785/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-dhc",
       "organization": "株式会社ディーエイチシー",
       "services": [
@@ -504,6 +1192,49 @@
       "severity": "high",
       "disclosure_days": 2,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-kddi-lifenet",
+      "organization": "KDDI株式会社・ライフネット生命保険株式会社",
+      "services": [
+        "auの生命ほけん（KDDI連携システム）"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-10-23",
+      "date_announced": "2026-10-30",
+      "affected_count": 22541,
+      "count_note": "最大22,541件（KDDIの顧客。項目の組み合わせで最も多いものは8,434件）",
+      "cause": "vulnerability",
+      "vuln_target": "web_app",
+      "root_cause": "ライフネット生命のKDDI連携システムの一部機能の脆弱性を悪用された",
+      "data_types": [
+        "氏名",
+        "郵便番号",
+        "電話番号",
+        "メールアドレス",
+        "会員ID",
+        "性別",
+        "生年月日"
+      ],
+      "summary": "「auの生命ほけん」を提供するライフネット生命のKDDI連携システムが脆弱性を悪用した不正アクセスを受け、KDDIの顧客最大22,541件の氏名・郵便番号・電話番号・メールアドレス・会員識別子、一部の性別・生年月日が漏えいした可能性があると両社が公表した。パスワード、クレジットカード、口座、本人確認書類、保険契約の情報は含まれない。10月23日に検知し、連携経路を遮断した。",
+      "sources": [
+        {
+          "title": "KDDI 報道発表",
+          "url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf"
+        },
+        {
+          "title": "ライフネット生命 お知らせ",
+          "url": "https://www.lifenet-seimei.co.jp/shared/pdf/202610-30-news.pdf"
+        },
+        {
+          "title": "ITmedia Mobile",
+          "url": "https://www.itmedia.co.jp/mobile/articles/2610/30/news085.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 7,
+      "reliability": "high"
     },
     {
       "id": "2026-10-kumamoto-city-ar-stamprally",
@@ -578,6 +1309,39 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-10-praise-net",
+      "organization": "日本製薬団体連合会・日本製薬工業協会ほか",
+      "services": [
+        "製薬団体の会員向けサイト「PRAISE-NET」のメール配信"
+      ],
+      "industry": "団体・その他",
+      "country": "JP",
+      "date_announced": "2026-10-30",
+      "affected_count": 30750,
+      "cause": "third_party",
+      "root_cause": "メール配信の委託先ユミルリンクの「Cuenote FC」が不正アクセスを受け、配信データが持ち出された",
+      "vendor": {
+        "name": "ユミルリンク株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "製薬4団体が共同で使う会員向けサイト「PRAISE-NET」のメール配信を委託していたユミルリンクの「Cuenote FC」が不正アクセスを受け、メールアドレス3万750件が漏えいしたおそれがあると公表した。氏名・会社名・電話番号・パスワードは含まれない。PRAISE-NET本体への不正アクセスではない。",
+      "sources": [
+        {
+          "title": "PRAISE-NET",
+          "url": "https://www.praise-net.jp/"
+        },
+        {
+          "title": "Mixonline",
+          "url": "https://www.mixonline.jp/tabid55.html?artid=81144"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-ryohin-keikaku-app",
       "organization": "株式会社良品計画",
       "services": [
@@ -611,6 +1375,37 @@
         }
       ],
       "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-tepco-nihon-kotsu",
+      "organization": "東京電力ホールディングス株式会社",
+      "services": [
+        "ハイヤー利用の情報"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_announced": "2026-10-30",
+      "affected_count": null,
+      "count_note": "件数は未公表",
+      "cause": "third_party",
+      "root_cause": "委託先の日本交通の社内システムが不正アクセスを受け、保有ファイルの一部が流出した",
+      "vendor": {
+        "name": "日本交通株式会社"
+      },
+      "data_types": [
+        "従業員情報",
+        "氏名"
+      ],
+      "summary": "ハイヤーなどを委託している日本交通の社内システムへの不正アクセスにより、役員・社員の情報が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "東京電力ホールディングス プレスリリース",
+          "url": "https://www.tepco.co.jp/press/news/2026/pdf/261030j0101.pdf"
+        }
+      ],
+      "severity": "medium",
       "disclosure_days": null,
       "reliability": "high"
     },
@@ -651,6 +1446,44 @@
       "severity": "high",
       "disclosure_days": 13,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-vook",
+      "organization": "株式会社Vook",
+      "services": [
+        "Vook"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-10-14",
+      "date_announced": "2026-10-30",
+      "affected_count": null,
+      "count_note": "件数は調査中",
+      "cause": "vulnerability",
+      "vuln_target": "business_tool",
+      "root_cause": "社内で使っていたデータ分析ツールの脆弱性を悪用され、データベースを閲覧された",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "住所",
+        "生年月日",
+        "取引先情報"
+      ],
+      "summary": "映像クリエイター向けサービス「Vook」で、社内のデータ分析ツールの脆弱性を悪用されてデータベースが不正に閲覧され、会員・問い合わせ者・取引先担当者の氏名・メールアドレス・電話番号・住所・生年月日・勤務先・職歴や学歴の一部などが漏えいした可能性があると公表した。10月14日に不審なアカウントを見つけ、22日に不正アクセスを確認した。ログインパスワードとクレジットカード番号は含まれない。",
+      "sources": [
+        {
+          "title": "Vook お知らせ",
+          "url": "https://vook.co.jp/574"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/vook_data_analytics_tool_unauthorized_access_20261031/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 16,
+      "reliability": "high"
     },
     {
       "id": "2026-10-ana-amadeus",
@@ -860,15 +1693,21 @@
       "industry": "IT・通信",
       "country": "JP",
       "date_announced": "2026-10-28",
-      "affected_count": 3010000,
-      "count_note": "約301万件（環境「bvam001」のエンドユーザーリスト）",
+      "affected_count": 77000000,
+      "count_note": "約7,700万件のメールアドレス（11月2日の第2報。持ち出しのおそれを含み精査中、契約企業最大約380社）。初報は約301万件",
       "cause": "vulnerability",
       "vuln_target": "web_app",
       "root_cause": "メール配信サービスのWebサーバーの脆弱性を悪用され、データが持ち出された",
       "data_types": [
-        "メールアドレス"
+        "メールアドレス",
+        "氏名",
+        "性別",
+        "生年月日",
+        "電話番号",
+        "会員ID",
+        "住所"
       ],
-      "summary": "メール配信サービス「アララ メッセージ」の1つの環境のWebサーバーが脆弱性を悪用した不正アクセスを受け、エンドユーザーのメールアドレス約301万件が流出したと公表した。10月22日から緊急メンテナンスで停止していた。メールアドレス以外の流出は確認されていない。鹿児島の決済アプリ「Payどん」なども利用企業として影響を公表している。",
+      "summary": "メール配信サービス「アララ メッセージ」の1つの環境のWebサーバーが脆弱性を悪用した不正アクセスを受け、エンドユーザーのメールアドレス約301万件が流出したと公表した。10月22日から緊急メンテナンスで停止していた。メールアドレス以外の流出は確認されていない。鹿児島の決済アプリ「Payどん」なども利用企業として影響を公表している。11月2日の第2報で、契約企業向けのサーバー97台への侵入が新たに判明し、最大約380社のメールアドレス約7,700万件と、契約企業が登録した氏名・性別・生年月日・電話番号・会員番号・住所などの持ち出しを確認したと公表した。10月28日〜30日には攻撃者がアララのサーバーからカード会社を装う不審メールを最大約713万通送信し、10月31日に全サービスを停止した。",
       "sources": [
         {
           "title": "アララ お知らせ",
@@ -881,9 +1720,18 @@
         {
           "title": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC29A9Q0Z21C26A0000000/"
+        },
+        {
+          "title": "アララ お知らせ（第2報）",
+          "url": "https://www.arara.com/dcms_media/other/arara_20261102__.pdf"
+        },
+        {
+          "title": "INTERNET Watch（第2報）",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2153174.html"
         }
       ],
-      "severity": "medium",
+      "group": "ペイクラウドホールディングス",
+      "severity": "high",
       "disclosure_days": null,
       "reliability": "high"
     },
@@ -3362,6 +4210,43 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-10-fujicco-campaign",
+      "organization": "フジッコ株式会社",
+      "services": [
+        "キャンペーン応募フォーム（非会員向け）"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_occurred": "2026-10-21",
+      "date_announced": "2026-10-22",
+      "affected_count": 15500,
+      "count_note": "延べ約15,500件（重複応募を含む）",
+      "cause": "third_party",
+      "root_cause": "キャンペーン応募受付の委託先のサーバーが不正アクセスを受けた（委託先名は未確認）",
+      "data_types": [
+        "氏名",
+        "性別",
+        "電話番号",
+        "メールアドレス",
+        "住所",
+        "問い合わせ内容"
+      ],
+      "summary": "「カスピ海ヨーグルト」と「フジッコ大感謝祭」のキャンペーンの非会員向け応募フォームで、応募受付の委託先サーバーが不正アクセスを受け、延べ約15,500件の氏名・年齢・性別・職業・婚姻状況・家族構成・電話番号・メールアドレス・住所・アンケート回答が漏えいした可能性があると公表した。",
+      "sources": [
+        {
+          "title": "フジッコ お知らせ",
+          "url": "https://www.fujicco.co.jp/upload/pr_261022.pdf"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56644.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 1,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-hiroshima-pref-mailmag",
       "country": "JP",
       "cause": "third_party",
@@ -3973,6 +4858,46 @@
       "reliability": "high"
     },
     {
+      "id": "2026-10-pingcap",
+      "organization": "PingCAP株式会社",
+      "services": [
+        "TiDB Cloud"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-09-09",
+      "date_announced": "2026-10-21",
+      "affected_count": 50000,
+      "count_note": "日本国内で最大約5万件",
+      "cause": "unauthorized_access",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "root_cause": "不正に取得されたアカウントの認証情報で社内システムに侵入され、データを複製された",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "取引先情報",
+        "電話番号",
+        "アカウント名",
+        "契約情報"
+      ],
+      "summary": "9月9日〜10月7日（米国時間）に不正に取得された認証情報で社内システムに侵入され、日本国内で最大約5万件の顧客担当者の氏名・メールアドレス・企業名・電話番号、TiDB Cloudのアカウント情報、契約条件などが漏えいしたと公表した。秘密鍵やカード情報、TiDB Cloud本体への侵入は確認されていない。",
+      "sources": [
+        {
+          "title": "PingCAP セキュリティアップデート",
+          "url": "https://pingcap.co.jp/trust-hub/security/security-update-october-2026/"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56640.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 42,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-rakus-light-cloud",
       "organization": "株式会社ラクスライトクラウド",
       "services": [
@@ -4010,6 +4935,41 @@
       ],
       "severity": "medium",
       "disclosure_days": 0,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-sally",
+      "organization": "Sally株式会社",
+      "services": [
+        "ウズ（問い合わせ管理）",
+        "旧Webサイトの問い合わせフォーム"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_announced": "2026-10-21",
+      "affected_count": 948,
+      "count_note": "「ウズ」の問い合わせ544名と旧サイトの問い合わせフォーム404名の合計",
+      "cause": "unauthorized_access",
+      "root_cause": "社員のメールアカウントの不正利用と、サイト制作に使っていたStudioのクラウド環境への不正アクセスの2件",
+      "data_types": [
+        "メールアドレス",
+        "電話番号",
+        "問い合わせ内容",
+        "氏名"
+      ],
+      "summary": "2件の不正アクセスを公表した。社員のメールアカウントが不正利用されて問い合わせ管理システムにログインされ、「ウズ」の問い合わせ544名のメールアドレス・電話番号・問い合わせ内容が漏えいしたおそれがある。また、旧Webサイトの制作に使っていたStudioのクラウド環境への不正アクセスで、問い合わせフォームの404名の氏名・メールアドレス・問い合わせ内容が漏えいしたおそれがある。",
+      "sources": [
+        {
+          "title": "Sally お知らせ",
+          "url": "https://sally-inc.jp/news/2026-10-incident"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56641.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
       "reliability": "high"
     },
     {
@@ -13635,6 +14595,45 @@
       "reliability": "high"
     },
     {
+      "id": "2026-09-gmo-trust-login",
+      "organization": "GMOグローバルサイン株式会社",
+      "group": "GMOインターネットグループ",
+      "services": [
+        "GMOトラスト・ログイン"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-09-16",
+      "affected_count": 45030,
+      "count_note": "2,492社の45,030人（10月30日の第3報）",
+      "cause": "misconfiguration",
+      "root_cause": "ロゴ画像の配信用に公開していたストレージに顧客情報を含むファイルが保存され、約9年間外部から取得できる状態だった",
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "連携サービスID",
+        "従業員情報"
+      ],
+      "summary": "ID管理・シングルサインオンの「GMOトラスト・ログイン」で、ロゴ画像の配信用に公開していたストレージに顧客情報を含む一時ファイルなどが保存され、2017年11月〜2026年9月に外部から取得できる状態だったと9月16日に公表した。10月30日の第3報で、対象を2,492社の45,030人のメールアドレス・氏名・連携サービス名・企業が設定した項目（社員番号・所属など）に広げた。2021年6月以降に第三者が取得したことを確認している。パスワードと決済情報は含まれない。",
+      "sources": [
+        {
+          "title": "GMOトラスト・ログイン お知らせ",
+          "url": "https://news.trustlogin.com/20260916"
+        },
+        {
+          "title": "GMOグローバルサイン お知らせ",
+          "url": "https://info-globalsign.com/news/20261102"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC010ZZ0R01C26A1000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-09-gyazo",
       "organization": "株式会社Helpfeel",
       "services": [
@@ -15516,6 +16515,54 @@
       ],
       "severity": "medium",
       "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-07-nihon-kotsu",
+      "organization": "日本交通株式会社",
+      "services": [
+        "社内システム",
+        "ハイヤーWeb受注・予約管理システム"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2026-07-11",
+      "date_announced": "2026-07-13",
+      "affected_count": 290000,
+      "count_note": "約29万人（採用応募者約10万7,900人、事故等の相手方約7万2,000人、乗務員・職員約6万100人、従業員の家族約3万7,700人、ハイヤー利用者約1万3,100人、取引先担当者約2,100人）",
+      "cause": "unauthorized_access",
+      "root_cause": "社内システムが不正アクセスを受けてマルウェアに感染し、保有ファイルの一部が外部に流出した",
+      "data_types": [
+        "氏名",
+        "住所",
+        "マイナンバー",
+        "健康・医療情報",
+        "運転免許情報",
+        "口座番号",
+        "従業員情報",
+        "取引先情報"
+      ],
+      "summary": "7月11日未明に社内システムへの不正アクセスとマルウェア感染があり、ハイヤーWeb受注や電話によるタクシー配車などを停止したと13日に公表した。8月の第4報で保有ファイルの一部の外部流出を公表し、10月30日の第6報で、採用応募者・事故等の相手方・乗務員や職員・従業員の家族・ハイヤー利用者・取引先担当者の約29万人分の住所などが漏えいした可能性があると公表した。一部にマイナンバー、健康診断結果、運転免許証、銀行口座の情報を含む。タクシーの配車・乗車情報は対象外。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity（初報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/07/15/55706.html"
+        },
+        {
+          "title": "ScanNetSecurity（第4報）",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/09/04/56132.html"
+        },
+        {
+          "title": "NHK（第6報）",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261030de68790"
+        },
+        {
+          "title": "日本経済新聞（第6報）",
+          "url": "https://www.nikkei.com/article/DGXZQOUC30BHD0Q6A031C2000000/"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 2,
       "reliability": "mid"
     },
     {
