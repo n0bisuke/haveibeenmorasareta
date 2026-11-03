@@ -4,14 +4,20 @@ services:
 industry: IT・通信
 country: JP
 date_announced: 2026-10-28
-affected_count: 3010000
-count_note: 約301万件（環境「bvam001」のエンドユーザーリスト）
+affected_count: 77000000
+count_note: 約7,700万件のメールアドレス（11月2日の第2報。持ち出しのおそれを含み精査中、契約企業最大約380社）。初報は約301万件
 cause: vulnerability
 vuln_target: web_app
 root_cause: メール配信サービスのWebサーバーの脆弱性を悪用され、データが持ち出された
 data_types:
   - メールアドレス
-summary: メール配信サービス「アララ メッセージ」の1つの環境のWebサーバーが脆弱性を悪用した不正アクセスを受け、エンドユーザーのメールアドレス約301万件が流出したと公表した。10月22日から緊急メンテナンスで停止していた。メールアドレス以外の流出は確認されていない。鹿児島の決済アプリ「Payどん」なども利用企業として影響を公表している。
+  - 氏名
+  - 性別
+  - 生年月日
+  - 電話番号
+  - 会員ID
+  - 住所
+summary: メール配信サービス「アララ メッセージ」の1つの環境のWebサーバーが脆弱性を悪用した不正アクセスを受け、エンドユーザーのメールアドレス約301万件が流出したと公表した。10月22日から緊急メンテナンスで停止していた。メールアドレス以外の流出は確認されていない。鹿児島の決済アプリ「Payどん」なども利用企業として影響を公表している。11月2日の第2報で、契約企業向けのサーバー97台への侵入が新たに判明し、最大約380社のメールアドレス約7,700万件と、契約企業が登録した氏名・性別・生年月日・電話番号・会員番号・住所などの持ち出しを確認したと公表した。10月28日〜30日には攻撃者がアララのサーバーからカード会社を装う不審メールを最大約713万通送信し、10月31日に全サービスを停止した。
 sources:
   - title: アララ お知らせ
     url: https://www.arara.com/news/info/20261029_arara
@@ -19,3 +25,8 @@ sources:
     url: https://am.arara.com/news/2026102802
   - title: 日本経済新聞
     url: https://www.nikkei.com/article/DGXZQOUC29A9Q0Z21C26A0000000/
+  - title: アララ お知らせ（第2報）
+    url: https://www.arara.com/dcms_media/other/arara_20261102__.pdf
+  - title: INTERNET Watch（第2報）
+    url: https://internet.watch.impress.co.jp/docs/news/2153174.html
+group: ペイクラウドホールディングス

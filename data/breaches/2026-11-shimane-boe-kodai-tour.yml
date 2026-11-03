@@ -1,0 +1,20 @@
+organization: 島根県教育委員会
+services:
+  - 古代文化探訪ツアー
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 島根県
+date_announced: 2026-11-02
+affected_count: 150
+cause: third_party
+root_cause: バスツアーの委託事業者が不正アクセスを受けた（委託先名は未確認）
+data_types:
+  - 氏名
+  - メールアドレス
+summary: 石見地域を巡る古代文化探訪バスツアーの委託事業者が不正アクセスを受け、過去のツアーを含む応募者150人分の個人情報が漏えいした可能性があると公表した。
+sources:
+  - title: 山陰中央新報
+    url: https://www.sanin-chuo.co.jp/articles/-/1108936
+  - title: 中国新聞
+    url: https://www.chugoku-np.co.jp/articles/-/918704

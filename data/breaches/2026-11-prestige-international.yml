@@ -1,0 +1,28 @@
+organization: 株式会社プレステージ・インターナショナル
+services:
+  - ロードサービス業務の業務システム
+industry: 生活サービス
+country: JP
+date_occurred: 2026-10-29
+date_announced: 2026-11-02
+affected_count: 5500000
+count_note: 最大約550万件（重複を含む。実人数は精査中）
+cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
+root_cause: 不正利用された認証情報でグループの業務システムに侵入された
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 車両情報
+  - 口座番号
+summary: 取引先企業から受託しているロードサービス業務の業務システムが不正アクセスを受け、顧客最大約550万件の氏名・住所・電話番号・メールアドレス・車両登録番号・車台番号・事故や故障の受付情報、一部の金融機関口座情報が外部に持ち出されたと公表した。10月29日に検知し、認証情報を無効化したがアクセスが続いたため30日にシステムを停止した。クレジットカード情報の漏えいは確認されていない。
+sources:
+  - title: プレステージ・インターナショナル 適時開示
+    url: https://www.release.tdnet.info/inbs/140120261102563007.pdf
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261102de69807
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC02A8X0S6A101C2000000/

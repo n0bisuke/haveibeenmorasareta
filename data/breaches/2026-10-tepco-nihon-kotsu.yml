@@ -1,0 +1,19 @@
+organization: 東京電力ホールディングス株式会社
+services:
+  - ハイヤー利用の情報
+industry: エネルギー・インフラ
+country: JP
+date_announced: 2026-10-30
+affected_count: null
+count_note: 件数は未公表
+cause: third_party
+root_cause: 委託先の日本交通の社内システムが不正アクセスを受け、保有ファイルの一部が流出した
+vendor:
+  name: 日本交通株式会社
+data_types:
+  - 従業員情報
+  - 氏名
+summary: ハイヤーなどを委託している日本交通の社内システムへの不正アクセスにより、役員・社員の情報が漏えいした可能性があると公表した。
+sources:
+  - title: 東京電力ホールディングス プレスリリース
+    url: https://www.tepco.co.jp/press/news/2026/pdf/261030j0101.pdf

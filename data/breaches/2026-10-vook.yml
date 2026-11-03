@@ -1,0 +1,25 @@
+organization: 株式会社Vook
+services:
+  - Vook
+industry: IT・通信
+country: JP
+date_occurred: 2026-10-14
+date_announced: 2026-10-30
+affected_count: null
+count_note: 件数は調査中
+cause: vulnerability
+vuln_target: business_tool
+root_cause: 社内で使っていたデータ分析ツールの脆弱性を悪用され、データベースを閲覧された
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 住所
+  - 生年月日
+  - 取引先情報
+summary: 映像クリエイター向けサービス「Vook」で、社内のデータ分析ツールの脆弱性を悪用されてデータベースが不正に閲覧され、会員・問い合わせ者・取引先担当者の氏名・メールアドレス・電話番号・住所・生年月日・勤務先・職歴や学歴の一部などが漏えいした可能性があると公表した。10月14日に不審なアカウントを見つけ、22日に不正アクセスを確認した。ログインパスワードとクレジットカード番号は含まれない。
+sources:
+  - title: Vook お知らせ
+    url: https://vook.co.jp/574
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/vook_data_analytics_tool_unauthorized_access_20261031/

@@ -1,0 +1,19 @@
+organization: 日本製薬団体連合会・日本製薬工業協会ほか
+services:
+  - 製薬団体の会員向けサイト「PRAISE-NET」のメール配信
+industry: 団体・その他
+country: JP
+date_announced: 2026-10-30
+affected_count: 30750
+cause: third_party
+root_cause: メール配信の委託先ユミルリンクの「Cuenote FC」が不正アクセスを受け、配信データが持ち出された
+vendor:
+  name: ユミルリンク株式会社
+data_types:
+  - メールアドレス
+summary: 製薬4団体が共同で使う会員向けサイト「PRAISE-NET」のメール配信を委託していたユミルリンクの「Cuenote FC」が不正アクセスを受け、メールアドレス3万750件が漏えいしたおそれがあると公表した。氏名・会社名・電話番号・パスワードは含まれない。PRAISE-NET本体への不正アクセスではない。
+sources:
+  - title: PRAISE-NET
+    url: https://www.praise-net.jp/
+  - title: Mixonline
+    url: https://www.mixonline.jp/tabid55.html?artid=81144

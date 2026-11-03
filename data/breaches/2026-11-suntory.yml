@@ -1,0 +1,23 @@
+organization: サントリーホールディングス株式会社・サントリービバレッジ＆フード株式会社
+group: サントリーグループ
+services:
+  - グループで利用する外部クラウドサービス
+industry: 食品
+country: JP
+date_occurred: 2026-10-28
+date_announced: 2026-11-02
+affected_count: 100000
+count_note: 約10万人（グループ従業員やパートナー企業の従業員約9万人、2026年新卒採用の応募者、企業活動体験プログラムの登録者）
+cause: unauthorized_access
+root_cause: グループが利用する外部クラウドサービスが不正アクセスを受けた（攻撃者は未特定）
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 従業員情報
+summary: グループが利用する外部クラウドサービスへの不正アクセスを10月28日に検知し、グループ従業員やパートナー企業の従業員約9万人の氏名・メールアドレス、2026年新卒採用の応募者の氏名・メールアドレス・電話番号、企業活動体験プログラムの登録者のメールアドレスなど約10万人分が漏えいしたと公表した。決済情報は含まれず、二次被害は確認されていない。
+sources:
+  - title: サントリー お知らせ
+    url: https://www.suntory.co.jp/note/detail/261102_008203.html
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC0254H0S6A101C2000000/

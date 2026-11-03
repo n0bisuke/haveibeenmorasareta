@@ -1,0 +1,21 @@
+organization: 熊本県
+services:
+  - ARスタンプラリー「くまモンテクテク」（2025年1〜3月）
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 熊本県
+date_announced: 2026-11-02
+affected_count: 478
+cause: third_party
+root_cause: 委託先JTBパブリッシングの再委託先palanが消去すべきデータを保持し、そこが不正アクセスを受けた
+vendor:
+  name: 株式会社palan
+data_types:
+  - メールアドレス
+summary: 2025年1〜3月に実施したARスタンプラリーで、委託先JTBパブリッシングから再委託されたpalanが契約で消去すべきデータを保持したままにしており、そこへの不正アクセスで参加者478人のメールアドレス・年代・居住地などが漏えいしたと公表した。二次被害は確認されていない。同じpalanの事案は熊本市や岐阜県も公表している。
+sources:
+  - title: KKT熊本県民テレビ
+    url: https://news.yahoo.co.jp/articles/1e84256b8f77921faaf8ebdb5ab877cd5ad41ad4
+  - title: KAB熊本朝日放送
+    url: https://news.yahoo.co.jp/articles/600dbdb220eb157d3a6ffcfda65e6029ef298e68

@@ -1,0 +1,23 @@
+organization: 楽天証券株式会社
+group: 楽天グループ
+services:
+  - デジタル特典付き社債
+industry: 金融・保険
+country: JP
+date_announced: 2026-10-31
+affected_count: 362
+count_note: 延べ362件（3銘柄の購入者の一部）
+cause: third_party
+root_cause: NTTデータの委託先Securitize Japanのプラットフォームが不正アクセスを受けた
+vendor:
+  name: Securitize Japan株式会社
+data_types:
+  - 氏名
+  - メールアドレス
+  - 資産・取引情報
+summary: デジタル特典付き社債3銘柄を購入した一部の顧客について、NTTデータの委託先が提供するプラットフォームへの不正アクセスにより、延べ362件の情報が漏えいした可能性があると公表した。自社システムへの不正アクセスではなく、ID・パスワード・口座情報は含まれない。
+sources:
+  - title: 楽天証券 お知らせ
+    url: https://www.rakuten-sec.co.jp/web/info/info20261031-01.html
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2611/02/2000002785/

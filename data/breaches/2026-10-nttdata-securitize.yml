@@ -1,0 +1,26 @@
+organization: 株式会社NTTデータ
+group: NTTグループ
+services:
+  - STdirectServices（社債購入者向け特典付与サービス）
+industry: IT・通信
+country: JP
+date_occurred: 2026-10-29
+date_announced: 2026-10-31
+affected_count: 2789
+count_note: 社債発行体1社分2,678名と2社分111名の計2,789人（11月2日の第2報）。発行体・金融機関の担当者は調査中
+cause: third_party
+root_cause: 委託先Securitize JapanのSaaSが認証機能の脆弱性を悪用され、管理者権限で情報を持ち出された
+vendor:
+  name: Securitize Japan株式会社
+data_types:
+  - 氏名
+  - メールアドレス
+  - 資産・取引情報
+summary: 社債購入者への特典付与を支援する「STdirectServices」の委託先Securitize JapanのSaaSが不正アクセスを受けたとしてサービスを停止し、11月2日の第2報で社債購入者計2,789人の情報の漏えいを確認したと公表した。近鉄グループホールディングス、JR西日本、丸井グループなどの社債発行体や、楽天証券・野村證券などの販売会社が影響を公表している。
+sources:
+  - title: NTTデータ ニュースリリース（第1報）
+    url: https://www.nttdata.com/global/ja/news/release/2026/103101/
+  - title: NTTデータ ニュースリリース（第2報）
+    url: https://www.nttdata.com/global/ja/news/release/2026/110200/
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC029OO0S6A101C2000000/
