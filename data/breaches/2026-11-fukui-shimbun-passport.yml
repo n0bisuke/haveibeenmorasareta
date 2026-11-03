@@ -1,0 +1,17 @@
+organization: 株式会社福井新聞社
+services:
+  - 福井新聞パスポート
+industry: メディア・出版
+country: JP
+date_announced: 2026-11-02
+affected_count: 11084
+cause: third_party
+root_cause: メール配信サービス「アララメッセージ」を提供するアララが不正アクセスを受け、データが持ち出された
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: 委託先システム会社が使うアララのメール配信サービスが不正アクセスを受け、「福井新聞パスポート」の一部会員のメールアドレス11,084件が漏えいしたと公表した。氏名・住所・生年月日・クレジットカード情報・電話番号・口座番号・パスワードは含まれない。
+sources:
+  - title: 福井新聞 おわびとお知らせ
+    url: https://www.fukuishimbun.co.jp/articles/-/2737551

@@ -1,0 +1,21 @@
+organization: 北陸電力株式会社
+services:
+  - ほくリンク
+industry: エネルギー・インフラ
+country: JP
+date_occurred: 2026-10-28
+date_announced: 2026-11-02
+affected_count: 550000
+count_note: 約55万件
+cause: third_party
+root_cause: メール配信サービス「アララメッセージ」を提供するアララが不正アクセスを受け、データが持ち出された
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: 会員サービス「ほくリンク」のメール配信を委託した業者が使うアララのサーバーが10月28日〜31日に不正アクセスを受け、会員のメールアドレス約55万件が外部に流出したと公表した。氏名・住所・電話番号・クレジットカード番号などの流出は確認されていない。ほくリンクのメール配信を停止した。
+sources:
+  - title: 北日本新聞
+    url: https://webun.jp/articles/-/1122098
+  - title: 中日新聞
+    url: https://www.chunichi.co.jp/article/1334063

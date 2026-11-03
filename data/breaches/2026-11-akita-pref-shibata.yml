@@ -1,0 +1,19 @@
+organization: 秋田県
+services:
+  - 県発注の測量など公共工事関連業務
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 秋田県
+date_occurred: 2026-09-20
+date_announced: 2026-11-03
+affected_count: 956
+count_note: 県が発注した53契約の956件
+cause: third_party
+root_cause: 業務委託先の建設コンサルタント会社の社内サーバーが不正アクセスを受けた（原因は未公表）
+vendor:
+  name: 柴田工事調査
+summary: 測量などを委託していた建設コンサルタント会社の社内サーバーが9月20日未明に不正アクセスを受け、県の農林部や建設部などが発注した53契約に関する956件の個人情報が漏えいした恐れがあると公表した。委託先から県への報告は約1か月後の10月23日だった。侵入経路は分かっていない。
+sources:
+  - title: 秋田朝日放送
+    url: https://news.yahoo.co.jp/articles/30cfddf0280a850caee91da679ee9ba856914675
