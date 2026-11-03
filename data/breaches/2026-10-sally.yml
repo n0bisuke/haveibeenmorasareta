@@ -1,0 +1,22 @@
+organization: Sally株式会社
+services:
+  - ウズ（問い合わせ管理）
+  - 旧Webサイトの問い合わせフォーム
+industry: エンタメ・スポーツ
+country: JP
+date_announced: 2026-10-21
+affected_count: 948
+count_note: 「ウズ」の問い合わせ544名と旧サイトの問い合わせフォーム404名の合計
+cause: unauthorized_access
+root_cause: 社員のメールアカウントの不正利用と、サイト制作に使っていたStudioのクラウド環境への不正アクセスの2件
+data_types:
+  - メールアドレス
+  - 電話番号
+  - 問い合わせ内容
+  - 氏名
+summary: 2件の不正アクセスを公表した。社員のメールアカウントが不正利用されて問い合わせ管理システムにログインされ、「ウズ」の問い合わせ544名のメールアドレス・電話番号・問い合わせ内容が漏えいしたおそれがある。また、旧Webサイトの制作に使っていたStudioのクラウド環境への不正アクセスで、問い合わせフォームの404名の氏名・メールアドレス・問い合わせ内容が漏えいしたおそれがある。
+sources:
+  - title: Sally お知らせ
+    url: https://sally-inc.jp/news/2026-10-incident
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/11/02/56641.html

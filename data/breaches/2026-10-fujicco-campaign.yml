@@ -1,0 +1,24 @@
+organization: フジッコ株式会社
+services:
+  - キャンペーン応募フォーム（非会員向け）
+industry: 食品
+country: JP
+date_occurred: 2026-10-21
+date_announced: 2026-10-22
+affected_count: 15500
+count_note: 延べ約15,500件（重複応募を含む）
+cause: third_party
+root_cause: キャンペーン応募受付の委託先のサーバーが不正アクセスを受けた（委託先名は未確認）
+data_types:
+  - 氏名
+  - 性別
+  - 電話番号
+  - メールアドレス
+  - 住所
+  - 問い合わせ内容
+summary: 「カスピ海ヨーグルト」と「フジッコ大感謝祭」のキャンペーンの非会員向け応募フォームで、応募受付の委託先サーバーが不正アクセスを受け、延べ約15,500件の氏名・年齢・性別・職業・婚姻状況・家族構成・電話番号・メールアドレス・住所・アンケート回答が漏えいした可能性があると公表した。
+sources:
+  - title: フジッコ お知らせ
+    url: https://www.fujicco.co.jp/upload/pr_261022.pdf
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/11/02/56644.html

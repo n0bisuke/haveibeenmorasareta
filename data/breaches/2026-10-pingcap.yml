@@ -1,0 +1,26 @@
+organization: PingCAP株式会社
+services:
+  - TiDB Cloud
+industry: IT・通信
+country: JP
+date_occurred: 2026-09-09
+date_announced: 2026-10-21
+affected_count: 50000
+count_note: 日本国内で最大約5万件
+cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
+root_cause: 不正に取得されたアカウントの認証情報で社内システムに侵入され、データを複製された
+data_types:
+  - 氏名
+  - メールアドレス
+  - 取引先情報
+  - 電話番号
+  - アカウント名
+  - 契約情報
+summary: 9月9日〜10月7日（米国時間）に不正に取得された認証情報で社内システムに侵入され、日本国内で最大約5万件の顧客担当者の氏名・メールアドレス・企業名・電話番号、TiDB Cloudのアカウント情報、契約条件などが漏えいしたと公表した。秘密鍵やカード情報、TiDB Cloud本体への侵入は確認されていない。
+sources:
+  - title: PingCAP セキュリティアップデート
+    url: https://pingcap.co.jp/trust-hub/security/security-update-october-2026/
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/11/02/56640.html

@@ -1,0 +1,31 @@
+organization: 日本交通株式会社
+services:
+  - 社内システム
+  - ハイヤーWeb受注・予約管理システム
+industry: 交通・モビリティ
+country: JP
+date_occurred: 2026-07-11
+date_announced: 2026-07-13
+affected_count: 290000
+count_note: 約29万人（採用応募者約10万7,900人、事故等の相手方約7万2,000人、乗務員・職員約6万100人、従業員の家族約3万7,700人、ハイヤー利用者約1万3,100人、取引先担当者約2,100人）
+cause: unauthorized_access
+root_cause: 社内システムが不正アクセスを受けてマルウェアに感染し、保有ファイルの一部が外部に流出した
+data_types:
+  - 氏名
+  - 住所
+  - マイナンバー
+  - 健康・医療情報
+  - 運転免許情報
+  - 口座番号
+  - 従業員情報
+  - 取引先情報
+summary: 7月11日未明に社内システムへの不正アクセスとマルウェア感染があり、ハイヤーWeb受注や電話によるタクシー配車などを停止したと13日に公表した。8月の第4報で保有ファイルの一部の外部流出を公表し、10月30日の第6報で、採用応募者・事故等の相手方・乗務員や職員・従業員の家族・ハイヤー利用者・取引先担当者の約29万人分の住所などが漏えいした可能性があると公表した。一部にマイナンバー、健康診断結果、運転免許証、銀行口座の情報を含む。タクシーの配車・乗車情報は対象外。
+sources:
+  - title: ScanNetSecurity（初報）
+    url: https://scan.netsecurity.ne.jp/article/2026/07/15/55706.html
+  - title: ScanNetSecurity（第4報）
+    url: https://scan.netsecurity.ne.jp/article/2026/09/04/56132.html
+  - title: NHK（第6報）
+    url: https://news.web.nhk/newsweb/na/nd-20261030de68790
+  - title: 日本経済新聞（第6報）
+    url: https://www.nikkei.com/article/DGXZQOUC30BHD0Q6A031C2000000/

@@ -1,0 +1,20 @@
+organization: 島根県物産協会
+services:
+  - しまねのふるさと直送便
+industry: 小売・EC
+country: JP
+date_occurred: 2026-08-13
+date_announced: 2026-11-02
+affected_count: 7
+count_note: 8月13日〜15日に購入手続きをした7人
+cause: third_party
+root_cause: ECサイト運営の委託先がサイバー攻撃を受けた（委託先名は未確認）
+data_types:
+  - クレジットカード番号
+  - クレジットカードのセキュリティコード
+summary: ECサイト「しまねのふるさと直送便」の運営委託先がサイバー攻撃を受け、8月13日〜15日に購入手続きをした7人のクレジットカード番号・セキュリティコードなどが漏えいした疑いがあると島根県が公表した。利用者への連絡は約2か月遅れた。
+sources:
+  - title: 山陰中央新報
+    url: https://www.sanin-chuo.co.jp/articles/-/1108937
+  - title: Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/a0e5dca24e5a4e0ad8529c4f4dce1f225afb6a4a

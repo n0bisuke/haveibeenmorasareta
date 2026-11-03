@@ -1,0 +1,18 @@
+organization: 野村證券株式会社
+services:
+  - デジタル特典付き社債
+industry: 金融・保険
+country: JP
+date_announced: 2026-10-31
+affected_count: null
+count_note: 件数は確認中
+cause: third_party
+root_cause: NTTデータの委託先Securitize Japanのプラットフォームが不正アクセスを受けた
+vendor:
+  name: Securitize Japan株式会社
+summary: デジタル特典付き社債を購入した一部の顧客について、NTTデータの委託先が提供するプラットフォームへの不正アクセスにより、情報が漏えいした可能性があると公表した。件数と内容は確認中。証券口座番号やパスワードはプラットフォームに保持していない。10月23日公表のi-Portの件とは別の事案。
+sources:
+  - title: 野村ホールディングス お知らせ
+    url: https://www.nomuraholdings.com/jp/news/topics/20261031.html
+  - title: アスキー
+    url: https://ascii.jp/elem/000/004/447/4447736/

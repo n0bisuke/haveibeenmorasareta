@@ -1,0 +1,27 @@
+organization: 株式会社アイスタイル
+services:
+  - '@cosme（@cosme共通ID）'
+industry: 小売・EC
+country: JP
+date_occurred: 2026-10-28
+date_announced: 2026-11-02
+affected_count: 3000000
+count_note: 約300万人（不正アクセス時点の会員。その後の退会者を含む）
+cause: unauthorized_access
+root_cause: 会員情報が第三者の不正アクセスを受けた（原因は調査中）
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 生年月日
+  - 性別
+  - 健康・医療情報
+summary: 「@cosme共通ID」に登録された会員約300万人の氏名・住所・電話番号・メールアドレス・生年月日・性別・肌質・髪質が、第三者の不正アクセスにより外部に漏えいしたと公表した。10月28日に確認した。パスワードとクレジットカード情報は含まれない。対象者には11月6日までに個別に連絡する。
+sources:
+  - title: アイスタイル お知らせ
+    url: https://www.istyle.co.jp/news/info/2026/11/1102.html
+  - title: '@cosme お知らせ'
+    url: https://www.cosme.net/help/info/id/17117
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261102de69567

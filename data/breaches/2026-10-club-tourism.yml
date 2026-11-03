@@ -1,0 +1,27 @@
+organization: クラブツーリズム株式会社
+services:
+  - ネット予約システムの会員情報
+industry: 旅行
+country: JP
+date_occurred: 2026-10-30
+date_announced: 2026-10-31
+affected_count: 4320000
+count_note: 最大約432万件
+cause: unauthorized_access
+root_cause: ネット予約システムのサーバーが外部から不正アクセスを受けた（手口は未公表）
+data_types:
+  - 氏名
+  - 性別
+  - 生年月日
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 会員ID
+summary: ネット予約システムのサーバーが10月30日早朝に不正アクセスを受け、登録会員最大約432万件の氏名・国籍・性別・生年月日・住所・電話番号・メールアドレス・会員ID・緊急連絡先が流出した可能性があると公表した。パスポート情報、ログインパスワード、クレジットカード情報、口座番号は含まれない。サーバーを隔離し、サイトを停止した。
+sources:
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261031de69034
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2611/02/2000002782/
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC0106W0R01C26A1000000/

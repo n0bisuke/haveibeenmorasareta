@@ -1,0 +1,17 @@
+organization: 株式会社バリューゴルフ
+services:
+  - 1人予約ランド
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-11-01
+date_announced: 2026-11-02
+affected_count: null
+count_note: 件数は未公表
+cause: unauthorized_access
+root_cause: ゴルフ場予約サービスが第三者の不正アクセスを受けた（原因の詳細は未公表）
+data_types:
+  - メールアドレス
+summary: ゴルフ場予約サービス「1人予約ランド」で11月1日に不正アクセスの痕跡を見つけ、ログイン用のメールアドレスが閲覧・取得された可能性があると適時開示した。氏名などは含まれない。経路を遮断し、不備を修正した。
+sources:
+  - title: バリューゴルフ 適時開示
+    url: https://www.release.tdnet.info/inbs/140120261102563148.pdf

@@ -1,0 +1,24 @@
+organization: GMOグローバルサイン株式会社
+group: GMOインターネットグループ
+services:
+  - GMOトラスト・ログイン
+industry: IT・通信
+country: JP
+date_announced: 2026-09-16
+affected_count: 45030
+count_note: 2,492社の45,030人（10月30日の第3報）
+cause: misconfiguration
+root_cause: ロゴ画像の配信用に公開していたストレージに顧客情報を含むファイルが保存され、約9年間外部から取得できる状態だった
+data_types:
+  - メールアドレス
+  - 氏名
+  - 連携サービスID
+  - 従業員情報
+summary: ID管理・シングルサインオンの「GMOトラスト・ログイン」で、ロゴ画像の配信用に公開していたストレージに顧客情報を含む一時ファイルなどが保存され、2017年11月〜2026年9月に外部から取得できる状態だったと9月16日に公表した。10月30日の第3報で、対象を2,492社の45,030人のメールアドレス・氏名・連携サービス名・企業が設定した項目（社員番号・所属など）に広げた。2021年6月以降に第三者が取得したことを確認している。パスワードと決済情報は含まれない。
+sources:
+  - title: GMOトラスト・ログイン お知らせ
+    url: https://news.trustlogin.com/20260916
+  - title: GMOグローバルサイン お知らせ
+    url: https://info-globalsign.com/news/20261102
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC010ZZ0R01C26A1000000/
