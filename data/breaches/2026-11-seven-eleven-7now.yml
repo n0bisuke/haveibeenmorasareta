@@ -1,0 +1,26 @@
+organization: 株式会社セブン‐イレブン・ジャパン
+services:
+  - 7NOW
+industry: 小売・EC
+country: JP
+date_occurred: 2026-11-01
+date_announced: 2026-11-03
+affected_count: 169151
+count_note: 氏名（カナ）のみ164,180件、氏名と住所4,762件、氏名・住所・電話番号・郵便番号209件
+cause: third_party
+root_cause: 配達の委託先CBcloudの「ピックゴー」が不具合を悪用した不正アクセスを受けた
+vendor:
+  name: CBcloud株式会社
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - 郵便番号
+summary: 宅配サービス「7NOW」の配達を一部委託しているCBcloudの「ピックゴー」が不具合を悪用した不正アクセスを受け、注文者169,151件の氏名（カナ）、一部の住所・電話番号・郵便番号が取得されたと公表した。クレジットカード情報とID・パスワードは含まれない。対象者にはSMSで連絡する。
+sources:
+  - title: セブン‐イレブン・ジャパン お知らせ
+    url: https://www.sej.co.jp/company/important/185116.html
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2611/04/2000002852/
+  - title: Impress Watch
+    url: https://www.watch.impress.co.jp/docs/news/2153328.html

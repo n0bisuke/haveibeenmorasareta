@@ -1,0 +1,27 @@
+organization: 株式会社チャリ・ロト
+services:
+  - チャリロト（アプリ）
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-10-21
+date_announced: 2026-10-24
+affected_count: 373
+count_note: チャリカ会員373名
+cause: vulnerability
+vuln_target: web_app
+root_cause: アプリの脆弱性を悪用された（詳細は未公表）
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 口座番号
+  - クレジットカード情報（番号の一部・有効期限等）
+  - 資産・取引情報
+  - 利用履歴
+summary: 競輪・オートレース投票サービス「チャリロト」のアプリが10月21日に脆弱性を悪用した不正アクセスを受け、チャリカ会員373名の氏名・住所・電話番号・メールアドレス、銀行口座情報、カード番号の下4桁・名義・有効期限、残高や入出金・投票の履歴が漏えいしたと公表した。パスワード、カード番号の全桁、セキュリティコードは含まれない。
+sources:
+  - title: チャリロト お知らせ
+    url: https://chariloto.jp/news/20261024/index.html
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/11/04/56658.html

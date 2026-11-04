@@ -1,0 +1,24 @@
+organization: 京都府京都市
+services:
+  - 東本願寺前市民緑地「お東さん広場」の問い合わせ窓口
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 京都府
+date_occurred: 2026-10-30
+date_announced: 2026-11-03
+affected_count: null
+count_note: 件数は未公表
+cause: third_party
+root_cause: 指定管理者の問い合わせ用メールアカウントが不正に使われた（侵入経路は未公表）
+vendor:
+  name: 植彌加藤造園株式会社
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 問い合わせ内容
+summary: 東本願寺前市民緑地「お東さん広場」の指定管理者の問い合わせ用メールアカウントが10月30日〜31日に不正に使われ、健康食品の宣伝メールが不特定多数に大量送信されたと公表した。問い合わせフォームの入力内容が届くアドレスのため、氏名・メールアドレス・電話番号などが流出した可能性がある。
+sources:
+  - title: 京都新聞
+    url: https://www.kyoto-np.co.jp/articles/-/1819797

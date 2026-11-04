@@ -1,0 +1,21 @@
+organization: 東日本高速道路株式会社
+services:
+  - ドラとら
+  - マイルート
+industry: 交通・モビリティ
+country: JP
+date_announced: 2026-10-23
+affected_count: null
+count_note: 件数は未公表（一部の利用者）
+cause: unauthorized_access
+root_cause: 高速道路情報サイトが第三者の不正アクセスを受けた（手口は未公表）
+data_types:
+  - メールアドレス
+  - パスワード（保管形式不明）
+  - 性別
+summary: 高速道路情報サイト「ドラとら」が第三者の不正アクセスを受け、一部利用者のメールアドレス・パスワード・性別・都道府県・生年が閲覧された可能性があると公表した。10月21日に「ドラとら」と「マイルート」を緊急メンテナンスで停止した。対象者には個別にメールで連絡する。
+sources:
+  - title: NEXCO東日本 お知らせ
+    url: https://www.e-nexco.co.jp/en/news/important_info/2026/1023/00016745.html
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/11/04/56657.html

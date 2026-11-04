@@ -1,0 +1,23 @@
+organization: 愛知県豊橋市
+services:
+  - マイナンバーカード受取予約のメール通知
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 愛知県
+date_occurred: 2026-10-28
+date_announced: 2026-11-03
+affected_count: null
+count_note: 件数は未公表
+cause: third_party
+root_cause: メール配信の委託先アララの「アララメッセージ」のサーバーが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: マイナンバーカードの受取予約で登録されたメールアドレスが、メール配信を委託するアララのサーバーへの不正アクセスにより漏えいした可能性があると公表した。予約システム本体は別サーバーで影響はなく、自動送信メールを停止した。
+sources:
+  - title: 豊橋市 お知らせ
+    url: https://www.city.toyohashi.lg.jp/item/126526.htm
+  - title: CBCテレビ
+    url: https://news.yahoo.co.jp/articles/92e4a0e9bef8a26583bb832fcbd41cf8d1bfeed2

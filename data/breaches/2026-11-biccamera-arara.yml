@@ -1,0 +1,20 @@
+organization: 株式会社ビックカメラ・株式会社コジマ・株式会社ソフマップ
+services:
+  - 顧客向けメール配信
+industry: 小売・EC
+country: JP
+date_announced: 2026-11-02
+affected_count: 14900000
+count_note: 3社合計で約1,490万件（人数ではない。会社ごとの内訳は未公表）
+cause: third_party
+root_cause: メール配信の委託先アララの「アララメッセージ」が不正アクセスを受け、データが持ち出された
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: メール配信を委託していたアララへの不正アクセスにより、グループ3社の顧客のメールアドレスなど約1,490万件が流出した可能性があると公表した。クレジットカード情報とECサイトのログイン情報は含まれない。アララへのデータ連携を停止した。
+sources:
+  - title: ITmedia NEWS
+    url: https://news.yahoo.co.jp/articles/a2d443ea7085bbb17d0d0476701c944b645cf188
+  - title: アスキー
+    url: https://ascii.jp/elem/000/004/448/4448121/

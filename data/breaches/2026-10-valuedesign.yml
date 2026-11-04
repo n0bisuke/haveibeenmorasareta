@@ -1,0 +1,24 @@
+organization: 株式会社バリューデザイン
+group: ペイクラウドホールディングス
+services:
+  - Value Card（ハウス電子マネー発行サービス）
+industry: 金融・保険
+country: JP
+date_occurred: 2026-10-14
+date_announced: 2026-10-23
+affected_count: 1424748
+count_note: 発行済みID 569,224件と未発行ID 855,524件
+cause: vulnerability
+vuln_target: web_app
+root_cause: システムの一部の環境のWebサーバーの脆弱性を悪用された
+data_types:
+  - 会員ID
+  - 資産・取引情報
+summary: ハウス電子マネー発行サービス「Value Card」のシステムの一部の環境のWebサーバーが脆弱性を悪用され、ID番号・PIN番号・残高情報1,424,748件が流出したと公表した。個人情報は含まれない。発行済みIDの不正利用のおそれには対処済み。委託元のモスフードサービス（モスカード）なども影響を公表している。
+sources:
+  - title: バリューデザイン お知らせ
+    url: https://www.valuedesign.jp/news/info/20261023
+  - title: ペイクラウドHD 適時開示
+    url: https://www.release.tdnet.info/inbs/140120261023555340.pdf
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/11/04/56655.html
