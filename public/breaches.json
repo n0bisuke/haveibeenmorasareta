@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-03T09:54:13.000Z",
-  "count": 714,
+  "generated_at": "2026-11-04T04:08:39.000Z",
+  "count": 728,
   "severity_levels": [
     {
       "id": "critical",
@@ -498,6 +498,83 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-11-asoview",
+      "organization": "アソビュー株式会社",
+      "services": [
+        "アソビュー！"
+      ],
+      "industry": "旅行",
+      "country": "JP",
+      "date_announced": "2026-11-03",
+      "affected_count": 15821184,
+      "count_note": "延べ15,821,184件（会員の人数ではない）",
+      "cause": "third_party",
+      "root_cause": "メール配信の委託先アララの「アララメッセージ」が不正アクセスを受け、データが持ち出された",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "会員ID",
+        "氏名",
+        "メールアドレス",
+        "生年月日",
+        "電話番号",
+        "利用履歴",
+        "購入履歴"
+      ],
+      "summary": "メール配信を委託していたアララの「アララメッセージ」が不正アクセスを受け、「アソビュー！」の会員情報延べ15,821,184件の会員ID・氏名・メールアドレス・生年月日・電話番号・居住地域・最終ログイン日・チケットの購入や利用の履歴が流出したと公表した。パスワードとクレジットカード情報は含まれない。11月2日に報告を受け、メール配信を停止した。",
+      "sources": [
+        {
+          "title": "アソビュー お知らせ",
+          "url": "https://www.asoview.co.jp/news/articles/AyTdT_tX"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002854/"
+        },
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261104de70170"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-demaecan-pickgo",
+      "organization": "株式会社出前館",
+      "services": [
+        "出前館（配達委託）"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_announced": "2026-11-03",
+      "affected_count": 799,
+      "count_note": "届け先の氏名799件（うち住所794件、電話番号・郵便番号33件）",
+      "cause": "third_party",
+      "root_cause": "配達の委託先CBcloudの「ピックゴー」が不具合を悪用した不正アクセスを受けた",
+      "vendor": {
+        "name": "CBcloud株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "郵便番号"
+      ],
+      "summary": "配達を委託しているCBcloudの「ピックゴー」が不正アクセスを受け、届け先の氏名799件、番地までの住所794件、電話番号・郵便番号33件が取得されたと公表した。同じ委託先の件はセブン‐イレブン・ジャパンも公表している。",
+      "sources": [
+        {
+          "title": "出前館 お知らせ",
+          "url": "https://corporate.demae-can.co.jp/pr/info/20261103.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-himeji-city-online",
       "organization": "兵庫県姫路市",
       "services": [
@@ -531,6 +608,154 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-11-kawasaki-city-e-shinsei",
+      "organization": "神奈川県川崎市",
+      "services": [
+        "電子申請システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "神奈川県",
+      "date_announced": "2026-11-03",
+      "affected_count": 320000,
+      "count_note": "約32万アカウント（影響を受けた登録アカウント数。漏えい件数ではない）",
+      "cause": "third_party",
+      "root_cause": "システムのメール送信サービスを提供するアララが不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "横浜市と同じ電子申請システムで、メール送信サービスを提供するアララへの不正アクセスにより、約32万アカウントの利用者情報が影響を受けた可能性があると報じられた。",
+      "sources": [
+        {
+          "title": "朝日新聞",
+          "url": "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-kyoto-city-shimin-ryokuchi",
+      "organization": "京都府京都市",
+      "services": [
+        "東本願寺前市民緑地「お東さん広場」の問い合わせ窓口"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "京都府",
+      "date_occurred": "2026-10-30",
+      "date_announced": "2026-11-03",
+      "affected_count": null,
+      "count_note": "件数は未公表",
+      "cause": "third_party",
+      "root_cause": "指定管理者の問い合わせ用メールアカウントが不正に使われた（侵入経路は未公表）",
+      "vendor": {
+        "name": "植彌加藤造園株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "問い合わせ内容"
+      ],
+      "summary": "東本願寺前市民緑地「お東さん広場」の指定管理者の問い合わせ用メールアカウントが10月30日〜31日に不正に使われ、健康食品の宣伝メールが不特定多数に大量送信されたと公表した。問い合わせフォームの入力内容が届くアドレスのため、氏名・メールアドレス・電話番号などが流出した可能性がある。",
+      "sources": [
+        {
+          "title": "京都新聞",
+          "url": "https://www.kyoto-np.co.jp/articles/-/1819797"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 4,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-seven-eleven-7now",
+      "organization": "株式会社セブン‐イレブン・ジャパン",
+      "services": [
+        "7NOW"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-11-01",
+      "date_announced": "2026-11-03",
+      "affected_count": 169151,
+      "count_note": "氏名（カナ）のみ164,180件、氏名と住所4,762件、氏名・住所・電話番号・郵便番号209件",
+      "cause": "third_party",
+      "root_cause": "配達の委託先CBcloudの「ピックゴー」が不具合を悪用した不正アクセスを受けた",
+      "vendor": {
+        "name": "CBcloud株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "郵便番号"
+      ],
+      "summary": "宅配サービス「7NOW」の配達を一部委託しているCBcloudの「ピックゴー」が不具合を悪用した不正アクセスを受け、注文者169,151件の氏名（カナ）、一部の住所・電話番号・郵便番号が取得されたと公表した。クレジットカード情報とID・パスワードは含まれない。対象者にはSMSで連絡する。",
+      "sources": [
+        {
+          "title": "セブン‐イレブン・ジャパン お知らせ",
+          "url": "https://www.sej.co.jp/company/important/185116.html"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002852/"
+        },
+        {
+          "title": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2153328.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 2,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-toyohashi-city-mynumber",
+      "organization": "愛知県豊橋市",
+      "services": [
+        "マイナンバーカード受取予約のメール通知"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "愛知県",
+      "date_occurred": "2026-10-28",
+      "date_announced": "2026-11-03",
+      "affected_count": null,
+      "count_note": "件数は未公表",
+      "cause": "third_party",
+      "root_cause": "メール配信の委託先アララの「アララメッセージ」のサーバーが不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "マイナンバーカードの受取予約で登録されたメールアドレスが、メール配信を委託するアララのサーバーへの不正アクセスにより漏えいした可能性があると公表した。予約システム本体は別サーバーで影響はなく、自動送信メールを停止した。",
+      "sources": [
+        {
+          "title": "豊橋市 お知らせ",
+          "url": "https://www.city.toyohashi.lg.jp/item/126526.htm"
+        },
+        {
+          "title": "CBCテレビ",
+          "url": "https://news.yahoo.co.jp/articles/92e4a0e9bef8a26583bb832fcbd41cf8d1bfeed2"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 6,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-yokohama-city-e-shinsei",
       "organization": "神奈川県横浜市",
       "services": [
@@ -540,11 +765,12 @@
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "神奈川県",
+      "date_occurred": "2026-11-01",
       "date_announced": "2026-11-03",
       "affected_count": 820000,
-      "count_note": "約82万件",
+      "count_note": "約82万件は11月2日時点の登録アカウント数（個人と事業者の合計）で、漏えいした件数ではない。漏えい件数はTKCとアララが確認中",
       "cause": "third_party",
-      "root_cause": "システム内のメール送信サービスを提供するアララが第三者の不正アクセスを受けた",
+      "root_cause": "システムの受託者TKCが使うメール送信サービスのアララが第三者の不正アクセスを受けた",
       "vendor": {
         "name": "アララ株式会社"
       },
@@ -552,8 +778,12 @@
         "氏名",
         "メールアドレス"
       ],
-      "summary": "住民票やマイナンバー関連の手続きなどをオンラインで受け付ける「電子申請・届出システム」で、メール送信サービスを提供するアララへの不正アクセスにより、登録された利用者名やメールアドレスなど約82万件が漏えいした可能性があると公表した。市は総務省の手引書に基づき適切に業務委託していたとしている。",
+      "summary": "住民票やマイナンバー関連の手続きなどをオンラインで受け付ける「電子申請・届出システム」で、メール送信サービスを提供するアララへの不正アクセスにより、登録された利用者名やメールアドレスなど約82万件が漏えいした可能性があると公表した。市は総務省の手引書に基づき適切に業務委託していたとしている。市の発表によると、システムはTKCが受託し、メール送信サービスをアララが提供している。10月31日にメール送信を止め、11月1日にアララが不正アクセスを検知した。約82万件は登録アカウント数で、漏えいした件数や影響の有無は確認中。メールの二要素認証が使えないため、ログインが必要な手続きは停止している。",
       "sources": [
+        {
+          "title": "横浜市 記者発表",
+          "url": "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2026/1103denshishinsei.files/0001_20261103.pdf"
+        },
         {
           "title": "NHK",
           "url": "https://news.web.nhk/newsweb/na/nd-20261103de70016"
@@ -561,6 +791,44 @@
         {
           "title": "TBS NEWS DIG",
           "url": "https://news.infoseek.co.jp/article/tbs_3057984/"
+        },
+        {
+          "title": "神奈川新聞",
+          "url": "https://www.kanaloco.jp/news/government/article-1317685.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 2,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-biccamera-arara",
+      "organization": "株式会社ビックカメラ・株式会社コジマ・株式会社ソフマップ",
+      "services": [
+        "顧客向けメール配信"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-02",
+      "affected_count": 14900000,
+      "count_note": "3社合計で約1,490万件（人数ではない。会社ごとの内訳は未公表）",
+      "cause": "third_party",
+      "root_cause": "メール配信の委託先アララの「アララメッセージ」が不正アクセスを受け、データが持ち出された",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "メール配信を委託していたアララへの不正アクセスにより、グループ3社の顧客のメールアドレスなど約1,490万件が流出した可能性があると公表した。クレジットカード情報とECサイトのログイン情報は含まれない。アララへのデータ連携を停止した。",
+      "sources": [
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://news.yahoo.co.jp/articles/a2d443ea7085bbb17d0d0476701c944b645cf188"
+        },
+        {
+          "title": "アスキー",
+          "url": "https://ascii.jp/elem/000/004/448/4448121/"
         }
       ],
       "severity": "medium",
@@ -1104,6 +1372,37 @@
       "severity": "medium",
       "disclosure_days": 5,
       "reliability": "high"
+    },
+    {
+      "id": "2026-11-toyama-shokuzai-matching",
+      "organization": "富山県",
+      "services": [
+        "とやま食材マッチング"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "富山県",
+      "date_announced": "2026-11-02",
+      "affected_count": 290,
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "生産者とバイヤーをつなぐオンライン商談サイト「とやま食材マッチング」で使っていたメール配信システム「ブラストメール」が不正アクセスを受け、登録者290件の情報が漏えいしたおそれがあると公表した。",
+      "sources": [
+        {
+          "title": "チューリップテレビ",
+          "url": "https://news.yahoo.co.jp/articles/94e22d911ce0fb96edf31909ecfa6a79b81bcba2"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-11-valuegolf",
@@ -1769,6 +2068,40 @@
       "severity": "high",
       "disclosure_days": null,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-elestyle",
+      "organization": "株式会社ELESTYLE",
+      "services": [
+        "elepay・OneQRの管理システム"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-10-25",
+      "date_announced": "2026-10-29",
+      "affected_count": 7162,
+      "count_note": "加盟店の登録情報7,162件",
+      "cause": "misconfiguration",
+      "root_cause": "管理システムの一部機能のアクセス制御の不備を悪用された",
+      "data_types": [
+        "アカウント名",
+        "メールアドレス",
+        "取引先情報"
+      ],
+      "summary": "決済サービス「elepay」「OneQR」の管理システムで、一部機能のアクセス制御の不備を10月25日に悪用され、加盟店の登録情報7,162件のユーザー名（企業名や氏名）・メールアドレスなどが外部に取得された可能性があると公表した。パスワード、エンドユーザーの情報、カード・口座情報は含まれない。",
+      "sources": [
+        {
+          "title": "ELESTYLE お知らせ",
+          "url": "https://elestyle.jp/20261029-report"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56659.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 4,
+      "reliability": "high"
     },
     {
       "id": "2026-10-matsuya-foods",
@@ -3267,6 +3600,46 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-10-chariloto",
+      "organization": "株式会社チャリ・ロト",
+      "services": [
+        "チャリロト（アプリ）"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-10-21",
+      "date_announced": "2026-10-24",
+      "affected_count": 373,
+      "count_note": "チャリカ会員373名",
+      "cause": "vulnerability",
+      "vuln_target": "web_app",
+      "root_cause": "アプリの脆弱性を悪用された（詳細は未公表）",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "口座番号",
+        "クレジットカード情報（番号の一部・有効期限等）",
+        "資産・取引情報",
+        "利用履歴"
+      ],
+      "summary": "競輪・オートレース投票サービス「チャリロト」のアプリが10月21日に脆弱性を悪用した不正アクセスを受け、チャリカ会員373名の氏名・住所・電話番号・メールアドレス、銀行口座情報、カード番号の下4桁・名義・有効期限、残高や入出金・投票の履歴が漏えいしたと公表した。パスワード、カード番号の全桁、セキュリティコードは含まれない。",
+      "sources": [
+        {
+          "title": "チャリロト お知らせ",
+          "url": "https://chariloto.jp/news/20261024/index.html"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56658.html"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 3,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-futaba-town-mailmag",
       "organization": "福島県双葉町",
       "services": [
@@ -3950,6 +4323,40 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-10-nexco-east-doratra",
+      "organization": "東日本高速道路株式会社",
+      "services": [
+        "ドラとら",
+        "マイルート"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_announced": "2026-10-23",
+      "affected_count": null,
+      "count_note": "件数は未公表（一部の利用者）",
+      "cause": "unauthorized_access",
+      "root_cause": "高速道路情報サイトが第三者の不正アクセスを受けた（手口は未公表）",
+      "data_types": [
+        "メールアドレス",
+        "パスワード（保管形式不明）",
+        "性別"
+      ],
+      "summary": "高速道路情報サイト「ドラとら」が第三者の不正アクセスを受け、一部利用者のメールアドレス・パスワード・性別・都道府県・生年が閲覧された可能性があると公表した。10月21日に「ドラとら」と「マイルート」を緊急メンテナンスで停止した。対象者には個別にメールで連絡する。",
+      "sources": [
+        {
+          "title": "NEXCO東日本 お知らせ",
+          "url": "https://www.e-nexco.co.jp/en/news/important_info/2026/1023/00016745.html"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56657.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-nhk-publishing",
       "country": "JP",
       "cause": "third_party",
@@ -4130,6 +4537,52 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-10-taito-city-travelzip",
+      "organization": "東京都台東区",
+      "services": [
+        "TAITOおでかけナビ",
+        "蔦重ゆかりの地 台東区"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "東京都",
+      "date_occurred": "2026-10-23",
+      "date_announced": "2026-10-23",
+      "affected_count": 5620,
+      "count_note": "「TAITOおでかけナビ」約5,500件と「蔦重ゆかりの地 台東区」約120件（データ件数で人数はこれより少ない見込み）",
+      "cause": "third_party",
+      "root_cause": "観光サイトの制作・運用の委託先トラベルジップのサーバーが不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社トラベルジップ"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "住所",
+        "問い合わせ内容"
+      ],
+      "summary": "観光サイトの制作・運用を委託するトラベルジップが不正アクセスを受け、「TAITOおでかけナビ」の約5,500件の氏名・メールアドレス・電話番号・住所などと、大河ドラマ活用推進協議会のサイトの問い合わせ情報約120件が流出したと公表した。トラベルジップによると、飛騨高山や熱海市観光協会の観光サイトも影響を受け、全体で7,050件（重複を除き6,782件）にのぼる。",
+      "sources": [
+        {
+          "title": "台東区 お知らせ",
+          "url": "https://www.city.taito.lg.jp/bunka_kanko/other/houkoku1023.html"
+        },
+        {
+          "title": "トラベルジップ お知らせ（第2報）",
+          "url": "https://travelzip.jp/feature/6"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56654.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 0,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-tokyo-agri-volunteer",
       "country": "JP",
       "cause": "third_party",
@@ -4202,6 +4655,43 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-10-tokyo-waterworks-hdd",
+      "organization": "東京都水道局",
+      "services": [
+        "外付けHDD"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "東京都",
+      "date_occurred": "2026-10-02",
+      "date_announced": "2026-10-23",
+      "affected_count": 1932,
+      "count_note": "1,932人分（企業・国・自治体の関係者1,037人、地域住民など895人。報道の数字）",
+      "cause": "lost_device",
+      "root_cause": "施錠されたキャビネットに保管していた外付けHDD4台が収納箱を残して見当たらなくなった",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "生年月日"
+      ],
+      "summary": "10月2日に施錠されたキャビネットを開けたところ、個人情報を含む外付けHDD4台が収納箱だけを残して見当たらなくなっていたと公表した。報道によると対象は1,932人分で、大部分は氏名のみ、一部に住所・電話番号・生年月日を含む。HDDは見つかっておらず、二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "東京都 報道発表",
+          "url": "https://www.metro.tokyo.lg.jp/information/press/2026/10/2026102316"
+        },
+        {
+          "title": "毎日新聞",
+          "url": "https://news.yahoo.co.jp/articles/63646b51f3165bb09806d627544bba071d14911c"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 21,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-tome-city-living",
       "organization": "宮城県登米市",
       "org_type": "local_gov",
@@ -4271,6 +4761,45 @@
       "severity": "high",
       "disclosure_days": null,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-valuedesign",
+      "organization": "株式会社バリューデザイン",
+      "group": "ペイクラウドホールディングス",
+      "services": [
+        "Value Card（ハウス電子マネー発行サービス）"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-10-14",
+      "date_announced": "2026-10-23",
+      "affected_count": 1424748,
+      "count_note": "発行済みID 569,224件と未発行ID 855,524件",
+      "cause": "vulnerability",
+      "vuln_target": "web_app",
+      "root_cause": "システムの一部の環境のWebサーバーの脆弱性を悪用された",
+      "data_types": [
+        "会員ID",
+        "資産・取引情報"
+      ],
+      "summary": "ハウス電子マネー発行サービス「Value Card」のシステムの一部の環境のWebサーバーが脆弱性を悪用され、ID番号・PIN番号・残高情報1,424,748件が流出したと公表した。個人情報は含まれない。発行済みIDの不正利用のおそれには対処済み。委託元のモスフードサービス（モスカード）なども影響を公表している。",
+      "sources": [
+        {
+          "title": "バリューデザイン お知らせ",
+          "url": "https://www.valuedesign.jp/news/info/20261023"
+        },
+        {
+          "title": "ペイクラウドHD 適時開示",
+          "url": "https://www.release.tdnet.info/inbs/140120261023555340.pdf"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56655.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 9,
+      "reliability": "high"
     },
     {
       "id": "2026-10-yamada-video",
