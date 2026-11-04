@@ -1,0 +1,21 @@
+organization: 神奈川県川崎市
+services:
+  - 電子申請システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 神奈川県
+date_announced: 2026-11-03
+affected_count: 320000
+count_note: 約32万アカウント（影響を受けた登録アカウント数。漏えい件数ではない）
+cause: third_party
+root_cause: システムのメール送信サービスを提供するアララが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - 氏名
+  - メールアドレス
+summary: 横浜市と同じ電子申請システムで、メール送信サービスを提供するアララへの不正アクセスにより、約32万アカウントの利用者情報が影響を受けた可能性があると報じられた。
+sources:
+  - title: 朝日新聞
+    url: https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad

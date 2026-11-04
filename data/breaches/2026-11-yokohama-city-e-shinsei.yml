@@ -5,19 +5,24 @@ industry: 行政
 country: JP
 org_type: local_gov
 prefecture: 神奈川県
+date_occurred: 2026-11-01
 date_announced: 2026-11-03
 affected_count: 820000
-count_note: 約82万件
+count_note: 約82万件は11月2日時点の登録アカウント数（個人と事業者の合計）で、漏えいした件数ではない。漏えい件数はTKCとアララが確認中
 cause: third_party
-root_cause: システム内のメール送信サービスを提供するアララが第三者の不正アクセスを受けた
+root_cause: システムの受託者TKCが使うメール送信サービスのアララが第三者の不正アクセスを受けた
 vendor:
   name: アララ株式会社
 data_types:
   - 氏名
   - メールアドレス
-summary: 住民票やマイナンバー関連の手続きなどをオンラインで受け付ける「電子申請・届出システム」で、メール送信サービスを提供するアララへの不正アクセスにより、登録された利用者名やメールアドレスなど約82万件が漏えいした可能性があると公表した。市は総務省の手引書に基づき適切に業務委託していたとしている。
+summary: 住民票やマイナンバー関連の手続きなどをオンラインで受け付ける「電子申請・届出システム」で、メール送信サービスを提供するアララへの不正アクセスにより、登録された利用者名やメールアドレスなど約82万件が漏えいした可能性があると公表した。市は総務省の手引書に基づき適切に業務委託していたとしている。市の発表によると、システムはTKCが受託し、メール送信サービスをアララが提供している。10月31日にメール送信を止め、11月1日にアララが不正アクセスを検知した。約82万件は登録アカウント数で、漏えいした件数や影響の有無は確認中。メールの二要素認証が使えないため、ログインが必要な手続きは停止している。
 sources:
+  - title: 横浜市 記者発表
+    url: https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2026/1103denshishinsei.files/0001_20261103.pdf
   - title: NHK
     url: https://news.web.nhk/newsweb/na/nd-20261103de70016
   - title: TBS NEWS DIG
     url: https://news.infoseek.co.jp/article/tbs_3057984/
+  - title: 神奈川新聞
+    url: https://www.kanaloco.jp/news/government/article-1317685.html
