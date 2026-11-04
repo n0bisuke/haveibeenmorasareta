@@ -1,0 +1,28 @@
+organization: アソビュー株式会社
+services:
+  - アソビュー！
+industry: 旅行
+country: JP
+date_announced: 2026-11-03
+affected_count: 15821184
+count_note: 延べ15,821,184件（会員の人数ではない）
+cause: third_party
+root_cause: メール配信の委託先アララの「アララメッセージ」が不正アクセスを受け、データが持ち出された
+vendor:
+  name: アララ株式会社
+data_types:
+  - 会員ID
+  - 氏名
+  - メールアドレス
+  - 生年月日
+  - 電話番号
+  - 利用履歴
+  - 購入履歴
+summary: メール配信を委託していたアララの「アララメッセージ」が不正アクセスを受け、「アソビュー！」の会員情報延べ15,821,184件の会員ID・氏名・メールアドレス・生年月日・電話番号・居住地域・最終ログイン日・チケットの購入や利用の履歴が流出したと公表した。パスワードとクレジットカード情報は含まれない。11月2日に報告を受け、メール配信を停止した。
+sources:
+  - title: アソビュー お知らせ
+    url: https://www.asoview.co.jp/news/articles/AyTdT_tX
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2611/04/2000002854/
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261104de70170
