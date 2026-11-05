@@ -1,0 +1,21 @@
+organization: 株式会社ワークマン
+services:
+  - ワークマンオンラインストアのメールマガジン
+industry: 小売・EC
+country: JP
+date_occurred: 2026-10-28
+date_announced: 2026-11-04
+affected_count: 1450000
+count_note: 最大約145万件
+cause: third_party
+root_cause: メール配信の委託先アララの「アララメッセージ」が不正アクセスを受け、データが持ち出された
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: メールマガジンの配信を委託するアララの業務サーバーが10月28日〜31日に不正アクセスを受け、オンラインストアのメールマガジン会員のメールアドレス最大約145万件が流出した可能性があると公表した。氏名・住所・電話番号・カード情報は対象のサーバーに保有していなかった。
+sources:
+  - title: ワークマン お知らせ
+    url: https://www.workman.co.jp/wp-content/uploads/2026/11/1104.pdf
+  - title: 共同通信
+    url: https://news.yahoo.co.jp/articles/9908813ce4ae8ee1c280feb8eda95cab9e6f401a

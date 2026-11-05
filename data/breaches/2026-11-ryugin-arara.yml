@@ -1,0 +1,22 @@
+organization: 株式会社琉球銀行
+services:
+  - 顧客向けメール配信
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 沖縄県
+date_announced: 2026-11-04
+affected_count: 96477
+count_note: 10月8日〜29日に配信したメールの分
+cause: third_party
+root_cause: メール配信の委託先アララの「アララメッセージ」が不正アクセスを受け、データが持ち出された
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: メール配信を委託するアララのサービスが不正アクセスを受け、10月8日〜29日に配信したメールの宛先96,477件のメールアドレスが流出したと公表した。氏名・住所・口座情報・暗証番号は含まれず、同行のシステムへの不正アクセスではない。
+sources:
+  - title: 琉球銀行 お知らせ
+    url: https://www.ryugin.co.jp/corporate/news/100767
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOJC0451C0U6A101C2000000/

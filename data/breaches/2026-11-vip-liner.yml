@@ -1,0 +1,23 @@
+organization: 株式会社平成エンタープライズ
+services:
+  - 高速バス予約サイト「VIPライナー」
+industry: 交通・モビリティ
+country: JP
+date_occurred: 2026-09-12
+date_announced: 2026-11-04
+affected_count: 15000
+count_note: 氏名・住所などの個人情報約1万5,000件（うちクレジットカード情報6,949件）。9月13日〜28日の入力分
+cause: vulnerability
+vuln_target: ec_payment
+root_cause: 予約サイトが不正アクセスを受け、予約入力フォームのプログラムが改ざんされた
+data_types:
+  - 氏名
+  - 住所
+  - クレジットカード番号
+  - クレジットカードのセキュリティコード
+summary: 高速バス予約サイト「VIPライナー」の予約入力フォームが9月12日〜13日に改ざんされ、9月13日〜28日に入力された約1万5,000件の氏名・住所などと、うち6,949件のクレジットカードの名義・番号・有効期限・セキュリティコードが漏えいした可能性があると報じられた。9月27日に利用者の問い合わせで発覚したが、対象者への通知は10月27日だった。カードの不正利用の相談も寄せられている。
+sources:
+  - title: 読売新聞
+    url: https://news.yahoo.co.jp/articles/32132a49bb47e6808be7842198e2a66675639d5d
+  - title: 日本テレビ
+    url: https://news.yahoo.co.jp/articles/6bb47bf63e2256b69a697c0f98f1a089fbd57b69

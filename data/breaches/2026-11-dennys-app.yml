@@ -1,0 +1,22 @@
+organization: 株式会社デニーズジャパン
+services:
+  - デニーズアプリ（旧アプリ）
+industry: 飲食
+country: JP
+date_occurred: 2026-10-30
+date_announced: 2026-11-03
+affected_count: null
+count_note: 件数は調査中
+cause: unauthorized_access
+root_cause: 旧アプリから新アプリへの移行処理を悪用され、第三者に認証情報を不正に作成された
+data_types:
+  - 会員ID
+  - メールアドレス
+  - 生年月日
+  - 性別
+summary: 旧「デニーズアプリ」から新アプリへの移行処理を悪用して第三者に認証情報を不正に作成され、旧アプリ利用者の会員コード・メールアドレス・生年月日・性別・居住都道府県・お気に入り店舗・子どもの誕生日（キッズバースデー）が漏えいした可能性があると公表した。10月30日に確認し、不正な認証情報を無効化した。氏名・住所・電話番号・パスワード・カード情報は保持していない。
+sources:
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2611/04/2000002878/
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261104de70279

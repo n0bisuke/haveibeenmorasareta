@@ -1,0 +1,20 @@
+organization: 株式会社ソラシドエア
+services:
+  - 予約確認・航空券送付のメール
+industry: 交通・モビリティ
+country: JP
+date_announced: 2026-11-04
+affected_count: 490000
+count_note: 最大約49万件
+cause: third_party
+root_cause: メール配信の委託先アララの「アララメッセージ」が不正アクセスを受け、データが持ち出された
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: 予約確認や航空券送付に使うメール配信サービスを提供するアララが不正アクセスを受け、顧客のメールアドレス最大約49万件が外部に流出したと公表した。氏名・住所・電話番号・カード番号は含まれない。10月31日からメールでの航空券送付を停止した。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOJC04AKR0U6A101C2000000/
+  - title: TRAICY
+    url: https://www.traicy.com/posts/20261104386857/

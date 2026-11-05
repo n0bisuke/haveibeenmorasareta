@@ -1,0 +1,22 @@
+organization: 大阪府警察
+services:
+  - 大阪府警察スマート申請システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 大阪府
+date_announced: 2026-11-04
+affected_count: 4800
+count_note: 約4,800件（2月1日〜10月31日に利用者登録した人）
+cause: third_party
+root_cause: システム提供会社TKCのメール配信委託先アララが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: 採用試験の受験申込などに使うスマート申請システムで、提供会社TKCのメール配信委託先アララへの不正アクセスにより、利用者約4,800件のメールアドレスが漏えいした可能性があると公表した。システムを閉鎖し、申込は郵送のみとした。
+sources:
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261104de70620
+  - title: 産経新聞
+    url: https://news.yahoo.co.jp/articles/67f86c4a3abb64e2725c51ab835421c4057634e8

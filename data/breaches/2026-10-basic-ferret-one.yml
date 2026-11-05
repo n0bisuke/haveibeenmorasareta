@@ -1,0 +1,22 @@
+organization: 株式会社ベーシック
+services:
+  - ferret One
+industry: IT・通信
+country: JP
+date_occurred: 2026-10-14
+date_announced: 2026-10-27
+affected_count: 21287
+count_note: ログイン用メールアドレスなど4,317件と、利用企業3社の問い合わせなどの個人情報16,970件の合計
+cause: vulnerability
+vuln_target: web_app
+root_cause: 内部管理機能の不備など複数の脆弱性を悪用され、不正なアカウントを作られた
+data_types:
+  - メールアドレス
+  - 問い合わせ内容
+  - 取引先情報
+summary: マーケティングプラットフォーム「ferret One」で内部管理機能の不備を悪用され、10月14日に不正なアカウントを作られたと10月27日に公表した。11月の続報で、複数の脆弱性を悪用され、ログイン用メールアドレスなど4,317件と、利用企業3社の問い合わせなどの個人情報16,970件、4社の非公開ページの情報が閲覧・取得されたと公表した。パスワードと決済情報は含まれない。
+sources:
+  - title: ベーシック 適時開示（第一報）
+    url: https://www.nikkei.com/markets/ir/irftp/data/tdnr/tdnetg3/20261027/g79g11/140120261027556805.pdf
+  - title: ベーシック 適時開示（続報）
+    url: https://www.release.tdnet.info/inbs/140120261102562932.pdf

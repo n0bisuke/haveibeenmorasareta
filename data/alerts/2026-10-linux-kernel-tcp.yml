@@ -22,6 +22,9 @@ summary: >-
   Red Hat などは深刻度を 5.9〜8.1 と評価しており、ディストリビューションによって修正版の
   提供状況が異なる。別に、ローカルで権限を昇格できる「Fragnesia」（CVE-2026-46300、CVSS 7.8）が
   10月28日に米 CISA の悪用確認済み脆弱性リスト（KEV）に追加された。
+  Red Hat は11月1日に RHEL 8/9/10 の修正版カーネルを公開した。Ubuntu は11月2日に 22.04 LTS
+  以降の修正版カーネルを検証用の「-proposed」に置いたが、11月5日時点で通常の更新としては
+  配布されておらず、対応の遅さが海外で批判されている（16.04〜20.04 は Ubuntu Pro が必要）。
 risk: >-
   インターネットに公開している Linux サーバーが、ログインなしで乗っ取られる恐れがある。
   乗っ取られると、サーバー上のデータや認証情報を盗まれたり、ランサムウェアや踏み台に
@@ -40,6 +43,7 @@ checklist:
   - uname -r で動いているカーネルの版を確認する
   - 配布元（Ubuntu・Red Hat・Debian など）のセキュリティ情報で CVE-2026-98432 の修正状況を確認する
   - 修正版カーネルが出ていれば更新して再起動する
+  - Ubuntu は通常の更新（-security / -updates）に修正版が来たかを確認する（-proposed は検証用）
   - 修正版が無ければ、MPTCP を使っていないか確認し、外部に公開するポートを絞る
   - Fragnesia（CVE-2026-46300）の修正版カーネルも当てる
   - VPS・レンタルサーバーは事業者のお知らせも確認する
@@ -52,3 +56,7 @@ sources:
     url: https://securityonline.info/linux-kernel-cve-2026-98432/
   - title: カーリル（影響の説明）
     url: https://blog.calil.jp/2026/10/linux-kernel.html
+  - title: pbxscience（Ubuntu の修正は -proposed）
+    url: https://pbxscience.com/ubuntu-kernel-fixes-for-critical-cve-2026-98432-reach-the-proposed-pocket-but-are-not-yet-standard-updates/
+  - title: OMG! Ubuntu（修正の遅れへの批判）
+    url: https://www.omgubuntu.co.uk/2026/11/ubuntu-fix-tcp-bug-criticism

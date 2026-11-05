@@ -1,0 +1,22 @@
+organization: 株式会社栃木銀行
+services:
+  - 商品案内メール
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 栃木県
+date_announced: 2026-11-04
+affected_count: 1000
+count_note: 約1,000件
+cause: third_party
+root_cause: メール配信の委託先アララが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: メール配信を委託するアララへの不正アクセスにより、商品案内メールに登録した顧客のメールアドレス約1,000件が流出したと公表した。氏名・口座情報は含まれない。
+sources:
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261104de70205
+  - title: 下野新聞
+    url: https://www.shimotsuke.co.jp/articles/-/1452461
