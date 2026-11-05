@@ -1,0 +1,15 @@
+organization: 株式会社電通総研
+services:
+  - FACERE
+industry: IT・通信
+country: JP
+date_occurred: 2026-09-10
+date_announced: 2026-11-04
+affected_count: null
+count_note: 件数・情報の種類は未公表
+cause: misconfiguration
+root_cause: アクセス権限の設定不備で、特定の利用企業の環境のデータが第三者から閲覧できる状態だった
+summary: サービス「FACERE」で、自社のアクセス権限の設定不備により特定の利用企業の環境にあるデータが第三者から閲覧できる状態になっており、9月10日に不正アクセスを受けて個人情報が流出した可能性があると公表した。設定を変更して経路を遮断し、全利用企業の環境を調査している。
+sources:
+  - title: 電通総研 お知らせ
+    url: https://www.dentsusoken.com/news/topics/2026/1104_1.html

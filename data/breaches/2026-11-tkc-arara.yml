@@ -1,0 +1,20 @@
+organization: 株式会社TKC
+services:
+  - TASKクラウドなど自治体・企業向けシステムのメール配信
+industry: IT・通信
+country: JP
+date_announced: 2026-11-02
+affected_count: 2230812
+count_note: 顧客のメールアドレス最大2,230,812件（顧客別・システム別に分類中）
+cause: third_party
+root_cause: システムのメール配信を委託していたアララが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: システムのメール配信を委託していたアララへの不正アクセスにより、顧客のメールアドレス最大2,230,812件が漏えいの対象に含まれると公表した。自治体のマイナンバーカード交付予約・管理システムや電子申請システムなどでメール送信を停止しており、横浜市・大阪府・大阪府警など利用団体が相次いで影響を公表している。
+sources:
+  - title: TKC お知らせ（第2報）
+    url: https://www.tkc.jp/news/2026/20261102_2/
+  - title: TKC お知らせ（第4報）
+    url: https://www.tkc.jp/news/2026/20261104_1/

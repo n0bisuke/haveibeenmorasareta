@@ -1,0 +1,24 @@
+organization: 株式会社ライフコーポレーション
+services:
+  - ライフ公式アプリ
+industry: 小売・EC
+country: JP
+date_occurred: 2026-10-30
+date_announced: 2026-11-02
+affected_count: 298
+count_note: 298件（調査中で増える可能性）
+cause: unauthorized_access
+data_types:
+  - 氏名
+  - 生年月日
+  - 住所
+  - 郵便番号
+  - 電話番号
+  - ポイント情報
+  - 資産・取引情報
+summary: 公式アプリへの第三者の不正アクセスを10月30日に確認し、298件の氏名・生年月日・住所・電話番号・電子マネー残高・ポイントカード番号・ポイント残高が閲覧された可能性があると公表した。LC JCBカードのカード番号は含まれない。ポイントカードを停止・再発行する。
+sources:
+  - title: ライフコーポレーション お知らせ
+    url: https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261102-1.pdf
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC043PL0U6A101C2000000/

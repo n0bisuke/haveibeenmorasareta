@@ -1,0 +1,22 @@
+organization: 株式会社Shippio
+services:
+  - Shippio Platform
+industry: 物流
+country: JP
+date_occurred: 2026-10-30
+date_announced: 2026-11-04
+affected_count: null
+count_note: 輸送関連の書類ファイル約1,300件が不正にダウンロードされた。個人情報の件数は未公表
+cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
+root_cause: 社内業務ツールに保存されていた認証情報を悪用され、サービス本体に侵入された
+data_types:
+  - 取引先情報
+  - 保存データ（写真・文書等）
+summary: 社内業務ツールに保存されていた認証情報を悪用され、貿易DXサービス「Shippio Platform」に11月1日〜2日に複数回侵入されたと公表した。輸送関連の書類ファイル約1,300件が不正にダウンロードされ、全顧客の会社名・チーム名・電話番号・住所や、ほぼ全顧客のシップメント情報が閲覧された。サービスを停止した。
+sources:
+  - title: LNEWS
+    url: https://www.lnews.jp/2026/11/s1104704.html
+  - title: LOGI-TODAY
+    url: https://www.logi-today.com/1018150
