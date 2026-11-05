@@ -1,0 +1,25 @@
+organization: ソニー銀行株式会社
+group: ソニーグループ
+services:
+  - デジタル証券サービス
+industry: 金融・保険
+country: JP
+date_occurred: 2026-10-29
+date_announced: 2026-10-30
+affected_count: 621
+count_note: 氏名のみ617名、氏名・住所・生年月日・口座番号4名
+cause: third_party
+root_cause: デジタル証券サービスの委託先Securitize Japanが不正アクセスを受けた
+vendor:
+  name: Securitize Japan株式会社
+data_types:
+  - 氏名
+  - 住所
+  - 生年月日
+  - 口座番号
+summary: デジタル証券サービスの委託先Securitize Japanが不正アクセスを受け、621名の情報が漏えいしたと公表した。617名は氏名のみ、4名は氏名・住所・生年月日・口座番号を含む。不正な取引は確認されておらず、デジタル証券の取引を停止している。
+sources:
+  - title: ソニー銀行 お知らせ
+    url: https://sonybank.jp/info/2026/1030-01.html
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUB033KO0T01C26A1000000/

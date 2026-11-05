@@ -1,0 +1,20 @@
+organization: 横浜ゴム株式会社
+services:
+  - ニュースリリース配信
+industry: 製造
+country: JP
+date_announced: 2026-11-03
+affected_count: 4242
+cause: third_party
+root_cause: メール配信の委託先アララの「アララメッセージ」が不正アクセスを受け、データが持ち出された
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+  - 取引先情報
+summary: ニュースリリースの配信に使っていたアララの「アララメッセージ」が不正アクセスを受け、配信登録者4,242件の会社名とメールアドレスが漏えいしたと公表した。氏名・住所は含まれない。10月28日から配信を停止している。
+sources:
+  - title: 横浜ゴム お知らせ
+    url: https://www.y-yokohama.com/release/pdf/2026110317mg002.pdf
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261103de70021
