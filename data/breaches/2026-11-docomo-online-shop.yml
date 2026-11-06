@@ -1,0 +1,26 @@
+organization: 株式会社NTTドコモ
+group: NTTグループ
+services:
+  - ドコモオンラインショップ
+  - My docomo
+industry: IT・通信
+country: JP
+date_occurred: 2026-11-04
+date_announced: 2026-11-05
+affected_count: 300000
+count_note: 最大約30万件（範囲は調査中）
+cause: unauthorized_access
+root_cause: ドコモオンラインショップとMy docomoのサーバーが外部から不正アクセスを受けた（経路は調査中）
+data_types:
+  - 氏名
+  - 住所
+  - 生年月日
+  - 電話番号
+summary: ドコモオンラインショップとMy docomoのサーバーが外部から不正アクセスを受け、最大約30万件の氏名・住所・生年月日・携帯電話番号・連絡先電話番号などが流出したと公表した。11月4日に検知し、5日未明から両サービスの手続きを停止した。決済情報が含まれるかは調査中。10月公表のぷらら（Sコース）の件とは別の事案。
+sources:
+  - title: NTTドコモ お知らせ
+    url: https://www.docomo.ne.jp/info/notice/page/261105_03_m.html
+  - title: ITmedia Mobile
+    url: https://www.itmedia.co.jp/mobile/articles/2611/05/news093.html
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2154115.html

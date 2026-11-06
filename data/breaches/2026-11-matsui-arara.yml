@@ -1,0 +1,22 @@
+organization: 松井証券株式会社
+services:
+  - 顧客向けメール配信
+industry: 金融・保険
+country: JP
+date_announced: 2026-11-05
+affected_count: 830000
+count_note: 最大83万件
+cause: third_party
+root_cause: メール配信の委託先アララの「アララメッセージ」が不正アクセスを受け、データが持ち出された
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: メール配信を委託するアララが不正アクセスを受け、顧客のメールアドレス最大83万件が漏えいしたと報告を受けたと公表した。ログインID・パスワード・取引情報は含まれず、自社システムへの不正アクセスも確認されていない。パスキーの設定を呼びかけている。
+sources:
+  - title: 松井証券 プレスリリース
+    url: https://www.matsui.co.jp/company/press/pdf/pr261105.pdf
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUB05AEF0V01C26A1000000/
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261105de71265

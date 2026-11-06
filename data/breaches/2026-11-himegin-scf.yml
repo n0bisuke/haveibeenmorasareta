@@ -1,0 +1,28 @@
+organization: 株式会社愛媛銀行
+services:
+  - カードローン
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 愛媛県
+date_announced: 2026-11-05
+affected_count: null
+count_note: 件数は調査中（SMBCコンシューマーファイナンス全体の最大320,118人の内数）
+cause: third_party
+root_cause: カードローンの保証会社SMBCコンシューマーファイナンスの保証業務システムが不正アクセスを受けた
+vendor:
+  name: SMBCコンシューマーファイナンス株式会社
+data_types:
+  - 氏名
+  - 住所
+  - 生年月日
+  - 電話番号
+  - 運転免許情報
+  - 従業員情報
+  - 契約情報
+summary: カードローンの保証会社SMBCコンシューマーファイナンスの保証業務システムへの不正アクセスにより、カードローンの利用者の氏名・住所・生年月日・電話番号・運転免許証番号・勤務先・年収・保証額などが漏えいしたと公表した。件数は調査中。銀行本体への不正アクセスはない。
+sources:
+  - title: 愛媛銀行 お知らせ
+    url: https://www.himegin.co.jp/new_csr/pdf/20261105_1.pdf
+  - title: テレビ愛媛
+    url: https://news.yahoo.co.jp/articles/40ad239283b81075c1f505a46e77e6644f412d1b
