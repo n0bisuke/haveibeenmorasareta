@@ -1,0 +1,22 @@
+organization: 株式会社モンテローザ
+services:
+  - 白木屋などのメールマガジン
+industry: 飲食
+country: JP
+date_announced: 2026-11-04
+affected_count: 625429
+count_note: メールアドレス625,429件（うち生年月日など任意の属性情報31,333件）
+cause: third_party
+root_cause: メール配信の委託先アララの「アララメッセージ」が不正アクセスを受け、データが持ち出された
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+  - 生年月日
+  - 性別
+summary: 「白木屋」などのメールマガジン配信を委託するアララへの不正アクセスにより、会員のメールアドレス625,429件と、うち31,333件の生年月日・性別・都道府県・お気に入りブランドなどが流出したおそれがあると公表した。氏名・住所・カード番号は保有していない。メールマガジンの新規登録と配信を停止した。
+sources:
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261105de70839
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC053J80V01C26A1000000/

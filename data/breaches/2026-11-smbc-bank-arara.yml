@@ -1,0 +1,21 @@
+organization: 株式会社三井住友銀行
+group: SMBCグループ
+services:
+  - 顧客向けメール配信
+industry: 金融・保険
+country: JP
+date_announced: 2026-11-05
+affected_count: 227216
+count_note: 7月1日〜10月31日に配信したメールの宛先（主に法人顧客）
+cause: third_party
+root_cause: メール配信の委託先アララの「アララメッセージ」が不正アクセスを受け、データが持ち出された
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: メール配信を委託するアララのサービスが不正アクセスを受け、7月〜10月に配信したメールの宛先227,216件のメールアドレスが漏えいしたと公表した。主に法人顧客で、口座番号・預金残高・暗証番号・ネットバンキングのID・パスワードは含まれない。
+sources:
+  - title: TBS NEWS DIG
+    url: https://news.yahoo.co.jp/articles/e25d5ad4671b446bafefe4d7db8bbfd80c301be8
+  - title: MBS
+    url: https://news.yahoo.co.jp/articles/fd74696724dec33e8a1ab3dbecb686c944233771

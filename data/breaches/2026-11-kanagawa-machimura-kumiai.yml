@@ -1,0 +1,25 @@
+organization: 神奈川県町村情報システム共同事業組合
+services:
+  - スマート申請システム
+  - マイナンバーカード交付予約管理システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 神奈川県
+date_announced: 2026-11-05
+affected_count: null
+count_note: 件数は未公表（大磯・二宮・中井・大井・松田・開成・箱根・真鶴・湯河原・愛川の10町）
+cause: third_party
+root_cause: 両システムのメール送信に使う外部サービスを運営するアララが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: 県内10町が共同で使う「スマート申請システム」と「マイナンバーカード交付予約管理システム」のメール送信部分で、外部のメール送信サービスを運営するアララが不正アクセスを受け、利用者のメールアドレスが漏えいした可能性があると公表した。マイナンバーは含まれず、町のシステムへの不正アクセスは確認されていない。
+sources:
+  - title: 愛川町 お知らせ
+    url: https://www.town.aikawa.kanagawa.jp/kurashi/mynumber/19269.html
+  - title: 二宮町 お知らせ
+    url: https://www.town.ninomiya.kanagawa.jp/0000003661.html
+  - title: カナロコ
+    url: https://news.yahoo.co.jp/articles/201db132e1d62817aeef8b9bb25119f7b18b6276

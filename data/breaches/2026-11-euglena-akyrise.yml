@@ -1,0 +1,23 @@
+organization: 株式会社ユーグレナ
+services:
+  - akyrise（あきゅらいず）ECサイト
+industry: 小売・EC
+country: JP
+date_occurred: 2026-11-04
+date_announced: 2026-11-05
+affected_count: 900000
+count_note: 登録・購入情報最大約90万件とログイン情報最大約49万件（重複あり、確定件数は調査中）。別にアララ経由でメールアドレス177,063件、佐川急便経由で配送情報約5,000件
+cause: unauthorized_access
+root_cause: 化粧品ブランドのECサイトが第三者の不正アクセスを受けた
+data_types:
+  - 会員ID
+  - メールアドレス
+  - パスワード（ハッシュ化・暗号化済み）
+  - 氏名
+  - 住所
+summary: 化粧品ブランド「akyrise（あきゅらいず）」のECサイトへの不正アクセスを11月4日に確認してサイトを閉鎖し、顧客ID・メールアドレス・ハッシュ化パスワードの最大約49万件と、退会者や過去の購入者を含む登録・購入情報（氏名・住所など）の最大約90万件が漏えいしたと公表した。あわせて、メール配信の委託先アララ経由でメールアドレス177,063件、佐川急便経由で配送情報約5,000件の漏えいの可能性も公表した。
+sources:
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261106de71662
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/euglena_akyrise_three_independent_breaches_20261105/
