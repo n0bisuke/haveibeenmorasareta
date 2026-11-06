@@ -1,0 +1,18 @@
+organization: 近鉄不動産株式会社
+group: 近鉄グループ
+services:
+  - 分譲マンションのメールマガジン・資料請求
+industry: 不動産
+country: JP
+date_announced: 2026-11-05
+affected_count: 49213
+cause: third_party
+root_cause: メール配信の委託先の再委託先アララが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: 分譲マンション情報のメール配信を委託している企業の再委託先アララが不正アクセスを受け、メールマガジン会員と資料請求者のメールアドレス49,213件が漏えいしたと公表した。氏名・住所・職業・年収は含まれない。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUF0585P0V01C26A1000000/

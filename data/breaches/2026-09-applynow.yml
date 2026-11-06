@@ -1,0 +1,25 @@
+organization: 株式会社ApplyNow
+services:
+  - ApplyNow
+  - ApplyNow Sign
+industry: 人材・教育
+country: JP
+date_announced: 2026-09-09
+affected_count: 396920
+count_note: 応募者・契約者・企業ユーザーの合計（11月4日の調査結果）。うち30,067人は電子雇用契約「ApplyNow Sign」の利用者
+cause: vulnerability
+vuln_target: business_tool
+root_cause: 社内のデータ分析ツールの公表済み脆弱性の修正が遅れ、接続元も制限していなかった
+data_types:
+  - 氏名
+  - マイナンバー
+  - 口座番号
+  - 従業員情報
+summary: 採用管理サービス「ApplyNow」への不正アクセスを9月に公表し、11月4日の調査結果で、社内のデータ分析ツールの公表済み脆弱性への修正が遅れ、接続元を制限していなかったことが原因と公表した。応募者・契約者・企業ユーザーの計396,920人の情報が漏えいし、一部にマイナンバー、口座情報、基礎年金番号などを含む。利用を終えた企業のデータも削除していなかった。富士市・吉野家HDなど利用企業も影響を公表している。
+sources:
+  - title: ApplyNow お知らせ（調査結果）
+    url: https://applynow.co.jp/news/20261104
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2611/05/2000002908/
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261105de71179

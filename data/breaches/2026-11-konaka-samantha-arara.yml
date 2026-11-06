@@ -1,0 +1,20 @@
+organization: サマンサタバサジャパンリミテッド・バーンデストローズジャパンリミテッド
+services:
+  - 顧客向けメール配信
+industry: 小売・EC
+country: JP
+date_announced: 2026-11-05
+affected_count: 434414
+count_note: 子会社2社の合計
+cause: third_party
+root_cause: メール配信の委託先アララの「アララメッセージ」が不正アクセスを受け、データが持ち出された
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: コナカの子会社2社が、メール配信を委託するアララへの不正アクセスにより、顧客のメールアドレス434,414件が漏えいしたと公表した。氏名・住所・カード情報は含まれない。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC056Q10V01C26A1000000/
+  - title: リスク対策.com（時事通信）
+    url: https://www.risktaisaku.com/articles/-/116894
