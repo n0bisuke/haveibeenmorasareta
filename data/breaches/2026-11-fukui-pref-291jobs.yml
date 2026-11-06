@@ -1,0 +1,24 @@
+organization: 福井県
+services:
+  - 就職支援サイト「291JOBS」
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 福井県
+date_announced: 2026-11-06
+affected_count: 368
+count_note: 368人分が閲覧可能な状態で、うち10人分は実際に閲覧された
+cause: misconfiguration
+root_cause: 保守委託業者の設定誤りで、職務経歴書や履歴書が外部から閲覧できる状態だった
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - 生年月日
+  - 保存データ（写真・文書等）
+summary: UIターン者向けの就職支援サイト「291JOBS」で、保守委託業者の設定誤りにより、登録者368人分の職務経歴書・履歴書（氏名・住所・電話番号・生年月日・顔写真など）が外部から閲覧できる状態になっており、うち10人分は実際に閲覧されていたと公表した。10月29日に過去の登録者からの連絡で発覚し、公開を停止した。
+sources:
+  - title: 福井テレビ
+    url: https://news.yahoo.co.jp/articles/aa9ebdef0fa20dc1915b2402fad2681106b99b7d
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261106de71485

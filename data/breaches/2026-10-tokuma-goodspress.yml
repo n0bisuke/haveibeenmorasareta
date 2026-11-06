@@ -1,0 +1,21 @@
+organization: 株式会社徳間書店
+services:
+  - GoodsPress Web（テスト環境）
+industry: メディア・出版
+country: JP
+date_occurred: 2026-10-22
+date_announced: 2026-10-26
+affected_count: 103
+cause: unauthorized_access
+root_cause: ニュースサイトのテスト環境で管理者アカウントを不正に作成され、ページを改ざんされた
+data_types:
+  - 氏名
+  - アカウント名
+  - メールアドレス
+  - 取引先情報
+summary: ニュースサイト「GoodsPress Web」のテスト環境で第三者に管理者アカウントを不正に作成されてページを改ざんされ、記事執筆協力者や取引先など103件の氏名・ニックネーム・メールアドレスが閲覧された可能性があると公表した。本番環境へのアクセスはない。
+sources:
+  - title: 徳間書店 お知らせ
+    url: https://www.tokuma.jp/news/n65028.html
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/11/06/56686.html

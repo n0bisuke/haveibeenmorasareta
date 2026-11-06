@@ -1,0 +1,25 @@
+organization: 秋田県湯沢市
+services:
+  - 市発注の地籍調査・用地測量業務
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 秋田県
+date_occurred: 2026-09-20
+date_announced: 2026-11-05
+affected_count: 2256
+count_note: 延べ2,256件（23業務）
+cause: third_party
+root_cause: 測量などの委託先柴田工事調査がランサムウェア攻撃を受けた
+vendor:
+  name: 柴田工事調査
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+summary: 地籍調査・用地測量など23業務の委託先柴田工事調査がランサムウェア攻撃を受け、延べ2,256件の氏名・住所・電話番号が漏えいした可能性があると公表した。11月4日に委託先から報告を受けた。
+sources:
+  - title: 湯沢市 お知らせ
+    url: https://www.city-yuzawa.jp/soshiki/14/6597.html
+  - title: 秋田魁新報
+    url: https://www.sakigake.jp/news/article/20261105AK0007/

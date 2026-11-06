@@ -1,0 +1,24 @@
+organization: 秋田県横手市
+services:
+  - 市発注の測量設計・地籍調査業務
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 秋田県
+date_occurred: 2026-09-20
+date_announced: 2026-11-05
+affected_count: 1300
+count_note: 延べ約1,300人（11月5日時点の委託先の調査）
+cause: third_party
+root_cause: 測量などの委託先柴田工事調査がランサムウェア攻撃を受けた
+vendor:
+  name: 柴田工事調査
+data_types:
+  - 氏名
+  - 住所
+summary: 市が令和3〜8年度に発注した測量設計・地籍調査など12件の委託先柴田工事調査が9月20日にランサムウェア攻撃を受け、土地所有者など延べ約1,300人の住所と氏名が漏えいした恐れがあると公表した。不正利用は確認されていない。
+sources:
+  - title: 横手市 お知らせ
+    url: https://www.city.yokote.lg.jp/shigoto/1001164/1001361/1013864.html
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261105de71243

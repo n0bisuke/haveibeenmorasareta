@@ -1,0 +1,23 @@
+organization: 株式会社ソニックムーブ
+services:
+  - COMSBI エンタープライズ基盤
+industry: IT・通信
+country: JP
+date_occurred: 2026-10-23
+date_announced: 2026-10-26
+affected_count: null
+count_note: 件数は未公表
+cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
+root_cause: 管理画面に不正ログインされ、機能上の不備を突かれてサーバーの認証情報も取られた
+data_types:
+  - 氏名
+  - メールアドレス
+  - パスワード（ハッシュ化・暗号化済み）
+summary: LINE連携基盤「COMSBI エンタープライズ基盤」の管理システムに10月23日に不正ログインされ、導入企業の管理画面利用者の氏名・メールアドレス・暗号化パスワード、LINE公式アカウントの設定情報、導入企業が持つ利用者の氏名・メールアドレスなどが漏えいした、またはそのおそれがあると公表した。UCC上島珈琲なども影響を公表している。
+sources:
+  - title: ソニックムーブ お知らせ
+    url: https://sonicmoov.com/news/xr5qdn-cnfsn
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/11/05/56673.html
