@@ -4,16 +4,28 @@ services:
   - ご契約者さま専用ページなど
 industry: 金融・保険
 country: JP
-status: investigating
-issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
 date_occurred: 2026-11-02
 date_announced: 2026-11-04
-affected_count: null
-count_note: 漏えいの有無と件数は調査中
+affected_count: 481000
+count_note: あいおいニッセイ同和約44万4,000件、三井住友海上約3万7,000件（11月6日9時時点）
 cause: unauthorized_access
-summary: 両社が共通で使うシステムが11月2日に不正アクセスを受け、契約者向けサイトなどを停止したと公表した。個人情報の流出は現時点で確認されておらず、調査中としている。
+summary: 両社が共通で使うシステムが11月2日に不正アクセスを受け、契約者向けサイトなどを停止したと公表した。個人情報の流出は現時点で確認されておらず、調査中としている。11月6日に、あいおいニッセイ同和約44万4,000件、三井住友海上約3万7,000件の保険証券番号・氏名・住所・電話番号・メールアドレス・専用ページIDなどの漏えいを確認したと公表した。あいおいの一部ではカード名義と番号下4桁（3件）、口座番号の一部（19件）も含む。
 sources:
   - title: 日本経済新聞
     url: https://www.nikkei.com/article/DGXZQOUB041JN0U6A101C2000000/
   - title: 読売新聞
     url: https://news.yahoo.co.jp/articles/4ccb807bee10f7c549941cede430186ec54a229d
+  - title: MS&ADホールディングス お知らせ
+    url: https://www.ms-ad-hd.com/ja/important_notice/notice-06.html
+  - title: NHK（件数判明）
+    url: https://news.web.nhk/newsweb/na/nd-20261106de71530
+root_cause: 2社共通の契約者専用ページのシステムが不正アクセスを受けた（経路は調査中）
+data_types:
+  - 契約情報
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 会員ID
+  - クレジットカード情報（番号の一部・有効期限等）
+  - 口座番号

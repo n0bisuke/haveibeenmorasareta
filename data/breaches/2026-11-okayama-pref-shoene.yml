@@ -1,0 +1,20 @@
+organization: 岡山県
+services:
+  - おかやま省エネ家電導入・住宅断熱リフォーム応援キャンペーン
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 岡山県
+date_announced: 2026-11-06
+affected_count: 1100
+count_note: 最大約1,100件
+cause: third_party
+root_cause: キャンペーン事務局が使うアララのメール配信サービスが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: 省エネ家電・住宅断熱リフォームの応援キャンペーンで、事務局が使うアララのメール配信サービスへの不正アクセスにより、ポイント交換コード再発行のメールを受け取った人のメールアドレス最大約1,100件が漏えいした可能性があると公表した。
+sources:
+  - title: KSB瀬戸内海放送
+    url: https://news.ksb.co.jp/article/17030404

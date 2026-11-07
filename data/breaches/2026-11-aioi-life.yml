@@ -1,0 +1,23 @@
+organization: 三井住友海上あいおい生命保険株式会社
+group: MS&ADグループ
+services:
+  - 損保のご契約者さま専用ページでの生保契約表示
+industry: 金融・保険
+country: JP
+date_announced: 2026-11-06
+affected_count: 5300
+count_note: 約5,300件
+cause: third_party
+root_cause: グループ損保2社の契約者専用ページが不正アクセスを受けた
+vendor:
+  name: あいおいニッセイ同和損害保険株式会社
+data_types:
+  - 契約情報
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+summary: グループ損保の契約者専用ページに生命保険の契約を表示する設定にしていた顧客について、同ページへの不正アクセスにより約5,300件の証券番号・氏名・住所・電話番号・メールアドレスなどが漏えいしたと公表した。
+sources:
+  - title: 保険ジャーナル
+    url: https://ins-journal.com/articles/0183bb52ac2c/

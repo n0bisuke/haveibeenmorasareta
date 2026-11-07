@@ -1,0 +1,17 @@
+organization: 学校法人東洋大学
+services:
+  - 学生・教職員のアカウント
+industry: 人材・教育
+country: JP
+org_type: university
+prefecture: 東京都
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_announced: 2026-11-05
+affected_count: null
+count_note: アカウント数・流出の有無は調査中
+cause: unauthorized_access
+summary: 学生・教職員の一部アカウントへの不正アクセスを確認し、文部科学省と個人情報保護委員会に報告したと公表した。アカウント数や流出の有無、情報の種類は調査中。二次被害は確認されていない。
+sources:
+  - title: 東洋大学 お知らせ
+    url: https://www.toyo.ac.jp/news/20261105-20479.html

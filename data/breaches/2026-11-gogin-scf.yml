@@ -1,0 +1,30 @@
+organization: 株式会社山陰合同銀行
+services:
+  - ごうぎんポケットローン
+  - ごうぎんポケットローンワイド
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 島根県
+date_announced: 2026-11-06
+affected_count: 1585
+count_note: 2001〜06年に申し込まれた個人ローンの契約者
+cause: third_party
+root_cause: ローンの保証会社SMBCコンシューマーファイナンスの保証業務システムが不正アクセスを受けた
+vendor:
+  name: SMBCコンシューマーファイナンス株式会社
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - 運転免許情報
+  - 従業員情報
+  - 契約情報
+  - 性別
+  - メールアドレス
+summary: 保証会社SMBCコンシューマーファイナンスへの不正アクセスにより、2001〜06年に申し込まれた個人ローンの契約者1,585人の氏名・性別・住所・電話番号・メールアドレス・運転免許証番号・年収などが漏えいしたと公表した。不正利用は確認されていない。
+sources:
+  - title: 山陰中央新報
+    url: https://www.sanin-chuo.co.jp/articles/-/1111681
+  - title: TSKさんいん中央テレビ
+    url: https://news.yahoo.co.jp/articles/39cbce46836a8fb35d3b531b864e527f1eb5ff3b

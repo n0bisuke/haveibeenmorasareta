@@ -1,0 +1,20 @@
+organization: 秋田ノーザンハピネッツ
+services:
+  - ファンクラブ「クラブハピネッツ」
+industry: エンタメ・スポーツ
+country: JP
+date_announced: 2026-11-06
+affected_count: 9530
+count_note: 最大9,530人（2021-22シーズン以降の元会員を含む）
+cause: third_party
+root_cause: ファンクラブ運営の委託先の再委託先アララが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: ファンクラブ運営の委託先が使うアララのメール配信サービスが不正アクセスを受け、2021-22シーズン以降の元会員を含む最大9,530人のメールアドレスが漏えいした可能性があると公表した。パスワードとカード情報は含まれない。
+sources:
+  - title: 秋田ノーザンハピネッツ お知らせ
+    url: https://northern-happinets.com/news/detail/id=23087
+  - title: ABS秋田放送
+    url: https://news.yahoo.co.jp/articles/731eabdd1de371242174e5fd7d10b429bfac68ff

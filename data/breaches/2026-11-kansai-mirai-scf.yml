@@ -1,0 +1,24 @@
+organization: 株式会社関西みらい銀行
+group: りそなグループ
+services:
+  - 解約済みのカードローン・フリーローン
+industry: 金融・保険
+country: JP
+date_announced: 2026-11-06
+affected_count: 5793
+count_note: 旧近畿大阪銀行を含むカードローン・フリーローン
+cause: third_party
+root_cause: ローンの保証会社SMBCコンシューマーファイナンスの保証業務システムが不正アクセスを受けた
+vendor:
+  name: SMBCコンシューマーファイナンス株式会社
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - 運転免許情報
+  - 従業員情報
+  - 契約情報
+summary: 保証提携先のSMBCコンシューマーファイナンスの保証業務システムへの不正アクセスにより、解約済みのローン顧客5,793件の氏名・住所・電話番号・年収・運転免許証番号・ローンの契約情報が漏えいしたと公表した。りそな銀行・関西みらい銀行・みなと銀行の3行で計5,935件。
+sources:
+  - title: 共同通信
+    url: https://news.yahoo.co.jp/articles/1113622e687675ff4d8c6948acbe61113ad907ae

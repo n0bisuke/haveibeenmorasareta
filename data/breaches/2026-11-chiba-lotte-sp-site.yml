@@ -1,0 +1,18 @@
+organization: 株式会社千葉ロッテマリーンズ
+services:
+  - 千葉ロッテ公式スマートフォンサイト
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-10-30
+date_announced: 2026-11-06
+affected_count: 11875
+count_note: 有料会員（退会者を含む）のメールアドレス11,875件。ほかにニックネーム37,070件
+cause: unauthorized_access
+root_cause: 公式スマートフォンサイトの管理システムが不正アクセスを受け、ファイルをダウンロードされた
+data_types:
+  - メールアドレス
+  - アカウント名
+summary: 千葉ロッテ公式スマートフォンサイトが10月30日に不正アクセスを受け、有料会員（退会者を含む）のメールアドレス11,875件とニックネーム37,070件を含むファイルがダウンロードされたと、パシフィックリーグマーケティングが公表した。11月4日に管理システムに身に覚えのないページが作られているのに気づいて発覚した。
+sources:
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261106de71746

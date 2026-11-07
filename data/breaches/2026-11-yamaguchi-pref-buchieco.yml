@@ -1,0 +1,22 @@
+organization: 山口県
+services:
+  - ぶちエコやまぐち省エネ家電等購入支援キャンペーン
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 山口県
+date_announced: 2026-11-06
+affected_count: 25911
+count_note: 最大25,911件（申請者24,787件、参加店舗1,124件）
+cause: third_party
+root_cause: キャンペーン事務局（JTB・ギフトパッド共同企業体）が使うアララのメール配信サービスが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: 省エネ家電の購入支援キャンペーンの事務局が使うアララのメール配信サービスが不正アクセスを受け、ネットで申請した利用者と参加店舗のメールアドレス最大25,911件が漏えいしたおそれがあると公表した。氏名などは含まれない。
+sources:
+  - title: 中国新聞
+    url: https://www.chugoku-np.co.jp/articles/-/920830
+  - title: tysテレビ山口
+    url: https://news.yahoo.co.jp/articles/e030871ae225c6bc74c2d977ca6b5c9ca29447bd

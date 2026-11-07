@@ -1,0 +1,22 @@
+organization: 株式会社Fanplus
+services:
+  - アーティストのファンクラブ・メール配信（JO1など）
+industry: エンタメ・スポーツ
+country: JP
+date_announced: 2026-11-02
+affected_count: null
+count_note: 件数は調査中
+cause: third_party
+root_cause: メール配信の委託先アララの「アララメッセージ」が不正アクセスを受け、データが持ち出された
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: ファンクラブのプラットフォームで使っていたアララのメール配信サービスが不正アクセスを受け、会員のメールアドレスが漏えいしたおそれがあると公表した。JO1など複数のアーティストのファンクラブが影響を案内している。
+sources:
+  - title: Fanplus お知らせ
+    url: https://fanplus.co.jp/static/fanplus/information/arara_notice_20261102.pdf
+  - title: JO1 お知らせ
+    url: https://cloud.jo1.jp/news/detail/6494
+  - title: アスキー
+    url: https://ascii.jp/elem/000/004/449/4449198

@@ -1,0 +1,23 @@
+organization: 山形県尾花沢市
+services:
+  - スマート申請システム
+  - マイナンバーカード交付予約・管理システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 山形県
+date_announced: 2026-11-06
+affected_count: 971
+count_note: 最大971件（スマート申請967件、交付予約4件）
+cause: third_party
+root_cause: 委託先が使うアララのメール配信サービスが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: スマート申請システムとマイナンバーカード交付予約・管理システムで、委託先が使うアララのメール配信サービスへの不正アクセスにより、メールアドレス最大971件が漏えいした可能性があると公表した。本文・マイナンバー・申請情報は含まれない。
+sources:
+  - title: YBC山形放送
+    url: https://news.yahoo.co.jp/articles/09d8d180e352235874de42d166f3a23f488b06dc
+  - title: 山形新聞
+    url: https://www.yamagata-np.jp/news/202611/07/kj_2026110700165.php

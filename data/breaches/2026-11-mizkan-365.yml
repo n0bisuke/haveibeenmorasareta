@@ -1,0 +1,22 @@
+organization: 株式会社Mizkan
+services:
+  - コミュニティサイト「ミツカン365」
+industry: 食品
+country: JP
+date_occurred: 2026-10-30
+date_announced: 2026-11-06
+affected_count: 487
+count_note: 会員情報の改ざん487人分（うち29人分は顧客IDとメールアドレスの漏えいを確認）
+cause: vulnerability
+vuln_target: web_app
+root_cause: 会員情報の変更機能と画面表示の仕組みの不備を悪用され、不正なプログラムを仕込まれた
+data_types:
+  - 会員ID
+  - メールアドレス
+  - アカウント名
+summary: コミュニティサイト「ミツカン365」が10月30日に不正アクセスを受け、会員情報の変更機能と画面表示の不備を悪用されて487人分の会員情報が改ざんされ、うち29人分の顧客IDとメールアドレスの漏えいを確認したと公表した。11月2日に「ニックネームが勝手に変わった」との問い合わせで発覚した。氏名・住所・パスワード・カード情報は含まれない。佐川急便経由の件とは別の事案。
+sources:
+  - title: リスク対策.com（時事通信）
+    url: https://www.risktaisaku.com/articles/-/116956
+  - title: 中日BIZナビ
+    url: https://biz.chunichi.co.jp/news/article/10/132982
