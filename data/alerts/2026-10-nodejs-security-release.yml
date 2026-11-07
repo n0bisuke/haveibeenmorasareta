@@ -19,7 +19,8 @@ summary: >-
   Node.js が計10件の脆弱性を修正するセキュリティリリースを公開した。Brotli 展開の
   範囲外書き込み（リモートコード実行につながる）や、TLS 証明書のホスト名確認を
   すり抜ける問題などを含む。VS Code・Slack・Notion などの Electron 製アプリや
-  デスクトップアプリも、内部に Node.js を含むため関係する。
+  デスクトップアプリも、内部に Node.js を含むため関係する。Brotli の脆弱性（CVE-2026-111497）は
+  10月27日、米 CISA が実際の悪用を確認して悪用確認済み脆弱性リスト（KEV）に追加した。
 risk: >-
   VS Code や Slack などのアプリ、Node-RED を古いまま使っていると、攻撃者が送った
   不正なファイルやリンクを開くだけで、保存したパスワードやファイルを盗まれたり、
@@ -31,7 +32,10 @@ checklist:
   - VS Code・Slack・Notion などのアプリの自動更新をオンにする
   - 更新が来ているアプリを入れて再起動する
   - Homebrew で入れた Node.js を更新する（brew upgrade node）
+  - CISA が悪用を確認済み。まだなら最優先で更新する
   - 更新後に node -v が v22.23.4 / v24.22.1 / v26.12.1 以降か確認する
 sources:
   - title: Node.js 公式ブログ（October 2026 Security Releases）
     url: https://nodejs.org/en/blog/vulnerability/october-2026-security-releases
+  - title: BleepingComputer（CISA が Node2Shell の悪用を警告）
+    url: https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/
