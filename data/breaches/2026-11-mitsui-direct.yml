@@ -1,0 +1,22 @@
+organization: 三井ダイレクト損害保険株式会社
+group: MS&ADグループ
+services:
+  - 自動車保険
+industry: 金融・保険
+country: JP
+date_announced: 2026-11-06
+affected_count: 234000
+count_note: 約23万4,000件（契約者と加入検討者）
+cause: unauthorized_access
+root_cause: 自社システムが第三者の不正アクセスを受けた（経路は調査中）
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - 車両情報
+summary: 自社システムへの第三者の不正アクセスにより、自動車保険の契約者や加入を検討していた人の氏名・住所・電話番号・車両情報など約23万4,000件が漏えいしたと公表した。同じグループの三井住友海上・あいおいニッセイ同和の契約者ページへの不正アクセスと同時期に公表された。
+sources:
+  - title: 時事通信
+    url: https://news.yahoo.co.jp/articles/629367054502e64f141662569d8d8e204c50af23
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261106de71809

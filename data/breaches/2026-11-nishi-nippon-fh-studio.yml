@@ -1,0 +1,21 @@
+organization: 株式会社西日本フィナンシャルホールディングス
+services:
+  - 西日本FHビジネスコンテストの応募フォーム
+industry: 金融・保険
+country: JP
+date_announced: 2026-11-06
+affected_count: 188
+count_note: 事前エントリー141件と問い合わせ47件
+cause: third_party
+root_cause: Webサイト制作サービスを提供するStudioのクラウド環境が不正アクセスを受けた
+vendor:
+  name: Studio株式会社
+data_types:
+  - 氏名
+  - 取引先情報
+  - メールアドレス
+  - 電話番号
+summary: ビジネスコンテストのWebサイトの制作に使っていたStudioのクラウド環境への不正アクセスにより、2020年9月〜2025年8月にフォームに入力された188件の氏名・会社名・所属部署・メールアドレス・電話番号が漏えいした可能性があると公表した。
+sources:
+  - title: TNCテレビ西日本
+    url: https://news.yahoo.co.jp/articles/1b210f4d29a86c558a66af241165d649edb62831

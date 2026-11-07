@@ -1,0 +1,19 @@
+organization: パシフィックリーグマーケティング株式会社
+services:
+  - 日本ハム・楽天・西武・ロッテ・ソフトバンクの試合速報メールなど
+industry: エンタメ・スポーツ
+country: JP
+date_announced: 2026-11-06
+affected_count: 13711
+cause: third_party
+root_cause: メール配信の委託先アララの「アララメッセージ」が不正アクセスを受け、データが持ち出された
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: パ・リーグ5球団（日本ハム・楽天・西武・ロッテ・ソフトバンク）の試合速報メールなどに使っていたアララのサービスが不正アクセスを受け、メールアドレス13,711件が流出したと公表した。氏名・決済情報・ファンクラブ会員情報は含まれない。同時に公表した千葉ロッテ公式スマートフォンサイトの件とは別の事案。
+sources:
+  - title: パシフィックリーグマーケティング お知らせ
+    url: https://prtimes.jp/main/html/rd/p/000000326.000019259.html
+  - title: ITmedia ビジネスオンライン
+    url: https://www.itmedia.co.jp/business/articles/2611/06/news077.html

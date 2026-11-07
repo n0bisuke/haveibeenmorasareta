@@ -1,0 +1,23 @@
+organization: 株式会社チームスピリット
+services:
+  - 開発用サーバー・クラウド環境
+industry: IT・通信
+country: JP
+date_occurred: 2026-10-27
+date_announced: 2026-11-06
+affected_count: 28824
+count_note: 重複を除き28,824件（うち要配慮個人情報35件）
+cause: unauthorized_access
+attack_methods:
+  - stolen_credentials
+root_cause: 開発用サーバーに不正ログインされ、保存されていた認証情報でクラウド環境からデータを取られた
+data_types:
+  - 氏名
+  - メールアドレス
+  - 取引先情報
+  - 従業員情報
+  - 健康・医療情報
+summary: 10月27日に開発用サーバーへ第三者が不正ログインし、サーバーに保存されていた認証情報を使ってクラウド環境からデータを取られ、個人情報28,824件（うち要配慮個人情報35件）が流出したと公表した。本番環境の勤怠・工数データへの不正アクセスは確認されていない。
+sources:
+  - title: チームスピリット お知らせ
+    url: https://corp.teamspirit.com/news/information/2026/11/2026_1106_01/

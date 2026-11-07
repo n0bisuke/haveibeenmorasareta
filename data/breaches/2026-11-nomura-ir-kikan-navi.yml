@@ -7,15 +7,17 @@ industry: 金融・保険
 country: JP
 date_occurred: 2026-11-02
 date_announced: 2026-11-04
-affected_count: null
-count_note: 件数は調査中
+affected_count: 2000
+count_note: 機関投資家・アナリストなど約2,000件（11月6日の第2報）
 cause: unauthorized_access
 data_types:
   - 氏名
   - メールアドレス
-summary: 機関投資家・アナリスト向けの決算説明会支援サービス「機関Navi」が11月2日に不正アクセスを受け、11月3日に情報漏えいを確認したと公表した。氏名・メールアドレスなどが含まれる可能性があり、範囲は調査中。同じサーバーの個人投資家向け「MIR@I」も停止した。
+summary: 機関投資家・アナリスト向けの決算説明会支援サービス「機関Navi」が11月2日に不正アクセスを受け、11月3日に情報漏えいを確認したと公表した。氏名・メールアドレスなどが含まれる可能性があり、範囲は調査中。同じサーバーの個人投資家向け「MIR@I」も停止した。11月6日の第2報で、機関投資家・アナリストなど約2,000件の漏えいを確認したと公表した。
 sources:
   - title: 日本経済新聞
     url: https://www.nikkei.com/article/DGXZQOUB041MH0U6A101C2000000/
   - title: 共同通信
     url: https://news.yahoo.co.jp/articles/b9e45983a72b11d143643fe20eb593b7e0db38ce
+  - title: 野村IR お知らせ（第1報）
+    url: https://www.nomura-ir.co.jp/ja/news/news/news20261104/main/00/link/20261104.pdf

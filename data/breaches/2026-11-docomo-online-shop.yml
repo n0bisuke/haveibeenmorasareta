@@ -7,16 +7,18 @@ industry: IT・通信
 country: JP
 date_occurred: 2026-11-04
 date_announced: 2026-11-05
-affected_count: 300000
-count_note: 最大約30万件（範囲は調査中）
+affected_count: 294839
+count_note: 最大294,839回線（個人204,157、法人90,682。11月6日の第三報）
 cause: unauthorized_access
-root_cause: ドコモオンラインショップとMy docomoのサーバーが外部から不正アクセスを受けた（経路は調査中）
+root_cause: dアカウントを入口に、複数のシステム間の連携を悪用された
 data_types:
   - 氏名
   - 住所
   - 生年月日
   - 電話番号
-summary: ドコモオンラインショップとMy docomoのサーバーが外部から不正アクセスを受け、最大約30万件の氏名・住所・生年月日・携帯電話番号・連絡先電話番号などが流出したと公表した。11月4日に検知し、5日未明から両サービスの手続きを停止した。決済情報が含まれるかは調査中。10月公表のぷらら（Sコース）の件とは別の事案。
+  - 契約情報
+  - 口座番号
+summary: ドコモオンラインショップとMy docomoのサーバーが外部から不正アクセスを受け、最大約30万件の氏名・住所・生年月日・携帯電話番号・連絡先電話番号などが流出したと公表した。11月4日に検知し、5日未明から両サービスの手続きを停止した。決済情報が含まれるかは調査中。10月公表のぷらら（Sコース）の件とは別の事案。11月6日の第三報で、最大294,839回線の氏名・生年月日・住所・連絡先・料金プランなどの契約情報と本人確認書類の番号が流出し、一部は金融機関名・口座番号・口座名義も含むと公表した。カード番号はマスキングされていた。11月4日に大量アクセスのアラートで検知した。
 sources:
   - title: NTTドコモ お知らせ
     url: https://www.docomo.ne.jp/info/notice/page/261105_03_m.html
@@ -24,3 +26,7 @@ sources:
     url: https://www.itmedia.co.jp/mobile/articles/2611/05/news093.html
   - title: INTERNET Watch
     url: https://internet.watch.impress.co.jp/docs/news/2154115.html
+  - title: ITmedia Mobile（第三報）
+    url: https://www.itmedia.co.jp/mobile/articles/2611/06/news085.html
+  - title: Impress Watch
+    url: https://www.watch.impress.co.jp/docs/news/2154508.html
