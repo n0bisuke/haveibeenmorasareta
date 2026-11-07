@@ -1,0 +1,47 @@
+title: Node.js が11月11日ごろに深刻度「HIGH」のセキュリティリリースを予告（22.x / 24.x / 26.x）
+date: 2026-11-04
+severity: high
+category: 脆弱性
+audience:
+  - 個人・アプリ利用者
+  - サーバー管理者
+affected:
+  - Node.js 22.x
+  - Node.js 24.x
+  - Node.js 26.x
+  - サポートが終了した Node.js
+fixed: 11月11日（水）ごろ公開予定の各系列の修正版
+summary: >-
+  Node.js プロジェクトが、22.x・24.x・26.x の3系列に深刻度「HIGH」の脆弱性を修正する
+  セキュリティリリースを11月11日（水）またはその直後に公開すると事前告知した。
+  CVE 番号・件数・技術的な内容は修正版の公開まで明かされない。サポートが終了した
+  バージョンは、セキュリティリリースのたびに影響を受けるものとして扱われ、修正版は出ない。
+  10月21日に修正された Brotli 展開の脆弱性（CVE-2026-111497）は別件で、米 CISA が実際の
+  悪用を確認し、連邦機関に11月10日までの対応を求めている。
+risk: >-
+  修正版の公開後は、内容をもとに攻撃方法が調べられ、更新していないサーバーが狙われやすく
+  なる。サポートが終了した古い Node.js を使っていると、修正版が出ないため対処できない。
+  10月の Brotli の脆弱性はすでに悪用されており、まだ更新していない場合は危険が高い。
+action_admin: >-
+  11月11日の公開に合わせて更新と再起動ができるよう、利用中の Node.js の系列と台数を
+  洗い出しておく。サポートが終了した系列（20.x 以前など）は、サポート中の系列への移行を
+  計画する。10月の修正版（v22.23.4 / v24.22.1 / v26.12.1）未満なら今すぐ更新する。
+action_user: >-
+  Homebrew などで入れた Node.js は11月11日以降に最新版へ更新する。VS Code・Slack などの
+  Electron 製アプリは自動更新を有効にし、更新が来たら再起動する。
+checklist:
+  - node -v で使っている Node.js の版を確認する
+  - 10月の修正版（v22.23.4 / v24.22.1 / v26.12.1）より古ければ今すぐ更新する
+  - 20.x 以前などサポートが終了した系列なら、22.x 以降への移行を決める
+  - 11月11日以降に公開される修正版へ更新する（brew upgrade node など）
+  - サーバーやコンテナのベースイメージも、修正版が出たら作り直す
+  - VS Code・Slack などのアプリの自動更新をオンにし、更新後に再起動する
+sources:
+  - title: oss-security（Node.js プロジェクトの事前告知）
+    url: https://www.openwall.com/lists/oss-security/2026/11/04/3
+  - title: セキュリティ対策Lab（Node.js 22・24・26、11月11日に「HIGH」の脆弱性修正へ）
+    url: https://rocket-boys.co.jp/security-measures-lab/nodejs-22-24-26-security-release-high-november/
+  - title: FOSS Linux（Node.js Security Release Set for November 11）
+    url: https://www.fosslinux.com/163517/nodejs-security-release-november-11.htm
+  - title: GCN（CISA sets November 10 deadline for high-severity Node.js flaw）
+    url: https://gcn.com/node-js-flaw-cisa-sets-november/23046/
