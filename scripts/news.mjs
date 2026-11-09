@@ -137,6 +137,7 @@ function page({ date, list, breaches, counts, days, siteUrl, siteName, ga, index
         <a href="${root}">一覧</a>
         <a href="${root}news/" aria-current="page">ニュース</a>
         <a href="${root}alerts/">注意喚起</a>
+        <a href="${root}articles/">読みもの</a>
         <a href="${root}visualization/">ビジュアライズ</a>
         <a href="${root}ranking/">ランキング</a>
       </nav>

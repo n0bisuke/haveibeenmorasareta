@@ -6,6 +6,7 @@ import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { writeSectionPages, sectionUrls } from './sections.mjs';
 import { writeNewsPages } from './news.mjs';
 import { writeAlertsPage } from './alerts.mjs';
+import { writeArticlesPages } from './articles.mjs';
 import path from 'node:path';
 import { ROOT } from './lib.mjs';
 import { CAUSES } from '../public/labels.js';
@@ -134,6 +135,7 @@ function page(b) {
         <a href="../../">一覧</a>
         <a href="../../news/">ニュース</a>
         <a href="../../alerts/">注意喚起</a>
+        <a href="../../articles/">読みもの</a>
         <a href="../../visualization/">ビジュアライズ</a>
         <a href="../../ranking/">ランキング</a>
       </nav>
@@ -251,9 +253,12 @@ const newsDays = await writeNewsPages({ publicDir: PUBLIC, breaches, siteUrl: SI
 // セキュリティ注意喚起ページ（一覧と個別）
 const alertIds = await writeAlertsPage({ publicDir: PUBLIC, siteUrl: SITE_URL, siteName: SITE_NAME, ga: GA });
 
-const urls = ['/', '/terms/', '/releases/', '/news/', ...newsDays.map((d) => `/news/${d}/`), ...(alertIds.length ? ['/alerts/', ...alertIds.map((id) => `/alerts/${id}/`)] : []), '/ranking/', ...sectionUrls().filter((u) => u.startsWith('/ranking/')), '/visualization/', ...sectionUrls().filter((u) => u.startsWith('/visualization/')), ...breaches.map((b) => `/breach/${b.id}/`)];
+// 読みもの（解説・まとめ・Tips の一覧と個別）
+const articleIds = await writeArticlesPages({ publicDir: PUBLIC, siteUrl: SITE_URL, siteName: SITE_NAME, ga: GA, breaches });
+
+const urls = ['/', '/terms/', '/releases/', '/news/', ...newsDays.map((d) => `/news/${d}/`), ...(alertIds.length ? ['/alerts/', ...alertIds.map((id) => `/alerts/${id}/`)] : []), '/articles/', ...articleIds.map((id) => `/articles/${id}/`), '/ranking/', ...sectionUrls().filter((u) => u.startsWith('/ranking/')), '/visualization/', ...sectionUrls().filter((u) => u.startsWith('/visualization/')), ...breaches.map((b) => `/breach/${b.id}/`)];
 await writeFile(
   path.join(PUBLIC, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${esc(SITE_URL + u)}</loc></url>`).join('\n')}\n</urlset>\n`,
 );
-console.log(`✔ 個別ページ ${breaches.length} 件、ランキング・ビジュアライズの個別ページ ${sections} 件、ニュース ${newsDays.length} 日分、注意喚起 ${alertIds.length} 件（一覧＋個別）と sitemap.xml を出力しました`);
+console.log(`✔ 個別ページ ${breaches.length} 件、ランキング・ビジュアライズの個別ページ ${sections} 件、ニュース ${newsDays.length} 日分、注意喚起 ${alertIds.length} 件・読みもの ${articleIds.length} 件（一覧＋個別）と sitemap.xml を出力しました`);

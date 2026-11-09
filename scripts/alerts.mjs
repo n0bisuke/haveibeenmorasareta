@@ -25,6 +25,7 @@ function header(root, { current } = {}) {
         ${nav(`${root}`, '一覧')}
         ${nav(`${root}news/`, 'ニュース')}
         ${nav(`${root}alerts/`, '注意喚起')}
+        ${nav(`${root}articles/`, '読みもの')}
         ${nav(`${root}visualization/`, 'ビジュアライズ')}
         ${nav(`${root}ranking/`, 'ランキング')}
       </nav>
