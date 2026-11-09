@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
-import { ROOT, FILENAME_RE, loadBreaches, loadAlerts } from './lib.mjs';
+import { ROOT, FILENAME_RE, loadBreaches, loadAlerts, loadArticles } from './lib.mjs';
 import { createChecker } from './check.mjs';
 
 const errors = [];
@@ -70,9 +70,38 @@ for (const { file, data, error } of alerts) {
   }
 }
 
+// 読みもの（data/articles/）の検証
+const articleSchema = JSON.parse(await readFile(path.join(ROOT, 'schema', 'article.schema.json'), 'utf8'));
+const articleAjv = new Ajv({ allErrors: true });
+addFormats(articleAjv);
+const validateArticle = articleAjv.compile(articleSchema);
+const breachIds = new Set(entries.map((e) => e.id));
+const articles = await loadArticles();
+for (const { file, data, error } of articles) {
+  if (error) {
+    errors.push(`articles/${file}: YAML の構文エラー: ${error}`);
+    continue;
+  }
+  const m = file.match(FILENAME_RE);
+  if (!m) {
+    errors.push(`articles/${file}: ファイル名は YYYY-MM-slug.yml 形式にしてください`);
+    continue;
+  }
+  if (!validateArticle(data)) {
+    for (const e of validateArticle.errors) errors.push(`articles/${file}: ${e.instancePath || '(root)'} ${e.message}`);
+    continue;
+  }
+  if (data.date.slice(0, 7) !== `${m[1]}-${m[2]}`) {
+    errors.push(`articles/${file}: ファイル名の年月 (${m[1]}-${m[2]}) と date (${data.date}) の年月を一致させてください`);
+  }
+  for (const id of data.related ?? []) {
+    if (!breachIds.has(id)) errors.push(`articles/${file}: related の「${id}」に当たる事案が data/breaches にありません`);
+  }
+}
+
 if (errors.length) {
   console.error(`✖ ${errors.length} 件のエラー\n`);
   for (const e of errors) console.error(`  - ${e}`);
   process.exit(1);
 }
-console.log(`✔ 事案 ${entries.length} 件・注意喚起 ${alerts.length} 件のデータを検証しました`);
+console.log(`✔ 事案 ${entries.length} 件・注意喚起 ${alerts.length} 件・読みもの ${articles.length} 件のデータを検証しました`);

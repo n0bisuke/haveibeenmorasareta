@@ -6,6 +6,7 @@ import * as yaml from 'js-yaml';
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const DATA_DIR = path.join(ROOT, 'data', 'breaches');
 export const ALERTS_DIR = path.join(ROOT, 'data', 'alerts');
+export const ARTICLES_DIR = path.join(ROOT, 'data', 'articles');
 export const FILENAME_RE = /^(\d{4})-(\d{2})-([a-z0-9]+(?:-[a-z0-9]+)*)\.ya?ml$/;
 
 // CORE_SCHEMA を使い、日付を Date ではなく文字列のまま扱う
@@ -37,6 +38,29 @@ export async function loadAlerts() {
   const entries = [];
   for (const file of files) {
     const text = await readFile(path.join(ALERTS_DIR, file), 'utf8');
+    let data;
+    let error;
+    try {
+      data = yaml.load(text, { schema: yaml.CORE_SCHEMA });
+    } catch (e) {
+      error = e.message;
+    }
+    entries.push({ file, id: file.replace(/\.ya?ml$/, ''), data, error });
+  }
+  return entries;
+}
+
+// 読みもの（data/articles/）を読み込む。漏洩事案とは別物。アンダースコア始まりのファイルは除く
+export async function loadArticles() {
+  let files;
+  try {
+    files = (await readdir(ARTICLES_DIR)).filter((f) => /\.ya?ml$/.test(f) && !f.startsWith('_')).sort();
+  } catch {
+    return [];
+  }
+  const entries = [];
+  for (const file of files) {
+    const text = await readFile(path.join(ARTICLES_DIR, file), 'utf8');
     let data;
     let error;
     try {
