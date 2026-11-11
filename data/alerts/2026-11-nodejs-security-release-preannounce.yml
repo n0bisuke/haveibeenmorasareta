@@ -16,6 +16,8 @@ summary: >-
   セキュリティリリースを11月11日（水）またはその直後に公開すると事前告知した。
   CVE 番号・件数・技術的な内容は修正版の公開まで明かされない。サポートが終了した
   バージョンは、セキュリティリリースのたびに影響を受けるものとして扱われ、修正版は出ない。
+  公開時刻は明記されておらず、日本時間11月11日朝の時点では修正版は未公開で、公開は11日夜以降か
+  12日以降になる可能性がある。
   10月21日に修正された Brotli 展開の脆弱性（CVE-2026-111497）は別件で、米 CISA が実際の
   悪用を確認し、連邦機関に11月10日までの対応を求めている。
 risk: >-
@@ -26,6 +28,7 @@ action_admin: >-
   11月11日の公開に合わせて更新と再起動ができるよう、利用中の Node.js の系列と台数を
   洗い出しておく。サポートが終了した系列（20.x 以前など）は、サポート中の系列への移行を
   計画する。10月の修正版（v22.23.4 / v24.22.1 / v26.12.1）未満なら今すぐ更新する。
+  サーバーだけでなく、Docker イメージ・CI/CD・サーバーレス環境で使っている Node.js の版も確認する。
 action_user: >-
   Homebrew などで入れた Node.js は11月11日以降に最新版へ更新する。VS Code・Slack などの
   Electron 製アプリは自動更新を有効にし、更新が来たら再起動する。
@@ -35,8 +38,11 @@ checklist:
   - 20.x 以前などサポートが終了した系列なら、22.x 以降への移行を決める
   - 11月11日以降に公開される修正版へ更新する（brew upgrade node など）
   - サーバーやコンテナのベースイメージも、修正版が出たら作り直す
+  - CI/CD やサーバーレス（Lambda など）のランタイムの Node.js の版も確認する
   - VS Code・Slack などのアプリの自動更新をオンにし、更新後に再起動する
 sources:
+  - title: Node.js 公式（Wednesday, November 11, 2026 Security Releases）
+    url: https://nodejs.org/en/blog/vulnerability/november-2026-security-releases
   - title: oss-security（Node.js プロジェクトの事前告知）
     url: https://www.openwall.com/lists/oss-security/2026/11/04/3
   - title: セキュリティ対策Lab（Node.js 22・24・26、11月11日に「HIGH」の脆弱性修正へ）
