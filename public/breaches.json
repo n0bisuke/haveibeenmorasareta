@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-07T12:46:11.000Z",
-  "count": 801,
+  "generated_at": "2026-11-11T11:42:33.000Z",
+  "count": 802,
   "severity_levels": [
     {
       "id": "critical",
@@ -467,6 +467,61 @@
     }
   ],
   "breaches": [
+    {
+      "id": "2026-11-notion-fireworks-ai",
+      "organization": "Notion Labs, Inc.",
+      "services": [
+        "Notion AI"
+      ],
+      "industry": "IT・通信",
+      "country": "US",
+      "date_announced": "2026-11-10",
+      "affected_count": null,
+      "count_note": "Notion のワークスペース全体の1%未満が影響を受けた可能性。チャットの件数は公表されていない。日本の利用者の件数も不明",
+      "cause": "third_party",
+      "root_cause": "Notion AI の一部モデルの処理を委託していた Fireworks AI が不正アクセスを受け、委託先にあったデータが取得された",
+      "vendor": {
+        "name": "Fireworks AI, Inc."
+      },
+      "data_types": [
+        "メッセージ・チャット履歴"
+      ],
+      "summary": "Notion AI の一部のモデル（オープンウェイトモデル）の処理を委託していた Fireworks AI が不正アクセスを受け、Notion の「Insights」機能に使われた Notion AI のチャット内容が流出した可能性があると公表した。11月2日に Fireworks から連絡を受けた当初は合成テストデータのみとしていたが、11月8日に Fireworks が確認した新たなデータセットを分析した結果、チャット内容が含まれていた。チャットの大半は作成者やワークスペースを特定できない形で、影響はワークスペース全体の1%未満としている。Insights 機能を停止し、Fireworks の利用をやめた。影響を受けた利用者には個別に連絡している。日本では Notion Japan が11月11日に日本語で告知した。",
+      "sources": [
+        {
+          "title": "Notion セキュリティアドバイザリ「Fireworks AI incident」",
+          "url": "https://www.notion.com/security/advisories/security-incident-involving-a-third-party-ai-vendor"
+        },
+        {
+          "title": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html"
+        },
+        {
+          "title": "The Register",
+          "url": "https://www.theregister.com/cyber-crime/2026/11/10/fireworks-ai-gets-burned-twice-as-customer-data-exposure-widens/5308722"
+        },
+        {
+          "title": "Cybersecurity News",
+          "url": "https://cybersecuritynews.com/notion-confirms-data-breach/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "Notion からの個別の連絡（メール）が届いていないか確認する"
+        },
+        {
+          "text": "対象期間中に Notion AI のチャットへ貼り付けたパスワード・API キー・認証情報があれば変更する"
+        },
+        {
+          "text": "不明な点は Notion のサポート（team@makenotion.com）に問い合わせる",
+          "url": "https://www.notion.com/security/advisories/security-incident-involving-a-third-party-ai-vendor",
+          "link_title": "Notion のお知らせ"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
     {
       "id": "2026-11-aioi-life",
       "organization": "三井住友海上あいおい生命保険株式会社",
