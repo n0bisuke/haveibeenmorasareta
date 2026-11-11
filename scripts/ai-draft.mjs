@@ -90,6 +90,8 @@ async function makeUpdate(article, id, catalogs) {
 
 const results = [];
 let processed = 0;
+// API キーの誤り・失効（401/403）。以降の候補も必ず失敗するので打ち切り、処理済みにしない
+let authError = null;
 for (const candidate of candidates) {
   if (processed >= MAX_ITEMS) break;
   if (seen.has(candidate.url)) continue;
@@ -182,6 +184,13 @@ for (const candidate of candidates) {
     result.status = 'draft';
   } catch (e) {
     result.notes.push(String(e.message).slice(0, 300));
+    if (e.status === 401 || e.status === 403) {
+      authError = e;
+      seen.delete(candidate.url);
+      if (result.source?.url) seen.delete(result.source.url);
+      results.pop();
+      break;
+    }
   } finally {
     console.log(`${result.status.padEnd(8)} ${candidate.title}${result.notes.length ? ` … ${result.notes.join(' / ')}` : ''}`);
   }
@@ -192,3 +201,7 @@ await mkdir(path.dirname(STATE), { recursive: true });
 // 処理済みの URL は直近のものだけ残す（ニュース候補は最大 7 日分なので十分）
 await writeFile(STATE, `${JSON.stringify([...seen].slice(-2000))}\n`);
 console.log(`✔ ${results.filter((r) => r.status === 'draft').length} 件の下書きを作りました（処理 ${results.length} 件）`);
+if (authError) {
+  console.error(`::error::LLM の API キーが無効です（${authError.message.slice(0, 120)}）。Secrets の GROQ_API_KEY / LLM_API_KEY を確認してください。未処理の候補は次回に持ち越します`);
+  process.exit(1);
+}
