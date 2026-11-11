@@ -61,6 +61,17 @@
     <h2>リリースノート</h2>
     <p class="lead-text">サイトの機能追加・修正・セキュリティ対応の記録です。事案データの追加・更新は毎日行っているため、ここには載せていません（<a href="../news/">ニュース</a>と <a href="https://github.com/n0bisuke/haveibeenmorasareta/commits/main/data/breaches" target="_blank" rel="noopener noreferrer">GitHub の履歴</a>をご覧ください）。</p>
 
+    <section class="release" id="2026-11-11">
+      <h3><time datetime="2026-11-11">2026年11月11日</time><span class="kind feature">改善</span></h3>
+      <ul>
+        <li>Google Chrome チームの <a href="https://github.com/GoogleChrome/modern-web-guidance" target="_blank" rel="noopener noreferrer">Modern Web Guidance</a> に沿って、表示とページ移動を改善しました。</li>
+        <li>トップの一覧とニュースで、画面外の事案カードは見える位置に来るまで描画を後回しにするようにし、数百件ある一覧の表示とスクロールを軽くしました。</li>
+        <li>同じサイト内のリンクは、ホバーなどの操作をきっかけに先読みするようにしました（Chrome・Edge）。ページ移動は軽いクロスフェードでつなぎます（動きを減らす設定の場合は出しません）。</li>
+        <li>ライト／ダークの切り替えで、OS の設定と同じテーマに戻したときは保存を消し、以後は OS の設定に従うようにしました。別のタブで切り替えたときも同期します。</li>
+        <li>見出しと本文の折り返しを整え、行末に1文字だけ残りにくくしました。</li>
+      </ul>
+    </section>
+
     <section class="release" id="2026-10-21">
       <h3><time datetime="2026-10-21">2026年10月21日</time><span class="kind security">セキュリティ</span></h3>
       <ul>
