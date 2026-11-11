@@ -50,7 +50,7 @@ async function request(body) {
       await sleep(Number.isFinite(retryAfter) && retryAfter > 0 ? retryAfter * 1000 : 15000 * attempt);
       continue;
     }
-    throw new Error(`LLM API ${res.status}: ${text}`);
+    throw Object.assign(new Error(`LLM API ${res.status}: ${text}`), { status: res.status });
   }
 }
 
