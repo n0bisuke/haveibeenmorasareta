@@ -316,3 +316,20 @@ a { color: var(--accent); }
 .reliability.r-mid i.on { background: #3b6fd4; }
 .reliability.r-low i.on { background: var(--muted); }
 .low-reliability { margin: 8px 0 0; font-size: 0.85rem; color: var(--muted); }
+
+/* ---- ページ遷移・描画・文字組み（Modern Web Guidance に沿った改修） ---- */
+/* 同じサイト内のページ移動をクロスフェードでつなぐ。動きを減らす設定の人には出さない。未対応のブラウザでは通常の遷移 */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto; }
+}
+/* 一覧の事案カードは数百件あるので、画面外のカードは見えるところに来るまで描画を後回しにする。
+   最初の画面に入る先頭のカードは対象外。高さの目安を指定して、スクロールバーが跳ねないようにする */
+.list > .item:nth-child(n+5),
+.news-list > li:nth-child(n+9) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto none auto 260px;
+}
+.news-list > li:nth-child(n+9) { contain-intrinsic-size: auto none auto 90px; }
+/* 見出しは行の長さをそろえ、本文は最後の行に1文字だけ残るのを避ける（未対応のブラウザでは通常の折り返し） */
+h1, h2, h3, .org { text-wrap: balance; }
+.summary, .rd-body p, .rd-summary, .count-note, .root-cause-text { text-wrap: pretty; }
