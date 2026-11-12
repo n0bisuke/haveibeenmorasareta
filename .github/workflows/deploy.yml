@@ -48,6 +48,7 @@ jobs:
       - name: Generate breach pages
         run: node scripts/pages.mjs --og
       # シェア用の画像（OGP）。調査中は速報風、重要度が危険・高はダーク、それ以外はライト
+      # ほかに、シェアした人の表示テーマに合わせたライト版・ダーク版（og-light.png・og-dark.png）も作る
       - name: Generate share images
         run: node scripts/og-images.mjs
       # トップ・ランキング・ビジュアライズ用のシェア画像（掲載事案数・業界別 TOP5・地域別の地図を最新のデータで描く）
