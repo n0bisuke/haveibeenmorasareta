@@ -1,0 +1,72 @@
+# 委託先ごとの「影響先まとめ」ページ（/vendor/<slug>/）の一覧。
+# data/breaches/*.yml の vendor.name が names のどれかと一致する事案を、その委託先の影響先としてまとめる。
+# organization が names のどれかと一致する事案は、委託先自身の事案（本体の公表）として先頭に出す。
+#   slug  … URL に使う半角英小文字・数字・ハイフン
+#   label … ページの見出しに使う名前（例：アララ）
+#   names … data/breaches の vendor.name / organization の表記（表記ゆれもここにまとめる）
+#   note  … ページ上部に出す補足（任意）
+- slug: arcadia
+  label: アルカディア
+  names: [アルカディア, 株式会社アルカディア]
+  note: 自治体の防災メール・メール配信サービスの提供元。
+- slug: arara
+  label: アララ
+  names: [アララ株式会社]
+  note: メール配信サービス「アララ メッセージ」の提供元。企業・自治体の会員向けメールやメールマガジンの配信に使われていた。
+- slug: rakus-lite-cloud
+  label: ラクスライトクラウド
+  names: [株式会社ラクスライトクラウド]
+  note: メール配信サービス「ブラストメール」の提供元。
+- slug: studio
+  label: Studio
+  names: [Studio株式会社]
+  note: ノーコードの Web サイト作成サービス「Studio」の提供元。フォームから送られた情報が影響を受けた。
+- slug: commune
+  label: コミューン
+  names: [コミューン, コミューン株式会社]
+  note: 企業のオンラインコミュニティ（ファンサイト・会員サイト）の提供元。
+- slug: idcf
+  label: IDCフロンティア
+  names: [株式会社IDCフロンティア]
+  note: クラウドサービス「IDCFクラウド」の提供元。ランサムウェア被害を受けた。
+- slug: smbc-cf
+  label: SMBCコンシューマーファイナンス
+  names: [SMBCコンシューマーファイナンス株式会社]
+  note: 銀行のカードローンなどの保証会社。保証業務のシステムが不正アクセスを受けた。
+- slug: yumirin
+  label: ユミルリンク（Cuenote FC）
+  names: [ユミルリンク株式会社]
+  note: メール配信サービス「Cuenote FC」の提供元。
+- slug: scala
+  label: スカラコミュニケーションズ
+  names: [株式会社スカラコミュニケーションズ]
+- slug: applynow
+  label: ApplyNow（録画動画面接）
+  names: [株式会社ApplyNow]
+  note: 採用試験の録画動画面接サービスの提供元。自治体の採用試験の受験者情報などが影響を受けた。
+- slug: amadeus
+  label: アマデウス（Amadeus）
+  names: [Amadeus IT Group]
+  note: 航空会社の予約・旅客サービスシステムの提供元。国内外の航空会社が影響を公表している。
+- slug: securitize
+  label: Securitize Japan
+  names: [Securitize Japan株式会社]
+  note: デジタル証券（セキュリティトークン）のプラットフォームの提供元。
+- slug: sankei-living
+  label: サンケイリビング新聞社
+  names: [株式会社サンケイリビング新聞社]
+- slug: iseto
+  label: イセトー
+  names: [株式会社イセトー, 株式会社イセトー（東海信金ビジネスの再委託先）]
+  note: 印刷・データ処理の受託会社。ランサムウェア被害を受けた。
+- slug: openlogi
+  label: オープンロジ
+  names: [株式会社オープンロジ]
+  note: EC 事業者などの物流（保管・配送）の受託会社。配送先のデータが影響を受けた。
+- slug: shibata
+  label: 柴田工事調査
+  names: [柴田工事調査, 柴田工事調査株式会社]
+- slug: palan
+  label: palan
+  names: [株式会社palan]
+  note: デジタルスタンプラリーなどの Web サービスの提供元。
