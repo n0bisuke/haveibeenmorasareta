@@ -1,0 +1,24 @@
+organization: 内閣府
+services:
+  - メールマガジン（14誌）
+industry: 行政
+country: JP
+org_type: national_gov
+prefecture: 東京都
+date_announced: 2026-11-11
+affected_count: 62863
+count_note: 重複を除くと61,751件（運用テスト用の104件を含む）。アララの漏えい件数の一部
+cause: third_party
+root_cause: メールマガジンの配信を委託したアララのメール配信サービスが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+  - 氏名
+  - 性別
+summary: メールマガジンの配信を委託したアララのメール配信サービス「アララ メッセージ」が不正アクセスを受け、14誌の利用者のメールアドレス62,863件（重複を除くと61,751件）が漏えいしたと公表した。一部のメールマガジンでは氏名などの登録情報も漏えいした可能性がある。対象のメールマガジンの配信は停止した。具体的な二次被害は確認されていない。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUA114KB0R11C26A1000000/
+  - title: 共同通信
+    url: https://news.yahoo.co.jp/articles/57f8cf67e7552dc8a60c3403916f3a9d9b8f2128

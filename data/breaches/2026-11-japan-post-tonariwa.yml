@@ -1,0 +1,22 @@
+organization: 日本郵便株式会社
+group: 日本郵政グループ
+services:
+  - LINE公式アカウント「郵便局［ぽすくま］」のアンケート
+industry: 物流
+country: JP
+date_announced: 2026-11-11
+affected_count: null
+count_note: 件数は公表されていない。不正取得・悪用は確認されていない
+cause: third_party
+root_cause: アンケートの実施・回答管理に使うTONARIWAの提供元、電通デジタルのシステムが不正アクセスを受けた
+vendor:
+  name: 株式会社電通デジタル
+  group: 電通グループ
+data_types:
+  - 連携サービスID
+summary: LINE公式アカウント「郵便局［ぽすくま］」でアンケートの実施や回答の管理に使っている電通デジタルの「TONARIWA」が不正アクセスを受け、利用者の情報が漏えいした可能性があると公表した。11月11日午後から緊急メンテナンスに入り、一部サービスを停止した。不正取得・悪用は確認されていない。
+sources:
+  - title: 日本郵便 報道発表
+    url: https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html
+  - title: ASCII
+    url: https://ascii.jp/elem/000/004/450/4450802/

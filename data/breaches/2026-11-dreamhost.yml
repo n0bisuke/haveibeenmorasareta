@@ -1,0 +1,22 @@
+organization: DreamHost
+services:
+  - ファイルマネージャー
+  - Webメール
+industry: IT・通信
+country: US
+date_announced: 2026-11-04
+affected_count: null
+count_note: 件数は非公表（有料顧客の10%を大きく下回るとの報道）。日本の利用者への影響は未確認
+cause: vulnerability
+root_cause: ファイルマネージャーに使っていた他社製ソフトの脆弱性を突かれ、FTP/SFTPの認証情報やWebメールのセッションが盗まれた
+data_types:
+  - アカウント名
+  - パスワード（保管形式不明）
+  - 保存データ（写真・文書等）
+  - メッセージ・チャット履歴
+summary: Webベースのファイルマネージャーに使っていた他社製ソフトウェアの脆弱性を突かれ、2026年8月から10月23日まで不正アクセスを受けていたと公表した。期間中にログインした利用者のFTP/SFTPのユーザー名・パスワードが盗まれ、サーバー上のファイルやメールの内容が閲覧された可能性がある。一部のWebメール利用者はセッション情報も対象。請求・決済情報へのアクセスは確認されていない。対象者のパスワードを無効化した。
+sources:
+  - title: BleepingComputer
+    url: https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/
+  - title: TechCrunch
+    url: https://techcrunch.com/2026/11/04/hackers-stole-dreamhost-customer-files-and-inboxes-during-months-long-attack/

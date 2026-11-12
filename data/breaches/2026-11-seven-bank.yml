@@ -1,0 +1,25 @@
+organization: 株式会社セブン銀行
+group: セブン＆アイ・ホールディングス
+services:
+  - 在留カード提出サイト
+  - 口座解約サイト
+industry: 金融・保険
+country: JP
+reliability: low
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/31
+date_announced: 2026-11-11
+affected_count: 150
+count_note: 最大約150件の在留カード情報。公式発表は未確認
+cause: unauthorized_access
+root_cause: 在留カード提出サイトと口座解約サイトが第三者の不正アクセスを受けた
+data_types:
+  - 在留カード
+  - 氏名
+  - 生年月日
+  - 住所
+summary: 外国籍の口座保有者が在留カードを提出するサイトと口座解約サイトで、11月9日に不正アクセスの痕跡を確認し、提出サイトで保管していた在留カード情報最大約150件が漏えいした可能性があると公表したと報じられた。痕跡の確認後にシステムを停止し、両サイトを停止している。公式発表は未確認。
+sources:
+  - title: アクト（報道まとめ）
+    url: https://act1.co.jp/2026-11-12-01/
+  - title: セブン銀行 FAQ（口座解約サイトの停止）
+    url: https://faqsearch.sevenbank.co.jp/answer/68c01de8700e23540e35bc6f/

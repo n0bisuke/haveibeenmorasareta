@@ -1,0 +1,20 @@
+organization: 株式会社福岡銀行
+group: ふくおかフィナンシャルグループ
+services:
+  - Wallet+
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 福岡県
+date_announced: 2026-10-29
+affected_count: 136011
+cause: third_party
+root_cause: メール配信の委託先ユミルリンクの「Cuenote FC」が不正アクセスを受けた
+vendor:
+  name: ユミルリンク株式会社
+data_types:
+  - メールアドレス
+summary: アプリ「Wallet+」のメール配信に使う外部サービスの提供元ユミルリンクが不正アクセスを受け、メールアドレス136,011件が漏えいしたと公表した。
+sources:
+  - title: 福岡銀行 重要なお知らせ
+    url: https://www.fukuokabank.co.jp/announcement/important/y2026/20261029.html

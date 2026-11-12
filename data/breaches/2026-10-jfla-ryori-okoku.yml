@@ -1,0 +1,23 @@
+organization: 株式会社JFLAホールディングス
+services:
+  - 料理王国ウェブマガジン
+industry: メディア・出版
+country: JP
+date_announced: 2026-10-29
+affected_count: 8000
+count_note: 延べ約8,000件。有料・無料会員と、問い合わせフォームから登録した顧客
+cause: unauthorized_access
+root_cause: 不正アクセスによりサーバ内のデータが外部から取得できる状態になっていた。侵入方法は公表されていない
+data_types:
+  - 氏名
+  - 会員ID
+  - メールアドレス
+  - 住所
+  - 電話番号
+  - パスワード（ハッシュ化・暗号化済み）
+summary: 「料理王国」のサーバが不正アクセスを受け、「料理王国ウェブマガジン」の有料・無料会員と問い合わせフォームに登録した顧客の延べ約8,000件の個人情報が漏えいしたと公表した。10月19日に不正アクセスの疑いが生じ、外部機関の調査でサーバ内のデータが外部から取得できる状態だったことが22日に分かり、同日中に解消した。対象は氏名、会社名、ID、メールアドレス、住所、電話番号、ハッシュ化されたパスワード。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/11/10/56721.html
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/cuisine_kingdom_web_magazine_8000_data_breach_20261029/

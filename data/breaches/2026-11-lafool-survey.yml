@@ -1,0 +1,26 @@
+organization: 株式会社ラフール
+services:
+  - ラフールサーベイ（旧システム）
+  - あしたのサーベイ（OEM）
+industry: IT・通信
+country: JP
+date_occurred: 2026-07-24
+date_announced: 2026-11-09
+affected_count: 24232
+count_note: 利用企業182社の従業員24,232名。OEM先のあしたのチームの顧客企業分を含む。調査で変わる可能性がある
+cause: third_party
+root_cause: プログラムに直書きしたアクセスキーを含むテスト用イメージを当時の委託先の開発者が公開し、キーが第三者に渡ったと推定
+attack_methods:
+  - exposed_secret
+vendor:
+  name: 株式会社Sun Asterisk（当時のフランジア）
+data_types:
+  - 氏名
+  - 従業員情報
+  - 健康・医療情報
+summary: 組織改善ツール「ラフールサーベイ」の旧システムが2026年7月から10月に不正アクセスを受け、利用企業182社の従業員24,232名の情報が取得されたと公表した。エンジニアがプログラムにアクセスキーを直接書いており、そのキーを含むテスト用の実行環境のイメージを当時の委託先の開発者が2019年にインターネットに公開したため、第三者がキーを入手したと推定している。対象は従業員番号、氏名、所属部署、サーベイの回答と結果で、一部はストレスチェックの結果や医師による面談の記録を含む。
+sources:
+  - title: ラフール 「ラフールサーベイ」旧システムへの不正アクセスに関するお知らせとお詫び
+    url: https://corp.lafool.co.jp/news/information/172/
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2611/10/2000003052/

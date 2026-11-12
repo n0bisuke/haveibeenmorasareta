@@ -1,0 +1,23 @@
+organization: 住友生命保険相互会社
+services:
+  - Vitality
+industry: 金融・保険
+country: JP
+date_announced: 2026-11-09
+affected_count: 80000
+count_note: 約8万人。うち約1,000人は一部を伏せたカード番号も対象。自治体と連携した健康事業の応募者も含む
+cause: third_party
+root_cause: システム業務の委託先NTTデータのシステムが不正アクセスを受けた
+vendor:
+  name: 株式会社NTTデータ
+  group: NTTグループ
+data_types:
+  - 氏名
+  - 生年月日
+  - クレジットカード情報（番号の一部・有効期限等）
+summary: システム業務を委託するNTTデータのシステムが不正アクセスを受け、約8万人の個人情報が漏えいしたと公表した。うち約1,000人は一部を伏せたクレジットカード番号も対象。NTTデータは11月2日に侵入を発見し、3日に遮断した。山口県や岡山県などと連携して実施するVitalityウォークの応募者も含まれる。
+sources:
+  - title: NTTデータ ニュースリリース
+    url: https://www.nttdata.com/global/ja/news/release/2026/110900
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261109de72962

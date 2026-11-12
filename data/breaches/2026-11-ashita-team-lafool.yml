@@ -1,0 +1,22 @@
+organization: 株式会社あしたのチーム
+group: ウェルネス・コミュニケーションズ
+services:
+  - あしたのサーベイ
+industry: 人材・教育
+country: JP
+date_announced: 2026-11-04
+affected_count: 209
+count_note: 顧客企業3社の209名。提供元ラフールが公表した24,232名に含まれる
+cause: third_party
+root_cause: OEMで提供する「あしたのサーベイ」の提供元ラフールの旧システムが不正アクセスを受けた
+vendor:
+  name: 株式会社ラフール
+data_types:
+  - 氏名
+  - 従業員情報
+summary: OEMで提供する「あしたのサーベイ」の提供元である株式会社ラフールの旧システムが不正アクセスを受け、顧客企業3社の209名の情報が漏えいしたと公表した。ラフールは、プログラムに直書きしたアクセスキーが流出したことが原因と推定している。
+sources:
+  - title: あしたのチーム 「あしたのサーベイ」提供元における不正アクセス及び情報漏えいに関するお知らせ
+    url: https://www.ashita-team.com/news/261104-2/
+  - title: NOVAIST
+    url: https://novaist.jp/articles/rafool-survey-data-breach/

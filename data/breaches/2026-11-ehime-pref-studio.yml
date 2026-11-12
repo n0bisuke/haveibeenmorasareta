@@ -1,0 +1,24 @@
+organization: 愛媛県
+services:
+  - 気軽にスポーツ健康チャレンジ
+  - 子供向けDigSports体験会
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 愛媛県
+date_announced: 2026-11-11
+affected_count: 2039
+count_note: 2つのイベントの申込者の延べ人数。不正利用は確認されていない
+cause: third_party
+root_cause: 委託事業のイベントサイトを管理するクラウドサービスStudioが不正アクセスを受けた
+vendor:
+  name: Studio株式会社
+data_types:
+  - 氏名
+  - メールアドレス
+summary: 委託事業のイベントサイトの管理に使っていたクラウドサービスStudioが第三者の不正アクセスを受け、「気軽にスポーツ健康チャレンジ」と子供向け「DigSports体験会」にサイトから申し込んだ延べ2,039人の氏名やメールアドレスなどが漏えいした可能性があると公表した。不正利用は確認されていない。
+sources:
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261111de74197
+  - title: 南海放送
+    url: https://news.yahoo.co.jp/articles/d550c2e2f9078e28f569e3961dccf2fb56234157

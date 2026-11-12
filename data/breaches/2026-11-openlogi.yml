@@ -1,0 +1,25 @@
+organization: 株式会社オープンロジ
+services:
+  - 物流フルフィルメントサービス
+industry: 物流
+country: JP
+date_occurred: 2026-11-08
+date_announced: 2026-11-11
+affected_count: null
+count_note: 件数は調査中。2026年4月8日〜11月8日に出荷依頼された注文の配送先データが対象。HUMAN MADE（CURRY UP）・SKIYAKI（Bitfan）・マイネットなどの荷主も公表
+cause: unauthorized_access
+root_cause: 同社システムが11月8日〜9日に第三者の不正アクセスを受けた。侵入の手口は公表されていない
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 購入履歴
+summary: 同社システムが11月8日から9日にかけて第三者の不正アクセスを受け、2026年4月8日から11月8日に出荷依頼された注文の配送先データ（氏名、住所、電話番号、メールアドレス、商品名と数量）が漏えいしたと公表した。件数は調査中。9日に判明している経路を遮断し、個人情報保護委員会への報告と警察への相談を行う。物流を委託していたHUMAN MADEやSKIYAKI、マイネットなども影響を公表した。
+sources:
+  - title: オープンロジ 当社システムへの不正アクセスによる個人情報漏えいに関するお詫びとお知らせ
+    url: https://corp.openlogi.com/news/notice/notice-20261111/
+  - title: LOGISTICS TODAY
+    url: https://www.logi-today.com/1020754
+  - title: セキュリティ対策Lab（影響先まとめ）
+    url: https://rocket-boys.co.jp/security-measures-lab/openlogi-data-breach-affected-companies/

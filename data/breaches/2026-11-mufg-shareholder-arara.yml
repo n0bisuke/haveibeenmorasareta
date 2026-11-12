@@ -1,0 +1,21 @@
+organization: 株式会社三菱UFJフィナンシャル・グループ
+group: 三菱UFJフィナンシャル・グループ
+services:
+  - 株主向け電子ギフト贈呈（当選メール）
+industry: 金融・保険
+country: JP
+date_announced: 2026-11-11
+affected_count: 20000
+count_note: 約2万件。2026年7月に電子ギフトの当選メールを受け取った株主。アララの漏えい件数の一部
+cause: third_party
+root_cause: 電子ギフト贈呈の委託先ギフトパッドが使うアララのメール配信システムが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: 株主向け電子ギフトの贈呈業務を委託したギフトパッドが使う、メール配信サービス会社アララのシステムが不正アクセスを受け、2026年7月に電子ギフトの当選メールを受け取った株主約2万件のメールアドレスが外部に漏えいしたと公表した。株主番号などは含まれず、同社のシステムに被害はない。不正利用は確認されていない。
+sources:
+  - title: 時事通信
+    url: https://news.yahoo.co.jp/articles/799627d2a92130a7b5c118d4c0e8a99a034b9b41
+  - title: 山陰中央新報
+    url: https://sanin-chuo.co.jp/articles/-/1114054

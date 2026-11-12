@@ -1,0 +1,20 @@
+organization: 株式会社マイネット
+services:
+  - グループの一部サービスの配送
+industry: IT・通信
+country: JP
+date_announced: 2026-11-11
+affected_count: 25
+count_note: オープンロジ経由で扱った配送データ累計25件
+cause: third_party
+root_cause: 配送データを預けていた物流委託先オープンロジが不正アクセスを受けた
+vendor:
+  name: 株式会社オープンロジ
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+summary: グループの一部サービスでオープンロジを利用しており、同社への不正アクセスの対象となった可能性があると公表した。オープンロジ経由で扱った配送データは累計25件で、氏名、住所、電話番号を含む。クレジットカード情報は含まれない。
+sources:
+  - title: マイネット お知らせ
+    url: https://www.mynet.co.jp/news/info/251111

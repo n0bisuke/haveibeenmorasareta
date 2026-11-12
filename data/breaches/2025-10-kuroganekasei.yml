@@ -1,0 +1,24 @@
+organization: 黒金化成株式会社
+industry: 製造
+country: JP
+date_occurred: 2025-10-16
+date_announced: 2025-10-24
+affected_count: null
+count_note: 対象者数は公表されていない。2026年10月28日に本人通知の代替措置として漏えいのおそれを公表
+cause: ransomware
+root_cause: 海外からの不正アクセスとみられる攻撃でサーバがランサムウェアに感染した。侵入経路は公表されていない
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 従業員情報
+  - 取引先情報
+summary: 2025年10月16日に複数の拠点で社内ネットワークに接続できなくなる障害が起き、サーバへの不正アクセスを検知したと公表した。外部専門家の調査でランサムウェアによる攻撃と判明した。2026年10月28日には、取引先関係者、役員・従業員、求人応募者の氏名、住所、電話番号、メールアドレス、役職名、所属部署名が漏えいした、またはそのおそれがあるとして、本人通知の代替措置として公表した。マイナンバーは含まれない。
+sources:
+  - title: 黒金化成 ランサムウェア攻撃に伴う個人情報の漏えいまたはそのおそれについて
+    url: https://www.kuroganekasei.com/images/news/20261028.pdf
+  - title: ScanNetSecurity（2026年）
+    url: https://scan.netsecurity.ne.jp/article/2026/11/10/56718.html
+  - title: ScanNetSecurity（2025年）
+    url: https://scan.netsecurity.ne.jp/article/2025/11/12/54010.html
