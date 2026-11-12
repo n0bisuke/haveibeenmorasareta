@@ -138,6 +138,39 @@ ${b.sources.map((s) => `- [${s.title || s.url}](${s.url})`).join('\n')}
 `;
 }
 
+// シェア用ページ（/breach/<id>/light/・/dark/）。シェアした人の表示テーマに合わせた OGP 画像を出すためのもの。
+// SNS のクローラーは JavaScript を実行しないので、ここに書いた og:image を読む。人が開いたときは JavaScript で
+// 本来の事案ページへ移る（Facebook などは meta refresh をたどって元の画像を読むため、meta refresh は使わない）
+function sharePage(b, theme) {
+  const url = `${SITE_URL}/breach/${b.id}/`;
+  const shareUrl = `${url}${theme}/`;
+  return `<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${esc(title(b))} | ${esc(SITE_NAME)}</title>
+  <meta name="description" content="${esc(description(b))}">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="${esc(url)}">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="${esc(SITE_NAME)}">
+  <meta property="og:title" content="${esc(title(b))}">
+  <meta property="og:description" content="${esc(description(b))}">
+  <meta property="og:url" content="${esc(shareUrl)}">
+  <meta property="og:image" content="${esc(`${url}og-${theme}.png`)}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>location.replace('../' + location.search + location.hash);</script>
+</head>
+<body>
+  <p><a href="../">${esc(title(b))}</a></p>
+</body>
+</html>
+`;
+}
+
 function page(b) {
   const url = `${SITE_URL}/breach/${b.id}/`;
   const sev = b.severity ? RANK[b.severity] : null;
@@ -270,9 +303,9 @@ function page(b) {
       </aside>
     </div>
 
-    <div class="share">
+    <div class="share"${hasOg ? ' data-theme-share' : ''}>
       <button type="button" class="native-share" data-url="${esc(url)}" data-text="${esc(shareText)}" hidden>共有…</button>
-      <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&amp;url=${encodeURIComponent(url)}" target="_blank" rel="noopener noreferrer">𝕏 でシェア</a>
+      <a class="x-share" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&amp;url=${encodeURIComponent(url)}" target="_blank" rel="noopener noreferrer">𝕏 でシェア</a>
       <a href="https://b.hatena.ne.jp/entry/s/${esc(url.replace(/^https?:\/\//, ''))}" target="_blank" rel="noopener noreferrer">はてブ</a>
       <button type="button" class="copy-link" data-url="${esc(url)}">リンクをコピー</button>
       <a class="edit" href="${REPO}/edit/main/data/breaches/${esc(b.file)}" target="_blank" rel="noopener noreferrer">✎ この事案を GitHub で修正</a>
@@ -297,12 +330,20 @@ function page(b) {
     </div>
   </footer>
   <script>
+    // シェアする URL。見ている人の表示テーマ（ライト／ダーク）に合わせた画像が出るシェア用ページを使う
+    // （クリックした時点のテーマで決める。シェア用ページが無いときは事案ページの URL のまま）
+    const themed = (u) => (document.querySelector('[data-theme-share]') ? u + (document.documentElement.classList.contains('dark') ? 'dark/' : 'light/') : u);
     // スマホでは OS の共有シート（X・LINE などのアプリ）を使えるようにする
     const share = document.querySelector('.native-share');
     if (share && navigator.share) {
       share.hidden = false;
-      share.addEventListener('click', () => navigator.share({ title: share.dataset.text, text: share.dataset.text, url: share.dataset.url }).catch(() => {}));
+      share.addEventListener('click', () => navigator.share({ title: share.dataset.text, text: share.dataset.text, url: themed(share.dataset.url) }).catch(() => {}));
     }
+    document.querySelector('.x-share')?.addEventListener('click', (e) => {
+      const u = new URL(e.currentTarget.href);
+      u.searchParams.set('url', themed(share.dataset.url));
+      e.currentTarget.href = u.toString();
+    });
     document.querySelectorAll('.b-check').forEach((sec) => {
       const boxes = sec.querySelectorAll('input[data-bc]');
       const count = sec.querySelector('.b-check-count');
@@ -319,8 +360,9 @@ function page(b) {
     });
     document.querySelector('.copy-link')?.addEventListener('click', async (e) => {
       const btn = e.currentTarget;
-      try { await navigator.clipboard.writeText(btn.dataset.url); btn.textContent = 'コピーしました'; }
-      catch { prompt('このリンクをコピーしてください', btn.dataset.url); }
+      const u = themed(btn.dataset.url);
+      try { await navigator.clipboard.writeText(u); btn.textContent = 'コピーしました'; }
+      catch { prompt('このリンクをコピーしてください', u); }
     });
   </script>
 </body>
@@ -337,6 +379,12 @@ for (const b of breaches) {
   await mkdir(dir, { recursive: true });
   await writeFile(path.join(dir, 'index.html'), page(b));
   await writeFile(path.join(dir, 'index.md'), markdown(b, `${SITE_URL}/breach/${b.id}/`));
+  if (hasOg) {
+    for (const theme of ['light', 'dark']) {
+      await mkdir(path.join(dir, theme), { recursive: true });
+      await writeFile(path.join(dir, theme, 'index.html'), sharePage(b, theme));
+    }
+  }
 }
 
 // ランキング・ビジュアライズのセクションごとの個別ページ

@@ -2,8 +2,9 @@
 // scripts/pages.mjs の後に実行し、公開物にだけ含める（リポジトリにはコミットしない）
 //   node scripts/og-images.mjs [--only <事案ID>,...] [--style auto|a|b|c]
 //   auto（既定）: お漏らし無しは A、企業側が調査中は C（速報風）、重要度が「危険」「高」は B（ダーク8ビット）、それ以外は A（ライト）
+//   auto のときは、シェア用のライト版（og-light.png）とダーク版（og-dark.png）も出力する
 //   CHROME_PATH … 使う Chrome / Chromium（省略時はインストール済みの Google Chrome）
-import { readFile } from 'node:fs/promises';
+import { copyFile, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { chromium } from 'playwright-core';
 import { ROOT } from './lib.mjs';
@@ -139,12 +140,24 @@ const browser = await chromium.launch(process.env.CHROME_PATH ? { executablePath
 const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
 // フォントの読み込みを1回で済ませるため、同じページで中身だけ差し替える
 await page.setContent(`<!doctype html><html lang="ja"><head><meta charset="utf-8">${FONT}</head><body></body></html>`, { waitUntil: 'networkidle' }).catch(() => {});
+// og.png（事案ページ用。スタイルは pick で決める）に加えて、シェアした人のテーマに合わせた
+// og-light.png（ライト＝A）と og-dark.png（ダーク＝B）も作る。/breach/<id>/light/・/dark/ のシェア用ページが使う
+// （--style を指定したときは og.png だけを作る）
+const THEMES = STYLE === 'auto' ? [['og-light.png', 'a'], ['og-dark.png', 'b']] : [];
+const render = async (b, style, file) => {
+  await page.evaluate((html) => { document.body.outerHTML = `<body>${html}</body>`; }, STYLES[style](b));
+  await page.evaluate(() => document.fonts.ready);
+  await page.screenshot({ path: path.join(PUBLIC, 'breach', b.id, file) });
+};
 let n = 0;
 for (const b of breaches) {
-  await page.evaluate((html) => { document.body.outerHTML = `<body>${html}</body>`; }, STYLES[pick(b)](b));
-  await page.evaluate(() => document.fonts.ready);
-  await page.screenshot({ path: path.join(PUBLIC, 'breach', b.id, 'og.png') });
+  const main = pick(b);
+  for (const [file, style] of THEMES) await render(b, style, file);
+  // og.png がライト・ダークのどちらかと同じなら、描き直さずにコピーする
+  const same = THEMES.find(([, style]) => style === main);
+  if (same) await copyFile(path.join(PUBLIC, 'breach', b.id, same[0]), path.join(PUBLIC, 'breach', b.id, 'og.png'));
+  else await render(b, main, 'og.png');
   n++;
 }
 await browser.close();
-console.log(`✔ OGP 画像を ${n} 件出力しました（スタイル ${STYLE}）`);
+console.log(`✔ OGP 画像を ${n} 件出力しました（スタイル ${STYLE}${THEMES.length ? '、ライト・ダーク版つき' : ''}）`);
