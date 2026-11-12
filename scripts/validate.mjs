@@ -99,6 +99,23 @@ for (const { file, data, error } of articles) {
   }
 }
 
+// 委託先ごとの影響先まとめ（data/vendor-pages.yml）の検証
+{
+  const yaml = await import('js-yaml');
+  const defs = yaml.load(await readFile(path.join(ROOT, 'data', 'vendor-pages.yml'), 'utf8'), { schema: yaml.CORE_SCHEMA }) ?? [];
+  const vendorNames = new Set(entries.flatMap((e) => [e.data?.vendor?.name, e.data?.organization]).filter(Boolean));
+  const slugs = new Set();
+  for (const [i, d] of defs.entries()) {
+    const where = `vendor-pages.yml の ${i + 1} 件目${d?.slug ? `（${d.slug}）` : ''}`;
+    if (!d || typeof d.slug !== 'string' || !/^[a-z0-9]+(-[a-z0-9]+)*$/.test(d.slug)) { errors.push(`${where}: slug は半角英小文字・数字・ハイフンにしてください`); continue; }
+    if (slugs.has(d.slug)) errors.push(`${where}: slug が重複しています`);
+    slugs.add(d.slug);
+    if (typeof d.label !== 'string' || !d.label) errors.push(`${where}: label がありません`);
+    if (!Array.isArray(d.names) || !d.names.length) { errors.push(`${where}: names がありません`); continue; }
+    if (!d.names.some((n) => vendorNames.has(n))) errors.push(`${where}: names のどれも data/breaches の vendor.name・organization に見つかりません`);
+  }
+}
+
 if (errors.length) {
   console.error(`✖ ${errors.length} 件のエラー\n`);
   for (const e of errors) console.error(`  - ${e}`);

@@ -333,3 +333,7 @@ a { color: var(--accent); }
 /* 見出しは行の長さをそろえ、本文は最後の行に1文字だけ残るのを避ける（未対応のブラウザでは通常の折り返し） */
 h1, h2, h3, .org { text-wrap: balance; }
 .summary, .rd-body p, .rd-summary, .count-note, .root-cause-text { text-wrap: pretty; }
+/* 事案ページの「よくある質問」 */
+.b-faq { margin-top: 22px; }
+.b-faq dt { font-weight: 700; margin-top: 10px; }
+.b-faq dd { margin: 2px 0 0; color: var(--text); }

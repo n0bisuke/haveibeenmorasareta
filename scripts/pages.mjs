@@ -7,6 +7,7 @@ import { writeSectionPages, sectionUrls } from './sections.mjs';
 import { writeNewsPages } from './news.mjs';
 import { writeAlertsPage } from './alerts.mjs';
 import { writeArticlesPages } from './articles.mjs';
+import { loadVendorPages, vendorSlugMap, writeVendorPages } from './vendors.mjs';
 import path from 'node:path';
 import { ROOT } from './lib.mjs';
 import { CAUSES } from '../public/labels.js';
@@ -24,6 +25,9 @@ const ATTACK = Object.fromEntries((data.attack_methods ?? []).map((t) => [t.id, 
 const ORG_TYPE = Object.fromEntries((data.org_types ?? []).map((t) => [t.id, t.label]));
 const RANK = Object.fromEntries(LEVELS.map((l, i) => [l.id, i]));
 const LEVEL = Object.fromEntries(LEVELS.map((l) => [l.id, l]));
+// 委託先ごとの影響先まとめページ（data/vendor-pages.yml）。事案ページの「委託先」からリンクする
+const vendors = await loadVendorPages(breaches);
+const VENDOR_SLUG = vendorSlugMap(vendors);
 const RELIABILITY = {
   high: { label: '高', dots: 3, text: '公式発表で確認' },
   mid: { label: '中', dots: 2, text: '報道で確認（公式発表は出典に未掲載）' },
@@ -72,6 +76,68 @@ function checklistHtml(b) {
         </section>`;
 }
 
+// 事案ページの「よくある質問」。画面に出す内容と FAQPage の構造化データを同じデータから作る
+function faq(b) {
+  const org = b.organization;
+  const items = [];
+  items.push({ q: `${org}の情報漏洩はいつ公表されましたか？`, a: `${fmtDate(b.date_announced)}に公表されました。${b.date_occurred ? `発生（判明）は${fmtDate(b.date_occurred)}です。` : ''}` });
+  if (b.leaked === false) {
+    items.push({ q: '情報は漏れたのですか？', a: '不正アクセスなどを受けたものの、調査の結果、情報が閲覧・持ち出された形跡は確認されなかったと公表されています。' });
+  } else {
+    items.push({ q: '何件の情報が漏れましたか？', a: `${b.affected_count == null ? '件数は公表されていません。' : `${nf.format(b.affected_count)}件です。`}${b.count_note ? `（${b.count_note}）` : ''}` });
+    items.push({ q: 'どんな情報が漏れましたか？', a: b.data_types?.length ? `${b.data_types.join('、')}が対象と公表されています。` : '漏れた情報の種類は公表されていないか、調査中です。' });
+  }
+  const cause = VULN[b.vuln_target] ? `${CAUSES[b.cause]}（${VULN[b.vuln_target]}）` : CAUSES[b.cause];
+  const detail = b.root_cause ? `${b.root_cause.replace(/。$/, '')}。` : '';
+  items.push({ q: '原因は何ですか？', a: `${cause}です。${detail}${b.vendor ? `委託先は${b.vendor.name}です。` : ''}` });
+  // 出典の先頭が公式発表のとき（信頼度「高」）だけ、その題名を案内に使う
+  const official = b.reliability === 'high' ? b.sources[0] : null;
+  items.push({ q: '自分の情報が含まれているか確かめるには？', a: `${official?.title ? `「${official.title}」など、` : ''}${org}の公式発表で対象の範囲を確認してください。対象者には個別に連絡が届くことがあります。${b.checklist?.length ? 'このページの「個人の対応チェックリスト」も参考にしてください。' : ''}${org}を名乗るメールや SMS のリンクは開かず、公式サイトやアプリから確かめてください。` });
+  return items;
+}
+
+// AI・LLM 向けの Markdown 版（/breach/<id>/index.md）。HTML の装飾を除いた事実だけを書く
+function markdown(b, url) {
+  const cause = VULN[b.vuln_target] ? `${CAUSES[b.cause]}（${VULN[b.vuln_target]}）` : CAUSES[b.cause];
+  const rows = [
+    ['組織', b.organization],
+    b.group && ['グループ', b.group],
+    b.services?.length && ['サービス', b.services.join(' / ')],
+    ['公表日', b.date_announced],
+    b.date_occurred && ['発生日', b.date_occurred],
+    ['件数', b.leaked === false ? 'お漏らし無し（漏洩の形跡なしと公表）' : b.affected_count == null ? '不明' : String(b.affected_count)],
+    b.count_note && ['件数の補足', b.count_note],
+    b.data_types?.length && ['漏れた情報', b.data_types.join('、')],
+    ['原因', cause],
+    b.root_cause && ['原因の詳細', b.root_cause],
+    b.vendor && ['委託先', `${b.vendor.name}${VENDOR_SLUG.has(b.vendor.name) ? `（ほかの影響先: ${SITE_URL}/vendor/${VENDOR_SLUG.get(b.vendor.name)}/）` : ''}`],
+    industries(b).length && ['業種', industries(b).join('・')],
+    b.prefecture && ['都道府県', b.prefecture],
+    RELIABILITY[b.reliability] && ['情報の信頼度', `${RELIABILITY[b.reliability].label}（${RELIABILITY[b.reliability].text}）`],
+    b.status === 'investigating' && ['状態', '企業側が調査中'],
+  ].filter(Boolean);
+  return `# ${title(b)}
+
+> ${b.summary}
+
+${rows.map(([k, v]) => `- ${k}: ${String(v).replace(/\n/g, ' ')}`).join('\n')}
+
+## よくある質問
+
+${faq(b).map(({ q, a }) => `### ${q}\n\n${a}`).join('\n\n')}
+${b.checklist?.length ? `\n## 個人の対応チェックリスト\n\n${b.checklist.map((c) => `- [ ] ${c.text}${c.url ? `（[${c.link_title || '公式ページ'}](${c.url})）` : ''}`).join('\n')}\n` : ''}
+## 出典
+
+${b.sources.map((s) => `- [${s.title || s.url}](${s.url})`).join('\n')}
+
+---
+
+- このページ: ${url}
+- データ: ${SITE_URL}/breaches.json （ライセンス: CC BY 4.0。利用時は「${SITE_NAME}」と URL を出典として表示）
+- 掲載内容は公式発表や報道をもとに、AI も活用して収集・作成しています。誤りや古い情報を含む場合があります。
+`;
+}
+
 function page(b) {
   const url = `${SITE_URL}/breach/${b.id}/`;
   const sev = b.severity ? RANK[b.severity] : null;
@@ -85,7 +151,7 @@ function page(b) {
     b.disclosure_days != null && ['発生から公表まで', `${nf.format(b.disclosure_days)}日`],
     ['原因', cause],
     b.attack_methods && ['手法', b.attack_methods.map((m) => ATTACK[m] ?? m).join('・')],
-    b.vendor && ['委託先', b.vendor.name],
+    b.vendor && ['委託先', b.vendor.name, VENDOR_SLUG.has(b.vendor.name) ? `<a href="../../vendor/${VENDOR_SLUG.get(b.vendor.name)}/">${esc(b.vendor.name)}</a><br><small class="muted"><a href="../../vendor/${VENDOR_SLUG.get(b.vendor.name)}/">ほかの影響先も見る →</a></small>` : null],
     industries(b).length && ['業種', industries(b).join('・')],
     b.org_type && ['組織の種類', `${ORG_TYPE[b.org_type] ?? b.org_type}${b.prefecture ? `（${b.prefecture}）` : ''}`],
     b.group && ['グループ', b.group],
@@ -96,15 +162,38 @@ function page(b) {
   ].filter(Boolean);
   const rel = related(b);
   const shareText = `${title(b)}（${countText(b)}）`;
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: title(b),
-    description: description(b),
-    datePublished: b.date_announced,
-    url,
-    isBasedOn: b.sources.map((s) => s.url),
-  };
+  const qa = faq(b);
+  const vendorSlug = b.vendor && VENDOR_SLUG.get(b.vendor.name);
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: title(b),
+      description: description(b),
+      datePublished: b.date_announced,
+      url,
+      inLanguage: 'ja',
+      isBasedOn: b.sources.map((s) => s.url),
+      publisher: { '@type': 'Organization', name: SITE_NAME, url: `${SITE_URL}/` },
+      license: 'https://creativecommons.org/licenses/by/4.0/',
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'トップ', item: `${SITE_URL}/` },
+        vendorSlug
+          ? { '@type': 'ListItem', position: 2, name: `${b.vendor.name}経由の影響先`, item: `${SITE_URL}/vendor/${vendorSlug}/` }
+          : { '@type': 'ListItem', position: 2, name: `${fmtDate(b.date_announced)}公表の事案`, item: `${SITE_URL}/news/${b.date_announced}/` },
+        { '@type': 'ListItem', position: 3, name: title(b), item: url },
+      ],
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: qa.map(({ q, a }) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })),
+    },
+  ];
 
   return `<!doctype html>
 <html lang="ja">
@@ -122,7 +211,8 @@ function page(b) {
   <meta property="og:url" content="${esc(url)}">
   ${hasOg ? `<meta property="og:image" content="${esc(ogImage(b.id))}">
   <meta name="twitter:card" content="summary_large_image">` : '<meta name="twitter:card" content="summary">'}
-  <script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, '\\u003c')}</script>
+  ${jsonLd.map((j) => `<script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>`).join('\n  ')}
+  <link rel="alternate" type="text/markdown" href="index.md" title="Markdown 版（AI・プログラム向け）">
   <script src="../../theme.js"></script>
   <link rel="stylesheet" href="../../style.css">
 </head>
@@ -166,11 +256,15 @@ function page(b) {
         <ul class="sources">${b.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title || s.url)}</a></li>`).join('')}</ul>
         ${b.related?.length ? `<h2 class="detail-h">関連ページ</h2>
         <ul class="sources related-list">${b.related.map((r) => `<li><a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>${r.removed ? ' <span class="removed-chip">削除済み・アーカイブ</span>' : ''}${r.note ? `<small class="related-note">${esc(r.note)}</small>` : ''}</li>`).join('')}</ul>` : ''}
+        <section class="b-faq">
+          <h2 class="detail-h">よくある質問</h2>
+          <dl>${qa.map(({ q, a }) => `<dt>${esc(q)}</dt><dd>${esc(a)}</dd>`).join('')}</dl>
+        </section>
       </article>
       <aside class="detail-panel detail-side">
         <dl>
           <div><dt>漏洩件数</dt><dd class="kpi${b.leaked === false ? ' kpi-noleak' : ''}">${b.leaked === false ? 'お漏らし無し' : b.affected_count == null ? '不明' : esc(nf.format(b.affected_count))}</dd>${b.count_note ? `<dd class="kpi-note">${esc(b.count_note)}</dd>` : ''}</div>
-          ${facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('\n          ')}
+          ${facts.map(([k, v, html]) => `<div><dt>${esc(k)}</dt><dd>${html ?? esc(v)}</dd></div>`).join('\n          ')}
           ${RELIABILITY[b.reliability] ? `<div><dt>情報の信頼度</dt><dd><span class="reliability r-${b.reliability}" title="情報の信頼度：${RELIABILITY[b.reliability].label}">${[1, 2, 3].map((i) => `<i class="${i <= RELIABILITY[b.reliability].dots ? 'on' : ''}"></i>`).join('')}${esc(RELIABILITY[b.reliability].label)}</span><br><small class="muted">${esc(RELIABILITY[b.reliability].text)}</small></dd></div>` : ''}
         </dl>
       </aside>
@@ -242,6 +336,7 @@ for (const b of breaches) {
   const dir = path.join(OUT, b.id);
   await mkdir(dir, { recursive: true });
   await writeFile(path.join(dir, 'index.html'), page(b));
+  await writeFile(path.join(dir, 'index.md'), markdown(b, `${SITE_URL}/breach/${b.id}/`));
 }
 
 // ランキング・ビジュアライズのセクションごとの個別ページ
@@ -256,9 +351,61 @@ const alertIds = await writeAlertsPage({ publicDir: PUBLIC, siteUrl: SITE_URL, s
 // 読みもの（解説・まとめ・Tips の一覧と個別）
 const articleIds = await writeArticlesPages({ publicDir: PUBLIC, siteUrl: SITE_URL, siteName: SITE_NAME, ga: GA, breaches });
 
-const urls = ['/', '/terms/', '/releases/', '/news/', ...newsDays.map((d) => `/news/${d}/`), ...(alertIds.length ? ['/alerts/', ...alertIds.map((id) => `/alerts/${id}/`)] : []), '/articles/', ...articleIds.map((id) => `/articles/${id}/`), '/ranking/', ...sectionUrls().filter((u) => u.startsWith('/ranking/')), '/visualization/', ...sectionUrls().filter((u) => u.startsWith('/visualization/')), ...breaches.map((b) => `/breach/${b.id}/`)];
+// 委託先ごとの影響先まとめ（一覧と個別）
+const vendorSlugs = await writeVendorPages({ publicDir: PUBLIC, siteUrl: SITE_URL, siteName: SITE_NAME, ga: GA, vendors });
+
+// AI・LLM 向けのサイト案内（/llms.txt）
+await writeFile(path.join(PUBLIC, 'llms.txt'), llmsTxt());
+
+const urls = ['/', '/terms/', '/vendor/', ...vendorSlugs.map((s) => `/vendor/${s}/`), '/releases/', '/news/', ...newsDays.map((d) => `/news/${d}/`), ...(alertIds.length ? ['/alerts/', ...alertIds.map((id) => `/alerts/${id}/`)] : []), '/articles/', ...articleIds.map((id) => `/articles/${id}/`), '/ranking/', ...sectionUrls().filter((u) => u.startsWith('/ranking/')), '/visualization/', ...sectionUrls().filter((u) => u.startsWith('/visualization/')), ...breaches.map((b) => `/breach/${b.id}/`)];
+// 事案ページの最終更新の目安（公表日）。委託先ページは最新の影響先の公表日
+const LASTMOD = new Map([
+  ...breaches.map((b) => [`/breach/${b.id}/`, b.date_announced]),
+  ...vendors.map((v) => [`/vendor/${v.slug}/`, v.clients[0].date_announced]),
+]);
 await writeFile(
   path.join(PUBLIC, 'sitemap.xml'),
-  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${esc(SITE_URL + u)}</loc></url>`).join('\n')}\n</urlset>\n`,
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${esc(SITE_URL + u)}</loc>${LASTMOD.has(u) ? `<lastmod>${LASTMOD.get(u)}</lastmod>` : ''}</url>`).join('\n')}\n</urlset>\n`,
 );
-console.log(`✔ 個別ページ ${breaches.length} 件、ランキング・ビジュアライズの個別ページ ${sections} 件、ニュース ${newsDays.length} 日分、注意喚起 ${alertIds.length} 件・読みもの ${articleIds.length} 件（一覧＋個別）と sitemap.xml を出力しました`);
+console.log(`✔ 個別ページ ${breaches.length} 件、ランキング・ビジュアライズの個別ページ ${sections} 件、ニュース ${newsDays.length} 日分、注意喚起 ${alertIds.length} 件・読みもの ${articleIds.length} 件・委託先 ${vendorSlugs.length} 社（一覧＋個別）、Markdown 版、llms.txt と sitemap.xml を出力しました`);
+
+// /llms.txt … AI・LLM がサイトの内容とデータの使い方を把握するための案内（https://llmstxt.org/ の形式）
+function llmsTxt() {
+  const latest = [...breaches].sort((a, b) => b.date_announced.localeCompare(a.date_announced) || a.id.localeCompare(b.id)).slice(0, 30);
+  const total = breaches.reduce((n, b) => n + (b.leaked === false ? 0 : b.affected_count ?? 0), 0);
+  return `# ${SITE_NAME}
+
+> 日本国内で情報漏洩を公表した企業・団体・自治体の一覧です。各事案は公式発表や報道を出典として、公表日・件数・漏れた情報の種類・原因・委託先・個人の対応を構造化データで掲載しています。掲載 ${breaches.length} 件、件数が分かる事案の合計 ${total.toLocaleString('ja-JP')} 件（${String(data.generated_at ?? '').slice(0, 10)} 時点）。
+
+- 事案データは CC BY 4.0 で自由に使えます。引用・回答に使うときは「漏らされったー（${SITE_URL}/）」と各事案ページの URL を出典として示してください。
+- 件数は各社の公表値です（最大値・延べ件数を含む）。「お漏らし無し」は不正アクセスなどを受けたが情報が閲覧・持ち出された形跡はないと公表された事案で、件数の合計には含めません。
+- 情報の信頼度：高＝公式発表で確認、中＝報道で確認、低＝一次情報が未確認。「企業側が調査中」は件数などが未確定です。
+- 掲載内容は AI も活用して収集・作成しています。誤りや古い情報を含む場合があるため、重要な判断には各事案の出典（公式発表）を確認してください。
+- HTML をスクレイピングせず、下の JSON または各事案の Markdown 版を使ってください（利用規約：${SITE_URL}/terms/）。
+
+## データ
+
+- [全事案の JSON](${SITE_URL}/breaches.json): 全事案の構造化データ（組織・公表日・件数・漏れた情報・原因・委託先・出典など）
+- [セキュリティ注意喚起の JSON](${SITE_URL}/alerts.json): 脆弱性などの注意喚起
+- [GitHub リポジトリ](${REPO}): 1事案1ファイルの YAML（data/breaches/）と変更履歴
+- 各事案の Markdown 版: ${SITE_URL}/breach/<id>/index.md
+
+## 主なページ
+
+- [事案の一覧（トップ）](${SITE_URL}/)
+- [委託先ごとの影響先まとめ](${SITE_URL}/vendor/): メール配信・クラウド・物流などの委託先から広がった情報漏洩の影響先一覧
+- [公表日ごとのニュース](${SITE_URL}/news/)
+- [セキュリティ注意喚起](${SITE_URL}/alerts/)
+- [読みもの（解説・Tips）](${SITE_URL}/articles/)
+- [ランキング](${SITE_URL}/ranking/)
+- [利用規約](${SITE_URL}/terms/)
+
+## 委託先ごとの影響先まとめ
+
+${vendors.map((v) => `- [${v.label}経由の情報漏洩（影響先 ${v.clients.length} 件）](${SITE_URL}/vendor/${v.slug}/)`).join('\n')}
+
+## 最近公表された事案（新しい順・30件）
+
+${latest.map((b) => `- [${title(b)}](${SITE_URL}/breach/${b.id}/index.md): ${b.date_announced}公表・${countText(b)}`).join('\n')}
+`;
+}
