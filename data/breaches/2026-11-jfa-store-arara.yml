@@ -1,0 +1,20 @@
+organization: 公益財団法人日本サッカー協会
+services:
+  - JFA STORE（GMO後払い）
+industry: エンタメ・スポーツ
+country: JP
+date_announced: 2026-11-11
+affected_count: 11
+count_note: 10月28日〜30日にカード会社を装った不審なメールが送られた
+cause: third_party
+root_cause: 後払い決済の提供元GMOペイメントサービスの委託先が使うアララのメール配信サービスが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: 公式ストア「JFA STORE」の後払い決済を提供するGMOペイメントサービスから、同社の委託先が使うメール配信サービス提供元アララへの不正アクセスにより、利用者11人のメールアドレスが漏えいしたと報告を受けたと公表した。10月28日から30日にこのアドレスにカード会社を装った不審なメールが送られた。JFAやストアのシステムへの不正アクセスはない。
+sources:
+  - title: JFA お知らせ
+    url: http://www.jfa.jp/news/00037015/
+  - title: FOOTBALL ZONE
+    url: https://www.football-zone.net/archives/684138

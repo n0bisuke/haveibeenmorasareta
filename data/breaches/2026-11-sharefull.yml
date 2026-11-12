@@ -1,0 +1,31 @@
+organization: シェアフル株式会社
+services:
+  - スキマバイトアプリ「シェアフル」
+industry: 人材・教育
+country: JP
+date_occurred: 2026-11-04
+date_announced: 2026-11-09
+affected_count: 7500000
+count_note: ユーザーアカウント最大約750万件。ほかに求人企業最大約7,500社の法人情報。顔写真は保存先URLが対象
+cause: unauthorized_access
+root_cause: 社内管理システムが第三者の不正アクセスを受けた。侵入の手口は公表されていない
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 住所
+  - 生年月日
+  - 口座番号
+  - 取引先情報
+summary: スキマバイトアプリ「シェアフル」の社内管理システムが11月4日夜に第三者の不正アクセスを受け、ユーザーアカウント最大約750万件の氏名・電話番号・メールアドレス・住所・生年月日・給与振込用の銀行口座情報・緊急連絡先・顔写真の保存先URLなどと、求人企業最大約7,500社の法人情報が流出した可能性があると公表した。11月5日に判明し、同日中に経路を遮断した。本人確認書類の画像、パスワード、口座の暗証番号は含まれない。
+sources:
+  - title: シェアフル 社内管理システムへの不正アクセスによる個人情報および法人情報流出の可能性に関するお詫びとお知らせ
+    url: https://sharefull.com/information/9480/
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2611/10/2000003072/
+checklist:
+  - text: シェアフルからのお知らせで対象かどうかを確認する
+    url: https://sharefull.com/information/9487/
+    link_title: ユーザー向けのお知らせ
+  - text: 給与振込口座の入出金を確認し、身に覚えのない取引があれば銀行に連絡する
+  - text: シェアフルや求人企業を名乗るSMS・電話・メールのリンクは開かない

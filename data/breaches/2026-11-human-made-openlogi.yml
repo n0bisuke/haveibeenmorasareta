@@ -1,0 +1,25 @@
+organization: HUMAN MADE株式会社
+services:
+  - CURRY UP ECサイト
+industry: 小売・EC
+country: JP
+date_occurred: 2026-11-08
+date_announced: 2026-11-11
+affected_count: null
+count_note: CURRY UP ECの2026年4月8日〜11月8日の配送データ。人数は調査中
+cause: third_party
+root_cause: 物流委託先オープンロジのシステムが不正アクセスを受け、配送データが漏えいした
+vendor:
+  name: 株式会社オープンロジ
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 購入履歴
+summary: カレーブランド「CURRY UP」の物流を委託していたオープンロジが11月8日から9日に第三者の不正アクセスを受け、CURRY UP ECの4月8日から11月8日の配送データに含まれる氏名、住所、電話番号、メールアドレス、商品情報が漏えいした可能性があると公表した。カード情報は含まれず、HUMAN MADEなど他のブランドへの影響はない。人数は調査中。
+sources:
+  - title: HUMAN MADE 適時開示
+    url: https://www.release.tdnet.info/inbs/140120261111574117.pdf
+  - title: WWDJAPAN
+    url: https://www.wwdjapan.com/articles/2550081

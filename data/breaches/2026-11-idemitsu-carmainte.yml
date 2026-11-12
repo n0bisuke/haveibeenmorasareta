@@ -1,0 +1,18 @@
+organization: 出光興産株式会社
+services:
+  - idemitsuカーメンテ予約（旧PIT in plus）
+industry: エネルギー・インフラ
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_announced: 2026-11-10
+affected_count: null
+count_note: 漏えいの有無・対象者・件数は調査中
+cause: unauthorized_access
+root_cause: 予約サイトが第三者の不正アクセスを受け、顧客情報が外部から取得できる状態だった
+summary: カーメンテナンス予約サービス「idemitsuカーメンテ予約」（旧称PIT in plus）が第三者の不正アクセスを受け、利用者の個人情報の一部が外部に漏えいした可能性があると公表した。11月7日に通常と異なるアクセスを検知し、9日の調査で不正アクセスと、顧客情報が外部から取得できる状態にあったことを確認した。10日からサービスを停止し、漏えいの有無や対象者を調べている。停止中は予約の変更・取消を予約店舗で受け付ける。
+sources:
+  - title: 出光興産 「idemitsu カーメンテ予約」への不正アクセスによる個人情報漏洩の可能性
+    url: https://www.idemitsu.com/jp/information/2026/261110.pdf
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/idemitsu-car-maintenance-reservation-unauthorized-access/

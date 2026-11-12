@@ -1,0 +1,19 @@
+organization: 野村ホールディングス株式会社
+group: 野村グループ
+services:
+  - 株主向けメール
+industry: 金融・保険
+country: JP
+date_announced: 2026-11-11
+affected_count: 13500
+count_note: 一部株主のメールアドレス約1万3500件。アララの漏えい件数の一部
+cause: third_party
+root_cause: 株主向けメールの配信に関わるアララのメール配信システムが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: メール配信サービス会社アララへの不正アクセスにより、一部株主のメールアドレス約1万3500件が漏えいしたと公表した。同じ日に三菱UFJフィナンシャル・グループや内閣府もアララ経由の漏えいを公表した。
+sources:
+  - title: 日本経済新聞「三菱UFJや野村、一部株主のメアド漏洩 アララ不正アクセスで」
+    url: https://www.nikkei.com/article/DGXZQOUB118EO0R11C26A1000000/

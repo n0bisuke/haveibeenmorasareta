@@ -1,0 +1,23 @@
+organization: 株式会社福岡銀行
+group: ふくおかフィナンシャルグループ
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 福岡県
+date_occurred: 2026-11-02
+date_announced: 2026-11-05
+affected_count: null
+count_note: 対象者数は調査中。SMBCコンシューマーファイナンス全体では最大320,118人
+cause: third_party
+root_cause: ローンの保証会社SMBCコンシューマーファイナンスの保証業務システムが不正アクセスを受けた
+vendor:
+  name: SMBCコンシューマーファイナンス株式会社
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - 従業員情報
+summary: カードローンなどの保証業務を委託するSMBCコンシューマーファイナンスのシステムが不正アクセスを受け、同行の顧客情報の一部が外部に漏えいしたと公表した。漏えいの可能性がある情報は氏名、住所、電話番号、年収を含む勤務先情報など。対象の顧客数は調査中。二次被害は確認されていない。ふくおかフィナンシャルグループの熊本銀行と十八親和銀行も同様に公表した。
+sources:
+  - title: 熊本日日新聞
+    url: https://news.yahoo.co.jp/articles/657c8096d23498e5297e584f9d4f2c780625cba9

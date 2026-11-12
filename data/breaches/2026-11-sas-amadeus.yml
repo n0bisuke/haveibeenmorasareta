@@ -1,0 +1,22 @@
+organization: SAS AB（スカンジナビア航空）
+services:
+  - 予約情報
+industry: 交通・モビリティ
+country: SE
+date_announced: 2026-11-09
+affected_count: 350164
+count_note: スウェーデンのデータ保護当局に届け出た人数。主に過去の予約。個別の通知は行わない方針。日本の利用者への影響は未確認
+cause: third_party
+root_cause: 予約システムの委託先アマデウスで、漏えいしたシステム認証情報が使われ予約情報が自動検索で参照された
+attack_methods:
+  - stolen_credentials
+vendor:
+  name: Amadeus IT Group
+data_types:
+  - 利用履歴
+summary: 予約システムの委託先であるアマデウスへの不正アクセスにより、35万164人分の予約情報が参照された可能性があるとスウェーデンのデータ保護当局に報告したと公表した。外部の者が漏えいしたシステム認証情報でアマデウスの環境に入り、自動検索を実行したとされる。対象は予約番号・日付・便の情報・人数などで、ほかの種類の個人データは現時点で確認されていない。リスクは高くないとして、利用者への個別の通知は行わない。
+sources:
+  - title: SVT
+    url: https://svt.se/nyheter/inrikes/misstankt-datalacka-hos-sas-over-350-000-bokningsuppgifter-kan-ha-rojts
+  - title: The Local
+    url: https://www.thelocal.com/20261110/350000-sas-passengers-may-have-had-details-leaked-in-major-data-breach

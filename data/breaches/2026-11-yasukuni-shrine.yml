@@ -1,0 +1,26 @@
+organization: 靖國神社
+services:
+  - オンライン授与品・頒布品サイト
+industry: 団体・その他
+country: JP
+date_occurred: 2026-10-28
+date_announced: 2026-11-11
+affected_count: 14500
+count_note: 約14,500件。調査中のため変わる可能性がある
+cause: unauthorized_access
+root_cause: オンライン授与品・頒布品サイトが不正アクセスを受けた。手口は公表されていない
+data_types:
+  - 氏名
+  - メールアドレス
+  - パスワード（ハッシュ化・暗号化済み）
+summary: お守りなどを申し込む「オンライン授与品・頒布品サイト」が不正アクセスを受け、会員約1万4500件の氏名、メールアドレス、アカウント登録日時、パスワードのハッシュ値と生成補助情報が流出したと公表した。ハッシュ値から元のパスワードを特定されるおそれがあるとして、同じパスワードを使い回している人には変更を呼びかけた。10月28日に把握し、同日サイトを停止した。住所・電話番号・クレジットカード情報の漏えいは確認されていない。
+sources:
+  - title: 靖國神社 新着情報
+    url: https://www.yasukuni.or.jp/news_detail.html?id=734
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2611/11/2000003119/
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261111de74452
+checklist:
+  - text: 靖國神社のオンラインサイトと同じパスワードを他のサービスで使っていれば変更する
+  - text: 靖國神社を名乗る不審なメールのリンクは開かない

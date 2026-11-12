@@ -1,0 +1,24 @@
+organization: 東京都
+services:
+  - 東京グリーンビズウォーク 参加登録用アプリ
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 東京都
+date_announced: 2026-11-10
+affected_count: 475
+count_note: 登録者約3万8千人のうち475人。460件は氏名・生年月日・アプリ会員番号、6件はそれに電話番号とメールアドレス、9件は電話番号とメールアドレス
+cause: third_party
+root_cause: 参加登録に使う連携事業者のアプリのシステムが不正アクセスを受けた。事業者名は非公表
+data_types:
+  - 氏名
+  - 生年月日
+  - 電話番号
+  - メールアドレス
+  - 会員ID
+summary: イベント「東京グリーンビズウォーク」の参加登録に使われた連携事業者の専用アプリについて、事業者が利用するシステムが不正アクセスを受け、登録者約3万8千人のうち475人分の氏名、生年月日、電話番号、メールアドレス、アプリの会員番号が漏えいしたと公表した。事業者が対象者に通知メールを送り、都は原因と再発防止策の詳細な報告を求めている。
+sources:
+  - title: 東京都政策企画局 報道発表
+    url: https://www.seisakukikaku.metro.tokyo.lg.jp/information/press/2026/11/2026111001
+  - title: 東京都 報道発表
+    url: https://www.metro.tokyo.lg.jp/information/press/2026/11/2026111101

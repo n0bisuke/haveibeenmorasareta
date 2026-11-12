@@ -1,0 +1,28 @@
+organization: Thai Airways International Public Company Limited（タイ国際航空）
+services:
+  - 旅客サービスシステム（予約情報）
+industry: 交通・モビリティ
+country: TH
+date_occurred: 2023-08-10
+date_announced: 2026-11-09
+affected_count: 60529
+count_note: 参照された可能性がある旅客の記録の件数。日本の利用者への影響は未確認
+cause: third_party
+root_cause: 旅客サービスシステムの委託先アマデウスのシステムが不正な認証情報でアクセスされ、予約情報が参照された
+attack_methods:
+  - stolen_credentials
+vendor:
+  name: Amadeus IT Group
+data_types:
+  - 氏名
+  - 利用履歴
+  - メールアドレス
+  - 電話番号
+  - パスポート番号
+  - 会員ID
+summary: 旅客サービスシステムを運用するアマデウスから、2023年8月10日〜2026年9月23日に予約データへの不正アクセスがあったとの報告を受け、約6万529件の旅客の記録が参照された可能性があると公表した。対象は氏名・予約番号・搭乗日・区間・搭乗クラスで、一部ではメールアドレス・電話番号・パスポート番号・マイレージ番号も含まれる可能性がある。クレジットカード情報は影響を受けておらず、同社のシステムも影響を受けていない。
+sources:
+  - title: 'Thai Airways: Amadeus Reports Unauthorized Access to THAI Passenger Data'
+    url: https://www.thaiairways.com/de-de/content/news/amadeus-reports-unauthorized-access-to-thai-passenger-data/
+  - title: Tech Wire Asia
+    url: https://techwireasia.com/2026/11/thai-airways-data-breach-amadeus/

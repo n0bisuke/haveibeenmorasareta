@@ -1,0 +1,25 @@
+organization: 株式会社ガネーシャ
+services:
+  - SHOGUN BURGER公式アプリ（モバイルオーダー）
+industry: 飲食
+country: JP
+date_announced: 2026-10-30
+affected_count: null
+count_note: 件数は公表されていない。対象の可能性がある顧客は特定済みで、DIRIGIOが個別に連絡する
+cause: third_party
+root_cause: アプリで利用するモバイルオーダー「PICKS」を運営するDIRIGIOのシステムが不正アクセスを受けた
+vendor:
+  name: 株式会社DIRIGIO
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 生年月日
+  - 性別
+  - 購入履歴
+summary: 「SHOGUN BURGER公式アプリ」で利用しているシステムが第三者の不正アクセスを受け、一部顧客の氏名、メールアドレス、電話番号、生年月日、性別、注文内容などが漏えいしたと公表した。システムは株式会社DIRIGIOが運営しており、対象の顧客にはDIRIGIOが個別に連絡する。クレジットカード情報は含まれず、ログインパスワードの漏えいや金銭被害は確認されていない。モバイルオーダーは一時停止した。
+sources:
+  - title: SHOGUN BURGER 公式アプリにおける個人情報漏えいに関するお詫びとお知らせ
+    url: https://shogun-burger.com/news/217
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/11/10/56723.html

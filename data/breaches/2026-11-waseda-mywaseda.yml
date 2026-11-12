@@ -1,0 +1,28 @@
+organization: 学校法人早稲田大学
+services:
+  - MyWaseda
+  - Wasedaメール
+  - Waseda ID
+industry: 人材・教育
+country: JP
+org_type: university
+prefecture: 東京都
+date_occurred: 2026-08-31
+date_announced: 2026-11-09
+affected_count: 3342
+count_note: 延べ件数。教職員（退職者を含む）・学生・卒業生などの個別情報81件と、職員などのユーザー情報3,261件。暗号化されたパスワードを含むのは3,281件
+cause: unauthorized_access
+root_cause: MyWasedaのユーザー情報を管理するシステムに第三者が侵入した。侵入経路は調査中
+data_types:
+  - 氏名
+  - メールアドレス
+  - 従業員情報
+  - パスワード（ハッシュ化・暗号化済み）
+summary: MyWasedaへのログインに使うユーザー情報を管理するシステムに第三者が侵入し、教職員・学生・卒業生などの個別情報81件と職員などのユーザー情報3,261件、延べ3,342件の情報が取得されたと公表した。PHPの脆弱性への対応で点検した際に、8月31日の不正アクセスの痕跡を見つけた。対象は教職員番号、氏名、Wasedaメールアドレス、所属部署名、資格名、暗号化されたパスワードなど。関係システムの停止や学外との通信制限を行い、パスワードの変更を案内した。
+sources:
+  - title: 早稲田大学 不正アクセスによる個人情報漏えいについて
+    url: https://www.waseda.jp/top/news/topic/124183?lng=en
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2611/09/2000003012/
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/waseda-mywaseda-3342-credential-data-breach/

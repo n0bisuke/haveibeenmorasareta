@@ -1,0 +1,20 @@
+organization: 株式会社FABRIC TOKYO
+services:
+  - オーダースーツの来店予約（検証用システム）
+industry: 小売・EC
+country: JP
+date_announced: 2026-11-11
+affected_count: 699
+count_note: 2021年5〜7月の予約データ。メールアドレス・電話番号は一部の人のみ
+cause: third_party
+root_cause: 検証用システムのアクセスキーが外部委託先から流出した可能性が高く、不正アクセスを受けた
+attack_methods:
+  - exposed_secret
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+summary: 検証用システムで使っていたアクセスキーが外部委託先から流出した可能性が高く、第三者の不正アクセスを受けたと公表した。検証用システムに一時保管していた2021年5〜7月の予約データ699人分の氏名・予約日時、一部の人のメールアドレス・電話番号が閲覧・取得された可能性がある。11月2日に確認し、同日中にアクセスキーを無効化した。本番システムへの侵入はなく、カード情報や採寸データは含まれない。
+sources:
+  - title: FABRIC TOKYO 一部システムへの不正アクセスに伴う個人情報流出の可能性について
+    url: https://fabric-tokyo.com/news/show/20261111-to-all-customers

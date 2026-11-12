@@ -1,0 +1,27 @@
+organization: 学校法人京都外国語大学
+services:
+  - 旧ホームページ用サーバー
+industry: 人材・教育
+country: JP
+org_type: university
+prefecture: 京都府
+date_occurred: 2026-10-21
+date_announced: 2026-11-10
+affected_count: 5376
+count_note: 主に2000〜2017年に申込みフォームなどで受け付けた卒業生・在学生・問い合わせ者・校友会会員など。複数の区分に該当する人は1人として数えた
+cause: vulnerability
+root_cause: 旧サーバーの認証なしで使える更新機能と、サポートが終了したOSの未修正の脆弱性を突かれた
+attack_methods:
+  - known_vulnerability
+  - broken_access_control
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 生年月日
+  - 健康・医療情報
+summary: ホームページを公開していた旧サーバーが10月21日から第三者の不正アクセスを受け、主に2000〜2017年に申込みフォームなどで受け付けた卒業生・在学生・問い合わせ者・校友会会員など5,376人の氏名・住所・電話番号・メールアドレス・学籍番号などが外部から取得され得る状態にあったと公表した。一部に生年月日や専門学校の欠席届の情報を含む。持ち出しや二次被害は確認されていない。
+sources:
+  - title: 京都外国語大学 本学旧ホームページサーバーへの不正アクセスによる個人情報漏えいのおそれに関するお知らせとお詫び
+    url: https://www.kufs.ac.jp/cms_image/file/file_1794271641.pdf

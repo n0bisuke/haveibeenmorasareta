@@ -1,0 +1,28 @@
+organization: 日本商工会議所
+services:
+  - 商工会議所ネット試験（簿記・販売士・日商PCなど8試験）
+industry: 人材・教育
+country: JP
+org_type: public_org
+prefecture: 東京都
+date_occurred: 2026-11-01
+date_announced: 2026-11-10
+affected_count: 980000
+count_note: 最大約98万人分（約197万件）。2022年4月1日〜2026年11月4日にネット試験を受けた人。合否結果・試験得点も対象。漏えい・不正利用の事実は確認されていない
+cause: third_party
+root_cause: ネット試験に使う外部の試験管理システムに不正なプログラムが設置された。システム管理会社名は非公表
+data_types:
+  - 氏名
+  - 性別
+  - 生年月日
+  - メールアドレス
+  - 電話番号
+  - 住所
+summary: ネット試験に使う外部サーバー上の試験管理システムが不正アクセスを受け、簿記など8試験の受験者最大約98万人分（約197万件）の情報が漏えいした可能性があると公表した。11月1日に不正なプログラムが設置され、4日にシステム管理会社の報告で発覚した。対象は2022年4月以降の受験者の氏名、性別、生年月日、合否結果、試験得点などで、メールアドレス・電話番号・住所は入力した人のみ。決済情報は含まない。
+sources:
+  - title: 日本商工会議所 お知らせ
+    url: https://www.jcci.or.jp/news/news/2026/1110170000.html
+  - title: 商工会議所の検定試験 お知らせ
+    url: https://www.kentei.ne.jp/51816
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2611/11/2000003084/

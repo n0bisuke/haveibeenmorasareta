@@ -1,0 +1,28 @@
+organization: Finnair Oyj（フィンエアー）
+services:
+  - 予約情報（旅客サービスシステム）
+  - Aurinkomatkat（パッケージ旅行）
+industry: 交通・モビリティ
+country: FI
+date_announced: 2026-11-09
+affected_count: 116000
+count_note: 人数ではなく予約の件数。うち約750件がアマデウスによれば閲覧された。日本発着便・日本の利用者への影響は未確認
+cause: third_party
+root_cause: 旅客サービスシステムの委託先アマデウスのシステムが不正アクセスを受け、予約情報が外部から参照された
+vendor:
+  name: Amadeus IT Group
+data_types:
+  - 氏名
+  - 利用履歴
+  - メールアドレス
+  - 電話番号
+  - パスポート番号
+  - 会員ID
+summary: 旅客サービスシステムの委託先であるアマデウスへの不正アクセスにより、複数航空会社の搭乗者リストが参照され、その中に同社の予約約11万6,000件が含まれていたと公表した。アマデウスによれば、このうち約750件の予約が閲覧された。対象は予約番号・氏名・旅程などで、一部ではメールアドレス・電話番号・渡航書類・マイレージ番号も含まれる。クレジットカード番号とパスワードは閲覧されておらず、同社のシステムは侵害されていない。有効な予約には新しい予約番号を割り当てた。
+sources:
+  - title: 'Finnair Oyj : customer data included in global Amadeus data breach（MarketScreener）'
+    url: https://www.marketscreener.com/news/finnair-oyj-customer-data-included-in-global-amadeus-data-breach-ce785fd3dc8cf42c
+  - title: TRAICY
+    url: https://www.traicy.com/posts/20261110387552/
+  - title: Cybernews
+    url: https://cybernews.com/security/finnair-customer-data-amadeus-breach/

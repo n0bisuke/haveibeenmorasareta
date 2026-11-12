@@ -1,0 +1,22 @@
+organization: キリンビール株式会社・キリンビバレッジ株式会社
+group: キリングループ
+services:
+  - SNSキャンペーン（LINE・X）
+industry: 食品
+country: JP
+date_occurred: 2026-10-18
+date_announced: 2026-11-10
+affected_count: 1825
+count_note: 公式は1,825件（うち個人情報329件）。日本経済新聞は小岩井乳業を含む3社で1,950件（うち個人情報350件）と報道
+cause: third_party
+root_cause: キャンペーンで使った外部ツール「OWNLY」が、ファイルアップロード機能の不備を突かれ不正アクセスを受けた
+vendor:
+  name: スマートシェア株式会社
+data_types:
+  - アカウント名
+summary: キリンビールとキリンビバレッジがSNSキャンペーンで使っていた外部ツール「OWNLY」が第三者の不正アクセスを受け、キャンペーン参加者のLINE表示名やXのユーザー名1,825件（うち個人情報329件）が漏えいしたと公表した。OWNLYでの不正アクセスは10月18日に確認され、28日に参加者情報へのアクセス形跡が見つかり、11月6日に漏えいを確認した。メールアドレスや電話番号、カード情報の漏えいは確認されていない。
+sources:
+  - title: キリンホールディングス 業務委託先への不正アクセスによるお客様情報漏えいに関するお詫びとお知らせ
+    url: https://info.kirinholdings.com/faq_detail.html?id=122837
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC1025B0Q6A111C2000000/
