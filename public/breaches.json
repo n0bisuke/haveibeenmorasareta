@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-14T05:28:18.000Z",
-  "count": 912,
+  "generated_at": "2026-11-14T17:42:55.000Z",
+  "count": 926,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,91 @@
   ],
   "breaches": [
     {
+      "id": "2026-11-keihan-comsbi",
+      "organization": "京阪ホールディングス株式会社",
+      "group": "京阪グループ",
+      "services": [
+        "京阪電気鉄道・京阪流通システムズ・京阪百貨店・京阪ホテルズ＆リゾーツの公式LINEアカウント（6アカウント）"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2026-11-09",
+      "date_announced": "2026-11-14",
+      "affected_count": 224386,
+      "count_note": "LINE情報（表示名・プロフィール画像URL・ユーザーID）延べ最大224,386名。ほかに氏名・住所・電話番号・生年月日などのいずれかが延べ最大64,332名（京阪百貨店28,000名、枚方モール35,025名、ホテル1,298名など）。重複を含む",
+      "cause": "third_party",
+      "root_cause": "LINE連携サービス「COMSBI（SaaS版）」の提供元ソニックムーブが不正アクセスを受けた",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "vendor": {
+        "name": "株式会社ソニックムーブ"
+      },
+      "data_types": [
+        "アカウント名",
+        "連携サービスID",
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "生年月日",
+        "性別"
+      ],
+      "summary": "グループの一部の公式LINEアカウントで使うソニックムーブのLINE連携サービス「COMSBI（SaaS版）」が第三者の不正アクセスを受け、京阪電気鉄道、京阪流通システムズ（京都タワーサンド・枚方モール）、京阪百貨店、京阪ホテルズ＆リゾーツの6アカウントの友だち登録者のLINE表示名・プロフィール画像URL・ユーザーIDが延べ最大224,386名分、氏名・住所・電話番号・メールアドレス・生年月日・性別のいずれかが延べ最大64,332名分流出した可能性があると公表した。クレジットカード情報は保持していない。",
+      "sources": [
+        {
+          "title": "京阪ホールディングス お詫び",
+          "url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
+        },
+        {
+          "title": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCG1T63VCGPTIL004M.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF140RF0U6A111C2000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 5,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-aioi-nissay-fleekdrive-arara",
+      "organization": "あいおいニッセイ同和損害保険株式会社",
+      "group": "MS&ADグループ",
+      "services": [
+        "ドライブレコーダー映像の共有（オンラインストレージ「Fleekdrive」）"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-11-13",
+      "affected_count": 16000,
+      "count_note": "約1.6万件（11月13日時点）。2026年7月1日〜10月30日にFleekdriveの配信メールを受け取った顧客",
+      "cause": "third_party",
+      "root_cause": "利用するFleekdriveのメール配信委託先アララがWebサーバーの脆弱性を突かれた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "ドライブレコーダー映像の共有に使うオンラインストレージ「Fleekdrive」の提供元から、同社のメール配信委託先アララがWebサーバーの脆弱性を突かれて不正アクセスを受け、2026年7月1日から10月30日にFleekdriveの配信メールを受け取った顧客のメールアドレス約1.6万件が漏えいしたとの報告を受けたと公表した。氏名や住所、契約情報、映像は含まれない。11月4日に公表した契約者専用ページの件とは別件。",
+      "sources": [
+        {
+          "title": "あいおいニッセイ同和 お知らせ",
+          "url": "https://www.aioinissaydowa.co.jp/corporate/about/news/pdf/2026/news_2026111301533.pdf"
+        },
+        {
+          "title": "沖縄タイムス（共同）",
+          "url": "https://www.okinawatimes.co.jp/articles/-/1965414"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-athome-chintai-kanri",
       "organization": "アットホーム株式会社",
       "services": [
@@ -575,6 +660,47 @@
       "reliability": "high"
     },
     {
+      "id": "2026-11-hanshin-tigers-teket",
+      "organization": "株式会社阪神タイガース",
+      "group": "阪急阪神ホールディングス",
+      "services": [
+        "野球教室イベント「トライアルベースボール in 京都」の応募フォーム"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-11-05",
+      "date_announced": "2026-11-13",
+      "affected_count": 155,
+      "count_note": "最大155件（流出した可能性）",
+      "cause": "third_party",
+      "root_cause": "応募フォームに使った電子チケットサービス「teket」が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社teket"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "生年月日",
+        "性別",
+        "住所",
+        "電話番号"
+      ],
+      "summary": "NTTドコモと共催する野球教室イベント「トライアルベースボール in 京都」の応募フォームとして利用していた電子チケットサービス「teket」が第三者の不正アクセスを受け、流出した情報にイベントへの申込者の情報が含まれている可能性があると公表した。対象は最大155件で、teketの会員情報である氏名、メールアドレス、生年月日、性別、住所、電話番号の全部または一部。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "阪神タイガース お知らせ",
+          "url": "https://hanshintigers.jp/news/topics/info_11402.html"
+        },
+        {
+          "title": "スポニチ",
+          "url": "https://news.yahoo.co.jp/articles/6764fa810048e04267f880e0cd1117380e03f68a"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 8,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-human-adjust-comsbi",
       "organization": "株式会社ヒューマンアジャスト",
       "services": [
@@ -616,6 +742,148 @@
       ],
       "severity": "high",
       "disclosure_days": 4,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-keisei-skyliner",
+      "organization": "京成電鉄株式会社",
+      "group": "京成グループ",
+      "services": [
+        "スカイライナー座席予約システム（チケットレスサービス）"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2026-11-11",
+      "date_announced": "2026-11-13",
+      "affected_count": 3370000,
+      "count_note": "最大約337万件（取得された可能性）",
+      "cause": "unauthorized_access",
+      "root_cause": "スカイライナー座席予約システムが第三者の不正アクセスを受けた。手口は公表されていない",
+      "data_types": [
+        "会員ID",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "氏名",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "11月11日深夜、スカイライナー座席予約システムが第三者の不正アクセスを受け、スカイライナーチケットレスサービスの利用者情報が最大約337万件取得された可能性があると公表した。対象はユーザーID、パスワード、カナ氏名、電話番号、メールアドレスで、パスワードは暗号化されており復元されることはないとしている。座席予約システム全般の利用を停止し、駅窓口と券売機での販売は続けている。対象者には個別に連絡する。",
+      "sources": [
+        {
+          "title": "京成電鉄 お詫び",
+          "url": "https://www.keisei.co.jp/cms/files/keisei/MASTER/0110/zDQUntkx.pdf"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC13CBJ0T11C26A1000000/"
+        },
+        {
+          "title": "産経新聞（共同）",
+          "url": "https://www.sankei.com/article/20261114-YRINJHBDXJJXZN7VDMFQXT4TBY/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "スカイライナーの予約サイトと同じパスワードを他のサービスで使っていれば変更する"
+        },
+        {
+          "text": "京成電鉄を名乗るメール・SMSのリンクは開かず、公式サイトで確認する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 2,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-mitsui-direct-arara",
+      "organization": "三井ダイレクト損害保険株式会社",
+      "group": "MS&ADグループ",
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-11-13",
+      "affected_count": 1200,
+      "count_note": "経路のサービスは未確認",
+      "cause": "third_party",
+      "root_cause": "メール配信に関わる委託先アララが不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "メール配信に関わる委託先アララへの不正アクセスにより、顧客のメールアドレス1,200件が漏えいしたと公表した。自社システムへの不正アクセスで公表した事案（約23.4万件）とは別件。",
+      "sources": [
+        {
+          "title": "産経新聞",
+          "url": "https://www.sankei.com/article/20261113-FMZN5OBXB5OTDJQX2OGXP6XVZU/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-mitsui-sumitomo-kaijo-arara",
+      "organization": "三井住友海上火災保険株式会社",
+      "group": "MS&ADグループ",
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-11-13",
+      "affected_count": 15000,
+      "count_note": "約1.5万件。どのサービス経由かは未確認",
+      "cause": "third_party",
+      "root_cause": "メール配信に関わる委託先アララが不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "メール配信に関わる委託先アララへの不正アクセスにより、顧客のメールアドレス約1.5万件が漏えいしたと公表した。同じ日にグループのあいおいニッセイ同和損保（約1.6万件）と三井ダイレクト損保（1,200件）もアララ経由の漏えいを公表した。11月4日に公表した契約者専用ページの件とは別件。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB1326D0T11C26A1000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-nikken-sekkei-notion",
+      "organization": "株式会社日建設計",
+      "group": "日建グループ",
+      "services": [
+        "Notion AI"
+      ],
+      "industry": "建設",
+      "country": "JP",
+      "date_announced": "2026-11-13",
+      "affected_count": null,
+      "count_note": "件数は公表されていない。日建グループ国内外の各社の連名の公表",
+      "cause": "third_party",
+      "root_cause": "利用するNotionのAI処理の委託先Fireworks AIのシステムが第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "Notion Labs, Inc."
+      },
+      "data_types": [
+        "メッセージ・チャット履歴",
+        "取引先情報",
+        "氏名"
+      ],
+      "summary": "業務で利用するNotionから、AI機能の処理を委託しているFireworks AIのシステムが第三者の不正アクセスを受け、グループ従業員がNotion AIに入力した情報とAIの回答の一部が外部に漏えいしたとの報告を11月10日に受けたと、日建グループ各社の連名で公表した。業務に関する内容のほか、取引先の担当者の氏名などが含まれていた。自社システムへの不正アクセスは確認されておらず、該当する取引先には個別に連絡する。",
+      "sources": [
+        {
+          "title": "日建設計 お知らせ",
+          "url": "https://www.nikken.jp/ja/news/news/20261113j.html"
+        },
+        {
+          "title": "日建設計総合研究所 お知らせ",
+          "url": "https://www.nikken-ri.com/news/information/20261113.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
       "reliability": "high"
     },
     {
@@ -966,6 +1234,39 @@
       "reliability": "high"
     },
     {
+      "id": "2026-11-ensapia-openlogi",
+      "organization": "ENSAPIA Tokyo株式会社",
+      "services": [
+        "グッズなどの配送（オープンロジに委託）"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_announced": "2026-11-12",
+      "affected_count": null,
+      "count_note": "件数は公表されていない。2026年4月8日〜11月8日に依頼した出荷データ。同じ告知でチケット販売の委託先アソビューの事案の影響も知らせた",
+      "cause": "third_party",
+      "root_cause": "配送業務の委託先オープンロジのシステムが不正アクセスを受け、出荷データが持ち出された",
+      "vendor": {
+        "name": "株式会社オープンロジ"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "配送業務を委託するオープンロジのシステムが外部から不正アクセスを受け、出荷データが持ち出されたとの報告を11月10日に受けたと公表した。2026年4月8日から11月8日に依頼した出荷データの届け先の氏名、住所、電話番号、メールアドレスが漏えいした可能性がある。クレジットカード情報は含まれない。同じ告知で、チケット販売の委託先アソビューのアララ経由の事案の影響も知らせた。",
+      "sources": [
+        {
+          "title": "ENSAPIA Tokyo お知らせ",
+          "url": "https://ensapia-tokyo.com/news/topics/id=21395/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-fujiya-arara",
       "organization": "株式会社不二家",
       "services": [
@@ -1076,6 +1377,45 @@
         }
       ],
       "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-kewpie-arara",
+      "organization": "キユーピー株式会社",
+      "group": "キユーピーグループ",
+      "services": [
+        "キャンペーン応募・お問い合わせなどの自動返信メール（アヲハタ・デリア食品・サラダクラブ・トウ・キユーピーを含む5社）"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2026-11-12",
+      "affected_count": 125788,
+      "count_note": "5社合計。2023年9月12日〜2026年10月31日に自動返信メールを受け取った顧客",
+      "cause": "third_party",
+      "root_cause": "メール配信の委託先アララが第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "メール配信を委託するアララが第三者の不正アクセスを受け、2023年9月12日から2026年10月31日にグループ5社のキャンペーン応募、WEBアンケート、kewpie IDのポイント交換、サンプル申し込み、お客様相談室への問い合わせで自動返信メールを受け取った顧客のメールアドレス125,788件が外部に流出したと公表した。流出した情報はメールアドレスのみ。",
+      "sources": [
+        {
+          "title": "アヲハタ（5社連名）お知らせ",
+          "url": "https://www.aohata.co.jp/notices/20261112.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC122T10S6A111C2000000/"
+        },
+        {
+          "title": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261112-GYT1T00230/"
+        }
+      ],
+      "severity": "medium",
       "disclosure_days": null,
       "reliability": "high"
     },
@@ -1599,6 +1939,72 @@
       "reliability": "high"
     },
     {
+      "id": "2026-11-yayoi-notion",
+      "organization": "弥生株式会社",
+      "services": [
+        "Notion AI"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-11-12",
+      "affected_count": null,
+      "count_note": "件数は調査中。対象は2026年10月5日〜24日の記録の一部",
+      "cause": "third_party",
+      "root_cause": "利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIチャットの記録が流出した",
+      "vendor": {
+        "name": "Notion Labs, Inc."
+      },
+      "data_types": [
+        "メッセージ・チャット履歴",
+        "取引先情報",
+        "従業員情報"
+      ],
+      "summary": "社内の情報共有基盤として利用するNotionの提供元から、AI機能の委託先Fireworks AIでのセキュリティインシデントにより、自社のNotion AIへの入力内容とAIの回答が外部に流出した可能性があるとの通知を11月11日に受けたと公表した。対象は2026年10月5日〜24日の記録の一部で、取引先や従業者に関する情報が含まれる可能性がある。顧客の個人情報や認証情報が含まれることは確認されていない。",
+      "sources": [
+        {
+          "title": "弥生 お知らせ",
+          "url": "https://www.yayoi-kk.co.jp/yss/info/detail.20261113-3/"
+        },
+        {
+          "title": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35254850/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-yeny",
+      "organization": "株式会社Yeny",
+      "group": "TISインテックグループ",
+      "services": [
+        "ultra pay カード",
+        "PayBlend（アスルクラロ沼津Pay・巫神こんPay・東芝ブレイブルーパス東京Pay）"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-11-12",
+      "affected_count": 1332505,
+      "count_note": "退会者を含む",
+      "cause": "misconfiguration",
+      "root_cause": "API接続の設定不備により、接続先事業者経由の不審なAPIコールで会員情報を取得された",
+      "data_types": [
+        "電話番号",
+        "会員ID"
+      ],
+      "summary": "管理する会員情報に第三者による不正アクセスがあり、ultra pay カードなど4サービスの会員の電話番号と会員ID 1,332,505件（退会者を含む）が漏えいしたと公表した。10月31日に接続先の事業者から不審なAPIコールの連絡を受けて調査し、同社のAPI接続設定の不備が原因と確認した。クレジットカード番号などの決済情報の漏えいは確認されていない。関東財務局と個人情報保護委員会に報告した。",
+      "sources": [
+        {
+          "title": "Yeny お知らせ",
+          "url": "https://yeny.jp/pressrelease/1547/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-cabinet-office-arara",
       "organization": "内閣府",
       "services": [
@@ -1774,6 +2180,47 @@
       ],
       "severity": "high",
       "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-grayparka-openlogi",
+      "organization": "株式会社グレイ・パーカー・サービス",
+      "services": [
+        "ちいかわくじ",
+        "ナガノくじ",
+        "mofusandくじ",
+        "オンラインくじストア"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-11-08",
+      "date_announced": "2026-11-11",
+      "affected_count": null,
+      "count_note": "件数は公表されていない。2026年4月8日〜11月8日にオープンロジへ出荷依頼したデータ",
+      "cause": "third_party",
+      "root_cause": "物流委託先オープンロジのシステムが不正アクセスを受け、出荷データが持ち出された",
+      "vendor": {
+        "name": "株式会社オープンロジ"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "購入履歴"
+      ],
+      "summary": "4店舗が利用する物流サービスの提供元オープンロジが11月8日から9日に不正アクセスを受け、2026年4月8日から11月8日に出荷を依頼したデータに含まれるお届け先の氏名・住所・電話番号、購入元ストア名、商品数量、追跡番号、注文番号などが外部に持ち出されたと公表した。クレジットカード番号は含まれない。この影響で、11月27日に発売予定だったちいかわくじ3商品の販売を延期した。",
+      "sources": [
+        {
+          "title": "グレイ・パーカー・サービス お詫びとご報告",
+          "url": "https://grayparkaservice.com/blogs/info/%E3%81%8A%E8%A9%AB%E3%81%B3%E3%81%A8%E3%81%94%E5%A0%B1%E5%91%8A-%E7%89%A9%E6%B5%81%E4%BA%8B%E6%A5%AD%E8%80%85%E3%81%B8%E3%81%AE%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%AB%E3%82%88%E3%82%8B%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+        },
+        {
+          "title": "オリコン",
+          "url": "https://news.yahoo.co.jp/articles/b132e9deeeeb6ca99223c22bff79af9bcb78fb8a"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 3,
       "reliability": "high"
     },
     {
@@ -2549,6 +2996,37 @@
       "reliability": "high"
     },
     {
+      "id": "2026-11-kyuden-weev-arara",
+      "organization": "九州電力株式会社",
+      "group": "九州電力グループ",
+      "services": [
+        "EVカーシェアサービス「weev」"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_announced": "2026-11-10",
+      "affected_count": 978,
+      "count_note": "一部のweev会員",
+      "cause": "third_party",
+      "root_cause": "メルマガ配信の委託先が利用するアララのメール配信エンジンが不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "EVカーシェアサービス「weev」のメールマガジン配信の委託先が利用するアララのメール配信エンジンが不正アクセスを受け、一部会員のメールアドレス978件が外部に漏えいしたと公表した。11月9日に委託先からの報告で判明した。氏名、住所、電話番号、口座情報、免許証情報は含まれない。配信は別のサービスに切り替えた。",
+      "sources": [
+        {
+          "title": "九州電力 プレスリリース",
+          "url": "https://www.kyuden.co.jp/press/2026/h261110-1.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-notion-fireworks-ai",
       "organization": "Notion Labs, Inc.",
       "services": [
@@ -3034,6 +3512,42 @@
       "severity": "critical",
       "disclosure_days": 1187,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-11-tss-arara",
+      "organization": "株式会社テレビ新広島",
+      "services": [
+        "Thank you for zero はじめてばこ",
+        "ロハスフラワー",
+        "TSSサンフレッチェ広島公式モバイルサイトなど"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2026-11-09",
+      "affected_count": 5192,
+      "count_note": "2026年7月1日〜10月31日にアララメッセージ経由でメールを受信した客（重複を含む速報値）。モバイルサイト分2,900件はサンフレッチェ広島の公表分と同じ対象",
+      "cause": "third_party",
+      "root_cause": "メール配信に利用するアララの「アララメッセージ」が第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "メール配信に利用するアララの「アララメッセージ」が第三者の不正アクセスを受け、2026年7月1日から10月31日に同サービス経由でメールを送った客のメールアドレス5,192件が外部に漏えいしたと公表した。対象はサンフレッチェ広島と共同運営する公式モバイルサイト、「はじめてばこ」、花の定期購入サービス「ロハスフラワー」、各種イベントの応募者など。氏名や住所、クレジットカード情報はアララに提供していない。",
+      "sources": [
+        {
+          "title": "テレビ新広島 お知らせ（第二報）",
+          "url": "https://www.tss-tv.co.jp/archives/001/202611/b4243df6459ed8064b57d638657400e2506ec756dba4bf7694445f0a0be7e044.pdf"
+        },
+        {
+          "title": "中国新聞",
+          "url": "https://www.chugoku-np.co.jp/articles/-/923746"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-11-waseda-mywaseda",
