@@ -1,0 +1,33 @@
+organization: 京阪ホールディングス株式会社
+group: 京阪グループ
+services:
+  - 京阪電気鉄道・京阪流通システムズ・京阪百貨店・京阪ホテルズ＆リゾーツの公式LINEアカウント（6アカウント）
+industry: 交通・モビリティ
+country: JP
+date_occurred: 2026-11-09
+date_announced: 2026-11-14
+affected_count: 224386
+count_note: LINE情報（表示名・プロフィール画像URL・ユーザーID）延べ最大224,386名。ほかに氏名・住所・電話番号・生年月日などのいずれかが延べ最大64,332名（京阪百貨店28,000名、枚方モール35,025名、ホテル1,298名など）。重複を含む
+cause: third_party
+root_cause: LINE連携サービス「COMSBI（SaaS版）」の提供元ソニックムーブが不正アクセスを受けた
+attack_methods:
+  - stolen_credentials
+vendor:
+  name: 株式会社ソニックムーブ
+data_types:
+  - アカウント名
+  - 連携サービスID
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 生年月日
+  - 性別
+summary: グループの一部の公式LINEアカウントで使うソニックムーブのLINE連携サービス「COMSBI（SaaS版）」が第三者の不正アクセスを受け、京阪電気鉄道、京阪流通システムズ（京都タワーサンド・枚方モール）、京阪百貨店、京阪ホテルズ＆リゾーツの6アカウントの友だち登録者のLINE表示名・プロフィール画像URL・ユーザーIDが延べ最大224,386名分、氏名・住所・電話番号・メールアドレス・生年月日・性別のいずれかが延べ最大64,332名分流出した可能性があると公表した。クレジットカード情報は保持していない。
+sources:
+  - title: 京阪ホールディングス お詫び
+    url: https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf
+  - title: 朝日新聞
+    url: https://www.asahi.com/articles/ASVCG1T63VCGPTIL004M.html
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUF140RF0U6A111C2000000/

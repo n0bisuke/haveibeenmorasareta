@@ -1,0 +1,19 @@
+organization: 九州電力株式会社
+group: 九州電力グループ
+services:
+  - EVカーシェアサービス「weev」
+industry: エネルギー・インフラ
+country: JP
+date_announced: 2026-11-10
+affected_count: 978
+count_note: 一部のweev会員
+cause: third_party
+root_cause: メルマガ配信の委託先が利用するアララのメール配信エンジンが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: EVカーシェアサービス「weev」のメールマガジン配信の委託先が利用するアララのメール配信エンジンが不正アクセスを受け、一部会員のメールアドレス978件が外部に漏えいしたと公表した。11月9日に委託先からの報告で判明した。氏名、住所、電話番号、口座情報、免許証情報は含まれない。配信は別のサービスに切り替えた。
+sources:
+  - title: 九州電力 プレスリリース
+    url: https://www.kyuden.co.jp/press/2026/h261110-1.html

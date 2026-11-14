@@ -1,0 +1,22 @@
+organization: 弥生株式会社
+services:
+  - Notion AI
+industry: IT・通信
+country: JP
+date_announced: 2026-11-12
+affected_count: null
+count_note: 件数は調査中。対象は2026年10月5日〜24日の記録の一部
+cause: third_party
+root_cause: 利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIチャットの記録が流出した
+vendor:
+  name: Notion Labs, Inc.
+data_types:
+  - メッセージ・チャット履歴
+  - 取引先情報
+  - 従業員情報
+summary: 社内の情報共有基盤として利用するNotionの提供元から、AI機能の委託先Fireworks AIでのセキュリティインシデントにより、自社のNotion AIへの入力内容とAIの回答が外部に流出した可能性があるとの通知を11月11日に受けたと公表した。対象は2026年10月5日〜24日の記録の一部で、取引先や従業者に関する情報が含まれる可能性がある。顧客の個人情報や認証情報が含まれることは確認されていない。
+sources:
+  - title: 弥生 お知らせ
+    url: https://www.yayoi-kk.co.jp/yss/info/detail.20261113-3/
+  - title: CNET Japan
+    url: https://japan.cnet.com/article/35254850/
