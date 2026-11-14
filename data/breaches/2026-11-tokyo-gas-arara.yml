@@ -1,0 +1,21 @@
+organization: 東京ガス株式会社
+group: 東京ガスグループ
+services:
+  - ガス本管埋設状況確認サービス（法人向け）
+industry: エネルギー・インフラ
+country: JP
+date_announced: 2026-11-12
+affected_count: 85565
+count_note: 法人向けサービスの登録者のメールアドレス
+cause: third_party
+root_cause: メール配信の委託先アララが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: メール配信を委託するアララへの不正アクセスにより、法人向けの「ガス本管埋設状況確認サービス」に登録した利用者のメールアドレス85,565件が外部に流出したと公表した。氏名、住所、電話番号、会社名は含まれない。
+sources:
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261112de74857
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC1274H0S6A111C2000000/

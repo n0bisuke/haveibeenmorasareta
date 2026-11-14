@@ -70,3 +70,11 @@
   label: palan
   names: [株式会社palan]
   note: デジタルスタンプラリーなどの Web サービスの提供元。
+- slug: icuco
+  label: icuco（保育施設向けシステム）
+  names: [icuco株式会社]
+  note: 保育施設向けの運営管理システム「icuco book」と午睡チェックシステム「icuco touch&care」の提供元。
+- slug: notion
+  label: Notion（Notion AI）
+  names: ["Notion Labs, Inc."]
+  note: Notion AI の一部の処理の委託先 Fireworks AI が不正アクセスを受け、利用企業の AI チャットの内容が流出した。

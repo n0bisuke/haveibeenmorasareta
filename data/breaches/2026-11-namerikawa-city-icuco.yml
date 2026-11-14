@@ -1,0 +1,24 @@
+organization: 富山県滑川市
+services:
+  - 市立保育所の午睡チェックセンサー
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 富山県
+date_announced: 2026-11-12
+affected_count: 27
+count_note: あずま保育所・坪川保育所の園児
+cause: third_party
+root_cause: 午睡チェックセンサーの提供元icucoのシステムが第三者の不正アクセスを受けた
+vendor:
+  name: icuco株式会社
+data_types:
+  - 氏名
+  - 生年月日
+  - 性別
+summary: 市立あずま保育所と坪川保育所で使う午睡チェックセンサーの委託先icuco株式会社のシステムに第三者の不正アクセスがあり、園児27名の氏名・生年月日・性別が外部に流出した可能性があるとの報告を受けたと公表した。連絡先や決済に関する情報は含まれず、二次被害は確認されていない。
+sources:
+  - title: 滑川市 お知らせ
+    url: https://www.city.namerikawa.toyama.jp/soshiki/24/1/11688.html
+  - title: FNN
+    url: https://www.fnn.jp/articles/-/1151489

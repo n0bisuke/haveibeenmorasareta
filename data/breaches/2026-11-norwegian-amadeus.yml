@@ -1,0 +1,24 @@
+organization: Norwegian Air Shuttle ASA（ノルウェー・エアシャトル）
+services:
+  - 予約情報
+industry: 交通・モビリティ
+country: 'NO'
+date_announced: 2026-11-09
+affected_count: 144249
+count_note: Norwegian と Widerøe の乗客の合計（ノルウェーのデータ保護機関への書面）。日本の利用者への影響は未確認
+cause: third_party
+root_cause: 予約システムの委託先アマデウスのシステムが長期間不正アクセスを受けた
+vendor:
+  name: Amadeus IT Group
+data_types:
+  - 氏名
+  - パスポート番号
+  - メールアドレス
+  - 電話番号
+  - 利用履歴
+summary: 予約システムのアマデウスへの不正アクセスにより乗客の情報が漏洩したと公表した。データ保護機関への書面によると、Norwegian と Widerøe の乗客14万4,249人分が対象で、氏名、旅程、パスポート番号、国籍、連絡先、航空券番号、便名、座席などが含まれる。支払い情報は含まれない。不正アクセスは2023年から続いていた。
+sources:
+  - title: Travel News Nordic
+    url: https://www.travelnewsnordic.com/the-travel-industry/norwegian-affected-by-data-breach-at-amadeus/412984
+  - title: NRK
+    url: https://www.nrk.no/nyheter/over-144.000-norwegian-og-wideroe-passasjerer-rammet-av-datainnbrudd-1.18080740

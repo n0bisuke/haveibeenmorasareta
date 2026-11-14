@@ -5,6 +5,7 @@ industry: 行政
 country: JP
 org_type: local_gov
 prefecture: 富山県
+leaked: false
 date_announced: 2026-11-02
 affected_count: 290
 cause: third_party
@@ -13,7 +14,9 @@ vendor:
   name: 株式会社ラクスライトクラウド
 data_types:
   - メールアドレス
-summary: 生産者とバイヤーをつなぐオンライン商談サイト「とやま食材マッチング」で使っていたメール配信システム「ブラストメール」が不正アクセスを受け、登録者290件の情報が漏えいしたおそれがあると公表した。
+summary: 生産者とバイヤーをつなぐオンライン商談サイト「とやま食材マッチング」で使っていたメール配信システム「ブラストメール」が不正アクセスを受け、登録者290件の情報が漏えいしたおそれがあると公表した。 11月12日、運営会社と外部専門機関の調査が完了し、情報漏洩や個人情報等の不正閲覧を示す事実は確認されなかったと公表した。
 sources:
   - title: チューリップテレビ
     url: https://news.yahoo.co.jp/articles/94e22d911ce0fb96edf31909ecfa6a79b81bcba2
+  - title: 富山県 お知らせ（情報漏洩等は確認されませんでした）
+    url: https://www.pref.toyama.jp/130321/event/0811burasuto.html

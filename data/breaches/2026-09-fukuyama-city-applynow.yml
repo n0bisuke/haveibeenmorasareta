@@ -1,0 +1,29 @@
+organization: 広島県福山市
+services:
+  - 職員採用試験「早期枠」のウェブ面接システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 広島県
+date_occurred: 2026-09-07
+date_announced: 2026-09-11
+affected_count: 168
+count_note: 試験申込者155人と市職員13人（9月18日時点）
+cause: third_party
+root_cause: 職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた
+attack_methods:
+  - known_vulnerability
+vendor:
+  name: 株式会社ApplyNow
+data_types:
+  - 氏名
+  - 生年月日
+  - メールアドレス
+  - 電話番号
+  - 従業員情報
+summary: 職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、4月の職員採用試験「早期枠」の申込者155人の氏名、生年月日、メールアドレス、電話番号、受験番号と、市職員13人の所属・名字・公用メールアドレスが外部に漏えいしたと発表した。二次被害は確認されていない。
+sources:
+  - title: 山陽新聞
+    url: https://www.sanyonews.jp/article/1991462
+  - title: 中国新聞
+    url: https://www.chugoku-np.co.jp/articles/-/893670

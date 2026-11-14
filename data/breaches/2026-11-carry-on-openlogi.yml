@@ -1,0 +1,25 @@
+organization: 株式会社Carry On
+services:
+  - 公式グッズの通販
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-11-08
+date_announced: 2026-11-12
+affected_count: null
+count_note: 件数は調査中。2026年4月8日〜11月8日に出荷依頼された注文
+cause: third_party
+root_cause: 発送・物流の委託先オープンロジのシステムが不正アクセスを受けた
+vendor:
+  name: 株式会社オープンロジ
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 購入履歴
+summary: YouTuber「きまぐれクック」などが所属する事務所で、発送・物流業務を委託するオープンロジのシステムが第三者の不正アクセスを受け、2026年4月8日から11月8日に出荷を依頼した商品の購入者・届け先の氏名、住所、電話番号、メールアドレス、商品情報が漏えいした、またはそのおそれがあると公表した。クレジットカード番号や同社サイトのパスワードは委託先に提供していない。
+sources:
+  - title: Carry On お知らせ
+    url: https://carry0n.co.jp/20261112_01/
+  - title: ユーチュラ
+    url: https://yutura.net/news/archives/170007

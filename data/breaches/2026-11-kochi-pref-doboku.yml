@@ -1,0 +1,21 @@
+organization: 高知県
+services:
+  - 高知土木事務所（道路占用に関する通報対応）
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 高知県
+date_announced: 2026-11-11
+affected_count: 1
+count_note: 通報者1人
+cause: human_error
+root_cause: 業者に渡した占用許可証などの封筒に、通報者の名字と電話番号を書いたメモが誤って入っていた
+data_types:
+  - 氏名
+  - 電話番号
+summary: 高知土木事務所が、県道の無許可工事について通報した人の名字と電話番号を書いたメモを、占用許可証などと一緒に工事業者に誤って渡し、通報者の個人情報を流出させたと公表した。9月下旬に通報者からの問い合わせで発覚し、県は通報者に謝罪した。
+sources:
+  - title: 高知新聞
+    url: https://www.kochinews.co.jp/article/detail/1062819
+  - title: KUTVテレビ高知
+    url: https://newsdig.tbs.co.jp/articles/kutv/3079212

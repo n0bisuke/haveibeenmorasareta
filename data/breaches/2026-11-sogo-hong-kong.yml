@@ -1,0 +1,22 @@
+organization: Sogo Hong Kong Company Limited（崇光香港）
+services:
+  - 会員システム
+industry: 小売・EC
+country: HK
+date_announced: 2026-11-12
+affected_count: 820000
+count_note: 最大約82万人の会員（香港の個人資料私隠専員公署の発表）。日本のそごう・西武とは別会社。日本の利用者への影響は未確認
+cause: unauthorized_access
+root_cause: 会員システムで第三者による異常なデータ読み取りがあった
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - ポイント情報
+  - 会員ID
+summary: 香港の百貨店、崇光香港は会員システムへの第三者による不正アクセスを確認し、当局に通報したと公表した。香港の個人資料私隠専員公署によると、最大約82万人の会員の氏名、メールアドレス、電話番号、会員番号、ポイント残高が影響を受けた可能性がある。会員にフィッシング詐欺への注意を呼びかけた。
+sources:
+  - title: The Standard
+    url: https://www.thestandard.com.hk/news/article/348370/SOGO-and-Chow-Sang-Sang-report-data-breaches-affecting-up-to-820000-members
+  - title: 明報
+    url: https://news.mingpao.com/pns/%E6%B8%AF%E8%81%9E/article/20261113/s00002/1794509221613/sogo%E6%B3%8482%E8%90%AC%E6%9C%83%E5%93%A1%E8%B3%87%E6%96%99-%E5%91%A8%E7%94%9F%E7%94%9F%E7%B3%BB%E7%B5%B1%E9%81%AD%E5%85%A5%E4%BE%B5

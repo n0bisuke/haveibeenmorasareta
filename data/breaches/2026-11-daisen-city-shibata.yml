@@ -1,0 +1,22 @@
+organization: 秋田県大仙市
+services:
+  - 用地測量などの委託業務（2021〜2026年度の3業務）
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 秋田県
+date_announced: 2026-11-06
+affected_count: 31
+count_note: 延べ31件。実際に漏えいした事実は確認されていない
+cause: third_party
+root_cause: 業務委託先の柴田工事調査がランサムウェア攻撃を受けた
+vendor:
+  name: 柴田工事調査
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+summary: 用地測量などを委託していた柴田工事調査がランサムウェア攻撃を受け、2021〜2026年度の3業務で扱った延べ31件の氏名・住所・電話番号が漏えいした可能性があると公表した。実際に漏えいした事実は確認されていない。
+sources:
+  - title: 大仙市 お知らせ
+    url: https://www.city.daisen.lg.jp/archive/p20261106093509

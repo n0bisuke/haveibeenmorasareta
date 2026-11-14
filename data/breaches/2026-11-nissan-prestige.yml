@@ -1,0 +1,25 @@
+organization: 日産自動車株式会社
+services:
+  - CIMA・FUGA・SKYLINE サポートプログラム専用窓口
+  - エクストレイル リコール専用窓口
+industry: 製造
+country: JP
+date_occurred: 2026-10-29
+date_announced: 2026-11-13
+affected_count: 74
+count_note: サポートプログラム窓口68件、エクストレイル リコール窓口6件（11月6日時点の委託先からの報告）
+cause: third_party
+root_cause: ロードサービスなどの委託先プレステージ・コアソリューションの業務システム「PremierNet2」が不正アクセスを受けた
+vendor:
+  name: 株式会社プレステージ・コアソリューション
+data_types:
+  - 氏名
+  - 電話番号
+  - 利用履歴
+  - 車両情報
+summary: ロードサービスなどの業務を委託するプレステージ・コアソリューションの業務システム「PremierNet2」が10月29日に不正アクセスを受け、顧客の個人情報が外部に漏えいしたと公表した。対象はCIMA・FUGA・SKYLINEサポートプログラム専用窓口の利用者68件と、エクストレイル リコール専用窓口の利用者6件の計74件。氏名、電話番号、登録番号・車台番号などの車両情報、事故・故障の受付情報が含まれる。クレジットカードや口座の情報は含まれない。
+sources:
+  - title: 日産自動車 お知らせ
+    url: https://www3.nissan.co.jp/siteinfo/information_261113.html
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC138TS0T11C26A1000000/

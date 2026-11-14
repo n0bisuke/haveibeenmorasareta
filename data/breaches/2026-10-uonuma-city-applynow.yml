@@ -1,0 +1,32 @@
+organization: 新潟県魚沼市
+services:
+  - 録画面接サービス「ApplyNow」（令和4・5年度）
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 新潟県
+date_occurred: 2026-09-07
+date_announced: 2026-10-09
+affected_count: 116
+count_note: 応募登録情報86件と市担当者の登録情報30件
+cause: third_party
+root_cause: 職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた
+attack_methods:
+  - known_vulnerability
+vendor:
+  name: 株式会社ApplyNow
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 生年月日
+  - 性別
+  - アカウント名
+  - パスワード（保管形式不明）
+  - 従業員情報
+summary: 職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、応募者86件の氏名、メールアドレス、電話番号、生年月日、性別、受験番号、合否状況と、市担当者30件のユーザー名・パスワードに関する情報・メールアドレスが漏えいしたと公表した。二次被害は確認されていない。
+sources:
+  - title: 魚沼市 お知らせ
+    url: https://www.city.uonuma.lg.jp/page/1044022.html
+  - title: 新潟日報
+    url: https://www.niigata-nippo.co.jp/articles/-/922037

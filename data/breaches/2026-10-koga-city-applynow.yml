@@ -1,0 +1,28 @@
+organization: 福岡県古賀市
+services:
+  - 職員採用試験の採用管理ツール「ApplyNow」
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 福岡県
+date_occurred: 2026-09-07
+date_announced: 2026-10-19
+affected_count: 567
+count_note: 令和4〜6年度の職員採用試験の応募者
+cause: third_party
+root_cause: 職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた
+attack_methods:
+  - known_vulnerability
+vendor:
+  name: 株式会社ApplyNow
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 生年月日
+  - 郵便番号
+  - 住所
+summary: 職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、令和4〜6年度の応募者567件の氏名、フリガナ、メールアドレス、電話番号、生年月日、郵便番号、住所が漏えいしたと公表した。事業者からのメールを迷惑メールと勘違いして処理が漏れ、公表まで約1か月半かかったと説明した。二次被害は確認されていない。
+sources:
+  - title: 古賀市 お知らせ
+    url: https://www.city.koga.fukuoka.jp/news/d/6746

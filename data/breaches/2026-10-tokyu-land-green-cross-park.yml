@@ -1,0 +1,26 @@
+organization: 東急不動産株式会社
+group: 東急グループ
+services:
+  - GREEN CROSS PARK 公式サイト
+  - GREENUP Cooldown Project 公式サイト
+industry: 不動産
+country: JP
+date_announced: 2026-10-30
+affected_count: 4082
+count_note: GREEN CROSS PARK 4,079件、GREENUP Cooldown Project 3件（流出の可能性）
+cause: vulnerability
+root_cause: WordPress等のソフトウェアの脆弱性とサーバー内のアクセス権限設定の不備を突かれた
+attack_methods:
+  - known_vulnerability
+data_types:
+  - 取引先情報
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 問い合わせ内容
+summary: 管理する「GREEN CROSS PARK 公式サイト」と「GREENUP Cooldown Project 公式サイト」のAWS共同サーバー環境が不正アクセスを受け、合計4,082件の個人情報が流出した可能性があると公表した。WordPress等の脆弱性とサーバー内のアクセス権限設定の不備を突かれた。対象は会社名、氏名、メールアドレス、電話番号、問い合わせ内容など。10月19日に発覚してサイトを遮断し、個人情報保護委員会に報告した。二次被害は確認されていない。
+sources:
+  - title: 東急不動産 お知らせ
+    url: https://www.tokyu-land.co.jp/news/uploads/4e81382e895fcd779559705843fcb56f83846c28.pdf
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC3069A0Q6A031C2000000/

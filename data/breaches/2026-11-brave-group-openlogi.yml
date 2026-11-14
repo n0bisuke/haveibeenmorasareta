@@ -1,0 +1,25 @@
+organization: 株式会社Brave group
+services:
+  - ぶいすぽっ！オフィシャルオンラインストアなど11サイト
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-11-08
+date_announced: 2026-11-13
+affected_count: null
+count_note: 件数は公表されていない。2026年4月8日〜11月8日に出荷依頼された注文
+cause: third_party
+root_cause: 物流委託先オープンロジのシステムが不正アクセスを受け、配送データが漏えいした
+vendor:
+  name: 株式会社オープンロジ
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 購入履歴
+summary: VTuberグッズなどの公式ストア11サイト（ぶいすぽっ！オフィシャルオンラインストアなど）の物流を委託するオープンロジが不正アクセスを受け、2026年4月8日から11月8日に出荷依頼された注文の届け先の氏名、住所、電話番号、メールアドレス、商品名と数量が漏えいした可能性があると公表した。クレジットカード情報は含まれない。
+sources:
+  - title: Brave group お知らせ
+    url: https://bravegroup.co.jp/news/12429/
+  - title: KAI-YOU
+    url: https://news.yahoo.co.jp/articles/ac6c5ea351ed511d265ed401a4fbf5c02864fe97

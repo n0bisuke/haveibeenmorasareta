@@ -1,0 +1,20 @@
+organization: 株式会社ワンキャリア
+services:
+  - Notion AI
+industry: IT・通信
+country: JP
+date_announced: 2026-11-12
+affected_count: 2300
+count_note: 入力内容とAIの回答に含まれる可能性がある個人情報の最大件数
+cause: third_party
+root_cause: 利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIチャットの記録が流出した
+vendor:
+  name: Notion Labs, Inc.
+data_types:
+  - メッセージ・チャット履歴
+  - 氏名
+  - 取引先情報
+summary: 業務で利用するNotionから、AI機能の処理の委託先Fireworks AIへの不正アクセスにより、同社のNotion AIのチャット内容の一部が流出したとの通知を受けたと公表した。入力内容とAIの回答に、サービス利用者などの個人情報が最大約2,300件含まれる可能性がある。
+sources:
+  - title: ワンキャリア お知らせ
+    url: https://onecareer.co.jp/news/information/261112/

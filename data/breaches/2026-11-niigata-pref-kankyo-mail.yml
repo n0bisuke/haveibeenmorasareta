@@ -1,0 +1,25 @@
+organization: 新潟県
+services:
+  - にいがた県環境メール
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 新潟県
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_announced: 2026-11-12
+affected_count: null
+count_note: 登録者は約750人。11月13日の事業者の第2報では、現時点で登録情報は漏えいしておらず可能性も低いとされた（調査継続中）
+cause: third_party
+root_cause: メール配信サービスの運営事業者イー・エム・ズィーが不正アクセスを受けた
+vendor:
+  name: 株式会社イー・エム・ズィー
+data_types:
+  - メールアドレス
+  - 性別
+summary: 「にいがた県環境メール」の配信サービスを運営する株式会社イー・エム・ズィーが不正アクセスを受け、登録者約750人のメールアドレス・性別・年代・居住市町村名が漏えいした可能性があると公表した。11月13日には、事業者の第2報で現時点では漏えいしておらず可能性も低いとされたが、調査は続いている。
+sources:
+  - title: 新潟県 お知らせ
+    url: https://www.pref.niigata.lg.jp/site/kankyo/kankyomail-rouei.html
+  - title: 新潟日報
+    url: https://www.niigata-nippo.co.jp/articles/-/942313

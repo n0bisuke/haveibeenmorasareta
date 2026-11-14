@@ -1,0 +1,30 @@
+organization: 奈良県橿原市
+services:
+  - 職員採用試験の動画選考（令和2年度）
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 奈良県
+date_occurred: 2026-09-07
+date_announced: 2026-09-18
+affected_count: 313
+count_note: 調査中で確定していない（漏えいの可能性）
+cause: third_party
+root_cause: 職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた
+attack_methods:
+  - known_vulnerability
+vendor:
+  name: 株式会社ApplyNow
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 生年月日
+  - 性別
+  - 住所
+summary: 職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、令和2年度の応募者313件の氏名、メールアドレス、電話番号、生年月日、性別などが漏えいした可能性があると公表した。一部の人は住所も含まれる。二次被害は確認されていない。
+sources:
+  - title: 橿原市 プレスリリース
+    url: https://www.city.kashihara.nara.jp/soshiki/1003/gyomu/7/5/21209.html
+  - title: 奈良新聞
+    url: https://www.nara-np.co.jp/news/20260919203831.html

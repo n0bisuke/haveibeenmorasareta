@@ -1,0 +1,25 @@
+organization: 株式会社エターナルホスピタリティジャパン
+services:
+  - 採用管理プラットフォーム「ApplyNow」
+industry: 飲食
+country: JP
+date_occurred: 2026-09-07
+date_announced: 2026-10-01
+affected_count: null
+count_note: 件数は公表されていない
+cause: third_party
+root_cause: 採用面接業務の委託先ApplyNowの採用管理プラットフォームが不正アクセスを受けた
+attack_methods:
+  - known_vulnerability
+vendor:
+  name: 株式会社ApplyNow
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 生年月日
+  - 性別
+summary: 採用面接業務を委託している株式会社ApplyNowの採用管理プラットフォームが第三者の不正アクセスを受け、「鳥貴族」のパート・アルバイト採用に応募した一部の人の氏名、メールアドレス、電話番号、生年月日、性別が漏えいしたと公表した。件数は公表されていない。
+sources:
+  - title: エターナルホスピタリティジャパン お知らせ
+    url: https://torikizoku.co.jp/assets/uploads/2026/10/2026.10.01.pdf
