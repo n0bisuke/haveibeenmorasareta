@@ -1,0 +1,21 @@
+organization: あいおいニッセイ同和損害保険株式会社
+group: MS&ADグループ
+services:
+  - ドライブレコーダー映像の共有（オンラインストレージ「Fleekdrive」）
+industry: 金融・保険
+country: JP
+date_announced: 2026-11-13
+affected_count: 16000
+count_note: 約1.6万件（11月13日時点）。2026年7月1日〜10月30日にFleekdriveの配信メールを受け取った顧客
+cause: third_party
+root_cause: 利用するFleekdriveのメール配信委託先アララがWebサーバーの脆弱性を突かれた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: ドライブレコーダー映像の共有に使うオンラインストレージ「Fleekdrive」の提供元から、同社のメール配信委託先アララがWebサーバーの脆弱性を突かれて不正アクセスを受け、2026年7月1日から10月30日にFleekdriveの配信メールを受け取った顧客のメールアドレス約1.6万件が漏えいしたとの報告を受けたと公表した。氏名や住所、契約情報、映像は含まれない。11月4日に公表した契約者専用ページの件とは別件。
+sources:
+  - title: あいおいニッセイ同和 お知らせ
+    url: https://www.aioinissaydowa.co.jp/corporate/about/news/pdf/2026/news_2026111301533.pdf
+  - title: 沖縄タイムス（共同）
+    url: https://www.okinawatimes.co.jp/articles/-/1965414

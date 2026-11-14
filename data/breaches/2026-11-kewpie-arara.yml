@@ -1,0 +1,23 @@
+organization: キユーピー株式会社
+group: キユーピーグループ
+services:
+  - キャンペーン応募・お問い合わせなどの自動返信メール（アヲハタ・デリア食品・サラダクラブ・トウ・キユーピーを含む5社）
+industry: 食品
+country: JP
+date_announced: 2026-11-12
+affected_count: 125788
+count_note: 5社合計。2023年9月12日〜2026年10月31日に自動返信メールを受け取った顧客
+cause: third_party
+root_cause: メール配信の委託先アララが第三者の不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: メール配信を委託するアララが第三者の不正アクセスを受け、2023年9月12日から2026年10月31日にグループ5社のキャンペーン応募、WEBアンケート、kewpie IDのポイント交換、サンプル申し込み、お客様相談室への問い合わせで自動返信メールを受け取った顧客のメールアドレス125,788件が外部に流出したと公表した。流出した情報はメールアドレスのみ。
+sources:
+  - title: アヲハタ（5社連名）お知らせ
+    url: https://www.aohata.co.jp/notices/20261112.html
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC122T10S6A111C2000000/
+  - title: 読売新聞
+    url: https://www.yomiuri.co.jp/economy/20261112-GYT1T00230/

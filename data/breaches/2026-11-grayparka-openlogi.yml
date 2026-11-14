@@ -1,0 +1,27 @@
+organization: 株式会社グレイ・パーカー・サービス
+services:
+  - ちいかわくじ
+  - ナガノくじ
+  - mofusandくじ
+  - オンラインくじストア
+industry: 小売・EC
+country: JP
+date_occurred: 2026-11-08
+date_announced: 2026-11-11
+affected_count: null
+count_note: 件数は公表されていない。2026年4月8日〜11月8日にオープンロジへ出荷依頼したデータ
+cause: third_party
+root_cause: 物流委託先オープンロジのシステムが不正アクセスを受け、出荷データが持ち出された
+vendor:
+  name: 株式会社オープンロジ
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - 購入履歴
+summary: 4店舗が利用する物流サービスの提供元オープンロジが11月8日から9日に不正アクセスを受け、2026年4月8日から11月8日に出荷を依頼したデータに含まれるお届け先の氏名・住所・電話番号、購入元ストア名、商品数量、追跡番号、注文番号などが外部に持ち出されたと公表した。クレジットカード番号は含まれない。この影響で、11月27日に発売予定だったちいかわくじ3商品の販売を延期した。
+sources:
+  - title: グレイ・パーカー・サービス お詫びとご報告
+    url: https://grayparkaservice.com/blogs/info/%E3%81%8A%E8%A9%AB%E3%81%B3%E3%81%A8%E3%81%94%E5%A0%B1%E5%91%8A-%E7%89%A9%E6%B5%81%E4%BA%8B%E6%A5%AD%E8%80%85%E3%81%B8%E3%81%AE%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%AB%E3%82%88%E3%82%8B%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6
+  - title: オリコン
+    url: https://news.yahoo.co.jp/articles/b132e9deeeeb6ca99223c22bff79af9bcb78fb8a

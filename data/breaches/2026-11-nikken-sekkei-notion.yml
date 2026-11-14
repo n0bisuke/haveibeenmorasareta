@@ -1,0 +1,23 @@
+organization: 株式会社日建設計
+group: 日建グループ
+services:
+  - Notion AI
+industry: 建設
+country: JP
+date_announced: 2026-11-13
+affected_count: null
+count_note: 件数は公表されていない。日建グループ国内外の各社の連名の公表
+cause: third_party
+root_cause: 利用するNotionのAI処理の委託先Fireworks AIのシステムが第三者の不正アクセスを受けた
+vendor:
+  name: Notion Labs, Inc.
+data_types:
+  - メッセージ・チャット履歴
+  - 取引先情報
+  - 氏名
+summary: 業務で利用するNotionから、AI機能の処理を委託しているFireworks AIのシステムが第三者の不正アクセスを受け、グループ従業員がNotion AIに入力した情報とAIの回答の一部が外部に漏えいしたとの報告を11月10日に受けたと、日建グループ各社の連名で公表した。業務に関する内容のほか、取引先の担当者の氏名などが含まれていた。自社システムへの不正アクセスは確認されておらず、該当する取引先には個別に連絡する。
+sources:
+  - title: 日建設計 お知らせ
+    url: https://www.nikken.jp/ja/news/news/20261113j.html
+  - title: 日建設計総合研究所 お知らせ
+    url: https://www.nikken-ri.com/news/information/20261113.html

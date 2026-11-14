@@ -1,0 +1,17 @@
+organization: 三井住友海上火災保険株式会社
+group: MS&ADグループ
+industry: 金融・保険
+country: JP
+date_announced: 2026-11-13
+affected_count: 15000
+count_note: 約1.5万件。どのサービス経由かは未確認
+cause: third_party
+root_cause: メール配信に関わる委託先アララが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: メール配信に関わる委託先アララへの不正アクセスにより、顧客のメールアドレス約1.5万件が漏えいしたと公表した。同じ日にグループのあいおいニッセイ同和損保（約1.6万件）と三井ダイレクト損保（1,200件）もアララ経由の漏えいを公表した。11月4日に公表した契約者専用ページの件とは別件。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUB1326D0T11C26A1000000/

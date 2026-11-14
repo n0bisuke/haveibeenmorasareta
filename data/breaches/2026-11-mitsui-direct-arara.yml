@@ -1,0 +1,17 @@
+organization: 三井ダイレクト損害保険株式会社
+group: MS&ADグループ
+industry: 金融・保険
+country: JP
+date_announced: 2026-11-13
+affected_count: 1200
+count_note: 経路のサービスは未確認
+cause: third_party
+root_cause: メール配信に関わる委託先アララが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: メール配信に関わる委託先アララへの不正アクセスにより、顧客のメールアドレス1,200件が漏えいしたと公表した。自社システムへの不正アクセスで公表した事案（約23.4万件）とは別件。
+sources:
+  - title: 産経新聞
+    url: https://www.sankei.com/article/20261113-FMZN5OBXB5OTDJQX2OGXP6XVZU/

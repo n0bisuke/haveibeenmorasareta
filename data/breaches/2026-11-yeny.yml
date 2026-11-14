@@ -1,0 +1,19 @@
+organization: 株式会社Yeny
+group: TISインテックグループ
+services:
+  - ultra pay カード
+  - PayBlend（アスルクラロ沼津Pay・巫神こんPay・東芝ブレイブルーパス東京Pay）
+industry: 金融・保険
+country: JP
+date_announced: 2026-11-12
+affected_count: 1332505
+count_note: 退会者を含む
+cause: misconfiguration
+root_cause: API接続の設定不備により、接続先事業者経由の不審なAPIコールで会員情報を取得された
+data_types:
+  - 電話番号
+  - 会員ID
+summary: 管理する会員情報に第三者による不正アクセスがあり、ultra pay カードなど4サービスの会員の電話番号と会員ID 1,332,505件（退会者を含む）が漏えいしたと公表した。10月31日に接続先の事業者から不審なAPIコールの連絡を受けて調査し、同社のAPI接続設定の不備が原因と確認した。クレジットカード番号などの決済情報の漏えいは確認されていない。関東財務局と個人情報保護委員会に報告した。
+sources:
+  - title: Yeny お知らせ
+    url: https://yeny.jp/pressrelease/1547/
