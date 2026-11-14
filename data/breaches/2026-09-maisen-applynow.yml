@@ -1,0 +1,19 @@
+organization: 株式会社井筒まい泉
+services:
+  - 採用管理プラットフォーム「ApplyNow」
+industry: 飲食
+country: JP
+date_occurred: 2026-09-07
+date_announced: 2026-09-25
+affected_count: null
+count_note: 件数は公表されていない
+cause: third_party
+root_cause: 採用面接業務の委託先ApplyNowの採用管理プラットフォームが不正アクセスを受けた
+attack_methods:
+  - known_vulnerability
+vendor:
+  name: 株式会社ApplyNow
+summary: 採用面接業務を委託している株式会社ApplyNowの採用管理プラットフォームが第三者の不正アクセスを受け、アルバイトの採用応募者の個人情報が外部に漏えいしたと公表した。件数と項目は公表されていない。
+sources:
+  - title: 井筒まい泉 お知らせ
+    url: https://mai-sen.com/news/other/post_459/

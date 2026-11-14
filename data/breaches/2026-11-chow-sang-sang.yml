@@ -1,0 +1,24 @@
+organization: Chow Sang Sang Holdings International Limited（周生生）
+services:
+  - 会員システム
+  - 公式EC
+industry: 小売・EC
+country: HK
+date_announced: 2026-11-12
+affected_count: null
+count_note: 件数は確認中。日本の利用者への影響は未確認
+cause: unauthorized_access
+root_cause: 会員システムと公式ECが第三者の不正アクセスを受けた。経路は調査中
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 購入履歴
+  - クレジットカード情報（番号の一部・有効期限等）
+  - 従業員情報
+summary: 香港の宝飾品大手の周生生集團國際は、グループのシステムが第三者の不正アクセスを受け、顧客と従業員の個人情報が抜き取られた可能性があると香港取引所で公表した。11月9日に検知し、会員システムと公式ECが対象。顧客の氏名、電話番号、メールアドレス、注文情報の一部、カード番号の下4桁と、従業員の氏名、職位などが含まれる可能性がある。
+sources:
+  - title: RTHK
+    url: https://news.rthk.hk/rthk/ch/component/k2/1877592-20261112.htm
+  - title: SCMP
+    url: https://www.scmp.com/news/hong-kong/law-and-crime/article/3374260/hong-kong-sogo-data-breach-puts-personal-information-820000-members-risk

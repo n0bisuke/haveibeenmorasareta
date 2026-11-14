@@ -1,0 +1,27 @@
+organization: 埼玉県入間市
+services:
+  - 職員採用試験の動画投稿面接試験
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 埼玉県
+date_occurred: 2026-09-07
+date_announced: 2026-09-17
+affected_count: 1276
+count_note: 令和5〜8年度のエントリー者
+cause: third_party
+root_cause: 職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた
+attack_methods:
+  - known_vulnerability
+vendor:
+  name: 株式会社ApplyNow
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+summary: 職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、令和5〜8年度にエントリーした1,276件の氏名、電話番号、メールアドレス、受験職種が漏えいしたと公表した。二次被害は確認されていない。
+sources:
+  - title: 入間市 お知らせ
+    url: https://www.city.iruma.saitama.jp/soshiki/jinjika/saiyo_jinzai/15254.html
+  - title: ASCII.jp
+    url: https://ascii.jp/elem/000/004/436/4436399/

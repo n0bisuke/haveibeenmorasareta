@@ -1,0 +1,23 @@
+organization: 株式会社ベガコーポレーション
+services:
+  - LOWYA 楽天市場店・Yahoo!ショッピング店・Amazon店
+  - BAROCCA・LALA STYLE・SUMICIA 楽天市場店
+industry: 小売・EC
+country: JP
+date_announced: 2026-11-13
+affected_count: 392
+count_note: 最大392件。LOWYA自社ECは対象外
+cause: third_party
+root_cause: 商品管理のためAPI連携していたブランジスタソリューションの「まとまるEC店長」が不正アクセスを受けた
+vendor:
+  name: 株式会社ブランジスタソリューション
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 住所
+  - 購入履歴
+summary: LOWYA事業の各ECモール店で商品管理のためにAPI連携していたブランジスタソリューションのサービス「まとまるEC店長」が第三者から不正アクセスを受け、保有する個人情報が漏えいした可能性があると公表した。11月10日に同社から一部の注文情報が流出した可能性があると連絡を受けた。楽天市場・Yahoo!ショッピング・Amazonの6店舗の注文者とお届け先の氏名・電話番号・住所など最大392件が対象で、決済情報は含まれない。
+sources:
+  - title: ベガコーポレーション 適時開示
+    url: https://www.nikkei.com/nkd/disclosure/tdnr/20261113577617/

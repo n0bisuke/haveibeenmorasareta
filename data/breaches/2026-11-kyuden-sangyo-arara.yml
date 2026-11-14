@@ -1,0 +1,19 @@
+organization: 九電産業株式会社
+group: 九州電力グループ
+services:
+  - 通販サイト「こだわり九州いいものめぐり」
+industry: 小売・EC
+country: JP
+date_announced: 2026-11-12
+affected_count: 6495
+count_note: メールマガジン購読者と、2024年以降に一部商品を購入した人
+cause: third_party
+root_cause: メール配信の委託先アララが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: メール配信を委託するアララへの不正アクセスにより、通販サイト「こだわり九州いいものめぐり」の顧客6,495人分のメールアドレスが外部に漏えいしたと公表した。住所、電話番号、クレジットカード情報、パスワードは含まれない。
+sources:
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOJC12B0C0S6A111C2000000/

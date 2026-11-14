@@ -1,0 +1,21 @@
+organization: アットホーム株式会社
+services:
+  - 賃貸管理システム
+industry: 不動産
+country: JP
+date_occurred: 2026-11-09
+date_announced: 2026-11-13
+affected_count: 6901
+count_note: 加盟不動産会社が登録した入居者・オーナー・取引先等の個人情報。詳細は調査中
+cause: unauthorized_access
+root_cause: 不動産会社向け「賃貸管理システム」の管理サイトが第三者による不正アクセス・ログインを受けた
+data_types:
+  - 氏名
+  - 生年月日
+  - 電話番号
+  - 住所
+  - 契約情報
+summary: 不動産会社向け業務管理サービス「賃貸管理システム」の管理サイトが11月9日に第三者による不正アクセス・ログインを受け、利用する一部の加盟不動産会社が登録した入居者・オーナー・取引先などの個人情報6,901件が漏えいした可能性があると公表した。氏名、生年月日、電話番号、住所、建物名・部屋番号・契約状況などが含まれる。口座情報の漏えいは確認されておらず、クレジットカード情報は保有していない。
+sources:
+  - title: アットホーム お知らせ
+    url: https://www.athome.co.jp/corporate/news/topics/oshirase-202611/

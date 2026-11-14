@@ -7,10 +7,12 @@ status: investigating
 issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/26
 date_occurred: 2026-10-02
 date_announced: 2026-10-05
-affected_count: 130000
-count_note: 少なくとも13万人分（在学生・卒業生・教職員。旧大阪市立大・旧大阪府立大の在籍者を含む）。流出の有無は調査中
+affected_count: 170000
+count_note: 11月13日の第6報で、NECが管理するクラウドストレージから学生・教職員ら約17万人分の漏えいを確認（うち口座番号約20人、健康関連情報約200人、パスポート画像約200人、旅券番号約1,000人）。大学の仮想化基盤にあった約13万人分（別の対象）の流出の有無は調査中
 cause: ransomware
-root_cause: 仮想化基盤に侵入され、約500台のサーバーとバックアップデータが暗号化された
+root_cause: NECの再委託先の端末から盗まれた管理者の認証情報で侵入され、サーバーが暗号化された
+attack_methods:
+  - stolen_credentials
 data_types:
   - 口座番号
   - 住所
@@ -19,7 +21,11 @@ data_types:
   - 電話番号
   - メールアドレス
   - 従業員情報
-summary: 情報基盤システム全般で大規模な障害が発生し、ランサムウェアによるサイバー攻撃と判断した。全授業を休講とした。被害を受けたシステムには学生証の顔写真や教職員の給与振込口座を含む個人情報が保管されており、流出の恐れがある。
+  - 生年月日
+  - 健康・医療情報
+  - パスポート番号
+  - 本人確認書類画像
+summary: 情報基盤システム全般で大規模な障害が発生し、ランサムウェアによるサイバー攻撃と判断した。全授業を休講とした。被害を受けたシステムには学生証の顔写真や教職員の給与振込口座を含む個人情報が保管されており、流出の恐れがある。 11月13日の第6報で、2021年度のシステム移行で受託したNECが削除せずに保管していたクラウドストレージのデータから、学生・教職員ら約17万人分のID・氏名・メールアドレス・生年月日などが漏えいしたと公表した。うち約1,400人分は口座番号、健康関連情報、パスポート画像、旅券番号を含む。9月下旬にNECの再委託先の端末が攻撃され、管理者アカウントなどの認証情報が盗まれていた。
 sources:
   - title: ビジネス+IT
     url: https://www.sbbit.jp/article/cont1/187311
@@ -27,3 +33,9 @@ sources:
     url: https://news.yahoo.co.jp/articles/4d139d586213ccab1bea8ea57e005e6689c4ab6b
   - title: ライブドアニュース
     url: https://news.livedoor.com/topics/detail/32494364/
+  - title: 大阪公立大学 第6報
+    url: https://www.omu.ac.jp/news/12123
+  - title: 日本経済新聞（第6報）
+    url: https://www.nikkei.com/article/DGXZQOUF139V50T11C26A1000000/
+  - title: 共同通信（47NEWS）
+    url: https://www.47news.jp/15225628.html

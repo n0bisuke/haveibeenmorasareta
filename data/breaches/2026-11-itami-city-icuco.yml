@@ -1,0 +1,30 @@
+organization: 兵庫県伊丹市
+services:
+  - 公立就学前施設の運営管理システム「icuco book」
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 兵庫県
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_announced: 2026-11-12
+affected_count: null
+count_note: 公立の幼稚園・こども園・保育所などの利用者のうち登録者。件数は調査中
+cause: third_party
+root_cause: 運営管理システムの提供元icucoで、個人情報を含むファイルが外部から閲覧可能になっていた
+vendor:
+  name: icuco株式会社
+data_types:
+  - 氏名
+  - 性別
+  - 生年月日
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - メッセージ・チャット履歴
+summary: 公立就学前施設の運営管理システムを提供するicuco株式会社から、「icuco book」で個人情報を含む一部のファイルが外部から閲覧可能な状態になり、第三者の不正アクセスを確認したとの報告を受けたと公表した。児童の氏名・性別・生年月日、保護者の氏名・住所・電話番号・メールアドレス、施設と保護者の連絡事項などが漏えいした可能性があり、影響範囲は調査中。
+sources:
+  - title: 伊丹市 お知らせ
+    url: https://www.city.itami.lg.jp/SOSIKI/KODOMO/HOIKUSEISAKU/50773.html
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/itami-icuco-book-unauthorized-access-20261113/

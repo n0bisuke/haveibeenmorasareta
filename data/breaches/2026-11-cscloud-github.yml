@@ -1,0 +1,26 @@
+organization: 株式会社サイバーセキュリティクラウド
+services:
+  - 開発環境（GitHub）
+industry: IT・通信
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_announced: 2026-11-12
+affected_count: null
+count_note: 漏えいのおそれがある範囲と対象者は調査中
+cause: unauthorized_access
+root_cause: 従業員の業務用GitHub認証情報1件が流出し、第三者に社の管理領域へアクセスされた
+attack_methods:
+  - stolen_credentials
+data_types:
+  - 氏名
+  - メールアドレス
+  - 取引先情報
+summary: ソフトウェア開発に使うGitHub上の同社管理領域に不審なアクセスがあり、個人情報が漏えいしたおそれがあると公表した。外部機関からの情報で従業員の業務用GitHub認証情報1件の流出が分かり、アクセスログで11月5日にこの認証情報を使った第三者によるとみられるアクセスを確認した。保存されていた一部顧客の企業名・氏名・メールアドレスなどと、サービス利用に伴う通信関連情報が閲覧・取得されたおそれがあり、範囲は調査中。
+sources:
+  - title: サイバーセキュリティクラウド お知らせ
+    url: https://www.cscloud.co.jp/news/info/20261112-2/
+  - title: サイバーセキュリティクラウド 適時開示
+    url: https://www.nikkei.com/nkd/disclosure/tdnr/20261112575882/
+  - title: テレ朝NEWS
+    url: https://news.tv-asahi.co.jp/news_economy/articles/000547303.html

@@ -1,0 +1,30 @@
+organization: 徳島県阿南市
+services:
+  - 職員採用試験の録画面接システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 徳島県
+date_occurred: 2026-09-07
+date_announced: 2026-10-16
+affected_count: 672
+count_note: 令和4年2月〜令和8年6月の応募者（会計年度任用職員を含む、重複の可能性あり）。ほかに市のユーザー登録情報
+cause: third_party
+root_cause: 職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた
+attack_methods:
+  - known_vulnerability
+vendor:
+  name: 株式会社ApplyNow
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 生年月日
+  - 性別
+  - アカウント名
+  - パスワード（保管形式不明）
+  - 従業員情報
+summary: 職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、令和4年2月から令和8年6月の応募者672件の氏名、メールアドレス、電話番号、生年月日、性別、受験番号と、市のユーザー登録情報（ユーザー名・パスワード・メールアドレス・権限情報）が漏えいしたと公表した。二次被害は確認されていない。
+sources:
+  - title: 阿南市 お知らせ
+    url: https://www.city.anan.tokushima.jp/docs/2026101600060

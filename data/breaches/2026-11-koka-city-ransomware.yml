@@ -1,0 +1,22 @@
+organization: 滋賀県甲賀市
+services:
+  - 地域情報基盤施設（音声放送システム）
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 滋賀県
+date_occurred: 2026-11-11
+date_announced: 2026-11-12
+affected_count: 25000
+count_note: 約2万5千件（報道）。端末機設置者の氏名または事業所名
+cause: ransomware
+root_cause: 音声放送システムのサーバーが不正アクセスを受け、ランサムウェアに感染した
+data_types:
+  - 氏名
+  - 取引先情報
+summary: 音声放送システムのサーバーが11月11日にランサムウェアの被害を受け、システムが停止したと公表した。同日のJアラートのテスト放送を中止した。端末機の設置者の氏名や事業所名など約2万5千件が流出した可能性がある。県警が捜査している。
+sources:
+  - title: 甲賀市 お知らせ
+    url: https://www.city.koka.lg.jp/27417.htm
+  - title: 中日新聞
+    url: https://www.chunichi.co.jp/article/1338448

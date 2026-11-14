@@ -1,0 +1,25 @@
+organization: 愛知県一宮市
+services:
+  - 職員採用試験の録画面接システム（2022・2023年度）
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 愛知県
+date_occurred: 2026-09-07
+date_announced: 2026-09-17
+affected_count: 600
+count_note: 約600件。漏えいの可能性（9月17日時点）
+cause: third_party
+root_cause: 職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた
+attack_methods:
+  - known_vulnerability
+vendor:
+  name: 株式会社ApplyNow
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+summary: 職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、2022・2023年度の受験者約600件の受験番号、氏名、電話番号、メールアドレスなどが漏えいした可能性があると公表した。契約期間終了後の受験者情報の廃棄・削除が不十分だったことも判明した。二次被害は確認されていない。
+sources:
+  - title: 一宮市 報道発表
+    url: https://www.city.ichinomiya.aichi.jp/shisei/houdouhappyo/1068631/1075827/1077006.html

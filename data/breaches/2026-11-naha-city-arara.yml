@@ -1,0 +1,24 @@
+organization: 沖縄県那覇市
+services:
+  - 那覇市オンライン申請システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 沖縄県
+date_announced: 2026-11-04
+affected_count: 15700
+count_note: 当初は約8万2千件が漏えいの可能性。11月11日に15,700件の漏えいを確定
+cause: third_party
+root_cause: オンライン申請システム（TKC）が使うアララのメール送信サービスが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: オンライン申請システムで使う外部メール送信サービス「アララメッセージ」が不正アクセスを受け、メールアドレスが漏えいした可能性があると11月4日に公表した。11月11日に15,700件の漏えいを確定した。メール本文・マイナンバー・申請情報は漏えいしていない。
+sources:
+  - title: 那覇市 お知らせ
+    url: https://www.city.naha.okinawa.jp/admin/kaikaku/1008233/1004100/1013273.html
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261112de74785
+  - title: 琉球新報
+    url: https://ryukyushimpo.jp/national/entry-5589496.html

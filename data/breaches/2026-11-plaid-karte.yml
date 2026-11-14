@@ -1,0 +1,22 @@
+organization: 株式会社プレイド
+services:
+  - KARTE
+industry: IT・通信
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_announced: 2026-11-13
+affected_count: null
+count_note: 漏えいした可能性のある情報の内容・件数・導入企業への影響は公表されていない
+cause: unauthorized_access
+root_cause: CXプラットフォーム「KARTE」が第三者の不正アクセスを受けた。手口は公表されていない
+summary: 提供するCXプラットフォーム「KARTE」への第三者からの不正アクセスを検知し、緊急メンテナンスとしてKARTEを利用する全プロジェクトで計測・配信・管理画面を含む全機能を停止したと公表した。その後、外部に漏えいした可能性のある情報を確認し、該当する顧客にメールで連絡した。漏えいした可能性のある情報の内容や件数、導入企業への影響は公表されていない。
+sources:
+  - title: プレイド お知らせ
+    url: https://plaid.co.jp/news/20261113/
+  - title: KARTE ステータス
+    url: https://status.karte.io/incidents/rs1gsmckc197
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC13B0E0T11C26A1000000/
+  - title: ビジネス+IT
+    url: https://www.sbbit.jp/article/cont1/188395

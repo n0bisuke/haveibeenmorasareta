@@ -1,0 +1,20 @@
+organization: 株式会社フェイガー
+services:
+  - Notion AI
+industry: IT・通信
+country: JP
+date_announced: 2026-11-11
+affected_count: null
+count_note: 件数は公表されていない
+cause: third_party
+root_cause: 利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIチャットの記録が流出した
+vendor:
+  name: Notion Labs, Inc.
+data_types:
+  - メッセージ・チャット履歴
+  - 氏名
+  - 取引先情報
+summary: 業務で利用するNotionから、AI機能の処理の委託先Fireworks AIへの不正アクセスにより、同社のNotion AIのチャット内容の一部が流出したとの通知を受けたと公表した。10月5日〜24日のチャットの一部が対象で、取引先の担当者の名前などを含む。
+sources:
+  - title: フェイガー お知らせ
+    url: https://faeger.company/news-security-incident-20261111/

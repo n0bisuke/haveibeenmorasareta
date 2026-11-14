@@ -1,0 +1,20 @@
+organization: 株式会社サンフレッチェ広島
+services:
+  - 公式モバイルサイト（テレビ新広島と共同運営）
+industry: エンタメ・スポーツ
+country: JP
+date_announced: 2026-11-12
+affected_count: 2900
+count_note: 2026年7月1日〜10月31日にメールを受信した利用者
+cause: third_party
+root_cause: メール配信の委託先アララの「アララメッセージ」が不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: テレビ新広島と共同運営する公式モバイルサイトのメール配信を委託していたアララの「アララメッセージ」が第三者の不正アクセスを受け、2026年7月1日から10月31日にメールを受信した利用者のメールアドレス2,900件が外部に漏えいしたと公表した。氏名、住所、電話番号、生年月日、クレジットカード情報はアララに提供していない。
+sources:
+  - title: サンフレッチェ広島 お知らせ
+    url: https://www.sanfrecce.co.jp/news/other/13058
+  - title: フットボールチャンネル
+    url: https://www.footballchannel.jp/2026/11/13/post1057101/

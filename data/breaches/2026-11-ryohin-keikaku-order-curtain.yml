@@ -1,0 +1,26 @@
+organization: 株式会社良品計画
+services:
+  - 無印良品 オーダーカーテン
+industry: 小売・EC
+country: JP
+date_occurred: 2026-10-19
+date_announced: 2026-11-02
+affected_count: 19933
+count_note: 2018年4月10日〜2022年1月25日の注文者（重複を含む）
+cause: third_party
+root_cause: 委託先MNインターファッションの再委託先ナノテックが管理するサーバーが不正アクセスを受けた
+vendor:
+  name: MNインターファッション株式会社
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - 購入履歴
+summary: オーダーカーテン業務の委託先MNインターファッションのシステム関連業務の委託先ナノテックが管理するサーバーが10月19日に不正アクセスを受け、2018年4月から2022年1月までに無印良品でオーダーカーテンを注文した顧客1万9,933件の氏名、住所、電話番号、注文情報、配送先住所が流出した可能性があると公表した。現在の受注業務は別のサーバーで運用している。対象者には郵送で連絡する。
+sources:
+  - title: MNインターファッション お知らせ
+    url: https://mn-interfashion.com/news/information/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E8%89%AF%E5%93%81%E8%A8%88%E7%94%BB%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%82%AB%E3%83%BC%E3%83%86%E3%83%B3%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E9%87%8D/
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/11/13/56777.html
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC026XX0S6A101C2000000/

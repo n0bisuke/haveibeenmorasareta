@@ -1,0 +1,20 @@
+organization: 株式会社日経リサーチ
+services:
+  - Notion AI
+industry: メディア・出版
+country: JP
+date_announced: 2026-11-12
+affected_count: null
+count_note: 件数は公表されていない
+cause: third_party
+root_cause: 利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIチャットの記録が流出した
+vendor:
+  name: Notion Labs, Inc.
+data_types:
+  - メッセージ・チャット履歴
+  - 氏名
+  - 取引先情報
+summary: 業務で利用するNotionから、AI機能の処理の委託先Fireworks AIへの不正アクセスにより、同社のNotion AIのチャット内容の一部が流出したとの通知を受けたと公表した。10月5日〜24日のチャットの一部が対象で、顧客の会社名、担当者の氏名、打ち合わせの内容などを含む可能性がある。
+sources:
+  - title: 日経リサーチ お知らせ
+    url: https://www.nikkei-r.co.jp/news/information/20261112

@@ -1,0 +1,21 @@
+organization: 株式会社読売巨人軍
+services:
+  - CLUB GIANTS（公式ファンクラブ）
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-11-12
+date_announced: 2026-11-13
+affected_count: 807030
+count_note: メールアドレスの件数。メールアドレス以外の会員情報への影響は調査中
+cause: unauthorized_access
+root_cause: 会員情報管理システムが外部から繰り返し不正アクセスを受けた。手法は公表されていない
+data_types:
+  - メールアドレス
+summary: 公式ファンクラブ「CLUB GIANTS」の会員情報を管理するシステムが11月12日未明から外部のサイバー攻撃を繰り返し受け、会員のメールアドレス80万7,030件が流出したと公表した。サーバー容量の逼迫でシステムにアクセスできなくなり発覚した。クレジットカード情報は同システムに保持しておらず対象外で、ほかの会員情報への影響は調査中。攻撃は遮断し、個人情報保護委員会に報告した。
+sources:
+  - title: 読売巨人軍 お知らせ
+    url: https://www.giants.jp/news/31752/
+  - title: 東京新聞（共同）
+    url: https://www.tokyo-np.co.jp/article/527913
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/giants-club-giants-email-leak-807030-2026/

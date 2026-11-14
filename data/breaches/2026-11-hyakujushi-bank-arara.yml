@@ -1,0 +1,22 @@
+organization: 株式会社百十四銀行
+services:
+  - 株主向け電子ギフト贈呈（当選メール）
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 香川県
+date_announced: 2026-11-12
+affected_count: 1500
+count_note: 2026年7月に電子ギフトの当選メールを受信した株主
+cause: third_party
+root_cause: 電子ギフト贈呈の委託先ギフトパッドが使うアララのメール配信システムが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: 株主向け電子ギフトの贈呈業務を委託したギフトパッドが使うアララのメール配信システムが不正アクセスを受け、2026年7月に当選メールを受信した株主のメールアドレス1,500件が外部に漏えいしたと公表した。株主番号などの属性情報やメール本文は含まれない。
+sources:
+  - title: 百十四銀行 お知らせ
+    url: https://www.114bank.co.jp/important/pdf/imp20261112.pdf
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261112de75022
