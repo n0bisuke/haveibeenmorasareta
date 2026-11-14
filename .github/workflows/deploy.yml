@@ -47,6 +47,14 @@ jobs:
       # 事案ごとの個別ページと sitemap.xml（公開物のみ）
       - name: Generate breach pages
         run: node scripts/pages.mjs --og
+      # 前回のシェア画像のキャッシュ。事案の内容と描画のコードが変わっていない画像は描かずに再利用する
+      # （キーは毎回変え、復元は最新のものから。古いキャッシュは GitHub が自動で消す）
+      - name: Restore share image cache
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .cache/og
+          key: og-images-${{ github.run_id }}
+          restore-keys: og-images-
       # シェア用の画像（OGP）。調査中は速報風、重要度が危険・高はダーク、それ以外はライト
       # ほかに、シェアした人の表示テーマに合わせたライト版・ダーク版（og-light.png・og-dark.png）も作る
       - name: Generate share images

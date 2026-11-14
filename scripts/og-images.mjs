@@ -4,7 +4,11 @@
 //   auto（既定）: お漏らし無しは A、企業側が調査中は C（速報風）、重要度が「危険」「高」は B（ダーク8ビット）、それ以外は A（ライト）
 //   auto のときは、シェア用のライト版（og-light.png）とダーク版（og-dark.png）も出力する
 //   CHROME_PATH … 使う Chrome / Chromium（省略時はインストール済みの Google Chrome）
-import { copyFile, readFile } from 'node:fs/promises';
+//   OG_CACHE_DIR … 前回の画像を置くキャッシュ（既定 .cache/og）。事案の内容と描画のコードが前回と同じなら、描かずにコピーする
+//                 （デプロイでは actions/cache で保存・復元する。--no-cache で全件描き直す）
+import { createHash } from 'node:crypto';
+import { copyFile, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { chromium } from 'playwright-core';
 import { ROOT } from './lib.mjs';
@@ -136,28 +140,79 @@ const pick = (b) => {
 };
 if (STYLE !== 'auto' && !STYLES[STYLE]) throw new Error(`--style は auto / a / b / c のいずれかです（${STYLE}）`);
 
-const browser = await chromium.launch(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : { channel: 'chrome' });
-const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
-// フォントの読み込みを1回で済ませるため、同じページで中身だけ差し替える
-await page.setContent(`<!doctype html><html lang="ja"><head><meta charset="utf-8">${FONT}</head><body></body></html>`, { waitUntil: 'networkidle' }).catch(() => {});
 // og.png（事案ページ用。スタイルは pick で決める）に加えて、シェアした人のテーマに合わせた
 // og-light.png（ライト＝A）と og-dark.png（ダーク＝B）も作る。/breach/<id>/light/・/dark/ のシェア用ページが使う
 // （--style を指定したときは og.png だけを作る）
 const THEMES = STYLE === 'auto' ? [['og-light.png', 'a'], ['og-dark.png', 'b']] : [];
+const FILES = ['og.png', ...THEMES.map(([f]) => f)];
+
+// 前回の画像のキャッシュ。事案のデータ・重要度の表示名・描画のコード（このファイルと labels.js）・スタイルから
+// ハッシュを作り、同じなら前回の画像をそのまま使う。コードを変えると全件が描き直しになる
+const CACHE = path.resolve(ROOT, process.env.OG_CACHE_DIR ?? '.cache/og');
+const useCache = !process.argv.includes('--no-cache');
+const codeHash = createHash('sha256')
+  .update(await readFile(new URL(import.meta.url), 'utf8'))
+  .update(await readFile(path.join(PUBLIC, 'labels.js'), 'utf8'))
+  .update(JSON.stringify(data.severity_levels))
+  .update(STYLE)
+  .digest('hex');
+const hashOf = (b) => createHash('sha256').update(codeHash).update(JSON.stringify(b)).digest('hex').slice(0, 16);
+const manifestPath = path.join(CACHE, 'manifest.json');
+const manifest = useCache && existsSync(manifestPath) ? JSON.parse(await readFile(manifestPath, 'utf8')) : {};
+
+let browser;
+let page;
+async function openBrowser() {
+  browser = await chromium.launch(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : { channel: 'chrome' });
+  page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
+  // フォントの読み込みを1回で済ませるため、同じページで中身だけ差し替える
+  await page.setContent(`<!doctype html><html lang="ja"><head><meta charset="utf-8">${FONT}</head><body></body></html>`, { waitUntil: 'networkidle' }).catch(() => {});
+}
 const render = async (b, style, file) => {
+  if (!page) await openBrowser();
   await page.evaluate((html) => { document.body.outerHTML = `<body>${html}</body>`; }, STYLES[style](b));
   await page.evaluate(() => document.fonts.ready);
   await page.screenshot({ path: path.join(PUBLIC, 'breach', b.id, file) });
 };
-let n = 0;
+
+let drawn = 0;
+let reused = 0;
 for (const b of breaches) {
+  const out = path.join(PUBLIC, 'breach', b.id);
+  const cached = path.join(CACHE, b.id);
+  const hash = hashOf(b);
+  if (useCache && manifest[b.id] === hash && FILES.every((f) => existsSync(path.join(cached, f)))) {
+    for (const f of FILES) await copyFile(path.join(cached, f), path.join(out, f));
+    reused++;
+    continue;
+  }
   const main = pick(b);
   for (const [file, style] of THEMES) await render(b, style, file);
   // og.png がライト・ダークのどちらかと同じなら、描き直さずにコピーする
   const same = THEMES.find(([, style]) => style === main);
-  if (same) await copyFile(path.join(PUBLIC, 'breach', b.id, same[0]), path.join(PUBLIC, 'breach', b.id, 'og.png'));
+  if (same) await copyFile(path.join(out, same[0]), path.join(out, 'og.png'));
   else await render(b, main, 'og.png');
-  n++;
+  drawn++;
+  if (useCache) {
+    await mkdir(cached, { recursive: true });
+    for (const f of FILES) await copyFile(path.join(out, f), path.join(cached, f));
+    manifest[b.id] = hash;
+  }
 }
-await browser.close();
-console.log(`✔ OGP 画像を ${n} 件出力しました（スタイル ${STYLE}${THEMES.length ? '、ライト・ダーク版つき' : ''}）`);
+await browser?.close();
+
+if (useCache && !only) {
+  // 削除された事案の画像をキャッシュから消す（--only のときは一部しか見ていないので消さない）
+  const ids = new Set(breaches.map((b) => b.id));
+  for (const id of Object.keys(manifest)) {
+    if (!ids.has(id)) {
+      delete manifest[id];
+      await rm(path.join(CACHE, id), { recursive: true, force: true });
+    }
+  }
+}
+if (useCache) {
+  await mkdir(CACHE, { recursive: true });
+  await writeFile(manifestPath, JSON.stringify(manifest));
+}
+console.log(`✔ OGP 画像を ${drawn + reused} 件出力しました（描画 ${drawn} 件・キャッシュから ${reused} 件、スタイル ${STYLE}${THEMES.length ? '、ライト・ダーク版つき' : ''}）`);
