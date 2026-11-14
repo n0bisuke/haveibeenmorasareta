@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-12T02:49:40.000Z",
-  "count": 849,
+  "generated_at": "2026-11-14T05:28:18.000Z",
+  "count": 912,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,1137 @@
   ],
   "breaches": [
     {
+      "id": "2026-11-athome-chintai-kanri",
+      "organization": "アットホーム株式会社",
+      "services": [
+        "賃貸管理システム"
+      ],
+      "industry": "不動産",
+      "country": "JP",
+      "date_occurred": "2026-11-09",
+      "date_announced": "2026-11-13",
+      "affected_count": 6901,
+      "count_note": "加盟不動産会社が登録した入居者・オーナー・取引先等の個人情報。詳細は調査中",
+      "cause": "unauthorized_access",
+      "root_cause": "不動産会社向け「賃貸管理システム」の管理サイトが第三者による不正アクセス・ログインを受けた",
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "電話番号",
+        "住所",
+        "契約情報"
+      ],
+      "summary": "不動産会社向け業務管理サービス「賃貸管理システム」の管理サイトが11月9日に第三者による不正アクセス・ログインを受け、利用する一部の加盟不動産会社が登録した入居者・オーナー・取引先などの個人情報6,901件が漏えいした可能性があると公表した。氏名、生年月日、電話番号、住所、建物名・部屋番号・契約状況などが含まれる。口座情報の漏えいは確認されておらず、クレジットカード情報は保有していない。",
+      "sources": [
+        {
+          "title": "アットホーム お知らせ",
+          "url": "https://www.athome.co.jp/corporate/news/topics/oshirase-202611/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 4,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-brave-group-openlogi",
+      "organization": "株式会社Brave group",
+      "services": [
+        "ぶいすぽっ！オフィシャルオンラインストアなど11サイト"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-11-08",
+      "date_announced": "2026-11-13",
+      "affected_count": null,
+      "count_note": "件数は公表されていない。2026年4月8日〜11月8日に出荷依頼された注文",
+      "cause": "third_party",
+      "root_cause": "物流委託先オープンロジのシステムが不正アクセスを受け、配送データが漏えいした",
+      "vendor": {
+        "name": "株式会社オープンロジ"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "購入履歴"
+      ],
+      "summary": "VTuberグッズなどの公式ストア11サイト（ぶいすぽっ！オフィシャルオンラインストアなど）の物流を委託するオープンロジが不正アクセスを受け、2026年4月8日から11月8日に出荷依頼された注文の届け先の氏名、住所、電話番号、メールアドレス、商品名と数量が漏えいした可能性があると公表した。クレジットカード情報は含まれない。",
+      "sources": [
+        {
+          "title": "Brave group お知らせ",
+          "url": "https://bravegroup.co.jp/news/12429/"
+        },
+        {
+          "title": "KAI-YOU",
+          "url": "https://news.yahoo.co.jp/articles/ac6c5ea351ed511d265ed401a4fbf5c02864fe97"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 5,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-giants-club-giants",
+      "organization": "株式会社読売巨人軍",
+      "services": [
+        "CLUB GIANTS（公式ファンクラブ）"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-11-12",
+      "date_announced": "2026-11-13",
+      "affected_count": 807030,
+      "count_note": "メールアドレスの件数。メールアドレス以外の会員情報への影響は調査中",
+      "cause": "unauthorized_access",
+      "root_cause": "会員情報管理システムが外部から繰り返し不正アクセスを受けた。手法は公表されていない",
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "公式ファンクラブ「CLUB GIANTS」の会員情報を管理するシステムが11月12日未明から外部のサイバー攻撃を繰り返し受け、会員のメールアドレス80万7,030件が流出したと公表した。サーバー容量の逼迫でシステムにアクセスできなくなり発覚した。クレジットカード情報は同システムに保持しておらず対象外で、ほかの会員情報への影響は調査中。攻撃は遮断し、個人情報保護委員会に報告した。",
+      "sources": [
+        {
+          "title": "読売巨人軍 お知らせ",
+          "url": "https://www.giants.jp/news/31752/"
+        },
+        {
+          "title": "東京新聞（共同）",
+          "url": "https://www.tokyo-np.co.jp/article/527913"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/giants-club-giants-email-leak-807030-2026/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 1,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-human-adjust-comsbi",
+      "organization": "株式会社ヒューマンアジャスト",
+      "services": [
+        "LINE公式アカウント（COMSBI SaaS版）"
+      ],
+      "country": "JP",
+      "date_occurred": "2026-11-09",
+      "date_announced": "2026-11-13",
+      "affected_count": 116518,
+      "count_note": "LINE友だち情報最大116,518人と、利用者情報最大58,510人。いずれも確認中の最大値",
+      "cause": "third_party",
+      "root_cause": "LINE連携サービス「COMSBI（SaaS版）」の提供元ソニックムーブの社内用アカウントの認証情報が不正に取得された",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "vendor": {
+        "name": "株式会社ソニックムーブ"
+      },
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "住所",
+        "生年月日",
+        "性別",
+        "アカウント名",
+        "連携サービスID"
+      ],
+      "summary": "利用するソニックムーブのLINE連携クラウドサービス「COMSBI（SaaS版）」が不正アクセスを受け、保有する個人情報が漏えいした可能性があると公表した。ソニックムーブの社内用アカウントの認証情報が第三者に取得され、11月9日深夜から10日朝にかけて不正にアクセスされた。最大58,510人の氏名・電話番号・住所・生年月日などの利用者情報と、最大116,518人のLINE友だちの表示名・プロフィール画像URL・LINEユーザーIDが対象。",
+      "sources": [
+        {
+          "title": "ヒューマンアジャスト 適時開示",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261113579962/"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-saas-line-data-leak-risk-2026/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 4,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-nissan-prestige",
+      "organization": "日産自動車株式会社",
+      "services": [
+        "CIMA・FUGA・SKYLINE サポートプログラム専用窓口",
+        "エクストレイル リコール専用窓口"
+      ],
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2026-10-29",
+      "date_announced": "2026-11-13",
+      "affected_count": 74,
+      "count_note": "サポートプログラム窓口68件、エクストレイル リコール窓口6件（11月6日時点の委託先からの報告）",
+      "cause": "third_party",
+      "root_cause": "ロードサービスなどの委託先プレステージ・コアソリューションの業務システム「PremierNet2」が不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社プレステージ・コアソリューション"
+      },
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "利用履歴",
+        "車両情報"
+      ],
+      "summary": "ロードサービスなどの業務を委託するプレステージ・コアソリューションの業務システム「PremierNet2」が10月29日に不正アクセスを受け、顧客の個人情報が外部に漏えいしたと公表した。対象はCIMA・FUGA・SKYLINEサポートプログラム専用窓口の利用者68件と、エクストレイル リコール専用窓口の利用者6件の計74件。氏名、電話番号、登録番号・車台番号などの車両情報、事故・故障の受付情報が含まれる。クレジットカードや口座の情報は含まれない。",
+      "sources": [
+        {
+          "title": "日産自動車 お知らせ",
+          "url": "https://www3.nissan.co.jp/siteinfo/information_261113.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC138TS0T11C26A1000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 15,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-paiza-staging",
+      "organization": "paiza株式会社",
+      "services": [
+        "paiza（開発用ステージング環境）"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_announced": "2026-11-13",
+      "affected_count": 902576,
+      "count_note": "外部からアクセスされ得る状態だった最大件数。本番データの氏名・住所などは一部マスク済み。具体的な流出は確認されていない",
+      "cause": "misconfiguration",
+      "root_cause": "検証環境のベーシック認証のパスワードを固定のまま長期運用し、退職者等がアクセスできる状態だった",
+      "data_types": [
+        "会員ID",
+        "アカウント名",
+        "連携サービスID",
+        "生年月日",
+        "性別",
+        "メールアドレス",
+        "利用履歴",
+        "取引先情報",
+        "氏名",
+        "電話番号"
+      ],
+      "summary": "開発用ステージング環境（動作検証環境）の認証情報を長期間変更せずに運用していたため、2013年の環境構築から2026年8月13日まで、以前アクセス権限を持っていた退職者等が外部からアクセスできる状態だったと公表した。行政機関からの照会で発覚した。環境には本番データを一部マスク処理して複製しており、最大90万2,576件の個人データ（ニックネーム、GitHub ID、生年月日、スキルチェックや応募の履歴など）が対象。具体的な流出は確認されていない。",
+      "sources": [
+        {
+          "title": "paiza お知らせ",
+          "url": "https://www.paiza.co.jp/news/20261113/access-management-notice/"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/paiza_staging_personal_information_engineer_risks_20261113/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-plaid-karte",
+      "organization": "株式会社プレイド",
+      "services": [
+        "KARTE"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-13",
+      "affected_count": null,
+      "count_note": "漏えいした可能性のある情報の内容・件数・導入企業への影響は公表されていない",
+      "cause": "unauthorized_access",
+      "root_cause": "CXプラットフォーム「KARTE」が第三者の不正アクセスを受けた。手口は公表されていない",
+      "summary": "提供するCXプラットフォーム「KARTE」への第三者からの不正アクセスを検知し、緊急メンテナンスとしてKARTEを利用する全プロジェクトで計測・配信・管理画面を含む全機能を停止したと公表した。その後、外部に漏えいした可能性のある情報を確認し、該当する顧客にメールで連絡した。漏えいした可能性のある情報の内容や件数、導入企業への影響は公表されていない。",
+      "sources": [
+        {
+          "title": "プレイド お知らせ",
+          "url": "https://plaid.co.jp/news/20261113/"
+        },
+        {
+          "title": "KARTE ステータス",
+          "url": "https://status.karte.io/incidents/rs1gsmckc197"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC13B0E0T11C26A1000000/"
+        },
+        {
+          "title": "ビジネス+IT",
+          "url": "https://www.sbbit.jp/article/cont1/188395"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-snowpeak",
+      "organization": "株式会社スノーピーク",
+      "services": [
+        "リユース買取サービス",
+        "イベント予約システム",
+        "コミュニティアプリ",
+        "公式オンラインストア・会員アプリ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-10-29",
+      "date_announced": "2026-11-13",
+      "affected_count": 24948,
+      "count_note": "計4件の事案のうち最大のリユース買取サービスの人数（調査中）。ほかにイベント予約5,923名、コミュニティアプリ21,553名、公式オンラインストア・会員アプリへの不正ログイン最大445アカウント。重複の有無は不明",
+      "cause": "vulnerability",
+      "root_cause": "買取・予約・コミュニティの各サービスの脆弱性を突かれ、別途外部取得の認証情報で不正ログインされた",
+      "attack_methods": [
+        "credential_stuffing"
+      ],
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "性別",
+        "メールアドレス",
+        "電話番号",
+        "住所",
+        "会員ID",
+        "口座番号",
+        "購入履歴",
+        "利用履歴",
+        "アカウント名",
+        "ポイント情報",
+        "クレジットカード情報（番号の一部・有効期限等）"
+      ],
+      "summary": "リユース買取サービス、イベント予約システム、コミュニティアプリへの不正アクセスと、公式オンラインストア・会員アプリへの不正ログインの計4件を公表した。買取サービスでは脆弱性を突かれ、24,948名の氏名・住所・生年月日・振込先口座情報などが流出した可能性がある。イベント予約では5,923名、コミュニティアプリでは21,553名の情報が流出した。外部で取得されたとみられる認証情報で最大445アカウントに不正ログインされ、購入履歴や保有ポイント、カード番号の一部が閲覧された可能性がある。パスワードとカード番号の全桁は含まれない。",
+      "sources": [
+        {
+          "title": "スノーピーク 不正アクセスによる個人情報流出に関するお詫びとお知らせ",
+          "url": "https://www.snowpeak.co.jp/news/p20261113-0/"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 15,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-uber-fireworks-ai",
+      "organization": "Uber Technologies, Inc.",
+      "services": [
+        "ドライバーの個人情報"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "US",
+      "date_announced": "2026-11-13",
+      "affected_count": null,
+      "count_note": "全体の人数は非公表。米国各州への届け出ではマサチューセッツ州2,567人、サウスカロライナ州3,430人、ロードアイランド州1,873人。対象は米国のドライバー",
+      "cause": "third_party",
+      "root_cause": "委託先のAIクラウド企業Fireworks AIがサイバー攻撃を受け、保管していたデータが盗まれた",
+      "vendor": {
+        "name": "Fireworks AI, Inc."
+      },
+      "data_types": [
+        "氏名",
+        "運転免許情報"
+      ],
+      "summary": "委託先のAIクラウド企業Fireworks AIが10月に受けたサイバー攻撃で、同社が保管していたドライバーの個人情報と運転免許情報が盗まれたとして、ドライバーへの通知を始めた。米国各州への届け出では、マサチューセッツ州で2,567人、サウスカロライナ州で3,430人、ロードアイランド州で1,873人が影響を受けた。Notionと同じ委託先の事案。",
+      "sources": [
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/13/uber-confirms-hackers-stole-thousands-of-drivers-license-information-in-data-breach/"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-vega-corporation",
+      "organization": "株式会社ベガコーポレーション",
+      "services": [
+        "LOWYA 楽天市場店・Yahoo!ショッピング店・Amazon店",
+        "BAROCCA・LALA STYLE・SUMICIA 楽天市場店"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-13",
+      "affected_count": 392,
+      "count_note": "最大392件。LOWYA自社ECは対象外",
+      "cause": "third_party",
+      "root_cause": "商品管理のためAPI連携していたブランジスタソリューションの「まとまるEC店長」が不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社ブランジスタソリューション"
+      },
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "住所",
+        "購入履歴"
+      ],
+      "summary": "LOWYA事業の各ECモール店で商品管理のためにAPI連携していたブランジスタソリューションのサービス「まとまるEC店長」が第三者から不正アクセスを受け、保有する個人情報が漏えいした可能性があると公表した。11月10日に同社から一部の注文情報が流出した可能性があると連絡を受けた。楽天市場・Yahoo!ショッピング・Amazonの6店舗の注文者とお届け先の氏名・電話番号・住所など最大392件が対象で、決済情報は含まれない。",
+      "sources": [
+        {
+          "title": "ベガコーポレーション 適時開示",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261113577617/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-carry-on-openlogi",
+      "organization": "株式会社Carry On",
+      "services": [
+        "公式グッズの通販"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-11-08",
+      "date_announced": "2026-11-12",
+      "affected_count": null,
+      "count_note": "件数は調査中。2026年4月8日〜11月8日に出荷依頼された注文",
+      "cause": "third_party",
+      "root_cause": "発送・物流の委託先オープンロジのシステムが不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社オープンロジ"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "購入履歴"
+      ],
+      "summary": "YouTuber「きまぐれクック」などが所属する事務所で、発送・物流業務を委託するオープンロジのシステムが第三者の不正アクセスを受け、2026年4月8日から11月8日に出荷を依頼した商品の購入者・届け先の氏名、住所、電話番号、メールアドレス、商品情報が漏えいした、またはそのおそれがあると公表した。クレジットカード番号や同社サイトのパスワードは委託先に提供していない。",
+      "sources": [
+        {
+          "title": "Carry On お知らせ",
+          "url": "https://carry0n.co.jp/20261112_01/"
+        },
+        {
+          "title": "ユーチュラ",
+          "url": "https://yutura.net/news/archives/170007"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 4,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-chow-sang-sang",
+      "organization": "Chow Sang Sang Holdings International Limited（周生生）",
+      "services": [
+        "会員システム",
+        "公式EC"
+      ],
+      "industry": "小売・EC",
+      "country": "HK",
+      "date_announced": "2026-11-12",
+      "affected_count": null,
+      "count_note": "件数は確認中。日本の利用者への影響は未確認",
+      "cause": "unauthorized_access",
+      "root_cause": "会員システムと公式ECが第三者の不正アクセスを受けた。経路は調査中",
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "購入履歴",
+        "クレジットカード情報（番号の一部・有効期限等）",
+        "従業員情報"
+      ],
+      "summary": "香港の宝飾品大手の周生生集團國際は、グループのシステムが第三者の不正アクセスを受け、顧客と従業員の個人情報が抜き取られた可能性があると香港取引所で公表した。11月9日に検知し、会員システムと公式ECが対象。顧客の氏名、電話番号、メールアドレス、注文情報の一部、カード番号の下4桁と、従業員の氏名、職位などが含まれる可能性がある。",
+      "sources": [
+        {
+          "title": "RTHK",
+          "url": "https://news.rthk.hk/rthk/ch/component/k2/1877592-20261112.htm"
+        },
+        {
+          "title": "SCMP",
+          "url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3374260/hong-kong-sogo-data-breach-puts-personal-information-820000-members-risk"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-cscloud-github",
+      "organization": "株式会社サイバーセキュリティクラウド",
+      "services": [
+        "開発環境（GitHub）"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-12",
+      "affected_count": null,
+      "count_note": "漏えいのおそれがある範囲と対象者は調査中",
+      "cause": "unauthorized_access",
+      "root_cause": "従業員の業務用GitHub認証情報1件が流出し、第三者に社の管理領域へアクセスされた",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "取引先情報"
+      ],
+      "summary": "ソフトウェア開発に使うGitHub上の同社管理領域に不審なアクセスがあり、個人情報が漏えいしたおそれがあると公表した。外部機関からの情報で従業員の業務用GitHub認証情報1件の流出が分かり、アクセスログで11月5日にこの認証情報を使った第三者によるとみられるアクセスを確認した。保存されていた一部顧客の企業名・氏名・メールアドレスなどと、サービス利用に伴う通信関連情報が閲覧・取得されたおそれがあり、範囲は調査中。",
+      "sources": [
+        {
+          "title": "サイバーセキュリティクラウド お知らせ",
+          "url": "https://www.cscloud.co.jp/news/info/20261112-2/"
+        },
+        {
+          "title": "サイバーセキュリティクラウド 適時開示",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261112575882/"
+        },
+        {
+          "title": "テレ朝NEWS",
+          "url": "https://news.tv-asahi.co.jp/news_economy/articles/000547303.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-fujiya-arara",
+      "organization": "株式会社不二家",
+      "services": [
+        "公式ネットショップ「ファミリータウン」"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2026-11-12",
+      "affected_count": 149892,
+      "count_note": "最大149,892件（メールマガジン登録者）",
+      "cause": "third_party",
+      "root_cause": "ショップ基盤のGMOメイクショップの委託先アララのメール配信が不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "公式ネットショップ「ファミリータウン」で利用するGMOメイクショップから、同社の委託先であるアララのメール配信サービスが不正アクセスを受けたとの報告を受け、メールマガジン登録者のメールアドレス最大149,892件が外部に流出したと公表した。氏名、住所、電話番号、クレジットカード情報は含まれない。",
+      "sources": [
+        {
+          "title": "不二家 お知らせ",
+          "url": "https://www.fujiya-peko.co.jp/assets/pdf/release20261112_1.pdf"
+        },
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261112de75040"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-hyakujushi-bank-arara",
+      "organization": "株式会社百十四銀行",
+      "services": [
+        "株主向け電子ギフト贈呈（当選メール）"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "香川県",
+      "date_announced": "2026-11-12",
+      "affected_count": 1500,
+      "count_note": "2026年7月に電子ギフトの当選メールを受信した株主",
+      "cause": "third_party",
+      "root_cause": "電子ギフト贈呈の委託先ギフトパッドが使うアララのメール配信システムが不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "株主向け電子ギフトの贈呈業務を委託したギフトパッドが使うアララのメール配信システムが不正アクセスを受け、2026年7月に当選メールを受信した株主のメールアドレス1,500件が外部に漏えいしたと公表した。株主番号などの属性情報やメール本文は含まれない。",
+      "sources": [
+        {
+          "title": "百十四銀行 お知らせ",
+          "url": "https://www.114bank.co.jp/important/pdf/imp20261112.pdf"
+        },
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261112de75022"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-itami-city-icuco",
+      "organization": "兵庫県伊丹市",
+      "services": [
+        "公立就学前施設の運営管理システム「icuco book」"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "兵庫県",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-12",
+      "affected_count": null,
+      "count_note": "公立の幼稚園・こども園・保育所などの利用者のうち登録者。件数は調査中",
+      "cause": "third_party",
+      "root_cause": "運営管理システムの提供元icucoで、個人情報を含むファイルが外部から閲覧可能になっていた",
+      "vendor": {
+        "name": "icuco株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "性別",
+        "生年月日",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "メッセージ・チャット履歴"
+      ],
+      "summary": "公立就学前施設の運営管理システムを提供するicuco株式会社から、「icuco book」で個人情報を含む一部のファイルが外部から閲覧可能な状態になり、第三者の不正アクセスを確認したとの報告を受けたと公表した。児童の氏名・性別・生年月日、保護者の氏名・住所・電話番号・メールアドレス、施設と保護者の連絡事項などが漏えいした可能性があり、影響範囲は調査中。",
+      "sources": [
+        {
+          "title": "伊丹市 お知らせ",
+          "url": "https://www.city.itami.lg.jp/SOSIKI/KODOMO/HOIKUSEISAKU/50773.html"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/itami-icuco-book-unauthorized-access-20261113/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-koka-city-ransomware",
+      "organization": "滋賀県甲賀市",
+      "services": [
+        "地域情報基盤施設（音声放送システム）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "滋賀県",
+      "date_occurred": "2026-11-11",
+      "date_announced": "2026-11-12",
+      "affected_count": 25000,
+      "count_note": "約2万5千件（報道）。端末機設置者の氏名または事業所名",
+      "cause": "ransomware",
+      "root_cause": "音声放送システムのサーバーが不正アクセスを受け、ランサムウェアに感染した",
+      "data_types": [
+        "氏名",
+        "取引先情報"
+      ],
+      "summary": "音声放送システムのサーバーが11月11日にランサムウェアの被害を受け、システムが停止したと公表した。同日のJアラートのテスト放送を中止した。端末機の設置者の氏名や事業所名など約2万5千件が流出した可能性がある。県警が捜査している。",
+      "sources": [
+        {
+          "title": "甲賀市 お知らせ",
+          "url": "https://www.city.koka.lg.jp/27417.htm"
+        },
+        {
+          "title": "中日新聞",
+          "url": "https://www.chunichi.co.jp/article/1338448"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 1,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-kyuden-sangyo-arara",
+      "organization": "九電産業株式会社",
+      "group": "九州電力グループ",
+      "services": [
+        "通販サイト「こだわり九州いいものめぐり」"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-12",
+      "affected_count": 6495,
+      "count_note": "メールマガジン購読者と、2024年以降に一部商品を購入した人",
+      "cause": "third_party",
+      "root_cause": "メール配信の委託先アララが不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "メール配信を委託するアララへの不正アクセスにより、通販サイト「こだわり九州いいものめぐり」の顧客6,495人分のメールアドレスが外部に漏えいしたと公表した。住所、電話番号、クレジットカード情報、パスワードは含まれない。",
+      "sources": [
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOJC12B0C0S6A111C2000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-namerikawa-city-icuco",
+      "organization": "富山県滑川市",
+      "services": [
+        "市立保育所の午睡チェックセンサー"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "富山県",
+      "date_announced": "2026-11-12",
+      "affected_count": 27,
+      "count_note": "あずま保育所・坪川保育所の園児",
+      "cause": "third_party",
+      "root_cause": "午睡チェックセンサーの提供元icucoのシステムが第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "icuco株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "性別"
+      ],
+      "summary": "市立あずま保育所と坪川保育所で使う午睡チェックセンサーの委託先icuco株式会社のシステムに第三者の不正アクセスがあり、園児27名の氏名・生年月日・性別が外部に流出した可能性があるとの報告を受けたと公表した。連絡先や決済に関する情報は含まれず、二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "滑川市 お知らせ",
+          "url": "https://www.city.namerikawa.toyama.jp/soshiki/24/1/11688.html"
+        },
+        {
+          "title": "FNN",
+          "url": "https://www.fnn.jp/articles/-/1151489"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-niigata-pref-kankyo-mail",
+      "organization": "新潟県",
+      "services": [
+        "にいがた県環境メール"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "新潟県",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-12",
+      "affected_count": null,
+      "count_note": "登録者は約750人。11月13日の事業者の第2報では、現時点で登録情報は漏えいしておらず可能性も低いとされた（調査継続中）",
+      "cause": "third_party",
+      "root_cause": "メール配信サービスの運営事業者イー・エム・ズィーが不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社イー・エム・ズィー"
+      },
+      "data_types": [
+        "メールアドレス",
+        "性別"
+      ],
+      "summary": "「にいがた県環境メール」の配信サービスを運営する株式会社イー・エム・ズィーが不正アクセスを受け、登録者約750人のメールアドレス・性別・年代・居住市町村名が漏えいした可能性があると公表した。11月13日には、事業者の第2報で現時点では漏えいしておらず可能性も低いとされたが、調査は続いている。",
+      "sources": [
+        {
+          "title": "新潟県 お知らせ",
+          "url": "https://www.pref.niigata.lg.jp/site/kankyo/kankyomail-rouei.html"
+        },
+        {
+          "title": "新潟日報",
+          "url": "https://www.niigata-nippo.co.jp/articles/-/942313"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-nikkei-research-notion",
+      "organization": "株式会社日経リサーチ",
+      "services": [
+        "Notion AI"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2026-11-12",
+      "affected_count": null,
+      "count_note": "件数は公表されていない",
+      "cause": "third_party",
+      "root_cause": "利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIチャットの記録が流出した",
+      "vendor": {
+        "name": "Notion Labs, Inc."
+      },
+      "data_types": [
+        "メッセージ・チャット履歴",
+        "氏名",
+        "取引先情報"
+      ],
+      "summary": "業務で利用するNotionから、AI機能の処理の委託先Fireworks AIへの不正アクセスにより、同社のNotion AIのチャット内容の一部が流出したとの通知を受けたと公表した。10月5日〜24日のチャットの一部が対象で、顧客の会社名、担当者の氏名、打ち合わせの内容などを含む可能性がある。",
+      "sources": [
+        {
+          "title": "日経リサーチ お知らせ",
+          "url": "https://www.nikkei-r.co.jp/news/information/20261112"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-ntt-sonority-notion",
+      "organization": "NTTソノリティ株式会社",
+      "group": "NTTグループ",
+      "services": [
+        "Notion AI"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-11-12",
+      "affected_count": null,
+      "count_note": "件数は調査中",
+      "cause": "third_party",
+      "root_cause": "利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIチャットの記録が流出した",
+      "vendor": {
+        "name": "Notion Labs, Inc."
+      },
+      "data_types": [
+        "メッセージ・チャット履歴",
+        "氏名",
+        "取引先情報"
+      ],
+      "summary": "業務で利用するNotionから、AI機能の処理の委託先Fireworks AIへの不正アクセスにより、同社のNotion AIのチャット内容の一部が流出したとの通知を受けたと公表した。10月5日〜24日にInsights機能の処理に使われたチャットの記録が対象。",
+      "sources": [
+        {
+          "title": "NTTソノリティ お知らせ",
+          "url": "https://ntt-sonority.com/blogs/news/261112-2"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-onecareer-notion",
+      "organization": "株式会社ワンキャリア",
+      "services": [
+        "Notion AI"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-11-12",
+      "affected_count": 2300,
+      "count_note": "入力内容とAIの回答に含まれる可能性がある個人情報の最大件数",
+      "cause": "third_party",
+      "root_cause": "利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIチャットの記録が流出した",
+      "vendor": {
+        "name": "Notion Labs, Inc."
+      },
+      "data_types": [
+        "メッセージ・チャット履歴",
+        "氏名",
+        "取引先情報"
+      ],
+      "summary": "業務で利用するNotionから、AI機能の処理の委託先Fireworks AIへの不正アクセスにより、同社のNotion AIのチャット内容の一部が流出したとの通知を受けたと公表した。入力内容とAIの回答に、サービス利用者などの個人情報が最大約2,300件含まれる可能性がある。",
+      "sources": [
+        {
+          "title": "ワンキャリア お知らせ",
+          "url": "https://onecareer.co.jp/news/information/261112/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-qoo10",
+      "organization": "Qoo10",
+      "services": [
+        "Qoo10"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-11-06",
+      "date_announced": "2026-11-12",
+      "affected_count": null,
+      "count_note": "件数・対象者数は公表されていない（調査中）。運営会社の正式な法人名は未確認",
+      "cause": "unauthorized_access",
+      "root_cause": "システムが外部の第三者から不正アクセスを受けた。侵入経路は公表されていない",
+      "data_types": [
+        "氏名",
+        "アカウント名",
+        "メールアドレス",
+        "電話番号",
+        "生年月日",
+        "性別",
+        "住所",
+        "会員ID",
+        "ポイント情報"
+      ],
+      "summary": "ECモール「Qoo10」のシステムが11月6日に外部の第三者から不正アクセスを受け、一部の顧客の個人情報が閲覧されたと公表した。対象となる可能性があるのは氏名、ニックネーム、メールアドレス、電話番号、生年月日、性別、住所・配送先住所、住所の地理座標、任意入力の身体的特徴、IPアドレス、個人メモ、ポイント残高など。決済情報やパスワードの漏えいを示す証拠はない。認証トークンをすべて無効化し、対象アカウントを強制ログアウトさせた。",
+      "sources": [
+        {
+          "title": "Qoo10 お知らせ",
+          "url": "https://www.qoo10.jp/gmkt.inc/Main/PopupNotice.aspx?nid=6246"
+        },
+        {
+          "title": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003186/"
+        },
+        {
+          "title": "ビジネス+IT",
+          "url": "https://www.sbbit.jp/article/cont1/188383"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 6,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-receptionist-notion",
+      "organization": "株式会社RECEPTIONIST",
+      "services": [
+        "Notion AI"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-11-12",
+      "affected_count": null,
+      "count_note": "社外53名分と従業員の情報",
+      "cause": "third_party",
+      "root_cause": "利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIチャットの記録が流出した",
+      "vendor": {
+        "name": "Notion Labs, Inc."
+      },
+      "data_types": [
+        "メッセージ・チャット履歴",
+        "氏名",
+        "取引先情報"
+      ],
+      "summary": "業務で利用するNotionから、AI機能の処理の委託先Fireworks AIへの不正アクセスにより、同社のNotion AIのチャット内容の一部が流出したとの通知を受けたと公表した。10月5日〜23日のチャットの一部が対象で、社外53名分と従業員の氏名、会社名、電話番号、メールアドレス、問い合わせ内容などを含む。カード情報と口座情報は含まれない。",
+      "sources": [
+        {
+          "title": "RECEPTIONIST お知らせ",
+          "url": "https://receptionist.co.jp/news/20261112-notice"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-sanfrecce-arara",
+      "organization": "株式会社サンフレッチェ広島",
+      "services": [
+        "公式モバイルサイト（テレビ新広島と共同運営）"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_announced": "2026-11-12",
+      "affected_count": 2900,
+      "count_note": "2026年7月1日〜10月31日にメールを受信した利用者",
+      "cause": "third_party",
+      "root_cause": "メール配信の委託先アララの「アララメッセージ」が不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "テレビ新広島と共同運営する公式モバイルサイトのメール配信を委託していたアララの「アララメッセージ」が第三者の不正アクセスを受け、2026年7月1日から10月31日にメールを受信した利用者のメールアドレス2,900件が外部に漏えいしたと公表した。氏名、住所、電話番号、生年月日、クレジットカード情報はアララに提供していない。",
+      "sources": [
+        {
+          "title": "サンフレッチェ広島 お知らせ",
+          "url": "https://www.sanfrecce.co.jp/news/other/13058"
+        },
+        {
+          "title": "フットボールチャンネル",
+          "url": "https://www.footballchannel.jp/2026/11/13/post1057101/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-shijonawate-city-icuco",
+      "organization": "大阪府四條畷市",
+      "services": [
+        "午睡チェック支援システム「icuco touch&care」"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "大阪府",
+      "date_announced": "2026-11-12",
+      "affected_count": 44,
+      "count_note": "園児18人（0歳児クラス）と職員26人",
+      "cause": "third_party",
+      "root_cause": "午睡チェック支援システムの提供元icucoで、個人情報を含むファイルが外部から閲覧可能になっていた",
+      "vendor": {
+        "name": "icuco株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "性別",
+        "従業員情報"
+      ],
+      "summary": "公立園で使う午睡チェック支援システム「icuco touch&care」の提供元icuco株式会社から、個人情報を含む一部のファイルが外部から閲覧可能な状態になり、第三者のアクセスを確認したとの報告を受けたと公表した。岡部保育所と忍ヶ丘あおぞらこども園の0歳児18人の氏名・生年月日・性別・園名・クラス名と、職員26人の氏名が漏えいした可能性がある。",
+      "sources": [
+        {
+          "title": "四條畷市 お知らせ",
+          "url": "https://www.city.shijonawate.lg.jp/page/122452.html"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/shijonawate-icuco-touch-care-unauthorized-access-202611/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-sogo-hong-kong",
+      "organization": "Sogo Hong Kong Company Limited（崇光香港）",
+      "services": [
+        "会員システム"
+      ],
+      "industry": "小売・EC",
+      "country": "HK",
+      "date_announced": "2026-11-12",
+      "affected_count": 820000,
+      "count_note": "最大約82万人の会員（香港の個人資料私隠専員公署の発表）。日本のそごう・西武とは別会社。日本の利用者への影響は未確認",
+      "cause": "unauthorized_access",
+      "root_cause": "会員システムで第三者による異常なデータ読み取りがあった",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "ポイント情報",
+        "会員ID"
+      ],
+      "summary": "香港の百貨店、崇光香港は会員システムへの第三者による不正アクセスを確認し、当局に通報したと公表した。香港の個人資料私隠専員公署によると、最大約82万人の会員の氏名、メールアドレス、電話番号、会員番号、ポイント残高が影響を受けた可能性がある。会員にフィッシング詐欺への注意を呼びかけた。",
+      "sources": [
+        {
+          "title": "The Standard",
+          "url": "https://www.thestandard.com.hk/news/article/348370/SOGO-and-Chow-Sang-Sang-report-data-breaches-affecting-up-to-820000-members"
+        },
+        {
+          "title": "明報",
+          "url": "https://news.mingpao.com/pns/%E6%B8%AF%E8%81%9E/article/20261113/s00002/1794509221613/sogo%E6%B3%8482%E8%90%AC%E6%9C%83%E5%93%A1%E8%B3%87%E6%96%99-%E5%91%A8%E7%94%9F%E7%94%9F%E7%B3%BB%E7%B5%B1%E9%81%AD%E5%85%A5%E4%BE%B5"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-tokyo-gas-arara",
+      "organization": "東京ガス株式会社",
+      "group": "東京ガスグループ",
+      "services": [
+        "ガス本管埋設状況確認サービス（法人向け）"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_announced": "2026-11-12",
+      "affected_count": 85565,
+      "count_note": "法人向けサービスの登録者のメールアドレス",
+      "cause": "third_party",
+      "root_cause": "メール配信の委託先アララが不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "メール配信を委託するアララへの不正アクセスにより、法人向けの「ガス本管埋設状況確認サービス」に登録した利用者のメールアドレス85,565件が外部に流出したと公表した。氏名、住所、電話番号、会社名は含まれない。",
+      "sources": [
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261112de74857"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC1274H0S6A111C2000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-tsmc-cloud-provider",
+      "organization": "Taiwan Semiconductor Manufacturing Company Limited（TSMC）",
+      "services": [
+        "従業員データ"
+      ],
+      "industry": "製造",
+      "country": "TW",
+      "date_announced": "2026-11-12",
+      "affected_count": null,
+      "count_note": "現職・元従業員。件数は非公表。日本法人への影響は未確認",
+      "cause": "third_party",
+      "root_cause": "委託先のクラウドサービス事業者のシステムに保管されていた従業員データが流出した",
+      "data_types": [
+        "従業員情報",
+        "口座番号"
+      ],
+      "summary": "ハッカーフォーラムで売りに出された現職・元従業員のデータが、利用するクラウドサービス事業者のシステムに保管されていたデータと一致したと公表した。同社のシステムは侵害されておらず、事業や顧客のデータとは関係がない。データには連絡先、身分証明の情報、銀行口座の情報が含まれるとされる。",
+      "sources": [
+        {
+          "title": "The Record",
+          "url": "https://therecord.media/tsmc-confirms-employee-data-breach-cloud-provider"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-usmh-ignica",
+      "organization": "ユナイテッド・スーパーマーケット・ホールディングス株式会社",
+      "services": [
+        "Scan＆Go ignica"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-12",
+      "affected_count": 64003,
+      "count_note": "アプリ利用者約240万アカウントのうち64,003アカウント",
+      "cause": "unauthorized_access",
+      "root_cause": "お買い物アプリ「Scan＆Go ignica」のシステムが第三者の不正アクセスを受けた",
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "マルエツなどで使うお買い物アプリ「Scan＆Go ignica」のシステムが第三者の不正アクセスを受け、新規登録時に入力された氏名とメールアドレスを含むファイルが外部に流出した可能性があると公表した。対象は約240万アカウントのうち64,003アカウントで、クレジットカード情報、住所、電話番号、生年月日は含まれない。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "USMH お知らせ",
+          "url": "https://www.usmh.co.jp/wp-content/uploads/2026/11/us_20261112.pdf"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC129LB0S6A111C2000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-cabinet-office-arara",
       "organization": "内閣府",
       "services": [
@@ -612,6 +1743,38 @@
       "severity": "medium",
       "disclosure_days": null,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-11-faeger-notion",
+      "organization": "株式会社フェイガー",
+      "services": [
+        "Notion AI"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-11-11",
+      "affected_count": null,
+      "count_note": "件数は公表されていない",
+      "cause": "third_party",
+      "root_cause": "利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIチャットの記録が流出した",
+      "vendor": {
+        "name": "Notion Labs, Inc."
+      },
+      "data_types": [
+        "メッセージ・チャット履歴",
+        "氏名",
+        "取引先情報"
+      ],
+      "summary": "業務で利用するNotionから、AI機能の処理の委託先Fireworks AIへの不正アクセスにより、同社のNotion AIのチャット内容の一部が流出したとの通知を受けたと公表した。10月5日〜24日のチャットの一部が対象で、取引先の担当者の名前などを含む。",
+      "sources": [
+        {
+          "title": "フェイガー お知らせ",
+          "url": "https://faeger.company/news-security-incident-20261111/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-11-human-made-openlogi",
@@ -766,6 +1929,72 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-11-kochi-pref-doboku",
+      "organization": "高知県",
+      "services": [
+        "高知土木事務所（道路占用に関する通報対応）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "高知県",
+      "date_announced": "2026-11-11",
+      "affected_count": 1,
+      "count_note": "通報者1人",
+      "cause": "human_error",
+      "root_cause": "業者に渡した占用許可証などの封筒に、通報者の名字と電話番号を書いたメモが誤って入っていた",
+      "data_types": [
+        "氏名",
+        "電話番号"
+      ],
+      "summary": "高知土木事務所が、県道の無許可工事について通報した人の名字と電話番号を書いたメモを、占用許可証などと一緒に工事業者に誤って渡し、通報者の個人情報を流出させたと公表した。9月下旬に通報者からの問い合わせで発覚し、県は通報者に謝罪した。",
+      "sources": [
+        {
+          "title": "高知新聞",
+          "url": "https://www.kochinews.co.jp/article/detail/1062819"
+        },
+        {
+          "title": "KUTVテレビ高知",
+          "url": "https://newsdig.tbs.co.jp/articles/kutv/3079212"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-lrm-notion",
+      "organization": "株式会社LRM",
+      "services": [
+        "Notion AI"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-11-11",
+      "affected_count": null,
+      "count_note": "件数は公表されていない",
+      "cause": "third_party",
+      "root_cause": "利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIチャットの記録が流出した",
+      "vendor": {
+        "name": "Notion Labs, Inc."
+      },
+      "data_types": [
+        "メッセージ・チャット履歴",
+        "氏名",
+        "取引先情報"
+      ],
+      "summary": "業務で利用するNotionから、AI機能の処理の委託先Fireworks AIへの不正アクセスにより、同社のNotion AIのチャット内容の一部が流出したとの通知を受けたと公表した。10月5日〜24日に同社のワークスペースで作られたチャットの一部（従業員の入力とAIの応答）が対象で、取引先の担当者名などを含む。認証情報は含まれない。",
+      "sources": [
+        {
+          "title": "LRM お知らせ",
+          "url": "https://www.lrm.jp/info/news/info_20261111/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-mufg-shareholder-arara",
       "organization": "株式会社三菱UFJフィナンシャル・グループ",
       "group": "三菱UFJフィナンシャル・グループ",
@@ -901,6 +2130,38 @@
       ],
       "severity": "high",
       "disclosure_days": 3,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-securenavi-notion",
+      "organization": "SecureNavi株式会社",
+      "services": [
+        "Notion AI"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-11-11",
+      "affected_count": null,
+      "count_note": "件数は調査中",
+      "cause": "third_party",
+      "root_cause": "利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIチャットの記録が流出した",
+      "vendor": {
+        "name": "Notion Labs, Inc."
+      },
+      "data_types": [
+        "メッセージ・チャット履歴",
+        "氏名",
+        "取引先情報"
+      ],
+      "summary": "業務で利用するNotionから、AI機能の処理の委託先Fireworks AIへの不正アクセスにより、同社のNotion AIのチャット内容の一部が流出したとの通知を受けたと公表した。顧客の会社名、担当者の氏名、問い合わせや相談の内容（打ち合わせの内容を含む）、サービスの利用状況に関する内容が含まれる可能性がある。パスワード等の認証情報は含まれない。",
+      "sources": [
+        {
+          "title": "SecureNavi お知らせ",
+          "url": "https://secure-navi-inc.jp/news/news_20261111"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
       "reliability": "high"
     },
     {
@@ -1569,6 +2830,44 @@
       "reliability": "high"
     },
     {
+      "id": "2026-11-norwegian-amadeus",
+      "organization": "Norwegian Air Shuttle ASA（ノルウェー・エアシャトル）",
+      "services": [
+        "予約情報"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "NO",
+      "date_announced": "2026-11-09",
+      "affected_count": 144249,
+      "count_note": "Norwegian と Widerøe の乗客の合計（ノルウェーのデータ保護機関への書面）。日本の利用者への影響は未確認",
+      "cause": "third_party",
+      "root_cause": "予約システムの委託先アマデウスのシステムが長期間不正アクセスを受けた",
+      "vendor": {
+        "name": "Amadeus IT Group"
+      },
+      "data_types": [
+        "氏名",
+        "パスポート番号",
+        "メールアドレス",
+        "電話番号",
+        "利用履歴"
+      ],
+      "summary": "予約システムのアマデウスへの不正アクセスにより乗客の情報が漏洩したと公表した。データ保護機関への書面によると、Norwegian と Widerøe の乗客14万4,249人分が対象で、氏名、旅程、パスポート番号、国籍、連絡先、航空券番号、便名、座席などが含まれる。支払い情報は含まれない。不正アクセスは2023年から続いていた。",
+      "sources": [
+        {
+          "title": "Travel News Nordic",
+          "url": "https://www.travelnewsnordic.com/the-travel-industry/norwegian-affected-by-data-breach-at-amadeus/412984"
+        },
+        {
+          "title": "NRK",
+          "url": "https://www.nrk.no/nyheter/over-144.000-norwegian-og-wideroe-passasjerer-rammet-av-datainnbrudd-1.18080740"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-11-sas-amadeus",
       "organization": "SAS AB（スカンジナビア航空）",
       "services": [
@@ -1851,6 +3150,33 @@
       "reliability": "high"
     },
     {
+      "id": "2026-11-icuco",
+      "organization": "icuco株式会社",
+      "services": [
+        "icuco book（for family含む）",
+        "icuco touch&care（午睡チェック）"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-07",
+      "affected_count": null,
+      "count_note": "件数は公表されていない。伊丹市・四條畷市・滑川市などの利用自治体も公表",
+      "cause": "unauthorized_access",
+      "root_cause": "個人情報を含む一部のファイルが外部から閲覧可能な状態になっており、第三者のアクセスを確認した",
+      "summary": "保育施設向けサービス「icuco book」「icuco touch&care」で、個人情報を含む一部のファイルが外部から閲覧可能な状態になっており、第三者のアクセスを確認したと公表した。11月7日に両サービスを緊急停止した。パスワードはハッシュ化して保存しており、利用者に変更の検討を依頼した。銀行口座情報の漏えいは確認されておらず、影響範囲は調査中。",
+      "sources": [
+        {
+          "title": "icuco お知らせ",
+          "url": "https://www.icuco.co.jp/LxwOiU5O/Udzu7lfC"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-stepgolf",
       "organization": "株式会社ステップゴルフ",
       "services": [
@@ -1954,6 +3280,40 @@
       "severity": "medium",
       "disclosure_days": 7,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-11-daisen-city-shibata",
+      "organization": "秋田県大仙市",
+      "services": [
+        "用地測量などの委託業務（2021〜2026年度の3業務）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "秋田県",
+      "date_announced": "2026-11-06",
+      "affected_count": 31,
+      "count_note": "延べ31件。実際に漏えいした事実は確認されていない",
+      "cause": "third_party",
+      "root_cause": "業務委託先の柴田工事調査がランサムウェア攻撃を受けた",
+      "vendor": {
+        "name": "柴田工事調査"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号"
+      ],
+      "summary": "用地測量などを委託していた柴田工事調査がランサムウェア攻撃を受け、2021〜2026年度の3業務で扱った延べ31件の氏名・住所・電話番号が漏えいした可能性があると公表した。実際に漏えいした事実は確認されていない。",
+      "sources": [
+        {
+          "title": "大仙市 お知らせ",
+          "url": "https://www.city.daisen.lg.jp/archive/p20261106093509"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-11-edion",
@@ -2102,17 +3462,18 @@
       "industry": "エンタメ・スポーツ",
       "country": "JP",
       "date_announced": "2026-11-06",
-      "affected_count": 9530,
-      "count_note": "最大9,530人（2021-22シーズン以降の元会員を含む）",
+      "affected_count": 41,
+      "count_note": "委託先の調査で41件と確定（メールアドレスのみ39名、メールアドレスと氏名2名）。当初は最大9,530人の可能性",
       "cause": "third_party",
-      "root_cause": "ファンクラブ運営の委託先の再委託先アララが不正アクセスを受けた",
+      "root_cause": "ファンクラブ運営の委託先アクセルエンターメディアの再委託先アララが不正アクセスを受けた",
       "vendor": {
         "name": "アララ株式会社"
       },
       "data_types": [
-        "メールアドレス"
+        "メールアドレス",
+        "氏名"
       ],
-      "summary": "ファンクラブ運営の委託先が使うアララのメール配信サービスが不正アクセスを受け、2021-22シーズン以降の元会員を含む最大9,530人のメールアドレスが漏えいした可能性があると公表した。パスワードとカード情報は含まれない。",
+      "summary": "ファンクラブ運営の委託先アクセルエンターメディアが使うアララのメール配信サービスが不正アクセスを受け、2021-22シーズン以降の元会員を含む最大9,530人のメールアドレスが漏えいした可能性があると公表した。その後の調査で、漏洩は41件（メールアドレスのみ39名、メールアドレスと氏名2名）と確定した。電話番号・住所・パスワード・カード情報は含まれず、悪用による被害は確認されていない。",
       "sources": [
         {
           "title": "秋田ノーザンハピネッツ お知らせ",
@@ -2121,6 +3482,14 @@
         {
           "title": "ABS秋田放送",
           "url": "https://news.yahoo.co.jp/articles/731eabdd1de371242174e5fd7d10b429bfac68ff"
+        },
+        {
+          "title": "秋田ノーザンハピネッツ お知らせ（調査結果）",
+          "url": "https://northern-happinets.com/news/detail/id=23104"
+        },
+        {
+          "title": "ABS秋田放送（調査結果）",
+          "url": "https://news.yahoo.co.jp/articles/d33794d0a874a407f70270e7f041264efbfcf885"
         }
       ],
       "severity": "medium",
@@ -2686,6 +4055,37 @@
       "severity": "medium",
       "disclosure_days": null,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-11-yurihonjo-city-shibata",
+      "organization": "秋田県由利本荘市",
+      "services": [
+        "家屋等事前調査・補償調査の委託業務"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "秋田県",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-06",
+      "affected_count": null,
+      "count_note": "対象の人数と項目は調査中。流出と不正利用の事実は確認されていない",
+      "cause": "third_party",
+      "root_cause": "業務委託先の柴田工事調査がランサムウェア攻撃を受けた",
+      "vendor": {
+        "name": "柴田工事調査"
+      },
+      "summary": "家屋等事前調査と補償調査の2業務を委託していた柴田工事調査がランサムウェア攻撃を受け、業務で扱った個人情報が漏えいした可能性があると公表した。対象の人数と項目は調査中で、流出と不正利用の事実は確認されていない。",
+      "sources": [
+        {
+          "title": "由利本荘市 お知らせ",
+          "url": "https://www.city.yurihonjo.lg.jp/1000002/1001867/1001932/1010291/1014011.html"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-11-asahi-life-arara",
@@ -3830,6 +5230,50 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-11-motex",
+      "organization": "エムオーテックス株式会社",
+      "services": [
+        "MOTEXコーポレートサイト",
+        "LANSCOPE製品サイト",
+        "LANSCOPE PORTAL",
+        "MOTEX PARTNER PORTAL"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-11-02",
+      "date_announced": "2026-11-04",
+      "affected_count": null,
+      "count_note": "件数は公表されていない。漏えいの有無と影響範囲は調査中",
+      "cause": "unauthorized_access",
+      "root_cause": "Webサイトを運用するサーバーが不正アクセスを受けた。侵入経路は公表されていない",
+      "data_types": [
+        "取引先情報",
+        "氏名",
+        "メールアドレス",
+        "電話番号"
+      ],
+      "summary": "エムオーテックスのWebサイトを運用するサーバーが不正アクセスを受け、会社名・氏名・メールアドレス・電話番号などの顧客情報が漏えいした可能性があると、親会社の京セラコミュニケーションシステムが公表した。11月2日に不正アクセスを確認し、サーバーの外部通信を遮断して、LANSCOPE製品サイトやサポートサイト「LANSCOPE PORTAL」などを停止した。LANSCOPE等の製品は別の環境で運用しており、主要機能への影響はない。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "京セラコミュニケーションシステム 第2報",
+          "url": "https://www.kccs.co.jp/news/important/2026/1106/"
+        },
+        {
+          "title": "京セラコミュニケーションシステム 第1報",
+          "url": "https://www.kccs.co.jp/news/important/2026/1104/"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56757.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 2,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-11-ms-ad-contractor-site",
       "organization": "三井住友海上火災保険株式会社・あいおいニッセイ同和損害保険株式会社",
       "group": "MS&ADグループ",
@@ -3875,6 +5319,46 @@
       ],
       "severity": "critical",
       "disclosure_days": 2,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-naha-city-arara",
+      "organization": "沖縄県那覇市",
+      "services": [
+        "那覇市オンライン申請システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "沖縄県",
+      "date_announced": "2026-11-04",
+      "affected_count": 15700,
+      "count_note": "当初は約8万2千件が漏えいの可能性。11月11日に15,700件の漏えいを確定",
+      "cause": "third_party",
+      "root_cause": "オンライン申請システム（TKC）が使うアララのメール送信サービスが不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "オンライン申請システムで使う外部メール送信サービス「アララメッセージ」が不正アクセスを受け、メールアドレスが漏えいした可能性があると11月4日に公表した。11月11日に15,700件の漏えいを確定した。メール本文・マイナンバー・申請情報は漏えいしていない。",
+      "sources": [
+        {
+          "title": "那覇市 お知らせ",
+          "url": "https://www.city.naha.okinawa.jp/admin/kaikaku/1008233/1004100/1013273.html"
+        },
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261112de74785"
+        },
+        {
+          "title": "琉球新報",
+          "url": "https://ryukyushimpo.jp/national/entry-5589496.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
       "reliability": "high"
     },
     {
@@ -4418,6 +5902,55 @@
       "severity": "high",
       "disclosure_days": 4,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-11-hange",
+      "organization": "ENSAPIA Tokyo株式会社",
+      "services": [
+        "ハンゲ"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-11-03",
+      "date_announced": "2026-11-03",
+      "affected_count": 61962,
+      "count_note": "最大項目（ハッシュ化パスワード）の件数。メールアドレス51,025件、生年月日28,251件、氏名・住所・電話番号2,994件、外部サービスIDのメールアドレス36,545件、マスク済みカード番号の一部2,961件、セキュリティコード6件など",
+      "cause": "unauthorized_access",
+      "root_cause": "ハンゲのサーバーが第三者から不正アクセスを受けた。侵入経路は調査中",
+      "data_types": [
+        "パスワード（ハッシュ化・暗号化済み）",
+        "メールアドレス",
+        "生年月日",
+        "氏名",
+        "住所",
+        "郵便番号",
+        "電話番号",
+        "連携サービスID",
+        "クレジットカード情報（番号の一部・有効期限等）",
+        "クレジットカードのセキュリティコード"
+      ],
+      "summary": "オンラインゲームポータル「ハンゲ」のサーバーが11月3日に外部から不正アクセスを受けたと公表した。11月13日の第4報で、ハッシュ化されたパスワード6万1,962件、メールアドレス5万1,025件、生年月日2万8,251件、氏名・住所・電話番号2,994件、マスク処理済みのクレジットカード番号の一部2,961件、セキュリティコード6件などの漏えいを確認した。11月4日の第2報ではIDとパスワードの流出痕跡は確認されていないとしていた。全サービスを停止している。",
+      "sources": [
+        {
+          "title": "ENSAPIA Tokyo お知らせ（第4報）",
+          "url": "https://ensapia-tokyo.com/news/topics/id=21412/"
+        },
+        {
+          "title": "ASCII.jp",
+          "url": "https://ascii.jp/elem/000/004/451/4451525/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "ハンゲと同じパスワードを他のサービスで使っていれば変更する"
+        },
+        {
+          "text": "カード会社の利用明細を確認し、身に覚えのない請求があればカード会社に連絡する"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 0,
+      "reliability": "high"
     },
     {
       "id": "2026-11-himeji-city-online",
@@ -5262,6 +6795,48 @@
       "reliability": "high"
     },
     {
+      "id": "2026-11-ryohin-keikaku-order-curtain",
+      "organization": "株式会社良品計画",
+      "services": [
+        "無印良品 オーダーカーテン"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-10-19",
+      "date_announced": "2026-11-02",
+      "affected_count": 19933,
+      "count_note": "2018年4月10日〜2022年1月25日の注文者（重複を含む）",
+      "cause": "third_party",
+      "root_cause": "委託先MNインターファッションの再委託先ナノテックが管理するサーバーが不正アクセスを受けた",
+      "vendor": {
+        "name": "MNインターファッション株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "購入履歴"
+      ],
+      "summary": "オーダーカーテン業務の委託先MNインターファッションのシステム関連業務の委託先ナノテックが管理するサーバーが10月19日に不正アクセスを受け、2018年4月から2022年1月までに無印良品でオーダーカーテンを注文した顧客1万9,933件の氏名、住所、電話番号、注文情報、配送先住所が流出した可能性があると公表した。現在の受注業務は別のサーバーで運用している。対象者には郵送で連絡する。",
+      "sources": [
+        {
+          "title": "MNインターファッション お知らせ",
+          "url": "https://mn-interfashion.com/news/information/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E8%89%AF%E5%93%81%E8%A8%88%E7%94%BB%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%82%AB%E3%83%BC%E3%83%86%E3%83%B3%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E9%87%8D/"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56777.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC026XX0S6A101C2000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 14,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-shimane-boe-kodai-tour",
       "organization": "島根県教育委員会",
       "services": [
@@ -5407,6 +6982,7 @@
       "country": "JP",
       "org_type": "local_gov",
       "prefecture": "富山県",
+      "leaked": false,
       "date_announced": "2026-11-02",
       "affected_count": 290,
       "cause": "third_party",
@@ -5417,16 +6993,20 @@
       "data_types": [
         "メールアドレス"
       ],
-      "summary": "生産者とバイヤーをつなぐオンライン商談サイト「とやま食材マッチング」で使っていたメール配信システム「ブラストメール」が不正アクセスを受け、登録者290件の情報が漏えいしたおそれがあると公表した。",
+      "summary": "生産者とバイヤーをつなぐオンライン商談サイト「とやま食材マッチング」で使っていたメール配信システム「ブラストメール」が不正アクセスを受け、登録者290件の情報が漏えいしたおそれがあると公表した。 11月12日、運営会社と外部専門機関の調査が完了し、情報漏洩や個人情報等の不正閲覧を示す事実は確認されなかったと公表した。",
       "sources": [
         {
           "title": "チューリップテレビ",
           "url": "https://news.yahoo.co.jp/articles/94e22d911ce0fb96edf31909ecfa6a79b81bcba2"
+        },
+        {
+          "title": "富山県 お知らせ（情報漏洩等は確認されませんでした）",
+          "url": "https://www.pref.toyama.jp/130321/event/0811burasuto.html"
         }
       ],
       "severity": "medium",
       "disclosure_days": null,
-      "reliability": "mid"
+      "reliability": "high"
     },
     {
       "id": "2026-11-ucc-comsbi",
@@ -5868,9 +7448,12 @@
       "country": "JP",
       "date_announced": "2026-10-30",
       "affected_count": 27260000,
-      "count_note": "最大約2,726万件（退会済みの利用者を含む）。11月4日の追加調査で、MUJI Card会員情報約109万件（カード番号全桁・生年月日など、有効なカードは約34.5万件）と、アプリ・ネットストアのカード情報約120件も対象と判明",
+      "count_note": "最大約2,726万件（退会済みの利用者を含む）。11月4日の追加調査で、MUJI Card会員情報約109万件（カード番号全桁・生年月日など、有効なカードは約34.5万件）と、アプリ・ネットストアのカード情報約120件も対象と判明。11月9日の第4報で、ネットストアへのリスト型攻撃で約27万件の氏名・住所・電話番号・購入履歴・ポイントなどが漏えいした可能性、氏名・住所・電話番号を含む件数を約75万件に修正",
       "cause": "unauthorized_access",
       "root_cause": "公式アプリのシステムが不正アクセスを受けた（侵入経路は未公表）",
+      "attack_methods": [
+        "credential_stuffing"
+      ],
       "data_types": [
         "メールアドレス",
         "生年月日",
@@ -5878,9 +7461,11 @@
         "クレジットカード番号",
         "氏名",
         "住所",
-        "電話番号"
+        "電話番号",
+        "購入履歴",
+        "ポイント情報"
       ],
-      "summary": "無印良品の公式アプリのシステムが不正アクセスを受け、退会済みの利用者を含む最大約2,726万件のメールアドレス・生年月日・性別が流出した可能性があると公表した。氏名・住所・電話番号・クレジットカード情報は含まれない。該当箇所への接続を遮断して修正を適用した。悪用は確認されていない。11月4日の追加調査で、2021年7月以前に独自特典のために取得したMUJI Cardの会員情報約109万件（カード番号全桁・MUJI Card ID・生年月日、一部は氏名・住所・電話番号など）もアクセスされた可能性があるとクレディセゾンとともに公表した。有効なカードは約34.5万件で、カード名義・有効期限・セキュリティコードは含まれない。",
+      "summary": "無印良品の公式アプリのシステムが不正アクセスを受け、退会済みの利用者を含む最大約2,726万件のメールアドレス・生年月日・性別などが流出した可能性があると公表した。11月4日の追加調査で、2021年7月以前に独自特典のために取得したMUJI Cardの会員情報約109万件（カード番号全桁・生年月日など。有効なカードは約34.5万件）もアクセスされた可能性があるとクレディセゾンとともに公表した。11月9日の第4報では、ネットストアがリスト型攻撃を受けて約27万件の氏名・住所・電話番号・購入履歴・ポイントなどが漏えいした可能性があるとし、氏名・住所・電話番号を含む件数を約75万件に修正した。11月12日の社長会見で、カード番号をマスキングも暗号化もせずに保管し、システム変更後も削除していなかったことを認め、カード再発行の手数料を全額負担するとした。",
       "sources": [
         {
           "title": "良品計画 お知らせ",
@@ -5901,6 +7486,22 @@
         {
           "title": "NHK（MUJI Card）",
           "url": "https://news.web.nhk/newsweb/na/nd-20261104de70494"
+        },
+        {
+          "title": "良品計画 第4報",
+          "url": "https://www.ryohin-keikaku.jp/news/articles/2026_1109_01"
+        },
+        {
+          "title": "ITmedia NEWS（第4報）",
+          "url": "https://www.itmedia.co.jp/news/article/2611/09/2000003038/"
+        },
+        {
+          "title": "ITmedia NEWS（社長会見）",
+          "url": "https://www.itmedia.co.jp/news/article/2611/12/2000003144/"
+        },
+        {
+          "title": "NHK（社長会見）",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261112de74562"
         }
       ],
       "severity": "critical",
@@ -6053,6 +7654,80 @@
       "severity": "high",
       "disclosure_days": 13,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-tokyu-fudosan-hd-studio",
+      "organization": "東急不動産ホールディングス株式会社",
+      "group": "東急グループ",
+      "services": [
+        "ARCHICYCLE 公式サイト"
+      ],
+      "industry": "不動産",
+      "country": "JP",
+      "date_announced": "2026-10-30",
+      "affected_count": 8,
+      "cause": "third_party",
+      "root_cause": "公式サイトの作成に使うStudio社のサービスが不正アクセスを受けた",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "取引先情報",
+        "電話番号",
+        "メールアドレス",
+        "問い合わせ内容"
+      ],
+      "summary": "事業化検討案「ARCHICYCLE」の公式サイトに使っていたStudio社のサービスが不正アクセスを受け、問い合わせフォームから送られた8件の氏名・会社名・電話番号・メールアドレス・問い合わせ内容が流出した可能性があると公表した。",
+      "sources": [
+        {
+          "title": "東急不動産ホールディングス お知らせ",
+          "url": "https://www.tokyu-fudosan-hd.co.jp/news/others/pdf/6e45a8f8df81096d0c34bfe828f2c8231ed647ca.pdf"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-tokyu-land-green-cross-park",
+      "organization": "東急不動産株式会社",
+      "group": "東急グループ",
+      "services": [
+        "GREEN CROSS PARK 公式サイト",
+        "GREENUP Cooldown Project 公式サイト"
+      ],
+      "industry": "不動産",
+      "country": "JP",
+      "date_announced": "2026-10-30",
+      "affected_count": 4082,
+      "count_note": "GREEN CROSS PARK 4,079件、GREENUP Cooldown Project 3件（流出の可能性）",
+      "cause": "vulnerability",
+      "root_cause": "WordPress等のソフトウェアの脆弱性とサーバー内のアクセス権限設定の不備を突かれた",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "data_types": [
+        "取引先情報",
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "問い合わせ内容"
+      ],
+      "summary": "管理する「GREEN CROSS PARK 公式サイト」と「GREENUP Cooldown Project 公式サイト」のAWS共同サーバー環境が不正アクセスを受け、合計4,082件の個人情報が流出した可能性があると公表した。WordPress等の脆弱性とサーバー内のアクセス権限設定の不備を突かれた。対象は会社名、氏名、メールアドレス、電話番号、問い合わせ内容など。10月19日に発覚してサイトを遮断し、個人情報保護委員会に報告した。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "東急不動産 お知らせ",
+          "url": "https://www.tokyu-land.co.jp/news/uploads/4e81382e895fcd779559705843fcb56f83846c28.pdf"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC3069A0Q6A031C2000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-10-vook",
@@ -8145,29 +9820,30 @@
     },
     {
       "id": "2026-10-ehealthcare",
-      "country": "JP",
-      "cause": "third_party",
-      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
-      "vendor": {
-        "name": "株式会社ラクスライトクラウド"
-      },
       "organization": "株式会社eヘルスケア",
       "group": "東邦ホールディングス",
       "services": [
         "医療機関検索サイト関連のメール配信"
       ],
       "industry": "医療",
+      "country": "JP",
+      "leaked": false,
       "date_occurred": "2026-10-21",
       "date_announced": "2026-10-23",
       "affected_count": 8000,
-      "count_note": "医師の氏名とメールアドレス約8000件（可能性）。ほかに医療機関名約1000件、アンケート管理画面のURL約7000件、生年月日約30人分",
+      "count_note": "医師の氏名とメールアドレス約8000件（可能性）。ほかに医療機関名約1000件、アンケート管理画面のURL約7000件、生年月日約30人分。11月12日の続報で、ブラストメールの運営会社と外部調査の結果、外部への漏洩を示す痕跡や事実は確認されなかったと公表",
+      "cause": "third_party",
+      "root_cause": "メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、配信先リストなどが外部に持ち出された",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
       "data_types": [
         "氏名",
         "メールアドレス",
         "生年月日",
         "取引先情報"
       ],
-      "summary": "東邦ホールディングスの子会社で、メール配信に使っていたブラストメールが不正アクセスを受け、医師の氏名とメールアドレス約8000件などが漏えいした可能性があると公表した。住所・電話番号・クレジットカード情報は含まれない。",
+      "summary": "東邦ホールディングスの子会社で、メール配信に使っていたブラストメールが不正アクセスを受け、医師の氏名とメールアドレス約8000件などが漏えいした可能性があると公表した。住所・電話番号・クレジットカード情報は含まれない。 11月12日の続報で、運営会社ラクスライトクラウドの詳細調査と外部調査の結果、同社が扱っていた顧客情報と配信先情報について外部への漏洩を示す痕跡や事実は確認されなかったと公表した。",
       "sources": [
         {
           "title": "日本経済新聞",
@@ -8176,11 +9852,15 @@
         {
           "title": "ミクスOnline",
           "url": "https://www.mixonline.jp/tabid55.html?artid=81069"
+        },
+        {
+          "title": "東邦ホールディングス お知らせ（続報）",
+          "url": "https://www.tohohd.co.jp/news/files/261112.pdf"
         }
       ],
       "severity": "high",
       "disclosure_days": 2,
-      "reliability": "mid"
+      "reliability": "high"
     },
     {
       "id": "2026-10-ehime-np",
@@ -9982,6 +11662,47 @@
       "reliability": "high"
     },
     {
+      "id": "2026-10-oita-pref-kosodate-blastmail",
+      "organization": "大分県",
+      "services": [
+        "おおいた子育て応援パスポート"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "大分県",
+      "date_announced": "2026-10-21",
+      "affected_count": 8218,
+      "count_note": "11月12日の第3報で確定（当初は約8,430件の可能性）",
+      "cause": "third_party",
+      "root_cause": "サイト運営の委託先が使うメール配信サービス「ブラストメール」が不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社ラクスライトクラウド"
+      },
+      "data_types": [
+        "メールアドレス",
+        "会員ID"
+      ],
+      "summary": "「おおいた子育て応援パスポート」のメール配信に使うラクスライトクラウドの「ブラストメール」が不正アクセスを受け、登録者のメールアドレスなどが漏えいした可能性があると10月21日に公表した。11月12日の第3報で、メールアドレス・市町村名・会員区分など8,218件の漏えいを確定した。氏名は登録されていない。",
+      "sources": [
+        {
+          "title": "大分県 第1報",
+          "url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport.html"
+        },
+        {
+          "title": "大分県 第3報",
+          "url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport3.html"
+        },
+        {
+          "title": "大分合同新聞",
+          "url": "https://www.oita-press.co.jp/1010000000/2026/11/12/JDC2026111202214"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-10-pingcap",
       "organization": "PingCAP株式会社",
       "services": [
@@ -10422,6 +12143,59 @@
       ],
       "severity": "medium",
       "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-monex-account-opening",
+      "organization": "マネックス証券株式会社",
+      "services": [
+        "オンライン口座開設システム"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-10-18",
+      "date_announced": "2026-10-20",
+      "affected_count": 1130000,
+      "count_note": "メールアドレス最大113万件（重複・未完了の申込を含む）と、本人確認書類の画像1,592件（運転免許証の表裏、マイナンバーカードの表面、自撮り画像）。11月13日のフォレンジック調査の中間報告による",
+      "cause": "third_party",
+      "root_cause": "外部委託先が運営・管理する口座開設システムが不正アクセスを受けた。原因は調査中",
+      "data_types": [
+        "メールアドレス",
+        "本人確認書類画像",
+        "運転免許情報"
+      ],
+      "summary": "外部委託先が運営・管理する一部の口座開設システムへの不審なアクセスを10月に公表し、11月13日に、2019年10月16日以降にオンライン口座開設の最初の手続きで登録されたメールアドレス最大113万件と、撮影が必要な方式で提出された本人確認書類の画像1,592件（運転免許証の表裏、マイナンバーカードの表面、自撮り画像）が漏えいしたおそれがあると公表した。マイナンバーや口座番号、各種パスワードの漏えいは確認されていない。システムは基幹システムとは別系統で、10月19日に遮断した。",
+      "sources": [
+        {
+          "title": "マネックス証券 プレスリリース",
+          "url": "https://prtimes.jp/main/html/rd/p/000000595.000005159.html"
+        },
+        {
+          "title": "ITmedia Mobile",
+          "url": "https://www.itmedia.co.jp/mobile/articles/2611/13/news096.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB13BCF0T11C26A1000000/"
+        },
+        {
+          "title": "共同通信（47NEWS）",
+          "url": "https://www.47news.jp/15227159.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "マネックス証券からの個別の連絡（メール）が届いていないか確認する"
+        },
+        {
+          "text": "マネックス証券や警察を名乗るメール・SMS・電話で本人確認書類や口座情報を求められても応じない"
+        },
+        {
+          "text": "運転免許証やマイナンバーカードの画像を提出した人は、身に覚えのない口座開設や契約の連絡に注意する"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 2,
       "reliability": "high"
     },
     {
@@ -10946,6 +12720,47 @@
       "severity": "medium",
       "disclosure_days": 5,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-koga-city-applynow",
+      "organization": "福岡県古賀市",
+      "services": [
+        "職員採用試験の採用管理ツール「ApplyNow」"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "福岡県",
+      "date_occurred": "2026-09-07",
+      "date_announced": "2026-10-19",
+      "affected_count": 567,
+      "count_note": "令和4〜6年度の職員採用試験の応募者",
+      "cause": "third_party",
+      "root_cause": "職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "生年月日",
+        "郵便番号",
+        "住所"
+      ],
+      "summary": "職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、令和4〜6年度の応募者567件の氏名、フリガナ、メールアドレス、電話番号、生年月日、郵便番号、住所が漏えいしたと公表した。事業者からのメールを迷惑メールと勘違いして処理が漏れ、公表まで約1か月半かかったと説明した。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "古賀市 お知らせ",
+          "url": "https://www.city.koga.fukuoka.jp/news/d/6746"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 42,
+      "reliability": "high"
     },
     {
       "id": "2026-10-linkstation-gettiis",
@@ -11575,6 +13390,49 @@
       "reliability": "high"
     },
     {
+      "id": "2026-10-anan-city-applynow",
+      "organization": "徳島県阿南市",
+      "services": [
+        "職員採用試験の録画面接システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "徳島県",
+      "date_occurred": "2026-09-07",
+      "date_announced": "2026-10-16",
+      "affected_count": 672,
+      "count_note": "令和4年2月〜令和8年6月の応募者（会計年度任用職員を含む、重複の可能性あり）。ほかに市のユーザー登録情報",
+      "cause": "third_party",
+      "root_cause": "職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "生年月日",
+        "性別",
+        "アカウント名",
+        "パスワード（保管形式不明）",
+        "従業員情報"
+      ],
+      "summary": "職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、令和4年2月から令和8年6月の応募者672件の氏名、メールアドレス、電話番号、生年月日、性別、受験番号と、市のユーザー登録情報（ユーザー名・パスワード・メールアドレス・権限情報）が漏えいしたと公表した。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "阿南市 お知らせ",
+          "url": "https://www.city.anan.tokushima.jp/docs/2026101600060"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 39,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-astemo",
       "organization": "Astemo株式会社",
       "industry": "製造",
@@ -12151,6 +14009,45 @@
       ],
       "severity": "high",
       "disclosure_days": 16,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-tsushima-city-applynow",
+      "organization": "愛知県津島市",
+      "services": [
+        "職員採用候補者試験の録画面接「ApplyNow」"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "愛知県",
+      "date_occurred": "2026-09-07",
+      "date_announced": "2026-10-16",
+      "affected_count": 492,
+      "count_note": "令和4〜6年度の職員採用候補者試験の受験者",
+      "cause": "third_party",
+      "root_cause": "職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "生年月日"
+      ],
+      "summary": "職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、令和4〜6年度の受験者492件の氏名、メールアドレス、電話番号、生年月日が漏えいしたと公表した。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "津島市 お知らせ",
+          "url": "https://www.city.tsushima.lg.jp/shisei/syokuinsaiyou/about/rokuga_fusei.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 39,
       "reliability": "high"
     },
     {
@@ -16140,6 +18037,53 @@
       "disclosure_days": 2
     },
     {
+      "id": "2026-10-uonuma-city-applynow",
+      "organization": "新潟県魚沼市",
+      "services": [
+        "録画面接サービス「ApplyNow」（令和4・5年度）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "新潟県",
+      "date_occurred": "2026-09-07",
+      "date_announced": "2026-10-09",
+      "affected_count": 116,
+      "count_note": "応募登録情報86件と市担当者の登録情報30件",
+      "cause": "third_party",
+      "root_cause": "職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "生年月日",
+        "性別",
+        "アカウント名",
+        "パスワード（保管形式不明）",
+        "従業員情報"
+      ],
+      "summary": "職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、応募者86件の氏名、メールアドレス、電話番号、生年月日、性別、受験番号、合否状況と、市担当者30件のユーザー名・パスワードに関する情報・メールアドレスが漏えいしたと公表した。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "魚沼市 お知らせ",
+          "url": "https://www.city.uonuma.lg.jp/page/1044022.html"
+        },
+        {
+          "title": "新潟日報",
+          "url": "https://www.niigata-nippo.co.jp/articles/-/922037"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 32,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-viewcard",
       "organization": "株式会社ビューカード",
       "group": "JR東日本グループ",
@@ -17505,6 +19449,44 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-10-nakabayashi-applynow",
+      "organization": "ナカバヤシ株式会社",
+      "services": [
+        "採用管理プラットフォーム「ApplyNow」"
+      ],
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2026-09-07",
+      "date_announced": "2026-10-06",
+      "affected_count": 1826,
+      "cause": "third_party",
+      "root_cause": "採用面接業務の委託先ApplyNowの採用管理プラットフォームが不正アクセスを受けた",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "メールアドレス",
+        "電話番号",
+        "生年月日",
+        "性別"
+      ],
+      "summary": "採用面接業務を委託している株式会社ApplyNowの採用管理プラットフォームが第三者の不正アクセスを受け、2020〜2023年の新規学卒者採用の応募者1,826件の氏名、住所、メールアドレス、電話番号、生年月日、性別、職業が漏えいしたと公表した。",
+      "sources": [
+        {
+          "title": "ナカバヤシ お知らせ",
+          "url": "https://www.nakabayashi.co.jp/news/2026/info/1384"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 29,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-nimoca",
       "organization": "株式会社ニモカ",
       "group": "西鉄グループ",
@@ -17882,10 +19864,13 @@
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/26",
       "date_occurred": "2026-10-02",
       "date_announced": "2026-10-05",
-      "affected_count": 130000,
-      "count_note": "少なくとも13万人分（在学生・卒業生・教職員。旧大阪市立大・旧大阪府立大の在籍者を含む）。流出の有無は調査中",
+      "affected_count": 170000,
+      "count_note": "11月13日の第6報で、NECが管理するクラウドストレージから学生・教職員ら約17万人分の漏えいを確認（うち口座番号約20人、健康関連情報約200人、パスポート画像約200人、旅券番号約1,000人）。大学の仮想化基盤にあった約13万人分（別の対象）の流出の有無は調査中",
       "cause": "ransomware",
-      "root_cause": "仮想化基盤に侵入され、約500台のサーバーとバックアップデータが暗号化された",
+      "root_cause": "NECの再委託先の端末から盗まれた管理者の認証情報で侵入され、サーバーが暗号化された",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
       "data_types": [
         "口座番号",
         "住所",
@@ -17893,9 +19878,13 @@
         "氏名",
         "電話番号",
         "メールアドレス",
-        "従業員情報"
+        "従業員情報",
+        "生年月日",
+        "健康・医療情報",
+        "パスポート番号",
+        "本人確認書類画像"
       ],
-      "summary": "情報基盤システム全般で大規模な障害が発生し、ランサムウェアによるサイバー攻撃と判断した。全授業を休講とした。被害を受けたシステムには学生証の顔写真や教職員の給与振込口座を含む個人情報が保管されており、流出の恐れがある。",
+      "summary": "情報基盤システム全般で大規模な障害が発生し、ランサムウェアによるサイバー攻撃と判断した。全授業を休講とした。被害を受けたシステムには学生証の顔写真や教職員の給与振込口座を含む個人情報が保管されており、流出の恐れがある。 11月13日の第6報で、2021年度のシステム移行で受託したNECが削除せずに保管していたクラウドストレージのデータから、学生・教職員ら約17万人分のID・氏名・メールアドレス・生年月日などが漏えいしたと公表した。うち約1,400人分は口座番号、健康関連情報、パスポート画像、旅券番号を含む。9月下旬にNECの再委託先の端末が攻撃され、管理者アカウントなどの認証情報が盗まれていた。",
       "sources": [
         {
           "title": "ビジネス+IT",
@@ -17908,6 +19897,18 @@
         {
           "title": "ライブドアニュース",
           "url": "https://news.livedoor.com/topics/detail/32494364/"
+        },
+        {
+          "title": "大阪公立大学 第6報",
+          "url": "https://www.omu.ac.jp/news/12123"
+        },
+        {
+          "title": "日本経済新聞（第6報）",
+          "url": "https://www.nikkei.com/article/DGXZQOUF139V50T11C26A1000000/"
+        },
+        {
+          "title": "共同通信（47NEWS）",
+          "url": "https://www.47news.jp/15225628.html"
         }
       ],
       "severity": "critical",
@@ -18187,6 +20188,47 @@
       "reliability": "high"
     },
     {
+      "id": "2026-10-asuka-village-applynow",
+      "organization": "奈良県明日香村",
+      "services": [
+        "職員採用試験の一次試験（動画選考）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "奈良県",
+      "date_occurred": "2026-09-07",
+      "date_announced": "2026-10-02",
+      "affected_count": 399,
+      "count_note": "漏えいの可能性",
+      "cause": "third_party",
+      "root_cause": "職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "生年月日",
+        "性別",
+        "住所"
+      ],
+      "summary": "職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、令和3〜6年度の応募者399件の氏名、メールアドレス、電話番号、生年月日、性別などが漏えいした可能性があると公表した。一部の人は住所も含まれる。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "明日香村 お知らせ",
+          "url": "https://www.asukamura.jp/kurashi_soudan_shiken-rouei.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 25,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-daiichi-life",
       "organization": "第一生命保険株式会社",
       "industry": "金融・保険",
@@ -18281,6 +20323,44 @@
       ],
       "severity": "medium",
       "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-miyoshi-city-applynow",
+      "organization": "愛知県みよし市",
+      "services": [
+        "職員採用試験の録画面接システム「Apply Now」"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "愛知県",
+      "date_occurred": "2026-09-07",
+      "date_announced": "2026-10-02",
+      "affected_count": 1035,
+      "count_note": "漏えいの可能性（10月2日時点）",
+      "cause": "third_party",
+      "root_cause": "職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号"
+      ],
+      "summary": "職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、令和4〜6年度の一次試験の応募者1,035件の氏名、メールアドレス、電話番号が漏えいした可能性があると公表した。利用規約では取引終了後に削除することになっていたが、同社が保管を続けていた。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "みよし市 お知らせ",
+          "url": "https://www.city.aichi-miyoshi.lg.jp/soshiki/somu/jinji/3/2/11928.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 25,
       "reliability": "high"
     },
     {
@@ -18512,6 +20592,44 @@
       "severity": "high",
       "disclosure_days": 3,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-10-torikizoku-applynow",
+      "organization": "株式会社エターナルホスピタリティジャパン",
+      "services": [
+        "採用管理プラットフォーム「ApplyNow」"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_occurred": "2026-09-07",
+      "date_announced": "2026-10-01",
+      "affected_count": null,
+      "count_note": "件数は公表されていない",
+      "cause": "third_party",
+      "root_cause": "採用面接業務の委託先ApplyNowの採用管理プラットフォームが不正アクセスを受けた",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "生年月日",
+        "性別"
+      ],
+      "summary": "採用面接業務を委託している株式会社ApplyNowの採用管理プラットフォームが第三者の不正アクセスを受け、「鳥貴族」のパート・アルバイト採用に応募した一部の人の氏名、メールアドレス、電話番号、生年月日、性別が漏えいしたと公表した。件数は公表されていない。",
+      "sources": [
+        {
+          "title": "エターナルホスピタリティジャパン お知らせ",
+          "url": "https://torikizoku.co.jp/assets/uploads/2026/10/2026.10.01.pdf"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 24,
+      "reliability": "high"
     },
     {
       "id": "2026-09-benefit-one",
@@ -19447,6 +21565,37 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-09-maisen-applynow",
+      "organization": "株式会社井筒まい泉",
+      "services": [
+        "採用管理プラットフォーム「ApplyNow」"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_occurred": "2026-09-07",
+      "date_announced": "2026-09-25",
+      "affected_count": null,
+      "count_note": "件数は公表されていない",
+      "cause": "third_party",
+      "root_cause": "採用面接業務の委託先ApplyNowの採用管理プラットフォームが不正アクセスを受けた",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "summary": "採用面接業務を委託している株式会社ApplyNowの採用管理プラットフォームが第三者の不正アクセスを受け、アルバイトの採用応募者の個人情報が外部に漏えいしたと公表した。件数と項目は公表されていない。",
+      "sources": [
+        {
+          "title": "井筒まい泉 お知らせ",
+          "url": "https://mai-sen.com/news/other/post_459/"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 18,
+      "reliability": "high"
+    },
+    {
       "id": "2026-09-smaregi-ec",
       "organization": "株式会社スマレジ",
       "services": [
@@ -19597,6 +21746,37 @@
       "reliability": "high"
     },
     {
+      "id": "2026-09-dynac-applynow",
+      "organization": "株式会社ダイナック",
+      "services": [
+        "採用管理プラットフォーム「ApplyNow」"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_occurred": "2026-09-07",
+      "date_announced": "2026-09-24",
+      "affected_count": null,
+      "count_note": "件数は公表されていない",
+      "cause": "third_party",
+      "root_cause": "採用面接業務の委託先ApplyNowの採用管理プラットフォームが不正アクセスを受けた",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "summary": "採用面接業務を委託している株式会社ApplyNowの採用管理プラットフォームが第三者の不正アクセスを受け、社員・パートナー（アルバイト）の採用応募者の個人情報が外部に漏えいしたと公表した。件数と項目は公表されていない。",
+      "sources": [
+        {
+          "title": "ダイナック お知らせ",
+          "url": "https://www.dynac.co.jp/images/750.pdf"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 17,
+      "reliability": "high"
+    },
+    {
       "id": "2026-09-edogawa-naitei",
       "organization": "東京都江戸川区",
       "industry": "行政",
@@ -19689,6 +21869,48 @@
       "reliability": "high"
     },
     {
+      "id": "2026-09-tokorozawa-city-applynow",
+      "organization": "埼玉県所沢市",
+      "services": [
+        "職員採用試験の動画投稿型面接試験"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "埼玉県",
+      "date_occurred": "2026-09-07",
+      "date_announced": "2026-09-19",
+      "affected_count": 1701,
+      "count_note": "令和4〜7年度の受験者",
+      "cause": "third_party",
+      "root_cause": "職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号"
+      ],
+      "summary": "職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、令和4〜7年度の受験者1,701件の氏名、メールアドレス、電話番号が漏えいしたと公表した。動画データは対象外。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "所沢市 発表",
+          "url": "https://www.city.tokorozawa.saitama.jp/tokoronews/press/r8/9gatu/kojinjyohou.html"
+        },
+        {
+          "title": "東京新聞",
+          "url": "https://www.tokyo-np.co.jp/article/517009"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 12,
+      "reliability": "high"
+    },
+    {
       "id": "2026-09-jgc-digital",
       "organization": "JGC Digital株式会社",
       "group": "日揮グループ",
@@ -19731,6 +21953,51 @@
       "reliability": "high"
     },
     {
+      "id": "2026-09-kashihara-city-applynow",
+      "organization": "奈良県橿原市",
+      "services": [
+        "職員採用試験の動画選考（令和2年度）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "奈良県",
+      "date_occurred": "2026-09-07",
+      "date_announced": "2026-09-18",
+      "affected_count": 313,
+      "count_note": "調査中で確定していない（漏えいの可能性）",
+      "cause": "third_party",
+      "root_cause": "職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "生年月日",
+        "性別",
+        "住所"
+      ],
+      "summary": "職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、令和2年度の応募者313件の氏名、メールアドレス、電話番号、生年月日、性別などが漏えいした可能性があると公表した。一部の人は住所も含まれる。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "橿原市 プレスリリース",
+          "url": "https://www.city.kashihara.nara.jp/soshiki/1003/gyomu/7/5/21209.html"
+        },
+        {
+          "title": "奈良新聞",
+          "url": "https://www.nara-np.co.jp/news/20260919203831.html"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 11,
+      "reliability": "high"
+    },
+    {
       "id": "2026-09-chibagin-shoten",
       "organization": "株式会社ちばぎん商店",
       "group": "千葉銀行グループ",
@@ -19768,6 +22035,86 @@
       ],
       "severity": "high",
       "disclosure_days": 14,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-09-ichinomiya-city-applynow",
+      "organization": "愛知県一宮市",
+      "services": [
+        "職員採用試験の録画面接システム（2022・2023年度）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "愛知県",
+      "date_occurred": "2026-09-07",
+      "date_announced": "2026-09-17",
+      "affected_count": 600,
+      "count_note": "約600件。漏えいの可能性（9月17日時点）",
+      "cause": "third_party",
+      "root_cause": "職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、2022・2023年度の受験者約600件の受験番号、氏名、電話番号、メールアドレスなどが漏えいした可能性があると公表した。契約期間終了後の受験者情報の廃棄・削除が不十分だったことも判明した。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "一宮市 報道発表",
+          "url": "https://www.city.ichinomiya.aichi.jp/shisei/houdouhappyo/1068631/1075827/1077006.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 10,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-09-iruma-city-applynow",
+      "organization": "埼玉県入間市",
+      "services": [
+        "職員採用試験の動画投稿面接試験"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "埼玉県",
+      "date_occurred": "2026-09-07",
+      "date_announced": "2026-09-17",
+      "affected_count": 1276,
+      "count_note": "令和5〜8年度のエントリー者",
+      "cause": "third_party",
+      "root_cause": "職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、令和5〜8年度にエントリーした1,276件の氏名、電話番号、メールアドレス、受験職種が漏えいしたと公表した。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "入間市 お知らせ",
+          "url": "https://www.city.iruma.saitama.jp/soshiki/jinjika/saiyo_jinzai/15254.html"
+        },
+        {
+          "title": "ASCII.jp",
+          "url": "https://ascii.jp/elem/000/004/436/4436399/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 10,
       "reliability": "high"
     },
     {
@@ -19998,6 +22345,48 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-09-osaka-city-recruit-applynow",
+      "organization": "大阪府大阪市",
+      "services": [
+        "職員採用試験の動画選考の録画面接システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "大阪府",
+      "date_occurred": "2026-09-07",
+      "date_announced": "2026-09-15",
+      "affected_count": 106,
+      "count_note": "職員（社会人等技術【夏】）採用試験の申込者。市の公表文に事業者名の記載はない",
+      "cause": "third_party",
+      "root_cause": "職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号"
+      ],
+      "summary": "職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、職員（社会人等技術【夏】）採用試験の申込者106名の氏名（フリガナ）、メールアドレス、電話番号が漏えいしたと公表した。9月15日に漏えいの可能性を公表し、10月1日に確定した。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "大阪市 報道発表（9月15日）",
+          "url": "https://www.city.osaka.lg.jp/hodoshiryo/gyouseiiinkai/0000687493.html"
+        },
+        {
+          "title": "大阪市 報道発表（10月1日）",
+          "url": "https://www.city.osaka.lg.jp/hodoshiryo/gyouseiiinkai/0000688062.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 8,
+      "reliability": "high"
+    },
+    {
       "id": "2026-09-shimada-city",
       "organization": "島田市",
       "services": [
@@ -20157,6 +22546,50 @@
       "severity": "medium",
       "disclosure_days": 33,
       "reliability": "high"
+    },
+    {
+      "id": "2026-09-fukuyama-city-applynow",
+      "organization": "広島県福山市",
+      "services": [
+        "職員採用試験「早期枠」のウェブ面接システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "広島県",
+      "date_occurred": "2026-09-07",
+      "date_announced": "2026-09-11",
+      "affected_count": 168,
+      "count_note": "試験申込者155人と市職員13人（9月18日時点）",
+      "cause": "third_party",
+      "root_cause": "職員採用試験の録画面接サービスの提供会社ApplyNowが不正アクセスを受けた",
+      "attack_methods": [
+        "known_vulnerability"
+      ],
+      "vendor": {
+        "name": "株式会社ApplyNow"
+      },
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "メールアドレス",
+        "電話番号",
+        "従業員情報"
+      ],
+      "summary": "職員採用試験で利用した株式会社ApplyNowの録画面接システムが第三者の不正アクセスを受け、4月の職員採用試験「早期枠」の申込者155人の氏名、生年月日、メールアドレス、電話番号、受験番号と、市職員13人の所属・名字・公用メールアドレスが外部に漏えいしたと発表した。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "山陽新聞",
+          "url": "https://www.sanyonews.jp/article/1991462"
+        },
+        {
+          "title": "中国新聞",
+          "url": "https://www.chugoku-np.co.jp/articles/-/893670"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 4,
+      "reliability": "mid"
     },
     {
       "id": "2026-09-ieej",
