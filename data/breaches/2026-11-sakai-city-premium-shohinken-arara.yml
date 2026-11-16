@@ -1,0 +1,21 @@
+organization: 大阪府堺市
+services:
+  - さかいプレミアム商品券2026（堺商工会議所の事業）
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 大阪府
+date_announced: 2026-11-06
+affected_count: 290000
+count_note: 商品券当選者のメールアドレス・氏名最大約29万件と、参加店舗のメールアドレス最大約2,600件（漏えいのおそれ。調査中）
+cause: third_party
+root_cause: 事業受託者（JTB・EVENTIFY・ギフトパッド事業共同体）が使うアララのメール配信サービスが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+  - 氏名
+summary: 堺商工会議所が実施する「さかいプレミアム商品券2026」の受託者（JTB・EVENTIFY・ギフトパッド事業共同体）が使うアララのメール配信サービスが不正アクセスを受け、商品券当選者のメールアドレス・氏名最大約29万件と参加店舗のメールアドレス最大約2,600件が漏えいしたおそれがあると公表した。実際の件数と対象者は調査中。
+sources:
+  - title: 堺市 報道提供資料
+    url: https://www.city.sakai.lg.jp/shisei/koho/hodo/hodoteikyoshiryo/kakohodo/r8/r811/081106_06.html

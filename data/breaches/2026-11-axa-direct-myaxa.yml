@@ -1,0 +1,23 @@
+organization: アクサ損害保険株式会社
+services:
+  - お客さま専用マイページ「MyAXA」
+industry: 金融・保険
+country: JP
+date_occurred: 2026-11-09
+date_announced: 2026-11-12
+affected_count: 597000
+count_note: MyAXA分の約59万7千件。ロードサービスの委託先プレステージ・コアソリューションから持ち出された分の件数は調査中
+cause: unauthorized_access
+root_cause: 第三者がMyAXAで本来アクセス権限のない顧客情報にアクセスした。原因は調査中
+data_types:
+  - 氏名
+  - 住所
+  - 生年月日
+  - メールアドレス
+  - 電話番号
+summary: お客さま専用マイページ「MyAXA」で11月9日に不審なアクセスを確認し、第三者が本来アクセス権限のない顧客情報にアクセスしたと公表した。対象は約59万7千件で、氏名・住所・生年月日・メールアドレス・電話番号が漏洩した可能性がある。クレジットカード情報は含まれない。ロードサービス業務の委託先プレステージ・コアソリューションへの不正アクセスでも顧客情報の一部が持ち出されたとの報告を受けており、範囲は調査中。
+sources:
+  - title: アクサ損害保険 お知らせ（第2報）
+    url: https://www.axa-direct.co.jp/company/official_info/announce/2026/261113.html
+  - title: アクサ損害保険 お知らせ（第1報）
+    url: https://www.axa-direct.co.jp/company/official_info/announce/2026/261112.html

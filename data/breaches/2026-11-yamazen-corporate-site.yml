@@ -1,0 +1,24 @@
+organization: 株式会社山善
+services:
+  - コーポレートサイトと関連サイトの問い合わせフォーム
+industry: 小売・EC
+country: JP
+date_occurred: 2026-11-11
+date_announced: 2026-11-11
+affected_count: 10508
+count_note: 問い合わせフォームの登録データの延べ件数（漏えいの可能性）
+cause: vulnerability
+root_cause: コーポレートサイトなどで利用しているソフトウェアの脆弱性を悪用された
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 問い合わせ内容
+  - 取引先情報
+summary: コーポレートサイトと関連サイトが利用する外部サーバーで不審なファイルが見つかり、ソフトウェアの脆弱性を悪用した不正アクセスで、問い合わせフォームの登録データ延べ10,508件（氏名・住所・電話番号・メールアドレス・所属・問い合わせ内容など）が漏えいした可能性があると公表した。クレジットカード情報は含まれない。
+sources:
+  - title: 山善 お知らせ（第2報）
+    url: https://www.yamazen.co.jp/news/entry-2948.html
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/yamazen-corporate-site-bizcom-unauthorized-access-202611/

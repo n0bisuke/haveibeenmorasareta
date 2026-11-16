@@ -1,0 +1,29 @@
+organization: 株式会社MTG
+services:
+  - 「Style」ショップ LINE公式アカウント
+industry: 美容・健康
+country: JP
+date_announced: 2026-11-13
+affected_count: 54465
+count_note: LINE友だち情報最大54,465件と会員登録情報最大26,757件（重複を含む）
+cause: third_party
+root_cause: LINE連携サービスCOMSBI（SaaS版）の提供元ソニックムーブが不正アクセスを受けた
+attack_methods:
+  - stolen_credentials
+vendor:
+  name: 株式会社ソニックムーブ
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 住所
+  - 生年月日
+  - 性別
+  - アカウント名
+  - 連携サービスID
+summary: 「Style」ショップのLINE公式アカウントでポイント・クーポン機能に利用しているソニックムーブの「COMSBI（SaaS版）」が不正アクセスを受け、会員登録情報（氏名・電話番号・メールアドレス・住所・生年月日・性別のいずれか）最大26,757件と、友だち情報（LINE表示名・プロフィール画像URL・LINEユーザーID）最大54,465件が漏えいした可能性があると公表した。パスワードとクレジットカード情報は含まれない。
+sources:
+  - title: MTG お知らせ
+    url: https://www.mtg.gr.jp/news/detail/2026/11/article_2682.html
+  - title: ソニックムーブ お知らせ
+    url: https://sonicmoov.com/news/5ttj9ndzh

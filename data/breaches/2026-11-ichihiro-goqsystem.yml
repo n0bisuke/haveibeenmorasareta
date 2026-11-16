@@ -1,0 +1,23 @@
+organization: 一広株式会社
+services:
+  - タオル美術館公式オンラインショップ・楽天市場店・Yahoo!ショッピング店
+industry: 小売・EC
+country: JP
+date_occurred: 2026-11-10
+date_announced: 2026-11-14
+affected_count: 1342
+count_note: 注文1,266件、注文者と届け先の合計1,342名
+cause: third_party
+root_cause: 受注管理システム「GoQSystem」が問い合わせフォームの脆弱性を突かれ不正アクセスを受けた
+vendor:
+  name: 株式会社GoQSystem
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 購入履歴
+summary: 利用する受注管理システム「GoQSystem」が不正アクセスを受け、タオル美術館公式オンラインショップなどの注文1,266件、注文者と届け先の合計1,342名の氏名・住所・電話番号・メールアドレス・注文内容が漏えいしたと公表した。
+sources:
+  - title: タオル美術館 お知らせ
+    url: https://towelmuseum-shop.jp/blogs/news/important-notice-20261114

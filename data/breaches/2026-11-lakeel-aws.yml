@@ -1,0 +1,24 @@
+organization: 株式会社ラキール
+services:
+  - 顧客向けサービスのAWS環境
+industry: IT・通信
+country: JP
+date_occurred: 2026-11-10
+date_announced: 2026-11-11
+affected_count: 140
+count_note: 顧客1社の環境で従業員等140名分の漏えいを確認。ほかの顧客環境も調査中
+cause: unauthorized_access
+root_cause: ソースコード管理サーバーのアクセス制御設定の不足を突かれ、AWSアクセスキーを窃取された
+attack_methods:
+  - broken_access_control
+  - stolen_credentials
+data_types:
+  - 氏名
+  - メールアドレス
+  - 従業員情報
+summary: 利用するAWS環境が不正アクセスを受けたと公表した。ソースコード管理システムのサーバーでアクセス制御の設定不足を突かれ、AWS環境で使うアクセスキーを窃取されたことが発端と特定した。顧客1社の環境で従業員等140名分の氏名・メールアドレスが漏えいし、別の顧客1社の環境ではサーバーへの侵入や不正なユーザーの作成が行われていた。アクセスキーは無効化・更新した。
+sources:
+  - title: ラキール お知らせ（第2報）
+    url: https://www.lakeel.com/ja/news-event/news/detail_20261113.html
+  - title: ビジネス+IT
+    url: https://news.yahoo.co.jp/articles/b32b71a7af5438208b1ab5750cad84b209fc3644

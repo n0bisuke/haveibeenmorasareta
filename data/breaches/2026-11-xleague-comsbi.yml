@@ -1,0 +1,29 @@
+organization: 一般社団法人日本社会人アメリカンフットボール協会
+services:
+  - XリーグのLINE公式アカウント
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-11-09
+date_announced: 2026-11-15
+affected_count: 13126
+count_note: LINE友だち情報13,126件、生年月日・性別4,587件、住所1,532件、氏名・メールアドレス55件（11月14日時点の最大値）
+cause: third_party
+root_cause: 提供元ソニックムーブの運用アカウントの認証情報が不正取得され、COMSBIから情報を取得された
+attack_methods:
+  - stolen_credentials
+vendor:
+  name: 株式会社ソニックムーブ
+data_types:
+  - アカウント名
+  - 連携サービスID
+  - 生年月日
+  - 性別
+  - 住所
+  - 氏名
+  - メールアドレス
+summary: XリーグのLINE公式アカウントで利用する外部サービス「COMSBI（SaaS版）」が不正アクセスを受け、登録者の個人情報が漏えいしたと公表した。提供元ソニックムーブの運用・サポート用アカウントの認証情報が不正取得され、11月9日から10日にかけて情報が取得された。対象は最大でLINE表示名やLINEユーザーIDなど13,126件、生年月日・性別4,587件、住所1,532件、氏名・メールアドレス55件。
+sources:
+  - title: Xリーグ お知らせ
+    url: https://www.xleague.jp/news/unauthorized-access
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/xleague_comsbi_saas_line_leak_13126_20261115/
