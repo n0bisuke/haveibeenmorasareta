@@ -1,0 +1,24 @@
+organization: 株式会社GoQSystem
+group: eMoホールディングス
+services:
+  - 受注管理システム「GoQSystem」
+industry: IT・通信
+country: JP
+date_occurred: 2026-11-10
+date_announced: 2026-11-12
+affected_count: 4367390
+count_note: 第二報で利用店舗1,694社、注文4,984,595件、個人情報4,367,390名分
+cause: vulnerability
+root_cause: システムに設置していた問い合わせフォームの脆弱性を悪用された
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 購入履歴
+summary: EC事業者向け受注管理システム「GoQSystem」が11月10〜11日に不正アクセスを受け、注文データの一部が外部に持ち出されたと公表した。11月13日の第二報で、対象は利用店舗1,694社、注文4,984,595件、4,367,390名分と明らかにした。漏えいしたのは注文者と届け先の氏名・住所・電話番号・メールアドレス・注文内容で、原因は問い合わせフォームの脆弱性の悪用。クレジットカード情報は保有しておらず対象外。
+sources:
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2156617.html
+  - title: ビジネス+IT
+    url: https://news.yahoo.co.jp/articles/a0ded1257ef2a1e5e25f77c2c4979d48a83bfab4

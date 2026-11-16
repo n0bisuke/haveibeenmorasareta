@@ -1,0 +1,18 @@
+organization: 株式会社GFS Education
+services:
+  - GFS監修 投資の達人講座
+industry: 人材・教育
+country: JP
+date_occurred: 2026-11-01
+date_announced: 2026-11-13
+affected_count: null
+count_note: 一部の利用者。件数は公表されていない
+cause: vulnerability
+root_cause: 視聴時間更新プログラムの脆弱性を突かれ、海外のIPアドレスから情報を読み出された
+data_types:
+  - 氏名
+  - メールアドレス
+summary: 「GFS監修 投資の達人講座」で、11月1日未明から2日午前にかけて海外のIPアドレスから視聴時間更新プログラムの脆弱性を突く不正アクセスがあり、一部利用者の氏名とメールアドレスが第三者に読み出されたと公表した。プログラムは修正済み。決済情報の漏えいはない。
+sources:
+  - title: GFS Education お知らせ（投資の達人講座）
+    url: https://gfse.jp/incident-20261113-1/

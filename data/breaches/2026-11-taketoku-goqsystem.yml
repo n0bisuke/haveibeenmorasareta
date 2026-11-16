@@ -1,0 +1,23 @@
+organization: 竹徳かまぼこ株式会社
+services:
+  - オンラインショップ
+industry: 食品
+country: JP
+date_occurred: 2026-11-10
+date_announced: 2026-11-14
+affected_count: null
+count_note: 件数は判明していない
+cause: third_party
+root_cause: 受注管理システム「GoQSystem」が問い合わせフォームの脆弱性を突かれ不正アクセスを受けた
+vendor:
+  name: 株式会社GoQSystem
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 購入履歴
+summary: 利用する受注管理システム「GoQSystem」が不正アクセスを受け、オンラインショップの顧客の個人情報が漏えいした可能性があると公表した。件数は判明していない。
+sources:
+  - title: 竹徳かまぼこ お知らせ
+    url: https://taketoku.com/info/%E3%80%90%E9%87%8D%E8%A6%81%E3%80%91%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%E3%81%AE%E5%8F%AF%E8%83%BD%E6%80%A7%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E7%9F%A5%E3%82%89/

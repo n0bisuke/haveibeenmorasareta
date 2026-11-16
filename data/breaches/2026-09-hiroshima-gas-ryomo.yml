@@ -1,0 +1,22 @@
+organization: 広島ガス株式会社
+services:
+  - 広島ガスの電気
+industry: エネルギー・インフラ
+country: JP
+date_occurred: 2026-08-12
+date_announced: 2026-09-30
+affected_count: 3200
+count_note: 約3,200件（電気を使用する一部の顧客）。11月13日に漏えいの可能性を公表
+cause: third_party
+root_cause: 電気関連システムの開発委託先の両毛システムズがランサムウェアによる不正アクセスを受けた
+vendor:
+  name: 株式会社両毛システムズ
+data_types:
+  - 住所
+  - 契約情報
+summary: 電気関連システムの開発を委託していた両毛システムズが8月12日にランサムウェアによる不正アクセスを受けた件を9月30日に公表した。当初は漏えいなしとの報告だったが、その後の調査で電気を使う一部顧客約3,200件の使用場所の住所、月間使用量、月額料金、契約開始日、契約者番号等が含まれていたことが判明し、11月13日に漏えいの可能性があると公表した。氏名、電話番号、メールアドレス、口座情報、クレジットカード情報は含まれない。
+sources:
+  - title: 広島ガス お知らせ（11月13日）
+    url: https://www.hiroshima-gas.co.jp/com/w_new/info/2026/fusei1113.htm
+  - title: 広島ガス お知らせ（9月30日）
+    url: https://www.hiroshima-gas.co.jp/com/w_new/info/2026/security0930.htm

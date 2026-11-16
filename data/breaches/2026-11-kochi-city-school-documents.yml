@@ -1,0 +1,21 @@
+organization: 高知県高知市
+services:
+  - 市立小学校（布師田小・一宮小）の公文書
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 高知県
+date_occurred: 2026-10-19
+date_announced: 2026-11-13
+affected_count: 1327
+count_note: 一宮小で誤廃棄した文書が約1,320人分、布師田小で紛失した保健調査票が7人分。重複の有無は不明
+cause: human_error
+root_cause: 小学校2校で保健調査票の紛失と、保健関係文書・アレルギー情報の誤廃棄が発覚した
+data_types:
+  - 氏名
+  - 性別
+  - 健康・医療情報
+summary: 高知市教育委員会は、市立小学校2校で個人情報を含む公文書の紛失と誤廃棄が発覚したと公表した。布師田小学校では2023年度卒業生7人分の保健調査票（氏名・性別・予防接種歴など）の紛失が判明した。一宮小学校では2021〜2024年度の児童の氏名や学校検診の結果などを記した保健関係文書と、給食のアレルギー情報を記した文書を誤って廃棄しており、あわせて約1,320人分の情報が記されていた。
+sources:
+  - title: RKC高知放送
+    url: https://news.yahoo.co.jp/articles/06f78035ea9a6828baf7441ed16a2374828fe179

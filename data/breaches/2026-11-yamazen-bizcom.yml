@@ -1,0 +1,25 @@
+organization: 株式会社山善
+services:
+  - ECサイト「山善ビズコム」
+industry: 小売・EC
+country: JP
+date_occurred: 2026-11-11
+date_announced: 2026-11-13
+affected_count: 49
+count_note: 一般会員47名とゲスト購入者2名
+cause: unauthorized_access
+root_cause: カートシステムの一部の機能不備を突かれ、登録情報を取得された
+data_types:
+  - 氏名
+  - 郵便番号
+  - 住所
+  - 性別
+  - 生年月日
+  - 電話番号
+  - メールアドレス
+  - 会員ID
+  - パスワード（ハッシュ化・暗号化済み）
+summary: ECサイト「山善ビズコム」のカートシステムが機能不備を突いた不正アクセスを受け、会員47名とゲスト購入者2名の計49名分の登録情報（氏名・住所・生年月日・電話番号・メールアドレス・ログインID・暗号化されたパスワードなど）が外部に取得されたと公表した。クレジットカード情報は含まれない。
+sources:
+  - title: 山善ビズコム お知らせ
+    url: https://yamazenbizcom.jp/topics_detail.html?info_id=7894

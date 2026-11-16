@@ -1,0 +1,22 @@
+organization: サトフードサービス株式会社
+group: SRSホールディングス
+services:
+  - さとキッズくらぶ（和食さと）のメール配信
+industry: 飲食
+country: JP
+date_occurred: 2026-10-28
+date_announced: 2026-11-07
+affected_count: 318513
+count_note: 会員のメールアドレス
+cause: third_party
+root_cause: 委託先GMOコマースが使うメール配信の再委託先アララが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: 「さとキッズくらぶ」のメール配信に委託先GMOコマースを通じて使っていたアララのメール配信サービスが第三者の不正アクセスを受け、会員が登録したメールアドレス318,513件が外部に持ち出されたと公表した。子どものニックネームや誕生日などは含まれない。10月31日からメール配信を停止している。
+sources:
+  - title: サトフードサービス お知らせ（第二報）
+    url: https://www.sato-res.com/blogs/news/n-20261107
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/sato-kids-club-arara-gmo-commerce-318513-email-breach/

@@ -1,0 +1,19 @@
+organization: Maileva（La Poste Groupe）
+services:
+  - 法人向けの文書・郵便の発送代行
+industry: 物流
+country: FR
+date_announced: 2026-11-14
+affected_count: 22000000
+count_note: 顧客企業・団体が送った文書の受取人2,200万人。日本への影響は報じられていない
+cause: unauthorized_access
+root_cause: 文書発送サービスの基盤がサイバー攻撃を受け、受取人のデータが盗まれた
+data_types:
+  - 氏名
+  - 住所
+summary: フランス郵政公社ラポスト傘下のDocaposteの子会社で、企業向けに文書の発送を請け負うMailevaが9月中旬に大規模なサイバー攻撃を受け、顧客企業・団体が送った文書の受取人2,200万人分の氏名・住所などが流出したと公表した。データの改ざんや破壊は確認されておらず、銀行口座情報などは含まれないと報じられている。仏データ保護機関CNILに届け出て、司法当局が捜査している。
+sources:
+  - title: La Poste Groupe
+    url: https://www.lapostegroupe.com/fr/actualite/cyberattaque-de-maileva-ce-quil-faut-savoir
+  - title: 時事通信
+    url: https://sp.m.jiji.com/article/show/3912249
