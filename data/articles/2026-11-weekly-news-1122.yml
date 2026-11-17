@@ -1,13 +1,18 @@
 title: 情報漏洩ニュースまとめ（2026年11月16日〜22日）
 date: 2026-11-16
+updated: 2026-11-17
 kind: まとめ
 tags:
   - 週間まとめ
   - 不正アクセス
   - 委託先
-summary: EC受注管理システム「GoQSystem」で約437万人分、アクサ損保「MyAXA」で約59.7万件、リンツで約315万件。LINE連携サービス「COMSBI」経由の公表も続いています。今週の情報漏洩ニュースを、日々追記しながらまとめます。
+summary: 楽天証券で最大約1,125万口座。EC受注管理システム「GoQSystem」で約437万人分、アクサ損保「MyAXA」で約59.7万件、リンツで約315万件。LINE連携サービス「COMSBI」経由の公表も続いています。今週の情報漏洩ニュースを、日々追記しながらまとめます。
 body: |
   この記事は今週（11月16日〜22日）のニュースを、日々追記していきます。
+
+  ## 11月17日
+
+  - **楽天証券**：テスト環境のシステムに不正アクセスがあり、ログインIDなどが最大約1,125万口座、うち最大約447万口座は氏名・住所・出金先口座・年収・金融資産なども漏えいしたおそれ。パスワードや暗証番号の漏えい、不正取引は確認されていない。同社はパスキー認証の設定と、取引・出金の一時停止機能の利用を呼びかけている
 
   ## 11月16日まで（週末の公表分）
 
@@ -37,6 +42,7 @@ body: |
 
   前の週のまとめは[情報漏洩ニュースまとめ（11月9日〜15日）](../2026-11-weekly-news-1115/)です。
 related:
+  - 2026-11-rakuten-sec-test-env
   - 2026-11-goqsystem
   - 2026-10-lindt-futureshop
   - 2026-11-axa-direct-myaxa
@@ -46,6 +52,8 @@ related:
   - 2026-11-mtg-style-comsbi
   - 2026-11-maileva
 sources:
+  - title: 楽天証券 プレスリリース
+    url: https://www.rakuten-sec.co.jp/web/company/newsrelease/pdf/press2026111702.pdf
   - title: INTERNET Watch（GoQSystem）
     url: https://internet.watch.impress.co.jp/docs/news/2156617.html
   - title: リンツ お知らせ
