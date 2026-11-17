@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-16T07:20:34.000Z",
-  "count": 951,
+  "generated_at": "2026-11-17T12:15:42.000Z",
+  "count": 952,
   "severity_levels": [
     {
       "id": "critical",
@@ -467,6 +467,62 @@
     }
   ],
   "breaches": [
+    {
+      "id": "2026-11-rakuten-sec-test-env",
+      "organization": "楽天証券株式会社",
+      "group": "楽天グループ",
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-11-11",
+      "date_announced": "2026-11-17",
+      "affected_count": 11250000,
+      "count_note": "ログインIDなどが最大約1,125万口座。このうち最大約447万口座は氏名・住所・出金先口座・年収・金融資産なども対象（退会した顧客を含む）",
+      "cause": "unauthorized_access",
+      "root_cause": "テスト環境のシステム内で管理していた情報が不正アクセスで外部に漏えいしたおそれ。原因は調査中",
+      "data_types": [
+        "会員ID",
+        "氏名",
+        "生年月日",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "口座番号",
+        "資産・取引情報"
+      ],
+      "summary": "11月16日に一部システムへの不正アクセスの可能性を検知して遮断し、調査の結果、11月11日にテスト環境のシステム内で管理していた情報が外部に漏えいしたおそれがあると公表した。部店・お客様コードとログインID（楽天IDとは別）が最大約1,125万口座、このうち最大約447万口座は氏名・カナ氏名・生年月日・住所・電話番号・メールアドレス・勤務先・出金先口座（金融機関・口座番号・名義人）・申告された年収と金融資産・商品別資産情報・最終ログイン日も対象。ログインに必要なパスワードや暗証番号の漏えい、本件による不正アクセス・不正取引は確認されていない。",
+      "sources": [
+        {
+          "title": "楽天証券 プレスリリース",
+          "url": "https://www.rakuten-sec.co.jp/web/company/newsrelease/pdf/press2026111702.pdf"
+        },
+        {
+          "title": "楽天証券 お詫びとお知らせ",
+          "url": "https://www.rakuten-sec.co.jp/web/info/info20261117-02.html"
+        },
+        {
+          "title": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2157207.html"
+        },
+        {
+          "title": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35255023/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "楽天証券からの個別の連絡が届いていないか確認する（楽天証券のメールには URL は書かれていない）"
+        },
+        {
+          "text": "楽天証券や関係会社を名乗るメール・SMS・電話・郵送物で URL を開いたり個人情報やログイン情報を答えたりしない"
+        },
+        {
+          "text": "パスキー認証を設定し、必要ならログイン後のセキュリティ設定で取引や出金の一時停止を設定する"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 6,
+      "reliability": "high"
+    },
     {
       "id": "2026-11-xleague-comsbi",
       "organization": "一般社団法人日本社会人アメリカンフットボール協会",
