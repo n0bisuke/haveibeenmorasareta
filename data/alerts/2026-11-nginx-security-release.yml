@@ -1,0 +1,57 @@
+title: nginx に HTTP/2 の脆弱性など10件、認証なしでコード実行の恐れも（1.31.9 / 1.30.7 へ更新を）
+date: 2026-11-18
+severity: critical
+category: 脆弱性
+audience:
+  - サーバー管理者
+affected:
+  - nginx（オープンソース版）1.31.8 以前・1.30.6 以前
+  - NGINX Plus
+cve:
+  - CVE-2026-123007
+  - CVE-2026-113425
+  - CVE-2026-118899
+  - CVE-2026-123634
+  - CVE-2026-121810
+  - CVE-2026-123633
+  - CVE-2026-120993
+  - CVE-2026-125283
+  - CVE-2026-120967
+  - CVE-2026-123640
+fixed: nginx 1.31.9（mainline）/ 1.30.7（stable）、NGINX Plus 37.3.0.1 / 37.0.8.1
+summary: >-
+  nginx の開発元が11月18日、mainline 版 1.31.9 と stable 版 1.30.7 を公開し、10件の脆弱性を修正した。
+  nginx.org が深刻度「major」とするのは3件。最も重いのは HTTP/2 のフロー制御の問題（CVE-2026-123007）で、
+  F5 によると特別な通信でヒープバッファオーバーフローが起き、ASLR が無効か回避された環境では
+  認証なしでコードを実行される恐れがある（CVSS v3.1 で 8.1、v4.0 で 9.2）。HTTP/2 を使う 1.9.5 以降の
+  ほぼすべての版が対象。F5 はこの脆弱性の報告者として Rapid7、Wiz Research、Xint.io、日本の Ikotas Labs を
+  挙げている。ほかに、メールプロキシ機能の解放後使用（CVE-2026-113425、同様にコード実行の恐れ）、
+  TLS 1.3 でリクエスト本文を読むときの無限ループによるサービス停止（CVE-2026-118899）なども修正された。
+risk: >-
+  HTTP/2 を有効にした nginx（HTTPS のサイトでは一般的な設定）は、認証なしの通信だけでワーカープロセスを
+  停止させられたり、条件がそろえばサーバー上でコードを実行されて乗っ取られたりする恐れがある。
+  nginx は Web サーバーやリバースプロキシ、ロードバランサーとして広く使われており、修正版の公開後は
+  攻撃方法が調べられやすく、更新していないサーバーが狙われやすくなる。
+action_admin: >-
+  nginx を 1.31.9（mainline）または 1.30.7（stable）以降に、NGINX Plus を 37.3.0.1 / 37.0.8.1 以降に更新し、
+  プロセスを再起動する。OS のパッケージで入れている場合は、ディストリビューションの修正版の提供状況を確認する。
+  Docker のベースイメージ（nginx:latest など）や Kubernetes の Ingress コントローラーなど、nginx を
+  内蔵する製品の版も確認する。F5 は CVE-2026-123007 の回避策を示していない。
+checklist:
+  - nginx -v で使っている nginx の版を確認する
+  - 1.31.9 / 1.30.7 以降（NGINX Plus は 37.3.0.1 / 37.0.8.1 以降）に更新し、nginx を再起動する
+  - 設定で http2 を有効にしているサーバーを優先して更新する
+  - メールプロキシ（mail ブロック）を使っている場合も優先して更新する
+  - Docker のベースイメージを取り直して、コンテナを作り直す
+  - Ingress コントローラーやアプライアンスなど、nginx を内蔵する製品の修正版の提供状況を確認する
+sources:
+  - title: nginx.org（nginx security advisories）
+    url: https://nginx.org/en/security_advisories.html
+  - title: nginx.org（nginx-1.30.7 / 1.31.9 のリリース）
+    url: https://nginx.org/
+  - title: F5（K000163926：CVE-2026-123007）
+    url: https://my.f5.com/manage/s/article/K000163926
+  - title: F5（K000163931：CVE-2026-113425）
+    url: https://my.f5.com/manage/s/article/K000163931
+  - title: F5（K000163930：CVE-2026-118899）
+    url: https://my.f5.com/manage/s/article/K000163930
