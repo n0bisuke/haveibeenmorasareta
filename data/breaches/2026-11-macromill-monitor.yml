@@ -1,0 +1,18 @@
+organization: 株式会社マクロミル
+services:
+  - マクロミル モニタサイト
+industry: IT・通信
+country: JP
+date_announced: 2026-11-12
+affected_count: 317
+count_note: 閲覧の痕跡が確認されたモニタ317名。うち82名は振込先口座情報も対象
+cause: unauthorized_access
+root_cause: アンケートモニタサイトの一部システムが第三者の不正アクセスを受けた
+data_types:
+  - 口座番号
+summary: アンケートモニタサービス「マクロミル モニタサイト」の一部システムへの第三者の不正アクセスを10月29日に確認し、モニタ317名の基本情報と登録された属性情報が閲覧された痕跡があると公表した。うち82名はポイント交換先として登録した振込先口座情報も含まれる。一部アカウントで登録メールアドレスの書き換えやポイント交換の操作が試みられたが、不正な交換の完了や不正ログインなどの実害は確認されていない。全モニタのポイント交換機能を停止した。
+sources:
+  - title: マクロミル お詫びとお知らせ
+    url: https://www.macromill.com/press/info/20261112.html
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/11/18/56824.html

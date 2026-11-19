@@ -1,0 +1,16 @@
+organization: 滋賀県東近江市
+services:
+  - 市芸術文化祭事業の電子チケット販売
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 滋賀県
+date_announced: 2026-11-17
+affected_count: 25
+count_note: 25人分
+cause: third_party
+root_cause: 市芸術文化祭事業で利用する電子チケット販売サービスが不正アクセスを受けた
+summary: 市芸術文化祭事業で利用する電子チケット販売サービスが不正アクセスを受け、25人分の個人情報が流出したと公表した。情報は11月8日に運営会社から市に提供されていたが、担当者が放置し、公表は17日になった。
+sources:
+  - title: 京都新聞
+    url: https://www.kyoto-np.co.jp/articles/-/1827863

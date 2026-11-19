@@ -1,0 +1,22 @@
+organization: PwC Japanグループ
+group: PwC
+industry: 団体・その他
+country: JP
+date_announced: 2026-11-16
+affected_count: null
+count_note: 国内の流出人数は公表されていない。対象は従業員・退職者・業務委託先の方々
+cause: third_party
+root_cause: グローバルで使う社内研修・人材育成プログラムの運営委託先のホスト環境が不正アクセスを受けた
+vendor:
+  name: 社内研修・人材育成プログラムの運営委託先（社名非公表）
+data_types:
+  - 従業員情報
+  - 氏名
+  - メールアドレス
+  - 電話番号
+summary: PwCがグローバルで利用する社内研修・人材育成プログラムの運営委託先である外部ベンダーのホスト環境が第三者の不正アクセスを受け、PwC Japanグループの従業員・退職者・業務委託先の方々の個人情報が閲覧され外部へ流出したことを確認したと公表した。対象は従業員番号、氏名（アルファベット）、業務用のメールアドレス・電話番号、所属法人など。クライアントの情報は含まれない。
+sources:
+  - title: PwC Japanグループ 重要なお知らせ
+    url: https://www.pwc.com/jp/ja/notice-261116.html
+  - title: ビジネス＋IT（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/cc322716235b4739c75138aea6598f862b8b804f

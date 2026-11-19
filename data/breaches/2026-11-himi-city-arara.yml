@@ -1,0 +1,24 @@
+organization: 富山県氷見市
+services:
+  - 氷見市お知らせメール
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 富山県
+date_announced: 2026-11-17
+affected_count: 1023
+count_note: 2026年7月1日〜10月31日にお知らせメールが送信された利用者のメールアドレス1,023件
+cause: third_party
+root_cause: お知らせメールの配信に使うアララのメール配信システムが第三者の不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: 熊・イノシシの出没情報などの防災情報や子育て情報を配信する「氷見市お知らせメール」が使うアララのメール配信システムが第三者の不正アクセスを受け、利用者のメールアドレス1,023件が漏えいしたと公表した。対象は2026年7月1日から10月31日にメールが送信された人。メールアドレス以外の情報は漏えいしておらず、不正利用も確認されていない。サービスは停止しており、再開は未定。
+sources:
+  - title: 氷見市 お知らせ
+    url: https://www.city.himi.toyama.jp/gyosei/soshiki/hishokoho/4/15354.html
+  - title: 北國新聞
+    url: https://www.hokkoku.co.jp/articles/-/2293626
+  - title: チューリップテレビ
+    url: https://news.yahoo.co.jp/articles/e4b9342c4f11bc9315ef35a195a54559ba2b1183

@@ -1,0 +1,31 @@
+organization: 株式会社キャリー
+services:
+  - Lili
+industry: 生活サービス
+country: JP
+date_occurred: 2026-07-11
+date_announced: 2026-10-14
+affected_count: 98256
+count_note: 会員・退会者最大約98,256名（本人確認書類画像は最大7,261名、10月22日の第2報で縮小画像の対象最大32,916名を追加）。ほかに登録途中の方最大約10,223名、問い合わせフォーム利用者最大1,364件
+cause: unauthorized_access
+root_cause: 第三者がサーバーに侵入し、パスワードを読み取るプログラムを設置した
+data_types:
+  - メールアドレス
+  - パスワード（平文）
+  - 生年月日
+  - メッセージ・チャット履歴
+  - 本人確認書類画像
+  - 氏名
+  - 電話番号
+  - 問い合わせ内容
+summary: マッチングサイト「Lili」のサーバーが7月11日から10月6日までの約3か月間、第三者の不正侵入を受け、会員・退会者最大約98,256名のメールアドレス、パスワード、生年月日・都道府県などのプロフィール、サイト内メッセージなどが漏えいした可能性があると公表した。パスワードは暗号化して保存していたが、復元するプログラムが設置されており平文で流出した可能性が高い。本人確認書類の画像も対象で、10月22日の第2報で縮小画像の対象を追加した。サイト上に偽のCloudflare確認画面が表示されるケースもあった。
+sources:
+  - title: Lili 不正アクセスによる個人情報の漏えいの可能性について
+    url: https://lili-jo.com/notice/20261014.html
+  - title: Lili 第2報
+    url: https://lili-jo.com/notice/20261022.html
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/lili-unauthorized-access-98256-password-identity-document-clickfix-20261014/
+checklist:
+  - text: Liliと同じパスワードを使い回している他のサービスのパスワードを変更する
+  - text: 「Cloudflare」を装いコマンドの実行を求める画面に従わない

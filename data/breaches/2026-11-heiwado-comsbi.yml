@@ -1,0 +1,33 @@
+organization: 株式会社平和堂
+services:
+  - LINE公式アカウント「CoCoRo Plus」
+  - LINE公式アカウント「kids fest」
+  - LINE公式アカウント「GOODS DEPO」（閉鎖済み）
+industry: 小売・EC
+country: JP
+date_occurred: 2026-11-09
+date_announced: 2026-11-17
+affected_count: 328976
+count_note: 2026年11月10日までに3アカウントを友だち登録した最大328,976名。アカウント間の重複は除いていない最大値
+cause: third_party
+root_cause: LINE連携サービス「COMSBI（SaaS版）」の提供元ソニックムーブの運用・サポート用社内アカウントの認証情報が悪用された
+attack_methods:
+  - stolen_credentials
+vendor:
+  name: 株式会社ソニックムーブ
+data_types:
+  - アカウント名
+  - 連携サービスID
+  - 性別
+  - 生年月日
+  - 郵便番号
+  - 住所
+summary: LINE公式アカウントで利用するソニックムーブのクラウドサービス「COMSBI（SaaS版）」が不正アクセスを受け、「CoCoRo Plus」「kids fest」と閉鎖済みの「GOODS DEPO」の友だち登録者最大328,976名の情報が流出したと公表した。対象はLINEの表示名・プロフィール画像・LINEユーザーID、性別、生年月、郵便番号、都道府県・市区町村。電話番号、メールアドレス、番地以降の住所、クレジットカードなどの決済情報は含まれない。
+sources:
+  - title: 平和堂 お知らせ
+    url: https://www.heiwado.jp/news/2026/1117_shop.html
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/heiwado_comsbi_saas_line_328976_breach_2026
+checklist:
+  - text: 平和堂を名乗る不審なメッセージやフィッシングに注意する
+  - text: LINEで知らないアカウントからの連絡に応じない
