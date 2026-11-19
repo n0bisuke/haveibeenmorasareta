@@ -1,0 +1,27 @@
+organization: 株式会社ディーエイチシー
+services:
+  - DHCオンラインショップ
+industry: 小売・EC
+country: JP
+date_announced: 2026-11-18
+affected_count: 19110000
+count_note: 対象件数は約1,911万件（人数ではなく件数として公表）
+cause: third_party
+root_cause: 委託先プレイドの「KARTE」が不正アクセスを受け、連携していた顧客情報が外部へ漏えいした
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 氏名
+  - メールアドレス
+  - 生年月日
+  - 性別
+  - 会員ID
+summary: 利用している株式会社プレイドのサービス「KARTE」への第三者による不正アクセスにより、KARTEに連携していた顧客情報が外部へ漏えいしたことを確認したと公表した。対象は氏名、メールアドレス、生年月日、年齢、性別、会員ID、メールマガジンの配信設定に関する情報で約1,911万件。クレジットカード情報とオンラインショップのログインパスワードは含まれていないとしている。二次被害は確認されておらず、対象の顧客には個別に連絡する予定で、プレイドと連名で個人情報保護委員会へ報告する予定とした。
+sources:
+  - title: 外部サービス「KARTE」への不正アクセスに伴うお客様情報漏えいに関するお詫びとお知らせ（株式会社ディーエイチシー）
+    url: https://dhc-corporate.co.jp/cms_dH8vjpRq/wp-content/uploads/2026/11/2d7a589cb5008fbc262624582782444f.pdf
+  - title: DHC 顧客の個人情報1911万件流出 「プレイド」不正アクセスで（NHK）
+    url: https://news.web.nhk/newsweb/na/nd-20261118de77979
+checklist:
+  - text: DHCからの個別連絡（登録の連絡先宛て）を確認する
+  - text: DHCを装った不審なメールのリンク・添付を開かず、個人情報やパスワードを入力しない

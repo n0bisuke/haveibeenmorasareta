@@ -1,0 +1,22 @@
+organization: 株式会社CAMPFIRE
+services:
+  - CAMPFIRE
+industry: IT・通信
+country: JP
+date_announced: 2026-11-17
+affected_count: 5819779
+count_note: 2026年11月11日までに会員登録した顧客のうち5,819,779件（第二報で判明）
+cause: third_party
+root_cause: メール配信に利用していたプレイドの「KARTE」が不正アクセスを受け、会員のメールアドレス等が漏えいした
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - メールアドレス
+  - 会員ID
+summary: メール配信システムとして利用している株式会社プレイドの「KARTE」への不正アクセスによる個人情報漏えいを11月17日に報告し、18日の第二報で対象と項目を公表した。対象は2026年11月11日までに会員登録した顧客のうち5,819,779件で、項目はメールアドレスとハッシュ化されたユーザーID。プレイドからはそれ以外の情報の流出は確認されていないと報告を受けており、氏名、住所、電話番号、パスワード、クレジットカード情報、口座情報はKARTEに保持・送信した経緯もないとしている。
+sources:
+  - title: メール配信システム「KARTE」への不正アクセスに関するご報告（第二報）（株式会社CAMPFIRE）
+    url: https://campfire.co.jp/press/2026/11/18/campfire/
+checklist:
+  - text: CAMPFIREや委託先を装った不審なメールのURL・添付ファイルを開かない
+  - text: CAMPFIREがメールでパスワードや口座情報、カード番号を尋ねることはない点を覚えておく

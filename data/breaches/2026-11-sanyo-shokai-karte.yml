@@ -1,0 +1,32 @@
+organization: 株式会社三陽商会
+services:
+  - SANYO ONLINE STORE
+  - SANYO MEMBERSHIP
+  - ECOALF
+  - Paul Stuart
+  - LOVELESS
+industry: 小売・EC
+country: JP
+date_announced: 2026-11-17
+affected_count: null
+count_note: 件数はプレイドが精査中
+cause: third_party
+root_cause: 委託先プレイドの「KARTE」がサーバーの脆弱性を突かれ、取り込んでいた顧客データの一部が外部に読み出された
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 住所
+  - 性別
+  - 生年月日
+  - 購入履歴
+  - 会員ID
+  - 氏名
+  - メールアドレス
+  - 電話番号
+summary: 委託先の株式会社プレイドの「KARTE」が第三者による不正アクセスを受け、同社が管理する顧客データのうち個人情報を含む一部の情報が外部に漏えいしたと公表した。KARTEに取り込んでいた居住地の都道府県コード、性別、生年月日（年齢）、購入ブランド・店舗名の漏えいを確認し、SANYO MEMBERSHIP会員IDが一部含まれる可能性がある。別に、過去に運営していたECサイト「ECOALF」「Paul Stuart」「LOVELESS」の利用者の氏名、メールアドレス、電話番号も漏えいした可能性があり、プレイドが保有していた経緯を確認中としている。クレジットカード情報は含まれない。件数は精査中。
+sources:
+  - title: 委託先事業者「株式会社プレイド」への不正アクセスによる個人情報漏えいに関するお詫びとお知らせ（株式会社三陽商会）
+    url: https://www.sanyo-shokai.co.jp/important/2026/11/17-1301.html
+checklist:
+  - text: 三陽商会やプレイドをかたる不審なメール・SMS・電話のURLや添付を開かない
+  - text: 件数確定後に届く個別の案内を確認する
