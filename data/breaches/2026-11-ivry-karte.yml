@@ -1,0 +1,26 @@
+organization: 株式会社IVRy
+services:
+  - アイブリー
+industry: IT・通信
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_announced: 2026-11-17
+affected_count: null
+count_note: 件数は公表されていない。漏えいの可能性がある情報は調査の進展で変わる可能性がある
+cause: third_party
+root_cause: 委託先プレイドの「KARTE」が不正アクセスを受け、連携していた顧客企業の担当者情報などの一部が外部に漏えいした
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 利用履歴
+summary: Webサイトとサービスでマーケティング・顧客管理ツールとして使っていた株式会社プレイドの「KARTE」が不正アクセスを受け、KARTEに連携していた顧客の情報の一部が外部に漏えいした可能性があると公表した。漏えいの可能性があるのは、契約企業の担当者の氏名、メールアドレス、電話番号などと、Webサイト・管理画面・アプリの利用状況などに関する情報。件数は公表していない。同社のシステムと対話AIサービス「アイブリー」への不正アクセスは確認されていないとしている。
+sources:
+  - title: IVRy 当社が利用するマーケティング/顧客管理ツールへの不正アクセスに伴う、情報漏えいの可能性に関するお知らせ
+    url: https://ivry.jp/corporate/news/ple8g1uck/
+checklist:
+  - text: 連絡が必要な顧客には情報が確定次第、順次連絡するとしている
+  - text: 同社はパスワードなどの認証情報やカード情報をメールや電話で尋ねることはないとしている。同社を装った不審な連絡に注意する

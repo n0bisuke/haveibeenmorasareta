@@ -1,0 +1,27 @@
+organization: タカラベルモント株式会社
+services:
+  - BEAUTY CITY
+  - TB WEB ORDER
+industry: 製造
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_announced: 2026-11-17
+affected_count: null
+count_note: 対象となる顧客の範囲と件数は確認中（第一報時点）
+cause: third_party
+root_cause: 委託先プレイドの「KARTE」が不正アクセスを受け、連携していた会員・サロンの情報の一部が外部に漏えいした
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 氏名
+  - メールアドレス
+  - 生年月日
+  - 性別
+summary: 会員制オンラインストア「BEAUTY CITY」と理美容サロン向け発注サイト「TB WEB ORDER」のメール配信などに使っていた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、利用者の情報の一部が外部に漏えいした可能性があると公表した。11月15日にプレイドからの連絡で把握した。漏えいの可能性があるのは、BEAUTY CITYの氏名、メールアドレス、生年月日、性別、年齢と、TB WEB ORDERのサロン名、メールアドレス。対象の範囲と件数は確認中。クレジットカード情報とログインパスワードはKARTEに連携しておらず、漏えいはないとしている。
+sources:
+  - title: タカラベルモント 【重要】BEAUTY CITY／TB WEB ORDERにおける情報漏えいの可能性について（第一報）
+    url: https://www.takarabelmont.com/info_2026111701/
+checklist:
+  - text: 対象の顧客への連絡は調査結果を踏まえて対応するとしている
+  - text: 本件に便乗した不審なメールやSMSのURL・添付ファイルを開かず、パスワードやカード情報を入力しない
