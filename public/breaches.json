@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-17T12:15:42.000Z",
-  "count": 952,
+  "generated_at": "2026-11-19T01:23:56.000Z",
+  "count": 1060,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,2697 @@
   ],
   "breaches": [
     {
+      "id": "2026-11-au-financial-karte",
+      "organization": "auフィナンシャルサービス株式会社",
+      "services": [
+        "au PAY カード"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-18",
+      "affected_count": null,
+      "count_note": "件数・項目とも公表されていない。影響範囲はプレイドと確認中",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた顧客の個人情報等の一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "summary": "株式会社プレイドの「KARTE」で第三者による不正アクセスが発生したとの報告を受け、その後の調査で、同サービス上で管理している顧客の個人情報等の一部が外部に漏えいした可能性があることが分かったと公表した。漏えいの可能性がある情報の項目や件数は公表しておらず、原因と影響範囲をプレイドと確認している。クレジットカード番号は含まれない。判明後、プレイドとのデータ連携の停止と連携用認証情報の無効化などを行った。",
+      "sources": [
+        {
+          "title": "au PAY カード 当社が利用する外部システム「KARTE」への不正アクセスによる個人情報漏えいの可能性について",
+          "url": "https://www.kddi-fs.com/contents/important/1027.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "本件に便乗した不審なメールやSMSのURL・添付ファイルを開かず、パスワードやカード情報を入力しない"
+        },
+        {
+          "text": "利用明細を確認し、身に覚えのない取引がないか確かめる"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-basefood-karte",
+      "organization": "ベースフード株式会社",
+      "services": [
+        "BASE FOOD公式オンラインショップ"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": 710000,
+      "count_note": "メールアドレスと氏名 約71万件。ほかにメールアドレスのみ約1.5万件、氏名・電話番号を含む形式の情報約2.6万件。対象情報は顧客により異なる",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた顧客の個人情報の一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "電話番号"
+      ],
+      "summary": "株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、同サービスに連携していた顧客の個人情報の一部が外部に漏えいしたと公表した。漏えいしたのはメールアドレスのみが約1.5万件、メールアドレスと氏名が約71万件、氏名と電話番号が含まれる形式の情報が約2.6万件。クレジットカード情報、住所、公式オンラインショップのログインパスワード、購入履歴などは含まれていない。現時点で二次被害は確認されていないとしている。",
+      "sources": [
+        {
+          "title": "ベースフード 【お詫び】外部サービス「KARTE」への不正アクセスに伴う個人情報漏えいに関するお知らせ",
+          "url": "https://basefood.co.jp/news/4718"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "漏えいの対象となった可能性のある顧客には順次、個別に連絡しているとしている"
+        },
+        {
+          "text": "本件に便乗した不審なメールやSMSのURL・添付ファイルを開かず、パスワードやカード情報を入力しない"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-bonaventura-karte",
+      "organization": "BONAVENTURA株式会社",
+      "services": [
+        "BONAVENTURA公式オンラインストア"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": 576742,
+      "count_note": "KARTEに連携していた顧客に関する情報で最大576,742件。対象の顧客と範囲は調査中",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた顧客の氏名や連絡先などが漏洩したおそれ",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "電話番号",
+        "住所",
+        "生年月日",
+        "性別"
+      ],
+      "summary": "ウェブサイトの分析と顧客への案内配信に使っていた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、同サービスに連携していた顧客の情報が外部に漏洩したおそれがあると公表した。11月15日にプレイドから連絡を受けた。対象は最大576,742件で、項目はメールアドレス、氏名、電話番号、住所、年齢、誕生日、性別。クレジットカード情報とログインパスワードは連携しておらず対象外。KARTEへの送信を止めて連携用の認証情報を無効化し、プレイドと連名で個人情報保護委員会への報告を進めている。",
+      "sources": [
+        {
+          "title": "BONAVENTURA 【重要】当社が利用する外部サービスへの不正アクセスに伴う、お客様情報漏洩に関するお知らせ",
+          "url": "https://jp.bonaventura.shop/blogs/news/security-notice-1"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象と範囲が判明しだい、対象の顧客にメールなどで個別に連絡するとしている"
+        },
+        {
+          "text": "BONAVENTURAを装った不審なメール・SMS・電話に、個人情報やパスワード、認証コードを伝えない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-creema-karte",
+      "organization": "株式会社クリーマ",
+      "services": [
+        "Creema"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": null,
+      "count_note": "件数は公表されていない（第一報時点）",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していたユーザーIDなどの一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID"
+      ],
+      "summary": "ハンドメイドマーケットプレイス「Creema」で使っていた株式会社プレイドの「KARTE」のサーバーが脆弱性を悪用した不正アクセスを受け、ユーザー情報の一部が漏えいしたと公表した。プレイドの報告によると、漏えいしたのはユーザーID、過去の取引で使われた都道府県情報（都道府県名のみ）、メールマガジンの受信設定情報。件数は公表していない。氏名、詳細な住所、メールアドレス、パスワード、クレジットカード情報などの漏えいは現時点で確認されていない。",
+      "sources": [
+        {
+          "title": "Creema 【重要】当社が利用するサービス「KARTE」への不正アクセスに伴うユーザー情報の一部漏えいに関するお知らせ（第一報）",
+          "url": "https://www.creema.jp/news/1573/detail"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象の利用者には登録メールアドレスあてに順次連絡し、連絡が難しい場合はお知らせで代えるとしている"
+        },
+        {
+          "text": "パスワード変更など利用者側で必要な手続きはないとしている"
+        }
+      ],
+      "severity": "low",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-dhc-karte",
+      "organization": "株式会社ディーエイチシー",
+      "services": [
+        "DHCオンラインショップ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": 19110000,
+      "count_note": "対象件数は約1,911万件（人数ではなく件数として公表）",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた顧客情報が外部へ漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "生年月日",
+        "性別",
+        "会員ID"
+      ],
+      "summary": "利用している株式会社プレイドのサービス「KARTE」への第三者による不正アクセスにより、KARTEに連携していた顧客情報が外部へ漏えいしたことを確認したと公表した。対象は氏名、メールアドレス、生年月日、年齢、性別、会員ID、メールマガジンの配信設定に関する情報で約1,911万件。クレジットカード情報とオンラインショップのログインパスワードは含まれていないとしている。二次被害は確認されておらず、対象の顧客には個別に連絡する予定で、プレイドと連名で個人情報保護委員会へ報告する予定とした。",
+      "sources": [
+        {
+          "title": "外部サービス「KARTE」への不正アクセスに伴うお客様情報漏えいに関するお詫びとお知らせ（株式会社ディーエイチシー）",
+          "url": "https://dhc-corporate.co.jp/cms_dH8vjpRq/wp-content/uploads/2026/11/2d7a589cb5008fbc262624582782444f.pdf"
+        },
+        {
+          "title": "DHC 顧客の個人情報1911万件流出 「プレイド」不正アクセスで（NHK）",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261118de77979"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "DHCからの個別連絡（登録の連絡先宛て）を確認する"
+        },
+        {
+          "text": "DHCを装った不審なメールのリンク・添付を開かず、個人情報やパスワードを入力しない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-en-japan-karte",
+      "organization": "エン株式会社",
+      "services": [
+        "エン転職",
+        "ミドルの転職"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": 13019,
+      "count_note": "エン転職の求職者情報545件、ミドルの転職の企業アカウントのメールアドレス12,474件の合計（11月18日時点）",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、登録していた求職者・企業の会員情報の一部が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "性別",
+        "メールアドレス"
+      ],
+      "summary": "株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、同サービスに登録していた会員情報の一部が外部に漏えいしたと公表した。11月18日時点で判明したのは、「エン転職」の求職者545件のユーザーID、性別、年齢、都道府県と、「ミドルの転職」の企業アカウントに登録されたメールアドレス12,474件。エン転職の求職者の氏名やメールアドレスの漏えいは確認されていない。同社のシステムへの不正アクセスは確認されておらず、KARTEとの連携停止と認証情報の無効化、個人情報保護委員会への報告を行い、対象者に個別に連絡している。",
+      "sources": [
+        {
+          "title": "エン 当社が利用する外部サービス「KARTE」への不正アクセスによるお客様情報の漏えいに関するお詫びとお知らせ",
+          "url": "https://corp.en-japan.com/newsrelease/2026/46717.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象者にはメールなどで個別に連絡しているとしている"
+        },
+        {
+          "text": "エンや関係企業を装った不審なメールのURL・添付ファイルを開かず、個人情報やパスワードを入力しない"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-higashihiroshima-city-lookmee",
+      "organization": "広島県東広島市",
+      "services": [
+        "市立保育所・認定こども園で利用する保育支援サービス「ルクミー」"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "広島県",
+      "date_announced": "2026-11-18",
+      "affected_count": null,
+      "count_note": "全23施設を利用する世帯の保護者が対象。件数は報道で確認できていない",
+      "cause": "third_party",
+      "root_cause": "全市立保育所・こども園が利用する保育支援サービス「ルクミー」の関連システムが不正アクセスを受けた",
+      "vendor": {
+        "name": "ユニファ株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "市立の保育所と認定こども園の全23施設が利用する保育支援サービス「ルクミー」の関連システムが不正アクセスを受け、施設を利用する世帯の保護者の名前やメールアドレスが漏えいした可能性があると公表した。情報の悪用や二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "中国新聞",
+          "url": "https://www.chugoku-np.co.jp/articles/-/926569"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-iwaki-city-boe-test",
+      "organization": "福島県いわき市教育委員会",
+      "services": [
+        "市内公立学校"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "福島県",
+      "date_announced": "2026-11-18",
+      "affected_count": 2,
+      "count_note": "子ども2人分",
+      "cause": "human_error",
+      "root_cause": "教員が印刷機に置き忘れた採点済みテストの結果が再利用紙に回り、プリントの裏紙として使われた",
+      "data_types": [
+        "氏名"
+      ],
+      "summary": "公立学校の教員が7月ごろにテスト結果を印刷して印刷機に置き忘れ、それが再利用紙の箱に入れられた結果、授業で配ったプリントの裏面に印刷されていたため、子ども2人の氏名や点数などが別の学年の子ども1人に漏えいしたと公表した。11月6日に別の教員が気付いた。個人情報が載った文書は原則として再利用せず廃棄するとした。",
+      "sources": [
+        {
+          "title": "福島民友",
+          "url": "https://www.minyu-net.com/news/detail/2026111817591657395"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-jleague-karte",
+      "organization": "公益社団法人日本プロサッカーリーグ",
+      "services": [
+        "Ｊリーグチケット",
+        "WEリーグチケット",
+        "J.League Fantasy Card"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": 2383073,
+      "count_note": "Ｊリーグチケット・WEリーグチケット2,383,073件（うちWEリーグチケット14件）。ほかにJ.League Fantasy Card 543件",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していたチケットサイト等の利用者情報の一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "生年月日",
+        "性別",
+        "住所",
+        "メールアドレス"
+      ],
+      "summary": "公式チケット販売サイト「Ｊリーグチケット」「WEリーグチケット」と公式デジタルカードゲーム「J.League Fantasy Card」で情報案内に使っていた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、利用者情報の一部が漏えいしたと公表した。チケットサイトは2,383,073件で、ユーザー識別子、生年月日、性別、都道府県、市区町村の一部または全部。Fantasy Cardは543件で、メールアドレスとユーザー識別子。氏名、ＪリーグID、ログインパスワード、クレジットカード情報は含まれない。",
+      "sources": [
+        {
+          "title": "Ｊリーグ Ｊリーグ公式サービスで利用する外部ウェブツールへの不正アクセスについて",
+          "url": "https://www.jleague.jp/news/article/35384/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "漏えいが確認された利用者には順次メールで連絡するとしている"
+        },
+        {
+          "text": "Ｊリーグや関係会社を装ったメールに注意する。本件でパスワードやカード番号を尋ねることはないとしている"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-kashima-antlers-openlogi",
+      "organization": "株式会社鹿島アントラーズ・エフ・シー",
+      "services": [
+        "オンラインストア",
+        "KASHIMA ANTLERS SEASON BOOK"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": 40844,
+      "count_note": "40,844名。対象期間は2017年10月27日〜2024年11月25日と2026年4月8日〜11月9日",
+      "cause": "third_party",
+      "root_cause": "配送業務の一部を委託するオープンロジが第三者の不正アクセスを受け、配送用の顧客情報が流出した",
+      "vendor": {
+        "name": "株式会社オープンロジ"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "購入履歴"
+      ],
+      "summary": "配送業務の一部を委託する株式会社オープンロジで第三者による不正アクセスがあり、顧客情報40,844名分が外部に流出したと公表した。オンラインストアで注文された商品の配送と、会員限定の「KASHIMA ANTLERS SEASON BOOK」の発送に使った情報で、お届け先の氏名・住所・電話番号・メールアドレス、商品名や数量などの配送情報、注文IDが含まれる。対象期間は2017年10月27日〜2024年11月25日と2026年4月8日〜11月9日。クレジットカード情報は含まれない。原因はオープンロジが調査している。",
+      "sources": [
+        {
+          "title": "鹿島アントラーズ 業務委託企業への不正アクセスによる個人情報流出に関するお詫びとお知らせ",
+          "url": "https://www.antlers.co.jp/blogs/news/261118ytxj2u"
+        },
+        {
+          "title": "共同通信（47NEWS）J1鹿島、4万人情報流出 業務委託先に不正アクセス",
+          "url": "https://www.47news.jp/15251580.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "鹿島アントラーズやオープンロジ、カード会社を装った不審なメールのURLや添付ファイルを開かない"
+        },
+        {
+          "text": "ID・パスワードやクレジットカード情報の入力を求めるメールに応じない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-landmark-uniformtown-karte",
+      "organization": "株式会社ランドマーク",
+      "services": [
+        "ユニフォームタウン"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": 4067,
+      "count_note": "プレイドから報告を受けた4,067レコード（11月18日時点）",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた顧客情報の一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "電話番号",
+        "住所"
+      ],
+      "summary": "ユニフォーム通販サイト「ユニフォームタウン」で使っていた株式会社プレイドの「KARTE」が不正アクセスを受け、KARTEに連携していた顧客情報の一部が漏えいしたとプレイドから報告を受けたと公表した。対象は4,067レコードで、メールアドレス、氏名、電話番号、住所が含まれる。クレジットカード情報とサイトのログインパスワードは含まれていない。同社のECサイトや基幹システムへの不正アクセスではないとしている。KARTEとのデータ連携に使っていたアカウントは停止した。",
+      "sources": [
+        {
+          "title": "ユニフォームタウン 当社利用の「KARTE」への不正アクセスによる情報漏えいのお知らせ",
+          "url": "https://www.l-m.co.jp/karte_202611/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象の顧客には個別にメールで案内するとしている"
+        },
+        {
+          "text": "同社や配送業者を装ったメール・SMS・電話に注意し、心当たりのないリンクや添付ファイルを開かない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-meetsmore-karte",
+      "organization": "株式会社ミツモア",
+      "services": [
+        "ミツモア"
+      ],
+      "industry": "生活サービス",
+      "country": "JP",
+      "date_occurred": "2026-11-13",
+      "date_announced": "2026-11-18",
+      "affected_count": 3458469,
+      "count_note": "氏名・メールアドレス・電話番号・生年月日のいずれかを含む60,000人と、会員識別番号と都道府県のみの3,398,469人の合計",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、配信のため連携していた会員情報が読み出された",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "生年月日",
+        "会員ID"
+      ],
+      "summary": "見積もりプラットフォーム「ミツモア」でメールマガジンやLINEの配信に利用している株式会社プレイドの「KARTE」が不正アクセスを受け、連携していた顧客情報の一部が外部に漏えいしたと公表した。対象は氏名・メールアドレス・電話番号・生年月日のいずれかを含む60,000人と、会員ごとの識別番号と都道府県のみの3,398,469人。パスワード、クレジットカード情報、都道府県より詳細な住所、LINE IDは含まれない。11月16日に公表した自社システムへの不正アクセスとは別の事案で、「プロワン」は影響を受けていないとした。",
+      "sources": [
+        {
+          "title": "ミツモア 業務委託先のクラウドサービス「KARTE」への不正アクセスによる個人情報漏えいに関するお詫びとお知らせ",
+          "url": "https://company.meetsmore.com/page/notice-20261118-karte"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象者には登録メールアドレス宛に連絡がある（送信元 no-reply@meetsmore.com）"
+        },
+        {
+          "text": "ミツモアや事業者を名乗る不審なメール・SMS・電話に注意する"
+        },
+        {
+          "text": "本件を理由とするパスワード変更は不要とされている"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 5,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-mhlw-iyakuhin-supply-system",
+      "organization": "厚生労働省",
+      "services": [
+        "医薬品安定供給・流通確認システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "national_gov",
+      "prefecture": "東京都",
+      "date_announced": "2026-11-18",
+      "affected_count": null,
+      "count_note": "件数など影響範囲は調査中",
+      "cause": "third_party",
+      "root_cause": "運用保守を委託するNTTデータが管理するシステムが第三者の不正アクセスを受けた（手口は調査中）",
+      "vendor": {
+        "name": "株式会社NTTデータ"
+      },
+      "data_types": [
+        "氏名",
+        "取引先情報"
+      ],
+      "summary": "医療用医薬品の供給状況を集約・公表する「医薬品安定供給・流通確認システム」が第三者の不正アクセスを受けたと、運用保守の委託先NTTデータから報告があり、11月17日から運用を停止したと公表した。保管データの一部を閲覧した形跡と書き換えを試みた形跡が確認され、一部企業の担当者の氏名と連絡先が漏えいした可能性がある。製造販売業者が報告する「報告システム」には不審なファイルがアップロードされており、削除した。影響範囲と不正アクセスの方法は調査中。",
+      "sources": [
+        {
+          "title": "厚生労働省 報道発表",
+          "url": "https://www.mhlw.go.jp/stf/newpage_77515.html"
+        },
+        {
+          "title": "東京新聞（共同通信）",
+          "url": "https://www.tokyo-np.co.jp/article/529004"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-mufg-bank-karte",
+      "organization": "株式会社三菱UFJ銀行",
+      "group": "三菱UFJフィナンシャル・グループ",
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": 6500000,
+      "count_note": "約650万件（情報の件数）。氏名・連絡先など個人を特定できる情報は含まれない",
+      "cause": "third_party",
+      "root_cause": "Webサイト・アプリでの案内業務の委託先プレイドの「KARTE」が不正アクセスを受け、顧客属性情報が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "性別",
+        "生年月日",
+        "住所"
+      ],
+      "summary": "Webサイト・アプリでの顧客への案内業務を委託している株式会社プレイドのサービス「KARTE」が第三者による不正アクセスを受け、委託契約に基づき提供していた顧客の性別・年齢・居住地域（都道府県または政令指定都市）約650万件が外部に漏えいしたと公表した。氏名、住所、電話番号、メールアドレスなど第三者が顧客を特定・連絡できる情報は含まれておらず、同行のシステムへの不正アクセスではないとしている。不正利用等の被害は確認されておらず、対象の顧客にはメール等で個別に連絡するとした。",
+      "sources": [
+        {
+          "title": "当行委託先が提供するサービスへの不正アクセスについて（三菱UFJ銀行）",
+          "url": "https://www.bk.mufg.jp/news/news2026/pdf/news1118.pdf"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "三菱UFJ銀行からのメール等による個別連絡を確認する"
+        },
+        {
+          "text": "同行や関係会社を装った身に覚えのないメール・SMS・電話には応答や操作をしない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-mufg-esmart-karte",
+      "organization": "三菱UFJ eスマート証券株式会社",
+      "group": "三菱UFJフィナンシャル・グループ",
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-11-13",
+      "date_announced": "2026-11-18",
+      "affected_count": 165000,
+      "count_note": "証券口座番号約6万件と年齢約10.5万件の合計。両者は互いに紐づかない状態で、人数の重複は未公表",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた証券口座番号と年齢の情報が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "口座番号"
+      ],
+      "summary": "アプリ・Webサイトでの案内業務を委託している株式会社プレイドの「KARTE」が不正アクセスを受け、一部の顧客に関連する情報が外部に漏えいしたと公表した。漏えいしたのは証券口座番号約6万件と年齢約10.5万件で、互いに紐づかない状態だとした。氏名・住所・生年月日・メールアドレスなど顧客を特定する情報は含まれず、パスワードやクレジットカード情報、本人確認資料はKARTE上に保有していない。この情報だけでは口座へのログインや取引はできず、二次被害は確認されていない。自社システムへの不正アクセスではないとした。",
+      "sources": [
+        {
+          "title": "三菱UFJ eスマート証券 （お知らせ）当社委託先が提供するサービスへの不正アクセスについて",
+          "url": "https://kabu.com/company/pressrelease/20261118_1.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象者には11月19日中にメールが届き、ログイン後の「お客さまへのお知らせ」にも掲載される"
+        },
+        {
+          "text": "同社をかたる不審なメール・SMS・電話に注意し、ログインはブックマークや公式アプリから行う"
+        },
+        {
+          "text": "パスキーの設定・利用が推奨されている"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 5,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-mufg-morgan-stanley-karte",
+      "organization": "三菱UFJモルガン・スタンレー証券株式会社",
+      "group": "三菱UFJフィナンシャル・グループ",
+      "services": [
+        "オンライントレード"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": 280000,
+      "count_note": "オンライントレード利用者の性別・年代の区分情報で約28万件（報道による）",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、オンライントレード利用者の性別・年代区分が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "性別"
+      ],
+      "summary": "外部委託先の株式会社プレイドが提供する「KARTE」が11月13日に不正アクセスを受け、オンライントレードを利用する顧客の情報約28万件が外部に漏えいしたと公表した。漏えいしたのは顧客の性別と年代の区分情報で、「1」「2」などの数字で表記されたもの。氏名、住所、生年月日など個人を特定できる情報は含まれていないとしている。プレイドとのデータ連携は停止しており、対象の顧客には個別に連絡する。三菱UFJフィナンシャル・グループは同日、傘下5社で計約800万件の漏えいがあったと発表した。",
+      "sources": [
+        {
+          "title": "読売新聞オンライン（Yahoo!ニュース） 三菱ＵＦＪモルガン・スタンレー証券、オンライントレード利用者の情報２８万件が漏えい",
+          "url": "https://news.yahoo.co.jp/articles/444e3fcfdf78f5466598380991e2a2acdad8132a"
+        },
+        {
+          "title": "共同通信（Infoseekニュース） MUFGで漏えい相次ぐ 傘下の5社で計800万件",
+          "url": "https://news.infoseek.co.jp/amp/article/kyodo_1495710671802630804/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "漏えいの対象となった顧客には個別に連絡するとしている"
+        },
+        {
+          "text": "証券会社を装った不審なメールやSMSのリンクからログインせず、公式サイトやアプリから確認する"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-mufg-trust-karte",
+      "organization": "三菱UFJ信託銀行株式会社",
+      "group": "三菱UFJフィナンシャル・グループ",
+      "services": [
+        "三菱UFJ信託ダイレクト",
+        "LINE公式アカウント"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": 230000,
+      "count_note": "インターネットバンキング利用者分とLINE公式アカウント併用者分の合計で約23万件",
+      "cause": "third_party",
+      "root_cause": "ネットバンキング利用者への通知機能の委託先プレイドの「KARTE」が不正アクセスを受け、顧客情報が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "性別",
+        "連携サービスID",
+        "生年月日",
+        "住所"
+      ],
+      "summary": "三菱UFJ信託ダイレクト（インターネットバンキング）利用者への通知等の機能を委託している株式会社プレイドの「KARTE」が不正アクセスを受け、一部の顧客情報が外部に漏えいしたと公表した。会員番号を基に生成した識別子、性別、メールアドレス登録の有無と、LINE公式アカウント併用者については利用者識別番号とアンケート回答（性別、年齢、都道府県）で、合計約23万件。氏名、住所、生年月日、電話番号、メールアドレス、口座番号、暗証番号、パスワードは含まれず、資産や取引への影響は確認されていないとしている。",
+      "sources": [
+        {
+          "title": "当社委託先が提供するサービスへの不正アクセスについて（三菱UFJ信託銀行）",
+          "url": "https://www.tr.mufg.jp/ippan/release/pdf_mutb/261118_2.pdf"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "三菱UFJ信託銀行からのメール等による個別連絡を確認する"
+        },
+        {
+          "text": "同行を装って暗証番号やパスワードを尋ねるメール・SMS・電話に応じない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-nttsolmare-karte",
+      "organization": "NTTソルマーレ株式会社",
+      "group": "NTTグループ",
+      "services": [
+        "コミックシーモア",
+        "MangaPlaza"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": 1170000,
+      "count_note": "MangaPlaza最大約117万件、コミックシーモア最大約13万件。いずれも同一顧客の重複を含む可能性がある",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた会員情報の一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "メールアドレス",
+        "アカウント名",
+        "性別",
+        "生年月日",
+        "郵便番号"
+      ],
+      "summary": "電子書籍ストア「コミックシーモア」と海外向け「MangaPlaza」で使っていた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、連携していた顧客情報の一部が流出したと公表した。11月17日にプレイドの調査で確定した。コミックシーモアは最大約13万件で、ハッシュ化された会員番号、メールアドレス、ニックネーム、性別、生年月日、年齢層。MangaPlazaは最大約117万件で、ハッシュ化された会員番号、性別、Zipコード（米国のみ）、国名、生年月日、年齢。氏名、住所、クレジットカード情報、パスワードの流出はない。",
+      "sources": [
+        {
+          "title": "NTTソルマーレ 業務委託先への不正アクセスによるお客様情報の流出に関するお詫びとお知らせ",
+          "url": "https://www.nttsolmare.com/press/2026/1118.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "流出が確認された顧客には対象のメールアドレスに個別に連絡するとしている"
+        },
+        {
+          "text": "本件に便乗した不審なメールやSMSのURL・添付ファイルを開かず、パスワードやカード情報を入力しない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-odakyu-point-karte",
+      "organization": "小田急電鉄株式会社",
+      "group": "小田急グループ",
+      "services": [
+        "小田急ポイントアプリ"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": null,
+      "count_note": "対象の範囲と件数は確認中。氏名・住所・生年月日・小田急お客さま番号などへの影響も調査中",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、ポイントアプリ利用者の内部IDと性別が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "性別"
+      ],
+      "summary": "「小田急ポイントアプリ」の情報配信などに使っていた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、アプリ利用者に関する情報の一部が外部に漏えいしたと公表した。11月15日に漏えいが判明した。確認しているのは単体では個人を特定できない内部IDと性別で、対象の範囲と件数、氏名・住所・生年月日・小田急お客さま番号などへの影響は調査中。クレジットカード情報やセキュリティコードはKARTEに連携しておらず対象外。アプリとKARTEの連携を無効化し、一部の機能と情報配信を停止している。",
+      "sources": [
+        {
+          "title": "小田急電鉄 当社業務委託先システムである「KARTE」への不正アクセスによる小田急ポイントアプリにおけるお客さま情報の漏えいについて（お詫び）",
+          "url": "https://www.odakyu.jp/notice/makhce0000003vpt-att/makhce0000003vq0.pdf"
+        },
+        {
+          "title": "小田急ポイントカード 【重要】当社業務委託先システムである「KARTE」への不正アクセスによる小田急ポイントアプリにおけるお客さま情報の漏えいについて（お詫び）",
+          "url": "https://www.odakyu-card.jp/news/important/2026/11/18/69878/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "本件でパスワード変更などの対応を求めることはないとしている"
+        },
+        {
+          "text": "小田急や小田急ポイントを装ったメール・SMS・電話に、口座情報やカード情報、暗証番号、認証コードを伝えない"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-om-digital-solutions-karte",
+      "organization": "OMデジタルソリューションズ株式会社",
+      "services": [
+        "OM SYSTEM"
+      ],
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2026-11-13",
+      "date_announced": "2026-11-18",
+      "affected_count": null,
+      "count_note": "対象となる顧客の範囲と人数は確認中として未公表",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた会員情報の一部が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "生年月日",
+        "郵便番号",
+        "会員ID",
+        "利用履歴"
+      ],
+      "summary": "ブランド「OM SYSTEM」のウェブサイトで案内などに利用している株式会社プレイドの「KARTE」が第三者による不正アクセスを受け、連携していた顧客情報の一部が漏えいしたと公表した。漏えいの可能性がある項目は生年月日・誕生月、郵便番号・都道府県、会員識別ID、ページ閲覧履歴などの行動情報で、顧客ごとに異なる。氏名、電話番号、詳細な住所、クレジットカード情報、ログインパスワードはKARTEに保持していないとした。対象の範囲と人数は確認中で、氏名・メールアドレスなど個人を特定できる情報の漏えいは確認されていない。",
+      "sources": [
+        {
+          "title": "OMデジタルソリューションズ 当社が利用する「KARTE」への不正アクセスに伴うお客さま情報の漏えいに関するお知らせ",
+          "url": "https://www.om-digitalsolutions.com/ja/news/corporate-information/nr20261118.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "特別な手続きは不要とされている"
+        },
+        {
+          "text": "同社や関係会社を装った不審なメールや電話に注意し、パスワードや認証コードを伝えない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 5,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-osaki-electric",
+      "organization": "大崎電気工業株式会社",
+      "industry": "製造",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-11-17",
+      "date_announced": "2026-11-18",
+      "affected_count": null,
+      "count_note": "データが外部に流出した可能性も含めて調査中。個人情報についての言及はない",
+      "cause": "ransomware",
+      "root_cause": "ランサムウェア攻撃でサーバー内のデータが暗号化された。侵入経路は公表されていない",
+      "summary": "11月17日10時35分ごろ、サーバー内のデータがランサムウェアで暗号化されていることを確認し、同日正午以降に外部ネットワークとの接続を遮断したと公表した。埼玉事業所と関連生産拠点（岩手大崎電気、大崎プラテック）の生産関連システムを停止しており、スマートメーターなどの生産・出荷ができず、再開時期は未定。データが外部に流出した可能性も含め、外部の専門機関と調査している。緊急対策本部を設置し、警察・関係当局に相談・報告した。",
+      "sources": [
+        {
+          "title": "大崎電気工業 ランサムウェアによるサイバー攻撃に伴う生産停止に関するお知らせ（第一報）",
+          "url": "https://www.osaki.co.jp/ja/notice/20261118.html"
+        },
+        {
+          "title": "大崎電気工業 適時開示（日経会社情報DIGITAL）",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261118582902/"
+        },
+        {
+          "title": "朝日新聞 大崎電気工業にランサムウェア攻撃 スマートメーターの生産停止",
+          "url": "https://www.asahi.com/articles/ASVCL4FGZVCLULFA025M.html"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 1,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-pocket-marche-karte",
+      "organization": "株式会社雨風太陽",
+      "services": [
+        "ポケットマルシェ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-11-13",
+      "date_announced": "2026-11-18",
+      "affected_count": 959452,
+      "count_note": "メールアドレスの件数（退会者・メールアドレス変更の重複分を含む）。人数は消費者944,885人、生産者・生産者サブアカウント10,164人（いずれも退会者を含む）。11月17日時点の調査で、変わる可能性がある",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた会員情報が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "メールアドレス",
+        "アカウント名",
+        "氏名"
+      ],
+      "summary": "「ポケットマルシェ」が顧客情報の管理・案内に利用している株式会社プレイドの「KARTE」が第三者による不正アクセスを受け、連携していた個人情報の一部が外部に漏えいしたと公表した。対象は消費者944,885人と生産者・生産者サブアカウント10,164人（退会者を含む）で、メールアドレスは重複を含め959,452件。漏えいしたのは会員ID、メールアドレス、メール配信可否の設定、一部のニックネーム、一部の生産者の氏名。ログインパスワードやクレジットカード情報はKARTEに連携しておらず、漏えいは確認されていない。個人情報保護委員会に報告した。",
+      "sources": [
+        {
+          "title": "ポケットマルシェ 【重要なお知らせ】外部サービス「KARTE」への不正アクセスに伴う個人情報漏えいに関するお知らせとお詫び",
+          "url": "https://poke-m.com/announcements/905"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象者にはメールで個別に連絡がある"
+        },
+        {
+          "text": "同社やプレイド社をかたる不審なメール・SMSに注意し、URLや添付ファイルを開かない"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 5,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-rentio-karte",
+      "organization": "レンティオ株式会社",
+      "services": [
+        "Rentio"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": null,
+      "count_note": "対象はレンティオ会員の一部で、件数は精査中",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた会員識別用IDとおすすめ商品の情報が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID"
+      ],
+      "summary": "サイト上のおすすめ表示やメールマガジンの配信に使っていた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、KARTEに連携していた顧客情報の一部が漏えいしたと公表した。対象はレンティオ会員の一部で件数は精査中、漏えいした項目は会員識別用のIDと同社からのおすすめ商品。氏名、メールアドレス、住所、電話番号、クレジットカード情報、パスワードは含まれず、IDだけでは個人を特定できないため二次被害のおそれは低いとしている。サイトと同社システムへの不正アクセスは確認されていない。",
+      "sources": [
+        {
+          "title": "レンティオ 当社が利用する「KARTE」への不正アクセスによる情報漏えいのお知らせとお詫び",
+          "url": "https://www.rentio.co.jp/posts/261118"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "調査が完了し対象の顧客が確定したら個別に連絡するとしている"
+        }
+      ],
+      "severity": "low",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-rise-up-morecon-karte",
+      "organization": "株式会社Rise UP",
+      "services": [
+        "モアコンタクト"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-18",
+      "affected_count": null,
+      "count_note": "流出した情報の項目・件数は確認中",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、モアコンタクトが登録していた顧客情報の一部が流出した",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "summary": "コンタクトレンズ通販「モアコンタクト」がサイトやアプリの改善、顧客への案内に使っていた株式会社プレイドのマーケティングツール「KARTE」が第三者の不正アクセスを受け、モアコンタクトがKARTEに登録していた顧客情報の一部が流出したと公表した。11月15日にプレイドから報告を受けた。流出した情報の項目と件数は確認中で、対象の顧客には判明しだいメールで個別に知らせるとしている。同社は10月28日にもメール配信サービス「Cuenote FC」への不正アクセスによる情報流出を公表している。",
+      "sources": [
+        {
+          "title": "Rise UP マーケティングツール「KARTE」への不正アクセスによるお客さま情報の流出に関するご報告",
+          "url": "https://r-up.jp/news/2026-11-18-karte/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象の顧客には詳細が判明しだい個別にメールで知らせるとしている"
+        },
+        {
+          "text": "モアコンタクトがメール・SMS・電話でパスワードやクレジットカード情報を尋ねることはないとしている"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-sankei-digital-karte",
+      "organization": "株式会社産経デジタル",
+      "services": [
+        "ZBAT！",
+        "産経ネットショップ"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": null,
+      "count_note": "件数は公表されていない",
+      "cause": "third_party",
+      "root_cause": "過去に契約していたプレイドの「KARTE」が不正アクセスを受け、2サイトの顧客の氏名とメールアドレスが漏洩した",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "産業経済新聞社と産経デジタルは、産経デジタルが過去に契約していた株式会社プレイドのサービス「KARTE」が不正アクセスを受け、同サービスを使っていた競馬情報サイト「ZBAT！」とオンラインショップ「産経ネットショップ」の個人情報が外部に漏洩したと公表した。漏洩したのは氏名とメールアドレスで、クレジットカード情報などは含まれていない。プレイドとの契約はZBAT！が2019年、ネットショップが2024年に終了していた。件数は公表されておらず、悪用などの被害の報告は受けていないとしている。",
+      "sources": [
+        {
+          "title": "産経ニュース 産経2サイトの個人情報漏洩 過去の契約先に不正アクセス",
+          "url": "https://www.sankei.com/article/20261118-QVA4SOSOERJ4HJEWRIZYPR7RMU/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-schoo-karte",
+      "organization": "株式会社Schoo",
+      "services": [
+        "Schoo",
+        "Schoo for Business"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": 60000,
+      "count_note": "会員60,000件（会員番号・年齢層など）。ほかにSchoo for Business管理ツールの管理者のメールアドレス27,088件と従業員情報の一部",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた会員・管理者の情報の一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "メールアドレス",
+        "従業員情報"
+      ],
+      "summary": "株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、同社がプレイドに預けていた顧客情報の一部が外部に漏えいしたと公表した。Schoo for Business管理ツールの管理者はメールアドレス27,088件、Schoo会員は会員番号、年齢層、メール受信設定の有無、キャンペーン管理用の番号の60,000件。ほかに従業員の氏名（姓）とメールアドレスの一部も含まれる。会員の情報は照合で個人を特定できる可能性があるため、個人情報の漏えいのおそれとして扱う。パスワードとクレジットカード情報は含まれない。",
+      "sources": [
+        {
+          "title": "Schoo 当社が利用する外部サービスへの不正アクセスによるお客様情報漏えいに関するお詫びとお知らせ（PR TIMES）",
+          "url": "https://prtimes.jp/main/html/rd/p/000000385.000006391.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "管理者には11月18日から、対象の会員には特定でき次第、登録メールアドレスあてに連絡するとしている"
+        },
+        {
+          "text": "本件に便乗した不審なメールやSMSのURL・添付ファイルを開かず、パスワードやカード情報を入力しない"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-sendai-city-mail-service",
+      "organization": "宮城県仙台市",
+      "services": [
+        "仙台市メール配信サービス"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "宮城県",
+      "date_occurred": "2026-11-17",
+      "date_announced": "2026-11-18",
+      "affected_count": 30002,
+      "count_note": "メールアドレス30,002件と暗号化されたパスワード26,614件の漏えいを確認（利用者登録数は30,139件）。88アカウントで不正ログインを確認。居住区・生年月日・子どもの生年月日などの属性情報、変更履歴、ログイン履歴は漏えいの可能性があり範囲を調査中",
+      "cause": "third_party",
+      "root_cause": "委託事業者インクレイブが運用するメール配信サービスが脆弱性を悪用され不正アクセスを受けた",
+      "vendor": {
+        "name": "インクレイブ株式会社"
+      },
+      "data_types": [
+        "メールアドレス",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "生年月日",
+        "保存データ（写真・文書等）"
+      ],
+      "summary": "イベントや子育て、ごみ収集などの市政情報を配信する「仙台市メール配信サービス」が第三者の不正アクセスを受け、登録者のメールアドレス30,002件、暗号化されたパスワード26,614件、市からの配信メールの件名・本文・添付ファイルが漏えいしたと公表した。パスワードの一部は解析され、88件の利用者アカウントへの不正ログインを確認した。居住区や生年月日、子どもの生年月日などの属性情報も漏えいした可能性があり調査中。11月17日、職員が業務用アドレスに届いたパスワード再設定メールを不審に思い、委託事業者のインクレイブに調査を依頼して発覚した。悪用された脆弱性は同日修正し、全利用者のパスワードを初期化した。",
+      "sources": [
+        {
+          "title": "仙台市 記者発表資料",
+          "url": "https://www.city.sendai.jp/ict-kikaku/kisha/20261118.html"
+        },
+        {
+          "title": "tbc東北放送",
+          "url": "https://news.yahoo.co.jp/articles/0c19225e6285c526603772d21fdb76c7b3928d8a"
+        },
+        {
+          "title": "仙台放送",
+          "url": "https://news.yahoo.co.jp/articles/c851997baaa56d173f212b6c76ef8d6b3e850f0b"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "仙台市メール配信サービスと同じパスワードを他のサービスで使っていれば変更する"
+        },
+        {
+          "text": "仙台市や関係機関を装った不審なメールのURLや添付ファイルは開かない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 1,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-sms-karte",
+      "organization": "株式会社エス・エム・エス",
+      "services": [
+        "エイチエ",
+        "エイチエ 転職",
+        "ナース専科 就職"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": 484504,
+      "count_note": "漏えいの可能性がある件数の合計（エイチエ191,039件、エイチエ 転職197,985件、ナース専科 就職95,480件）。重複あり、調査中",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、同サービス上で管理していた会員情報が漏えいした可能性がある",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "住所",
+        "郵便番号",
+        "生年月日",
+        "性別",
+        "会員ID",
+        "連携サービスID"
+      ],
+      "summary": "株式会社プレイドの「KARTE」が第三者による不正アクセスを受け、同サービス上で管理していた「エイチエ」「エイチエ 転職」「ナース専科 就職」の顧客情報の一部が外部に漏えいした可能性があると公表した。エイチエは氏名、メールアドレス、電話番号、住所、生年月日、性別、会員ID、KARTE IDなど191,039件、エイチエ 転職は電話番号、生年月日、会員IDなど197,985件、ナース専科 就職は都道府県、生年月日、性別、会員ID 95,480件で、重複を含む。パスワードとクレジットカード情報は含まれていない。",
+      "sources": [
+        {
+          "title": "当社委託先システムへの不正アクセスに伴う、情報漏えいに関するお詫びとお知らせ（第一報）（株式会社エス・エム・エス）",
+          "url": "https://www.bm-sms.co.jp/news-info/info_20261118/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象範囲の確定後に届く個別メールを確認する"
+        },
+        {
+          "text": "エス・エム・エスを装った不審なメール・電話・郵送物に注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-toyota-wallet-karte",
+      "organization": "トヨタファイナンシャルサービス株式会社",
+      "group": "トヨタグループ",
+      "services": [
+        "TOYOTA Wallet"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-11-13",
+      "date_announced": "2026-11-18",
+      "affected_count": 120000,
+      "count_note": "約120,000件。漏えいした可能性がある社内管理用の「お客様番号」の件数",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、TOYOTA Walletの社内管理用のお客様番号が漏えいした可能性",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID"
+      ],
+      "summary": "TOYOTA Walletで使用している株式会社プレイドの「KARTE」が第三者による不正アクセスを受け、TOYOTA Walletの顧客に関する情報の一部が漏えいした可能性があると公表した。対象は社内管理に使う「お客様番号」約120,000件で、ログインIDではなく、この番号だけでは個人の特定やログイン、決済はできないとした。TOYOTA Walletのシステムへの不正アクセスは確認されていない。本件の影響でアプリの一部機能を停止している。個人情報保護委員会に報告した。",
+      "sources": [
+        {
+          "title": "TOYOTA Wallet 株式会社プレイドが提供する「KARTE」への不正アクセス事案に関するお詫びとお知らせ",
+          "url": "https://tscubic.com/toyota-wallet/information/2026/20261118-01/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象者には info@tscubic.com から個別にメールで連絡がある"
+        },
+        {
+          "text": "同社を装った不審なメールに注意する"
+        }
+      ],
+      "severity": "low",
+      "disclosure_days": 5,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-uniformnext-karte",
+      "organization": "ユニフォームネクスト株式会社",
+      "services": [
+        "ユニフォームネクスト",
+        "フードユニフォーム",
+        "ワークユニフォーム",
+        "クリニックユニフォーム",
+        "オフィスユニフォーム",
+        "ユニネク"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-11-13",
+      "date_announced": "2026-11-18",
+      "affected_count": 1701006,
+      "count_note": "最大1,701,006件。2026年11月13日までに同社のECサイト・ユニネクを利用した顧客",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた顧客の登録情報の一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "郵便番号"
+      ],
+      "summary": "Web接客やメール配信に利用している株式会社プレイドの「KARTE」が第三者による不正アクセスを受け、連携していた顧客の登録情報の一部が外部に漏えいしたと公表した。対象はユニフォームネクストや同社運営のECサイト（フードユニフォーム、ワークユニフォーム、クリニックユニフォーム、オフィスユニフォーム）、ユニネクの利用者最大1,701,006件。漏えいしたのは会社名、氏名、メールアドレス、電話番号、郵便番号、職種、業種で、ログインパスワード、クレジットカード情報、金融機関口座情報、住所は含まれない。自社の基幹システムへの不正アクセスではないとした。",
+      "sources": [
+        {
+          "title": "ユニフォームネクスト 【重要なお知らせとお詫び】外部委託先（KARTE）への不正アクセスに伴う個人情報漏えいについて",
+          "url": "https://www.uniformnext.com/info/20261118/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象者には11月18日から info@uniform-next.net から個別にメールで連絡がある"
+        },
+        {
+          "text": "漏えいしたメールアドレス等を悪用したフィッシングや不審なSMSに注意する"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 5,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-wacoal-karte",
+      "organization": "株式会社ワコール",
+      "group": "ワコールグループ",
+      "services": [
+        "ワコールカルネ",
+        "ワコールウェブストア"
+      ],
+      "industry": "製造",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": null,
+      "count_note": "対象件数とその他の情報への影響はプレイドと調査中（11月18日時点）",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた顧客の内部管理番号や生年月日などが漏えいした可能性",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "生年月日",
+        "性別"
+      ],
+      "summary": "WEBサイトや公式アプリ「ワコールカルネ」の利用状況の分析や情報表示に使っていた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、KARTEに連携していた顧客に関する情報の一部が漏えいした可能性があると公表した。11月18日時点で確認しているのは、システム間のデータ連携に使う内部管理用の番号、年齢、生年月日、性別。対象件数とその他の情報への影響は調査中。これらの情報だけでワコールカルネやワコールウェブストアにアクセスすることはできず、同社のシステムへの不正アクセスや二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "ワコール 外部委託先システムへの不正アクセスによるお客様情報の漏えいについて",
+          "url": "https://www.wacoal.jp/notice/202611/20261118.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "調査結果を踏まえ、必要な顧客対応を行い、新たな事実が判明すれば公表するとしている"
+        },
+        {
+          "text": "ワコールを装った不審なメールやSMSのURLを開かず、個人情報を入力しない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-wealthnavi-karte",
+      "organization": "ウェルスナビ株式会社",
+      "services": [
+        "WealthNavi"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": 910000,
+      "count_note": "約91万人。プレイドの調査が継続中で変更の可能性あり",
+      "cause": "third_party",
+      "root_cause": "アプリ・サイトの案内表示に使うプレイドの「KARTE」が不正アクセスを受け、連携した顧客属性情報が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "生年月日",
+        "住所"
+      ],
+      "summary": "アプリやWebサイトでの案内表示に利用している株式会社プレイドの「KARTE」への第三者による不正アクセスにより、連携していた情報の一部が外部に漏えいしたと公表した。約91万人の顧客の識別コード（システムで生成した約40桁の文字列）、生年・月、住んでいる都道府県の漏えいを確認した。氏名、住所、メールアドレス、電話番号、本人確認書類の画像、マイナンバー、クレジットカード情報、ログインID・パスワードは連携しておらず、資産や取引への影響はないとしている。同社のシステムへの不正アクセスではない。",
+      "sources": [
+        {
+          "title": "当社委託先への不正アクセスについて（ウェルスナビ株式会社）",
+          "url": "https://corp.wealthnavi.com/news/info/861"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "本件に便乗してウェルスナビや関係機関を装う不審なメール・SMS・電話・郵便物に注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-welcome-hay-karte",
+      "organization": "株式会社ウェルカム",
+      "services": [
+        "HAYオンラインストア"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": 9890,
+      "count_note": "2023年3月10日〜2025年6月30日にHAYオンラインストアを利用した顧客の一部で最大9,890件。実際の漏洩件数は調査中",
+      "cause": "third_party",
+      "root_cause": "2025年6月に契約を終えた「KARTE」に残っていたデータが、プレイドへの不正アクセスで漏洩した",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "会員ID"
+      ],
+      "summary": "過去に利用していた株式会社プレイドの外部サービス「KARTE」が第三者の不正アクセスを受け、HAYオンラインストアの顧客の個人情報の一部が外部に漏洩したと公表した。11月15日にプレイドから報告を受けた。同社は2025年6月末に契約を終えて連携を停止していたが、解約後90日以内に削除するとの規約に反して一部データが残っていた。対象は2023年3月10日〜2025年6月30日にストアを利用した顧客の一部で最大9,890件、情報は氏名、メールアドレス、会員ID。クレジットカード情報、パスワード、住所、電話番号、注文情報は含まれない。",
+      "sources": [
+        {
+          "title": "HAYオンラインストア 【重要】お客さまサービス（KARTE）における個人情報漏洩に関するお詫びとお知らせ",
+          "url": "https://www.hay-japan.com/topics_detail.html?info_id=8782"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "漏洩の対象となった顧客には順次案内するとしている"
+        },
+        {
+          "text": "ウェルカムや関係事業者を装った不審なメール・SMSのURLを開かず、個人情報や決済情報を入力しない"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-ain-francfranc-karte",
+      "organization": "株式会社アインホールディングス",
+      "services": [
+        "アインズ&トルペ",
+        "アユーラ",
+        "Francfranc"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 8580000,
+      "count_note": "会員情報は最大約858万件（アインズ&トルペ・アユーラ合計最大約260万件、Francfranc最大約598万件）。別にFrancfranc公式ECサイトの購入履歴に関するデータ最大約400万件。いずれも現時点の調査に基づく最大値",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた3ブランドの会員情報が流出した可能性がある",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "性別",
+        "メールアドレス",
+        "電話番号",
+        "会員ID",
+        "住所",
+        "郵便番号"
+      ],
+      "summary": "傘下の「アインズ&トルペ」「アユーラ」「Francfranc」が利用する株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、会員情報が流出した可能性があると公表した。アインズ&トルペとアユーラの会員は合計最大約260万件（氏名、生年月日、性別、メールアドレス、電話番号）、Francfrancの会員は最大約598万件（氏名、生年月日、ユーザーID、都道府県・市区町村）。Francfranc公式ECサイトの購入履歴に関するデータ最大約400万件（性別、生年月日、郵便番号、年代）も対象となる。11月15日にプレイドから連絡を受けた。クレジットカード情報とログインパスワードの流出はないとしている。",
+      "sources": [
+        {
+          "title": "アインズ&トルペ お客さま情報流出の可能性について",
+          "url": "https://ainz-tulpe.jp/blogs/information/%E3%82%A2%E3%82%A4%E3%83%B3%E3%82%BA-%E3%83%88%E3%83%AB%E3%83%9A%E5%85%AC%E5%BC%8F%E3%82%A2%E3%83%97%E3%83%AA%E5%8F%8A%E3%81%B3%E5%85%AC%E5%BC%8F%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B-%E3%81%8A%E5%AE%A2%E3%81%95%E3%81%BE%E6%83%85%E5%A0%B1%E6%B5%81%E5%87%BA%E3%81%AE%E5%8F%AF%E8%83%BD%E6%80%A7%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+        },
+        {
+          "title": "Francfrancにおけるお客さま情報流出の可能性について",
+          "url": "https://help.francfranc.com/hc/ja/articles/64371011900313-Francfranc%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%81%8A%E5%AE%A2%E3%81%95%E3%81%BE%E6%83%85%E5%A0%B1%E6%B5%81%E5%87%BA%E3%81%AE%E5%8F%AF%E8%83%BD%E6%80%A7%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+        },
+        {
+          "title": "Francfranc お客さま情報流出の可能性についてのFAQ",
+          "url": "https://help.francfranc.com/hc/ja/sections/64369202474649"
+        },
+        {
+          "title": "WWDJAPAN 「アインズ＆トルペ」「アユーラ」「フランフラン」で情報流出の可能性 3ブランド合計で最大約858万件",
+          "url": "https://www.wwdjapan.com/articles/2554751"
+        },
+        {
+          "title": "日本経済新聞 フランフラン、会員情報漏洩か 委託先への不正アクセスで",
+          "url": "https://www.nikkei.com/article/DGXZQOUC181LW0Y6A111C2000000/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象の顧客への連絡は調査結果を踏まえて行うとしている。公式サイトのお知らせを確認する"
+        },
+        {
+          "text": "当社や関係会社を装った不審な連絡のURLや添付ファイルを開かず、公式の窓口に問い合わせる"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-akiya-katsuyo",
+      "organization": "空き家活用株式会社",
+      "services": [
+        "AKIDAS",
+        "アキカツCLOUD",
+        "アキカツ調査CLOUD",
+        "アキカツカウンター",
+        "アキカツローン"
+      ],
+      "industry": "不動産",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 290664,
+      "count_note": "データベースの元記録件数の最大値。同一人物が複数記録に含まれるため実人数とは一致しない。うち自治体からの受託業務・協定等に関する情報は2,670件",
+      "cause": "misconfiguration",
+      "root_cause": "業務で利用するデータベースの接続元制限の設定に不備があり、外部から接続・認証を試行できる状態だった",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "空き家の調査・相談・活用支援などに利用するデータベースで外部からの接続元を制限する設定に不備があり、最大29万664件の個人情報が漏えいしたおそれがあると公表した。2026年7月14日にサーバー保守点検で発見し、同日修正した。ID・パスワードによる認証は機能しており、不正な閲覧・取得を裏付ける事実は確認されていないが、接続・操作記録が残っておらず漏えいがなかったとは断定できないとしている。大部分は停止済みの空き家情報データベース事業「AKIDAS」の情報で、自治体からの受託業務などで扱った空き家所有者や相談者の情報も含まれる。",
+      "sources": [
+        {
+          "title": "空き家活用 当社利用サーバーの接続制限設定不備について お知らせとお詫び",
+          "url": "https://corporate.aki-katsu.co.jp/news/server-security-notice-20261117"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/akiya_katsuyo_290664_database_connection_restriction/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象かどうかは空き家活用の個人情報保護相談窓口にメールで確認できる（自治体ではなく同社が窓口）"
+        },
+        {
+          "text": "同社や自治体を装った不審なメール・電話・SMSに注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-alpen-karte",
+      "organization": "株式会社アルペン",
+      "services": [
+        "Alpen Online"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 86494,
+      "count_note": "Alpen Onlineにログインしたことがある顧客86,494件",
+      "cause": "third_party",
+      "root_cause": "メールマガジン配信等の委託先プレイドの「KARTE」が不正アクセスを受け、顧客の氏名とメールアドレスが漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "メールマガジン配信等のマーケティング業務の一部を委託する株式会社プレイドのサービス「KARTE」が11月13日未明に外部から不正アクセスを受け、同システム上で扱っていた顧客の個人情報が外部に漏えいしたと公表した。対象は「Alpen Online」にログインしたことがある顧客86,494件の氏名とメールアドレス。クレジットカード番号等をプレイドに提供した事実はないとしている。二次被害は確認されておらず、対象者が特定でき次第、個別にメールで案内するとした。",
+      "sources": [
+        {
+          "title": "業務委託先システムへの不正アクセスによる個人情報漏えいに関するお知らせ（株式会社アルペン）",
+          "url": "https://store.alpen-group.jp/corporate/news/files/pdf/6e42f9dfe660cb08b2c43664b1e512c6_1.pdf"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "アルペンを装った不審なメールのURL・添付を開かず、個人情報を入力しない"
+        },
+        {
+          "text": "アルペンからの個別メールを確認する"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-bears-karte",
+      "organization": "株式会社ベアーズ",
+      "services": [
+        "家事代行サービス"
+      ],
+      "industry": "生活サービス",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "件数は公表されていない。対象の顧客はプレイドと確認中",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた顧客情報の一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "メールアドレス",
+        "電話番号"
+      ],
+      "summary": "Web接客やメール配信に使っていた株式会社プレイドの「KARTE」で第三者による不正アクセスが発生し、顧客情報が漏えいしたとプレイドから報告を受けたと公表した。報告を受けている漏えい情報は、一部の顧客の顧客ID、メールアドレス、電話番号。件数は公表していない。クレジットカード情報や銀行口座情報などの決済情報と、本人確認書類に関する情報はプレイドに提供していないとしている。",
+      "sources": [
+        {
+          "title": "ベアーズ メール配信サービス提供事業者への不正アクセスによるお客様情報漏洩に関するお詫びとお知らせ",
+          "url": "https://www.happy-bears.com/news/detail35884/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象の顧客が判明次第、電子メールで個別に連絡するとしている"
+        },
+        {
+          "text": "本件に便乗した不審なメールやSMSのURL・添付ファイルを開かず、パスワードやカード情報を入力しない"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-benesse-karte",
+      "organization": "株式会社ベネッセコーポレーション",
+      "group": "ベネッセグループ",
+      "services": [
+        "進研ゼミ",
+        "まいにちのたまひよ",
+        "Benesse High School Online",
+        "グロースナビ",
+        "キャリアナビ"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "漏洩した可能性のある情報の項目・件数はプレイドを通じて精査中",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、一部サービスで連携していた顧客情報が流出した",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "summary": "一部サービスの利用分析やお知らせ配信に使っていた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、KARTEに連携していたデータが第三者に流出したと公表した。11月13日に不正アクセスの報告を受け、11月15日に流出の報告を受けた。対象は進研ゼミ入会申込サイト、進研ゼミ保護者サポートアプリ、まいにちのたまひよ、進研ゼミ小学講座〈チャレンジタッチ〉、Benesse High School Online、グロースナビ、キャリアナビでKARTEと連携した情報（高校向けサービスでは生徒に紐づくデータ連携はない）。情報の項目と件数は精査中。同社のシステムへの不正アクセスはないとしている。",
+      "sources": [
+        {
+          "title": "ベネッセコーポレーション 弊社の利用するWEBサービス「KARTE」への不正アクセスによる情報漏洩のお詫びとお知らせ",
+          "url": "https://company.benesse.co.jp/notice/005.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "詳細が判明しだい、連絡の必要な顧客にメールなどで個別に連絡するとしている"
+        },
+        {
+          "text": "ベネッセや本件のお詫びを装った身に覚えのないメールは、添付ファイルやURLを開かずに削除する"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-caitech-karte",
+      "organization": "カイテク株式会社",
+      "services": [
+        "カイテク"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 27530,
+      "count_note": "流出したメールアドレスの件数（11月18日の続報）。ユーザーID、性別、年齢・生年月日、都道府県も流出したが、メールアドレスとは紐づかない状態",
+      "cause": "third_party",
+      "root_cause": "契約終了後もプレイドの「KARTE」に残っていた登録ワーカーの情報が、同サービスへの不正アクセスで流出した",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "メールアドレス",
+        "会員ID",
+        "性別",
+        "生年月日"
+      ],
+      "summary": "介護・医療のスポットワークサービス「カイテク」で過去に利用していた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、登録ワーカーの個人情報が流出したと公表した。KARTEの契約は2025年1月末に終了していたが、プレイドのシステム上に情報が残っていた。11月18日の続報で、流出した個人情報はメールアドレス27,530件と確定した。ユーザーID、性別、年齢・生年月日、居住地の都道府県も流出したが、メールアドレスとは紐づかない状態で、姓名は流出していないとした。",
+      "sources": [
+        {
+          "title": "カイテク (続報)過去の委託先における不正アクセスに関する調査結果のお知らせ",
+          "url": "https://corp.caitech.co.jp/news/notice261118/"
+        },
+        {
+          "title": "Yahoo!ニュース（Impress Watch）「KARTE」情報漏えい、JINS・三菱UFJなど多数の企業に影響",
+          "url": "https://news.yahoo.co.jp/articles/73dc334fce8b98800001ebfe01bb9eda361f6448"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "メールアドレスが流出した対象のワーカーにはメールで順次連絡するとしている"
+        },
+        {
+          "text": "同社はメールでパスワードや口座情報を尋ねることはないとしている。同社やプレイドを名乗る不審なメールに注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-campfire-karte",
+      "organization": "株式会社CAMPFIRE",
+      "services": [
+        "CAMPFIRE"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 5819779,
+      "count_note": "2026年11月11日までに会員登録した顧客のうち5,819,779件（第二報で判明）",
+      "cause": "third_party",
+      "root_cause": "メール配信に利用していたプレイドの「KARTE」が不正アクセスを受け、会員のメールアドレス等が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "メールアドレス",
+        "会員ID"
+      ],
+      "summary": "メール配信システムとして利用している株式会社プレイドの「KARTE」への不正アクセスによる個人情報漏えいを11月17日に報告し、18日の第二報で対象と項目を公表した。対象は2026年11月11日までに会員登録した顧客のうち5,819,779件で、項目はメールアドレスとハッシュ化されたユーザーID。プレイドからはそれ以外の情報の流出は確認されていないと報告を受けており、氏名、住所、電話番号、パスワード、クレジットカード情報、口座情報はKARTEに保持・送信した経緯もないとしている。",
+      "sources": [
+        {
+          "title": "メール配信システム「KARTE」への不正アクセスに関するご報告（第二報）（株式会社CAMPFIRE）",
+          "url": "https://campfire.co.jp/press/2026/11/18/campfire/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "CAMPFIREや委託先を装った不審なメールのURL・添付ファイルを開かない"
+        },
+        {
+          "text": "CAMPFIREがメールでパスワードや口座情報、カード番号を尋ねることはない点を覚えておく"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-chatplus",
+      "organization": "チャットプラス株式会社",
+      "services": [
+        "ChatPlus",
+        "AI AgentPlus",
+        "FAQPlus"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-11-13",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "対象件数・情報の種類は外部専門機関と調査中で未公表",
+      "cause": "unauthorized_access",
+      "root_cause": "ChatPlusなどで使う一部Webサーバーが第三者の不正アクセスを受けた",
+      "summary": "チャットボットサービス「ChatPlus」「AI AgentPlus」「FAQPlus」で使う一部のWebサーバーが11月13日に第三者の不正アクセスを受け、利用企業から預かる個人データが閲覧・取得された可能性があると公表した。17日に検知し、該当サーバーをネットワークから遮断・隔離した。対象の件数や情報の種類は外部専門機関と調査中としている。利用企業からも、問い合わせ対応などで使うChatPlus経由の漏えいの可能性を知らせる発表が出ている。",
+      "sources": [
+        {
+          "title": "チャットプラス お知らせ",
+          "url": "https://www.chatplus.jp/news/news20261117/"
+        },
+        {
+          "title": "チャットプラス 開示資料",
+          "url": "https://kabuyoho-sls-disclose.ifis.co.jp/9fc/140120261117582334.pdf"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/chatplus_aiagentplus_faqplus_unauthorized_access_2026/"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 4,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-club-tourism-karte",
+      "organization": "クラブツーリズム株式会社",
+      "services": [
+        "インターネット会員"
+      ],
+      "industry": "旅行",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 4060000,
+      "count_note": "約406万件（2026年11月12日時点のインターネット会員）。10月31日公表のサーバー不正アクセス（約432万件）とは別事案",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、同サービスで管理していた会員情報が漏えいした可能性がある",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "性別",
+        "生年月日"
+      ],
+      "summary": "サイトのサービス向上のため利用していた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、2026年11月12日時点のインターネット会員約406万件の情報が外部に漏えいした可能性があると公表した。対象は会員番号（暗号化して変換した文字列）、予約システムの顧客番号、性別、年齢、生年月日。氏名、住所、電話番号、メールアドレス、ログインパスワード、旅券情報、クレジットカード情報、口座番号は含まれない。10月31日に公表した自社サーバーへの不正アクセスとは別の事案で、関連はないとしている。",
+      "sources": [
+        {
+          "title": "クラブツーリズム 株式会社プレイドで発生した不正アクセスによる個人情報漏えいの可能性に関するお詫びとお知らせ",
+          "url": "https://www.club-t.com/ct/news/2026/1117_1/"
+        },
+        {
+          "title": "日本経済新聞 クラブツーリズム、約406万件情報漏洩か 委託先への不正アクセス",
+          "url": "https://www.nikkei.com/article/DGXZQOUC1818S0Y6A111C2000000/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "漏えいの可能性がある会員には順次連絡するとしている"
+        },
+        {
+          "text": "クラブツーリズムを装った不審なサイトやバナーで認証情報やクレジットカード情報を入力しない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-daytona-karte",
+      "organization": "株式会社デイトナ・インターナショナル",
+      "services": [
+        "Daytona Park: FREAK'S STORE公式通販",
+        "+PLUS MIRROR"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 970000,
+      "count_note": "Daytona Parkが約97万件（重複あり）。別に子会社Innovation Studioの「+PLUS MIRROR」で149件",
+      "cause": "third_party",
+      "root_cause": "クーポン表示や通知配信に使うプレイドの「KARTE」が不正アクセスを受け、預けていた会員情報が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "性別",
+        "生年月日",
+        "会員ID"
+      ],
+      "summary": "「Daytona Park: FREAK'S STORE公式通販」のサイトとアプリで利用している株式会社プレイドの「KARTE」が外部から不正アクセスを受け、同社に預けていた会員情報の一部が漏えいしたと公表した。漏えいが確認されたのは会員の一部の氏名、メールアドレス、性別、生年月日、年齢、会員IDで約97万件（重複あり）。パスワード、クレジットカード情報、住所、電話番号、購入履歴の漏えいは確認されていない。子会社Innovation Studioの「+PLUS MIRROR」でも利用者情報149件（氏名、メールアドレス、会員ID）の漏えいを確認した。",
+      "sources": [
+        {
+          "title": "業務委託先への不正アクセスによる個人情報漏えいに関するお詫びとお知らせ(第一報)（DAYTONA INTERNATIONAL）",
+          "url": "https://daytonajp.com/news/3821/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "名前や誕生日を記載してクーポン・キャンペーンを装う不審なメールに注意する"
+        },
+        {
+          "text": "対象者に届く電子メールでの個別連絡を確認する（パスワードやカード情報の入力を求めることはない）"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-docomo-finance-karte",
+      "organization": "株式会社ドコモ・ファイナンス",
+      "group": "NTTグループ",
+      "industry": "金融・保険",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "漏えいの有無と影響範囲は調査中。項目・件数は公表されていない",
+      "cause": "third_party",
+      "root_cause": "利用していたプレイドの「KARTE」が不正アクセスを受け、管理していた顧客の個人情報等が漏えいした可能性がある",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "summary": "利用している株式会社プレイドの「KARTE」が第三者による不正アクセスを受け、同サービス上で管理していた顧客の個人情報等が外部に漏えいした可能性があることが判明したと公表した。影響範囲の確認と安全性の確保が完了するまで、11月17日15時45分からWebサイト経由の会員サイトへのログインを一時停止し（公式アプリからはログイン可能）、自動音声応答のガイダンスと一部サービスをオペレーター対応に切り替えた。漏えいの有無と影響範囲はプレイドと連携して調査中で、項目や件数は公表されていない。",
+      "sources": [
+        {
+          "title": "個人情報漏えいの可能性に伴う当社対応について（株式会社ドコモ・ファイナンス）",
+          "url": "https://finance.docomo.ne.jp/member/news/release261117.pdf"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "ドコモ・ファイナンスを装った不正なサイトへの誘導に注意し、個人情報や認証コードを入力しない"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-gdo-karte",
+      "organization": "株式会社ゴルフダイジェスト・オンライン",
+      "services": [
+        "GDO（Webサイト・アプリ）"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 6974506,
+      "count_note": "会員最大6,974,506件（重複を含む。人数は精査中）",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、同サービスに登録していた会員情報の一部が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "生年月日",
+        "郵便番号"
+      ],
+      "summary": "Webサイトとアプリで利用する株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、同サービスに登録していた会員情報の一部が外部に漏えいしたと公表した。対象は会員最大6,974,506件（重複を含む）で、項目は識別子ID、誕生日または誕生月、年代、郵便番号、メール配信の可否を管理する情報。氏名、郵便番号以外の住所、電話番号、メールアドレス、パスワード、決済情報は含まれない。自社システムへの不正アクセスは確認されていない。11月13日からアプリのプッシュ通知など一部機能を停止した。",
+      "sources": [
+        {
+          "title": "GDO 当社が利用する外部サービス「KARTE」への不正アクセスによるお客様情報の漏えいに関するお詫びとお知らせ",
+          "url": "https://company.golfdigest.co.jp/corp/pr/2026111701.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "プレイドをかたる不審なメール・SMS・電話に注意する。GDOがパスワードや決済情報を尋ねることはないとしている"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-goldwin-karte",
+      "organization": "株式会社ゴールドウイン",
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "対象となる顧客の範囲と件数は調査中",
+      "cause": "third_party",
+      "root_cause": "業務委託先のプレイドの「KARTE」が不正アクセスを受け、連携していた顧客情報の一部が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "生年月日",
+        "メールアドレス",
+        "性別",
+        "利用履歴"
+      ],
+      "summary": "業務委託先システムである株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、同サービスに連携していた顧客情報の一部が漏えいしたと公表した。11月15日に判明した。漏えいの可能性がある情報は氏名、住所、生年月日、メールアドレス、性別、メールマガジンの受信設定、イベント参加情報、最終利用店舗情報など。クレジットカード情報、銀行口座情報、ログインパスワードは含まれない。連携用の認証情報を無効化した。対象範囲と件数は調査中。",
+      "sources": [
+        {
+          "title": "ゴールドウイン 当社業務委託先システムへの不正アクセスによるお客さま情報漏えいに関するお詫びとお知らせ",
+          "url": "https://about.goldwin.co.jp/news/page-41040"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "ゴールドウインを装った不審なメール・SMS・電話に注意する（口座情報やパスワード等を尋ねることはないとしている）"
+        },
+        {
+          "text": "心当たりのないメールやSMSのリンク・添付ファイルを開かない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-heiwado-comsbi",
+      "organization": "株式会社平和堂",
+      "services": [
+        "LINE公式アカウント「CoCoRo Plus」",
+        "LINE公式アカウント「kids fest」",
+        "LINE公式アカウント「GOODS DEPO」（閉鎖済み）"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-11-09",
+      "date_announced": "2026-11-17",
+      "affected_count": 328976,
+      "count_note": "2026年11月10日までに3アカウントを友だち登録した最大328,976名。アカウント間の重複は除いていない最大値",
+      "cause": "third_party",
+      "root_cause": "LINE連携サービス「COMSBI（SaaS版）」の提供元ソニックムーブの運用・サポート用社内アカウントの認証情報が悪用された",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "vendor": {
+        "name": "株式会社ソニックムーブ"
+      },
+      "data_types": [
+        "アカウント名",
+        "連携サービスID",
+        "性別",
+        "生年月日",
+        "郵便番号",
+        "住所"
+      ],
+      "summary": "LINE公式アカウントで利用するソニックムーブのクラウドサービス「COMSBI（SaaS版）」が不正アクセスを受け、「CoCoRo Plus」「kids fest」と閉鎖済みの「GOODS DEPO」の友だち登録者最大328,976名の情報が流出したと公表した。対象はLINEの表示名・プロフィール画像・LINEユーザーID、性別、生年月、郵便番号、都道府県・市区町村。電話番号、メールアドレス、番地以降の住所、クレジットカードなどの決済情報は含まれない。",
+      "sources": [
+        {
+          "title": "平和堂 お知らせ",
+          "url": "https://www.heiwado.jp/news/2026/1117_shop.html"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/heiwado_comsbi_saas_line_328976_breach_2026"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "平和堂を名乗る不審なメッセージやフィッシングに注意する"
+        },
+        {
+          "text": "LINEで知らないアカウントからの連絡に応じない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 8,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-higashiomi-city-ticket",
+      "organization": "滋賀県東近江市",
+      "services": [
+        "市芸術文化祭事業の電子チケット販売"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "滋賀県",
+      "date_announced": "2026-11-17",
+      "affected_count": 25,
+      "count_note": "25人分",
+      "cause": "third_party",
+      "root_cause": "市芸術文化祭事業で利用する電子チケット販売サービスが不正アクセスを受けた",
+      "summary": "市芸術文化祭事業で利用する電子チケット販売サービスが不正アクセスを受け、25人分の個人情報が流出したと公表した。情報は11月8日に運営会社から市に提供されていたが、担当者が放置し、公表は17日になった。",
+      "sources": [
+        {
+          "title": "京都新聞",
+          "url": "https://www.kyoto-np.co.jp/articles/-/1827863"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-himi-city-arara",
+      "organization": "富山県氷見市",
+      "services": [
+        "氷見市お知らせメール"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "富山県",
+      "date_announced": "2026-11-17",
+      "affected_count": 1023,
+      "count_note": "2026年7月1日〜10月31日にお知らせメールが送信された利用者のメールアドレス1,023件",
+      "cause": "third_party",
+      "root_cause": "お知らせメールの配信に使うアララのメール配信システムが第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "熊・イノシシの出没情報などの防災情報や子育て情報を配信する「氷見市お知らせメール」が使うアララのメール配信システムが第三者の不正アクセスを受け、利用者のメールアドレス1,023件が漏えいしたと公表した。対象は2026年7月1日から10月31日にメールが送信された人。メールアドレス以外の情報は漏えいしておらず、不正利用も確認されていない。サービスは停止しており、再開は未定。",
+      "sources": [
+        {
+          "title": "氷見市 お知らせ",
+          "url": "https://www.city.himi.toyama.jp/gyosei/soshiki/hishokoho/4/15354.html"
+        },
+        {
+          "title": "北國新聞",
+          "url": "https://www.hokkoku.co.jp/articles/-/2293626"
+        },
+        {
+          "title": "チューリップテレビ",
+          "url": "https://news.yahoo.co.jp/articles/e4b9342c4f11bc9315ef35a195a54559ba2b1183"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-infcurion-notion",
+      "organization": "株式会社インフキュリオン",
+      "services": [
+        "Notion AI"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 232,
+      "count_note": "2026年10月5日〜24日にNotion AIへ入力した内容と回答の一部に含まれる232件",
+      "cause": "third_party",
+      "root_cause": "利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIへの入力内容などが流出した",
+      "vendor": {
+        "name": "Notion Labs, Inc."
+      },
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "取引先情報",
+        "従業員情報",
+        "メッセージ・チャット履歴"
+      ],
+      "summary": "社内で利用するNotionのAI機能の処理委託先である米Fireworks AIのシステムが不正アクセスを受け、2026年10月5日〜24日にNotion AIへ入力した内容と回答の一部が流出し、取引先担当者・採用応募者・従業員の氏名、電話番号、メールアドレスなど個人情報232件が漏えいしたと公表した。11月18日に適時開示した。公表時点で情報の悪用は確認されていない。",
+      "sources": [
+        {
+          "title": "インフキュリオン お知らせ",
+          "url": "https://infcurion.com/news/news-20261117_002/"
+        },
+        {
+          "title": "インフキュリオン 適時開示",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261117582347/"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/infcurion-notion-ai-fireworks-232-data-leak-20261118/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-infomart-karte",
+      "organization": "株式会社インフォマート",
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 2735267,
+      "count_note": "顧客情報はKARTEへ連携していたデータの総数（最大2,735,267件）で、実際の流出対象はプレイドの報告待ち。別に従業員のメールアドレス31件",
+      "cause": "third_party",
+      "root_cause": "利用していたプレイドの「KARTE」が不正アクセスを受け、連携していた顧客の内部ID等と従業員メールアドレスが流出した",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "住所",
+        "従業員情報"
+      ],
+      "summary": "利用している株式会社プレイドのクラウドサービス「KARTE」が第三者による不正アクセスを受け、同サービスに連携していた顧客と従業員の情報の一部が外部に流出したと公表した。顧客の情報は社内システム上のユーザー識別子（内部ID）、企業所在地とユーザーの勤務地の都道府県で、最大2,735,267件（連携データの総数）。従業員のメールアドレス31件も含まれる。ログインパスワード、銀行口座情報、請求書等の取引明細データは連携データに含まれていないとしている。同社プラットフォームへの影響はなく、対象の顧客には個別にメールで連絡する。",
+      "sources": [
+        {
+          "title": "当社が利用するクラウドサービス「KARTE」への不正アクセスに伴う情報流出に関するお知らせとお詫び（第一報）（株式会社インフォマート）",
+          "url": "https://corp.infomart.co.jp/news/20261117_6219/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "インフォマートからの個別メールを確認する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-itokin-karte",
+      "organization": "イトキン株式会社",
+      "services": [
+        "イトキンオンラインストア"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "件数は確認中",
+      "cause": "third_party",
+      "root_cause": "メール配信に使うプレイドの「KARTE」が不正アクセスを受け、イベント情報配信用の配信先リストが持ち出された",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "メールアドレス",
+        "会員ID",
+        "生年月日"
+      ],
+      "summary": "メール配信に利用している株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、イベント情報の配信に使っていた機能に設定されていた顧客情報を含む配信先リストが外部に持ち出されたと公表した。対象はイトキンオンラインストアの登録者のメールアドレス、会員番号、生年月日。氏名、住所、電話番号、クレジットカード情報、パスワードの漏えいは確認されていない。該当機能の利用を停止し、対象者には個別に案内する。件数は確認中。",
+      "sources": [
+        {
+          "title": "イトキンオンラインストア 外部メール配信サービス「KARTE」への不正アクセスに伴うお客様情報の漏えいに関するお詫びとご報告",
+          "url": "https://www.itokin.net/topics/detail/post_213/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "イトキンからの個別の案内を確認する"
+        },
+        {
+          "text": "不審なメールのURLや添付ファイルを開かず、記載の連絡先にも連絡しない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-ivry-karte",
+      "organization": "株式会社IVRy",
+      "services": [
+        "アイブリー"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "件数は公表されていない。漏えいの可能性がある情報は調査の進展で変わる可能性がある",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた顧客企業の担当者情報などの一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "利用履歴"
+      ],
+      "summary": "Webサイトとサービスでマーケティング・顧客管理ツールとして使っていた株式会社プレイドの「KARTE」が不正アクセスを受け、KARTEに連携していた顧客の情報の一部が外部に漏えいした可能性があると公表した。漏えいの可能性があるのは、契約企業の担当者の氏名、メールアドレス、電話番号などと、Webサイト・管理画面・アプリの利用状況などに関する情報。件数は公表していない。同社のシステムと対話AIサービス「アイブリー」への不正アクセスは確認されていないとしている。",
+      "sources": [
+        {
+          "title": "IVRy 当社が利用するマーケティング/顧客管理ツールへの不正アクセスに伴う、情報漏えいの可能性に関するお知らせ",
+          "url": "https://ivry.jp/corporate/news/ple8g1uck/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "連絡が必要な顧客には情報が確定次第、順次連絡するとしている"
+        },
+        {
+          "text": "同社はパスワードなどの認証情報やカード情報をメールや電話で尋ねることはないとしている。同社を装った不審な連絡に注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-jins-karte",
+      "organization": "株式会社ジンズ",
+      "group": "ジンズホールディングス",
+      "services": [
+        "JINSオンラインショップ",
+        "JINSアプリ",
+        "LINE公式アカウント"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 18290000,
+      "count_note": "約1,829万件は会員登録アカウント数で、漏えいの可能性がある最大値。調査継続中で、項目・件数は変わる可能性がある",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた会員情報が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "メールアドレス",
+        "氏名",
+        "生年月日",
+        "性別",
+        "郵便番号"
+      ],
+      "summary": "委託先の株式会社プレイドが提供する「KARTE」への第三者の不正アクセスにより、JINSオンラインショップ、JINSアプリ、LINE公式アカウントで会員登録した顧客の個人情報の一部が外部に漏えいしたと公表した。漏えいが確認されたのは会員ID、メールアドレス、氏名（姓のみ）、生年月日、年齢、性別、郵便番号、住所（都道府県のみ）で、件数は会員登録アカウント数の約1,829万件（最大値）。11月15日にプレイドの調査で漏えいが確認された。ログインパスワードとクレジットカード情報は含まれない。店舗購入のみで会員登録していない顧客は対象外。",
+      "sources": [
+        {
+          "title": "JINS 外部委託先への不正アクセスによるお客さまの個人情報漏えいに関するお詫びとお知らせ",
+          "url": "https://www.jins.com/jp/topics_detail.html?info_id=1284"
+        },
+        {
+          "title": "Yahoo!ニュース（ITmedia）「JINS」最大約1829万件漏えいの可能性 RIZAPやしまむらも",
+          "url": "https://news.yahoo.co.jp/articles/a1454a4080158b15406b0e9e905370cda71b529e"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象の会員には順次メールで連絡するとしている。JINSからの連絡を確認する"
+        },
+        {
+          "text": "本件を悪用した不審なメールのURLや添付ファイルを開かず、個人情報やパスワードを入力しない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-kaunet-karte",
+      "organization": "株式会社カウネット",
+      "services": [
+        "カウネット",
+        "おうちカウネット"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-11-13",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "対象件数はプレイド社で確認中として未公表。対象はカウネット・おうちカウネットの利用者とカウネットエージェント",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、KARTEに登録していた顧客情報が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "会員ID"
+      ],
+      "summary": "Webサイト上の告知やメールでの案内に利用している株式会社プレイドの「KARTE」が11月13日に第三者による不正アクセスを受け、11月15日にプレイド社から、KARTEに登録していた顧客の個人情報の漏えいが確認されたとの報告を受けたと公表した。対象はオフィス用品通販「カウネット」と個人向け通販「おうちカウネット」の利用者とカウネットエージェントで、漏えいした情報はメールアドレス、顧客番号、電話番号、顧客名称。件数はプレイド社で確認中としている。クレジットカード番号・有効期限とログインパスワードは漏えいの可能性はないとした。自社システムからの漏えいは確認されていない。",
+      "sources": [
+        {
+          "title": "カウネット 【重要】株式会社プレイドで発生した不正アクセスに伴うメールアドレス等の漏えいについて",
+          "url": "https://www.kaunet.com/kaunet/news-info/000197"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象となる利用者には電子メールなどで個別に連絡がある"
+        },
+        {
+          "text": "漏えいしたメールアドレスを悪用したなりすましメール・フィッシングに注意する"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 4,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-keiyo-gas",
+      "organization": "京葉瓦斯株式会社",
+      "services": [
+        "ウィズ京葉ガス"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 275,
+      "count_note": "275件（現時点で判明している状況）",
+      "cause": "unauthorized_access",
+      "root_cause": "会員サイト「ウィズ京葉ガス」が第三者の不正アクセスを受けた。原因と侵入経路は調査中",
+      "data_types": [
+        "氏名",
+        "郵便番号",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "会員ID",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "パスワード（保管形式不明）",
+        "契約情報"
+      ],
+      "summary": "会員サイト「ウィズ京葉ガス」が第三者の不正アクセスを受け、顧客の個人情報275件が外部に漏えいした可能性があると公表した。対象は氏名、郵便番号、住所、電話番号、メールアドレス、お客さま番号、供給地点特定番号、需給契約番号、会員ID、暗号化済みのパスワード、初期パスワード、秘密の質問と回答、接続元IPアドレス、請求情報。銀行口座とクレジットカードの情報は含まれない。会員サイトを停止して外部からのアクセス経路を遮断し、外部専門機関と原因や影響範囲を調べている。",
+      "sources": [
+        {
+          "title": "京葉ガス 当社会員サイト「ウィズ京葉ガス」における不正アクセスによる情報漏えいの可能性についてのお詫びとお知らせ",
+          "url": "https://www.keiyogas.co.jp/press/20261117-01.html"
+        },
+        {
+          "title": "京葉ガス 同お知らせ（PDF）",
+          "url": "https://www.keiyogas.co.jp/pdf/press-20261117-01.pdf"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/keiyogas_with_keiyogas_unauthorized_access_275_possible_leak_20261117/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "京葉ガスからの個別の案内を確認する"
+        },
+        {
+          "text": "秘密の質問と同じ質問・回答を他のサービスで使っていれば変更する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-kg-joho-karte",
+      "organization": "株式会社KG情報",
+      "services": [
+        "賃貸スタイル",
+        "ママ賃貸",
+        "こだて賃貸",
+        "ほすぴた賃貸",
+        "ちゅうこだて！",
+        "ちゅうこマ！",
+        "かいとち！",
+        "ママの家づくり",
+        "すまいさてい"
+      ],
+      "industry": "不動産",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "漏えいしたのは社内検証用環境のテストデータに含まれていた従業員の情報。件数は非公表。顧客の個人情報の漏えいは11月17日時点で確認されていない",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、検証用環境のテストデータに含まれていた従業員情報が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "従業員情報"
+      ],
+      "summary": "賃貸スタイルなどの不動産情報サイトで使っていた株式会社プレイドの「KARTE」が11月13日未明に不正アクセスを受けた件で、当社の検証用環境に登録していた一部のテストデータに含まれていた従業員の情報が漏えいしたと公表した。サイト利用者の個人情報の漏えいは11月17日時点で確認されていないが、プレイドがイベント・キャッシュ情報などの調査を続けている。プレイドと連名で個人情報保護委員会に報告する予定。KARTEとの連携に使っていたAPIキーなどの認証情報は無効化した。",
+      "sources": [
+        {
+          "title": "KG情報 外部サービス「KARTE」への不正アクセスに伴う当社への影響と調査状況について（第一報）",
+          "url": "https://www.kg-net.co.jp/upload/Ir/2026_11/ZBGZieF2x98Mr6cm4Wv7EwI58qzAAHZYmZdOwWts.pdf"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "KG情報やプレイドを装った不審なメールやSMSのURL・添付ファイルを開かない"
+        },
+        {
+          "text": "顧客情報に新たな事実が判明した場合は公表し、対象者に個別に案内するとしている"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-kirin-holdings-notion",
+      "organization": "キリンホールディングス株式会社",
+      "group": "キリングループ",
+      "services": [
+        "Notion AI"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_occurred": "2026-11-02",
+      "date_announced": "2026-11-17",
+      "affected_count": 260,
+      "count_note": "グループ従業員230名、新卒採用応募者22名、取引先従業員8名",
+      "cause": "third_party",
+      "root_cause": "利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、Notion AIとの対話内容が流出した",
+      "vendor": {
+        "name": "Notion Labs, Inc."
+      },
+      "data_types": [
+        "氏名",
+        "従業員情報",
+        "取引先情報",
+        "メッセージ・チャット履歴"
+      ],
+      "summary": "利用している外部クラウドツール「Notion」の提供元Notion Labsの委託先Fireworks AIが11月2日に第三者の不正アクセスを受け、従業員と「Notion AI」の対話内容の一部が外部に漏えいしたと公表した。対象は10月5日から24日までに記録された情報で、グループ従業員230名の氏名・社用電話番号・社用メールアドレス、新卒採用応募者22名と取引先従業員8名の氏名の計260名分。11月13日にNotion社から連絡を受けた。パスワードやクレジットカード情報は含まれない。Notion AIの利用は停止している。",
+      "sources": [
+        {
+          "title": "キリンホールディングス 外部クラウドツールの委託先への不正アクセスによる情報漏えいに関するお詫びとお知らせ",
+          "url": "https://info.kirinholdings.com/faq_detail.html?id=122842"
+        },
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f0828deff9c4a260a8ad4182e8c20767fc042bc4"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 15,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-misumi-karte",
+      "organization": "株式会社ミスミ",
+      "group": "ミスミグループ",
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 140000,
+      "count_note": "公表は「約140,000件」（KARTEで利用していた顧客に関する情報）。プレイドの調査で内容が変わる可能性がある",
+      "cause": "third_party",
+      "root_cause": "Webサイトでの情報案内に使っていたプレイドの「KARTE」が不正アクセスを受け、顧客情報が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "取引先情報"
+      ],
+      "summary": "Webサイトでのポップアップによる情報案内に使っていたプレイドのサービス「KARTE」が不正アクセスを受け、顧客に関する情報約14万件が漏えいしたと公表した。11月15日にプレイドから報告を受けた。漏えいしたのは顧客の氏名と、所属する会社名・支店名。メールアドレス、電話番号、住所など直接連絡できる情報はKARTEに提供していないとしている。具体的な被害の報告はなく、KARTEとのデータ連携を止め、今後KARTEの利用を停止するとしている。",
+      "sources": [
+        {
+          "title": "【お詫びとお知らせ】当社が利用するWebサービス「KARTE」への不正アクセスによるお客さま情報の漏えいについて（ミスミ）",
+          "url": "https://www.misumi.co.jp/news/news_261117"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "ミスミをかたる不審なメールや電話に注意する"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-morisawa-karte",
+      "organization": "株式会社モリサワ",
+      "services": [
+        "Morisawa Fonts"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 23957,
+      "count_note": "プレイドの報告による件数。2023年5月以降にMorisawa Fontsサービスサイトで購入した顧客の一部。対象範囲の詳細とその他の情報は調査中",
+      "cause": "third_party",
+      "root_cause": "利用状況の分析などに使っていたプレイドの「KARTE」が不正アクセスを受け、顧客情報が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "会員ID"
+      ],
+      "summary": "Morisawa Fontsの利用状況の分析やコンテンツ配信などに使っていたプレイドのサービス「KARTE」が不正アクセスを受け、顧客の個人情報23,957件が外部に漏えいしたと公表した。11月15日のプレイドの報告で判明した。漏えいしたのは氏名、メールアドレス、ユーザーIDで、2023年5月以降にMorisawa Fontsのサービスサイトで購入した顧客の一部が対象。同サービスではクレジットカード情報とログインパスワードを扱っておらず、漏えいの対象に含まれていないとしている。不正利用は確認されていない。",
+      "sources": [
+        {
+          "title": "当社委託先サービスへの不正アクセスによる個人情報漏洩に関するお詫びとお知らせ（モリサワ）",
+          "url": "https://www.morisawa.co.jp/about/news/19310"
+        },
+        {
+          "title": "モリサワや「mineo」など会員情報漏えい マーケツール「KARTE」不正アクセス（ITmedia NEWS）",
+          "url": "https://www.itmedia.co.jp/news/article/2611/17/2000003257/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "漏えいが確認された顧客にはモリサワから個別に案内がある"
+        },
+        {
+          "text": "実在の企業などを装ったフィッシングメールに注意する"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-nikkei-karte",
+      "organization": "株式会社日本経済新聞社",
+      "group": "日経グループ",
+      "services": [
+        "日経電子版"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "件数は公表されていない。漏えいした可能性がある情報は元データに戻せない処理をしていたとしている",
+      "cause": "third_party",
+      "root_cause": "マーケティングに利用するプレイドの「KARTE」が不正アクセスを受け、委託していた日経電子版利用者の情報が漏えいした可能性",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "メールアドレス",
+        "電話番号",
+        "性別",
+        "生年月日"
+      ],
+      "summary": "マーケティングに利用している株式会社プレイドの「KARTE」が不正アクセスを受け、同社に取り扱いを委託していた日経電子版利用者の個人情報の一部が外部に漏えいした可能性があると公表した。11月15日にプレイドから報告を受けた。漏えいした可能性があるのはメールアドレス、電話番号、性別、生年月で、元データに戻せない処理をしていたとしている。クレジットカード情報などは含まれず、悪用などの二次被害は確認されていない。件数は公表されていない。",
+      "sources": [
+        {
+          "title": "日本経済新聞社 委託先外部サービスへの不正アクセスに伴う個人情報漏洩の可能性について",
+          "url": "https://www.nikkei.co.jp/nikkeiinfo/news/information/1574.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "日経電子版に登録したメールアドレス・電話番号あての不審なメールやSMSに注意する"
+        },
+        {
+          "text": "新たな事実の公表がないか日本経済新聞社のお知らせを確認する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-nomi-city-arara",
+      "organization": "石川県能美市",
+      "services": [
+        "マイナンバーカード交付予約システム",
+        "ネットdeスマート申請"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "石川県",
+      "date_announced": "2026-11-17",
+      "affected_count": 758,
+      "count_note": "利用者のメールアドレス758件（報道による）",
+      "cause": "third_party",
+      "root_cause": "2つのシステムのメール配信を担うアララのサービスが第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "マイナンバーカード交付予約システムと「ネットdeスマート申請」のメール配信を担う外部サービスが第三者の不正アクセスを受け、利用者のメールアドレス758件が漏えいしたと公表した。2つのシステムには氏名や住所、電話番号も登録されているが、漏えいしたのはメールアドレスだけとしている。ネットdeスマート申請は一時停止した。",
+      "sources": [
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261118de77590"
+        },
+        {
+          "title": "北陸中日新聞",
+          "url": "https://www.chunichi.co.jp/article/1340868"
+        },
+        {
+          "title": "MRO北陸放送",
+          "url": "https://news.yahoo.co.jp/articles/ea1749391fbf466b48d602b64818ea61ea9cc260"
+        },
+        {
+          "title": "HAB北陸朝日放送",
+          "url": "https://news.yahoo.co.jp/articles/5b78d0a34b9980c4a7284143d4f1b0a13686ecc1"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-ok-corporation-karte",
+      "organization": "オーケー株式会社",
+      "services": [
+        "オーケーネットスーパー",
+        "オーケークラブ会員カードアプリ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 23332,
+      "count_note": "現時点での見込みの対象件数。漏えいの有無や範囲は調査中",
+      "cause": "third_party",
+      "root_cause": "情報案内などに使っていたプレイドの「KARTE」が不正アクセスを受け、会員情報が漏えいした可能性がある",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "メールアドレス",
+        "氏名",
+        "生年月日"
+      ],
+      "summary": "情報案内やサービス改善に使っていたプレイドのサービス「KARTE」が不正アクセスを受け、「オーケーネットスーパー」と「オーケークラブ会員カードアプリ」を利用する一部の顧客の個人情報が漏えいした可能性があると公表した。見込みの対象件数は23,332件で、項目は会員番号、メールアドレス、氏名、生年月日。クレジットカード情報、住所、電話番号、パスワードはKARTEに保存しておらず、含まれないとしている。KARTEとのデータ連携を遮断した。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "外部システム（委託先）への不正アクセスによる会員情報漏えいの可能性に関するお詫びとお知らせ（オーケー）",
+          "url": "https://ok-corporation.jp/news/entry-3359.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象の顧客にはオーケーから順次個別に連絡がある"
+        },
+        {
+          "text": "身に覚えのないメールの添付ファイルやURLは開かずに破棄する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-overflow-offers-karte",
+      "organization": "株式会社overflow",
+      "services": [
+        "Offers"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 29950,
+      "count_note": "最大29,950件。重複があり得るため人数は確認中。ほかに利用状況の情報（職種、スキル、副業・転職の意向、オファー・応募の記録など）も漏えいの可能性があり調査中",
+      "cause": "third_party",
+      "root_cause": "過去に利用したプレイドの「KARTE」が不正アクセスを受け、契約終了後も残っていた会員情報が読み出された",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "生年月日",
+        "会員ID"
+      ],
+      "summary": "副業・転職サービス「Offers」の会員情報を過去に連携していたプレイドのサービス「KARTE」が不正アクセスを受け、最大29,950件の個人情報が漏えいしたと公表した。漏えいしたのはワーカーの氏名、メールアドレス、生年月日、会員番号と、企業担当者の氏名、メールアドレス、会員番号。2023年11月末に契約を終え12月に連携を止めていたが、プレイドのサーバーにデータが残っていた。職種やスキル、副業・転職の意向、オファーや応募の記録なども漏えいした可能性があり調査中。パスワード、クレジットカード情報、メッセージ本文はKARTEに送っていないとしている。",
+      "sources": [
+        {
+          "title": "外部サービスへの不正アクセスによる個人情報の漏えいについて（お詫び）（Offers／株式会社overflow）",
+          "url": "https://offers.jp/notice_karte_incident"
+        },
+        {
+          "title": "エンジニア向け転職/副業サイト Offers（オファーズ）、最大2万9,950件の個人情報が漏えい（セキュリティ対策Lab）",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/offers_overflow_karte_29950_personal_data_leak_2026/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象者には特定できた人から順にメールで連絡がある"
+        },
+        {
+          "text": "Offersや採用企業を装ったなりすまし・フィッシングメールに注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-radiko-karte",
+      "organization": "株式会社radiko",
+      "services": [
+        "radiko"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_occurred": "2026-11-13",
+      "date_announced": "2026-11-17",
+      "affected_count": 602382,
+      "count_note": "重複を除いた識別番号の数。退会済みの会員を含む（11月18日の詳報で確定）",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」がサーバーの脆弱性を悪用した不正アクセスを受け、連携していた情報が流出した",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "性別",
+        "利用履歴"
+      ],
+      "summary": "株式会社プレイドの「KARTE」への不正アクセスで、連携していた利用者の情報が流出したと11月17日に公表し、18日の詳報で範囲が確定したと公表した。流出したのは社内で利用者を識別する番号と、アンケートで回答された性別・年代、一部の利用者の都道府県、個別番組と広告の聴取有無で、対象は602,382人（退会者を含む）。メールアドレス、氏名、パスワード、クレジットカード情報などの支払い情報は含まれないことを確認したとした。radikoのシステムへの不正アクセスは確認されていない。",
+      "sources": [
+        {
+          "title": "radiko 【重要】当社が利用するサービス「KARTE」への不正アクセスによる個人情報漏えいに関するお詫びとお知らせ（詳報）",
+          "url": "https://help.radiko.jp/%E3%80%90%E9%87%8D%E8%A6%81%E3%80%91%E5%BD%93%E7%A4%BE%E3%81%8C%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%80%8CKARTE%E3%80%8D%E3%81%B8%E3%81%AE%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%AB%E3%82%88%E3%82%8B%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E8%A9%AB%E3%81%B3%E3%81%A8%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%EF%BC%88%E8%A9%B3%E5%A0%B1%EF%BC%89-6afd48a54e8caa8dda4dd400"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象の可能性がある会員には11月18日から登録メールアドレス宛に連絡がある"
+        },
+        {
+          "text": "パスワード変更などの対応は不要とされている。radikoを装う不審なメールに注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 4,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-rakuten-sec-test-env",
       "organization": "楽天証券株式会社",
       "group": "楽天グループ",
@@ -522,6 +3213,1410 @@
       "severity": "critical",
       "disclosure_days": 6,
       "reliability": "high"
+    },
+    {
+      "id": "2026-11-rizap-karte",
+      "organization": "RIZAP株式会社",
+      "group": "RIZAPグループ",
+      "services": [
+        "ZAP ID",
+        "chocoZAP",
+        "RIZAP"
+      ],
+      "industry": "美容・健康",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 4320000,
+      "count_note": "メールアドレス最大約432万件（重複を含む最大値）。うち氏名を含むものは最大約6万件。対象期間を含め精査中",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していたZAP ID登録者の情報が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "会員ID",
+        "性別",
+        "連携サービスID"
+      ],
+      "summary": "子会社のRIZAP株式会社が一部のWebサービスで利用する株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、ZAP ID登録者（chocoZAP、RIZAPの通販サイトなどの利用者）の情報が漏えいした可能性があるとRIZAPグループ株式会社が公表した。対象はメールアドレス最大約432万件（重複を含む）で、うち氏名を含むものは最大約6万件。ほかに会員ID、性別、年代、都道府県、LINE公式アカウント連携用の識別番号が含まれる。決済情報、ログインパスワード、LINEのログイン情報、住所、電話番号、生年月日は含まれない。11月13日から一部のWebサービスを停止した。",
+      "sources": [
+        {
+          "title": "RIZAPグループ 【お詫び】外部サービス「KARTE」への不正アクセスによる個人情報漏えいの可能性および一部サービスの一時停止について",
+          "url": "https://www.rizapgroup.com/news/detail?topics_id=1573"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "RIZAPやchocoZAPをかたる不審なメール・電話のリンクにアクセスしたり返信したりしない"
+        },
+        {
+          "text": "RIZAP・chocoZAPがメールやLINEでパスワードやクレジットカード情報を尋ねることはないとしている"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-sakanotochu-karte",
+      "organization": "株式会社坂ノ途中",
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "件数は公表されていない（第1報時点）",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していたメールアドレスなどの一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "メールアドレス",
+        "会員ID"
+      ],
+      "summary": "一部のメール配信に使っていた株式会社プレイドの「KARTE」が11月13日に不正アクセスを受け、対象となる顧客のメールアドレスと、顧客を識別するための社内IDが外部に漏えいした可能性があると公表した。件数は公表していない。同社はクレジットカード情報を保持しておらず、パスワードなどの機密情報もKARTEに連携していないため、漏えいの対象にはならないとしている。",
+      "sources": [
+        {
+          "title": "坂ノ途中 【お知らせ】メール配信サービス「KARTE」への不正アクセスに関するお知らせ（第1報・2026年11月17日時点）",
+          "url": "https://www.on-the-slope.com/news-onlineshop/important_notices/news-462950/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "本件に便乗した不審なメールやSMSのURL・添付ファイルを開かず、パスワードやカード情報を入力しない"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-sanyo-shokai-karte",
+      "organization": "株式会社三陽商会",
+      "services": [
+        "SANYO ONLINE STORE",
+        "SANYO MEMBERSHIP",
+        "ECOALF",
+        "Paul Stuart",
+        "LOVELESS"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "件数はプレイドが精査中",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」がサーバーの脆弱性を突かれ、取り込んでいた顧客データの一部が外部に読み出された",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "住所",
+        "性別",
+        "生年月日",
+        "購入履歴",
+        "会員ID",
+        "氏名",
+        "メールアドレス",
+        "電話番号"
+      ],
+      "summary": "委託先の株式会社プレイドの「KARTE」が第三者による不正アクセスを受け、同社が管理する顧客データのうち個人情報を含む一部の情報が外部に漏えいしたと公表した。KARTEに取り込んでいた居住地の都道府県コード、性別、生年月日（年齢）、購入ブランド・店舗名の漏えいを確認し、SANYO MEMBERSHIP会員IDが一部含まれる可能性がある。別に、過去に運営していたECサイト「ECOALF」「Paul Stuart」「LOVELESS」の利用者の氏名、メールアドレス、電話番号も漏えいした可能性があり、プレイドが保有していた経緯を確認中としている。クレジットカード情報は含まれない。件数は精査中。",
+      "sources": [
+        {
+          "title": "委託先事業者「株式会社プレイド」への不正アクセスによる個人情報漏えいに関するお詫びとお知らせ（株式会社三陽商会）",
+          "url": "https://www.sanyo-shokai.co.jp/important/2026/11/17-1301.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "三陽商会やプレイドをかたる不審なメール・SMS・電話のURLや添付を開かない"
+        },
+        {
+          "text": "件数確定後に届く個別の案内を確認する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-shimamura-karte",
+      "organization": "株式会社しまむら",
+      "services": [
+        "しまむらグループ公式アプリ",
+        "しまむらグループオンラインストア"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 7000000,
+      "count_note": "会員情報約700万件。別に会員が登録した家族（子ども）の生年月約5万件。11月17日15時時点で、氏名・メールアドレス・会員番号・LINE IDの漏えいは判明していない",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、お知らせ配信用に連携していた会員情報の一部が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "生年月日",
+        "性別",
+        "郵便番号"
+      ],
+      "summary": "メールやLINEでのお知らせに利用する株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、しまむらグループの公式アプリまたはオンラインストアの会員約700万件の生年月日、性別、都道府県、郵便番号と、会員が登録した家族の情報約5万件（子どもの生年月）が外部へ漏えいしたと公表した。11月17日15時時点で氏名・メールアドレス等の個人を特定できる情報、会員番号、LINE IDの漏えいは判明していない。氏名、電話番号、詳細な住所、クレジットカード情報、ログインパスワードはKARTEで保持していない。",
+      "sources": [
+        {
+          "title": "しまむら 【重要】当社が利用する外部サービス「KARTE」への不正アクセスに伴う一部会員情報漏えいに関するお知らせ（第一報）",
+          "url": "https://www.shimamura.gr.jp/assets-c/uploads/release20261117_Informationleak.pdf"
+        },
+        {
+          "title": "Yahoo!ニュース 「KARTE」不正アクセス、しまむらやアルペンの顧客情報が漏えい",
+          "url": "https://news.yahoo.co.jp/articles/79691d8b275682c79c6ae06bac2d55c3019045f5"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "特別な手続きは不要としている。個別の漏えい有無は問い合わせても確認できない"
+        },
+        {
+          "text": "本件に便乗した不審なメール・SMS・電話のURLにアクセスせず、パスワードや認証コードを入力しない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-socialinterior-karte",
+      "organization": "株式会社ソーシャルインテリア",
+      "services": [
+        "subsclife by TOKYOROOMS"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 29194,
+      "count_note": "漏えいが確認された会員情報の件数。そのほかのデータへの影響はプレイドが調査中",
+      "cause": "third_party",
+      "root_cause": "利用していたプレイドの「KARTE」が不正アクセスを受け、連携していた会員情報が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "連携サービスID"
+      ],
+      "summary": "ECサービス「subsclife by TOKYOROOMS」で利用していたプレイドのサービス「KARTE」が不正アクセスを受け、連携していた会員情報29,194件が外部に漏えいしたと公表した。11月15日にプレイドから報告を受けた。漏えいしたのは氏名、メールアドレス、LINEユーザーID。ほかのデータへの影響はプレイドが調査を続けている。関係当局への報告を進め、当社や本サービスを装った不審なメールへの注意を呼びかけている。",
+      "sources": [
+        {
+          "title": "【重要】外部サービス「KARTE」への不正アクセスに伴うお客様情報漏えいのお詫びとご報告（ソーシャルインテリア）",
+          "url": "https://socialinterior.com/corporate/news/290/"
+        },
+        {
+          "title": "ソーシャルインテリア「subsclife」で2万9,194件の個人情報漏洩の恐れ（セキュリティ対策Lab）",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/subsclife_socialinterior_karte_29194_confirmed_leak_2026/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "subsclifeを装った不審なメールのURLや添付ファイルを開かない"
+        },
+        {
+          "text": "ログインはメール内のリンクからではなく公式サイトから行う"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-stripe-intl-karte",
+      "organization": "株式会社ストライプインターナショナル",
+      "services": [
+        "メチャカリ",
+        "STRIPE CLUB"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 180748,
+      "count_note": "第二報のレコード数の合計（メチャカリの会員ID 30,678件、STRIPE CLUBのメールアドレス・会員IDを含むデータ150,069件、氏名・フリガナを含むデータ1件）。人数や実際に持ち出された件数とは一致しない。ほかにテスト用アカウントの検証用データ586件",
+      "cause": "third_party",
+      "root_cause": "プレイドの「KARTE」が不正アクセスを受け、連携していた会員データが読み取られた。STRIPE CLUBは利用終了後もデータが残存",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "メールアドレス",
+        "氏名"
+      ],
+      "summary": "利用していたプレイドのサービス「KARTE」が不正アクセスを受け、連携していた会員データが漏えいしたと公表した。対象はファッションレンタル「メチャカリ」と会員サービス「STRIPE CLUB」。第二報では、メチャカリは会員ID 30,678件（うちメールアドレスを含むもの190件、氏名は0件）、STRIPE CLUBはメールアドレス・会員IDを含むデータ150,069件と氏名・フリガナを含むデータ1件を確認した。STRIPE CLUBは2026年6月にKARTEの利用を終えていたが、データがプレイドに残っていた。クレジットカード情報、ログインパスワード、住所、電話番号は含まれていないとしている。",
+      "sources": [
+        {
+          "title": "当社が利用する外部サービスへの不正アクセスに伴う個人情報漏えいのおそれについて（第一報）（ストライプインターナショナル）",
+          "url": "https://www.stripe-intl.com/news/2026/1117-02/"
+        },
+        {
+          "title": "当社が利用する外部サービスへの不正アクセスに伴う個人情報漏えいについて（第二報）（ストライプインターナショナル）",
+          "url": "https://www.stripe-intl.com/news/2026/1118-01/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "メチャカリでメールアドレスを含むデータが対象になった人には個別に案内がある"
+        },
+        {
+          "text": "ストライプインターナショナルやプレイドを装ったメール・SMSのURLを開かない"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-su-pay-karte",
+      "organization": "株式会社SU-PAY",
+      "group": "トライアルグループ",
+      "services": [
+        "SU-PAY"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": 60000,
+      "count_note": "SU-PAY会員ID 60,000件（11月18日16時時点）。氏名・メールアドレスなど個人を直接特定できる情報の漏えいは判明していない",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、アプリのお知らせ用に連携していた会員IDが漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID"
+      ],
+      "summary": "トライアルホールディングスは、傘下の株式会社SU-PAYが決済アプリ「SU-PAY」のお知らせなどに利用する株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、SU-PAY公式アプリの会員に関する情報の一部が外部に漏えいしたと公表した。11月15日にプレイドから報告を受けた。11月18日16時時点で漏えいを確認したのはSU-PAY会員ID 6万件。氏名、住所、電話番号、クレジットカード番号、銀行口座番号、本人確認書類はシステム連携の対象外で、個人を直接特定できる情報の漏えいは判明していない。",
+      "sources": [
+        {
+          "title": "トライアルホールディングス 当社が利用する外部サービス「KARTE」への不正アクセスに伴う一部会員情報漏えいに関するお知らせ(第一報)",
+          "url": "https://trial-holdings.inc/news/release/3590/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "特別な手続きは不要で、個別の漏えい有無の問い合わせには答えられないとしている"
+        },
+        {
+          "text": "本件に便乗した不審なメールやSMS、電話のURLを開かず、パスワードや認証コードを入力しない"
+        }
+      ],
+      "severity": "low",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-takara-belmont-karte",
+      "organization": "タカラベルモント株式会社",
+      "services": [
+        "BEAUTY CITY",
+        "TB WEB ORDER"
+      ],
+      "industry": "製造",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "対象となる顧客の範囲と件数は確認中（第一報時点）",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた会員・サロンの情報の一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "生年月日",
+        "性別"
+      ],
+      "summary": "会員制オンラインストア「BEAUTY CITY」と理美容サロン向け発注サイト「TB WEB ORDER」のメール配信などに使っていた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、利用者の情報の一部が外部に漏えいした可能性があると公表した。11月15日にプレイドからの連絡で把握した。漏えいの可能性があるのは、BEAUTY CITYの氏名、メールアドレス、生年月日、性別、年齢と、TB WEB ORDERのサロン名、メールアドレス。対象の範囲と件数は確認中。クレジットカード情報とログインパスワードはKARTEに連携しておらず、漏えいはないとしている。",
+      "sources": [
+        {
+          "title": "タカラベルモント 【重要】BEAUTY CITY／TB WEB ORDERにおける情報漏えいの可能性について（第一報）",
+          "url": "https://www.takarabelmont.com/info_2026111701/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象の顧客への連絡は調査結果を踏まえて対応するとしている"
+        },
+        {
+          "text": "本件に便乗した不審なメールやSMSのURL・添付ファイルを開かず、パスワードやカード情報を入力しない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-toho-karte",
+      "organization": "東宝株式会社",
+      "services": [
+        "TOHO-ONE"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "件数は調査中（TOHO-ONEのサービス開始以降にログインした会員が対象）。流出の可能性として公表",
+      "cause": "third_party",
+      "root_cause": "「TOHO-ONE」で利用するプレイドの「KARTE」が不正アクセスを受け、連携データの一部が流出した疑いがある",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "生年月日",
+        "住所",
+        "性別"
+      ],
+      "summary": "「TOHO-ONE」で利用している株式会社プレイドの「KARTE」が第三者による不正アクセスを受け、同サービスに連携していたデータの一部が外部に流出した疑いがあると報告を受けたと公表した。流出の可能性がある情報はTOHO-ONE会員の会員番号、年代、都道府県、性別で、件数は調査中。それ以外の個人を特定できる情報の流出は確認されておらず、ログインパスワードとクレジットカード情報は流出の可能性がないとしている。グループのチケット販売サービス等への不正アクセスは確認されていない。",
+      "sources": [
+        {
+          "title": "「TOHO-ONE」で利用している「KARTE」への不正アクセスに伴う会員情報流出の可能性に関するお詫びとお知らせ（東宝株式会社）",
+          "url": "https://www.toho.co.jp/company/2026/1117-pr-1.pdf"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "東宝・東宝グループ・TOHO-ONEを名乗る不審なメール・SMS・電話に注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-tsi-karte",
+      "organization": "株式会社TSIホールディングス",
+      "services": [
+        "mix.tokyo",
+        "ナノ・ユニバース公式通販サイト",
+        "HYBES"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "対象となる情報の項目、件数、会員の範囲は確認中",
+      "cause": "third_party",
+      "root_cause": "プレイドの「KARTE」が不正アクセスを受け、同サービスに保管していたグループの会員情報の一部が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "summary": "株式会社プレイドの「KARTE」への不正アクセスで、同サービスに保管していた当社グループの情報の一部が漏えいしたとの連絡を受けたと公表した。対象は、連結子会社の株式会社TSIが運営する公式オンラインサイト「mix.tokyo」と「ナノ・ユニバース公式通販サイト」、および株式会社HYBESがKARTEに保管していた会員に関する情報の一部。対象となる情報の項目、件数、会員の範囲は確認中としている。",
+      "sources": [
+        {
+          "title": "TSIホールディングス 当社グループが利用する「KARTE」への不正アクセスに伴う情報漏えいに関するお知らせとお詫びについて",
+          "url": "https://www.tsi-holdings.com/topics/topics_detail004923.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC188T00Y6A111C2000000/"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-unifa-lookmee-karte",
+      "organization": "ユニファ株式会社",
+      "services": [
+        "ルクミー"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "対象件数と項目の詳細は調査中（第一報時点）",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた施設・保護者の情報の一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名",
+        "生年月日",
+        "会員ID"
+      ],
+      "summary": "保育関連サービス「ルクミー」の案内配信や利用状況分析に使っていた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、ルクミーを利用したことのある施設と保護者の情報の一部が外部に漏えいしたと公表した。漏えいが判明したのは、施設のメールアドレスとログインに使う識別番号（園ID）、保護者のメールアドレスと氏名、子どもの生年月日。11月15日にプレイドの調査で判明した。件数は調査中。子どもの写真・保育記録・連絡帳の内容、ログインパスワード、クレジットカード情報・口座情報はKARTEに連携しておらず漏えいしていない。",
+      "sources": [
+        {
+          "title": "ユニファ 当社が利用する外部メール配信サービス 株式会社プレイドの「KARTE」における、不正アクセスによる個人情報漏えいに関するお詫びとお知らせ（第一報）",
+          "url": "https://unifa-e.com/news/info/20261117-info_news1117"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象の施設・保護者には noreply@unifa-e.com から順次メールで連絡するとしている"
+        },
+        {
+          "text": "本件に便乗した不審なメールやSMSのURL・添付ファイルを開かず、パスワードやカード情報を入力しない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-weins-toyota-kanagawa-karte",
+      "organization": "ウエインズトヨタ神奈川株式会社",
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "件数と項目の詳細は公表されていない。対象の特定と影響範囲はプレイドと確認中（第1報時点）",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた問い合わせ・来店予約の申込者の情報の一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "summary": "公式ウェブサイトの運営とメールマガジンの配信に使っていた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、顧客の個人情報の一部が外部に漏えいしたと公表した。対象は公式ウェブサイトから問い合わせや来店予約などを申し込んだ顧客の個人情報の一部で、11月15日にプレイドから漏えいの報告を受けた。件数と項目は公表しておらず、対象の特定と影響範囲の確認を進めている。クレジットカード情報と銀行口座情報は同サービスで預かっておらず含まれていない。11月13日からKARTEの利用を停止している。",
+      "sources": [
+        {
+          "title": "ウエインズトヨタ神奈川 当社が利用する外部サービスへの不正アクセスによるお客様情報の漏えいに関するお詫びとお知らせ（第1報）",
+          "url": "https://www.weins-toyota-kanagawa.co.jp/newsrelease/261117"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象の顧客には確認できた人から順次連絡するとしている"
+        },
+        {
+          "text": "同社はパスワードやカード番号、口座番号を尋ねたり金銭を請求したりしないとしている。同社やトヨタ販売店を名乗る不審な電話・SMS・メールに注意する"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-world-karte",
+      "organization": "株式会社ワールド",
+      "group": "ワールドグループ",
+      "services": [
+        "ワールドオンラインストア",
+        "ティンパンアレイ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "対象となる情報の項目、件数、会員の範囲は確認中",
+      "cause": "third_party",
+      "root_cause": "プレイドの「KARTE」が不正アクセスを受け、同サービスに保管していたグループの会員情報の一部が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "summary": "株式会社プレイドの「KARTE」への不正アクセスで、同サービスに保管していた当社グループの情報の一部が漏えいしたとの連絡を受けたと公表した。対象は、同社が展開する「ワールドオンラインストア」と連結子会社の株式会社ティンパンアレイがKARTEに保管していた会員に関する情報の一部。対象となる情報の項目、件数、会員の範囲は確認中で、プレイドにデータの詳細と調査結果の確認を求めている。",
+      "sources": [
+        {
+          "title": "ワールド 当社グループが利用する「KARTE」への不正アクセスに伴う情報漏えいに関するお知らせ",
+          "url": "https://corp.world.co.jp/news/company/2026/15602/"
+        },
+        {
+          "title": "ACT1",
+          "url": "https://act1.co.jp/2026-11-17-06/"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-wowow-karte",
+      "organization": "株式会社WOWOW",
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2026-11-17",
+      "affected_count": null,
+      "count_note": "件数は調査中",
+      "cause": "third_party",
+      "root_cause": "番組・サービス案内に使うプレイドの「KARTE」が不正アクセスを受け、連携していた顧客情報が漏えいした可能性",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "生年月日",
+        "性別",
+        "郵便番号",
+        "メールアドレス"
+      ],
+      "summary": "番組やサービスの案内（メール送信、アプリ・Webサイトでの通知）に利用しているマーケティングツール「KARTE」の提供元、株式会社プレイドが第三者の不正アクセスを受け、同システムに連携していた顧客の個人情報の一部が外部に漏えいした可能性があると公表した。対象は生年月日、性別、郵便番号、メールアドレス、内部管理用IDで、クレジットカード情報、金融機関口座情報、ログインパスワードは含まれない。二次被害は確認されていない。件数は調査中。",
+      "sources": [
+        {
+          "title": "WOWOW 業務委託先に対する不正アクセスに伴うお客さまの個人情報漏えいの可能性に関するお知らせとお詫び",
+          "url": "https://corporate.wowow.co.jp/news/info/7251.html"
+        },
+        {
+          "title": "WOWOW NEWS",
+          "url": "https://news.wowow.co.jp/5846.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC178RL0X11C26A1000000/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "WOWOWをかたる不審なメールのURLや添付ファイルを開かず、個人情報やパスワードを入力しない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-bellface-karte",
+      "organization": "ベルフェイス株式会社",
+      "services": [
+        "bellSalesAI サポートサイト"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-16",
+      "affected_count": null,
+      "count_note": "対象データ件数は調査中",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していたサポートサイト利用者の情報の一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "利用履歴"
+      ],
+      "summary": "bellSalesAIの顧客向けサポートサイトで使っていた株式会社プレイドの「KARTE」「KARTE Datahub」などが第三者の不正アクセスを受け、KARTE Datahub上で管理していた情報の一部が外部に漏えいした可能性があると公表した。対象はbellSalesAIを利用する顧客の氏名、メールアドレスと、サービス上でのボタンクリックなどのイベント情報で、件数は調査中。問い合わせ内容は対象に含まれず、bellSalesAIで記録・管理するデータとSalesforce連携データの漏えいは確認されていない。KARTEと連携するデータベースの認証情報は無効化した。",
+      "sources": [
+        {
+          "title": "ベルフェイス 【11/16追記】当社が利用する「KARTE」への不正アクセスに伴う情報漏洩の可能性について",
+          "url": "https://bellface.co.jp/news/8195/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "氏名・メールアドレスを悪用したフィッシングメールや、同社・関係企業を装った不審な連絡に注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-hankyu-hanshin-hotels-karte",
+      "organization": "株式会社阪急阪神ホテルズ",
+      "group": "阪急阪神ホールディングス",
+      "services": [
+        "阪急阪神第一ホテルグループメンバーズクラブ"
+      ],
+      "industry": "旅行",
+      "country": "JP",
+      "date_announced": "2026-11-16",
+      "affected_count": 331586,
+      "count_note": "現時点で確認できた最大の件数で、精査により減る可能性がある。退会済み会員の情報を含む可能性があり確認中",
+      "cause": "third_party",
+      "root_cause": "会員向けメール配信に使っていたプレイドの「KARTE」が不正アクセスを受け、会員情報が漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "「阪急阪神第一ホテルグループメンバーズクラブ」の会員向けメール配信に使っていたプレイドのサービス「KARTE」が不正アクセスを受け、主に会員に関する情報が最大331,586件漏えいしたと公表した。11月15日にプレイドから報告を受けた。漏えいした項目は氏名、年齢、住所、電話番号、メールアドレスなどで、クレジットカード情報とパスポートデータは含まれていないとしている。退会済み会員の情報やホテルの利用実績が含まれている可能性があり、確認中としている。具体的な被害の報告は受けていない。",
+      "sources": [
+        {
+          "title": "【お詫びとお知らせ】当社が利用するコミュニケーションツール「KARTE」への不正アクセスによる個人情報の漏えいについて（阪急阪神ホテルズ）",
+          "url": "https://www.hankyu-hotel.com/topics/2026/GPDetailPage"
+        },
+        {
+          "title": "阪急阪神ホテルズ、ホテル会員の氏名など33万件漏洩 不正アクセスで（日本経済新聞）",
+          "url": "https://www.nikkei.com/article/DGXZQOUF178JY0X11C26A1000000/"
+        },
+        {
+          "title": "阪急阪神ホテルズ、「KARTE」への不正アクセスで会員情報33万件が漏えい（TRAICY）",
+          "url": "https://www.traicy.com/posts/20261118388427/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象の会員には準備が整い次第、阪急阪神ホテルズから連絡がある"
+        },
+        {
+          "text": "ホテルや会員クラブを装った不審なメールや連絡に注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-hotstaff-comsbi",
+      "organization": "株式会社ホットスタッフ",
+      "group": "ホットスタッフグループ",
+      "services": [
+        "LINE公式アカウント「ホットスタッフ【HOT犬索】」"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_announced": "2026-11-16",
+      "affected_count": 32034,
+      "count_note": "LINE登録情報最大32,034名。うちアンケート回答内容（氏名・住所など）は最大10,798名",
+      "cause": "third_party",
+      "root_cause": "LINE連携サービス「COMSBI（SaaS版）」の提供元ソニックムーブが第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社ソニックムーブ"
+      },
+      "data_types": [
+        "アカウント名",
+        "連携サービスID",
+        "氏名",
+        "住所",
+        "生年月日",
+        "性別"
+      ],
+      "summary": "LINE公式アカウント「ホットスタッフ【HOT犬索】」で利用するソニックムーブのLINE連携サービス「COMSBI（SaaS版）」への不正アクセスにより、登録者の個人情報が流出したと公表した。11月11日にソニックムーブから報告を受けた。対象はLINEの表示名・プロフィール画像URL・LINEユーザーIDが最大32,034名分と、氏名・住所・生年月日・性別・就業状況・希望職種などのアンケート回答内容が最大10,798名分。",
+      "sources": [
+        {
+          "title": "ホットスタッフ トピックス",
+          "url": "https://www.hotstaff.co.jp/topics/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-icubed-clomo",
+      "organization": "株式会社アイキューブドシステムズ",
+      "services": [
+        "CLOMO MDM"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-16",
+      "affected_count": null,
+      "count_note": "流出した情報の種類・件数・対象顧客数は調査中で未公表",
+      "cause": "unauthorized_access",
+      "root_cause": "CLOMO MDMなどを運用するシステムが第三者の不正アクセスを受けた",
+      "summary": "MDMサービス「CLOMO MDM」などを運用するシステムが第三者の不正アクセスを受け、顧客がCLOMO MDMに登録した情報の一部が外部に流出したと公表し、同日適時開示した。11月2日に不審なアクセスを検知し、確認したアクセス経路を遮断した。対象顧客には個別に連絡している。流出した情報の種類、件数、原因は調査中で、サービスは停止していない。",
+      "sources": [
+        {
+          "title": "アイキューブドシステムズ 適時開示",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261116580960/"
+        },
+        {
+          "title": "ビジネス＋IT（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/6b3722671178246d9b293efe58edfbc3c25a3dd6"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-interworks-kojoworks-karte",
+      "organization": "株式会社インターワークス",
+      "group": "コンフィデンス・インターワークス",
+      "services": [
+        "工場ワークス"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-16",
+      "affected_count": null,
+      "count_note": "詳細な件数と項目は精査中（第一報時点）",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた会員情報の一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "生年月日",
+        "住所"
+      ],
+      "summary": "株式会社コンフィデンス・インターワークスは、グループ会社の株式会社インターワークスが運営する「工場ワークス」がメールやLINEの配信に使っていた株式会社プレイドの「KARTE」が不正アクセスを受け、会員の登録情報の一部が漏えいした可能性があると公表した。含まれる可能性があるのは会員の氏名、メールアドレス、電話番号、生年月日、住所情報など。件数と項目は精査中。ログインパスワードはKARTEに連携しておらず漏えいはない。工場ワークス本体と企業向け管理画面は連携対象外としている。",
+      "sources": [
+        {
+          "title": "コンフィデンス・インターワークス 【重要】外部委託先システムへの不正アクセスに伴う、会員情報漏洩に関するお知らせとお詫び（第一報）",
+          "url": "https://ciw.jp/news/2819/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象範囲の確定後、該当する会員には個別にメールなどで連絡するとしている"
+        },
+        {
+          "text": "同社やプレイドを装ってパスワードやカード情報の入力を求める連絡に注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-komehyo-karte",
+      "organization": "株式会社コメ兵",
+      "group": "コメ兵グループ",
+      "services": [
+        "KOMEHYO"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-16",
+      "affected_count": null,
+      "count_note": "対象となるお客様と漏えいした情報の項目・件数は特定中（11月16日21時時点）",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた顧客の個人情報が流出した可能性がある",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "summary": "コメ兵ホールディングスは、子会社の株式会社コメ兵が利用する株式会社プレイドのCXプラットフォーム「KARTE」が第三者の不正アクセスを受け、コメ兵を利用した顧客の個人情報が外部に流出した可能性があると公表した。11月13日に不正アクセスの報告を受けてデータ連携とアクセスを遮断し、11月15日にプレイドの調査で流出の可能性が判明した。対象の顧客と情報の項目・件数は特定中で、判明しだい個別に連絡するとしている。クレジットカード情報は決済代行会社などで管理しており、流出の対象に含まれない。コメ兵の社内システムへの不正アクセスや影響はないとしている。",
+      "sources": [
+        {
+          "title": "コメ兵ホールディングス 当社グループの子会社が利用する外部システム(委託先「KARTE」)への不正アクセスによる個人情報漏洩の可能性に関するお知らせ【2026年11月16日21時00分時点】",
+          "url": "https://komehyohds.com/2026/11/16/%E5%BD%93%E7%A4%BE%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E5%AD%90%E4%BC%9A%E7%A4%BE%E3%81%8C%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E5%A4%96%E9%83%A8%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%A7%94/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象の顧客には特定が完了しだいコメ兵から個別に案内するとしている"
+        },
+        {
+          "text": "身に覚えのないメールやSMSのURL・添付ファイルを開かず、公式サイト以外で個人情報やパスワードを入力しない"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-medii-karte",
+      "organization": "株式会社Medii",
+      "services": [
+        "医師向けプラットフォーム"
+      ],
+      "industry": "医療",
+      "country": "JP",
+      "date_announced": "2026-11-16",
+      "affected_count": null,
+      "count_note": "件数は公表されていない。アプリ会員の登録情報への影響はプレイドが調査中",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた会員情報の一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID"
+      ],
+      "summary": "医師向けプラットフォームで使っていた株式会社プレイドの「KARTE」が不正アクセスを受けた影響で、会員の情報が流出したと公表した。流出が確認されたのは、会員が登録した勤務先医療機関名と都道府県、同社が付番した会員番号。アプリ会員については氏名、メールアドレス、生年月日などの登録情報の一部がKARTEに送られていた時期があり、プレイドが引き続き調査している。件数は公表していない。",
+      "sources": [
+        {
+          "title": "Medii 当社が利用する外部サービス「KARTE」（株式会社プレイド）への不正アクセスに関するお知らせ",
+          "url": "https://medii.jp/news/20261117"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象の会員には電子メールで順次、個別に連絡するとしている"
+        },
+        {
+          "text": "本件に便乗した不審なメールやSMSのURL・添付ファイルを開かず、パスワードやカード情報を入力しない"
+        }
+      ],
+      "severity": "low",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-meetsmore",
+      "organization": "株式会社ミツモア",
+      "services": [
+        "ミツモア"
+      ],
+      "industry": "生活サービス",
+      "country": "JP",
+      "date_occurred": "2026-11-11",
+      "date_announced": "2026-11-16",
+      "affected_count": 366850,
+      "count_note": "システムの脆弱性による漏えいの可能性がある件数（最大）。別に不正ログインされたアカウントが201件",
+      "cause": "vulnerability",
+      "root_cause": "外部で入手されたとみられるIDとパスワードで不正ログインされ、空き状況表示機能の脆弱性を悪用された",
+      "attack_methods": [
+        "credential_stuffing"
+      ],
+      "data_types": [
+        "住所",
+        "電話番号",
+        "会員ID",
+        "氏名",
+        "メールアドレス",
+        "メッセージ・チャット履歴",
+        "問い合わせ内容"
+      ],
+      "summary": "見積もりサービス「ミツモア」が第三者の不正アクセスを受け、事業者の予定に登録された依頼者の住所・電話番号、識別番号、オンライン会議URLなど最大36万6,850件が漏えいしたと公表した。外部で入手されたとみられるIDとパスワードで812回のログイン試行があり201件のアカウントに不正ログインされ、そのアカウントから事業者の空き状況を表示する機能の脆弱性を悪用して情報が取得された。不正ログインされたアカウントでは氏名・メールアドレス・依頼内容・メッセージなどが閲覧された可能性がある。脆弱性は11月12日に修正した。「プロワン」は影響を受けておらず、KARTE経由の漏えいとは別の事案。",
+      "sources": [
+        {
+          "title": "ミツモア 不正アクセスによる個人情報漏えいに関するお詫びとお知らせ",
+          "url": "https://company.meetsmore.com/page/notice-20261116"
+        },
+        {
+          "title": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a77bdf7b31a74f59b64e5506c83357ec5e93043d"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "ミツモアと同じパスワードを使っている他のサービスはパスワードを変更する"
+        },
+        {
+          "text": "事業者はミツモア内で登録したオンライン会議URLを再発行する"
+        },
+        {
+          "text": "ミツモアや事業者を名乗る不審な電話・訪問・SMS・メールに注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 5,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-niigata-pref-chokuso-goqsystem",
+      "organization": "新潟県",
+      "services": [
+        "楽天市場内「新潟県公式ショップ 新潟直送計画」"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "新潟県",
+      "date_announced": "2026-11-16",
+      "affected_count": 3457,
+      "count_note": "漏えいの可能性がある対象者3,457人（影響範囲は確認中）",
+      "cause": "third_party",
+      "root_cause": "運営委託先クーネルワークが使う受注管理システム「GoQSystem」が不正アクセスを受け、注文情報が持ち出された",
+      "vendor": {
+        "name": "株式会社GoQSystem"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "購入履歴"
+      ],
+      "summary": "県が株式会社クーネルワークに管理運営を委託する楽天市場内の「新潟県公式ショップ 新潟直送計画」で、同社が使う受注管理システム「GoQSystem」が不正アクセスを受け、注文情報が外部に持ち出されたと公表した。注文者とお届け先の氏名、住所、電話番号、注文内容が漏えいした可能性があり、対象者は現時点で3,457人。クレジットカード情報は含まれていない。GoQSystem社が侵入経路を遮断し、影響範囲を調査している。",
+      "sources": [
+        {
+          "title": "新潟県 お知らせ（第一報）",
+          "url": "https://www.pref.niigata.lg.jp/sec/sangyoseisaku/niigata-shop-incident.html"
+        },
+        {
+          "title": "新潟日報",
+          "url": "https://www.niigata-nippo.co.jp/articles/-/943736"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "新潟直送計画や配送業者、生産者を装った不審なSMS・電話・郵便物に注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-nissin-foods-comsbi",
+      "organization": "日清食品株式会社",
+      "group": "日清食品グループ",
+      "services": [
+        "LINE公式アカウント「日清食品キャンペーン」",
+        "カプポはじまる! キャンペーン"
+      ],
+      "industry": "食品",
+      "country": "JP",
+      "date_announced": "2026-11-16",
+      "affected_count": 1374157,
+      "count_note": "LINE友だち情報1,374,157件。キャンペーン当選者543件（氏名・住所・電話番号等）は全員が友だち情報の対象にも含まれる",
+      "cause": "third_party",
+      "root_cause": "キャンペーン委託先TOPPANが利用したソニックムーブの「COMSBI（SaaS版）」が不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社ソニックムーブ"
+      },
+      "data_types": [
+        "アカウント名",
+        "連携サービスID",
+        "氏名",
+        "郵便番号",
+        "住所",
+        "電話番号"
+      ],
+      "summary": "キャンペーンで利用していたソニックムーブの「COMSBI（SaaS版）」が第三者の不正アクセスを受け、LINE公式アカウント「日清食品キャンペーン」の友だち1,374,157件のLINEユーザーID・表示名・プロフィール画像のURLなどと、「カプポはじまる! キャンペーン」当選者543件の氏名・住所・電話番号などが漏えいしたと公表した。対象は9月9日から11月5日までに友だち追加していた人で、キャンペーンに応募していない人も含まれる。11月11日夜にキャンペーン業務の委託先TOPPANから連絡を受け、12日に漏えいを確認した。自社のキャンペーン基盤への不正アクセスの形跡はないとしている。",
+      "sources": [
+        {
+          "title": "日清食品 外部サービスへの不正アクセスによる個人情報漏えいに関するお知らせとお詫び",
+          "url": "https://www.nissin.com/jp/company/news/13997/"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC1651Z0W6A111C2000000/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象者にはLINE公式アカウント「日清食品キャンペーン」から個別に案内がある"
+        },
+        {
+          "text": "日清食品やキャンペーン事務局を装った不審なLINE・メール・SMS・電話に注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-optage-mineo-karte",
+      "organization": "株式会社オプテージ",
+      "services": [
+        "mineo"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-11-16",
+      "affected_count": 1420000,
+      "count_note": "最大142万件（現在の利用者と、2020年1月以降に解約した一部の利用者を含む）。11月18日公表。調査継続中で変わる可能性あり",
+      "cause": "third_party",
+      "root_cause": "メール配信等のマーケティング業務の委託先プレイドの「KARTE」が不正アクセスを受け、利用者のメールアドレスが漏えいした可能性",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "メールアドレス",
+        "性別",
+        "郵便番号"
+      ],
+      "summary": "メール配信等のマーケティング業務を委託する株式会社プレイドの「KARTE」で第三者による不正アクセスが発生し、携帯電話サービス「mineo」利用者のメールアドレスが外部に漏えいした可能性があると公表した。11月15日にプレイドから報告を受けた。クレジットカード情報や銀行口座情報などの決済情報と本人確認書類の情報はプレイドに提供していない。KARTEの利用を停止し、対象者にはメールなどで個別に連絡するとしている。11月18日には、対象が最大142万件で、メールアドレスのほか性別・年代・郵便番号・都道府県・誕生日または記念日・一部オプションの契約開始日が含まれると公表した。",
+      "sources": [
+        {
+          "title": "mineo 株式会社プレイドで発生した不正アクセスに伴うお客さま情報漏えいの可能性について",
+          "url": "https://support.mineo.jp/news/1908/"
+        },
+        {
+          "title": "オプテージ プレスリリース",
+          "url": "https://optage.co.jp/press/2026/press_14.html"
+        },
+        {
+          "title": "mineo お知らせ（第2報）",
+          "url": "https://support.mineo.jp/news/1911/"
+        },
+        {
+          "title": "日本経済新聞（最大142万件）",
+          "url": "https://www.nikkei.com/article/DGXZQOUF18BBG0Y6A111C2000000/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "オプテージからの個別連絡（メール等）を確認する"
+        },
+        {
+          "text": "身に覚えのないメールのURLや添付ファイルを開かず、ID・パスワードを入力しない"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-oricon-deview",
+      "organization": "株式会社oricon ME",
+      "group": "オリコン",
+      "services": [
+        "Deview／デビュー"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_occurred": "2026-11-03",
+      "date_announced": "2026-11-16",
+      "affected_count": 26,
+      "count_note": "会員26名の応募画像58ファイルに不審なアクセスログ。画像の流出の有無は調査中",
+      "cause": "unauthorized_access",
+      "root_cause": "応募画像を公開領域に保存し閲覧制限も不足しており、画像URLから認証なしで閲覧・取得できた",
+      "attack_methods": [
+        "broken_access_control"
+      ],
+      "data_types": [
+        "保存データ（写真・文書等）"
+      ],
+      "summary": "オーディション情報サイト「Deview／デビュー」で不正アクセスが発生したと、親会社のオリコンが公表した。11月3日15時〜16時ごろにサイトへの不正アクセスがあり、会員26名の応募画像58ファイルに不審なアクセスログを検知した。応募画像が公開領域に保存され閲覧制限も不足しており、画像URLから認証なしで閲覧・取得できる状態だった。11月11日に保守・運用を委託する開発会社の報告で判明し、通信を遮断してプログラムを修正した。13日からサービスを停止しており、画像の流出の有無を含め調査している。",
+      "sources": [
+        {
+          "title": "オリコン 不正アクセスによる『Deview／デビュー』サイトの個人情報漏洩事故の発生とお詫び",
+          "url": "https://www.oricon.jp/news/notice/11124/"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/oricon-deview-audition-image-files-26-users-58-unauthorized-access/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 13,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-plaza-karte",
+      "organization": "株式会社スタイリングライフ・ホールディングス",
+      "services": [
+        "PLAZA",
+        "プラザオンラインストア"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-16",
+      "affected_count": null,
+      "count_note": "漏えいの有無、対象となる顧客の範囲、情報項目は調査中（第一報）",
+      "cause": "third_party",
+      "root_cause": "メールマガジン配信等に使うプレイドの「KARTE」が不正アクセスを受け、顧客情報の一部が漏えいした可能性",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "summary": "PLAZAのメールマガジン配信等で利用している株式会社プレイドの「KARTE」で外部の第三者による不正アクセスが発生し、顧客の個人情報の一部が外部に漏えいした可能性があると第一報で公表した。漏えいの可能性がある情報にクレジットカードに関する情報は含まれない。二次被害の報告は確認されていない。漏えいの有無、対象となる顧客の範囲、情報項目はサービス提供元と調査中としている。",
+      "sources": [
+        {
+          "title": "PLAZA 【重要】不正アクセスによる個人情報漏洩に関するお詫びとお知らせ（第一報）",
+          "url": "https://www.plazastyle.com/shop/t/t1077/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "PLAZAを装った不審なメールや連絡は開封・リンクへのアクセスをせず削除する"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-pwc-japan-training-vendor",
+      "organization": "PwC Japanグループ",
+      "group": "PwC",
+      "industry": "団体・その他",
+      "country": "JP",
+      "date_announced": "2026-11-16",
+      "affected_count": null,
+      "count_note": "国内の流出人数は公表されていない。対象は従業員・退職者・業務委託先の方々",
+      "cause": "third_party",
+      "root_cause": "グローバルで使う社内研修・人材育成プログラムの運営委託先のホスト環境が不正アクセスを受けた",
+      "vendor": {
+        "name": "社内研修・人材育成プログラムの運営委託先（社名非公表）"
+      },
+      "data_types": [
+        "従業員情報",
+        "氏名",
+        "メールアドレス",
+        "電話番号"
+      ],
+      "summary": "PwCがグローバルで利用する社内研修・人材育成プログラムの運営委託先である外部ベンダーのホスト環境が第三者の不正アクセスを受け、PwC Japanグループの従業員・退職者・業務委託先の方々の個人情報が閲覧され外部へ流出したことを確認したと公表した。対象は従業員番号、氏名（アルファベット）、業務用のメールアドレス・電話番号、所属法人など。クライアントの情報は含まれない。",
+      "sources": [
+        {
+          "title": "PwC Japanグループ 重要なお知らせ",
+          "url": "https://www.pwc.com/jp/ja/notice-261116.html"
+        },
+        {
+          "title": "ビジネス＋IT（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/cc322716235b4739c75138aea6598f862b8b804f"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-renault-japon-arara",
+      "organization": "ルノー・ジャポン株式会社",
+      "services": [
+        "ルノー・アルピーヌ ニュースレター"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2026-10-28",
+      "date_announced": "2026-11-16",
+      "affected_count": 96027,
+      "count_note": "2026年10月8日〜29日にニュースレターを送ったメールアドレスの件数（アララ社からの報告）",
+      "cause": "third_party",
+      "root_cause": "ニュースレター配信に使うアララのメール配信サービス「repica」が脆弱性を悪用され不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "ルノーとアルピーヌのニュースレター配信に利用するアララのメール配信サービス「repica」が10月28日以降に第三者の不正アクセスを受け、10月8日から29日までにニュースレターを送った顧客のメールアドレス96,027件が持ち出されたと公表した。原因はアララのシステムの脆弱性が悪用されたことと報告を受けている。メールの件名・本文、氏名、住所、電話番号、車両情報、自社システムの顧客情報は含まれないとしている。配信は停止している。",
+      "sources": [
+        {
+          "title": "ルノー・ジャポン 外部事業者における個人情報漏えいに関するお知らせとお詫び",
+          "url": "https://www.renault.jp/information/news/rjinfo2611.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 19,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-renault-japon-prestige",
+      "organization": "ルノー・ジャポン株式会社",
+      "services": [
+        "ルノー・アルピーヌ アシスタンスサービス（ロードサービス）"
+      ],
+      "industry": "交通・モビリティ",
+      "country": "JP",
+      "date_occurred": "2026-10-29",
+      "date_announced": "2026-11-16",
+      "affected_count": 102000,
+      "count_note": "委託先PCSからの報告による人数",
+      "cause": "third_party",
+      "root_cause": "ロードサービス業務の委託先プレステージ・コアソリューションの業務システムが不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社プレステージ・コアソリューション"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "車両情報",
+        "口座番号"
+      ],
+      "summary": "ルノーとアルピーヌのロードサービス業務を委託するプレステージ・コアソリューション（PCS）の業務システムが10月29日に不正アクセスを受け、ロードサービスに登録された顧客102,000名分の個人データが外部に持ち出されたと公表した。対象は氏名、住所、電話番号、メールアドレス、登録番号・車台番号などの車両情報、事故・故障の受付情報、一部の金融機関口座情報で、顧客により含まれる項目は異なる。11月2日にPCSから報告を受けた。原因と影響範囲はPCSが調査中。",
+      "sources": [
+        {
+          "title": "アルピーヌ・ジャポン 外部事業者における個人情報漏えいに関するお知らせとお詫び",
+          "url": "https://www.alpinecars.jp/news/ajinfo2611/"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/alpine_renault_pcs_102000_arara_96027/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "ルノー・アルピーヌや関連会社を装った不審な電話・メール・SMSに注意する"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 18,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-riken-fugaku",
+      "organization": "国立研究開発法人理化学研究所",
+      "services": [
+        "スーパーコンピュータ「富岳」",
+        "理究（りきゅう）"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "public_agency",
+      "prefecture": "埼玉県",
+      "date_occurred": "2026-11-10",
+      "date_announced": "2026-11-16",
+      "affected_count": 4597,
+      "count_note": "最大人数。「富岳」の登録利用者 最大4,222名、「理究」の登録利用者 最大375名の合計",
+      "cause": "unauthorized_access",
+      "root_cause": "公開されていた「富岳」稼働状況ダッシュボードを足がかりに運用系内部ネットワークへ侵入された（手口は調査中）",
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "会員ID",
+        "保存データ（写真・文書等）"
+      ],
+      "summary": "計算科学研究センターが運用するスーパーコンピュータ「富岳」の運用系システムが外部から不正アクセスを受け、利用者のホームディレクトリ内のファイルの一部と認証システムの登録情報が持ち出された、またはその可能性があると公表した。対象には氏名・メールアドレス・IDのほか、利用者が保存していた理研外のスパコンやサービスへの接続用認証情報が含まれる。侵入者は11月10日から13日にかけ、公開されていた稼働状況のダッシュボードを足がかりに内部ネットワークへ侵入した。理研は11月13日に確認し、14日に「富岳」の運用を停止した。影響を受けた可能性があるのは「富岳」の利用者最大4,222名と「理究」の利用者最大375名。研究成果の流出を示す事実は確認されていない。",
+      "sources": [
+        {
+          "title": "理化学研究所 スーパーコンピュータ「富岳」および「理究（りきゅう）」への不正アクセスによる個人情報漏えいの可能性について",
+          "url": "https://www.riken.jp/pr/news/2026/20261116_2/index.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOSG162TT0W6A111C2000000/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "「富岳」に保存していたSSH秘密鍵や認証情報は、接続先のサービスで無効にして再発行する"
+        },
+        {
+          "text": "「富岳」や理研をかたる不審なメールに注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 6,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-studist-karte",
+      "organization": "株式会社スタディスト",
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-16",
+      "affected_count": null,
+      "count_note": "漏えいの対象となった情報の範囲、項目、対象者は調査中（第一報時点）",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、連携していた顧客の情報の一部が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "メールアドレス",
+        "氏名"
+      ],
+      "summary": "主に顧客への案内（メール配信など）に使っていた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、プレイドの調査でKARTEに連携していた情報の一部が漏えいの対象に含まれると報告を受けたと公表した。漏えいした情報にはメールアドレスや氏名など個人情報が含まれる可能性があり、範囲、項目、対象者は調査中としている。KARTEとの連携に使っていた認証情報は無効化した。KARTEはTeachmeシリーズとは別のシステムで、Teachmeシリーズへの影響はないとしている。",
+      "sources": [
+        {
+          "title": "スタディスト 外部サービス「KARTE」への不正アクセスに関するお知らせ（第一報）",
+          "url": "https://studist.jp/news/news_20261116"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象となる人には同社から別途連絡するとしている"
+        },
+        {
+          "text": "本件に便乗した不審なメールやSMSのURL・添付ファイルを開かず、パスワードやカード情報を入力しない"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-tv-tokyo-karte",
+      "organization": "株式会社テレビ東京",
+      "services": [
+        "テレ東BIZ",
+        "テレビ東京ID"
+      ],
+      "industry": "メディア・出版",
+      "country": "JP",
+      "date_announced": "2026-11-16",
+      "affected_count": null,
+      "count_note": "件数はプレイドが精査中。対象は「テレビ東京ID」の登録者（テレ東BIZの現会員・解約者・メルマガ会員等を含む）",
+      "cause": "third_party",
+      "root_cause": "メール配信業務等を委託するプレイドの「KARTE」が不正アクセスを受け、登録されていた会員情報が漏えいした可能性",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "会員ID",
+        "利用履歴",
+        "生年月日",
+        "性別"
+      ],
+      "summary": "経済動画配信サービス「テレ東BIZ」のメール配信業務等を委託している株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、同サービスに登録されていた会員らの個人情報の一部が外部に漏えいした可能性があると公表した。対象は「テレビ東京ID」の登録者（現会員、解約者、メルマガ会員等）の氏名、メールアドレス、ユーザーID、視聴履歴などで、ほかに氏名等と結びつかない形で生年月日と性別も含まれる。ログインパスワード、クレジットカード情報、銀行口座情報は含まれない。件数はプレイドが精査中。",
+      "sources": [
+        {
+          "title": "テレ東BIZ 【重要なお知らせ】「テレ東BIZ」のメール配信業務等を委託している外部サービスへの不正アクセスについて",
+          "url": "https://help-txbiz.tv-tokyo.co.jp/hc/ja/articles/64382571694105"
+        },
+        {
+          "title": "ORICON NEWS",
+          "url": "https://www.oricon.co.jp/news/2493297/full/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "テレビ東京やテレ東BIZを装ったフィッシングメールに注意し、心当たりのないメールのURLを開かない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-yonden-karte",
+      "organization": "四国電力株式会社",
+      "services": [
+        "よんでんコンシェルジュ"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_announced": "2026-11-16",
+      "affected_count": 600000,
+      "count_note": "公表は「約60万件」。個人会員と法人会員の合計",
+      "cause": "third_party",
+      "root_cause": "お知らせ配信に使っていたプレイドの「KARTE」が不正アクセスを受け、連携していた会員情報が流出した",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "住所",
+        "性別",
+        "生年月日"
+      ],
+      "summary": "会員制Webサービス「よんでんコンシェルジュ」のお知らせ配信に使っていたプレイドのサービス「KARTE」が不正アクセスを受け、会員約60万件の情報が外部に流出したと公表した。11月15日にプレイドから報告を受けた。流出したのは個人会員の氏名、メールアドレス（ログインID）、住所、お知らせメール希望の有無、性別、誕生日と、法人会員の名称、メールアドレス、住所、お知らせメール希望の有無。電気料金の支払いに使うクレジットカードや金融機関口座の情報、パスワードは同サービスで扱っておらず、流出していないとしている。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "当社委託先のサービスへの不正アクセスによる「よんでんコンシェルジュ」のお客さま情報の流出について（四国電力）",
+          "url": "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/16/pr003.pdf"
+        },
+        {
+          "title": "四国電力、顧客情報約60万件流出 プレイドへの不正アクセスで（日本経済新聞）",
+          "url": "https://www.nikkei.com/article/DGXZQOCC168KG0W6A111C2000000/"
+        },
+        {
+          "title": "四国電力、顧客情報60万件流出 委託先に不正アクセス（朝日新聞）",
+          "url": "https://www.asahi.com/sp/articles/ASVCK3TP8VCKPLXB00HM.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "対象の会員には四国電力から個別にメールで連絡がある"
+        },
+        {
+          "text": "四国電力を装った不審なメールに注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
     },
     {
       "id": "2026-11-xleague-comsbi",
@@ -634,6 +4729,48 @@
       ],
       "severity": "high",
       "disclosure_days": 4,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-kawasaki-city-nambu-market-teket",
+      "organization": "神奈川県川崎市",
+      "services": [
+        "川崎市地方卸売市場南部市場のイベント参加募集"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "神奈川県",
+      "date_occurred": "2026-11-05",
+      "date_announced": "2026-11-14",
+      "affected_count": 193,
+      "count_note": "指定管理者主催の5イベントの申込人数の合計193人。流出範囲は調査中",
+      "cause": "third_party",
+      "root_cause": "指定管理者がイベント募集に使った電子チケットサービス「teket」が不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社teket"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス"
+      ],
+      "summary": "南部市場の指定管理者である川崎市場管理株式会社がイベントの募集に使っていた電子チケットサービス「teket」が不正アクセスを受け、指定管理者主催の魚のさばき方教室や夏休み市場体験など5イベントの申込者の氏名やメールアドレスなどが流出したと公表した。申込人数は計193人で、流出範囲は調査中。指定管理者は11月8日にteketから連絡を受けたが、市への報告は14日だった。不正ログインや悪用は確認されていない。",
+      "sources": [
+        {
+          "title": "川崎市 報道発表資料",
+          "url": "https://www.city.kawasaki.jp/templates/prs/280/0000191739.html"
+        },
+        {
+          "title": "川崎市 報道発表資料（PDF）",
+          "url": "https://www.city.kawasaki.jp/templates/prs/cmsfiles/contents/0000191/191739/houdou.pdf"
+        },
+        {
+          "title": "カナロコ",
+          "url": "https://www.kanaloco.jp/news/government/article-1321042.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 9,
       "reliability": "high"
     },
     {
@@ -857,6 +4994,39 @@
       ],
       "severity": "high",
       "disclosure_days": 5,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-eicoh",
+      "organization": "株式会社エイコー",
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-11-09",
+      "date_announced": "2026-11-13",
+      "affected_count": null,
+      "count_note": "情報の外部流出の有無や影響範囲は調査中",
+      "cause": "ransomware",
+      "root_cause": "一部システムが第三者の不正アクセスを受け、ランサムウェアの被害が発生した。侵入経路は公表されていない",
+      "summary": "11月9日、一部のシステムが第三者による不正アクセスを受け、ランサムウェアによる被害が発生したことを確認したと公表した。関係機関や専門家と連携して被害状況の調査と復旧を進めており、情報の外部流出の有無や影響範囲は調査中としている。同社を装ったメールなどが送られる可能性があるとして、メールで振込先の変更を依頼することはないと顧客・取引先に注意を呼びかけた。",
+      "sources": [
+        {
+          "title": "エイコー 当社システムへの不正アクセスに関するお知らせ",
+          "url": "https://www.eicoh.com/news/detail/127"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/eicoh-ransomware-unauthorized-access-payment-change-2026/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "エイコーを名乗る振込先口座の変更依頼は、事前に登録した連絡先で確認する"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 4,
       "reliability": "high"
     },
     {
@@ -1442,13 +5612,28 @@
       "country": "JP",
       "status": "investigating",
       "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-11-13",
       "date_announced": "2026-11-13",
-      "affected_count": null,
-      "count_note": "漏えいした可能性のある情報の内容・件数・導入企業への影響は公表されていない",
-      "cause": "unauthorized_access",
-      "root_cause": "CXプラットフォーム「KARTE」が第三者の不正アクセスを受けた。手口は公表されていない",
-      "summary": "提供するCXプラットフォーム「KARTE」への第三者からの不正アクセスを検知し、緊急メンテナンスとしてKARTEを利用する全プロジェクトで計測・配信・管理画面を含む全機能を停止したと公表した。その後、外部に漏えいした可能性のある情報を確認し、該当する顧客にメールで連絡した。漏えいした可能性のある情報の内容や件数、導入企業への影響は公表されていない。",
+      "affected_count": 79249,
+      "count_note": "KARTEのアカウントとして登録されたメールアドレス79,249件。外部サービス連携用の認証情報と、利用企業が取り込んでいた顧客データの件数は調査中。利用企業ごとの件数は各社が公表している",
+      "cause": "vulnerability",
+      "root_cause": "サーバーの脆弱性を突かれて接続用の認証情報を盗まれ、データベースのデータを読み出された",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "提供するCXプラットフォーム「KARTE」が11月13日未明に不正アクセスを受け、KARTEの全サービスを停止したと公表した。11月16日の第2報では、第三者がサーバーの脆弱性を悪用してシステムやデータベースの接続用認証情報を窃取し、データを外部に読み出したほか、同社アカウントを乗っ取って管理画面にも不正アクセスしたと説明した。漏えいを確認したのは、KARTEのアカウント用メールアドレス79,249件、外部サービスとの連携に使う認証情報（シークレットキー、アクセストークン等）、利用企業が会員情報などを取り込んでいたデータの一部で、後の2つの件数は調査中。利用企業には連携用認証情報の無効化を求めている。漏えいの対象となった利用企業には個別に連絡し、ジンズやRIZAPなど多くの利用企業が自社の顧客情報の漏えいを公表している。サービス再開の時期は未定。",
       "sources": [
+        {
+          "title": "プレイド お詫びとお知らせ（第2報・適時開示）",
+          "url": "https://pdf.irpocket.com/C4165/xoA3/Laiu/fPWu/c2dr.pdf"
+        },
+        {
+          "title": "プレイド お知らせ（第2報）",
+          "url": "https://plaid.co.jp/news/20261116/"
+        },
         {
           "title": "プレイド お知らせ",
           "url": "https://plaid.co.jp/news/20261113/"
@@ -1462,12 +5647,20 @@
           "url": "https://www.nikkei.com/article/DGXZQOUC13B0E0T11C26A1000000/"
         },
         {
+          "title": "日本経済新聞（メアド7.9万件漏洩）",
+          "url": "https://www.nikkei.com/article/DGXZQOUC169GY0W6A111C2000000/"
+        },
+        {
           "title": "ビジネス+IT",
           "url": "https://www.sbbit.jp/article/cont1/188395"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2157316.html"
         }
       ],
-      "severity": null,
-      "disclosure_days": null,
+      "severity": "medium",
+      "disclosure_days": 0,
       "reliability": "high"
     },
     {
@@ -2101,6 +6294,37 @@
       "severity": "medium",
       "disclosure_days": null,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-11-macromill-monitor",
+      "organization": "株式会社マクロミル",
+      "services": [
+        "マクロミル モニタサイト"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-11-12",
+      "affected_count": 317,
+      "count_note": "閲覧の痕跡が確認されたモニタ317名。うち82名は振込先口座情報も対象",
+      "cause": "unauthorized_access",
+      "root_cause": "アンケートモニタサイトの一部システムが第三者の不正アクセスを受けた",
+      "data_types": [
+        "口座番号"
+      ],
+      "summary": "アンケートモニタサービス「マクロミル モニタサイト」の一部システムへの第三者の不正アクセスを10月29日に確認し、モニタ317名の基本情報と登録された属性情報が閲覧された痕跡があると公表した。うち82名はポイント交換先として登録した振込先口座情報も含まれる。一部アカウントで登録メールアドレスの書き換えやポイント交換の操作が試みられたが、不正な交換の完了や不正ログインなどの実害は確認されていない。全モニタのポイント交換機能を停止した。",
+      "sources": [
+        {
+          "title": "マクロミル お詫びとお知らせ",
+          "url": "https://www.macromill.com/press/info/20261112.html"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/18/56824.html"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": null,
+      "reliability": "high"
     },
     {
       "id": "2026-11-namerikawa-city-icuco",
@@ -5304,6 +9528,46 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-11-sendai-city-mynumber-arara",
+      "organization": "宮城県仙台市",
+      "services": [
+        "マイナンバーカード交付予約・管理システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "local_gov",
+      "prefecture": "宮城県",
+      "date_announced": "2026-11-06",
+      "affected_count": null,
+      "count_note": "漏えいの有無と件数は調査中。11月4日までの予約システムの登録メールアドレス数は12,211件",
+      "cause": "third_party",
+      "root_cause": "TKCの予約システムが受付完了メールの送信に使うアララの「アララメッセージ」が不正アクセスを受けた",
+      "vendor": {
+        "name": "アララ株式会社"
+      },
+      "data_types": [
+        "メールアドレス"
+      ],
+      "summary": "マイナンバーカード特設センターの来庁予約に使うTKCの「マイナンバーカード交付予約・管理システム」が、受付完了メールの送信に利用するアララのメール配信サービス「アララメッセージ」が第三者の不正アクセスを受け、予約時に登録したメールアドレスが漏えいした可能性があると公表した。11月2日にTKCから報告を受けた。メールアドレス以外の情報が漏えいした可能性はないとしている。漏えいの有無や件数は調査中。予約システム自体は不正アクセスを受けておらず利用を続けるが、アララメッセージによるメール送信は停止した。",
+      "sources": [
+        {
+          "title": "仙台市 お知らせ",
+          "url": "https://www.city.sendai.jp/kosekijumin/mynumber/20261104.html"
+        },
+        {
+          "title": "仙台市 記者発表資料",
+          "url": "https://www.city.sendai.jp/kosekijumin/20261106.html"
+        },
+        {
+          "title": "仙台放送",
+          "url": "https://news.yahoo.co.jp/articles/cb219146e580193259b48763074cab659b6c35ec"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-shiseido-skin",
       "organization": "株式会社資生堂",
       "services": [
@@ -6204,6 +10468,62 @@
       "reliability": "high"
     },
     {
+      "id": "2026-11-takarakuji-official",
+      "organization": "全国都道府県及び全指定都市（宝くじ公式サイト）",
+      "services": [
+        "宝くじ公式サイト",
+        "宝くじ公式アプリ"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "date_occurred": "2026-11-04",
+      "date_announced": "2026-11-05",
+      "affected_count": 4436,
+      "count_note": "不正ログイン4,436名（うち4,133名はパスワードを変更された）。サーバーやデータベースへの侵入の形跡はないとしている",
+      "cause": "unauthorized_access",
+      "root_cause": "外部で入手されたメールアドレスとパスワードを使ったリスト型攻撃とみられる不正ログイン",
+      "attack_methods": [
+        "credential_stuffing"
+      ],
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "性別",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "クレジットカード情報（番号の一部・有効期限等）",
+        "購入履歴",
+        "保存データ（写真・文書等）"
+      ],
+      "summary": "宝くじ公式サイトで利用者のパスワードが意図せず変更される事象を確認し、11月5日にサイトと公式アプリを停止したと公表した。11月13日の発表で、11月4日〜5日にリスト型攻撃とみられる手法で4,436名の会員アカウントに不正ログインされ、うち4,133名のパスワードが変更されたと明らかにした。氏名、生年月日、性別、住所、電話番号、メールアドレス、当せん金受取口座の情報（金融機関名、口座番号の上4桁、口座名義）、クレジットカード番号の下4桁、購入履歴、プロフィール画像が閲覧された可能性がある。サーバーへの侵入や不正な購入・当せん金の受取は確認されていない。全会員のパスワードをリセットし、13日に再開した。",
+      "sources": [
+        {
+          "title": "宝くじ公式サイト・公式アプリへの不正ログインについて（全国都道府県及び全指定都市）",
+          "url": "https://www.takarakuji-preliminary.jp/newsrelease_20261113.pdf"
+        },
+        {
+          "title": "ITmedia NEWS 宝くじ公式サイトが一時停止、利用者のパスワードが「意図せず変更」",
+          "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002943/"
+        },
+        {
+          "title": "Impress Watch 宝くじ公式サイトに不正アクセス 4436アカウントに被害",
+          "url": "https://www.watch.impress.co.jp/docs/news/2156159.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "宝くじ公式サイトのパスワードを再設定し、登録情報が正しいか確認する"
+        },
+        {
+          "text": "同じメールアドレスとパスワードを使っている他のサービスのパスワードも変更する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 1,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-tokio-marine-direct",
       "organization": "東京海上ダイレクト損害保険株式会社",
       "services": [
@@ -6302,6 +10622,60 @@
         }
       ],
       "severity": null,
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-tsukuba-bank-scf",
+      "organization": "株式会社筑波銀行",
+      "services": [
+        "ポケットフリーローン",
+        "ポケットカードローン",
+        "アスジョイ"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "茨城県",
+      "date_announced": "2026-11-05",
+      "affected_count": 3983,
+      "count_note": "11月17日の第二報で3,983件と公表。対象はカードローンなどを申し込み・契約した一部の顧客",
+      "cause": "third_party",
+      "root_cause": "カードローン等の保証会社SMBCコンシューマーファイナンスのシステムが不正アクセスを受けた",
+      "vendor": {
+        "name": "SMBCコンシューマーファイナンス株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "性別",
+        "生年月日",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "運転免許情報",
+        "従業員情報",
+        "契約情報"
+      ],
+      "summary": "カードローン等の一部商品で保証業務を提携するSMBCコンシューマーファイナンスのシステムが第三者の不正アクセスを受け、顧客情報が漏えいしたと11月5日に公表した。11月17日の第二報で、ポケットフリーローン・ポケットカードローン・アスジョイを申し込み・契約した顧客の情報3,983件が対象と公表した。項目は氏名、性別、生年月日、住所、電話番号、メールアドレス、運転免許証番号、勤務先情報（年収等）、契約情報など。二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "筑波銀行 お知らせ",
+          "url": "https://www.tsukubabank.co.jp/cms/article/76ee6818987f5e1c31d22e2302d6e0e18688c745/"
+        },
+        {
+          "title": "筑波銀行 お知らせ（第二報）",
+          "url": "https://www.tsukubabank.co.jp/cms/article/df287fec49a6059039801f8f441b2dd0c1154c3c/"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOCC1762X0X11C26A1000000/"
+        },
+        {
+          "title": "ニッキン",
+          "url": "https://www.nikkinonline.com/article/440527"
+        }
+      ],
+      "severity": "critical",
       "disclosure_days": null,
       "reliability": "high"
     },
@@ -10533,12 +14907,10 @@
       ],
       "industry": "物流",
       "country": "JP",
-      "status": "investigating",
-      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
       "date_occurred": "2026-10-21",
       "date_announced": "2026-10-26",
-      "affected_count": null,
-      "count_note": "件数は調査中",
+      "affected_count": 413527,
+      "count_note": "「一番くじ ONLINE」の注文387,895件と「一番くじ倶楽部」25,632件の合計（約41万件、重複の可能性あり）。11月16日公表",
       "cause": "unauthorized_access",
       "root_cause": "物流システム内のサーバーが不正アクセスを受けた（原因は未公表）",
       "data_types": [
@@ -10546,7 +14918,7 @@
         "住所",
         "電話番号"
       ],
-      "summary": "バンダイナムコグループの物流子会社で、10月21日に物流システム内のサーバーで不正アクセスが疑われる痕跡を見つけ、サーバーを停止した。その後「一番くじ ONLINE」の配送情報を格納するサーバーにも痕跡が見つかり、氏名・住所・電話番号が漏えいした可能性があるとバンダイナムコホールディングスが公表した。クレジットカード情報は含まれない。件数は調査中。",
+      "summary": "バンダイナムコグループの物流子会社で、10月21日に物流システム内のサーバーで不正アクセスが疑われる痕跡を見つけ、サーバーを停止した。その後「一番くじ ONLINE」の配送情報を格納するサーバーにも痕跡が見つかり、氏名・住所・電話番号が漏えいした可能性があるとバンダイナムコホールディングスが公表した。クレジットカード情報は含まれない。11月16日には、対象が「一番くじ ONLINE」の注文387,895件と「一番くじ倶楽部」25,632件の約41万件だったと公表した。",
       "sources": [
         {
           "title": "ITmedia NEWS",
@@ -10555,6 +14927,14 @@
         {
           "title": "HOBBY Watch",
           "url": "https://hobby.watch.impress.co.jp/docs/news/2151390.html"
+        },
+        {
+          "title": "NHK（件数の公表）",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261116de76767"
+        },
+        {
+          "title": "ビジネス+IT（件数の公表）",
+          "url": "https://www.sbbit.jp/article/cont1/188459"
         }
       ],
       "severity": "high",
@@ -14823,6 +19203,39 @@
       "reliability": "high"
     },
     {
+      "id": "2026-10-station-ai-studio",
+      "organization": "STATION Ai株式会社",
+      "services": [
+        "SKIP Focus・Physical AI・開業前のお問い合わせフォーム"
+      ],
+      "industry": "団体・その他",
+      "country": "JP",
+      "date_announced": "2026-10-17",
+      "affected_count": null,
+      "count_note": "件数は公表されていない。実際の流出の有無は確認できていない",
+      "cause": "third_party",
+      "root_cause": "Webサイトに使うStudioが不正アクセスを受け、フォームの送信内容と外部サービスの認証情報が流出した可能性",
+      "vendor": {
+        "name": "Studio株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "問い合わせ内容"
+      ],
+      "summary": "Webサイトで利用する「Studio」の提供元Studio社から10月16日に、不正アクセスによりフォームの送信内容と外部サービスの認証情報が流出した可能性があると通知を受けたと公表した。対象は「SKIP Focus」「Physical AI」と2024年12月に閉鎖した開業前のお問い合わせフォームに送信された氏名、会社名、メールアドレス、電話番号、問い合わせ内容など。実際の流出の有無は確認できていない。該当フォームの受付を停止し、外部サービスとの連携を解除した。",
+      "sources": [
+        {
+          "title": "STATION Ai お知らせ（第一報）",
+          "url": "https://stationai.co.jp/news/mhv1CXpZ"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-10-tohoku-epco-frontier",
       "organization": "東北電力フロンティア株式会社",
       "group": "東北電力グループ",
@@ -15291,6 +19704,39 @@
       ],
       "severity": null,
       "disclosure_days": 16,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-10-mitsubishi-gas-chemical-t4c",
+      "organization": "三菱ガス化学株式会社",
+      "industry": "製造",
+      "country": "JP",
+      "date_occurred": "2026-09-16",
+      "date_announced": "2026-10-16",
+      "affected_count": 2093,
+      "count_note": "元従業員2,092名と現従業員1名。ファイルは送信先で開封されずに削除された",
+      "cause": "third_party",
+      "root_cause": "人事関連システム導入の委託先T4Cの従業員が、委託業務の資料を他社宛てのメールに誤って添付した",
+      "vendor": {
+        "name": "株式会社T4C"
+      },
+      "data_types": [
+        "氏名",
+        "従業員情報"
+      ],
+      "summary": "人事関連システム導入業務の委託先である株式会社T4Cの従業員が、9月16日に同社の委託業務に関する資料を他社宛てのメールに誤って添付して送信したと公表した。資料には2005年10月31日から2025年7月31日までに退職した2,092名全員と現従業員1名の氏名・社員番号が含まれていた。送信先からの連絡で同日に判明し、ファイルは開封されずに削除されたことを確認した。10月15日に個人情報保護委員会へ報告した。退職者への個別連絡が難しいため、お知らせで報告に代えるとしている。",
+      "sources": [
+        {
+          "title": "三菱ガス化学 当社業務委託先における個人情報を含むメールの誤送信について（お詫び）",
+          "url": "https://www.mgc.co.jp/corporate/news/2026/261016.html"
+        },
+        {
+          "title": "Security NEXT 従業員情報含むファイルをメールで誤送信 - 三菱ガス化学",
+          "url": "https://www.security-next.com/192498"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 30,
       "reliability": "high"
     },
     {
@@ -17106,6 +21552,57 @@
       "severity": "medium",
       "disclosure_days": 3,
       "reliability": "high"
+    },
+    {
+      "id": "2026-10-lili",
+      "organization": "株式会社キャリー",
+      "services": [
+        "Lili"
+      ],
+      "industry": "生活サービス",
+      "country": "JP",
+      "date_occurred": "2026-07-11",
+      "date_announced": "2026-10-14",
+      "affected_count": 98256,
+      "count_note": "会員・退会者最大約98,256名（本人確認書類画像は最大7,261名、10月22日の第2報で縮小画像の対象最大32,916名を追加）。ほかに登録途中の方最大約10,223名、問い合わせフォーム利用者最大1,364件",
+      "cause": "unauthorized_access",
+      "root_cause": "第三者がサーバーに侵入し、パスワードを読み取るプログラムを設置した",
+      "data_types": [
+        "メールアドレス",
+        "パスワード（平文）",
+        "生年月日",
+        "メッセージ・チャット履歴",
+        "本人確認書類画像",
+        "氏名",
+        "電話番号",
+        "問い合わせ内容"
+      ],
+      "summary": "マッチングサイト「Lili」のサーバーが7月11日から10月6日までの約3か月間、第三者の不正侵入を受け、会員・退会者最大約98,256名のメールアドレス、パスワード、生年月日・都道府県などのプロフィール、サイト内メッセージなどが漏えいした可能性があると公表した。パスワードは暗号化して保存していたが、復元するプログラムが設置されており平文で流出した可能性が高い。本人確認書類の画像も対象で、10月22日の第2報で縮小画像の対象を追加した。サイト上に偽のCloudflare確認画面が表示されるケースもあった。",
+      "sources": [
+        {
+          "title": "Lili 不正アクセスによる個人情報の漏えいの可能性について",
+          "url": "https://lili-jo.com/notice/20261014.html"
+        },
+        {
+          "title": "Lili 第2報",
+          "url": "https://lili-jo.com/notice/20261022.html"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/lili-unauthorized-access-98256-password-identity-document-clickfix-20261014/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "Liliと同じパスワードを使い回している他のサービスのパスワードを変更する"
+        },
+        {
+          "text": "「Cloudflare」を装いコマンドの実行を求める画面に従わない"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 95,
+      "reliability": "mid"
     },
     {
       "id": "2026-10-maebashi-city",
@@ -20154,19 +24651,22 @@
       "date_occurred": "2026-09-20",
       "date_announced": "2026-10-08",
       "affected_count": 14640000,
-      "count_note": "管理機能への不正操作で約1,464万件（うち約413万件はハッシュ化されたパスワードを含む）。このほか業務管理システムの脆弱性で返金先の口座情報など17,780件、バス予約完了ページの閲覧で約1.2万件。10月16日の第2報で、2017年2月〜2018年6月にskyticketプレミアムの会費支払いでカードを登録・利用した最大6,140人のクレジットカード情報の流出を追加。10月28日の第3報で、返金先の銀行口座情報3万2,341件の流出、クレジットカード情報（一部を伏せた番号）約93.6万件（約41.4万人分）と旅行保険の申込情報約11.8万件の流出のおそれを追加",
+      "count_note": "管理機能への不正操作で約1,464万件（うち約413万件はハッシュ化されたパスワードを含む）。このほか業務管理システムの脆弱性で返金先の口座情報など17,780件、バス予約完了ページの閲覧で約1.2万件。10月16日の第2報で、2017年2月〜2018年6月にskyticketプレミアムの会費支払いでカードを登録・利用した最大6,140人のクレジットカード情報の流出を追加。10月28日の第3報で、返金先の銀行口座情報3万2,341件の流出、クレジットカード情報（一部を伏せた番号）約93.6万件（約41.4万人分）と旅行保険の申込情報約11.8万件の流出のおそれを追加。11月18日の第4報で、決済サーバーの削除漏れの接続権限による別経路から1,045予約・約1,166人分の予約情報の流出を追加（うち国際線の15人はパスポート番号・有効期限・発行国・国籍を含む）",
       "cause": "unauthorized_access",
       "root_cause": "管理機能の不正操作、業務管理システムの脆弱性、ログインなしで開けたバス予約完了ページの3つの経路による不正アクセス",
       "data_types": [
         "氏名",
         "生年月日",
         "メールアドレス",
+        "電話番号",
+        "性別",
+        "パスポート番号",
         "パスワード（ハッシュ化・暗号化済み）",
         "口座番号",
         "クレジットカード番号",
         "クレジットカード情報（番号の一部・有効期限等）"
       ],
-      "summary": "旅行予約サイト「skyticket」で、経路の異なる3件の不正アクセスがあったと10月9日に公表した（会員には8日にメールで通知していた）。10月2日〜4日に管理機能が不正に操作され、氏名・生年月日・メールアドレスなど約1,464万件が流出し、うち約413万件にはハッシュ化されたパスワードが含まれていた。9月20日には業務管理システムの脆弱性を突かれ返金先の口座情報など17,780件が対象となり、バス予約完了ページの約1.2万件の予約情報も機械的に閲覧されていた。当初はクレジットカード番号は流出していないとしていたが、10月16日の第2報で、2018年の決済移行の際に削除されず会費支払いのログに残っていたカード番号・名義・有効期限が、最大6,140人分流出したと訂正した。セキュリティコードは含まれない。10月28日の第3報で、削除されずにクラウドに残っていたデータベースの複製が不正に取得された認証情報で読み取られ、2022年3月〜2024年5月に登録された返金先の銀行口座情報3万2,341件が流出したと公表した。一部を伏せたクレジットカード番号約93.6万件（約41.4万人分）と旅行保険の申込情報約11.8万件も流出したおそれがある。",
+      "summary": "旅行予約サイト「skyticket」で、経路の異なる3件の不正アクセスがあったと10月9日に公表した。10月2日〜4日に管理機能が不正に操作され、氏名・生年月日・メールアドレスなど約1,464万件が流出し、うち約413万件にはハッシュ化されたパスワードが含まれていた。9月20日には業務管理システムの脆弱性を突かれ返金先の口座情報など17,780件が対象となり、バス予約完了ページの約1.2万件の予約情報も機械的に閲覧されていた。当初はクレジットカード番号は流出していないとしていたが、10月16日の第2報で、2018年の決済移行の際に削除されず会費支払いのログに残っていたカード番号・名義・有効期限が、最大6,140人分流出したと訂正した。セキュリティコードは含まれない。10月28日の第3報で、削除されずにクラウドに残っていたデータベースの複製が不正に取得された認証情報で読み取られ、2022年3月〜2024年5月に登録された返金先の銀行口座情報3万2,341件が流出したと公表した。一部を伏せたクレジットカード番号約93.6万件（約41.4万人分）と旅行保険の申込情報約11.8万件も流出したおそれがある。11月18日の第4報で、削除漏れの決済サーバー接続権限が悪用され約1,166人分の予約情報が流出し、うち15人はパスポート番号も含まれていたと訂正した。",
       "sources": [
         {
           "title": "skyticket 公式発表",
@@ -20203,6 +24703,10 @@
         {
           "title": "TRAICY（第3報）",
           "url": "https://www.traicy.com/posts/20261029386203/"
+        },
+        {
+          "title": "skyticket 公式発表（第4報）",
+          "url": "https://skyticket.jp/news/tour/67764"
         }
       ],
       "severity": "critical",
