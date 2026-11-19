@@ -1,0 +1,28 @@
+organization: 株式会社インターワークス
+group: コンフィデンス・インターワークス
+services:
+  - 工場ワークス
+industry: 人材・教育
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_announced: 2026-11-16
+affected_count: null
+count_note: 詳細な件数と項目は精査中（第一報時点）
+cause: third_party
+root_cause: 委託先プレイドの「KARTE」が不正アクセスを受け、連携していた会員情報の一部が外部に漏えいした
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 生年月日
+  - 住所
+summary: 株式会社コンフィデンス・インターワークスは、グループ会社の株式会社インターワークスが運営する「工場ワークス」がメールやLINEの配信に使っていた株式会社プレイドの「KARTE」が不正アクセスを受け、会員の登録情報の一部が漏えいした可能性があると公表した。含まれる可能性があるのは会員の氏名、メールアドレス、電話番号、生年月日、住所情報など。件数と項目は精査中。ログインパスワードはKARTEに連携しておらず漏えいはない。工場ワークス本体と企業向け管理画面は連携対象外としている。
+sources:
+  - title: コンフィデンス・インターワークス 【重要】外部委託先システムへの不正アクセスに伴う、会員情報漏洩に関するお知らせとお詫び（第一報）
+    url: https://ciw.jp/news/2819/
+checklist:
+  - text: 対象範囲の確定後、該当する会員には個別にメールなどで連絡するとしている
+  - text: 同社やプレイドを装ってパスワードやカード情報の入力を求める連絡に注意する

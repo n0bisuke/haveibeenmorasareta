@@ -1,0 +1,27 @@
+organization: 公益社団法人日本プロサッカーリーグ
+services:
+  - Ｊリーグチケット
+  - WEリーグチケット
+  - J.League Fantasy Card
+industry: エンタメ・スポーツ
+country: JP
+date_announced: 2026-11-18
+affected_count: 2383073
+count_note: Ｊリーグチケット・WEリーグチケット2,383,073件（うちWEリーグチケット14件）。ほかにJ.League Fantasy Card 543件
+cause: third_party
+root_cause: 委託先プレイドの「KARTE」が不正アクセスを受け、連携していたチケットサイト等の利用者情報の一部が外部に漏えいした
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 会員ID
+  - 生年月日
+  - 性別
+  - 住所
+  - メールアドレス
+summary: 公式チケット販売サイト「Ｊリーグチケット」「WEリーグチケット」と公式デジタルカードゲーム「J.League Fantasy Card」で情報案内に使っていた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、利用者情報の一部が漏えいしたと公表した。チケットサイトは2,383,073件で、ユーザー識別子、生年月日、性別、都道府県、市区町村の一部または全部。Fantasy Cardは543件で、メールアドレスとユーザー識別子。氏名、ＪリーグID、ログインパスワード、クレジットカード情報は含まれない。
+sources:
+  - title: Ｊリーグ Ｊリーグ公式サービスで利用する外部ウェブツールへの不正アクセスについて
+    url: https://www.jleague.jp/news/article/35384/
+checklist:
+  - text: 漏えいが確認された利用者には順次メールで連絡するとしている
+  - text: Ｊリーグや関係会社を装ったメールに注意する。本件でパスワードやカード番号を尋ねることはないとしている

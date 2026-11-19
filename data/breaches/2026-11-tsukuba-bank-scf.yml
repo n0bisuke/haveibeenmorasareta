@@ -1,0 +1,36 @@
+organization: 株式会社筑波銀行
+services:
+  - ポケットフリーローン
+  - ポケットカードローン
+  - アスジョイ
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 茨城県
+date_announced: 2026-11-05
+affected_count: 3983
+count_note: 11月17日の第二報で3,983件と公表。対象はカードローンなどを申し込み・契約した一部の顧客
+cause: third_party
+root_cause: カードローン等の保証会社SMBCコンシューマーファイナンスのシステムが不正アクセスを受けた
+vendor:
+  name: SMBCコンシューマーファイナンス株式会社
+data_types:
+  - 氏名
+  - 性別
+  - 生年月日
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 運転免許情報
+  - 従業員情報
+  - 契約情報
+summary: カードローン等の一部商品で保証業務を提携するSMBCコンシューマーファイナンスのシステムが第三者の不正アクセスを受け、顧客情報が漏えいしたと11月5日に公表した。11月17日の第二報で、ポケットフリーローン・ポケットカードローン・アスジョイを申し込み・契約した顧客の情報3,983件が対象と公表した。項目は氏名、性別、生年月日、住所、電話番号、メールアドレス、運転免許証番号、勤務先情報（年収等）、契約情報など。二次被害は確認されていない。
+sources:
+  - title: 筑波銀行 お知らせ
+    url: https://www.tsukubabank.co.jp/cms/article/76ee6818987f5e1c31d22e2302d6e0e18688c745/
+  - title: 筑波銀行 お知らせ（第二報）
+    url: https://www.tsukubabank.co.jp/cms/article/df287fec49a6059039801f8f441b2dd0c1154c3c/
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOCC1762X0X11C26A1000000/
+  - title: ニッキン
+    url: https://www.nikkinonline.com/article/440527

@@ -1,0 +1,26 @@
+organization: 株式会社ベネッセコーポレーション
+group: ベネッセグループ
+services:
+  - 進研ゼミ
+  - まいにちのたまひよ
+  - Benesse High School Online
+  - グロースナビ
+  - キャリアナビ
+industry: 人材・教育
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_announced: 2026-11-17
+affected_count: null
+count_note: 漏洩した可能性のある情報の項目・件数はプレイドを通じて精査中
+cause: third_party
+root_cause: 委託先プレイドの「KARTE」が不正アクセスを受け、一部サービスで連携していた顧客情報が流出した
+vendor:
+  name: 株式会社プレイド
+summary: 一部サービスの利用分析やお知らせ配信に使っていた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、KARTEに連携していたデータが第三者に流出したと公表した。11月13日に不正アクセスの報告を受け、11月15日に流出の報告を受けた。対象は進研ゼミ入会申込サイト、進研ゼミ保護者サポートアプリ、まいにちのたまひよ、進研ゼミ小学講座〈チャレンジタッチ〉、Benesse High School Online、グロースナビ、キャリアナビでKARTEと連携した情報（高校向けサービスでは生徒に紐づくデータ連携はない）。情報の項目と件数は精査中。同社のシステムへの不正アクセスはないとしている。
+sources:
+  - title: ベネッセコーポレーション 弊社の利用するWEBサービス「KARTE」への不正アクセスによる情報漏洩のお詫びとお知らせ
+    url: https://company.benesse.co.jp/notice/005.html
+checklist:
+  - text: 詳細が判明しだい、連絡の必要な顧客にメールなどで個別に連絡するとしている
+  - text: ベネッセや本件のお詫びを装った身に覚えのないメールは、添付ファイルやURLを開かずに削除する

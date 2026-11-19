@@ -1,0 +1,21 @@
+organization: 株式会社クリーマ
+services:
+  - Creema
+industry: 小売・EC
+country: JP
+date_announced: 2026-11-18
+affected_count: null
+count_note: 件数は公表されていない（第一報時点）
+cause: third_party
+root_cause: 委託先プレイドの「KARTE」が不正アクセスを受け、連携していたユーザーIDなどの一部が外部に漏えいした
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 会員ID
+summary: ハンドメイドマーケットプレイス「Creema」で使っていた株式会社プレイドの「KARTE」のサーバーが脆弱性を悪用した不正アクセスを受け、ユーザー情報の一部が漏えいしたと公表した。プレイドの報告によると、漏えいしたのはユーザーID、過去の取引で使われた都道府県情報（都道府県名のみ）、メールマガジンの受信設定情報。件数は公表していない。氏名、詳細な住所、メールアドレス、パスワード、クレジットカード情報などの漏えいは現時点で確認されていない。
+sources:
+  - title: Creema 【重要】当社が利用するサービス「KARTE」への不正アクセスに伴うユーザー情報の一部漏えいに関するお知らせ（第一報）
+    url: https://www.creema.jp/news/1573/detail
+checklist:
+  - text: 対象の利用者には登録メールアドレスあてに順次連絡し、連絡が難しい場合はお知らせで代えるとしている
+  - text: パスワード変更など利用者側で必要な手続きはないとしている

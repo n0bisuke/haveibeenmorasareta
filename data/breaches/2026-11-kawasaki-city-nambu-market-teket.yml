@@ -1,0 +1,26 @@
+organization: 神奈川県川崎市
+services:
+  - 川崎市地方卸売市場南部市場のイベント参加募集
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 神奈川県
+date_occurred: 2026-11-05
+date_announced: 2026-11-14
+affected_count: 193
+count_note: 指定管理者主催の5イベントの申込人数の合計193人。流出範囲は調査中
+cause: third_party
+root_cause: 指定管理者がイベント募集に使った電子チケットサービス「teket」が不正アクセスを受けた
+vendor:
+  name: 株式会社teket
+data_types:
+  - 氏名
+  - メールアドレス
+summary: 南部市場の指定管理者である川崎市場管理株式会社がイベントの募集に使っていた電子チケットサービス「teket」が不正アクセスを受け、指定管理者主催の魚のさばき方教室や夏休み市場体験など5イベントの申込者の氏名やメールアドレスなどが流出したと公表した。申込人数は計193人で、流出範囲は調査中。指定管理者は11月8日にteketから連絡を受けたが、市への報告は14日だった。不正ログインや悪用は確認されていない。
+sources:
+  - title: 川崎市 報道発表資料
+    url: https://www.city.kawasaki.jp/templates/prs/280/0000191739.html
+  - title: 川崎市 報道発表資料（PDF）
+    url: https://www.city.kawasaki.jp/templates/prs/cmsfiles/contents/0000191/191739/houdou.pdf
+  - title: カナロコ
+    url: https://www.kanaloco.jp/news/government/article-1321042.html

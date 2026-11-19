@@ -1,0 +1,38 @@
+organization: 株式会社アインホールディングス
+services:
+  - アインズ&トルペ
+  - アユーラ
+  - Francfranc
+industry: 小売・EC
+country: JP
+date_announced: 2026-11-17
+affected_count: 8580000
+count_note: 会員情報は最大約858万件（アインズ&トルペ・アユーラ合計最大約260万件、Francfranc最大約598万件）。別にFrancfranc公式ECサイトの購入履歴に関するデータ最大約400万件。いずれも現時点の調査に基づく最大値
+cause: third_party
+root_cause: 委託先プレイドの「KARTE」が不正アクセスを受け、連携していた3ブランドの会員情報が流出した可能性がある
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 氏名
+  - 生年月日
+  - 性別
+  - メールアドレス
+  - 電話番号
+  - 会員ID
+  - 住所
+  - 郵便番号
+summary: 傘下の「アインズ&トルペ」「アユーラ」「Francfranc」が利用する株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、会員情報が流出した可能性があると公表した。アインズ&トルペとアユーラの会員は合計最大約260万件（氏名、生年月日、性別、メールアドレス、電話番号）、Francfrancの会員は最大約598万件（氏名、生年月日、ユーザーID、都道府県・市区町村）。Francfranc公式ECサイトの購入履歴に関するデータ最大約400万件（性別、生年月日、郵便番号、年代）も対象となる。11月15日にプレイドから連絡を受けた。クレジットカード情報とログインパスワードの流出はないとしている。
+sources:
+  - title: アインズ&トルペ お客さま情報流出の可能性について
+    url: https://ainz-tulpe.jp/blogs/information/%E3%82%A2%E3%82%A4%E3%83%B3%E3%82%BA-%E3%83%88%E3%83%AB%E3%83%9A%E5%85%AC%E5%BC%8F%E3%82%A2%E3%83%97%E3%83%AA%E5%8F%8A%E3%81%B3%E5%85%AC%E5%BC%8F%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B-%E3%81%8A%E5%AE%A2%E3%81%95%E3%81%BE%E6%83%85%E5%A0%B1%E6%B5%81%E5%87%BA%E3%81%AE%E5%8F%AF%E8%83%BD%E6%80%A7%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6
+  - title: Francfrancにおけるお客さま情報流出の可能性について
+    url: https://help.francfranc.com/hc/ja/articles/64371011900313-Francfranc%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%81%8A%E5%AE%A2%E3%81%95%E3%81%BE%E6%83%85%E5%A0%B1%E6%B5%81%E5%87%BA%E3%81%AE%E5%8F%AF%E8%83%BD%E6%80%A7%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6
+  - title: Francfranc お客さま情報流出の可能性についてのFAQ
+    url: https://help.francfranc.com/hc/ja/sections/64369202474649
+  - title: WWDJAPAN 「アインズ＆トルペ」「アユーラ」「フランフラン」で情報流出の可能性 3ブランド合計で最大約858万件
+    url: https://www.wwdjapan.com/articles/2554751
+  - title: 日本経済新聞 フランフラン、会員情報漏洩か 委託先への不正アクセスで
+    url: https://www.nikkei.com/article/DGXZQOUC181LW0Y6A111C2000000/
+checklist:
+  - text: 対象の顧客への連絡は調査結果を踏まえて行うとしている。公式サイトのお知らせを確認する
+  - text: 当社や関係会社を装った不審な連絡のURLや添付ファイルを開かず、公式の窓口に問い合わせる

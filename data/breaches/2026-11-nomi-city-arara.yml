@@ -1,0 +1,27 @@
+organization: 石川県能美市
+services:
+  - マイナンバーカード交付予約システム
+  - ネットdeスマート申請
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 石川県
+date_announced: 2026-11-17
+affected_count: 758
+count_note: 利用者のメールアドレス758件（報道による）
+cause: third_party
+root_cause: 2つのシステムのメール配信を担うアララのサービスが第三者の不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: マイナンバーカード交付予約システムと「ネットdeスマート申請」のメール配信を担う外部サービスが第三者の不正アクセスを受け、利用者のメールアドレス758件が漏えいしたと公表した。2つのシステムには氏名や住所、電話番号も登録されているが、漏えいしたのはメールアドレスだけとしている。ネットdeスマート申請は一時停止した。
+sources:
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261118de77590
+  - title: 北陸中日新聞
+    url: https://www.chunichi.co.jp/article/1340868
+  - title: MRO北陸放送
+    url: https://news.yahoo.co.jp/articles/ea1749391fbf466b48d602b64818ea61ea9cc260
+  - title: HAB北陸朝日放送
+    url: https://news.yahoo.co.jp/articles/5b78d0a34b9980c4a7284143d4f1b0a13686ecc1

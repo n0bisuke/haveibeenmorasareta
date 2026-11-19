@@ -1,0 +1,22 @@
+organization: 株式会社SU-PAY
+group: トライアルグループ
+services:
+  - SU-PAY
+industry: 金融・保険
+country: JP
+date_announced: 2026-11-17
+affected_count: 60000
+count_note: SU-PAY会員ID 60,000件（11月18日16時時点）。氏名・メールアドレスなど個人を直接特定できる情報の漏えいは判明していない
+cause: third_party
+root_cause: 委託先プレイドの「KARTE」が不正アクセスを受け、アプリのお知らせ用に連携していた会員IDが漏えいした
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 会員ID
+summary: トライアルホールディングスは、傘下の株式会社SU-PAYが決済アプリ「SU-PAY」のお知らせなどに利用する株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、SU-PAY公式アプリの会員に関する情報の一部が外部に漏えいしたと公表した。11月15日にプレイドから報告を受けた。11月18日16時時点で漏えいを確認したのはSU-PAY会員ID 6万件。氏名、住所、電話番号、クレジットカード番号、銀行口座番号、本人確認書類はシステム連携の対象外で、個人を直接特定できる情報の漏えいは判明していない。
+sources:
+  - title: トライアルホールディングス 当社が利用する外部サービス「KARTE」への不正アクセスに伴う一部会員情報漏えいに関するお知らせ(第一報)
+    url: https://trial-holdings.inc/news/release/3590/
+checklist:
+  - text: 特別な手続きは不要で、個別の漏えい有無の問い合わせには答えられないとしている
+  - text: 本件に便乗した不審なメールやSMS、電話のURLを開かず、パスワードや認証コードを入力しない

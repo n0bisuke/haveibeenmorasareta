@@ -1,0 +1,19 @@
+organization: 株式会社ドコモ・ファイナンス
+group: NTTグループ
+industry: 金融・保険
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_announced: 2026-11-17
+affected_count: null
+count_note: 漏えいの有無と影響範囲は調査中。項目・件数は公表されていない
+cause: third_party
+root_cause: 利用していたプレイドの「KARTE」が不正アクセスを受け、管理していた顧客の個人情報等が漏えいした可能性がある
+vendor:
+  name: 株式会社プレイド
+summary: 利用している株式会社プレイドの「KARTE」が第三者による不正アクセスを受け、同サービス上で管理していた顧客の個人情報等が外部に漏えいした可能性があることが判明したと公表した。影響範囲の確認と安全性の確保が完了するまで、11月17日15時45分からWebサイト経由の会員サイトへのログインを一時停止し（公式アプリからはログイン可能）、自動音声応答のガイダンスと一部サービスをオペレーター対応に切り替えた。漏えいの有無と影響範囲はプレイドと連携して調査中で、項目や件数は公表されていない。
+sources:
+  - title: 個人情報漏えいの可能性に伴う当社対応について（株式会社ドコモ・ファイナンス）
+    url: https://finance.docomo.ne.jp/member/news/release261117.pdf
+checklist:
+  - text: ドコモ・ファイナンスを装った不正なサイトへの誘導に注意し、個人情報や認証コードを入力しない

@@ -1,0 +1,25 @@
+organization: 株式会社WOWOW
+industry: メディア・出版
+country: JP
+date_announced: 2026-11-17
+affected_count: null
+count_note: 件数は調査中
+cause: third_party
+root_cause: 番組・サービス案内に使うプレイドの「KARTE」が不正アクセスを受け、連携していた顧客情報が漏えいした可能性
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 生年月日
+  - 性別
+  - 郵便番号
+  - メールアドレス
+summary: 番組やサービスの案内（メール送信、アプリ・Webサイトでの通知）に利用しているマーケティングツール「KARTE」の提供元、株式会社プレイドが第三者の不正アクセスを受け、同システムに連携していた顧客の個人情報の一部が外部に漏えいした可能性があると公表した。対象は生年月日、性別、郵便番号、メールアドレス、内部管理用IDで、クレジットカード情報、金融機関口座情報、ログインパスワードは含まれない。二次被害は確認されていない。件数は調査中。
+sources:
+  - title: WOWOW 業務委託先に対する不正アクセスに伴うお客さまの個人情報漏えいの可能性に関するお知らせとお詫び
+    url: https://corporate.wowow.co.jp/news/info/7251.html
+  - title: WOWOW NEWS
+    url: https://news.wowow.co.jp/5846.html
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC178RL0X11C26A1000000/
+checklist:
+  - text: WOWOWをかたる不審なメールのURLや添付ファイルを開かず、個人情報やパスワードを入力しない

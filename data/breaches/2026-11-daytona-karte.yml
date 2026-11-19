@@ -1,0 +1,26 @@
+organization: 株式会社デイトナ・インターナショナル
+services:
+  - 'Daytona Park: FREAK''S STORE公式通販'
+  - +PLUS MIRROR
+industry: 小売・EC
+country: JP
+date_announced: 2026-11-17
+affected_count: 970000
+count_note: Daytona Parkが約97万件（重複あり）。別に子会社Innovation Studioの「+PLUS MIRROR」で149件
+cause: third_party
+root_cause: クーポン表示や通知配信に使うプレイドの「KARTE」が不正アクセスを受け、預けていた会員情報が漏えいした
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 氏名
+  - メールアドレス
+  - 性別
+  - 生年月日
+  - 会員ID
+summary: '「Daytona Park: FREAK''S STORE公式通販」のサイトとアプリで利用している株式会社プレイドの「KARTE」が外部から不正アクセスを受け、同社に預けていた会員情報の一部が漏えいしたと公表した。漏えいが確認されたのは会員の一部の氏名、メールアドレス、性別、生年月日、年齢、会員IDで約97万件（重複あり）。パスワード、クレジットカード情報、住所、電話番号、購入履歴の漏えいは確認されていない。子会社Innovation Studioの「+PLUS MIRROR」でも利用者情報149件（氏名、メールアドレス、会員ID）の漏えいを確認した。'
+sources:
+  - title: 業務委託先への不正アクセスによる個人情報漏えいに関するお詫びとお知らせ(第一報)（DAYTONA INTERNATIONAL）
+    url: https://daytonajp.com/news/3821/
+checklist:
+  - text: 名前や誕生日を記載してクーポン・キャンペーンを装う不審なメールに注意する
+  - text: 対象者に届く電子メールでの個別連絡を確認する（パスワードやカード情報の入力を求めることはない）

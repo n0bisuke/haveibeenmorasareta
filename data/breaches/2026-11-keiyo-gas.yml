@@ -1,0 +1,31 @@
+organization: 京葉瓦斯株式会社
+services:
+  - ウィズ京葉ガス
+industry: エネルギー・インフラ
+country: JP
+date_announced: 2026-11-17
+affected_count: 275
+count_note: 275件（現時点で判明している状況）
+cause: unauthorized_access
+root_cause: 会員サイト「ウィズ京葉ガス」が第三者の不正アクセスを受けた。原因と侵入経路は調査中
+data_types:
+  - 氏名
+  - 郵便番号
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 会員ID
+  - パスワード（ハッシュ化・暗号化済み）
+  - パスワード（保管形式不明）
+  - 契約情報
+summary: 会員サイト「ウィズ京葉ガス」が第三者の不正アクセスを受け、顧客の個人情報275件が外部に漏えいした可能性があると公表した。対象は氏名、郵便番号、住所、電話番号、メールアドレス、お客さま番号、供給地点特定番号、需給契約番号、会員ID、暗号化済みのパスワード、初期パスワード、秘密の質問と回答、接続元IPアドレス、請求情報。銀行口座とクレジットカードの情報は含まれない。会員サイトを停止して外部からのアクセス経路を遮断し、外部専門機関と原因や影響範囲を調べている。
+sources:
+  - title: 京葉ガス 当社会員サイト「ウィズ京葉ガス」における不正アクセスによる情報漏えいの可能性についてのお詫びとお知らせ
+    url: https://www.keiyogas.co.jp/press/20261117-01.html
+  - title: 京葉ガス 同お知らせ（PDF）
+    url: https://www.keiyogas.co.jp/pdf/press-20261117-01.pdf
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/keiyogas_with_keiyogas_unauthorized_access_275_possible_leak_20261117/
+checklist:
+  - text: 京葉ガスからの個別の案内を確認する
+  - text: 秘密の質問と同じ質問・回答を他のサービスで使っていれば変更する

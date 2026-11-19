@@ -1,0 +1,19 @@
+organization: ウエインズトヨタ神奈川株式会社
+industry: 交通・モビリティ
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_announced: 2026-11-17
+affected_count: null
+count_note: 件数と項目の詳細は公表されていない。対象の特定と影響範囲はプレイドと確認中（第1報時点）
+cause: third_party
+root_cause: 委託先プレイドの「KARTE」が不正アクセスを受け、連携していた問い合わせ・来店予約の申込者の情報の一部が外部に漏えいした
+vendor:
+  name: 株式会社プレイド
+summary: 公式ウェブサイトの運営とメールマガジンの配信に使っていた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、顧客の個人情報の一部が外部に漏えいしたと公表した。対象は公式ウェブサイトから問い合わせや来店予約などを申し込んだ顧客の個人情報の一部で、11月15日にプレイドから漏えいの報告を受けた。件数と項目は公表しておらず、対象の特定と影響範囲の確認を進めている。クレジットカード情報と銀行口座情報は同サービスで預かっておらず含まれていない。11月13日からKARTEの利用を停止している。
+sources:
+  - title: ウエインズトヨタ神奈川 当社が利用する外部サービスへの不正アクセスによるお客様情報の漏えいに関するお詫びとお知らせ（第1報）
+    url: https://www.weins-toyota-kanagawa.co.jp/newsrelease/261117
+checklist:
+  - text: 対象の顧客には確認できた人から順次連絡するとしている
+  - text: 同社はパスワードやカード番号、口座番号を尋ねたり金銭を請求したりしないとしている。同社やトヨタ販売店を名乗る不審な電話・SMS・メールに注意する

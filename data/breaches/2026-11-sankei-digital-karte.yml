@@ -1,0 +1,20 @@
+organization: 株式会社産経デジタル
+services:
+  - ZBAT！
+  - 産経ネットショップ
+industry: メディア・出版
+country: JP
+date_announced: 2026-11-18
+affected_count: null
+count_note: 件数は公表されていない
+cause: third_party
+root_cause: 過去に契約していたプレイドの「KARTE」が不正アクセスを受け、2サイトの顧客の氏名とメールアドレスが漏洩した
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 氏名
+  - メールアドレス
+summary: 産業経済新聞社と産経デジタルは、産経デジタルが過去に契約していた株式会社プレイドのサービス「KARTE」が不正アクセスを受け、同サービスを使っていた競馬情報サイト「ZBAT！」とオンラインショップ「産経ネットショップ」の個人情報が外部に漏洩したと公表した。漏洩したのは氏名とメールアドレスで、クレジットカード情報などは含まれていない。プレイドとの契約はZBAT！が2019年、ネットショップが2024年に終了していた。件数は公表されておらず、悪用などの被害の報告は受けていないとしている。
+sources:
+  - title: 産経ニュース 産経2サイトの個人情報漏洩 過去の契約先に不正アクセス
+    url: https://www.sankei.com/article/20261118-QVA4SOSOERJ4HJEWRIZYPR7RMU/

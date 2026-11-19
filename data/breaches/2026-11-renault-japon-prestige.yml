@@ -1,0 +1,28 @@
+organization: ルノー・ジャポン株式会社
+services:
+  - ルノー・アルピーヌ アシスタンスサービス（ロードサービス）
+industry: 交通・モビリティ
+country: JP
+date_occurred: 2026-10-29
+date_announced: 2026-11-16
+affected_count: 102000
+count_note: 委託先PCSからの報告による人数
+cause: third_party
+root_cause: ロードサービス業務の委託先プレステージ・コアソリューションの業務システムが不正アクセスを受けた
+vendor:
+  name: 株式会社プレステージ・コアソリューション
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 車両情報
+  - 口座番号
+summary: ルノーとアルピーヌのロードサービス業務を委託するプレステージ・コアソリューション（PCS）の業務システムが10月29日に不正アクセスを受け、ロードサービスに登録された顧客102,000名分の個人データが外部に持ち出されたと公表した。対象は氏名、住所、電話番号、メールアドレス、登録番号・車台番号などの車両情報、事故・故障の受付情報、一部の金融機関口座情報で、顧客により含まれる項目は異なる。11月2日にPCSから報告を受けた。原因と影響範囲はPCSが調査中。
+sources:
+  - title: アルピーヌ・ジャポン 外部事業者における個人情報漏えいに関するお知らせとお詫び
+    url: https://www.alpinecars.jp/news/ajinfo2611/
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/alpine_renault_pcs_102000_arara_96027/
+checklist:
+  - text: ルノー・アルピーヌや関連会社を装った不審な電話・メール・SMSに注意する

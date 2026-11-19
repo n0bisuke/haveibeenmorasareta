@@ -1,0 +1,18 @@
+organization: 福島県いわき市教育委員会
+services:
+  - 市内公立学校
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 福島県
+date_announced: 2026-11-18
+affected_count: 2
+count_note: 子ども2人分
+cause: human_error
+root_cause: 教員が印刷機に置き忘れた採点済みテストの結果が再利用紙に回り、プリントの裏紙として使われた
+data_types:
+  - 氏名
+summary: 公立学校の教員が7月ごろにテスト結果を印刷して印刷機に置き忘れ、それが再利用紙の箱に入れられた結果、授業で配ったプリントの裏面に印刷されていたため、子ども2人の氏名や点数などが別の学年の子ども1人に漏えいしたと公表した。11月6日に別の教員が気付いた。個人情報が載った文書は原則として再利用せず廃棄するとした。
+sources:
+  - title: 福島民友
+    url: https://www.minyu-net.com/news/detail/2026111817591657395

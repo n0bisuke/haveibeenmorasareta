@@ -78,3 +78,7 @@
   label: Notion（Notion AI）
   names: ["Notion Labs, Inc."]
   note: Notion AI の一部の処理の委託先 Fireworks AI が不正アクセスを受け、利用企業の AI チャットの内容が流出した。
+- slug: plaid-karte
+  label: プレイド（KARTE）
+  names: [株式会社プレイド]
+  note: Web サイトやアプリの顧客体験（CX）プラットフォーム「KARTE」の提供元。2026年11月の不正アクセスで、利用企業が KARTE に取り込んでいた会員情報などが読み出された。

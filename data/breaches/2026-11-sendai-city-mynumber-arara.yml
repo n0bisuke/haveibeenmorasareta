@@ -1,0 +1,24 @@
+organization: 宮城県仙台市
+services:
+  - マイナンバーカード交付予約・管理システム
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 宮城県
+date_announced: 2026-11-06
+affected_count: null
+count_note: 漏えいの有無と件数は調査中。11月4日までの予約システムの登録メールアドレス数は12,211件
+cause: third_party
+root_cause: TKCの予約システムが受付完了メールの送信に使うアララの「アララメッセージ」が不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: マイナンバーカード特設センターの来庁予約に使うTKCの「マイナンバーカード交付予約・管理システム」が、受付完了メールの送信に利用するアララのメール配信サービス「アララメッセージ」が第三者の不正アクセスを受け、予約時に登録したメールアドレスが漏えいした可能性があると公表した。11月2日にTKCから報告を受けた。メールアドレス以外の情報が漏えいした可能性はないとしている。漏えいの有無や件数は調査中。予約システム自体は不正アクセスを受けておらず利用を続けるが、アララメッセージによるメール送信は停止した。
+sources:
+  - title: 仙台市 お知らせ
+    url: https://www.city.sendai.jp/kosekijumin/mynumber/20261104.html
+  - title: 仙台市 記者発表資料
+    url: https://www.city.sendai.jp/kosekijumin/20261106.html
+  - title: 仙台放送
+    url: https://news.yahoo.co.jp/articles/cb219146e580193259b48763074cab659b6c35ec
