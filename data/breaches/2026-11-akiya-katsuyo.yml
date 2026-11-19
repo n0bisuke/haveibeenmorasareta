@@ -1,0 +1,28 @@
+organization: 空き家活用株式会社
+services:
+  - AKIDAS
+  - アキカツCLOUD
+  - アキカツ調査CLOUD
+  - アキカツカウンター
+  - アキカツローン
+industry: 不動産
+country: JP
+date_announced: 2026-11-17
+affected_count: 290664
+count_note: データベースの元記録件数の最大値。同一人物が複数記録に含まれるため実人数とは一致しない。うち自治体からの受託業務・協定等に関する情報は2,670件
+cause: misconfiguration
+root_cause: 業務で利用するデータベースの接続元制限の設定に不備があり、外部から接続・認証を試行できる状態だった
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+summary: 空き家の調査・相談・活用支援などに利用するデータベースで外部からの接続元を制限する設定に不備があり、最大29万664件の個人情報が漏えいしたおそれがあると公表した。2026年7月14日にサーバー保守点検で発見し、同日修正した。ID・パスワードによる認証は機能しており、不正な閲覧・取得を裏付ける事実は確認されていないが、接続・操作記録が残っておらず漏えいがなかったとは断定できないとしている。大部分は停止済みの空き家情報データベース事業「AKIDAS」の情報で、自治体からの受託業務などで扱った空き家所有者や相談者の情報も含まれる。
+sources:
+  - title: 空き家活用 当社利用サーバーの接続制限設定不備について お知らせとお詫び
+    url: https://corporate.aki-katsu.co.jp/news/server-security-notice-20261117
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/akiya_katsuyo_290664_database_connection_restriction/
+checklist:
+  - text: 対象かどうかは空き家活用の個人情報保護相談窓口にメールで確認できる（自治体ではなく同社が窓口）
+  - text: 同社や自治体を装った不審なメール・電話・SMSに注意する

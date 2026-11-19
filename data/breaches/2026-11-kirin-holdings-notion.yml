@@ -1,0 +1,25 @@
+organization: キリンホールディングス株式会社
+group: キリングループ
+services:
+  - Notion AI
+industry: 食品
+country: JP
+date_occurred: 2026-11-02
+date_announced: 2026-11-17
+affected_count: 260
+count_note: グループ従業員230名、新卒採用応募者22名、取引先従業員8名
+cause: third_party
+root_cause: 利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、Notion AIとの対話内容が流出した
+vendor:
+  name: Notion Labs, Inc.
+data_types:
+  - 氏名
+  - 従業員情報
+  - 取引先情報
+  - メッセージ・チャット履歴
+summary: 利用している外部クラウドツール「Notion」の提供元Notion Labsの委託先Fireworks AIが11月2日に第三者の不正アクセスを受け、従業員と「Notion AI」の対話内容の一部が外部に漏えいしたと公表した。対象は10月5日から24日までに記録された情報で、グループ従業員230名の氏名・社用電話番号・社用メールアドレス、新卒採用応募者22名と取引先従業員8名の氏名の計260名分。11月13日にNotion社から連絡を受けた。パスワードやクレジットカード情報は含まれない。Notion AIの利用は停止している。
+sources:
+  - title: キリンホールディングス 外部クラウドツールの委託先への不正アクセスによる情報漏えいに関するお詫びとお知らせ
+    url: https://info.kirinholdings.com/faq_detail.html?id=122842
+  - title: Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/f0828deff9c4a260a8ad4182e8c20767fc042bc4
