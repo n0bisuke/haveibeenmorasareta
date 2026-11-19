@@ -1,0 +1,22 @@
+organization: 株式会社oricon ME
+group: オリコン
+services:
+  - Deview／デビュー
+industry: メディア・出版
+country: JP
+date_occurred: 2026-11-03
+date_announced: 2026-11-16
+affected_count: 26
+count_note: 会員26名の応募画像58ファイルに不審なアクセスログ。画像の流出の有無は調査中
+cause: unauthorized_access
+root_cause: 応募画像を公開領域に保存し閲覧制限も不足しており、画像URLから認証なしで閲覧・取得できた
+attack_methods:
+  - broken_access_control
+data_types:
+  - 保存データ（写真・文書等）
+summary: オーディション情報サイト「Deview／デビュー」で不正アクセスが発生したと、親会社のオリコンが公表した。11月3日15時〜16時ごろにサイトへの不正アクセスがあり、会員26名の応募画像58ファイルに不審なアクセスログを検知した。応募画像が公開領域に保存され閲覧制限も不足しており、画像URLから認証なしで閲覧・取得できる状態だった。11月11日に保守・運用を委託する開発会社の報告で判明し、通信を遮断してプログラムを修正した。13日からサービスを停止しており、画像の流出の有無を含め調査している。
+sources:
+  - title: オリコン 不正アクセスによる『Deview／デビュー』サイトの個人情報漏洩事故の発生とお詫び
+    url: https://www.oricon.jp/news/notice/11124/
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/oricon-deview-audition-image-files-26-users-58-unauthorized-access/
