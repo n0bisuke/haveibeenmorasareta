@@ -1,0 +1,26 @@
+organization: BONAVENTURA株式会社
+services:
+  - BONAVENTURA公式オンラインストア
+industry: 小売・EC
+country: JP
+date_announced: 2026-11-18
+affected_count: 576742
+count_note: KARTEに連携していた顧客に関する情報で最大576,742件。対象の顧客と範囲は調査中
+cause: third_party
+root_cause: 委託先プレイドの「KARTE」が不正アクセスを受け、連携していた顧客の氏名や連絡先などが漏洩したおそれ
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - メールアドレス
+  - 氏名
+  - 電話番号
+  - 住所
+  - 生年月日
+  - 性別
+summary: ウェブサイトの分析と顧客への案内配信に使っていた株式会社プレイドの「KARTE」が第三者の不正アクセスを受け、同サービスに連携していた顧客の情報が外部に漏洩したおそれがあると公表した。11月15日にプレイドから連絡を受けた。対象は最大576,742件で、項目はメールアドレス、氏名、電話番号、住所、年齢、誕生日、性別。クレジットカード情報とログインパスワードは連携しておらず対象外。KARTEへの送信を止めて連携用の認証情報を無効化し、プレイドと連名で個人情報保護委員会への報告を進めている。
+sources:
+  - title: BONAVENTURA 【重要】当社が利用する外部サービスへの不正アクセスに伴う、お客様情報漏洩に関するお知らせ
+    url: https://jp.bonaventura.shop/blogs/news/security-notice-1
+checklist:
+  - text: 対象と範囲が判明しだい、対象の顧客にメールなどで個別に連絡するとしている
+  - text: BONAVENTURAを装った不審なメール・SMS・電話に、個人情報やパスワード、認証コードを伝えない
