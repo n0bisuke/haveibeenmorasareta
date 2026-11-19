@@ -1,0 +1,26 @@
+organization: 株式会社overflow
+services:
+  - Offers
+industry: 人材・教育
+country: JP
+date_announced: 2026-11-17
+affected_count: 29950
+count_note: 最大29,950件。重複があり得るため人数は確認中。ほかに利用状況の情報（職種、スキル、副業・転職の意向、オファー・応募の記録など）も漏えいの可能性があり調査中
+cause: third_party
+root_cause: 過去に利用したプレイドの「KARTE」が不正アクセスを受け、契約終了後も残っていた会員情報が読み出された
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 氏名
+  - メールアドレス
+  - 生年月日
+  - 会員ID
+summary: 副業・転職サービス「Offers」の会員情報を過去に連携していたプレイドのサービス「KARTE」が不正アクセスを受け、最大29,950件の個人情報が漏えいしたと公表した。漏えいしたのはワーカーの氏名、メールアドレス、生年月日、会員番号と、企業担当者の氏名、メールアドレス、会員番号。2023年11月末に契約を終え12月に連携を止めていたが、プレイドのサーバーにデータが残っていた。職種やスキル、副業・転職の意向、オファーや応募の記録なども漏えいした可能性があり調査中。パスワード、クレジットカード情報、メッセージ本文はKARTEに送っていないとしている。
+sources:
+  - title: 外部サービスへの不正アクセスによる個人情報の漏えいについて（お詫び）（Offers／株式会社overflow）
+    url: https://offers.jp/notice_karte_incident
+  - title: エンジニア向け転職/副業サイト Offers（オファーズ）、最大2万9,950件の個人情報が漏えい（セキュリティ対策Lab）
+    url: https://rocket-boys.co.jp/security-measures-lab/offers_overflow_karte_29950_personal_data_leak_2026/
+checklist:
+  - text: 対象者には特定できた人から順にメールで連絡がある
+  - text: Offersや採用企業を装ったなりすまし・フィッシングメールに注意する

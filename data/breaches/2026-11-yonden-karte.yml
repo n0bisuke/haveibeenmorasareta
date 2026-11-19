@@ -1,0 +1,29 @@
+organization: 四国電力株式会社
+services:
+  - よんでんコンシェルジュ
+industry: エネルギー・インフラ
+country: JP
+date_announced: 2026-11-16
+affected_count: 600000
+count_note: 公表は「約60万件」。個人会員と法人会員の合計
+cause: third_party
+root_cause: お知らせ配信に使っていたプレイドの「KARTE」が不正アクセスを受け、連携していた会員情報が流出した
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 氏名
+  - メールアドレス
+  - 住所
+  - 性別
+  - 生年月日
+summary: 会員制Webサービス「よんでんコンシェルジュ」のお知らせ配信に使っていたプレイドのサービス「KARTE」が不正アクセスを受け、会員約60万件の情報が外部に流出したと公表した。11月15日にプレイドから報告を受けた。流出したのは個人会員の氏名、メールアドレス（ログインID）、住所、お知らせメール希望の有無、性別、誕生日と、法人会員の名称、メールアドレス、住所、お知らせメール希望の有無。電気料金の支払いに使うクレジットカードや金融機関口座の情報、パスワードは同サービスで扱っておらず、流出していないとしている。二次被害は確認されていない。
+sources:
+  - title: 当社委託先のサービスへの不正アクセスによる「よんでんコンシェルジュ」のお客さま情報の流出について（四国電力）
+    url: https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/16/pr003.pdf
+  - title: 四国電力、顧客情報約60万件流出 プレイドへの不正アクセスで（日本経済新聞）
+    url: https://www.nikkei.com/article/DGXZQOCC168KG0W6A111C2000000/
+  - title: 四国電力、顧客情報60万件流出 委託先に不正アクセス（朝日新聞）
+    url: https://www.asahi.com/sp/articles/ASVCK3TP8VCKPLXB00HM.html
+checklist:
+  - text: 対象の会員には四国電力から個別にメールで連絡がある
+  - text: 四国電力を装った不審なメールに注意する

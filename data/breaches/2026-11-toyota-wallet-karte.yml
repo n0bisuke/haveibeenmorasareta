@@ -1,0 +1,23 @@
+organization: トヨタファイナンシャルサービス株式会社
+group: トヨタグループ
+services:
+  - TOYOTA Wallet
+industry: 金融・保険
+country: JP
+date_occurred: 2026-11-13
+date_announced: 2026-11-18
+affected_count: 120000
+count_note: 約120,000件。漏えいした可能性がある社内管理用の「お客様番号」の件数
+cause: third_party
+root_cause: 委託先プレイドの「KARTE」が不正アクセスを受け、TOYOTA Walletの社内管理用のお客様番号が漏えいした可能性
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 会員ID
+summary: TOYOTA Walletで使用している株式会社プレイドの「KARTE」が第三者による不正アクセスを受け、TOYOTA Walletの顧客に関する情報の一部が漏えいした可能性があると公表した。対象は社内管理に使う「お客様番号」約120,000件で、ログインIDではなく、この番号だけでは個人の特定やログイン、決済はできないとした。TOYOTA Walletのシステムへの不正アクセスは確認されていない。本件の影響でアプリの一部機能を停止している。個人情報保護委員会に報告した。
+sources:
+  - title: TOYOTA Wallet 株式会社プレイドが提供する「KARTE」への不正アクセス事案に関するお詫びとお知らせ
+    url: https://tscubic.com/toyota-wallet/information/2026/20261118-01/
+checklist:
+  - text: 対象者には info@tscubic.com から個別にメールで連絡がある
+  - text: 同社を装った不審なメールに注意する

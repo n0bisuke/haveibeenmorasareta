@@ -1,0 +1,31 @@
+organization: 株式会社ジンズ
+group: ジンズホールディングス
+services:
+  - JINSオンラインショップ
+  - JINSアプリ
+  - LINE公式アカウント
+industry: 小売・EC
+country: JP
+date_announced: 2026-11-17
+affected_count: 18290000
+count_note: 約1,829万件は会員登録アカウント数で、漏えいの可能性がある最大値。調査継続中で、項目・件数は変わる可能性がある
+cause: third_party
+root_cause: 委託先プレイドの「KARTE」が不正アクセスを受け、連携していた会員情報が外部に漏えいした
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 会員ID
+  - メールアドレス
+  - 氏名
+  - 生年月日
+  - 性別
+  - 郵便番号
+summary: 委託先の株式会社プレイドが提供する「KARTE」への第三者の不正アクセスにより、JINSオンラインショップ、JINSアプリ、LINE公式アカウントで会員登録した顧客の個人情報の一部が外部に漏えいしたと公表した。漏えいが確認されたのは会員ID、メールアドレス、氏名（姓のみ）、生年月日、年齢、性別、郵便番号、住所（都道府県のみ）で、件数は会員登録アカウント数の約1,829万件（最大値）。11月15日にプレイドの調査で漏えいが確認された。ログインパスワードとクレジットカード情報は含まれない。店舗購入のみで会員登録していない顧客は対象外。
+sources:
+  - title: JINS 外部委託先への不正アクセスによるお客さまの個人情報漏えいに関するお詫びとお知らせ
+    url: https://www.jins.com/jp/topics_detail.html?info_id=1284
+  - title: Yahoo!ニュース（ITmedia）「JINS」最大約1829万件漏えいの可能性 RIZAPやしまむらも
+    url: https://news.yahoo.co.jp/articles/a1454a4080158b15406b0e9e905370cda71b529e
+checklist:
+  - text: 対象の会員には順次メールで連絡するとしている。JINSからの連絡を確認する
+  - text: 本件を悪用した不審なメールのURLや添付ファイルを開かず、個人情報やパスワードを入力しない

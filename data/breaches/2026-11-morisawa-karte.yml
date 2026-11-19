@@ -1,0 +1,25 @@
+organization: 株式会社モリサワ
+services:
+  - Morisawa Fonts
+industry: IT・通信
+country: JP
+date_announced: 2026-11-17
+affected_count: 23957
+count_note: プレイドの報告による件数。2023年5月以降にMorisawa Fontsサービスサイトで購入した顧客の一部。対象範囲の詳細とその他の情報は調査中
+cause: third_party
+root_cause: 利用状況の分析などに使っていたプレイドの「KARTE」が不正アクセスを受け、顧客情報が漏えいした
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 氏名
+  - メールアドレス
+  - 会員ID
+summary: Morisawa Fontsの利用状況の分析やコンテンツ配信などに使っていたプレイドのサービス「KARTE」が不正アクセスを受け、顧客の個人情報23,957件が外部に漏えいしたと公表した。11月15日のプレイドの報告で判明した。漏えいしたのは氏名、メールアドレス、ユーザーIDで、2023年5月以降にMorisawa Fontsのサービスサイトで購入した顧客の一部が対象。同サービスではクレジットカード情報とログインパスワードを扱っておらず、漏えいの対象に含まれていないとしている。不正利用は確認されていない。
+sources:
+  - title: 当社委託先サービスへの不正アクセスによる個人情報漏洩に関するお詫びとお知らせ（モリサワ）
+    url: https://www.morisawa.co.jp/about/news/19310
+  - title: モリサワや「mineo」など会員情報漏えい マーケツール「KARTE」不正アクセス（ITmedia NEWS）
+    url: https://www.itmedia.co.jp/news/article/2611/17/2000003257/
+checklist:
+  - text: 漏えいが確認された顧客にはモリサワから個別に案内がある
+  - text: 実在の企業などを装ったフィッシングメールに注意する

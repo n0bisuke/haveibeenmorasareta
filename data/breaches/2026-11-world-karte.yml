@@ -1,0 +1,22 @@
+organization: 株式会社ワールド
+group: ワールドグループ
+services:
+  - ワールドオンラインストア
+  - ティンパンアレイ
+industry: 小売・EC
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_announced: 2026-11-17
+affected_count: null
+count_note: 対象となる情報の項目、件数、会員の範囲は確認中
+cause: third_party
+root_cause: プレイドの「KARTE」が不正アクセスを受け、同サービスに保管していたグループの会員情報の一部が漏えいした
+vendor:
+  name: 株式会社プレイド
+summary: 株式会社プレイドの「KARTE」への不正アクセスで、同サービスに保管していた当社グループの情報の一部が漏えいしたとの連絡を受けたと公表した。対象は、同社が展開する「ワールドオンラインストア」と連結子会社の株式会社ティンパンアレイがKARTEに保管していた会員に関する情報の一部。対象となる情報の項目、件数、会員の範囲は確認中で、プレイドにデータの詳細と調査結果の確認を求めている。
+sources:
+  - title: ワールド 当社グループが利用する「KARTE」への不正アクセスに伴う情報漏えいに関するお知らせ
+    url: https://corp.world.co.jp/news/company/2026/15602/
+  - title: ACT1
+    url: https://act1.co.jp/2026-11-17-06/

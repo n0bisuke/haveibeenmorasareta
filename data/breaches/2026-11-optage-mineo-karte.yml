@@ -1,0 +1,23 @@
+organization: 株式会社オプテージ
+services:
+  - mineo
+industry: IT・通信
+country: JP
+date_announced: 2026-11-16
+affected_count: null
+count_note: 件数は調査中
+cause: third_party
+root_cause: メール配信等のマーケティング業務の委託先プレイドの「KARTE」が不正アクセスを受け、利用者のメールアドレスが漏えいした可能性
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - メールアドレス
+summary: メール配信等のマーケティング業務を委託する株式会社プレイドの「KARTE」で第三者による不正アクセスが発生し、携帯電話サービス「mineo」利用者のメールアドレスが外部に漏えいした可能性があると公表した。11月15日にプレイドから報告を受けた。クレジットカード情報や銀行口座情報などの決済情報と本人確認書類の情報はプレイドに提供していない。KARTEの利用を停止し、対象者にはメールなどで個別に連絡するとしている。件数は調査中。
+sources:
+  - title: mineo 株式会社プレイドで発生した不正アクセスに伴うお客さま情報漏えいの可能性について
+    url: https://support.mineo.jp/news/1908/
+  - title: オプテージ プレスリリース
+    url: https://optage.co.jp/press/2026/press_14.html
+checklist:
+  - text: オプテージからの個別連絡（メール等）を確認する
+  - text: 身に覚えのないメールのURLや添付ファイルを開かず、ID・パスワードを入力しない

@@ -1,0 +1,20 @@
+organization: 株式会社ミスミ
+group: ミスミグループ
+industry: 小売・EC
+country: JP
+date_announced: 2026-11-17
+affected_count: 140000
+count_note: 公表は「約140,000件」（KARTEで利用していた顧客に関する情報）。プレイドの調査で内容が変わる可能性がある
+cause: third_party
+root_cause: Webサイトでの情報案内に使っていたプレイドの「KARTE」が不正アクセスを受け、顧客情報が漏えいした
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 氏名
+  - 取引先情報
+summary: Webサイトでのポップアップによる情報案内に使っていたプレイドのサービス「KARTE」が不正アクセスを受け、顧客に関する情報約14万件が漏えいしたと公表した。11月15日にプレイドから報告を受けた。漏えいしたのは顧客の氏名と、所属する会社名・支店名。メールアドレス、電話番号、住所など直接連絡できる情報はKARTEに提供していないとしている。具体的な被害の報告はなく、KARTEとのデータ連携を止め、今後KARTEの利用を停止するとしている。
+sources:
+  - title: 【お詫びとお知らせ】当社が利用するWebサービス「KARTE」への不正アクセスによるお客さま情報の漏えいについて（ミスミ）
+    url: https://www.misumi.co.jp/news/news_261117
+checklist:
+  - text: ミスミをかたる不審なメールや電話に注意する
