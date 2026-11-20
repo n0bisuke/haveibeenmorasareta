@@ -1,0 +1,25 @@
+organization: 佐賀県唐津市
+services:
+  - 唐津市情報メール配信サービス
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 佐賀県
+date_announced: 2026-10-13
+affected_count: null
+count_note: 約1万8,000件の登録情報に漏えいのおそれ（報道）
+cause: third_party
+root_cause: 情報メール配信を委託するアルカディアのサービスが不正アクセスを受けた
+vendor:
+  name: アルカディア
+data_types:
+  - メールアドレス
+summary: 唐津市は10月13日、唐津市情報メール配信サービスを業務委託している株式会社アルカディアが第三者の不正アクセスを受け、登録者のメールアドレスなどの個人情報が漏えいしたおそれがあると発表した。アルカディアの一斉配信サービス「SpeeCAN RAIDEN」をめぐる一連の事案の一つ。報道によると、約1万8,000件の登録情報が対象で、市は新規登録を停止した。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/10/19/56492.html
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/?p=43621
+checklist:
+  - 市の公式ページは削除済み（404）
+  - 約1万8,000件はセキュリティ対策Labの見出しで確認、本文は未確認

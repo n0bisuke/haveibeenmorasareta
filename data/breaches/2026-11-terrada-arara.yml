@@ -1,0 +1,24 @@
+organization: 寺田倉庫株式会社
+services:
+  - TERRADA ID
+  - minikura
+  - TERRADA トランクルーム
+  - TERRADA ART STORAGE
+  - TERRADA WINE
+industry: 物流
+country: JP
+date_announced: 2026-11-05
+affected_count: 99296
+count_note: アララから報告を受けたメールアドレス1,086,662件（重複を除く）のうち、自社の顧客と判明したのは最大99,296件（11月10日の第2報）
+cause: third_party
+root_cause: 委託先アララの「アララメッセージ」が不正アクセスを受け、配信用に登録していたデータが持ち出された
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: 寺田倉庫は、委託先のアララ株式会社のメール配信サービスが不正アクセスを受けた件で、11月10日の第2報で、アララから報告を受けたメールアドレス1,086,662件（重複を除く）のうち自社の顧客のものが最大99,296件と判明したと公表した。対象はTERRADA ID、TERRADA ART STORAGE、TERRADA WINE、TERRADAトランクルーム、minikura、WHAT CAFEなどのサービスで、流出したのはメールアドレス。自社のメール配信サービス利用期間は2025年6月25日から2026年10月31日。漏えいしたアドレスに不審メールが届く可能性があるとして注意を呼びかけた。
+sources:
+  - title: 寺田倉庫 委託先（アララ株式会社）メール配信サービスへの不正アクセスに関するご報告とお詫び（第2報）
+    url: https://www.terrada.co.jp/ja/news/17133
+checklist:
+  - 第1報（11月5日）の本文は未確認

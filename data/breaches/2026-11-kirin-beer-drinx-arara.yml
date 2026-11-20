@@ -1,0 +1,21 @@
+organization: キリンビール株式会社
+group: キリングループ
+services:
+  - DRINX
+industry: 食品
+country: JP
+date_announced: 2026-11-16
+affected_count: 58613
+count_note: 会員のメールアドレス
+cause: third_party
+root_cause: EC委託先GMOメイクショップが使うアララの「アララメッセージ」が不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: キリンビールは、オンラインショップ「DRINX」の会員のメールアドレス58,613件が漏えいしたと公表した。DRINXのEC関連サービスの委託先であるGMOメイクショップ株式会社が使うアララ株式会社のメール配信サービスが10月28日に第三者の不正アクセスを受け、11月13日にGMOメイクショップから連絡を受けて確認した。氏名、住所、電話番号、パスワード、クレジットカード情報は含まれず、現時点で不正利用などの二次被害は確認されていない。
+sources:
+  - title: キリンホールディングス 業務委託先への不正アクセスによるお客様情報漏えいに関するお詫びとお知らせ（PDF）
+    url: https://www.kirinholdings.com/jp/newsroom/release/2026/1116_01.pdf
+checklist:
+  - 含まれない項目は報道（SmartScope）で確認、公式PDFの抽出では件数・項目・日付を確認
