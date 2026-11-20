@@ -20,5 +20,5 @@ sources:
   - title: トラベルボイス
     url: https://www.travelvoice.jp/20261104-160795
 checklist:
-  - 運営会社の正式名称は未確認（organization はサイト名）
-  - トラベルボイスの記事本文は検索結果の要約のみで確認
+  - text: 運営会社の正式名称は未確認（organization はサイト名）
+  - text: トラベルボイスの記事本文は検索結果の要約のみで確認

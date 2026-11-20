@@ -18,4 +18,4 @@ sources:
   - title: キリンホールディングス 業務委託先への不正アクセスによるお客様情報漏えいに関するお詫びとお知らせ（PDF）
     url: https://www.kirinholdings.com/jp/newsroom/release/2026/1116_01.pdf
 checklist:
-  - 含まれない項目は報道（SmartScope）で確認、公式PDFの抽出では件数・項目・日付を確認
+  - text: 含まれない項目は報道（SmartScope）で確認、公式PDFの抽出では件数・項目・日付を確認

@@ -17,4 +17,4 @@ sources:
   - title: インフォマート 当社が利用していたメール配信サービスへの不正アクセスに伴う個人情報漏洩に関するお知らせとお詫び（第一報）
     url: https://corp.infomart.co.jp/news/20261104_6211/
 checklist:
-  - 11月17日公表のKARTE経由の事案（2026-11-infomart-karte.yml）とは別事案
+  - text: 11月17日公表のKARTE経由の事案（2026-11-infomart-karte.yml）とは別事案
