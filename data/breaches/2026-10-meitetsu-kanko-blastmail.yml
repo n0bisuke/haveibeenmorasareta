@@ -1,0 +1,28 @@
+organization: 名鉄観光サービス株式会社
+group: 名鉄グループ
+services:
+  - 名鉄観光サービス メディア予約センターのメールマガジン
+industry: 旅行
+country: JP
+leaked: false
+date_announced: 2026-10-22
+affected_count: 130000
+count_note: 約13万人（10月22日時点で対象となる可能性のある人数）。11月12日の結果報告で漏えいはなかったと公表
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、登録していた配信先情報が持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 生年月日
+  - 性別
+summary: 「名鉄観光サービス メディア予約センター」のメールマガジン配信に使っていたブラストメールが不正アクセスを受け、10月21日にラクスライトクラウドから報告を受けたとして、22日に約13万人の氏名・電話番号・メールアドレス・生年月日・性別・都道府県名が漏えいした可能性があると公表した。自社システムへの侵入の痕跡は検出されていない。11月12日の結果報告で、調査の結果、漏えいはなかったと公表した。
+sources:
+  - title: 名鉄観光サービス 結果報告（11月12日）
+    url: https://www.mwt.co.jp/press/2026/press_20261112.pdf
+  - title: 名鉄観光サービス お知らせ（10月22日）
+    url: https://www.mwt.co.jp/press/2026/press_20261022.pdf
+  - title: 産経新聞
+    url: https://www.sankei.com/article/20261022-D7B7ZRITM5ONHNKA4BAOSDGV3Q/

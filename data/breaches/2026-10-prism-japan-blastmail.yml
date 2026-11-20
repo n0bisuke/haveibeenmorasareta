@@ -1,0 +1,23 @@
+organization: トヨタファイナンシャルサービス株式会社
+group: トヨタグループ
+services:
+  - 観光・お出かけ情報アプリ「Prism Japan」
+industry: 金融・保険
+country: JP
+date_announced: 2026-10-30
+affected_count: 49131
+count_note: Prism会員49,131名（漏えいの可能性）
+cause: third_party
+root_cause: 運営委託先KINTOテクノロジーズが使うメール配信サービス「ブラストメール」が不正アクセスを受けた
+vendor:
+  name: 株式会社ラクスライトクラウド
+data_types:
+  - 会員ID
+  - メールアドレス
+  - 性別
+  - 郵便番号
+  - 利用履歴
+summary: 観光・お出かけ情報アプリ「Prism Japan」の運営委託先KINTOテクノロジーズが使うメールマガジン配信システム「ブラストメール」が不正アクセスを受け、会員49,131名の情報が漏えいした可能性があると10月30日に公表した。対象はユーザーID・メールアドレス・性別・年齢・郵便番号・都道府県・市区町村・車の利用・おでかけ手段。生年月日、住所情報、Prismと連携先アカウントのログインパスワードは含まれない。原因はラクスライトクラウドで確認中。
+sources:
+  - title: Prism Japan お詫びとお知らせ
+    url: https://ppap.kinto-jp.com/closed/notice/

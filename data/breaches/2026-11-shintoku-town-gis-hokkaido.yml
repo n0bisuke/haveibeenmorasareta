@@ -1,0 +1,24 @@
+organization: 北海道新得町
+services:
+  - 災害時避難行動要支援者システム導入委託業務
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 北海道
+date_announced: 2026-11-18
+affected_count: 6001
+count_note: 受託作業時点（2019年度）の住民基本台帳データ6,001件。ほかに災害時避難行動要支援者データ986件。具体的な項目は未公表
+cause: third_party
+root_cause: 委託先GIS北海道の協力会社リムゲートが管理する端末がマルウェアK2Fに感染し、不正アクセスを受けた
+attack_methods:
+  - infostealer
+vendor:
+  name: 株式会社GIS北海道
+summary: 2019年度に株式会社GIS北海道へ委託した「災害時避難行動要支援者システム導入委託業務」で提出したデータについて、同社の協力会社である有限会社リムゲートが管理する端末への不正アクセス（マルウェア「K2F」の感染）により、個人情報が漏えいした可能性があると報告を受けたと公表した。対象は受託作業時点の住民基本台帳データ6,001件と災害時避難行動要支援者データ986件で、マイナンバーは含まれない。外部への漏えいや不正利用は確認されておらず、委託先が影響範囲を調査している。
+sources:
+  - title: 新得町 個人情報漏えいの可能性に関するお知らせ
+    url: https://www.shintoku-town.jp/oshirase/3675/
+  - title: 共同通信（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/9635ad7cc2003b59b881adc8a54e456001947848
+  - title: 共同通信（47NEWS）
+    url: https://www.47news.jp/15256024.html

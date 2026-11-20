@@ -1,0 +1,24 @@
+organization: 株式会社NTTPCコミュニケーションズ
+group: NTTグループ
+services:
+  - 各種サービスのメール配信
+industry: IT・通信
+country: JP
+date_announced: 2026-10-20
+affected_count: 60929
+count_note: 60,929件（11月2日の第三報）
+cause: third_party
+root_cause: ユミルリンクのメール配信サービス「Cuenote FC」が不正アクセスを受け、配信先情報が外部に出力された
+vendor:
+  name: ユミルリンク株式会社
+data_types:
+  - メールアドレス
+  - 氏名
+  - 取引先情報
+  - 契約情報
+summary: 各種サービスのメール配信に使っていたユミルリンクの「Cuenote FC」が不正アクセスを受けた件で、10月20日にメールアドレス等の漏えいの可能性を、27日に続報を公表した。11月2日の第三報で、ユミルリンクから60,929件のメールアドレス等が漏えいしたと報告を受けたと公表した。対象はサービス利用者の連絡先メールアドレスと、メール本文への差し込み情報の一部（会社名・氏名・同社サービスに係る情報など）。クレジットカード情報とパスワードは含まれない。
+sources:
+  - title: NTTPC インフォメーション（第三報）
+    url: https://www.nttpc.co.jp/press/info/2026/11/202611021600.html
+  - title: NTTPC インフォメーション（第一報）
+    url: https://www.nttpc.co.jp/press/info/2026/10/202610201600.html

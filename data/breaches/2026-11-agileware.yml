@@ -1,0 +1,27 @@
+organization: 株式会社アジャイルウェア
+services:
+  - Lychee Redmine
+  - 問い合わせ対応用システム・社内管理用システム（バックアップ）
+industry: IT・通信
+country: JP
+date_occurred: 2026-11-14
+date_announced: 2026-11-18
+affected_count: null
+count_note: 件数・対象企業数は調査中。2021年1月以前のバックアップが対象
+cause: vulnerability
+root_cause: 期間限定で外部公開した検証用サーバーの脆弱性を突かれ、社内サーバーの認証情報を窃取されバックアップを外部送信された
+attack_methods:
+  - stolen_credentials
+data_types:
+  - 取引先情報
+  - パスワード（保管形式不明）
+  - アカウント名
+summary: 11月14日、期間限定で外部公開していた検証用サーバーを起点に不正アクセスを受け、社内用サーバーの認証情報を取得されて、問い合わせ対応用・社内管理用システムのバックアップデータ（2021年1月以前）の一部が外部に送信されたと公表した。顧客・取引先担当者の連絡先などの個人情報や、導入・サポートのために預かった顧客環境のID・パスワードが含まれる可能性があり、解約済み顧客の情報も残っていた。件数は調査中。顧客のLychee Redmine環境への侵入や悪用は確認されていない。
+sources:
+  - title: アジャイルウェア 弊社サーバへの不正アクセスによる情報漏えいに関するお詫びとお知らせ（第一報）
+    url: https://agileware.jp/news/info/2026_1118/
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/agileware_lychee_redmine_legacy_backup_credentials_exfiltration/
+checklist:
+  - text: 2021年1月以前にアジャイルウェアへ伝えた、または同社が設定したID・パスワードを今も使っていれば変更し、旧情報を無効化する
+  - text: 2026年11月14日以降の不審なログインやアクセスがないか確認する

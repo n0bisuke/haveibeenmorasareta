@@ -1,0 +1,22 @@
+organization: 札幌駅総合開発株式会社
+services:
+  - JR TOWER WISH XMAS 2026（デジタル抽選システム）
+industry: 小売・EC
+country: JP
+date_occurred: 2026-10-18
+date_announced: 2026-11-17
+affected_count: 4
+count_note: テスト用に登録していた社員4人のメールアドレス（閲覧された可能性）
+cause: third_party
+root_cause: 外部業者のデジタル抽選システムがテスト期間中（10月18〜21日）に不正アクセスを受けた
+data_types:
+  - メールアドレス
+  - 従業員情報
+summary: 札幌駅ビル「JRタワー」の商業施設アピアと札幌ステラプレイスで11月20日から予定していたクリスマス抽選会「JR TOWER WISH XMAS 2026」を中止すると発表した。外部業者のデジタル抽選システムが10月18日〜21日のテスト時に不正アクセスを受け、テスト用に登録していた社員4人のメールアドレスが第三者に閲覧された可能性があるとしている。顧客やテナントへの被害は確認されていない。
+sources:
+  - title: 朝日新聞
+    url: https://www.asahi.com/articles/ASVCK4W4RVCKIIPE00LM.html
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261118de77751
+  - title: STVニュース
+    url: https://m.stv.jp/news/stvnews/kiji/stb5e1324065fa49efa0438f4002d24c61.html

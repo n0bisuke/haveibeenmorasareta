@@ -1,0 +1,22 @@
+organization: 北海道千歳市
+services:
+  - 緊急・防災情報、不審者情報、未帰宅者情報、ヒグマ目撃情報のメール配信
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 北海道
+date_announced: 2026-10-27
+affected_count: 1141
+count_note: 1,141件（全登録者）
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、登録していた配信先情報が持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+data_types:
+  - メールアドレス
+summary: 市ホームページのメール配信サービスとして導入していたブラストメールが不正アクセスを受け、緊急・防災情報、不審者情報、未帰宅者情報、ヒグマ目撃情報のメール配信の登録者1,141件のメールアドレスが漏えいしたと10月27日に公表した。漏えいしたのはメールアドレスのみ。サービスは10月21日から停止しており、市公式LINEやXで情報を発信している。
+sources:
+  - title: 千歳市 お知らせ
+    url: https://www.city.chitose.lg.jp/c70/1002860/1007035.html
+  - title: Yahoo!ニュース
+    url: https://news.yahoo.co.jp/articles/6e097e7ce291691508bbf133e43df821a35e57f4

@@ -1,0 +1,27 @@
+organization: ソニー少額短期保険株式会社
+group: ソニーグループ
+services:
+  - 契約管理システム（開発・テスト環境）
+industry: 金融・保険
+country: JP
+date_occurred: 2026-10-20
+date_announced: 2026-11-06
+affected_count: 108
+count_note: 108件。対象は同社・委託先・再委託先の従業員（退職者を含む）。顧客情報は含まれない
+cause: vulnerability
+root_cause: Webシステムの脆弱性を悪用され、開発・テスト環境のデータベースからテストデータを取得された
+data_types:
+  - 氏名
+  - 性別
+  - 生年月日
+  - メールアドレス
+  - 郵便番号
+  - 住所
+  - 電話番号
+  - 従業員情報
+summary: 10月20日から21日にかけて、社内で利用する契約管理システムの開発・テスト環境がWebシステムの脆弱性を悪用した不正アクセスを受け、テストデータとして保持していた従業員・委託先・再委託先の従業員（退職者を含む）の氏名・性別・生年月日・メールアドレス・住所・電話番号など108件が取得されたと公表した。本番環境への攻撃は成立しておらず、顧客の個人情報は取得されていない。カード・口座情報やマイナンバーは含まれない。
+sources:
+  - title: ソニーフィナンシャルグループ 当社子会社（ソニー少額短期保険）のテスト環境への不正アクセスに伴う従業員情報の漏えいについて
+    url: https://www.sonyfg.co.jp/ja/notice/article/261106_01.pdf
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/sony_sasti_test_environment_108_employee_data_breach/

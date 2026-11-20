@@ -1,0 +1,37 @@
+organization: 北海道留萌市
+services:
+  - 統合型GIS導入事業（委託業務）
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 北海道
+date_occurred: 2026-11-02
+date_announced: 2026-11-19
+affected_count: 71002
+count_note: 住民基本台帳データ最大71,002件（2022年2月3日時点）。ほかに要支援者データ最大4,503件
+cause: third_party
+root_cause: 委託先GIS北海道の協力会社リムゲートの開発端末が情報窃取型マルウェアK2Fに感染。契約終了後もデータが残存
+attack_methods:
+  - infostealer
+vendor:
+  name: 株式会社GIS北海道
+data_types:
+  - 氏名
+  - 住所
+  - 郵便番号
+  - 性別
+  - 生年月日
+  - 健康・医療情報
+summary: 2020年8月に「統合型GIS導入事業」を委託した株式会社GIS北海道から、協力会社の有限会社リムゲートの開発端末が11月2日夜〜3日に情報窃取型マルウェア「K2F」に感染し、契約終了後も同端末に保存されていた個人情報が漏えいしたおそれがあると報告を受けたと公表した。対象は住民基本台帳データ最大71,002件（氏名・住所・性別・生年月日など）と、障害の区分や要介護度を含む要支援者データ最大4,503件。マイナンバーは含まれない。漏えいや不正利用の事実は確認されていないとしている。
+sources:
+  - title: 留萌市 個人情報漏えいのおそれについて
+    url: https://www.e-rumoi.jp/soumu/page11_00252.html
+  - title: 共同通信（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/9fb2b8f63b286db9995f05492711a89c3940d6bb
+  - title: 朝日新聞（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/2ff1b90d3bcb6e345c8cbb56839454ee07e22d01
+  - title: 北海道新聞（47NEWS）
+    url: https://www.47news.jp/15256750.html
+checklist:
+  - text: 市役所や委託業者を名乗る不審な電話・郵便・メールに注意する
+  - text: 要支援者情報の登録者は家族と情報を共有し、不審な訪問に応じない

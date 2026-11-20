@@ -1,0 +1,24 @@
+organization: 北海道岩見沢市
+services:
+  - 固定資産税の土地・家屋情報（委託業務）
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 北海道
+date_announced: 2026-11-18
+affected_count: 17385
+count_note: 土地情報最大10,348筆と家屋情報最大7,037棟の合計（いずれも2022年1月1日現在）。家屋情報に所有者氏名は含まれない
+cause: third_party
+root_cause: 委託先GIS北海道の再委託先リムゲートが使う情報機器がマルウェアK2Fに感染した
+attack_methods:
+  - infostealer
+vendor:
+  name: 株式会社GIS北海道
+data_types:
+  - 資産・取引情報
+summary: 業務を委託した株式会社GIS北海道から、再委託先の有限会社リムゲートが使う情報機器でマルウェア「K2F」への感染が確認され、同機器に保存されていた市の固定資産税に関する情報が漏えいした可能性があると報告を受けたと公表した。対象は2022年1月1日現在の土地情報最大10,348筆（所在地・地目・所有者・評価単価など）と家屋情報最大7,037棟（用途・床面積など。所有者氏名は含まない）。マイナンバーは含まれず、外部への漏えいや不正利用は確認されていない。
+sources:
+  - title: 岩見沢市 個人情報漏えいの可能性に関するお知らせ
+    url: https://www.city.iwamizawa.hokkaido.jp/soshiki/zeimu/zei/2/3/18234.html
+  - title: 北海道新聞
+    url: https://www.hokkaido-np.co.jp/article/1410867/
