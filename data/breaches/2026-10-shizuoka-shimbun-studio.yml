@@ -1,0 +1,22 @@
+organization: 株式会社静岡新聞社
+services:
+  - 静岡新聞市民スポーツ
+  - SBS学苑
+industry: メディア・出版
+country: JP
+date_occurred: 2026-09-30
+date_announced: 2026-10-16
+affected_count: 3037
+count_note: 静岡新聞市民スポーツ グラウンドゴルフ掲載専用フォーム最大3,000件、SBS学苑の講師派遣依頼2件・講師エントリー35件
+cause: third_party
+root_cause: Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった
+vendor:
+  name: Studio株式会社
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+summary: Webサイトのフォームに使っていたStudioが不正アクセスを受け、静岡新聞市民スポーツのグラウンドゴルフ掲載専用フォーム（最大3,000件）と、SBS学苑の講師派遣依頼フォーム（2件）、講師エントリーフォーム（35件）の情報が漏えいした可能性があると公表した。対象は申込者の氏名、電話番号、メールアドレス、入賞者氏名、企業名など。不正利用などの被害は確認されていない。
+sources:
+  - title: 静岡新聞社・静岡放送 Studio不正アクセスに関するお知らせ
+    url: https://shizushinsbs.co.jp/posts/vFHmnxKp
