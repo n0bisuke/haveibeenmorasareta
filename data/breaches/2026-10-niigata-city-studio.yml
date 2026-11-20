@@ -1,0 +1,29 @@
+organization: 新潟県新潟市
+services:
+  - 業務効率専門家派遣事業
+  - 在宅テレワーカー育成・就労支援事業
+  - みなみく妖怪大図鑑ホームページ
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 新潟県
+date_occurred: 2026-09-30
+date_announced: 2026-10-19
+affected_count: 73
+count_note: 業務効率専門家派遣事業8件、在宅テレワーカー育成・就労支援事業59件（10月19日発表）、南区「みなみく妖怪大図鑑ホームページ」6件（10月20日追加発表）の計73件
+cause: third_party
+root_cause: Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった
+vendor:
+  name: Studio株式会社
+data_types:
+  - 取引先情報
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 問い合わせ内容
+summary: 市の委託事業の受託事業者が利用者募集に使うWeb制作プラットフォーム「Studio」が第三者の不正アクセスを受け、個人情報等が漏えいした可能性があると公表した。業務効率専門家派遣事業の問い合わせ8件（会社・団体名、担当者氏名、電話番号、メールアドレス、相談内容）と在宅テレワーカー育成・就労支援事業の問い合わせ59件が対象。10月20日には南区の「みなみく妖怪大図鑑ホームページ」の問い合わせ6件も追加で発表した。該当者には連絡済み。
+sources:
+  - title: 新潟市 不正アクセスに伴う個人情報等漏えいの可能性について（10月19日報道資料）
+    url: https://www.city.niigata.lg.jp/shisei/koho/houdou/202610.files/261019_4.pdf
+  - title: 新潟市 不正アクセスに伴う個人情報等漏えいの可能性について（10月20日・南区）
+    url: https://www.city.niigata.lg.jp/shisei/koho/houdou/202610.files/261020-3.pdf
