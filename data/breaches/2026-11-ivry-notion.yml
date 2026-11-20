@@ -1,0 +1,22 @@
+organization: 株式会社IVRy
+services:
+  - Notion AI
+industry: IT・通信
+country: JP
+date_announced: 2026-11-12
+affected_count: 87
+count_note: 取引先担当者75件（11月20日更新、当初33件）と採用候補者12件の合計。ほかに識別子4件、営業情報に含まれる取引先情報は精査中
+cause: third_party
+root_cause: 利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIチャットの記録が流出した
+vendor:
+  name: Notion Labs, Inc.
+data_types:
+  - メッセージ・チャット履歴
+  - 取引先情報
+  - 氏名
+  - メールアドレス
+  - 電話番号
+summary: 業務で使うNotionの提供元の委託先Fireworks AIへの不正アクセスにより、Notion AIへの入力内容と応答の一部が外部に漏えいしたと公表した。取引先担当者の氏名・メールアドレス・電話番号（11月20日の更新で33件から75件に修正）、採用候補者の氏名や職歴12件などが含まれる。自社システムやサービス「アイブリー」への不正アクセスは確認されていない。
+sources:
+  - title: IVRy 当社が利用するグループウェア提供事業者における不正アクセスに伴う、情報漏えいに関するお詫び
+    url: https://ivry.jp/corporate/news/4wu8ght2l2/

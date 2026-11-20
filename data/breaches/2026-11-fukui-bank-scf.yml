@@ -1,0 +1,20 @@
+organization: 株式会社福井銀行
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 福井県
+date_occurred: 2026-11-02
+date_announced: 2026-11-05
+affected_count: 1
+count_note: 保証会社からの報告による判明分
+cause: third_party
+root_cause: ローンの保証会社SMBCコンシューマーファイナンスの保証業務システムが不正アクセスを受けた
+vendor:
+  name: SMBCコンシューマーファイナンス株式会社
+data_types:
+  - 氏名
+  - 契約情報
+summary: 提携先SMBCコンシューマーファイナンスが保証業務で使用しているシステムに第三者による不正アクセスが発生し、現時点で当行顧客1人の個人情報が漏えいした旨の報告を11月5日に受けたと公表した。当行のシステムへの不正アクセスによるものではない。漏えいした項目は示していない。漏えいした顧客には個別に直接連絡する方針で、二次被害は確認されていない。
+sources:
+  - title: 福井銀行 提携先（SMBCコンシューマーファイナンス株式会社）に対する不正アクセスによるお客さま情報の漏えいについて
+    url: https://www.fukuibank.co.jp/info/2026/unauthorized_access_20261105.pdf

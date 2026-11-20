@@ -1,0 +1,32 @@
+organization: 京都府舞鶴市
+services:
+  - Vitalityまいづるウォーク
+  - Vitality春のまいづるファンウォーク
+  - 舞鶴市役所職員対抗ウォーキング大会2026
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 京都府
+date_occurred: 2026-11-02
+date_announced: 2026-11-11
+affected_count: 75
+count_note: 3事業の参加者の合計（4件・64件・7件）
+cause: third_party
+root_cause: 連携事業で使う住友生命Vitalityのシステム委託先NTTデータの管理システムが不正アクセスを受けた
+vendor:
+  name: 株式会社NTTデータ
+  group: NTTグループ
+data_types:
+  - 氏名
+  - 生年月日
+  - 性別
+  - 郵便番号
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 従業員情報
+  - 会員ID
+summary: 住友生命と共催するウォーキング事業で使う「Vitality健康プログラム」の業務委託先NTTデータの管理システムが11月2日に不正アクセスを受け、「Vitality春のまいづるファンウォーク」「Vitalityまいづるウォーク」「舞鶴市役所職員対抗ウォーキング大会2026」の参加者計75件の氏名・生年月日・性別・住所・電話番号・メールアドレス・勤務先・Vitality会員番号等が漏えいしたと公表した。二次被害やネット上への公開は確認されていない。
+sources:
+  - title: 舞鶴市 住友生命保険相互会社との連携事業における参加者個人情報の漏えいについて
+    url: https://www.city.maizuru.kyoto.jp/0000015754.html
