@@ -1,0 +1,29 @@
+organization: 愛知県岡崎市
+services:
+  - 令和5年度家康行列の観覧席チケット
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 愛知県
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-11-05
+date_announced: 2026-11-09
+affected_count: null
+count_note: 件数確認中。市の分が含まれるかも調査中
+cause: third_party
+root_cause: チケット販売に使う電子チケットサービスteketの会員情報管理システムが不正アクセスを受けた
+vendor:
+  name: 株式会社teket
+data_types:
+  - 氏名
+  - メールアドレス
+  - 生年月日
+  - 性別
+  - 住所
+  - 電話番号
+  - 購入履歴
+summary: 令和5年度家康行列の観覧席チケット販売を委託した株式会社teketの電子チケット販売・管理サービス「teket」が不正アクセスを受け、登録情報が漏えいした可能性があると公表した。11月8日にteketから会員情報などを管理するシステムの情報の一部が流出したと報告を受けた。漏えいした可能性があるのは氏名、メールアドレス、生年月日、年齢、性別、住所、電話番号、チケットの発券用コードなど。件数や市の分が含まれるかは調査中としている。
+sources:
+  - title: 岡崎市 「teket」の会員情報等を管理するシステムへの不正アクセスにより個人情報漏えいの可能性があることが判明しました
+    url: https://www.city.okazaki.lg.jp/shisei/koho/1006195/1006358/1017062/1017625.html
