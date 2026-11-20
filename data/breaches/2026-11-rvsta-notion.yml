@@ -1,0 +1,18 @@
+organization: 株式会社リバスタ
+services:
+  - Notion AI
+industry: IT・通信
+country: JP
+date_announced: 2026-11-13
+affected_count: null
+count_note: 件数・内容は調査中。対象は2026年10月5日〜24日の会話データの一部
+cause: third_party
+root_cause: 利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIチャットの記録が流出した
+vendor:
+  name: Notion Labs, Inc.
+data_types:
+  - メッセージ・チャット履歴
+summary: 業務で使うNotionの提供元の委託先Fireworks AIで不正アクセスが発生し、従業員がNotion AIを利用した記録の一部が外部に漏えいした可能性があると公表した。11月10日に通知を受けた。対象は2026年10月5日〜24日の会話データの一部で、機密情報や個人情報が含まれる可能性があり調査中。第三者による取得・閲覧は確認されておらず、Notion AIの利用を禁止した。
+sources:
+  - title: リバスタ クラウドサービス「Notion」の委託先への不正アクセスに伴う情報漏えいの可能性に関するお詫びとお知らせ（第1報）
+    url: https://www.rvsta.co.jp/news/20261113_2/

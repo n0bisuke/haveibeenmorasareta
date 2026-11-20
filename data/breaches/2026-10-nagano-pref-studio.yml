@@ -1,0 +1,28 @@
+organization: 長野県
+services:
+  - デジタル化一貫支援事業
+  - 賃上げ環境整備支援事業（Bizサポ）
+  - NAGANOスカウトマッチ！
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 長野県
+date_occurred: 2026-09-30
+date_announced: 2026-10-22
+affected_count: 341
+count_note: デジタル化一貫支援事業152件、賃上げ環境整備支援事業177件、就職活動理解促進・スカウト型マッチング事業12件の計341件
+cause: third_party
+root_cause: Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった
+vendor:
+  name: Studio株式会社
+data_types:
+  - 取引先情報
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 問い合わせ内容
+summary: 県の委託事業の受託事業者が使うクラウドサービス「Studio」が第三者の不正アクセスを受け、3事業のフォームに入力された個人情報が漏えいした可能性があると公表した。デジタル化一貫支援サイトの相談・登録依頼フォーム152件、賃上げ・業務改善支援センター（Bizサポ）の問い合わせフォーム177件、NAGANOスカウトマッチ！の説明会申込フォーム12件が対象で、企業名、氏名、会社住所、電話番号、メールアドレス、問い合わせ内容、学校名などが含まれる。対象者にはメールでお詫びを送った。
+sources:
+  - title: 長野県 Studio株式会社で発生した不正アクセスに伴う個人情報漏えいの可能性について
+    url: https://www.pref.nagano.lg.jp/rodokoyo/happyou/r081022_studio_huseiaccess.html

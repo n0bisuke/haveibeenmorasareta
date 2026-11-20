@@ -1,0 +1,29 @@
+organization: スルガ銀行株式会社
+services:
+  - カードローン
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 静岡県
+date_occurred: 2026-11-02
+date_announced: 2026-11-06
+affected_count: null
+count_note: 件数は調査中（SMBCコンシューマーファイナンス全体の最大320,118人の内数）
+cause: third_party
+root_cause: ローンの保証会社SMBCコンシューマーファイナンスの保証業務システムが不正アクセスを受けた
+vendor:
+  name: SMBCコンシューマーファイナンス株式会社
+data_types:
+  - 氏名
+  - 性別
+  - 生年月日
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 運転免許情報
+  - 従業員情報
+  - 契約情報
+summary: カードローン等の保証業務を委託するSMBCコンシューマーファイナンスの保証業務システムが第三者による不正アクセスを受け、外部へ送信されたデータに当社顧客の氏名・性別・生年月日・住所・電話番号・メールアドレス・運転免許証番号・勤務先情報（年収等）・契約情報が含まれていたと公表した。対象者と件数は同社と確認中で、本人確認書類の画像は含まれない。同社を保証会社とするローンの新規申込受付を停止した。
+sources:
+  - title: スルガ銀行 保証業務委託先（SMBCコンシューマーファイナンス株式会社）への不正アクセスによるお客さま情報の漏えいについて
+    url: https://www.surugabank.co.jp/surugabank/kojin/topics/261106.html

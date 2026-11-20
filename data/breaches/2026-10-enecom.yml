@@ -1,0 +1,29 @@
+organization: 株式会社エネコム
+group: 中国電力グループ
+industry: IT・通信
+country: JP
+date_occurred: 2026-10-06
+date_announced: 2026-10-09
+affected_count: 2940
+count_note: 2,940件（うち同社社員情報1,838件）。11月16日の調査完了報告の値
+cause: unauthorized_access
+root_cause: 不正取得された保守用アカウントでシンクライアント環境から社内ネットワークに侵入され、社員アカウントも悪用された
+attack_methods:
+  - stolen_credentials
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 従業員情報
+  - 取引先情報
+  - 保存データ（写真・文書等）
+summary: 10月6日に社内ネットワークへの第三者の不正アクセスを確認し、10月9日に第一報を公表した。11月16日に調査完了を公表し、不正取得された保守用アカウントでシンクライアント環境を経由して侵入され、複数の社員アカウント情報も取得・悪用されたと説明した。社内ファイルサーバーの業務資料などが流出し、顧客や社員の氏名・勤務先・役職・メールアドレス・電話番号など個人情報2,940件（うち社員1,838件）が流出したとしている。口座・カード情報や「メガ・エッグ」等の顧客情報の流出は確認されていない。
+sources:
+  - title: エネコム 当社社内ネットワークへの不正アクセスに関する調査完了および対策実施について（11月16日）
+    url: https://www.enecom.co.jp/information/4121/
+  - title: エネコム 当社の社内ネットワークへの不正アクセスについて（10月9日）
+    url: https://www.enecom.co.jp/information/3920/
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/enecom_2940_personal_info_maintenance_account_thin_client_final_report/
+  - title: 47NEWS
+    url: https://www.47news.jp/15240506.html

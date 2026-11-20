@@ -1,0 +1,28 @@
+organization: 株式会社トリビュー
+services:
+  - トリビュー
+industry:
+  - 美容・健康
+  - IT・通信
+country: JP
+date_occurred: 2026-11-16
+date_announced: 2026-11-19
+affected_count: 12641
+count_note: 湘南美容クリニック55院とリッツ美容外科東京院を予約した12,641人。うち6,804人は施術名・施術日・施術金額、3人はメッセージ内容・生年月日・性別も対象
+cause: unauthorized_access
+root_cause: 医療機関向け管理アプリケーションのSBCメディカルグループのアカウントに不正ログインされた（ログイン情報が知られた経路は調査中）
+data_types:
+  - 氏名
+  - 電話番号
+  - 健康・医療情報
+  - 購入履歴
+  - 利用履歴
+  - メッセージ・チャット履歴
+  - 生年月日
+  - 性別
+summary: 美容医療予約サービス「トリビュー」を運営する同社は、湘南美容クリニック55院とリッツ美容外科東京院に提供する管理アプリケーションで11月16日に不正ログインを確認し、予約者12,641人の氏名（カナ）、電話番号、年齢、希望施術、予約メニュー名などが取得されたと公表した。施術を受けた6,804人は施術名・施術日・施術金額も対象となった。国内外の多数の接続元から攻撃を受け、SBCメディカルグループのアカウントに不正ログインされたもので、同グループの全アカウントのパスワードを無効化した。
+sources:
+  - title: トリビュー 管理アプリケーションへの不正アクセスによる個人情報流出のお詫びとお知らせ（PR TIMES）
+    url: https://prtimes.jp/main/html/rd/p/000000067.000047703.html
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/sbc-medical-shonan-beauty-data-breach-1624000-tribeau/

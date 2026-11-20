@@ -1,0 +1,24 @@
+organization: 株式会社南日本新聞社
+services:
+  - みなみパス
+industry: メディア・出版
+country: JP
+date_announced: 2026-10-22
+affected_count: 66500
+count_note: 最大約6万6,500人
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、登録していた配信先情報が持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+data_types:
+  - 氏名
+  - メールアドレス
+  - 生年月日
+summary: デジタルサービス「みなみパス」のメール配信を委託していたブラストメールが不正アクセスを受け、会員情報が流出したと10月22日に公表した。対象は最大約6万6,500人で、氏名・メールアドレス・生年月日・居住市町村（郡）など。電話番号、詳細な住所、パスワード、クレジットカード情報は含まれない。会員には同社やみなみパスを名乗る不審なメールに注意するよう呼びかけている。
+sources:
+  - title: 南日本新聞社 お詫びとご報告（第1報）
+    url: https://373news.com/corporation/notice/press/id_bfcd6f6b-43d6-4d48-931c-d9cac9dae279
+  - title: 南日本新聞社 お詫びとご報告
+    url: https://373news.com/corporation/notice/press/id_6bc5b036-e82d-4901-9cf1-c6b6ef8ac399
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOJC231G10T21C26A0000000/

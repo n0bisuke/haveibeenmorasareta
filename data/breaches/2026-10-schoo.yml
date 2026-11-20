@@ -5,7 +5,8 @@ industry: 人材・教育
 country: JP
 date_occurred: 2026-09-30
 date_announced: 2026-10-20
-count_note: 件数は未公表
+affected_count: 2600
+count_note: 延べ2,936件（同じ人の複数回の送信を含む）。対象は約2,600人
 cause: third_party
 root_cause: Webサイト制作に使うStudioのクラウド環境の一部機能の脆弱性を悪用され、フォームに送信された内容などが外部から取得できる状態になった
 vendor:

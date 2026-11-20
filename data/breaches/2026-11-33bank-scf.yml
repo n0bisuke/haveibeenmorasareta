@@ -1,0 +1,29 @@
+organization: 株式会社三十三銀行
+services:
+  - 三十三銀行フリーローン
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 三重県
+date_occurred: 2026-11-02
+date_announced: 2026-11-06
+affected_count: 914
+count_note: 「三十三銀行フリーローン」の顧客（保証会社からの報告による判明分）
+cause: third_party
+root_cause: ローンの保証会社SMBCコンシューマーファイナンスの保証業務システムが不正アクセスを受けた
+vendor:
+  name: SMBCコンシューマーファイナンス株式会社
+data_types:
+  - 氏名
+  - 性別
+  - 生年月日
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 運転免許情報
+  - 従業員情報
+  - 契約情報
+summary: 「三十三銀行フリーローン」の保証業務を行うSMBCコンシューマーファイナンスの保証システムが不正アクセスを受けて外部にデータが送信され、顧客914人の氏名・性別・生年月日・住所・電話番号・メールアドレス・運転免許証番号・勤務先情報（年収等）・契約情報が漏えいしたと公表した。本人確認書類の画像は含まれず、銀行のシステムへの不正アクセスではない。保証会社のシステムの安全性が確認されるまで同ローンの新規申込を停止した。
+sources:
+  - title: 三十三銀行 SMBCコンシューマーファイナンスにおける不正アクセスによるお客さま情報の漏洩に関するお知らせ
+    url: https://www.33bank.co.jp/release/back-number/2026/pdf/20261106.pdf

@@ -6,7 +6,7 @@ country: JP
 date_occurred: 2026-11-08
 date_announced: 2026-11-11
 affected_count: null
-count_note: 件数は調査中。2026年4月8日〜11月8日に出荷依頼された注文の配送先データが対象。HUMAN MADE（CURRY UP）・SKIYAKI（Bitfan）・マイネットなどの荷主も公表
+count_note: 件数は調査中。当初は2026年4月8日〜11月8日に出荷依頼された注文の配送先データが対象とされたが、その後荷主への報告で2017年10月27日〜2024年11月25日の一部と11月9日分も対象に広がった（ランナート・鹿島アントラーズの公表）。HUMAN MADE（CURRY UP）・SKIYAKI（Bitfan）・マイネットなどの荷主も公表
 cause: unauthorized_access
 root_cause: 同社システムが11月8日〜9日に第三者の不正アクセスを受けた。侵入の手口は公表されていない
 data_types:

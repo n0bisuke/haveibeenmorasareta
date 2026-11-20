@@ -1,0 +1,18 @@
+organization: 株式会社リバスタ
+services:
+  - 電子マニフェスト「e-reverse.com」のメール配信
+industry: IT・通信
+country: JP
+date_announced: 2026-10-23
+affected_count: 120000
+count_note: メールアドレス12万件
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、登録していた配信先情報が持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+data_types:
+  - メールアドレス
+summary: 建設業向け電子マニフェストサービス「e-reverse.com」のメール配信に使っていたブラストメールが不正アクセスを受け、配信先として登録していたメールアドレス12万件が漏えいしたと公表した。10月23日に第1報、28日に第2報、11月5日に第3報を出した。氏名、社名、e-reverse.comのユーザーID・パスワード、支店名などの所属情報は含まれない。11月5日までに別のメール配信サービスで対象のアドレスにお詫びと注意喚起のメールを送った。
+sources:
+  - title: リバスタ お詫びとお知らせ（第3報）
+    url: https://www.rvsta.co.jp/news/20261105/

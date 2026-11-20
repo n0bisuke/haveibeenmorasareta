@@ -1,0 +1,27 @@
+organization: カバー株式会社
+services:
+  - hololive production OFFICIAL SHOP
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-11-08
+date_announced: 2026-11-17
+affected_count: 300
+count_note: 約300件（オープンロジからの報告による）。2022年9月1日〜2024年11月25日に出荷を依頼した一部の出荷データ
+cause: third_party
+root_cause: 過去の出荷委託先オープンロジのシステムが不正アクセスを受け、委託期間の出荷データが持ち出された
+vendor:
+  name: 株式会社オープンロジ
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 購入履歴
+summary: 公式ショップ「hololive production OFFICIAL SHOP」の出荷業務を2025年6月まで委託していた株式会社オープンロジのシステムが2026年11月8日から9日に不正アクセスを受け、2022年9月1日から2024年11月25日に出荷を依頼した一部の出荷データ約300件が漏えいしたと公表した。お届け先の氏名、住所、電話番号、メールアドレス、注文番号、購入金額、配送伝票番号などが含まれる。クレジットカード情報は含まれない。取引終了後も委託先にデータが残っていた。
+sources:
+  - title: hololive production OFFICIAL SHOP 過去の出荷委託先への不正アクセスに伴うお客様情報の漏えいに関するお詫びとお知らせ
+    url: https://shop.hololivepro.com/blogs/news/shipping_openlogi_databreach_20261117
+  - title: GameBusiness.jp
+    url: https://www.gamebusiness.jp/article/2026/11/20/28788.html
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/cover_hololive_openlogi_former_shipping_vendor_300_records/

@@ -1,0 +1,18 @@
+organization: 株式会社エクスプラザ
+services:
+  - Notion AI
+industry: IT・通信
+country: JP
+date_announced: 2026-11-13
+affected_count: null
+count_note: 件数・内容は調査中
+cause: third_party
+root_cause: 利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIチャットの記録が流出した
+vendor:
+  name: Notion Labs, Inc.
+data_types:
+  - メッセージ・チャット履歴
+summary: 業務で使うNotionのAI機能について、Notionの提供元から、同社のベンダーFireworks AIで起きたセキュリティインシデントにより、利用者がNotion AIに入力した内容と回答の記録の一部が影響を受けた可能性があるとの通知を11月10日に受けたと公表した。記録には個人情報や業務情報が含まれる可能性があり、内容と範囲を調査中。個人情報保護委員会に報告し、連絡が必要な人には個別に連絡するとした。
+sources:
+  - title: エクスプラザ 当社が利用するクラウドサービス「Notion」のAI機能に関する、情報流出の可能性についてのお詫びとお知らせ（第一報）
+    url: https://explaza.jp/news/notion-ai-incident-20261113

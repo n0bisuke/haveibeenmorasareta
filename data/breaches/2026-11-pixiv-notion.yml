@@ -1,0 +1,20 @@
+organization: ピクシブ株式会社
+services:
+  - Notion AI
+industry: IT・通信
+country: JP
+date_announced: 2026-11-16
+affected_count: null
+count_note: 件数は調査中。pixiv等のサービスのユーザー情報は対象外
+cause: third_party
+root_cause: 利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIチャットの記録が流出した
+vendor:
+  name: Notion Labs, Inc.
+data_types:
+  - メッセージ・チャット履歴
+  - 取引先情報
+  - 問い合わせ内容
+summary: 業務で使うNotionの提供元の委託先Fireworks AIが不正アクセスを受け、Notion AIのチャット記録の一部が外部に漏えいしたおそれがあると公表した。11月11日に通知を受けた。記録には取引先等の関係者の個人情報や、問い合わせ内容、契約・取引に関する情報が含まれる可能性があり、対象と件数を特定中。pixiv等のサービスのアカウント情報、クレジットカード情報、マイナンバーは対象外とした。
+sources:
+  - title: ピクシブ 当社が利用する外部クラウドサービス「Notion」の委託先への不正アクセスに伴う、情報漏えいの可能性についてお詫びとお知らせ
+    url: https://www.pixiv.co.jp/2026/11/16/170000

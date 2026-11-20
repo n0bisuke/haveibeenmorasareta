@@ -18,6 +18,8 @@ data_types:
   - 購入履歴
 summary: EC事業者向け受注管理システム「GoQSystem」が11月10〜11日に不正アクセスを受け、注文データの一部が外部に持ち出されたと公表した。11月13日の第二報で、対象は利用店舗1,694社、注文4,984,595件、4,367,390名分と明らかにした。漏えいしたのは注文者と届け先の氏名・住所・電話番号・メールアドレス・注文内容で、原因は問い合わせフォームの脆弱性の悪用。クレジットカード情報は保有しておらず対象外。
 sources:
+  - title: GoQSystem お知らせ
+    url: https://goq.co.jp/security-incident.html
   - title: INTERNET Watch
     url: https://internet.watch.impress.co.jp/docs/news/2156617.html
   - title: ビジネス+IT

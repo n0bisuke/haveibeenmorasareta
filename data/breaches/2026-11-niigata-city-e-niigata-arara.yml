@@ -1,0 +1,22 @@
+organization: 新潟県新潟市
+services:
+  - 新潟市オンライン申請システム（e-NIIGATA）
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 新潟県
+date_announced: 2026-11-02
+affected_count: 37931
+count_note: 2026年7月1日〜10月31日にe-NIIGATAから通知メールが送られたメールアドレス
+cause: third_party
+root_cause: 受託事業者TKCが通知メール送信に使うアララのサービスが不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: 新潟市は、オンライン申請システム「e-NIIGATA」の受託事業者である株式会社TKCが通知メールの送信に使う外部サービスの運営会社、アララ株式会社が不正アクセスを受けた影響について公表した。11月13日のお詫びで、2026年7月1日から10月31日にe-NIIGATAから通知メールが送られた利用者のメールアドレス37,931件の漏えいを確認したとした。報道によると、漏えいしたのはメールアドレスのみで、氏名や申請情報は含まれない。
+sources:
+  - title: 新潟市 e-NIIGATAの外部メール送信サービスへの不正アクセスに伴う影響について
+    url: https://www.city.niigata.lg.jp/shisei/seisaku/it/keikaku/e-niigata-info202611.html
+  - title: 新潟市 お詫び（PDF）
+    url: https://www.city.niigata.lg.jp/shisei/seisaku/it/keikaku/e-niigata-info202611.files/20261113_apology_e-niigata.pdf

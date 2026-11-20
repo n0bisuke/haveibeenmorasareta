@@ -1,0 +1,22 @@
+organization: 株式会社鳥取銀行
+services:
+  - 鳥取銀行フリーローン
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 鳥取県
+date_occurred: 2026-11-02
+date_announced: 2026-11-06
+affected_count: null
+count_note: 件数は未公表（SMBCコンシューマーファイナンス全体の最大320,118人の内数）
+cause: third_party
+root_cause: ローンの保証会社SMBCコンシューマーファイナンスの保証業務システムが不正アクセスを受けた
+vendor:
+  name: SMBCコンシューマーファイナンス株式会社
+data_types:
+  - 氏名
+  - 契約情報
+summary: 個人向けローンの保証会社SMBCコンシューマーファイナンスの保証業務システムが不正アクセスを受け、漏洩した顧客情報に当行顧客の情報も含まれているとの報告を受けたと公表した。件数や項目は示しておらず、対象者には内容を特定したうえで個別に案内する予定とした。「鳥取銀行フリーローン」について同社への保証依頼を停止した。二次被害は確認されていない。
+sources:
+  - title: 鳥取銀行 SMBCコンシューマーファイナンス株式会社への不正アクセスによるお客さま情報の漏洩について
+    url: https://www.tottoribank.co.jp/oshirase/pdf/2026-11-06.pdf

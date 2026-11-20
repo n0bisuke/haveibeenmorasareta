@@ -1,0 +1,29 @@
+organization: 公益財団法人東京都スポーツ文化事業団
+services:
+  - スマイルスポーツ事業の申込み
+industry: エンタメ・スポーツ
+country: JP
+org_type: public_org
+prefecture: 東京都
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-11-05
+date_announced: 2026-11-08
+affected_count: null
+count_note: 件数は公表されていない
+cause: third_party
+root_cause: チケット販売に使う電子チケットサービスteketの会員情報管理システムが不正アクセスを受けた
+vendor:
+  name: 株式会社teket
+data_types:
+  - 氏名
+  - メールアドレス
+  - 生年月日
+  - 性別
+  - 住所
+  - 電話番号
+  - 購入履歴
+summary: スマイルスポーツ事業の申込みに使う外部申込サイト「teket」が第三者の不正アクセスを受け、登録されている個人情報の漏えいが判明したと株式会社teketから報告があったと公表した。東京体育館、駒沢オリンピック公園総合運動場、東京武道館、東京アクアティクスセンターで開く教室の申込みに使っていた。漏えいした情報の詳細はteketの発表を参照するよう案内しており、件数は示していない。
+sources:
+  - title: 東京都スポーツ文化事業団 スマイルスポーツ事業が利用している電子チケット販売サービス「teket」における個人情報漏えいについて（初報）
+    url: https://tef.or.jp/news/teket-1.html

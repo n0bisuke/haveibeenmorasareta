@@ -1,0 +1,20 @@
+organization: 株式会社ブロードリーフ
+services:
+  - 「ものづくりドットコム」のメール配信
+industry: IT・通信
+country: JP
+date_announced: 2026-10-23
+affected_count: null
+count_note: 件数は非公表
+cause: third_party
+root_cause: メール配信サービス「ブラストメール」を運営するラクスライトクラウドが不正アクセスを受け、登録していた配信先情報が持ち出された
+vendor:
+  name: 株式会社ラクスライトクラウド
+data_types:
+  - メールアドレス
+  - 氏名
+  - 従業員情報
+summary: 「ものづくりドットコム」で使っていたメール配信サービス「ブラストメール」が第三者の不正アクセスを受け、メール送付先リストの情報が漏えいしたと公表した。10月23日に第1報、29日に続報を出した。対象はメールアドレス・氏名と、登録・提供した人のみの会社名・職種・役職・都道府県・生まれ年・業種・従業員数・購読メルマガの種類。クレジットカード情報やログインパスワードなどは含まれない。
+sources:
+  - title: ブロードリーフ お知らせ
+    url: https://www.broadleaf.co.jp/company/news/news_detail/?dispmid=1001&itemid=372
