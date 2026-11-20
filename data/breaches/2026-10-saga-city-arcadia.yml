@@ -19,6 +19,3 @@ summary: 佐賀市は、登録制の防災・防犯情報メール「さがん�
 sources:
   - title: セキュリティ対策Lab
     url: https://rocket-boys.co.jp/?p=43609
-checklist:
-  - text: 市の公式発表の本文は未確認（さがんメールの案内ページには記載なし）
-  - text: 登録者数は報道の数値で、漏えい件数ではない

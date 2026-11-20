@@ -19,6 +19,3 @@ sources:
     url: https://www.odakyu-travel.co.jp/web/info_20261102.html
   - title: トラベルボイス
     url: https://www.travelvoice.jp/20261104-160795
-checklist:
-  - text: 運営会社の正式名称は未確認（organization はサイト名）
-  - text: トラベルボイスの記事本文は検索結果の要約のみで確認

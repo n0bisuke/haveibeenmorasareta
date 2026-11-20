@@ -20,5 +20,3 @@ summary: 北九州市は、マイナンバーカード交付予約・管理シ�
 sources:
   - title: 北九州市 メール配信サービスに対する不正アクセスによるメールアドレス漏えいの可能性について（マイナンバーカード交付予約・管理システム）
     url: https://www.city.kitakyushu.lg.jp/contents/14900233_00004.html
-checklist:
-  - text: date_announced はページの更新日（11月11日）。初回掲載日は未確認

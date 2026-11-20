@@ -20,6 +20,3 @@ sources:
     url: https://scan.netsecurity.ne.jp/article/2026/10/19/56492.html
   - title: セキュリティ対策Lab
     url: https://rocket-boys.co.jp/?p=43621
-checklist:
-  - text: 市の公式ページは削除済み（404）
-  - text: 約1万8,000件はセキュリティ対策Labの見出しで確認、本文は未確認
