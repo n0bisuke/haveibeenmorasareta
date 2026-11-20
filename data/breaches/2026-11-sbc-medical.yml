@@ -1,0 +1,38 @@
+organization: SBC Medical Group Holdings Inc.（SBCメディカルグループ）
+group: SBCメディカルグループ
+services:
+  - 湘南美容クリニック
+  - 湘南美容外科クリニック
+  - 湘南AGAクリニック
+  - 湘南歯科クリニック
+industry:
+  - 美容・健康
+  - 医療
+country: JP
+date_occurred: 2026-11-16
+date_announced: 2026-11-19
+affected_count: 1624000
+count_note: 顧客の個人情報約162.4万人（2010〜2023年の登録分）。ほかにWeb予約フォーム経由の申込内容約25.5万人、問い合わせフォームの記載内容約21.8万人、グループ職員のアカウント情報。対象者ごとに情報の組み合わせは異なる
+cause: unauthorized_access
+root_cause: グループ医療機関から受託して保有する管理システムのデータベースが、海外からの77万回にわたる攻撃で不正ログインされた
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 住所
+  - 生年月日
+  - パスワード（平文）
+  - 会員ID
+  - 問い合わせ内容
+  - 従業員情報
+summary: 湘南美容クリニックなどを展開するSBCメディカルグループは、グループの医療機関から委託を受けて保有するデータベースが11月16日未明に不正アクセスを受け、顧客約162.4万人分の氏名、メールアドレス、電話番号、住所、生年月日、パスワード、会員IDなどが不正に取得されたと公表した。パスワードは当時暗号化せずに保存していた。Web予約フォームの申込内容約25.5万人分、問い合わせフォームの記載内容約21.8万人分、職員のアカウント情報も取得された。電子カルテや予約サイト「mySBC」の情報の取得は確認されていない。
+sources:
+  - title: SBCメディカルグループ 不正アクセス被害による個人情報流出に関するお詫びとお知らせ（第1報）（PR TIMES）
+    url: https://prtimes.jp/main/html/rd/p/000000416.000097803.html
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2611/20/2000003355/
+  - title: Impress Watch
+    url: https://www.watch.impress.co.jp/docs/news/2158127.html
+checklist:
+  - text: 当時の登録パスワードと同じか似たパスワードを他のサービスで使っていれば変更する
+  - text: 施術内容などを引き合いに金銭を要求する連絡には応じない

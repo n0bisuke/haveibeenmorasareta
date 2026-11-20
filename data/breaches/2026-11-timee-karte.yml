@@ -1,0 +1,26 @@
+organization: 株式会社タイミー
+services:
+  - タイミー
+industry: 人材・教育
+country: JP
+date_occurred: 2026-11-13
+date_announced: 2026-11-19
+affected_count: 226662
+count_note: 求人事業者の担当者最大226,662人（11月17日時点）。メールアドレス226,662件、姓もしくは名93,862件、電話番号19,289件、顧客管理ID227,561件。求職者（ワーカー）の情報は含まれない
+cause: third_party
+root_cause: プレイドの「KARTE」が不正アクセスを受け、連携していた求人事業者担当者の情報が漏えいした
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - メールアドレス
+  - 氏名
+  - 電話番号
+  - 会員ID
+summary: 利用している株式会社プレイドの「KARTE」が11月13日に第三者の不正アクセスを受け、連携していた「タイミー」の求人事業者の担当者最大226,662人分のメールアドレス、姓もしくは名、電話番号、サービス上の顧客管理IDが漏えいしたと公表した。ログイン用のIDやパスワードなどの認証情報、求職者（ワーカー）の情報は含まれず、自社システムへの不正アクセスではないとしている。二次被害は確認されていない。
+sources:
+  - title: タイミー 当社委託先システムへの不正アクセスに伴う、「タイミー」ご利用事業者様の一部情報漏えいについて
+    url: https://corp.timee.co.jp/news/detail-7442/
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC19B420Z11C26A1000000/
+  - title: 東京新聞（共同通信）
+    url: https://www.tokyo-np.co.jp/article/529358

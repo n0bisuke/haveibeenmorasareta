@@ -1,0 +1,22 @@
+organization: 株式会社オンワードホールディングス
+group: オンワードグループ
+services:
+  - WEGO オンラインストア
+  - オンワード・クローゼット
+industry: 小売・EC
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_announced: 2026-11-18
+affected_count: null
+count_note: 対象となる情報の詳細と件数は確認中
+cause: third_party
+root_cause: 子会社が利用するプレイドの「KARTE」が不正アクセスを受け、同サービスに保管していた会員情報の一部が漏えいした
+vendor:
+  name: 株式会社プレイド
+summary: 連結子会社の株式会社ウィゴーと株式会社オンワード樫山が利用している株式会社プレイドの「KARTE」で、同サービスに保管していた会員に関する情報の一部が漏えいしたとの連絡を受けたと公表した。クレジットカード番号などの決済情報やパスワードの流出はない。対象となる情報の詳細と影響範囲は確認中で、対象者には個別にメールで連絡する。「WEGO オンラインストア」と「オンワード・クローゼット」は通常どおり利用できる。
+sources:
+  - title: オンワードホールディングス 委託先システム「KARTE」への不正アクセスに伴う情報漏えいに関するお詫びとお知らせ
+    url: https://www.onward-hd.co.jp/release/2026/20261118.html
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC193U50Z11C26A1000000/
