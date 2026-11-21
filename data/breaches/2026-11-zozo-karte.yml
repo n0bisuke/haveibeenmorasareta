@@ -1,0 +1,37 @@
+organization: 株式会社ZOZO
+group: LINEヤフーグループ
+services:
+  - ZOZOTOWN
+  - WEAR by ZOZO
+industry: 小売・EC
+country: JP
+date_occurred: 2026-11-13
+date_announced: 2026-11-20
+affected_count: 29180000
+count_note: 延べ約2,918万人分（同社説明）。ZOZOTOWN 会員（退会者含む）約1,518万人（会員ID・年齢・性別・郵便番号。うち約4.7万人はログイン名・メールアドレス・電話番号も）、WEAR by ZOZO 会員約1,393万人（会員ID・年齢・性別）、ZOZOTOWN 出店ブランド担当者約2.4万人（会員ID・企業名・氏名）
+cause: third_party
+root_cause: 情報発信やキャンペーンに使う委託先プレイドの「KARTE」が不正アクセスを受け、管理していた顧客情報が読み出された
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 会員ID
+  - 性別
+  - 郵便番号
+  - アカウント名
+  - メールアドレス
+  - 電話番号
+  - 氏名
+  - 取引先情報
+summary: サイト・アプリ上での情報発信やキャンペーンに使っていたプレイドの「KARTE」が不正アクセスを受け、同サービス上で管理していた顧客情報などの一部が漏えいしたと公表した。対象はZOZOTOWN会員（退会者含む）約1,518万人の会員ID・年齢・性別・郵便番号（うち約4.7万人はログイン名・メールアドレス・電話番号も）、WEAR by ZOZO会員約1,393万人の会員ID・年齢・性別、出店ブランド担当者約2.4万人の会員ID・企業名・氏名で、延べ約2,918万人分。パスワードはKARTE上で管理しておらず、クレジットカード情報の漏えいは確認されていない。
+sources:
+  - title: ZOZO 当社利用の外部サービス「KARTE」への不正アクセスについて
+    url: https://corp.zozo.com/information/20261120-482917/
+  - title: ZOZOTOWN お知らせ
+    url: https://zozo.jp/sp/news/article/499/
+  - title: ビジネス+IT（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/1739163b2e1fd496107c05cb8b455d37d52be5d9
+  - title: 共同通信（47NEWS）
+    url: https://www.47news.jp/15262906.html
+checklist:
+  - text: ZOZO からの個別連絡（メールなど）が届いていないか確認する
+  - text: ZOZO を装ったメール・SMS・電話のリンクや添付を開かない（ZOZO がメール等でパスワードやカード情報を尋ねることはない）
