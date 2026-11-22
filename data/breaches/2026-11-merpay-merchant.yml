@@ -1,0 +1,25 @@
+organization: 株式会社メルペイ
+group: メルカリグループ
+services:
+  - メルペイ加盟店サービス
+industry: 金融・保険
+country: JP
+date_occurred: 2026-11-05
+date_announced: 2026-11-20
+affected_count: 13
+count_note: 加盟店情報11名分と利用者の取引情報2名分（2件）
+cause: unauthorized_access
+root_cause: リスト型攻撃とみられる不正ログインで加盟店10店のアカウントに侵入された
+attack_methods:
+  - credential_stuffing
+data_types:
+  - 取引先情報
+  - 利用履歴
+summary: 加盟店向けの「メルペイ加盟店サービス」に11月5日、リスト型攻撃とみられる不正ログインがあり、加盟店10店のアカウントに不正にログインされ、加盟店情報11名分と利用者の取引情報2名分の計13名分が第三者に閲覧・取得された可能性があると公表した。11月6日までに対象アカウントのログイン状態の無効化とパスワードのリセットを行い、11月13日以降はワンタイムパスワードによる追加認証を導入した。11月20日から対象者に個別に連絡している。
+sources:
+  - title: メルペイ 「メルペイ加盟店サービス」への不正ログインによる一部情報等の閲覧・取得の可能性について
+    url: https://jp.merpay.com/news/2026/11/202611_merpay/
+  - title: メルペイ 加盟店向けよくあるご質問
+    url: https://partner-support.merpay.com/hc/ja/articles/64405320456857/
+  - title: FinWave
+    url: https://finwave.jp/archives/10993

@@ -1,0 +1,40 @@
+organization: 株式会社ポケットチェンジ
+services:
+  - PocketChange
+  - Pokepay（Enterprise）
+industry: 金融・保険
+country: JP
+date_occurred: 2026-10-26
+date_announced: 2026-11-19
+affected_count: 116361
+count_note: 最大件数・重複を含む。Pokepay（Enterprise）利用者最大116,361件、PocketChange利用者最大31,462件（うちパスポート番号最大24,086件）、加盟店情報最大820件、終了済みシステムのログ内の利用者情報最大1,206件とカード番号最大58件など
+cause: unauthorized_access
+root_cause: 社内業務システム（他社製品）の脆弱性を突かれ、漏れた認証情報で別サービスの旧環境の監視システムにも侵入された
+attack_methods:
+  - known_vulnerability
+  - stolen_credentials
+data_types:
+  - パスポート番号
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 会員ID
+  - 生年月日
+  - 住所
+  - 性別
+  - 口座番号
+  - クレジットカード番号
+  - 取引先情報
+  - 利用履歴
+summary: 外貨を電子マネーなどに交換する「PocketChange」や独自電子マネー発行基盤「Pokepay（Enterprise）」が第三者の不正アクセスを受け、利用者情報などが外部に漏えいしたと公表した。PocketChangeでは利用者情報最大31,462件が漏れ、うち最大24,086件はWeChatチャージ時に入力されたパスポート番号。Pokepay（Enterprise）では利用者のアカウント登録情報最大116,361件と加盟店の代表者氏名・銀行口座情報など最大820件が漏れた。終了済みシステムのログからカード番号全桁と名義人名最大58件も漏れた。10月26日に社内業務システムの脆弱性を突かれ、11月13〜14日にも侵入を受けた。PocketChangeは11月17日から全国で停止している。
+sources:
+  - title: ポケットチェンジ 当社システムへの不正アクセスに関するお詫びとご報告
+    url: https://about.pocket-change.jp/news/2026-unauthorized-access-notice
+  - title: PocketChange 【重要】当社システムへの不正アクセスに関するお詫びとご報告
+    url: https://www.pocket-change.jp/ja/newsrelease20261119/
+  - title: ASCII.jp パスポート番号約2.4万件流出 外貨交換サービスに不正アクセス
+    url: https://ascii.jp/elem/000/004/453/4453655/
+checklist:
+  - text: パスポートや本人確認の再提出を求める不審なメール・SMS・電話に応じない
+  - text: 手元のギフト券コード・PINが使えない場合はポケットチェンジのサポートに連絡する
+  - text: クレジットカードの利用明細に身に覚えのない請求がないか確認する

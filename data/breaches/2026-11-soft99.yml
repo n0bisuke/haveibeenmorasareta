@@ -12,6 +12,8 @@ data_types:
   - 氏名
   - 住所
   - メールアドレス
+  - 生年月日
+  - 性別
   - 電話番号
   - 購入履歴
   - クレジットカード情報（番号の一部・有効期限等）
@@ -25,3 +27,5 @@ sources:
     url: https://news.web.nhk/newsweb/na/nd-20261110de73798
   - title: 日本経済新聞
     url: https://www.nikkei.com/article/DGXZQOUF107PC0Q6A111C2000000/
+  - title: Security NEXT（続報）
+    url: https://www.security-next.com/192805

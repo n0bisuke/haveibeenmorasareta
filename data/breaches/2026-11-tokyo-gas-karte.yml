@@ -1,0 +1,32 @@
+organization: 東京ガス株式会社
+group: 東京ガスグループ
+services:
+  - myTOKYOGAS
+  - myTOKYOGASビジネス
+  - 東京ガスのウォーターサーバー
+industry: エネルギー・インフラ
+country: JP
+date_announced: 2026-11-20
+affected_count: 300000
+count_note: myTOKYOGASのハッシュ化された会員ID最大約30万件。ほかにmyTOKYOGASビジネス約820件、ウォーターサーバー申込者最大約4.9万件（氏名・連絡先など）。その他顧客の一部（年齢・性別・郵便番号等）の件数は調査中
+cause: third_party
+root_cause: 委託先プレイドの「KARTE」が不正アクセスを受け、連携していた顧客情報が流出した
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 会員ID
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 性別
+  - 生年月日
+  - 住所
+  - 郵便番号
+summary: 外部サービスを提供するプレイドの「KARTE」への不正アクセスにより、顧客情報の一部が流出したと公表した。myTOKYOGAS会員の一部のハッシュ化された会員ID最大約30万件とmyTOKYOGASビジネス会員の約820件、ウォーターサーバー申込者の氏名・メールアドレス・電話番号・性別・生年月日・居住都道府県・顧客管理番号の最大約4.9万件が対象。その他の顧客の一部の年齢・性別・郵便番号などは件数を調査中。二次被害は確認されていない。11月12日公表のアララ経由の流出とは別の事案。
+sources:
+  - title: 東京ガス 外部サービスへの不正アクセスによるお客さま情報の流出について
+    url: https://www.tokyo-gas.co.jp/news/press/20261120-01.html
+  - title: 共同通信（47NEWS）
+    url: https://www.47news.jp/15261809.html
+  - title: 産経新聞
+    url: https://www.sankei.com/article/20261120-HEMIYPR7CBJQJMXFLNNQ46MN6E/

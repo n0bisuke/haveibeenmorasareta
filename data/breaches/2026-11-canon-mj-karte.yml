@@ -1,0 +1,26 @@
+organization: キヤノンマーケティングジャパン株式会社
+group: キヤノンMJグループ
+services:
+  - 個人顧客向けウェブサイト等での情報提供
+industry: 製造
+country: JP
+date_announced: 2026-11-20
+affected_count: 3660000
+count_note: 約366万件（プレイドの報告に基づく）
+cause: third_party
+root_cause: 委託先プレイドの「KARTE」が不正アクセスを受け、保管されていた顧客情報が漏えいした
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 会員ID
+  - 住所
+  - 郵便番号
+  - 生年月日
+  - 性別
+  - 利用履歴
+summary: ウェブサイトなどでの個人顧客への情報提供を委託するプレイドの「KARTE」が11月13日に不正アクセスを受け、同サービスに保管されていた個人顧客の会員識別ID、都道府県名、市区町村名、郵便番号、年齢、生年月日、性別、メールマガジンの購読情報の約366万件が漏えいしたと公表した。氏名、電話番号、メールアドレス、クレジットカード番号、パスワードは含まれない。自社システムへの不正アクセスではなく、不正利用などの被害は確認されていない。KARTEとの連携は停止した。
+sources:
+  - title: キヤノンMJ 当社委託先が提供するサービスへの不正アクセスについて
+    url: https://corporate.jp.canon/info/2026/20261120
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC20AIL0Q6A121C2000000/

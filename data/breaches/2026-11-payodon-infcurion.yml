@@ -1,0 +1,36 @@
+organization: 株式会社鹿児島銀行・株式会社南日本銀行・鹿児島相互信用金庫・鹿児島信用金庫
+services:
+  - 決済アプリ「Payどん」
+industry: 金融・保険
+country: JP
+date_occurred: 2026-11-19
+date_announced: 2026-11-20
+affected_count: 251172
+count_note: 会員情報・加盟店情報など25万1,172件（報道）
+cause: third_party
+root_cause: 決済システムの委託先インフキュリオンの決済基盤「Wallet Station」が不正アクセスを受けた
+vendor:
+  name: 株式会社インフキュリオン
+data_types:
+  - 氏名
+  - 生年月日
+  - 電話番号
+  - 性別
+  - メールアドレス
+  - パスワード（保管形式不明）
+  - 口座番号
+  - ポイント情報
+  - 利用履歴
+  - 取引先情報
+summary: 決済アプリ「Payどん」の決済システムを委託するインフキュリオンの「Wallet Station」が第三者の不正アクセスを受け、個人情報が漏えいしたと公表し、11月20日午前6時20分に全サービスを停止した。11月19日に報告を受けた。漏えいは25万1,172件で、会員の氏名・生年月日・電話番号・性別・メールアドレス・パスワード、口座情報・ポイント残高・地域振興券ポイント残高、取引日時・店舗名・金額、加盟店の店舗名・電話番号が含まれる可能性がある。11月4日公表のアララ経由の漏えいとは別事案。
+sources:
+  - title: 鹿児島銀行 Payどん外部委託先への不正アクセスによる個人情報の漏えいに関するお詫びとサービスの停止について
+    url: https://www.kagin.co.jp/kojin/newsrelease/20261120_095.html
+  - title: インフキュリオン Wallet Station への不正アクセスによる個人情報漏えいに関するお詫びとお知らせ
+    url: https://infcurion.com/news/news-20261120_001/
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOJC201HZ0Q6A121C2000000/
+  - title: 朝日新聞
+    url: https://www.asahi.com/sp/articles/ASVCN1JSLVCNTLTB005M.html
+  - title: ビジネス+IT（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/4a79b8dc5310bbce7609fcef6081238ef4b2b7cc
