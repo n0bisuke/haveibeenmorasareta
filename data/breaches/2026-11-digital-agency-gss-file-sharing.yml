@@ -1,0 +1,25 @@
+organization: デジタル庁
+services:
+  - ガバメントソリューションサービス（GSS）のファイル共有サービス
+industry: 行政
+country: JP
+org_type: national_gov
+prefecture: 東京都
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-07-30
+date_announced: 2026-11-20
+affected_count: null
+count_note: 漏えいした可能性のあるファイルの数・内容・個人情報の件数は調査中。ファイルに個人情報が含まれることも想定されるとしている
+cause: unauthorized_access
+root_cause: GSSのファイル共有サービスで、正規の共有相手以外の者から7月30日〜11月12日にファイルへのアクセスがあった。原因は調査中
+summary: 政府機関向けの業務基盤「ガバメントソリューションサービス（GSS）」で提供するファイル共有サービスで、扱っていたファイルの一部が外部に漏えいした可能性があると公表した。利用者同士や事業者など組織外の関係者と会議資料などの大容量ファイルをやり取りするサービスで、11月12日に正規の共有相手以外からのアクセスを検知し、7月30日から11月12日までの約3カ月半にわたりアクセスがあったことを確認した。同日にサービスを停止し外部との通信を遮断した。ファイルには個人情報が含まれることも想定されるとして個人情報保護委員会に報告し、警察などと連携して調べている。二次被害は確認されていない。同庁のGSSでは9月にもVPN機器の脆弱性を突かれた不正アクセス（約24.6万件）を公表している。
+sources:
+  - title: デジタル庁 ファイル共有サービス上のファイルの漏えいの可能性について
+    url: https://www.digital.go.jp/press/a966ee61-478c-4194-8f13-f97599fae986
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2158375.html
+  - title: ITmedia NEWS
+    url: https://www.itmedia.co.jp/news/article/2611/20/2000003381/
+  - title: 時事通信
+    url: https://www.jiji.com/jc/article?k=2026112001150&g=eco
