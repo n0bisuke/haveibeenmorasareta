@@ -27,8 +27,6 @@ summary: メルカリ・メルペイ・メルコインが社内業務で利用�
 sources:
   - title: メルカリ 当社グループが利用するクラウドサービスの委託先への不正アクセスによる情報流出の可能性について
     url: https://about.mercari.com/press/news/articles/20261120_incidentreport/
-  - title: Notion Security Advisory
-    url: https://www.notion.com/security/advisories/security-incident-involving-a-third-party-ai-vendor
   - title: 日本経済新聞
     url: https://www.nikkei.com/article/DGXZQOUC208RC0Q6A121C2000000/
   - title: 読売新聞（Yahoo!ニュース）
