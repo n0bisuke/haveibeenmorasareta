@@ -1,0 +1,36 @@
+organization: Peach Aviation株式会社
+services:
+  - メールマガジン・各種通知メールの配信
+industry:
+  - 交通・モビリティ
+  - 旅行
+country: JP
+date_occurred: 2026-10-18
+date_announced: 2026-11-20
+affected_count: 8997106
+count_note: 顧客情報8,997,106件（レコード数。重複を除いた人数ではない）
+cause: third_party
+root_cause: メール配信の委託先ユミルリンクの「Cuenote FC」が不正アクセスを受け、顧客情報が漏えいした
+vendor:
+  name: ユミルリンク株式会社
+data_types:
+  - 氏名
+  - 生年月日
+  - 性別
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 利用履歴
+summary: メールマガジンや各種通知メールの配信に利用するユミルリンクの「Cuenote FC」への不正アクセスにより、顧客の氏名、生年月日、性別、住所、電話番号、メールアドレス、旅程の8,997,106件が漏えいしたと公表した。委託先での発生は10月18日で、11月6日に影響範囲が確定した。クレジットカード情報とパスポート情報は含まれず、予約や運航への影響はない。メールマガジン、自動配信メール、返金払い戻しフォームを停止した。10月に公表したIDCFクラウドのランサムウェア被害とは別の事案。
+sources:
+  - title: Peach ユミルリンク株式会社で発生した不正アクセスに伴うメールアドレス等の漏えいのお詫びとお知らせ（PDF）
+    url: https://www.flypeach.com/application/files/3617/9515/4415/20261120_INFO_JP.pdf
+  - title: Aviation Wire
+    url: https://www.aviationwire.jp/archives/354926
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUF2069C0Q6A121C2000000/
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/peach_aviation_cuenote_fc_8997106_itinerary_data_breach/
+checklist:
+  - text: 便の変更・返金・ポイント失効を装うメールやSMSのリンクを開かず、公式サイトやアプリで予約を確認する
+  - text: 対象者には登録メールアドレスに順次連絡するとしている。Peachからの連絡を確認する

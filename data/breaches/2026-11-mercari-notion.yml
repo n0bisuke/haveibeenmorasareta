@@ -1,0 +1,35 @@
+organization: 株式会社メルカリ
+group: メルカリグループ
+services:
+  - Notion AI
+industry: 小売・EC
+country: JP
+date_announced: 2026-11-20
+affected_count: 3796
+count_note: 顧客1,522名、取引先担当者等571名、採用応募者169名、派遣社員・業務委託先・退職者1,534名の合計（重複の有無は未公表）。メルカリ・メルペイ・メルコインの3社分
+cause: third_party
+root_cause: 利用するNotionのAI機能の委託先Fireworks AIが不正アクセスを受け、AIへの入力内容などが流出した
+vendor:
+  name: Notion Labs, Inc.
+data_types:
+  - 会員ID
+  - 氏名
+  - メールアドレス
+  - 住所
+  - 電話番号
+  - 生年月日
+  - 問い合わせ内容
+  - 利用履歴
+  - 取引先情報
+  - 従業員情報
+  - メッセージ・チャット履歴
+summary: メルカリ・メルペイ・メルコインが社内業務で利用するNotion AIの処理委託先である米Fireworks AIが不正アクセスを受け、10月5日〜24日に従業員がNotion AIへ入力した内容とAIの回答の一部が流出した可能性があると公表した。顧客1,522名、取引先担当者等571名、採用応募者169名、派遣社員・退職者等1,534名の計3,796名分の個人情報が含まれる。業務システムの認証情報の一部も含まれ、無効化・再発行した。マイナンバー、クレジットカード番号、顧客のログインパスワードは確認されていない。
+sources:
+  - title: メルカリ 当社グループが利用するクラウドサービスの委託先への不正アクセスによる情報流出の可能性について
+    url: https://about.mercari.com/press/news/articles/20261120_incidentreport/
+  - title: Notion Security Advisory
+    url: https://www.notion.com/security/advisories/security-incident-involving-a-third-party-ai-vendor
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC208RC0Q6A121C2000000/
+  - title: 読売新聞（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/1a1072287cd398cad86bc886897fe515c28d6e8f
