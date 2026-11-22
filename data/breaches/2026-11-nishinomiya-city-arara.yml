@@ -1,0 +1,22 @@
+organization: 兵庫県西宮市
+services:
+  - にしのみやスマート申請
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 兵庫県
+date_announced: 2026-11-16
+affected_count: 25115
+count_note: 2026年7月1日〜10月31日ににしのみやスマート申請からメールを受信したメールアドレス25,115件
+cause: third_party
+root_cause: TKCのスマート申請が使うアララのメール配信サービスが第三者の不正アクセスを受けた
+vendor:
+  name: アララ株式会社
+data_types:
+  - メールアドレス
+summary: 電子申請サービス「にしのみやスマート申請」が使うアララのメール配信サービスが第三者の不正アクセスを受け、利用者のメールアドレス25,115件が漏えいしたと公表した。対象は7月1日から10月31日に、利用者登録、メールアドレス・パスワードの変更、申請完了、処理状況のお知らせなどのメールを受信したアドレス。メールの件名・本文、氏名、住所、申請内容は含まれない。システムはTKCが提供している。メール送信は委託事業者が新たな送信基盤を構築して順次再開しており、対象者には個別にメールで連絡する。
+sources:
+  - title: 西宮市 にしのみやスマート申請（メールアドレスの情報漏えいについて）
+    url: https://www.nishi.or.jp/shinseisho/nishinomiyasmart.html
+  - title: 神戸新聞NEXT 西宮市で2万5千件のメールアドレス漏えい、尼崎市も1万7千件
+    url: https://news.yahoo.co.jp/articles/446e6380d1a8a3123f8c40c5337be799ab1b14f2
