@@ -1,0 +1,23 @@
+organization: 株式会社ジョイントサービス
+services:
+  - 電材ドットコム 楽天市場店
+industry: 小売・EC
+country: JP
+date_occurred: 2026-11-10
+date_announced: 2026-11-20
+affected_count: 577
+count_note: 対象注文577件（人数ではない）
+cause: third_party
+root_cause: 受注管理を委託するGoQSystemのサーバーが11月10〜11日に不正アクセスを受け、データの一部が持ち出された
+vendor:
+  name: 株式会社GoQSystem
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 購入履歴
+summary: 「電材ドットコム 楽天市場店」を運営する同社は、受注管理を委託する株式会社GoQSystemのサーバーが11月10〜11日に外部から不正アクセスを受け、同店で注文した顧客の個人情報の一部が外部へ流出したと報告を受けたと公表した。対象は注文577件で、注文者の氏名、住所、電話番号、メールアドレス、届け先の氏名、住所、電話番号、注文内容、注文日時など。クレジットカード情報は含まれない。対象者には個別にメールで連絡し、個人情報保護委員会へはGoQSystemとの連名で報告したとしている。
+sources:
+  - title: 委託先システムへの不正アクセスによるお客様情報の漏えいに関するお詫びとお知らせ｜電材ドットコム楽天市場店
+    url: https://www.rakuten.co.jp/joint-service/contents/202611_GOQincident/

@@ -1,0 +1,28 @@
+organization: 長島・大野・常松法律事務所
+services:
+  - Legal Lounge
+  - NO&T ALUMNI
+  - NO&T Careers Site
+  - 一斉メール配信システム
+industry: 団体・その他
+country: JP
+date_occurred: 2026-11-09
+date_announced: 2026-11-20
+affected_count: null
+count_note: 件数は未公表（第一報時点で調査中）
+cause: vulnerability
+root_cause: 外部ベンダー提供の共通基盤を使う4つのWebアプリにある脆弱性を突かれた
+data_types:
+  - 氏名
+  - メールアドレス
+  - 住所
+  - 電話番号
+  - 生年月日
+  - 性別
+  - パスワード（ハッシュ化・暗号化済み）
+summary: 外部ベンダーが提供するシステムを共通基盤とする4つのWebアプリケーションシステムが、脆弱性を突かれて外部から不正アクセスを受け、個人情報が漏えいしたと公表した。不正アクセスは11月9日深夜〜10日未明にあり、10日午前に検知して4システムを停止した。対象は会員制サイト「Legal Lounge」、OB・OG向け「NO&T ALUMNI」、弁護士採用サイト「NO&T Careers Site」、一斉メール配信システムで、氏名、所属先、メールアドレス、住所、電話番号、生年月日、パスワードのハッシュ値、採用応募者の学歴・資格・試験の受験や合格の情報などが含まれる。一部の案件6件の送付先情報も含まれるが、通常の案件処理に使うシステムへの不正アクセスは確認されていない。件数は調査中。
+sources:
+  - title: 長島・大野・常松法律事務所 会員制サイトおよび一斉メール配信システムに対する不正アクセスによる個人情報の漏えいに関するお知らせとお詫び（第一報）
+    url: https://www.nagashima.com/topics/topic20261120/
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/nagashima_ohno_tsunematsu_4systems_personal_data_breach_2026/

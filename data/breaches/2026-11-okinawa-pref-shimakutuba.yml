@@ -1,0 +1,17 @@
+organization: 沖縄県
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 沖縄県
+date_announced: 2026-11-20
+affected_count: 6
+count_note: 6人分（漏えいした可能性）
+cause: third_party
+root_cause: 「令和5年度しまくとぅばイベント開催等事業委託業務」の委託先が不正アクセスを受けた
+data_types:
+  - 電話番号
+  - メールアドレス
+summary: 県文化振興課しまくとぅば普及推進室は、「令和5年度しまくとぅばイベント開催等事業委託業務」の委託先に不正アクセスがあり、電話番号やメールアドレスなどの個人情報6人分が漏えいした可能性があると公表した。委託先の名称、不正アクセスの経路、漏えいした情報の全項目は報道の範囲では確認できていない。
+sources:
+  - title: 県の委託先に不正アクセス　情報６人分漏えいか｜琉球新報デジタル
+    url: https://ryukyushimpo.jp/national/entry-5612796.html

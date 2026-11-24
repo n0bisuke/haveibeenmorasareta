@@ -1,0 +1,35 @@
+organization: 株式会社ベストコ
+group: ユナイテッド
+services:
+  - ベスト個別
+industry: 人材・教育
+country: JP
+date_occurred: 2026-11-20
+date_announced: 2026-11-21
+affected_count: 146133
+count_note: 最大146,133件（2026年11月20日までの在籍者情報最大50,196件と、過去の問い合わせ情報最大95,937件の合計。重複の有無は未公表）。漏えいの「可能性」の段階
+cause: unauthorized_access
+root_cause: 利用するシステムに第三者が不正アクセスした（原因は外部専門機関と調査中）
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 口座番号
+  - 資産・取引情報
+  - アカウント名
+  - パスワード（保管形式不明）
+  - 問い合わせ内容
+summary: 利用するシステムが11月20日に第三者から不正アクセスを受け、学習塾の顧客の個人情報が外部に漏えいした可能性があると公表した。対象は11月20日までに在籍していた顧客の情報最大50,196件と、過去の問い合わせ情報最大95,937件。在籍者情報には保護者と子どもの氏名、兄弟姉妹の情報、住所、電話番号、メールアドレス、成績、入塾状況のほか、口座番号・口座名義・月謝金額・入金や引き落としの履歴、教育情報アプリに設定されたIDとパスワードが含まれる。クレジットカード情報は含まれず、二次被害は確認されていない。教育情報アプリのパスワード変更と、口座取引の確認を呼びかけている。
+sources:
+  - title: ベストコ 【お詫びとご報告】不正アクセスによる個人情報漏洩の可能性について
+    url: https://bestco.jp/news/74/
+  - title: ベスト個別 お知らせ
+    url: https://best-kobetsu.co.jp/juku/news/36240/
+  - title: ユナイテッド お知らせ
+    url: https://united.jp/news/info/post_170.html
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/bestco-best-kobetsu-50196-95937-potential-data-leak/
+checklist:
+  - text: 教育情報アプリのパスワードを変更し、同じパスワードを使う他のサービスも変更する
+  - text: 引き落とし口座に身に覚えのない取引がないか確認する
