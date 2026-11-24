@@ -1,0 +1,23 @@
+organization: 田中電気株式会社
+services:
+  - 田中電気マーケット 楽天市場店
+industry: 小売・EC
+country: JP
+date_occurred: 2026-11-10
+date_announced: 2026-11-16
+affected_count: 347
+count_note: 対象注文347件（人数とは異なる）。11月20日更新時点
+cause: third_party
+root_cause: 利用する外部システムGoQSystemが11月10〜11日に第三者の不正アクセスを受け注文データが持ち出された
+vendor:
+  name: 株式会社GoQSystem
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - 購入履歴
+summary: 「田中電気マーケット 楽天市場店」は、利用する外部システム「GoQSystem」が11月10〜11日に第三者の不正アクセスを受け、同システムで管理する注文データの一部が外部に持ち出されたと公表した。11月20日の更新で、同店の対象は注文347件と公表した。漏えいした可能性があるのは注文者の氏名、住所、電話番号、メールアドレス、届け先の氏名、住所、電話番号、注文内容、注文日時など。クレジットカード情報は対象外。対象者には個別に連絡するとしている。
+sources:
+  - title: 【重要】外部システムへの不正アクセスに伴うお知らせとお詫び｜田中電気マーケット 楽天市場店
+    url: https://www.rakuten.co.jp/tanaka-denki/contents/goqsystem/
