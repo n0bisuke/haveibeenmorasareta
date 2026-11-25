@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T01:02:11.000Z",
-  "count": 1235,
+  "generated_at": "2026-11-25T08:09:31.000Z",
+  "count": 1250,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,247 @@
   ],
   "breaches": [
     {
+      "id": "2026-11-cs-marketing-bellezza",
+      "organization": "CSマーケティング株式会社",
+      "services": [
+        "ベレッツァ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2018-07-04",
+      "date_announced": "2026-11-24",
+      "affected_count": 3633,
+      "count_note": "2018年7月4日〜2025年3月27日にカード決済した3,633名",
+      "cause": "vulnerability",
+      "root_cause": "システムの一部の脆弱性を突いた不正アクセスで、ペイメントアプリケーションが改ざんされた",
+      "attack_methods": [
+        "web_skimming"
+      ],
+      "data_types": [
+        "氏名",
+        "クレジットカード番号",
+        "クレジットカードのセキュリティコード",
+        "クレジットカード情報（番号の一部・有効期限等）"
+      ],
+      "summary": "自動車用品の通販サイト「ベレッツァ」がシステムの脆弱性を突いた第三者の不正アクセスを受けてペイメントアプリケーションが改ざんされ、2018年7月4日〜2025年3月27日にカード決済をした3,633名のクレジットカード情報（カード名義人名、カード番号など）が漏えいし、一部が不正利用された可能性があると公表した。報道では有効期限とセキュリティコードも対象とされる。2026年6月8日にカード会社から漏えい懸念の連絡を受けてカード決済を停止し、8月17日に調査機関の調査が完了した。",
+      "sources": [
+        {
+          "title": "ベレッツァ 不正アクセスによる個人情報漏えいに関するお詫びとお知らせ",
+          "url": "https://www.bellezza-cs.com/article/notice/2135/"
+        },
+        {
+          "title": "Yahoo!ニュース（アスキー）",
+          "url": "https://news.yahoo.co.jp/articles/0eff0a4baf6b98316f11be98e3fc7d90d4f3f478"
+        },
+        {
+          "title": "楽天カード お知らせ",
+          "url": "https://www.rakuten-card.co.jp/info/news/20261124_3/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "クレジットカードの利用明細に身に覚えのない請求がないか確認する"
+        },
+        {
+          "text": "カード再発行の手数料はかからないよう同社がカード会社に依頼している"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 3065,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-fuji-unite-hd",
+      "organization": "富士ユナイトホールディングス株式会社",
+      "services": [
+        "富士興産 Web受注システム"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_occurred": "2026-11-05",
+      "date_announced": "2026-11-24",
+      "affected_count": null,
+      "count_note": "件数・情報の項目は未公表（調査中）",
+      "cause": "unauthorized_access",
+      "root_cause": "同社と連結子会社の富士興産が運用するサーバーの一部が第三者の不正アクセスを受けた",
+      "summary": "同社と連結子会社の富士興産が運用するサーバーの一部が第三者の不正アクセスを受け、個人情報を含むデータの一部が外部に漏えいしたと公表した。11月5日に不正アクセスを確認して侵入経路を遮断し、11月10日に漏えいが判明した。同じサーバーに保管されていたほかの個人情報にも漏えいのおそれがあるとしている。予防措置として富士興産のWeb受注システムの利用を一時停止した。漏えいした情報の項目や件数は公表しておらず、外部専門家と調査を続け、対象者に個別に通知するとしている。",
+      "sources": [
+        {
+          "title": "富士ユナイトホールディングス 弊社および連結子会社に対する不正アクセスによる情報漏えいに関するお知らせ（適時開示）",
+          "url": "https://www.release.tdnet.info/inbs/140120261124585268.pdf"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/fuji_unite_hd_fuji_kosan_data_breach_20261124/"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": 19,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-jaxa-earth-observation",
+      "organization": "国立研究開発法人宇宙航空研究開発機構（JAXA）",
+      "services": [
+        "地球観測データ公開系情報システム"
+      ],
+      "industry": "行政",
+      "country": "JP",
+      "org_type": "public_agency",
+      "prefecture": "東京都",
+      "date_occurred": "2026-11-18",
+      "date_announced": "2026-11-24",
+      "affected_count": 2000,
+      "count_note": "システム利用者2,000名のアカウント情報（アカウント名と暗号化されたパスワード）",
+      "cause": "vulnerability",
+      "root_cause": "Webアプリケーションのコマンドインジェクションの脆弱性を悪用され、バックドアを設置された",
+      "attack_methods": [
+        "remote_code_execution"
+      ],
+      "data_types": [
+        "アカウント名",
+        "パスワード（ハッシュ化・暗号化済み）"
+      ],
+      "summary": "地球観測衛星などで取得した降水データや気象データを提供する公開系情報システムが11月18日に外部の第三者による不正アクセスを受け、利用者2,000名のアカウント名と暗号化されたパスワードが窃取されたと公表した。Webアプリケーションの一部にコマンドインジェクションの脆弱性があり、攻撃者はこれを悪用してバックドアを設置し、システムの探索や情報の窃取を試みていた。同日16時30分までにWebサーバーのサービスを停止し、FTPサーバーも停止した。保存されている観測データは公開情報で、攻撃者がアクセスした痕跡はないとしている。復旧の見通しは立っていない。",
+      "sources": [
+        {
+          "title": "JAXA 地球観測データ公開系情報システムへの不正アクセスによる情報漏洩",
+          "url": "https://www.jaxa.jp/press/2026/11/20261124-2_j.html"
+        },
+        {
+          "title": "JAXA 第一宇宙技術部門 サテライトナビゲーター お知らせ",
+          "url": "https://www.satnavi.jaxa.jp/ja/news/2026/11/24/13286/index.html"
+        },
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261124de80645"
+        },
+        {
+          "title": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261124-GYT1T00302/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "同じパスワードを他のサービスで使っている場合は変更する"
+        },
+        {
+          "text": "JAXA をかたる不審なメールで URL を開いたりパスワードを入力したりしない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 6,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-pshoken",
+      "organization": "ペットメディカルサポート株式会社",
+      "services": [
+        "ペット保険「PS保険」の資料請求"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-11-12",
+      "date_announced": "2026-11-24",
+      "affected_count": 210000,
+      "count_note": "最大約21万件。2015年3月22日〜2019年10月23日に資料請求した顧客",
+      "cause": "third_party",
+      "root_cause": "業務委託先が管理する、資料請求情報を保存したサーバー内のファイルに不正アクセスされた",
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "性別",
+        "住所",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "ペット保険「PS保険」の業務委託先が管理するサーバーで第三者による不正アクセスが確認され、過去に資料請求をした顧客の個人情報が最大約21万件漏えいした可能性があると公表した。11月12日にサーバー内のファイルへの不正アクセスを確認した。対象は2015年3月22日〜2019年10月23日に資料請求をした人の氏名、生年月日、性別、住所、電話番号、メールアドレス、同社を知ったきっかけに関するアンケート回答。クレジットカード情報、銀行口座情報、本人確認書類の情報は含まれない。サーバーは外部からのアクセスを遮断した。",
+      "sources": [
+        {
+          "title": "PS保険 不正アクセスによるお客さま情報漏えいの可能性に関するお詫びとお知らせ",
+          "url": "https://pshoken.co.jp/imp/261124.html"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/pshoken_pet_medical_support_data_breach_210000_2026/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "PS保険を名乗る不審なメールや SMS の URL を開いたり個人情報を入力したりしない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 12,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-weleda-online-shop",
+      "organization": "株式会社ヴェレダ・ジャパン",
+      "services": [
+        "ヴェレダ 公式オンラインショップ"
+      ],
+      "industry": [
+        "美容・健康",
+        "小売・EC"
+      ],
+      "country": "JP",
+      "date_announced": "2026-11-24",
+      "affected_count": 198792,
+      "count_note": "個人情報19万8,792件。このうちクレジットカード情報（セキュリティコードを含む）は4万5,689件。対象は2021年10月1日〜2026年6月30日の利用者",
+      "cause": "vulnerability",
+      "root_cause": "公式通販サイトのシステムの脆弱性を突かれ、改ざんされた",
+      "attack_methods": [
+        "web_skimming"
+      ],
+      "data_types": [
+        "クレジットカード番号",
+        "クレジットカードのセキュリティコード",
+        "クレジットカード情報（番号の一部・有効期限等）",
+        "氏名",
+        "住所",
+        "メールアドレス",
+        "電話番号",
+        "性別",
+        "生年月日"
+      ],
+      "summary": "公式オンラインショップが第三者による不正アクセスを受け、個人情報19万8,792件とクレジットカード情報4万5,689件が漏えいした可能性があると公表した。システムの一部の脆弱性を突かれて改ざんされた。6月30日に警視庁から連絡を受け、7月3日にカード決済を停止、8月19日にサイトを一時停止した。2021年10月1日〜2026年6月30日の会員・注文者・配送先の氏名、住所、メールアドレス、電話番号、性別、誕生日と、カード決済者のカード名義・番号・有効期限・セキュリティコードが対象。サイトは2027年3月ごろの再開を目指す。",
+      "sources": [
+        {
+          "title": "ヴェレダ・ジャパン「ヴェレダ 公式オンラインショップ」への不正アクセスによる情報漏えいに関するお詫びとお知らせ",
+          "url": "https://weleda-notice-static-apne1.s3.ap-northeast-1.amazonaws.com/news/20261116.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC24AG30U6A121C2000000/"
+        },
+        {
+          "title": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35255332/"
+        },
+        {
+          "title": "FASHIONSNAP",
+          "url": "https://www.fashionsnap.com/article/2026-11-24/weleda-news-1124/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "クレジットカードの利用明細に身に覚えのない請求がないか確認する"
+        },
+        {
+          "text": "必要ならカード会社にカードの再発行を依頼する（手数料は同社が負担するよう依頼済み）"
+        },
+        {
+          "text": "ヴェレダや配送事業者・カード会社を装った不審なメールや SMS で URL を開いたりカード情報を入力したりしない"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-bestco",
       "organization": "株式会社ベストコ",
       "group": "ユナイテッド",
@@ -518,6 +759,101 @@
         },
         {
           "text": "引き落とし口座に身に覚えのない取引がないか確認する"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 1,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-musashinomura-comsbi",
+      "organization": "むさしの村",
+      "services": [
+        "LINE公式アカウント"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-11-09",
+      "date_announced": "2026-11-21",
+      "affected_count": 64702,
+      "count_note": "LINE友だち情報最大64,702名。うち氏名・電話番号・メールアドレス最大161名、郵便番号最大589名",
+      "cause": "third_party",
+      "root_cause": "LINE公式アカウントの運営に使うソニックムーブの「COMSBI（SaaS版）」が不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社ソニックムーブ"
+      },
+      "data_types": [
+        "アカウント名",
+        "連携サービスID",
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "郵便番号"
+      ],
+      "summary": "埼玉県加須市の遊園地「むさしの村」は、LINE公式アカウントの運営に利用するソニックムーブの「COMSBI（SaaS版）」が11月9日から10日にかけて第三者の不正アクセスを受け、11月10日9時17分までに友だち登録した最大64,702名のLINEの表示名・プロフィール画像・LINEユーザーIDと、最大161名の氏名・電話番号・メールアドレス、最大589名の郵便番号が漏えいしたと公表した。ブロックや友だち解除をした人も含む。LINEのパスワードとクレジットカード情報は含まれないとしている。",
+      "sources": [
+        {
+          "title": "むさしの村 LINE公式アカウントの運用に利用する外部サービスへの不正アクセスによるお客様情報の漏えいに関するお詫びとお知らせ",
+          "url": "https://www.musashinomura.co.jp/news/20261121/"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/musashinomura_comsbi_saas_line_user_data_64702_leak_2026/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "むさしの村を装った不審なLINEメッセージ・電話・メール・SMSに注意する"
+        },
+        {
+          "text": "対象者には個別に連絡がある"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 12,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-research-panel",
+      "organization": "株式会社リサーチパネル",
+      "services": [
+        "リサーチパネル"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-11-20",
+      "date_announced": "2026-11-21",
+      "affected_count": null,
+      "count_note": "件数は未公表（第1報時点で調査中）",
+      "cause": "vulnerability",
+      "root_cause": "アンケートサイトのサイト内検索機能の脆弱性を突いた不正アクセスを受けた",
+      "data_types": [
+        "メールアドレス",
+        "パスワード（平文）",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "氏名",
+        "性別",
+        "郵便番号",
+        "会員ID",
+        "連携サービスID"
+      ],
+      "summary": "アンケートサイト「リサーチパネル」のサーバーがサイト内検索機能の脆弱性を突いた不正アクセスを受け、会員のログインメールアドレス、ログインパスワード、氏名、性別、郵便番号、リサーチパネル会員ID、ECナビ会員IDが漏えいした可能性があると公表した。11月20日夜に不審な処理を検知し、サービスを停止した。多くの会員のパスワードは元の文字列に戻すことが困難な形式で保存していたが、一部の会員のパスワードはその形式に変換されない状態で保存されていたとして、該当するパスワードを無効にした。",
+      "sources": [
+        {
+          "title": "リサーチパネル 【重要】不正アクセスによる個人情報漏えいの可能性に関するお詫びとお知らせ（第1報）",
+          "url": "https://research-panel.jp/faq/?mode=article_simple&genre_id=0&article_id=1743"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/research_panel_search_vulnerability_password_exposure_2026/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "パスワードを無効にされた会員はお知らせの手順で再設定する"
+        },
+        {
+          "text": "同じパスワードを他のサービスで使っていたら変更する"
         }
       ],
       "severity": "critical",
@@ -670,6 +1006,63 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-11-infcurion-wallet-station",
+      "organization": "株式会社インフキュリオン",
+      "services": [
+        "ウォレットプラットフォーム「Wallet Station」"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-11-19",
+      "date_announced": "2026-11-20",
+      "affected_count": 250000,
+      "count_note": "最大約25万件（11月20日の第2報）。漏えいの対象となった提供先の利用者・加盟店の情報。Payどんの提供元が公表した25万1,172件と同じ情報とみられる",
+      "cause": "unauthorized_access",
+      "root_cause": "Wallet Stationへの大量アクセスで不正アクセスを受けた。脆弱性対策パッチを緊急適用した。詳細な原因は調査中",
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "電話番号",
+        "性別",
+        "メールアドレス",
+        "パスワード（保管形式不明）",
+        "口座番号",
+        "ポイント情報",
+        "利用履歴",
+        "取引先情報"
+      ],
+      "summary": "提供するウォレットプラットフォーム「Wallet Station」が第三者による不正アクセスを受け、一部の提供先のサービスで利用者の個人情報が漏えいしたと公表した。11月19日夜に大量アクセスを検知し、通信の遮断、脆弱性対策パッチの緊急適用、当該提供先向けの提供停止を行った。漏えいは最大約25万件で、会員の氏名・生年月日・電話番号・性別・メールアドレス・パスワード、口座情報やポイント残高、取引履歴、加盟店の店舗名・電話番号が含まれる。ほかの提供先も一時停止して緊急点検し、完了した先から21日以降順次再開した。",
+      "sources": [
+        {
+          "title": "インフキュリオン「Wallet Station」への不正アクセスによる個人情報漏えいに関するお詫びと緊急点検の実施について（第2報）",
+          "url": "https://infcurion.com/news/news-20261120_002/"
+        },
+        {
+          "title": "インフキュリオン「Wallet Station」への不正アクセスによる個人情報漏えいに関するお詫びと緊急点検の状況について（第3報）",
+          "url": "https://infcurion.com/news/news-20261121_001/"
+        },
+        {
+          "title": "インフキュリオン 適時開示（第2報）",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261120584369/"
+        },
+        {
+          "title": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2158658.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "Wallet Station を使う決済アプリを利用している場合、提供元からのお知らせを確認する"
+        },
+        {
+          "text": "同じパスワードを他のサービスで使っている場合は変更する"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 1,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-ir-ishikawa-railway",
       "organization": "IRいしかわ鉄道株式会社",
       "services": [
@@ -735,6 +1128,56 @@
       ],
       "severity": "high",
       "disclosure_days": 10,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-livepass-catch",
+      "organization": "livepass株式会社",
+      "services": [
+        "livepass Catch"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-11-16",
+      "date_announced": "2026-11-20",
+      "affected_count": 13313,
+      "count_note": "取引先担当者（管理画面アカウント）12,471件、取引先4社の動画視聴者842件の合計",
+      "cause": "vulnerability",
+      "root_cause": "動画配信基盤Graphyの脆弱性を悪用され、サーバー内の認証情報で管理画面やクラウドに侵入された",
+      "attack_methods": [
+        "exposed_secret"
+      ],
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "パスワード（ハッシュ化・暗号化済み）",
+        "取引先情報"
+      ],
+      "summary": "パーソナライズ動画サービス「livepass Catch」の動画配信基盤「Graphy」が11月16日に脆弱性を悪用した攻撃を受け、サーバー内の認証情報を使って管理画面やクラウド環境にも侵入され、13,313件の情報が外部に流出したと公表した。内訳は取引先担当者の管理画面アカウント12,471件（氏名、業務用メールアドレス、ハッシュ化されたパスワードなど）と、取引先4社の動画視聴者842件（動画に表示する氏名、所属、車両番号など）。同日中に不正アクセスを遮断し、17日から一部サービスを停止した。",
+      "sources": [
+        {
+          "title": "livepass 不正アクセスによる個人情報の漏えいに関するお詫びとご報告",
+          "url": "https://www.livepass.jp/news-list/2026-11-20"
+        },
+        {
+          "title": "livepass 「livepass Catch」一部サービス緊急停止のお知らせ",
+          "url": "https://www.livepass.jp/news-list/2026-11-17"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/livepass-catch-graphy-13313-data-breach-20261120-b2b-seo/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "管理画面と同じパスワードを他のサービスで使っていたら変更する"
+        },
+        {
+          "text": "Graphy連携用の認証情報を無効化する（利用企業）"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 4,
       "reliability": "high"
     },
     {
@@ -1114,6 +1557,43 @@
       "reliability": "high"
     },
     {
+      "id": "2026-11-nippon-shinyaku-comsbi",
+      "organization": "日本新薬株式会社",
+      "services": [
+        "LINE公式アカウント「WINZONE」"
+      ],
+      "industry": "製造",
+      "country": "JP",
+      "date_announced": "2026-11-20",
+      "affected_count": 40921,
+      "count_note": "最大40,921名（LINEの表示名・プロフィール画像URL・LINEユーザーID）。性別は最大10,145名で重複を含む",
+      "cause": "third_party",
+      "root_cause": "運用委託先assistが利用するソニックムーブの「COMSBI（SaaS版）」が不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社ソニックムーブ"
+      },
+      "data_types": [
+        "アカウント名",
+        "連携サービスID",
+        "性別"
+      ],
+      "summary": "公式LINEアカウント「WINZONE（ウィンゾーン）」の運用委託先である株式会社assistが利用するソニックムーブの「COMSBI（SaaS版）」が第三者の不正アクセスを受け、最大40,921名のLINEの表示名・プロフィール画像（URL）・LINEユーザーIDと、最大10,145名の性別が流出したと公表した。11月16日に委託先から報告を受けた。件数は最大値で、今後の調査で減る可能性があるとしている。クレジットカード情報は保持しておらず、二次被害は確認されていない。",
+      "sources": [
+        {
+          "title": "日本新薬 当社公式LINEアカウントで利用する外部サービスへの不正アクセスに伴うお客様情報の漏えいに関するお詫びとお知らせ",
+          "url": "https://www.nippon-shinyaku.co.jp/news/news.php?id=3856"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "日本新薬やWINZONEを装った不審なメール・SMS・電話に注意する"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-okinawa-pref-shimakutuba",
       "organization": "沖縄県",
       "industry": "行政",
@@ -1254,6 +1734,55 @@
       ],
       "severity": "high",
       "disclosure_days": 33,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-plant-pay",
+      "organization": "株式会社PLANT",
+      "services": [
+        "PLANT Pay"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-11-19",
+      "date_announced": "2026-11-20",
+      "affected_count": 42107,
+      "count_note": "42,107件（確認済み）。うちメールアドレスを含むもの17,516件",
+      "cause": "third_party",
+      "root_cause": "電子マネー「PLANT Pay」に関連する委託先のサーバーが第三者の不正アクセスを受けた",
+      "vendor": {
+        "name": "PLANT Payの委託先（社名非公表）"
+      },
+      "data_types": [
+        "会員ID",
+        "パスワード（保管形式不明）",
+        "メールアドレス"
+      ],
+      "summary": "プリペイド電子マネー「PLANT Pay」に関連する委託先のサーバーが2026年11月19日深夜から20日早朝にかけて第三者の不正アクセスを受け、PLANT Payのカード番号やPIN番号など42,107件の顧客情報が漏えいしたと公表した。うち17,516件にはメールアドレスも含まれる。11月20日に委託先が異常を検知し、同日中に公式サイトで告知、24日に適時開示した。公表時点で本件による不正利用は確認されていない。",
+      "sources": [
+        {
+          "title": "PLANT 当社委託先への不正アクセスに伴う情報漏えいに関するお詫びとお知らせ（適時開示）",
+          "url": "https://japanir.jp/wp-content/uploads/2026/11/7646-20261124-01.pdf"
+        },
+        {
+          "title": "PLANT 重要なお知らせ（11月21日）",
+          "url": "https://www.plant-co.jp/news/detail/202.html"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/plant-pay-42107-card-pin-data-breach-20261124/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "PLANT Payの残高やボーナスに身に覚えのない利用がないか確認する"
+        },
+        {
+          "text": "PIN番号やパスワードを尋ねる連絡には応じない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 1,
       "reliability": "high"
     },
     {
@@ -5281,8 +5810,8 @@
       "country": "JP",
       "date_occurred": "2026-11-11",
       "date_announced": "2026-11-17",
-      "affected_count": 11250000,
-      "count_note": "ログインIDなどが最大約1,125万口座。このうち最大約447万口座は氏名・住所・出金先口座・年収・金融資産なども対象（退会した顧客を含む）",
+      "affected_count": 11980000,
+      "count_note": "11月24日の第2報で、ログインIDなどの漏えいは約1,198万口座に増加。このうち個人情報の漏えいは約441万件（口座あり約322万、口座未開設約119万）。預かり資産の残高情報は約168万件、申告された年収（選択番号）約1.4万件・金融資産（同）約271万件。退会した顧客を含む",
       "cause": "unauthorized_access",
       "root_cause": "テスト環境のシステム内で管理していた情報が不正アクセスで外部に漏えいしたおそれ。原因は調査中",
       "data_types": [
@@ -5293,9 +5822,10 @@
         "電話番号",
         "メールアドレス",
         "口座番号",
-        "資産・取引情報"
+        "資産・取引情報",
+        "性別"
       ],
-      "summary": "11月16日に一部システムへの不正アクセスの可能性を検知して遮断し、調査の結果、11月11日にテスト環境のシステム内で管理していた情報が外部に漏えいしたおそれがあると公表した。部店・お客様コードとログインID（楽天IDとは別）が最大約1,125万口座、このうち最大約447万口座は氏名・カナ氏名・生年月日・住所・電話番号・メールアドレス・勤務先・出金先口座（金融機関・口座番号・名義人）・申告された年収と金融資産・商品別資産情報・最終ログイン日も対象。ログインに必要なパスワードや暗証番号の漏えい、本件による不正アクセス・不正取引は確認されていない。",
+      "summary": "11月16日に一部システムへの不正アクセスの可能性を検知して遮断し、調査の結果、11月11日にテスト環境のシステム内で管理していた情報が外部に漏えいしたおそれがあると公表した。部店・お客様コードとログインID（楽天IDとは別）が最大約1,125万口座、このうち最大約447万口座は氏名・カナ氏名・生年月日・住所・電話番号・メールアドレス・勤務先・出金先口座（金融機関・口座番号・名義人）・申告された年収と金融資産・商品別資産情報・最終ログイン日も対象。ログインに必要なパスワードや暗証番号の漏えい、本件による不正アクセス・不正取引は確認されていない。11月24日の第2報で、ログインIDなどの漏えいは約1,198万口座、個人情報の漏えいは約441万件とし、預かり資産の残高情報約168万件や性別・国籍・入金先口座なども含まれていたと公表した。",
       "sources": [
         {
           "title": "楽天証券 プレスリリース",
@@ -5312,6 +5842,14 @@
         {
           "title": "CNET Japan",
           "url": "https://japan.cnet.com/article/35255023/"
+        },
+        {
+          "title": "楽天証券 プレスリリース（第2報）",
+          "url": "https://www.rakuten-sec.co.jp/web/company/newsrelease/pdf/press2026112401.pdf"
+        },
+        {
+          "title": "ロイター（残高情報168万件）",
+          "url": "https://www.reuters.com/jp/business/PJCGGRNKIJKT5HVKY7XJJDYNTE-2026-11-24/"
         }
       ],
       "checklist": [
@@ -7557,6 +8095,55 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-11-appleworld-rikisha-easy-rez",
+      "organization": "株式会社アップルワールド",
+      "services": [
+        "Rikisha Easy REZ!"
+      ],
+      "industry": "旅行",
+      "country": "JP",
+      "date_occurred": "2026-11-06",
+      "date_announced": "2026-11-13",
+      "affected_count": 582024,
+      "count_note": "予約者（旅行者）の予約情報最大582,024件。ほかに旅行会社最大3,542社・13,834名の担当者情報、侵入期間中に決済画面で入力されたクレジットカード情報最大39件。送迎・宿泊予約のカード決済ログなどは流出の有無を調査中",
+      "cause": "unauthorized_access",
+      "root_cause": "開発委託先のソースコード保管場所が外部から閲覧可能で、記載の認証鍵が不正使用された",
+      "attack_methods": [
+        "exposed_secret"
+      ],
+      "data_types": [
+        "氏名",
+        "利用履歴",
+        "問い合わせ内容",
+        "取引先情報",
+        "メールアドレス",
+        "電話番号",
+        "クレジットカード番号"
+      ],
+      "summary": "旅行会社向け予約手配システム「Rikisha Easy REZ!」のサーバーが第三者の不正アクセスを受け、旅行者の予約情報最大582,024件（氏名、予約内容、備考欄の記入内容）と、利用する旅行会社最大3,542社・13,834名の担当者名・メールアドレス・電話番号・請求に関する情報、侵入期間中に決済画面で入力されたクレジットカード情報最大39件が流出したおそれがあると公表した。11月6日夜に検知した。サーバーに不正なプログラムが設置され、ファイルやメールテンプレートの改ざんも確認した。開発委託先のソースコード保管場所が外部から閲覧可能で、記載されていた認証鍵が不正に使われたという。",
+      "sources": [
+        {
+          "title": "アップルワールド 「Rikisha Easy REZ!」への不正アクセスによる個人情報流出のおそれに関するお詫びとお知らせ",
+          "url": "https://appleworld.co.jp/news/cp6xtywu279"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/25/56892.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "旅行会社と協議のうえ、対象者には個別に連絡がある"
+        },
+        {
+          "text": "旅行会社やアップルワールドを装った不審なメール・電話に注意する"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 7,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-athome-chintai-kanri",
       "organization": "アットホーム株式会社",
       "services": [
@@ -7772,13 +8359,19 @@
       "date_occurred": "2026-11-12",
       "date_announced": "2026-11-13",
       "affected_count": 807030,
-      "count_note": "メールアドレスの件数。メールアドレス以外の会員情報への影響は調査中",
+      "count_note": "メールアドレス807,030件。続報で、氏名16,998件・住所12,831件・電話番号15,434件・性別1,664件・生年月日1,665件・ハッシュ化パスワード274件の流出も確認",
       "cause": "unauthorized_access",
       "root_cause": "会員情報管理システムが外部から繰り返し不正アクセスを受けた。手法は公表されていない",
       "data_types": [
-        "メールアドレス"
+        "メールアドレス",
+        "氏名",
+        "住所",
+        "電話番号",
+        "性別",
+        "生年月日",
+        "パスワード（ハッシュ化・暗号化済み）"
       ],
-      "summary": "公式ファンクラブ「CLUB GIANTS」の会員情報を管理するシステムが11月12日未明から外部のサイバー攻撃を繰り返し受け、会員のメールアドレス80万7,030件が流出したと公表した。サーバー容量の逼迫でシステムにアクセスできなくなり発覚した。クレジットカード情報は同システムに保持しておらず対象外で、ほかの会員情報への影響は調査中。攻撃は遮断し、個人情報保護委員会に報告した。",
+      "summary": "公式ファンクラブ「CLUB GIANTS」の会員情報を管理するシステムが11月12日未明から外部のサイバー攻撃を繰り返し受け、会員のメールアドレス80万7,030件が流出したと公表した。サーバー容量の逼迫でシステムにアクセスできなくなり発覚した。クレジットカード情報は同システムに保持しておらず対象外で、ほかの会員情報への影響は調査中。攻撃は遮断し、個人情報保護委員会に報告した。続報で、氏名約1.7万件、住所約1.3万件、電話番号約1.5万件、生年月日・性別、ハッシュ化パスワード274件の流出も確認したと公表した。",
       "sources": [
         {
           "title": "読売巨人軍 お知らせ",
@@ -7791,9 +8384,17 @@
         {
           "title": "セキュリティ対策Lab",
           "url": "https://rocket-boys.co.jp/security-measures-lab/giants-club-giants-email-leak-807030-2026/"
+        },
+        {
+          "title": "読売巨人軍 お知らせ（第2報）",
+          "url": "https://www.giants.jp/news/31858/"
+        },
+        {
+          "title": "Security NEXT（続報）",
+          "url": "https://www.security-next.com/192864"
         }
       ],
-      "severity": "medium",
+      "severity": "high",
       "disclosure_days": 1,
       "reliability": "high"
     },
@@ -11528,6 +12129,42 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-11-fwd-life-fwd-navi",
+      "organization": "FWD生命保険株式会社",
+      "services": [
+        "FWD navi"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-11-07",
+      "date_announced": "2026-11-09",
+      "affected_count": 9000,
+      "count_note": "最大9,000件（閲覧可能な状態だった契約情報）",
+      "cause": "unauthorized_access",
+      "root_cause": "代理店の募集人のアカウントが不正利用され、代理店向けシステムにログインされた",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "data_types": [
+        "氏名",
+        "契約情報"
+      ],
+      "summary": "保険代理店に提供しているシステム「FWD navi」に、11月7日に第三者が代理店の募集人のアカウントを不正に利用してログインし、最大9,000件の契約者名・被保険者名などの契約情報が閲覧可能な状態にあったことから、漏えいした可能性があると公表した。当該アカウントを停止し、同システムへのインターネット経由のアクセスを一時停止した。対象契約で契約内容の変更が行われていないことは確認済みで、対象者には書面などで個別に連絡するとしている。",
+      "sources": [
+        {
+          "title": "FWD生命 【更新】代理店向けシステム「FWD navi」への不正アクセスに伴うお客さま情報の漏えいについて",
+          "url": "https://www.fwdlife.co.jp/system-information/"
+        },
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56875.html"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 2,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-11-giken",
       "organization": "株式会社技研製作所",
       "services": [
@@ -13085,6 +13722,50 @@
       ],
       "severity": "medium",
       "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-okinawa-bank-lendy",
+      "organization": "株式会社沖縄銀行",
+      "services": [
+        "個人ローン「チェキット」"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "org_type": "regional_bank",
+      "prefecture": "沖縄県",
+      "date_occurred": "2026-10-30",
+      "date_announced": "2026-11-06",
+      "affected_count": 211,
+      "count_note": "211名",
+      "cause": "third_party",
+      "root_cause": "督促業務の委託先LENDY債権回収の交渉記録チェックシステムに不正アカウントを作成されログインされた",
+      "attack_methods": [
+        "broken_access_control"
+      ],
+      "vendor": {
+        "name": "LENDY債権回収株式会社"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "資産・取引情報",
+        "問い合わせ内容"
+      ],
+      "summary": "個人ローン「チェキット」の延滞債権の督促業務を委託しているLENDY債権回収の「交渉記録チェックシステム」が10月30日に第三者の不正アクセスを受け、交渉記録などが登録されていた顧客211名の氏名、メールアドレス、電話番号、代理人名、返済相談額などの金額、交渉内容が閲覧され、外部に流出した可能性があると公表した。第三者が不正にアカウントを作成してログインしており、アカウント作成を防ぐ仕組みや利用者ごとの閲覧制限が不十分だったことが原因という。",
+      "sources": [
+        {
+          "title": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56871.html"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOJC068RC0W6A101C2000000/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 7,
       "reliability": "mid"
     },
     {
@@ -17062,6 +17743,63 @@
       ],
       "severity": "critical",
       "disclosure_days": 81,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-sony-sonpo-prestige",
+      "organization": "ソニー損害保険株式会社",
+      "group": "ソニーグループ",
+      "services": [
+        "自動車保険のロードサービス"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-10-29",
+      "date_announced": "2026-11-02",
+      "affected_count": 950000,
+      "count_note": "漏えいの可能性がある件数は約95万件（11月24日の第二報）。対象はロードサービスの出動を要請し、プレステージ社に委託された顧客",
+      "cause": "third_party",
+      "root_cause": "ロードサービスの委託先プレステージ・コアソリューションの業務システムが不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社プレステージ・コアソリューション"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "車両情報",
+        "口座番号",
+        "利用履歴"
+      ],
+      "summary": "自動車保険のロードサービスを委託するプレステージ・コアソリューションから、同社の業務システムに第三者による不正アクセスがあったと10月30日に報告を受けたと11月2日に公表した。11月24日の第二報で、ロードサービスの出動を要請し同社に委託された顧客の情報約95万件が漏えいした可能性があると明らかにした。氏名、住所、電話番号、車両情報、一部の顧客の口座情報、事故・故障の受付に関する情報などが含まれ、クレジットカード情報は含まれない。公表時点で不正使用は確認されていない。",
+      "sources": [
+        {
+          "title": "ソニー損保 当社の委託会社の業務システムへの不正アクセスについて（第二報）",
+          "url": "https://from.sonysonpo.co.jp/topics/information/24112026_288522.html"
+        },
+        {
+          "title": "ソニー損保 当社の委託会社の業務システムへの不正アクセスについて",
+          "url": "https://from.sonysonpo.co.jp/topics/information/02112026_288508.html"
+        },
+        {
+          "title": "ソニーフィナンシャルグループ 当社子会社（ソニー損保）の委託先への不正アクセスの発生について",
+          "url": "https://www.sonyfg.co.jp/ja/notice/article/261102_01.pdf"
+        },
+        {
+          "title": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB246KN0U6A121C2000000/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "ソニー損保やロードサービス会社を名乗る不審なメール・電話に応じない"
+        },
+        {
+          "text": "ソニー損保からの個別の連絡が届いていないか確認する"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": 4,
       "reliability": "mid"
     },
     {
@@ -33968,14 +34706,23 @@
       ],
       "industry": "交通・モビリティ",
       "country": "JP",
-      "status": "investigating",
-      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/73",
       "date_occurred": "2026-09-26",
       "date_announced": "2026-09-26",
-      "affected_count": null,
-      "count_note": "公表時点で個人情報の漏えいは確認されていない（顧客情報の流出を含めて調査中）",
+      "affected_count": 11080000,
+      "count_note": "最大延べ約1,108万人（11月24日公表）。漏洩が確認されたのは約1.2万人（従業員・退職者と扶養家族の氏名・人事情報など）。漏洩の可能性があるのは約1,063万人（顧客・取引先の氏名・住所・電話・メール）で、パスポートの写し約160万件、京王クレジットカード番号など約2.05万件、本人確認書類約4.6万件、マイナンバーカードの写し6件、採用応募者約36万人などを含む",
       "cause": "ransomware",
-      "summary": "グループ会社のサーバーがランサムウェア攻撃を受け、京王ストアの現金以外の決済や京王プラザホテルの新規予約など、一部グループ会社の営業システムに障害が出た。鉄道の運行に影響はない。公表時点で個人情報などの漏えいは確認されていないが、事業の機密事項や顧客情報の流出を含めて外部の専門家と影響範囲を調査している。10月16日の第2報で、攻撃を行ったと名乗る組織がグループの情報の一部を公開したと主張しているのを確認し、事実関係を確認中とした。",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号",
+        "メールアドレス",
+        "パスポート番号",
+        "本人確認書類画像",
+        "クレジットカード番号",
+        "マイナンバー",
+        "従業員情報"
+      ],
+      "summary": "グループ会社のサーバーがランサムウェア攻撃を受け、京王ストアの現金以外の決済や京王プラザホテルの新規予約など、一部グループ会社の営業システムに障害が出た。鉄道の運行に影響はない。公表時点で個人情報などの漏えいは確認されていないが、事業の機密事項や顧客情報の流出を含めて外部の専門家と影響範囲を調査している。10月16日の第2報で、攻撃を行ったと名乗る組織がグループの情報の一部を公開したと主張しているのを確認し、事実関係を確認中とした。11月24日、最大延べ約1,108万人分の個人情報が漏洩した可能性があると公表した。漏洩が確認されたのは従業員・退職者など約1.2万人で、顧客・取引先など約1,063万人は漏洩の可能性があり、パスポートの写し約160万件やクレジットカード番号約2万件、マイナンバーカードの写しなども含む。二次被害は確認されていない。",
       "sources": [
         {
           "title": "京王電鉄 公式発表（第2報）",
@@ -33988,9 +34735,17 @@
         {
           "title": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC270LL0X20C26A9000000/"
+        },
+        {
+          "title": "京王電鉄 ニュースリリース（11月24日）",
+          "url": "https://www.keio.co.jp/news/update/news_release/news_release2026/pdf/nr20261124_newsrelease.pdf"
+        },
+        {
+          "title": "Impress Watch（最大1108万件）",
+          "url": "https://www.watch.impress.co.jp/docs/news/2158875.html"
         }
       ],
-      "severity": null,
+      "severity": "critical",
       "disclosure_days": 0,
       "reliability": "high"
     },
@@ -35237,14 +35992,19 @@
       "country": "JP",
       "date_occurred": "2026-09-10",
       "date_announced": "2026-09-11",
-      "affected_count": null,
-      "count_note": "件数・対象の顧客は調査中（公式発表）",
+      "affected_count": 2797545,
+      "count_note": "2,797,545件（11月6日公表）。うち9,715人分の通話音声にクレジットカード番号と有効期限が含まれていた（セキュリティコードは含まない）",
       "cause": "unauthorized_access",
-      "root_cause": "通信販売で利用しているシステムへの第三者による不正アクセス（侵入経路は未公表）",
+      "root_cause": "電話システムのサービス事業者のアカウントが不正利用され、電話システム経由で顧客管理システムの情報も取得された",
       "data_types": [
-        "問い合わせ内容"
+        "問い合わせ内容",
+        "氏名",
+        "住所",
+        "電話番号",
+        "クレジットカード番号",
+        "クレジットカード情報（番号の一部・有効期限等）"
       ],
-      "summary": "通信販売で利用しているシステムに第三者による不正アクセスの可能性がある事象を9月10日に確認し、11日に公表した。15日の続報で、通販の顧客対応システムに保存されていた顧客との通話音声データと付随情報が不正に取得された可能性があると明らかにし、顧客管理システムの情報も取得された可能性があるとした。取得された可能性がある情報の範囲や件数、対象の顧客は調査中としている。個人情報保護委員会に報告し、警察と連携して対応している。",
+      "summary": "通信販売で利用しているシステムに第三者による不正アクセスの可能性がある事象を9月10日に確認し、11日に公表した。15日の続報で、通販の顧客対応システムに保存されていた顧客との通話音声データと付随情報が不正に取得された可能性があると明らかにし、顧客管理システムの情報も取得された可能性があるとした。取得された可能性がある情報の範囲や件数、対象の顧客は調査中としている。個人情報保護委員会に報告し、警察と連携して対応している。11月6日の続報で、対象は2,797,545件と公表した。電話システムのサービス事業者のアカウントが不正利用され、顧客管理システムの情報も取得された。9,715人分の通話音声にはクレジットカード番号と有効期限が含まれていた。",
       "sources": [
         {
           "title": "ロート製薬 公式発表（第一報）",
@@ -35261,9 +36021,17 @@
         {
           "title": "Security NEXT",
           "url": "https://www.security-next.com/190377"
+        },
+        {
+          "title": "ロート製薬 お知らせ（11月6日）",
+          "url": "https://www.rohto.co.jp/news/whatsnew/2026/1106_01"
+        },
+        {
+          "title": "ITmedia NEWS（11月6日）",
+          "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002984/"
         }
       ],
-      "severity": "medium",
+      "severity": "critical",
       "disclosure_days": 1,
       "reliability": "high"
     },
