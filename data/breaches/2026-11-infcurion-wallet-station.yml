@@ -1,0 +1,35 @@
+organization: 株式会社インフキュリオン
+services:
+  - ウォレットプラットフォーム「Wallet Station」
+industry: 金融・保険
+country: JP
+date_occurred: 2026-11-19
+date_announced: 2026-11-20
+affected_count: 250000
+count_note: 最大約25万件（11月20日の第2報）。漏えいの対象となった提供先の利用者・加盟店の情報。Payどんの提供元が公表した25万1,172件と同じ情報とみられる
+cause: unauthorized_access
+root_cause: Wallet Stationへの大量アクセスで不正アクセスを受けた。脆弱性対策パッチを緊急適用した。詳細な原因は調査中
+data_types:
+  - 氏名
+  - 生年月日
+  - 電話番号
+  - 性別
+  - メールアドレス
+  - パスワード（保管形式不明）
+  - 口座番号
+  - ポイント情報
+  - 利用履歴
+  - 取引先情報
+summary: 提供するウォレットプラットフォーム「Wallet Station」が第三者による不正アクセスを受け、一部の提供先のサービスで利用者の個人情報が漏えいしたと公表した。11月19日夜に大量アクセスを検知し、通信の遮断、脆弱性対策パッチの緊急適用、当該提供先向けの提供停止を行った。漏えいは最大約25万件で、会員の氏名・生年月日・電話番号・性別・メールアドレス・パスワード、口座情報やポイント残高、取引履歴、加盟店の店舗名・電話番号が含まれる。ほかの提供先も一時停止して緊急点検し、完了した先から21日以降順次再開した。
+sources:
+  - title: インフキュリオン「Wallet Station」への不正アクセスによる個人情報漏えいに関するお詫びと緊急点検の実施について（第2報）
+    url: https://infcurion.com/news/news-20261120_002/
+  - title: インフキュリオン「Wallet Station」への不正アクセスによる個人情報漏えいに関するお詫びと緊急点検の状況について（第3報）
+    url: https://infcurion.com/news/news-20261121_001/
+  - title: インフキュリオン 適時開示（第2報）
+    url: https://www.nikkei.com/nkd/disclosure/tdnr/20261120584369/
+  - title: INTERNET Watch
+    url: https://internet.watch.impress.co.jp/docs/news/2158658.html
+checklist:
+  - text: Wallet Station を使う決済アプリを利用している場合、提供元からのお知らせを確認する
+  - text: 同じパスワードを他のサービスで使っている場合は変更する

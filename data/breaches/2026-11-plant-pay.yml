@@ -1,0 +1,28 @@
+organization: 株式会社PLANT
+services:
+  - PLANT Pay
+industry: 小売・EC
+country: JP
+date_occurred: 2026-11-19
+date_announced: 2026-11-20
+affected_count: 42107
+count_note: 42,107件（確認済み）。うちメールアドレスを含むもの17,516件
+cause: third_party
+root_cause: 電子マネー「PLANT Pay」に関連する委託先のサーバーが第三者の不正アクセスを受けた
+vendor:
+  name: PLANT Payの委託先（社名非公表）
+data_types:
+  - 会員ID
+  - パスワード（保管形式不明）
+  - メールアドレス
+summary: プリペイド電子マネー「PLANT Pay」に関連する委託先のサーバーが2026年11月19日深夜から20日早朝にかけて第三者の不正アクセスを受け、PLANT Payのカード番号やPIN番号など42,107件の顧客情報が漏えいしたと公表した。うち17,516件にはメールアドレスも含まれる。11月20日に委託先が異常を検知し、同日中に公式サイトで告知、24日に適時開示した。公表時点で本件による不正利用は確認されていない。
+sources:
+  - title: PLANT 当社委託先への不正アクセスに伴う情報漏えいに関するお詫びとお知らせ（適時開示）
+    url: https://japanir.jp/wp-content/uploads/2026/11/7646-20261124-01.pdf
+  - title: PLANT 重要なお知らせ（11月21日）
+    url: https://www.plant-co.jp/news/detail/202.html
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/plant-pay-42107-card-pin-data-breach-20261124/
+checklist:
+  - text: PLANT Payの残高やボーナスに身に覚えのない利用がないか確認する
+  - text: PIN番号やパスワードを尋ねる連絡には応じない

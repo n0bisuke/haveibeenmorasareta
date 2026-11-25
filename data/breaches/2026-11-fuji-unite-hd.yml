@@ -1,0 +1,19 @@
+organization: 富士ユナイトホールディングス株式会社
+services:
+  - 富士興産 Web受注システム
+industry: エネルギー・インフラ
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_occurred: 2026-11-05
+date_announced: 2026-11-24
+affected_count: null
+count_note: 件数・情報の項目は未公表（調査中）
+cause: unauthorized_access
+root_cause: 同社と連結子会社の富士興産が運用するサーバーの一部が第三者の不正アクセスを受けた
+summary: 同社と連結子会社の富士興産が運用するサーバーの一部が第三者の不正アクセスを受け、個人情報を含むデータの一部が外部に漏えいしたと公表した。11月5日に不正アクセスを確認して侵入経路を遮断し、11月10日に漏えいが判明した。同じサーバーに保管されていたほかの個人情報にも漏えいのおそれがあるとしている。予防措置として富士興産のWeb受注システムの利用を一時停止した。漏えいした情報の項目や件数は公表しておらず、外部専門家と調査を続け、対象者に個別に通知するとしている。
+sources:
+  - title: 富士ユナイトホールディングス 弊社および連結子会社に対する不正アクセスによる情報漏えいに関するお知らせ（適時開示）
+    url: https://www.release.tdnet.info/inbs/140120261124585268.pdf
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/fuji_unite_hd_fuji_kosan_data_breach_20261124/

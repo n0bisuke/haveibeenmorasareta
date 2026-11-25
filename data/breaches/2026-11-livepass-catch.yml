@@ -1,0 +1,29 @@
+organization: livepass株式会社
+services:
+  - livepass Catch
+industry: IT・通信
+country: JP
+date_occurred: 2026-11-16
+date_announced: 2026-11-20
+affected_count: 13313
+count_note: 取引先担当者（管理画面アカウント）12,471件、取引先4社の動画視聴者842件の合計
+cause: vulnerability
+root_cause: 動画配信基盤Graphyの脆弱性を悪用され、サーバー内の認証情報で管理画面やクラウドに侵入された
+attack_methods:
+  - exposed_secret
+data_types:
+  - 氏名
+  - メールアドレス
+  - パスワード（ハッシュ化・暗号化済み）
+  - 取引先情報
+summary: パーソナライズ動画サービス「livepass Catch」の動画配信基盤「Graphy」が11月16日に脆弱性を悪用した攻撃を受け、サーバー内の認証情報を使って管理画面やクラウド環境にも侵入され、13,313件の情報が外部に流出したと公表した。内訳は取引先担当者の管理画面アカウント12,471件（氏名、業務用メールアドレス、ハッシュ化されたパスワードなど）と、取引先4社の動画視聴者842件（動画に表示する氏名、所属、車両番号など）。同日中に不正アクセスを遮断し、17日から一部サービスを停止した。
+sources:
+  - title: livepass 不正アクセスによる個人情報の漏えいに関するお詫びとご報告
+    url: https://www.livepass.jp/news-list/2026-11-20
+  - title: livepass 「livepass Catch」一部サービス緊急停止のお知らせ
+    url: https://www.livepass.jp/news-list/2026-11-17
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/livepass-catch-graphy-13313-data-breach-20261120-b2b-seo/
+checklist:
+  - text: 管理画面と同じパスワードを他のサービスで使っていたら変更する
+  - text: Graphy連携用の認証情報を無効化する（利用企業）

@@ -1,0 +1,29 @@
+organization: むさしの村
+services:
+  - LINE公式アカウント
+industry: エンタメ・スポーツ
+country: JP
+date_occurred: 2026-11-09
+date_announced: 2026-11-21
+affected_count: 64702
+count_note: LINE友だち情報最大64,702名。うち氏名・電話番号・メールアドレス最大161名、郵便番号最大589名
+cause: third_party
+root_cause: LINE公式アカウントの運営に使うソニックムーブの「COMSBI（SaaS版）」が不正アクセスを受けた
+vendor:
+  name: 株式会社ソニックムーブ
+data_types:
+  - アカウント名
+  - 連携サービスID
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 郵便番号
+summary: 埼玉県加須市の遊園地「むさしの村」は、LINE公式アカウントの運営に利用するソニックムーブの「COMSBI（SaaS版）」が11月9日から10日にかけて第三者の不正アクセスを受け、11月10日9時17分までに友だち登録した最大64,702名のLINEの表示名・プロフィール画像・LINEユーザーIDと、最大161名の氏名・電話番号・メールアドレス、最大589名の郵便番号が漏えいしたと公表した。ブロックや友だち解除をした人も含む。LINEのパスワードとクレジットカード情報は含まれないとしている。
+sources:
+  - title: むさしの村 LINE公式アカウントの運用に利用する外部サービスへの不正アクセスによるお客様情報の漏えいに関するお詫びとお知らせ
+    url: https://www.musashinomura.co.jp/news/20261121/
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/musashinomura_comsbi_saas_line_user_data_64702_leak_2026/
+checklist:
+  - text: むさしの村を装った不審なLINEメッセージ・電話・メール・SMSに注意する
+  - text: 対象者には個別に連絡がある

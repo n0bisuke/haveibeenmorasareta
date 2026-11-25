@@ -1,0 +1,29 @@
+organization: 株式会社沖縄銀行
+services:
+  - 個人ローン「チェキット」
+industry: 金融・保険
+country: JP
+org_type: regional_bank
+prefecture: 沖縄県
+date_occurred: 2026-10-30
+date_announced: 2026-11-06
+affected_count: 211
+count_note: 211名
+cause: third_party
+root_cause: 督促業務の委託先LENDY債権回収の交渉記録チェックシステムに不正アカウントを作成されログインされた
+attack_methods:
+  - broken_access_control
+vendor:
+  name: LENDY債権回収株式会社
+data_types:
+  - 氏名
+  - メールアドレス
+  - 電話番号
+  - 資産・取引情報
+  - 問い合わせ内容
+summary: 個人ローン「チェキット」の延滞債権の督促業務を委託しているLENDY債権回収の「交渉記録チェックシステム」が10月30日に第三者の不正アクセスを受け、交渉記録などが登録されていた顧客211名の氏名、メールアドレス、電話番号、代理人名、返済相談額などの金額、交渉内容が閲覧され、外部に流出した可能性があると公表した。第三者が不正にアカウントを作成してログインしており、アカウント作成を防ぐ仕組みや利用者ごとの閲覧制限が不十分だったことが原因という。
+sources:
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/11/24/56871.html
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOJC068RC0W6A101C2000000/
