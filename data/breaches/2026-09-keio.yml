@@ -5,14 +5,22 @@ services:
   - 京王プラザホテル
 industry: 交通・モビリティ
 country: JP
-status: investigating
-issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/73
 date_occurred: 2026-09-26
 date_announced: 2026-09-26
-affected_count: null
-count_note: 公表時点で個人情報の漏えいは確認されていない（顧客情報の流出を含めて調査中）
+affected_count: 11080000
+count_note: 最大延べ約1,108万人（11月24日公表）。漏洩が確認されたのは約1.2万人（従業員・退職者と扶養家族の氏名・人事情報など）。漏洩の可能性があるのは約1,063万人（顧客・取引先の氏名・住所・電話・メール）で、パスポートの写し約160万件、京王クレジットカード番号など約2.05万件、本人確認書類約4.6万件、マイナンバーカードの写し6件、採用応募者約36万人などを含む
 cause: ransomware
-summary: グループ会社のサーバーがランサムウェア攻撃を受け、京王ストアの現金以外の決済や京王プラザホテルの新規予約など、一部グループ会社の営業システムに障害が出た。鉄道の運行に影響はない。公表時点で個人情報などの漏えいは確認されていないが、事業の機密事項や顧客情報の流出を含めて外部の専門家と影響範囲を調査している。10月16日の第2報で、攻撃を行ったと名乗る組織がグループの情報の一部を公開したと主張しているのを確認し、事実関係を確認中とした。
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - メールアドレス
+  - パスポート番号
+  - 本人確認書類画像
+  - クレジットカード番号
+  - マイナンバー
+  - 従業員情報
+summary: グループ会社のサーバーがランサムウェア攻撃を受け、京王ストアの現金以外の決済や京王プラザホテルの新規予約など、一部グループ会社の営業システムに障害が出た。鉄道の運行に影響はない。公表時点で個人情報などの漏えいは確認されていないが、事業の機密事項や顧客情報の流出を含めて外部の専門家と影響範囲を調査している。10月16日の第2報で、攻撃を行ったと名乗る組織がグループの情報の一部を公開したと主張しているのを確認し、事実関係を確認中とした。11月24日、最大延べ約1,108万人分の個人情報が漏洩した可能性があると公表した。漏洩が確認されたのは従業員・退職者など約1.2万人で、顧客・取引先など約1,063万人は漏洩の可能性があり、パスポートの写し約160万件やクレジットカード番号約2万件、マイナンバーカードの写しなども含む。二次被害は確認されていない。
 sources:
   - title: 京王電鉄 公式発表（第2報）
     url: https://www.keio.co.jp/news/update/news_release/news_release2026/pdf/nr20261016_newsrelease.pdf
@@ -20,3 +28,7 @@ sources:
     url: https://www.keio.co.jp/news/update/announce/nr260926v13404/
   - title: 日本経済新聞
     url: https://www.nikkei.com/article/DGXZQOUC270LL0X20C26A9000000/
+  - title: 京王電鉄 ニュースリリース（11月24日）
+    url: https://www.keio.co.jp/news/update/news_release/news_release2026/pdf/nr20261124_newsrelease.pdf
+  - title: Impress Watch（最大1108万件）
+    url: https://www.watch.impress.co.jp/docs/news/2158875.html

@@ -1,0 +1,26 @@
+organization: ペットメディカルサポート株式会社
+services:
+  - ペット保険「PS保険」の資料請求
+industry: 金融・保険
+country: JP
+date_occurred: 2026-11-12
+date_announced: 2026-11-24
+affected_count: 210000
+count_note: 最大約21万件。2015年3月22日〜2019年10月23日に資料請求した顧客
+cause: third_party
+root_cause: 業務委託先が管理する、資料請求情報を保存したサーバー内のファイルに不正アクセスされた
+data_types:
+  - 氏名
+  - 生年月日
+  - 性別
+  - 住所
+  - 電話番号
+  - メールアドレス
+summary: ペット保険「PS保険」の業務委託先が管理するサーバーで第三者による不正アクセスが確認され、過去に資料請求をした顧客の個人情報が最大約21万件漏えいした可能性があると公表した。11月12日にサーバー内のファイルへの不正アクセスを確認した。対象は2015年3月22日〜2019年10月23日に資料請求をした人の氏名、生年月日、性別、住所、電話番号、メールアドレス、同社を知ったきっかけに関するアンケート回答。クレジットカード情報、銀行口座情報、本人確認書類の情報は含まれない。サーバーは外部からのアクセスを遮断した。
+sources:
+  - title: PS保険 不正アクセスによるお客さま情報漏えいの可能性に関するお詫びとお知らせ
+    url: https://pshoken.co.jp/imp/261124.html
+  - title: セキュリティ対策Lab
+    url: https://rocket-boys.co.jp/security-measures-lab/pshoken_pet_medical_support_data_breach_210000_2026/
+checklist:
+  - text: PS保険を名乗る不審なメールや SMS の URL を開いたり個人情報を入力したりしない

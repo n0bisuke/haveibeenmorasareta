@@ -1,0 +1,34 @@
+organization: ソニー損害保険株式会社
+group: ソニーグループ
+services:
+  - 自動車保険のロードサービス
+industry: 金融・保険
+country: JP
+date_occurred: 2026-10-29
+date_announced: 2026-11-02
+affected_count: 950000
+count_note: 漏えいの可能性がある件数は約95万件（11月24日の第二報）。対象はロードサービスの出動を要請し、プレステージ社に委託された顧客
+cause: third_party
+root_cause: ロードサービスの委託先プレステージ・コアソリューションの業務システムが不正アクセスを受けた
+vendor:
+  name: 株式会社プレステージ・コアソリューション
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+  - 車両情報
+  - 口座番号
+  - 利用履歴
+summary: 自動車保険のロードサービスを委託するプレステージ・コアソリューションから、同社の業務システムに第三者による不正アクセスがあったと10月30日に報告を受けたと11月2日に公表した。11月24日の第二報で、ロードサービスの出動を要請し同社に委託された顧客の情報約95万件が漏えいした可能性があると明らかにした。氏名、住所、電話番号、車両情報、一部の顧客の口座情報、事故・故障の受付に関する情報などが含まれ、クレジットカード情報は含まれない。公表時点で不正使用は確認されていない。
+sources:
+  - title: ソニー損保 当社の委託会社の業務システムへの不正アクセスについて（第二報）
+    url: https://from.sonysonpo.co.jp/topics/information/24112026_288522.html
+  - title: ソニー損保 当社の委託会社の業務システムへの不正アクセスについて
+    url: https://from.sonysonpo.co.jp/topics/information/02112026_288508.html
+  - title: ソニーフィナンシャルグループ 当社子会社（ソニー損保）の委託先への不正アクセスの発生について
+    url: https://www.sonyfg.co.jp/ja/notice/article/261102_01.pdf
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUB246KN0U6A121C2000000/
+checklist:
+  - text: ソニー損保やロードサービス会社を名乗る不審なメール・電話に応じない
+  - text: ソニー損保からの個別の連絡が届いていないか確認する

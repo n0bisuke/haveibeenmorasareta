@@ -1,0 +1,38 @@
+organization: 株式会社ヴェレダ・ジャパン
+services:
+  - ヴェレダ 公式オンラインショップ
+industry:
+  - 美容・健康
+  - 小売・EC
+country: JP
+date_announced: 2026-11-24
+affected_count: 198792
+count_note: 個人情報19万8,792件。このうちクレジットカード情報（セキュリティコードを含む）は4万5,689件。対象は2021年10月1日〜2026年6月30日の利用者
+cause: vulnerability
+root_cause: 公式通販サイトのシステムの脆弱性を突かれ、改ざんされた
+attack_methods:
+  - web_skimming
+data_types:
+  - クレジットカード番号
+  - クレジットカードのセキュリティコード
+  - クレジットカード情報（番号の一部・有効期限等）
+  - 氏名
+  - 住所
+  - メールアドレス
+  - 電話番号
+  - 性別
+  - 生年月日
+summary: 公式オンラインショップが第三者による不正アクセスを受け、個人情報19万8,792件とクレジットカード情報4万5,689件が漏えいした可能性があると公表した。システムの一部の脆弱性を突かれて改ざんされた。6月30日に警視庁から連絡を受け、7月3日にカード決済を停止、8月19日にサイトを一時停止した。2021年10月1日〜2026年6月30日の会員・注文者・配送先の氏名、住所、メールアドレス、電話番号、性別、誕生日と、カード決済者のカード名義・番号・有効期限・セキュリティコードが対象。サイトは2027年3月ごろの再開を目指す。
+sources:
+  - title: ヴェレダ・ジャパン「ヴェレダ 公式オンラインショップ」への不正アクセスによる情報漏えいに関するお詫びとお知らせ
+    url: https://weleda-notice-static-apne1.s3.ap-northeast-1.amazonaws.com/news/20261116.html
+  - title: 日本経済新聞
+    url: https://www.nikkei.com/article/DGXZQOUC24AG30U6A121C2000000/
+  - title: CNET Japan
+    url: https://japan.cnet.com/article/35255332/
+  - title: FASHIONSNAP
+    url: https://www.fashionsnap.com/article/2026-11-24/weleda-news-1124/
+checklist:
+  - text: クレジットカードの利用明細に身に覚えのない請求がないか確認する
+  - text: 必要ならカード会社にカードの再発行を依頼する（手数料は同社が負担するよう依頼済み）
+  - text: ヴェレダや配送事業者・カード会社を装った不審なメールや SMS で URL を開いたりカード情報を入力したりしない

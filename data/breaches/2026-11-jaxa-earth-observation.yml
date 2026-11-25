@@ -1,0 +1,31 @@
+organization: 国立研究開発法人宇宙航空研究開発機構（JAXA）
+services:
+  - 地球観測データ公開系情報システム
+industry: 行政
+country: JP
+org_type: public_agency
+prefecture: 東京都
+date_occurred: 2026-11-18
+date_announced: 2026-11-24
+affected_count: 2000
+count_note: システム利用者2,000名のアカウント情報（アカウント名と暗号化されたパスワード）
+cause: vulnerability
+root_cause: Webアプリケーションのコマンドインジェクションの脆弱性を悪用され、バックドアを設置された
+attack_methods:
+  - remote_code_execution
+data_types:
+  - アカウント名
+  - パスワード（ハッシュ化・暗号化済み）
+summary: 地球観測衛星などで取得した降水データや気象データを提供する公開系情報システムが11月18日に外部の第三者による不正アクセスを受け、利用者2,000名のアカウント名と暗号化されたパスワードが窃取されたと公表した。Webアプリケーションの一部にコマンドインジェクションの脆弱性があり、攻撃者はこれを悪用してバックドアを設置し、システムの探索や情報の窃取を試みていた。同日16時30分までにWebサーバーのサービスを停止し、FTPサーバーも停止した。保存されている観測データは公開情報で、攻撃者がアクセスした痕跡はないとしている。復旧の見通しは立っていない。
+sources:
+  - title: JAXA 地球観測データ公開系情報システムへの不正アクセスによる情報漏洩
+    url: https://www.jaxa.jp/press/2026/11/20261124-2_j.html
+  - title: JAXA 第一宇宙技術部門 サテライトナビゲーター お知らせ
+    url: https://www.satnavi.jaxa.jp/ja/news/2026/11/24/13286/index.html
+  - title: NHK
+    url: https://news.web.nhk/newsweb/na/nd-20261124de80645
+  - title: 読売新聞
+    url: https://www.yomiuri.co.jp/national/20261124-GYT1T00302/
+checklist:
+  - text: 同じパスワードを他のサービスで使っている場合は変更する
+  - text: JAXA をかたる不審なメールで URL を開いたりパスワードを入力したりしない
