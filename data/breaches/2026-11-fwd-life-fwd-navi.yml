@@ -1,0 +1,22 @@
+organization: FWD生命保険株式会社
+services:
+  - FWD navi
+industry: 金融・保険
+country: JP
+date_occurred: 2026-11-07
+date_announced: 2026-11-09
+affected_count: 9000
+count_note: 最大9,000件（閲覧可能な状態だった契約情報）
+cause: unauthorized_access
+root_cause: 代理店の募集人のアカウントが不正利用され、代理店向けシステムにログインされた
+attack_methods:
+  - stolen_credentials
+data_types:
+  - 氏名
+  - 契約情報
+summary: 保険代理店に提供しているシステム「FWD navi」に、11月7日に第三者が代理店の募集人のアカウントを不正に利用してログインし、最大9,000件の契約者名・被保険者名などの契約情報が閲覧可能な状態にあったことから、漏えいした可能性があると公表した。当該アカウントを停止し、同システムへのインターネット経由のアクセスを一時停止した。対象契約で契約内容の変更が行われていないことは確認済みで、対象者には書面などで個別に連絡するとしている。
+sources:
+  - title: FWD生命 【更新】代理店向けシステム「FWD navi」への不正アクセスに伴うお客さま情報の漏えいについて
+    url: https://www.fwdlife.co.jp/system-information/
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/11/24/56875.html

@@ -1,0 +1,22 @@
+organization: 日本新薬株式会社
+services:
+  - LINE公式アカウント「WINZONE」
+industry: 製造
+country: JP
+date_announced: 2026-11-20
+affected_count: 40921
+count_note: 最大40,921名（LINEの表示名・プロフィール画像URL・LINEユーザーID）。性別は最大10,145名で重複を含む
+cause: third_party
+root_cause: 運用委託先assistが利用するソニックムーブの「COMSBI（SaaS版）」が不正アクセスを受けた
+vendor:
+  name: 株式会社ソニックムーブ
+data_types:
+  - アカウント名
+  - 連携サービスID
+  - 性別
+summary: 公式LINEアカウント「WINZONE（ウィンゾーン）」の運用委託先である株式会社assistが利用するソニックムーブの「COMSBI（SaaS版）」が第三者の不正アクセスを受け、最大40,921名のLINEの表示名・プロフィール画像（URL）・LINEユーザーIDと、最大10,145名の性別が流出したと公表した。11月16日に委託先から報告を受けた。件数は最大値で、今後の調査で減る可能性があるとしている。クレジットカード情報は保持しておらず、二次被害は確認されていない。
+sources:
+  - title: 日本新薬 当社公式LINEアカウントで利用する外部サービスへの不正アクセスに伴うお客様情報の漏えいに関するお詫びとお知らせ
+    url: https://www.nippon-shinyaku.co.jp/news/news.php?id=3856
+checklist:
+  - text: 日本新薬やWINZONEを装った不審なメール・SMS・電話に注意する

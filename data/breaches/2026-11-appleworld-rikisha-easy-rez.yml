@@ -1,0 +1,30 @@
+organization: 株式会社アップルワールド
+services:
+  - Rikisha Easy REZ!
+industry: 旅行
+country: JP
+date_occurred: 2026-11-06
+date_announced: 2026-11-13
+affected_count: 582024
+count_note: 予約者（旅行者）の予約情報最大582,024件。ほかに旅行会社最大3,542社・13,834名の担当者情報、侵入期間中に決済画面で入力されたクレジットカード情報最大39件。送迎・宿泊予約のカード決済ログなどは流出の有無を調査中
+cause: unauthorized_access
+root_cause: 開発委託先のソースコード保管場所が外部から閲覧可能で、記載の認証鍵が不正使用された
+attack_methods:
+  - exposed_secret
+data_types:
+  - 氏名
+  - 利用履歴
+  - 問い合わせ内容
+  - 取引先情報
+  - メールアドレス
+  - 電話番号
+  - クレジットカード番号
+summary: 旅行会社向け予約手配システム「Rikisha Easy REZ!」のサーバーが第三者の不正アクセスを受け、旅行者の予約情報最大582,024件（氏名、予約内容、備考欄の記入内容）と、利用する旅行会社最大3,542社・13,834名の担当者名・メールアドレス・電話番号・請求に関する情報、侵入期間中に決済画面で入力されたクレジットカード情報最大39件が流出したおそれがあると公表した。11月6日夜に検知した。サーバーに不正なプログラムが設置され、ファイルやメールテンプレートの改ざんも確認した。開発委託先のソースコード保管場所が外部から閲覧可能で、記載されていた認証鍵が不正に使われたという。
+sources:
+  - title: アップルワールド 「Rikisha Easy REZ!」への不正アクセスによる個人情報流出のおそれに関するお詫びとお知らせ
+    url: https://appleworld.co.jp/news/cp6xtywu279
+  - title: ScanNetSecurity
+    url: https://scan.netsecurity.ne.jp/article/2026/11/25/56892.html
+checklist:
+  - text: 旅行会社と協議のうえ、対象者には個別に連絡がある
+  - text: 旅行会社やアップルワールドを装った不審なメール・電話に注意する

@@ -1,0 +1,29 @@
+organization: CSマーケティング株式会社
+services:
+  - ベレッツァ
+industry: 小売・EC
+country: JP
+date_occurred: 2018-07-04
+date_announced: 2026-11-24
+affected_count: 3633
+count_note: 2018年7月4日〜2025年3月27日にカード決済した3,633名
+cause: vulnerability
+root_cause: システムの一部の脆弱性を突いた不正アクセスで、ペイメントアプリケーションが改ざんされた
+attack_methods:
+  - web_skimming
+data_types:
+  - 氏名
+  - クレジットカード番号
+  - クレジットカードのセキュリティコード
+  - クレジットカード情報（番号の一部・有効期限等）
+summary: 自動車用品の通販サイト「ベレッツァ」がシステムの脆弱性を突いた第三者の不正アクセスを受けてペイメントアプリケーションが改ざんされ、2018年7月4日〜2025年3月27日にカード決済をした3,633名のクレジットカード情報（カード名義人名、カード番号など）が漏えいし、一部が不正利用された可能性があると公表した。報道では有効期限とセキュリティコードも対象とされる。2026年6月8日にカード会社から漏えい懸念の連絡を受けてカード決済を停止し、8月17日に調査機関の調査が完了した。
+sources:
+  - title: ベレッツァ 不正アクセスによる個人情報漏えいに関するお詫びとお知らせ
+    url: https://www.bellezza-cs.com/article/notice/2135/
+  - title: Yahoo!ニュース（アスキー）
+    url: https://news.yahoo.co.jp/articles/0eff0a4baf6b98316f11be98e3fc7d90d4f3f478
+  - title: 楽天カード お知らせ
+    url: https://www.rakuten-card.co.jp/info/news/20261124_3/
+checklist:
+  - text: クレジットカードの利用明細に身に覚えのない請求がないか確認する
+  - text: カード再発行の手数料はかからないよう同社がカード会社に依頼している
