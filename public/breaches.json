@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-25T08:09:31.000Z",
-  "count": 1250,
+  "generated_at": "2026-11-26T02:00:51.000Z",
+  "count": 1259,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,236 @@
   ],
   "breaches": [
     {
+      "id": "2026-11-eisys-ci-en",
+      "organization": "株式会社エイシス",
+      "services": [
+        "Ci-en"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-25",
+      "affected_count": null,
+      "count_note": "件数と情報の項目は未公表で、影響範囲は調査中",
+      "cause": "unauthorized_access",
+      "root_cause": "システムの不備を突いた第三者の不正アクセスで、クリエイターの取引に関する個人情報が流出した可能性が高い",
+      "summary": "「DLsite」を運営するエイシスは、クリエイター支援サービス「Ci-en」で、利用するクリエイターの取引に関する個人情報が第三者による不正アクセスで外部に流出した可能性が高いと公表した。11月24日から緊急メンテナンスを行い、原因となったシステムの不備は修正したとしている。影響範囲は調査中で、個人情報保護委員会への報告を準備している。対象のクリエイターには関係する情報と注意事項を順次個別に連絡する。",
+      "sources": [
+        {
+          "title": "個人情報漏えいの可能性に関するお詫びとお知らせ（Ci-en サービスインフォメーション）",
+          "url": "https://info.eisys.co.jp/cien/d79b97fd904d00c8"
+        },
+        {
+          "title": "Ci-enにおける個人情報漏えいの可能性に関するお詫びとお知らせ（株式会社viviON）",
+          "url": "https://vivion.jp/news/438"
+        },
+        {
+          "title": "「DLsite」運営のエイシス、クリエイター支援サービス「Ci-en」での不正アクセス被害を発表（Game Spark）",
+          "url": "https://www.gamespark.jp/article/2026/11/25/175298.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "Ci-enからの個別連絡を確認する"
+        },
+        {
+          "text": "エイシスやCi-enを装って登録情報の変更や入力を求める連絡のURL・添付を開かない"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-eneos-app",
+      "organization": "ENEOS株式会社",
+      "services": [
+        "ENEOS公式アプリ"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "status": "investigating",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/53",
+      "date_announced": "2026-11-25",
+      "affected_count": null,
+      "count_note": "顧客情報の漏えいの有無と影響範囲は調査中",
+      "cause": "unauthorized_access",
+      "root_cause": "給油などに使う公式アプリのシステムで第三者による不正アクセスを検知した。詳細は調査中",
+      "summary": "給油などに使うENEOS公式アプリのシステムで第三者による不正アクセスを検知し、被害拡大の防止と顧客情報の漏えいの有無を確認するため、11月25日16時ごろからアプリのサービスを停止したと公表した。事実関係と、顧客情報の漏えいの有無および影響範囲を調査している。不正アクセスに便乗した不審なメール、SMS、電話に注意するよう呼びかけている。",
+      "sources": [
+        {
+          "title": "ENEOS公式アプリへの不正アクセス検知による利用停止について（お詫び）（ENEOS株式会社）",
+          "url": "https://www.eneos.co.jp/announcement/20261125.html"
+        },
+        {
+          "title": "ENEOS、給油向け公式アプリを一時停止 不正アクセス検知で（日本経済新聞）",
+          "url": "https://www.nikkei.com/article/DGXZQOUC25BI90V21C26A1000000/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "ENEOSを装った不審なメール・SMS・電話のURLや添付を開かず、個人情報や認証情報を入力しない"
+        },
+        {
+          "text": "アプリと同じパスワードを他のサービスで使っていれば変更を検討する"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-jcb-karte",
+      "organization": "株式会社ジェーシービー",
+      "services": [
+        "MyJCB"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-11-25",
+      "affected_count": 150000,
+      "count_note": "最大約15万件。漏えいしたのは顧客への案内を識別するための社内管理コード値のみで、カード番号・氏名・住所・電話番号・メールアドレス・MyJCBのログインID・パスワード等は含まれない",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、MyJCBの案内に使う管理コード値が外部に漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "summary": "会員向けWebサービス「MyJCB」での顧客への案内業務を委託している株式会社プレイドの「KARTE」が第三者による不正アクセスを受け、一部顧客に関する情報が外部に漏えいしたと公表した。漏えいしたのは顧客への案内を識別するために社内で使う管理コード値で最大約15万件。この値から顧客を特定したり連絡先を確認したりはできず、カード番号、氏名、住所、電話番号、メールアドレス、MyJCBのログインID・パスワード等は含まれないとしている。11月13日にデータ連携を停止し、カードの不正利用やMyJCBへの不正ログインは確認されていない。",
+      "sources": [
+        {
+          "title": "当社委託先が提供するサービスへの不正アクセスについて（株式会社ジェーシービー）",
+          "url": "https://www.jcb.co.jp/release/pdf/oshirase_20261125.pdf"
+        },
+        {
+          "title": "KARTE（委託先：プレイド社）への不正アクセス影響について教えてください。（JCB よくあるご質問）",
+          "url": "https://j-faq.jcb.co.jp/faq/show/15756?category_id=168&return_path=%2Fcategory%2Fshow%2F168%3Fpage%3D1%26site_domain%3Ddefault%26sort%3Dsort_new%26sort_order%3Ddesc%26wizard_id%3D11&site_domain=default"
+        },
+        {
+          "title": "株式会社ジェーシービーが利用する外部システム「KARTE」への不正アクセスによる個人情報漏えいの可能性について（福井銀行）",
+          "url": "https://www.fukuibank.co.jp/info/docs/jcb_info_20261125.html"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "JCBからのメール等による個別連絡を確認する"
+        },
+        {
+          "text": "JCBを装った不審なメール・SMSのURLや添付を開かず、個人情報を入力しない"
+        },
+        {
+          "text": "カードの利用明細に身に覚えのない取引がないか確認する"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-satudora-cyberagent",
+      "organization": "株式会社サッポロドラッグストアー",
+      "group": "サツドラホールディングス",
+      "services": [
+        "サツドラ LINE公式アカウント",
+        "サツドラ公式アプリ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2025-07-16",
+      "date_announced": "2026-11-25",
+      "affected_count": 229026,
+      "count_note": "22万9,026アカウント（2023年6月1日〜2025年7月15日にLINE公式アカウントへ友だち登録した顧客の一部、2025年7月15日時点の登録情報）",
+      "cause": "third_party",
+      "root_cause": "アプリ開発・運用の委託先が移行作業中に個人情報を含むファイルを開発環境の公開設定の保管領域に誤って置いた",
+      "vendor": {
+        "name": "株式会社サイバーエージェント"
+      },
+      "data_types": [
+        "メールアドレス",
+        "性別",
+        "生年月日",
+        "氏名",
+        "ポイント情報",
+        "購入履歴",
+        "連携サービスID"
+      ],
+      "summary": "アプリの開発・運用を委託するサイバーエージェントが、システム移行作業中に個人情報を含むファイルを開発環境のクラウド上の公開設定の保管領域に誤って置き、LINE公式アカウントの友だち登録者22万9,026アカウント分が外部に流出したと公表した。ファイルは2025年7月16日から2026年11月18日まで公開状態で、第三者による計9回の取得が確認された。対象はメールアドレス、性別、生年月日、名、EZOCA番号、購入金額の合計、LINEユーザー識別子などで、姓・住所・電話番号・カード情報・パスワードは含まれない。11月18日の外部通報で判明した。",
+      "sources": [
+        {
+          "title": "「サツドラ」顧客情報22万件流出 委託先サイバーエージェントがデータ誤公開、1年以上気づかず（ITmedia NEWS／Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/ddf86c8a88e20275939d6419aa5147c42c570c13"
+        },
+        {
+          "title": "サツドラで約23万件の個人情報流出 委託先の管理ミスが原因か（NHK）",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261125de81337"
+        },
+        {
+          "title": "サツドラで会員情報最大23万件流出 委託先の設定ミスが原因（日本経済新聞）",
+          "url": "https://www.nikkei.com/article/DGXZQOFC255O20V21C26A1000000/"
+        },
+        {
+          "title": "サツドラ23万件個人情報流出 LINE登録の顧客メアドなど（読売新聞）",
+          "url": "https://www.yomiuri.co.jp/local/hokkaido/news/20261125-GYTNT00329/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "サツドラからのメールまたはLINE公式アカウントでの個別連絡を確認する"
+        },
+        {
+          "text": "サツドラを装った不審なメールやメッセージのリンクを開かない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 497,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-tohoku-epco-karte",
+      "organization": "東北電力株式会社",
+      "group": "東北電力グループ",
+      "services": [
+        "ホームページの問合せチャット",
+        "よりそうeねっと"
+      ],
+      "industry": "エネルギー・インフラ",
+      "country": "JP",
+      "date_announced": "2026-11-25",
+      "affected_count": 54,
+      "count_note": "問合せチャットのメッセージ最大4件（対象となる可能性があるのは8,527件のうちの4件）と「よりそうeねっと」会員の内部管理ID最大50件（2,533件のうちの50件）。どの情報が漏えいしたかは特定できない",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、問合せチャットのメッセージや会員の内部管理IDが漏えいした",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "メッセージ・チャット履歴",
+        "会員ID"
+      ],
+      "summary": "ホームページの問合せチャットやお知らせ配信に利用している株式会社プレイドの「KARTE」への不正アクセスにより、顧客情報が外部に漏えいしたと公表した。問合せチャットのメッセージ（内部管理IDを含む）最大4件と、会員制Webサービス「よりそうeねっと」会員の内部管理ID最大50件が漏えいした。チャットのメッセージは問い合わせ時の入力内容のため個人情報が含まれる可能性がある。どの情報が漏えいしたか特定できず、対象となる可能性があるのはチャット8,527件、会員2,533件。11月24日にプレイドから調査完了の連絡を受けて判明した。",
+      "sources": [
+        {
+          "title": "当社が利用する外部サービスへの不正アクセスによるお客さま情報の漏えいについて（東北電力）",
+          "url": "https://www.tohoku-epco.co.jp/news/normal/1249387_2558.html"
+        },
+        {
+          "title": "東北電力 一部情報漏えい チャットメッセージ内容や「よりそうeねっと」のID（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/91999b55537ca34ed116f87646129ae3574f82ac"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "東北電力からのメール等による個別連絡を確認する"
+        },
+        {
+          "text": "東北電力を装った不審な連絡に注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-11-cs-marketing-bellezza",
       "organization": "CSマーケティング株式会社",
       "services": [
@@ -600,6 +830,150 @@
       ],
       "severity": "high",
       "disclosure_days": 6,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-kyoritsu-biyo",
+      "organization": "医療法人社団美人会（共立美容外科）",
+      "services": [
+        "共立美容外科 公式ホームページ 問い合わせ・予約フォーム"
+      ],
+      "industry": [
+        "美容・健康",
+        "医療"
+      ],
+      "country": "JP",
+      "reliability": "low",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
+      "date_occurred": "2026-11-16",
+      "date_announced": "2026-11-24",
+      "affected_count": 2736,
+      "count_note": "2,736名（2024年8月16日〜2026年11月20日に問い合わせ・予約フォームを利用した人のうち、持ち出しが確認された人数）",
+      "cause": "unauthorized_access",
+      "root_cause": "公式ホームページのサーバーが第三者に不正侵入され、フォームの送信内容が持ち出された。侵入経路は調査中",
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "生年月日",
+        "健康・医療情報",
+        "問い合わせ内容"
+      ],
+      "summary": "公式ホームページのサーバーが第三者による不正アクセスを受け、問い合わせ・予約フォームを利用した2,736名分の個人情報が外部に持ち出されたと公表した。11月16日以降にサーバーへの不正侵入があり、20日に異常を検知してサーバーを遮断し、ホームページを停止した。対象は2024年8月16日から11月20日までのフォーム利用者で、氏名、連絡先、生年月日、希望施術、来院日時、相談内容など。住所、決済情報、写真を含む診療記録は含まれないとしている。個人情報保護委員会と厚生労働省に報告し、警察に相談した。",
+      "sources": [
+        {
+          "title": "共立美容外科、2,736名の個人情報漏えい サイバー攻撃で希望施術や相談内容も流出（セキュリティ対策Lab／moe zine）",
+          "url": "https://www.moezine.com/2615794/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "施術や相談内容を引き合いに金銭を要求する連絡には応じない"
+        },
+        {
+          "text": "共立美容外科を装った不審なメール・電話に注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 8
+    },
+    {
+      "id": "2026-11-mjs-ma-partners",
+      "organization": "株式会社MJS M&Aパートナーズ",
+      "group": "MJSグループ",
+      "services": [
+        "社内ネットワーク"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-11-06",
+      "date_announced": "2026-11-24",
+      "affected_count": null,
+      "count_note": "最大数千社（クライアント）分の取引先情報（一部に個人情報を含む）。可能性の上限で詳細は調査中。役職員の認証情報の一部は取得されたことを確認",
+      "cause": "unauthorized_access",
+      "root_cause": "ファイアウォール機器に第三者が作成したとみられる管理者アカウントが設定され、役職員の認証情報の一部が取得された",
+      "attack_methods": [
+        "network_device"
+      ],
+      "data_types": [
+        "取引先情報",
+        "従業員情報"
+      ],
+      "summary": "ミロク情報サービス（MJS）は、子会社の株式会社MJS M&Aパートナーズの社内ネットワークが第三者による不正アクセスを受けたと公表した。11月6日に従業員がファイアウォール機器に不審な管理者アカウントなどを見つけ、役職員が外部からアクセスする際の認証情報の一部が取得されたことを確認した。M&Aの検討・支援のために預かった最大数千社分の取引先情報（一部に個人情報を含む）について、一部期間の記録が残っておらず漏えいの可能性を否定できないとしている。要配慮個人情報、カード情報、口座のパスワードは保有していない。11月12日に個人情報保護委員会へ速報した。",
+      "sources": [
+        {
+          "title": "弊社子会社への不正アクセスによる情報漏えいの可能性に関するお詫びとお知らせ（株式会社ミロク情報サービス）",
+          "url": "https://www.mjs.co.jp/news/news_2026/2026112400/"
+        },
+        {
+          "title": "最大数千社分の情報に漏えいのおそれ、MJS M&Aパートナーズに不正アクセス（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/39e2508eaf6409d428ddc86de6a7f07d0f8505f5"
+        },
+        {
+          "title": "M&A検討資料など最大数千社分漏えいか ミロク情報子会社に不正アクセス（ITmedia NEWS／Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/90dfd243b4e9c40e24d52d11eb55c9e5f67df5a3"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "MJS M&Aパートナーズからの個別連絡を確認する"
+        },
+        {
+          "text": "同社や社員を装った不審なメール・電話に注意する"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 18,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-mynavi-karte",
+      "organization": "株式会社マイナビ",
+      "group": "マイナビグループ",
+      "services": [
+        "マイナビウエディング",
+        "MATCHBOX",
+        "マイナビ学生の窓口",
+        "マイナビ看護学生",
+        "マイナビバイト"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_announced": "2026-11-24",
+      "affected_count": 281450,
+      "count_note": "5サービスの最大件数の合計（重複を除いた人数ではない）。マイナビウエディング147,185件、MATCHBOX122,685件、マイナビ学生の窓口6,871件、マイナビ看護学生4,643件、マイナビバイト66件",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドの「KARTE」が不正アクセスを受け、5サービスで連携していた個人情報が漏えいした可能性がある",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "電話番号",
+        "取引先情報"
+      ],
+      "summary": "株式会社プレイドのCXプラットフォーム「KARTE」で11月13日に発生した不正アクセスに関連し、5サービスで取り扱う個人情報が漏えいした可能性があると公表した。最大件数はマイナビウエディング147,185件（氏名・メールアドレス・電話番号）、MATCHBOX122,685件（氏名・年齢・都道府県）、マイナビ学生の窓口6,871件（氏名・メールアドレス）、マイナビ看護学生4,643件（氏名・メールアドレス・学校名）、マイナビバイト66件（企業名・企業担当者名・メールアドレス）で、合計281,450件。クレジットカード情報とマイナンバーは含まれず、自社サービスへの不正アクセスは確認されていないとしている。",
+      "sources": [
+        {
+          "title": "株式会社プレイドで発生した不正アクセスに伴う情報漏洩の可能性について（株式会社マイナビ）",
+          "url": "https://www.mynavi.jp/topics/post_55321.html"
+        },
+        {
+          "title": "「マイナビ看護学生」で利用している外部サービスへの不正アクセスに関するお詫びとお知らせ",
+          "url": "https://nurse.mynavi.jp/student/pages/20261124"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "マイナビからの個別連絡を確認する"
+        },
+        {
+          "text": "マイナビを装った不審なメール・SMSのリンクや添付を開かず、個人情報やパスワードを入力しない"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
       "reliability": "high"
     },
     {
@@ -2996,6 +3370,52 @@
         }
       ],
       "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-fujisaki-karte",
+      "organization": "株式会社藤崎",
+      "services": [
+        "FUJISAKI online"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-18",
+      "affected_count": 75000,
+      "count_note": "最大約7万5,000件（FUJISAKI onlineのオンライン会員）",
+      "cause": "third_party",
+      "root_cause": "委託先プレイドのサービスが不正アクセスを受け、連携していたオンライン会員情報の一部が漏えいした可能性がある",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "氏名",
+        "住所",
+        "性別",
+        "メールアドレス",
+        "会員ID"
+      ],
+      "summary": "仙台市の百貨店の藤崎は、サービス改善のため利用している株式会社プレイドのサーバーへの不正アクセスが11月13日に検知され、オンラインショップ「FUJISAKI online」のオンライン会員の情報の一部が漏えいした可能性があると公表した。対象は最大約7万5,000件で、氏名、住所の一部、性別、年齢、メールアドレス、オンライン会員番号。クレジットカード情報、パスワード、生年月日、電話番号はプレイドに提供しておらず含まれないとしている。外部サービスとの連携を停止し、対象の会員には登録メールアドレス宛てに順次連絡する。",
+      "sources": [
+        {
+          "title": "【重要】外部サービスへの不正アクセスに伴う情報漏えいに関するお詫びとお知らせ（藤崎 INFORMATION）",
+          "url": "https://www.fujisaki.co.jp/information/"
+        },
+        {
+          "title": "百貨店の藤崎オンライン会員情報 約7万5000件漏えいの可能性 外部サービスへの不正アクセスで（ミヤギテレビ／Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/ef99d2d50bda16068b422386258b6b332d96d93e"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "藤崎からの登録メールアドレス宛ての連絡を確認する"
+        },
+        {
+          "text": "藤崎を装った不審なメールのリンクを開かず、個人情報を入力しない"
+        }
+      ],
+      "severity": "high",
       "disclosure_days": null,
       "reliability": "high"
     },
