@@ -1,0 +1,24 @@
+organization: 株式会社ジェーシービー
+services:
+  - MyJCB
+industry: 金融・保険
+country: JP
+date_announced: 2026-11-25
+affected_count: 150000
+count_note: 最大約15万件。漏えいしたのは顧客への案内を識別するための社内管理コード値のみで、カード番号・氏名・住所・電話番号・メールアドレス・MyJCBのログインID・パスワード等は含まれない
+cause: third_party
+root_cause: 委託先プレイドの「KARTE」が不正アクセスを受け、MyJCBの案内に使う管理コード値が外部に漏えいした
+vendor:
+  name: 株式会社プレイド
+summary: 会員向けWebサービス「MyJCB」での顧客への案内業務を委託している株式会社プレイドの「KARTE」が第三者による不正アクセスを受け、一部顧客に関する情報が外部に漏えいしたと公表した。漏えいしたのは顧客への案内を識別するために社内で使う管理コード値で最大約15万件。この値から顧客を特定したり連絡先を確認したりはできず、カード番号、氏名、住所、電話番号、メールアドレス、MyJCBのログインID・パスワード等は含まれないとしている。11月13日にデータ連携を停止し、カードの不正利用やMyJCBへの不正ログインは確認されていない。
+sources:
+  - title: 当社委託先が提供するサービスへの不正アクセスについて（株式会社ジェーシービー）
+    url: https://www.jcb.co.jp/release/pdf/oshirase_20261125.pdf
+  - title: KARTE（委託先：プレイド社）への不正アクセス影響について教えてください。（JCB よくあるご質問）
+    url: https://j-faq.jcb.co.jp/faq/show/15756?category_id=168&return_path=%2Fcategory%2Fshow%2F168%3Fpage%3D1%26site_domain%3Ddefault%26sort%3Dsort_new%26sort_order%3Ddesc%26wizard_id%3D11&site_domain=default
+  - title: 株式会社ジェーシービーが利用する外部システム「KARTE」への不正アクセスによる個人情報漏えいの可能性について（福井銀行）
+    url: https://www.fukuibank.co.jp/info/docs/jcb_info_20261125.html
+checklist:
+  - text: JCBからのメール等による個別連絡を確認する
+  - text: JCBを装った不審なメール・SMSのURLや添付を開かず、個人情報を入力しない
+  - text: カードの利用明細に身に覚えのない取引がないか確認する
