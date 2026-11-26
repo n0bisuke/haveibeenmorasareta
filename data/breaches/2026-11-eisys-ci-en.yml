@@ -1,0 +1,23 @@
+organization: 株式会社エイシス
+services:
+  - Ci-en
+industry: IT・通信
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_announced: 2026-11-25
+affected_count: null
+count_note: 件数と情報の項目は未公表で、影響範囲は調査中
+cause: unauthorized_access
+root_cause: システムの不備を突いた第三者の不正アクセスで、クリエイターの取引に関する個人情報が流出した可能性が高い
+summary: 「DLsite」を運営するエイシスは、クリエイター支援サービス「Ci-en」で、利用するクリエイターの取引に関する個人情報が第三者による不正アクセスで外部に流出した可能性が高いと公表した。11月24日から緊急メンテナンスを行い、原因となったシステムの不備は修正したとしている。影響範囲は調査中で、個人情報保護委員会への報告を準備している。対象のクリエイターには関係する情報と注意事項を順次個別に連絡する。
+sources:
+  - title: 個人情報漏えいの可能性に関するお詫びとお知らせ（Ci-en サービスインフォメーション）
+    url: https://info.eisys.co.jp/cien/d79b97fd904d00c8
+  - title: Ci-enにおける個人情報漏えいの可能性に関するお詫びとお知らせ（株式会社viviON）
+    url: https://vivion.jp/news/438
+  - title: 「DLsite」運営のエイシス、クリエイター支援サービス「Ci-en」での不正アクセス被害を発表（Game Spark）
+    url: https://www.gamespark.jp/article/2026/11/25/175298.html
+checklist:
+  - text: Ci-enからの個別連絡を確認する
+  - text: エイシスやCi-enを装って登録情報の変更や入力を求める連絡のURL・添付を開かない
