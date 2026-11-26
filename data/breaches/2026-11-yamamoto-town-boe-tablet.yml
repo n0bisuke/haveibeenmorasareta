@@ -1,0 +1,22 @@
+organization: 山元町教育委員会
+industry: 行政
+country: JP
+org_type: local_gov
+prefecture: 宮城県
+date_announced: 2026-11-25
+affected_count: 27
+count_note: 中学生ら27人（報道による）。委託先の名称、攻撃の時期は未確認
+cause: third_party
+root_cause: 学校のタブレット端末の情報管理を委託している業者がサイバー攻撃を受けた
+data_types:
+  - 氏名
+  - 保存データ（写真・文書等）
+summary: 山元町教育委員会は、学校現場で使っているタブレット型情報端末の情報管理を委託している業者がサイバー攻撃を受け、中学生ら27人の名前や顔写真などが漏えいしたと公表した。委託先の名称や攻撃の詳細は報道からは確認できていない。
+sources:
+  - title: 中学生ら27人の情報漏えい 委託先へのサイバー攻撃で宮城・山元町教委（河北新報／エキサイトニュース）
+    url: https://www.excite.co.jp/news/article/kahoku_1498571284543505183/
+  - title: 中学生ら27人の情報漏えい 委託先へのサイバー攻撃で宮城・山元町教委（河北新報／Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/8ba8074ef9955c19569f474634abdead67a12fea
+checklist:
+  - text: 学校や教育委員会からの個別の連絡を確認する
+  - text: 子どもの名前や写真を使った不審な連絡に注意する

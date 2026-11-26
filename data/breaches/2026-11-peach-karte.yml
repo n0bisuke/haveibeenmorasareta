@@ -1,0 +1,38 @@
+organization: Peach Aviation株式会社
+services:
+  - 公式サイト
+industry:
+  - 交通・モビリティ
+  - 旅行
+country: JP
+date_announced: 2026-11-26
+affected_count: 9440000
+count_note: 最大で延べ約944万件（延べ件数で、実人数ではない）。2019〜2023年頃にウェブサービスを利用した顧客の情報
+cause: third_party
+root_cause: 2025年8月の契約終了後も、削除されるべき顧客情報がプレイドの「KARTE」に残っており、不正アクセスを受けた
+attack_methods:
+  - stolen_credentials
+vendor:
+  name: 株式会社プレイド
+data_types:
+  - 氏名
+  - 生年月日
+  - 郵便番号
+  - 住所
+  - 電話番号
+  - メールアドレス
+summary: 過去に公式サイトで利用していた株式会社プレイドの顧客情報分析サービス「KARTE」が不正アクセスを受けた影響で、2019〜2023年頃にウェブサービスを利用した顧客の氏名、生年月日、郵便番号、住所、電話番号、メールアドレスが最大で延べ約944万件漏えいしたと公表した。プレイドとの契約は2025年8月に終了していたが、利用規約に基づき削除されるべき情報が、プレイドの人的オペレーションと管理の不備で残っていた。クレジットカード情報とパスポート情報は含まれない。不正利用は確認されていない。11月20日に公表したユミルリンク「Cuenote FC」経由の漏えいとは別の事案。
+sources:
+  - title: LCC ピーチ サイト利用者の個人情報 最大のべ約944万件漏えい（NHKニュース）
+    url: https://news.web.nhk/newsweb/na/nd-20261126de82062
+  - title: ピーチ・アビエーション、最大944万件の個人情報漏えい…カルテ不正アクセスの影響で（読売新聞）
+    url: https://www.yomiuri.co.jp/economy/20261126-GYT1T00198/
+  - title: LCCピーチ、顧客情報944万件が漏洩 プレイドに不正アクセス（日本経済新聞）
+    url: https://www.nikkei.com/article/DGXZQOUF269W50W6A121C2000000/
+  - title: ピーチ、「KARTE」不正アクセスで最大約944万件情報漏えい プレイドが契約終了後も削除漏れ（Aviation Wire）
+    url: https://www.aviationwire.jp/archives/355193
+  - title: ピーチ、「KARTE」への不正アクセスで最大約944万件の情報が漏えい（TRAICY）
+    url: https://www.traicy.com/posts/20261126389607/
+checklist:
+  - text: Peachを装った予約変更・返金・ポイント付与のメールやSMSのリンクを開かない
+  - text: 予約内容は公式サイトやアプリから直接確認する
