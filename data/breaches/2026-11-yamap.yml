@@ -1,0 +1,16 @@
+organization: 株式会社ヤマップ
+services:
+  - YAMAP
+industry: IT・通信
+country: JP
+date_announced: 2026-11-26
+affected_count: null
+count_note: 対象人数・情報項目は未確認（公式発表本文を取得できなかった）
+cause: unauthorized_access
+root_cause: システムの画面からパスワード再設定用の情報が読み取られ、社員3名のYAMAPアカウントに不正ログインされた
+summary: 当社システムへの不正アクセスにより個人情報が漏えいしたおそれがあると公表した。公式発表によると、システムのある画面からパスワード再設定用の情報が第三者に読み取られ、この情報を使って同社社員3名のYAMAPアカウントに不正にログインされた。登山地図アプリ「YAMAP」を運営する同社の発表で、漏えいのおそれがある利用者の人数や情報の項目、原因の詳細は、確認できた範囲では明らかになっていない。
+sources:
+  - title: 【お詫び】当社システムへの不正アクセスによる個人情報漏えいのおそれについて（株式会社ヤマップ）
+    url: https://corporate.yamap.co.jp/news/UgX5Wjfy
+  - title: 登山アプリ「YAMAP(やマップ)」に不正アクセス個人情報漏えいのおそれ-社員3名のアカウントに不正ログイン（セキュリティ対策Lab）
+    url: https://rocket-boys.co.jp/security-measures-lab/yamap-779-personal-data-breach-location-password-reset-2026/

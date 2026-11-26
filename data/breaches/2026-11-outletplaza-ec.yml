@@ -1,0 +1,24 @@
+organization: 株式会社アウトレットプラザ
+services:
+  - アウトレットプラザ
+  - プレミアムアウトレットプラザ
+industry: 小売・EC
+country: JP
+date_announced: 2026-11-25
+affected_count: null
+count_note: 対象人数は未公表
+cause: unauthorized_access
+root_cause: 運営するECサイトが外部の第三者から不正アクセスを受けた
+data_types:
+  - 氏名
+  - 住所
+  - 電話番号
+summary: 運営するECサイトが外部の第三者から不正アクセスを受け、会員情報を含む顧客データの一部が外部に流出したと公表した。11月15日に不審なアクセスを確認して調査を始めた。流出した情報には氏名、住所、電話番号などが含まれる可能性がある。不正なプログラムを除去し、クレジットカード情報は流出していないとしている。
+sources:
+  - title: 【重要】不正アクセスによる個人情報漏えいに関するお詫びとお知らせ（アウトレットプラザ）
+    url: https://www.outletplaza.co.jp/index.php?pg=information&get=176
+  - title: アウトレットプラザ、ECサイトへの不正アクセスで個人情報漏えい 不正プログラムを除去、クレジットカード情報の流出はなし（セキュリティ対策Lab）
+    url: https://rocket-boys.co.jp/security-measures-lab/outletplaza_ec_data_breach_20261126/
+checklist:
+  - text: アウトレットプラザを装った不審なメールや電話に注意する
+  - text: 同じパスワードを他のサービスで使っていれば変更する

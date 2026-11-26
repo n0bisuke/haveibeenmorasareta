@@ -1,0 +1,19 @@
+organization: 株式会社サイダス
+group: WHI Holdings
+services:
+  - COMPANY Talent Management 2.0
+industry: IT・通信
+country: JP
+status: investigating
+issue: https://github.com/n0bisuke/haveibeenmorasareta/issues/53
+date_announced: 2026-11-25
+affected_count: null
+count_note: 漏えいした情報の種類・件数・影響顧客数は調査中で未公表
+cause: unauthorized_access
+root_cause: 導入業務に使うクラウドストレージサービスのアカウントの一つが第三者に不正利用された
+summary: 株式会社WHI Holdingsは、子会社サイダスが「COMPANY Talent Management 2.0」の導入業務で利用するクラウドストレージサービスで、第三者にアカウントの一つが不正利用され、導入業務に関する情報の一部が外部に漏えいしたと公表した。当該アカウントは直ちに無効化し、外部専門機関と連携して調査している。影響があると思われる顧客には個別に連絡するとしている。
+sources:
+  - title: 不正アクセスによる情報漏洩に関するお知らせ（第1報）（WHI Holdings）
+    url: https://www.whi-holdings.co.jp/ja/news/news-20261125.html
+  - title: WHI Holdings子会社のサイダスで情報漏えい「COMPANY Talent Management 2.0」導入業務用クラウドストレージに不正アクセス（セキュリティ対策Lab）
+    url: https://rocket-boys.co.jp/security-measures-lab/whi_holdings_cydas_ctm20_cloud_storage_data_breach_202611/

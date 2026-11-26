@@ -1,0 +1,24 @@
+organization: 株式会社MTG
+services:
+  - My ReFa
+industry: 美容・健康
+country: JP
+date_occurred: 2026-11-18
+date_announced: 2026-11-20
+affected_count: 5115
+count_note: 製品登録5,970件。製造番号と画像は登録者のみが対象。保証書・レシートの画像に写った氏名・住所等は調査中
+cause: unauthorized_access
+root_cause: 第三者が作成した偽アカウントから他の利用者の製品登録情報が閲覧・取得・書き換えされた
+attack_methods:
+  - broken_access_control
+data_types:
+  - 会員ID
+  - 購入履歴
+  - 保存データ（写真・文書等）
+summary: ReFa公式アプリ「My ReFa」への不正アクセスで、利用者5,115名（製品登録5,970件）の製品登録情報が漏えいしたと公表した。11月18日に第三者が作成した偽アカウントから他の利用者の会員ID、購入日、購入店舗、製造番号、保証書・レシート・製品の画像が閲覧・取得され、一部は書き換えられた。19日に発覚し、アクセスの遮断、原因となった不具合の修正、データの復旧を行った。製品登録情報に氏名・メールアドレス・住所・電話番号は含まれないが、画像に写っている場合がある。クレジットカード情報とパスワードは漏えいしていない。
+sources:
+  - title: 「My ReFa」アプリにおける不正アクセスの発生について（MTG）
+    url: https://www.mtg.gr.jp/news/detail/2026/11/article_2690.html
+checklist:
+  - text: MTGからの個別のメール連絡を確認する
+  - text: 保証書やレシートの情報を使った不審な連絡に注意する
