@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-26T18:55:32.000Z",
-  "count": 1273,
+  "generated_at": "2026-11-28T00:32:58.000Z",
+  "count": 1288,
   "severity_levels": [
     {
       "id": "critical",
@@ -468,6 +468,425 @@
   ],
   "breaches": [
     {
+      "id": "2026-11-daimaru-matsuzakaya",
+      "organization": "株式会社大丸松坂屋百貨店",
+      "group": "J.フロント リテイリング",
+      "services": [
+        "大丸松坂屋オンラインストア"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_announced": "2026-11-27",
+      "affected_count": 880000,
+      "count_note": "会員情報と送り先（アドレス帳）情報の合計で88万件余り（報道ベースの概数。内訳と正確な件数は未確認）",
+      "cause": "unauthorized_access",
+      "root_cause": "オンラインストアが第三者の不正アクセスを受けた。侵入経路は未確認",
+      "data_types": [
+        "氏名",
+        "住所",
+        "電話番号"
+      ],
+      "summary": "第三者の不正アクセスにより、オンラインストアの会員情報と、アドレス帳に登録された送り先の情報を合わせて88万件余りが漏えいしたと公表した。漏えいしたのは氏名、住所、電話番号などとされる。侵入の経路や発生時期、クレジットカード情報の有無などの詳細は公式発表で確認できていない。",
+      "sources": [
+        {
+          "title": "大丸松坂屋百貨店 オンラインストアの情報が漏えい 計88万件余（NHK）",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261127de82785"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "大丸松坂屋百貨店からの個別連絡を確認する"
+        },
+        {
+          "text": "同社を装った不審なメール・電話・郵便物に注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-election-commission-of-india",
+      "organization": "インド選挙管理委員会（Election Commission of India）",
+      "industry": "行政",
+      "country": "IN",
+      "date_announced": "2026-11-27",
+      "affected_count": null,
+      "count_note": "対象件数は未公表。データが実際に収集・悪用されたかは不明",
+      "cause": "vulnerability",
+      "root_cause": "公式サイトの通話予約機能で、申請の参照番号から有権者の個人情報を取得できた",
+      "attack_methods": [
+        "broken_access_control"
+      ],
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "メールアドレス",
+        "生年月日",
+        "住所"
+      ],
+      "summary": "ロイター通信の調査で、インド選挙管理委員会の公式サイトの通話予約機能に、オンライン登録・変更申請の参照番号を使うと有権者の氏名、電話番号、メールアドレス、生年月日、住所などを取得できる欠陥があったと報じられた。ロイターは10月26日に同委員会へ連絡し、委員会は11月26日に機微な項目を伏せる修正を行った。データが実際に収集・悪用されたかは分かっていない。",
+      "sources": [
+        {
+          "title": "Reuters（KELO 転載）",
+          "url": "https://kelo.com/2026/11/27/exclusive-indias-election-body-website-flaw-exposing-voter-data-fixed-after-reuters-findings/"
+        },
+        {
+          "title": "Kashmir Reader",
+          "url": "https://kashmirreader.com/2026/11/28/election-commission-fixes-website-flaw-that-exposes-voters-personal-data/"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-gmo-pepabo-lolipop",
+      "organization": "GMOペパボ株式会社",
+      "group": "GMOインターネットグループ",
+      "services": [
+        "ロリポップ！レンタルサーバー",
+        "ロリポップ！デプロイナウ",
+        "ロリポップ！AIホームページ",
+        "ロリポップ！AIエージェントクラウド"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_announced": "2026-11-27",
+      "affected_count": 516564,
+      "count_note": "顧客情報51万6,564件（退会済み利用者の残存データを含む）。うち平文保存のFTP・WebDAV仮設定パスワード8,322件、初期ログインパスワード4,170件、Basic認証のID・パスワード105,608件（重複の可能性あり）。住所は都道府県まで",
+      "cause": "unauthorized_access",
+      "root_cause": "内部のデータ分析基盤に不正に使われた認証情報でアクセスされ、データがダウンロードされた。初期侵入の経路は未公表",
+      "data_types": [
+        "氏名",
+        "郵便番号",
+        "メールアドレス",
+        "生年月日",
+        "パスワード（平文）",
+        "アカウント名"
+      ],
+      "summary": "「ロリポップ！レンタルサーバー」など4サービスの内部システムが第三者の不正アクセスを受け、顧客情報51万6,564件が漏えいしたと公表した。11月24日にデータ分析基盤の監査ログで不審なデータダウンロードを検知し、同日に不正に使われた認証情報を無効化して経路を遮断した。漏えいしたのは氏名、郵便番号、都道府県、メールアドレス、生年月日などで、一部の顧客は平文で保存していたFTP・WebDAVの仮設定パスワード、初期ログインパスワード、Basic認証のIDとパスワードも含まれる。退会済み利用者のデータも一部残っていた。クレジットカード情報と銀行口座情報は含まれない。11月25日に該当パスワードを強制リセットし、総務省に報告した。",
+      "sources": [
+        {
+          "title": "当社サービスに対する不正アクセスによるお客様情報の漏えいについて（GMOペパボ）",
+          "url": "https://pepabo.com/news/information/202611271430/"
+        },
+        {
+          "title": "「ロリポップ！レンタルサーバー」の平文パスワード情報などが漏えい。GMOペパボの内部システムに不正アクセス（INTERNET Watch）",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2160136.html"
+        },
+        {
+          "title": "GMO、サーバー貸出事業で不正アクセス 顧客情報51万件漏洩（日本経済新聞）",
+          "url": "https://nikkei.com/article/DGXZQOUC27B210X21C26A1000000"
+        },
+        {
+          "title": "GMOペパボ「ロリポップ！」にサイバー攻撃、51万6,564件の顧客情報漏洩（セキュリティ対策Lab）",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/gmo_pepabo_lolipop_data_breach_516564_202611/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "GMOペパボからの個別メールを確認し、強制リセットされたパスワードを再設定する"
+        },
+        {
+          "text": "Basic認証やFTPと同じパスワードを他のサービスで使っていれば変更する"
+        },
+        {
+          "text": "ロリポップ！を装った不審なメールのリンクを開かない"
+        }
+      ],
+      "severity": "critical",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-hokkoku-bank-tochituka",
+      "organization": "株式会社北國銀行",
+      "services": [
+        "トチツーカ"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "reliability": "low",
+      "issue": "https://github.com/n0bisuke/haveibeenmorasareta/issues/31",
+      "date_announced": "2026-11-27",
+      "affected_count": 291,
+      "count_note": "トチツーカ登録者291人分のID（漏えいの可能性）",
+      "cause": "third_party",
+      "root_cause": "デジタル地域通貨アプリ「トチツーカ」に関わる委託先が不正アクセスを受けた（委託先名は未確認）",
+      "data_types": [
+        "会員ID"
+      ],
+      "summary": "デジタル地域通貨アプリ「トチツーカ」の登録者291人分のIDが外部に漏えいした可能性があると公表した。同行の委託先への不正アクセスが原因とみられ、情報流出の範囲や影響を調べている。トチツーカは石川県内で使われる同行のデジタル地域通貨サービスで、2026年3月にも障害が起きたが、その際は不正アクセスではないと説明していた。今回の委託先の名称や、ID以外の情報が含まれるかどうかは確認できていない。",
+      "sources": [
+        {
+          "title": "Beloud（「トチツーカ」登録者ID流出か 北国銀行の委託先に不正アクセス）",
+          "url": "https://www.beloud.com/news/149601872"
+        }
+      ],
+      "severity": "low",
+      "disclosure_days": null
+    },
+    {
+      "id": "2026-11-longrun-confetti",
+      "organization": "ロングランプランニング株式会社",
+      "services": [
+        "カンフェティ"
+      ],
+      "industry": "エンタメ・スポーツ",
+      "country": "JP",
+      "date_occurred": "2026-11-26",
+      "date_announced": "2026-11-27",
+      "affected_count": null,
+      "count_note": "対象範囲・件数は調査中（第一報時点）。退会者を含む全会員が対象",
+      "cause": "unauthorized_access",
+      "root_cause": "チケット販売サービス「カンフェティ」のサーバーが第三者の不正アクセスを受けた",
+      "data_types": [
+        "メールアドレス",
+        "会員ID",
+        "氏名",
+        "電話番号",
+        "郵便番号",
+        "生年月日",
+        "住所",
+        "性別",
+        "クレジットカード情報（番号の一部・有効期限等）",
+        "パスワード（保管形式不明）"
+      ],
+      "summary": "チケット販売サービス「カンフェティ」のサーバーが第三者による不正アクセスを受け、会員情報が外部に流出したことを確認したと公表した。11月26日に不審なアクセスを確認して緊急メンテナンスを行い、調査を開始した。退会者を含む全会員のメールアドレス、ログインID、氏名、電話番号、郵便番号、生年月日が対象で、一部会員は住所、性別、クレジットカード番号の一部、有効期限、名義なども、カンフェティカード会員の一部はパスワードも対象としている。件数は調査中で、不正利用の被害は確認されていない。",
+      "sources": [
+        {
+          "title": "ロングランプランニング 不正アクセスによるカンフェティ会員情報漏洩に関するお詫びとご報告（第一報）",
+          "url": "https://longrun.biz/important/1122/"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/longrun-confetti-member-data-breach-202611/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "カンフェティと同じパスワードを他サービスで使っていれば変更する"
+        },
+        {
+          "text": "カンフェティを装ったメールや電話（カード番号・暗証番号を聞くもの）に注意する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 1,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-minkabu",
+      "organization": "株式会社ミンカブ・ジ・インフォノイド",
+      "services": [
+        "みんかぶ",
+        "みんかぶアセットプランナー"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_occurred": "2026-11-25",
+      "date_announced": "2026-11-27",
+      "affected_count": 153000,
+      "count_note": "メールアドレス約15万3,000件と、アセプラの金融機関等の口座連携先・金額とみられる情報約1万9,000件に漏えいの可能性（重複の有無は未確認）",
+      "cause": "unauthorized_access",
+      "root_cause": "「みんかぶ」と「みんかぶアセットプランナー」のシステムが第三者の不正アクセスを受けた。認証基盤の問題も調査中",
+      "data_types": [
+        "メールアドレス",
+        "資産・取引情報"
+      ],
+      "summary": "「みんかぶ」と資産管理サービス「みんかぶアセットプランナー（アセプラ）」のシステムが第三者の不正アクセスを受け、メールアドレス約15万3,000件と、アセプラの金融機関等の口座連携先と金額とみられる情報約1万9,000件が漏えいした可能性があると公表した。11月25日に「みんかぶ」での不正な利用を確認して調査を始め、11月26日からアセプラの該当機能を停止した。認証基盤のセキュリティ上の問題も調査している。資産状況に応じた不正な投資勧誘や、金融機関を装った詐欺に悪用されるおそれがあるとして注意を呼びかけた。",
+      "sources": [
+        {
+          "title": "当社サービスへの不正アクセスによる個人情報等の漏洩の可能性に関するお知らせとお詫び（みんかぶ）",
+          "url": "https://minkabu.jp/announcement/1104"
+        },
+        {
+          "title": "ミンカブ・ジ・インフォノイド 適時開示（2026年11月27日）",
+          "url": "https://www.release.tdnet.info/inbs/140120261127587952.pdf"
+        },
+        {
+          "title": "ミンカブ・ジ・インフォノイド 一部顧客の資産額など漏えいの可能性明らかに（NHK）",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261127de82769"
+        },
+        {
+          "title": "ミンカブで個人情報流出（時事通信／Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/6f7f2b45689859828bb4e5f971150df5ac2f2294"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "証券会社や金融機関、ミンカブを名乗る不審なメール・SMS・電話に注意する"
+        },
+        {
+          "text": "資産状況に合わせた投資勧誘の連絡には応じない"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 2,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-nissan-securities-tradevision",
+      "organization": "日産証券株式会社",
+      "group": "日産証券グループ",
+      "services": [
+        "商品デリバティブ取引システム"
+      ],
+      "industry": "金融・保険",
+      "country": "JP",
+      "date_announced": "2026-11-27",
+      "affected_count": 93,
+      "count_note": "対面取引の顧客93名の注文情報172件",
+      "cause": "third_party",
+      "root_cause": "委託先トレードビジョンの商品デリバティブ取引システムのスマホアプリと管理者用プログラムが不正アクセスを受けた",
+      "vendor": {
+        "name": "株式会社トレードビジョン"
+      },
+      "data_types": [
+        "氏名",
+        "会員ID",
+        "資産・取引情報"
+      ],
+      "summary": "親会社の日産証券グループ株式会社が、連結子会社の日産証券株式会社の外部委託先である株式会社トレードビジョンの商品デリバティブ取引システムで、一部のスマートフォン向けアプリと管理者用プログラムに第三者の不正アクセスがあったと公表した。対面取引の顧客93名について、部支店コード、お客様コード、お客様名、注文情報（商品、売買区分、枚数、指値等の値段）計172件の漏えいが判明した。データベースサーバーへの不正アクセスは防いでおり、住所や電話番号、取引銀行などを取得された痕跡は確認されていないとしている。",
+      "sources": [
+        {
+          "title": "日産証券グループ 外部委託先システムへの不正アクセスの発生及び情報漏洩に関するお知らせ（第一報）",
+          "url": "https://www.release.tdnet.info/inbs/140120261127587800.pdf"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-osaka-film-council",
+      "organization": "公益財団法人大阪観光局",
+      "services": [
+        "大阪フィルム・カウンシル Webサイト（ボランティアエキストラ・ロケ協力施設登録）"
+      ],
+      "industry": "旅行",
+      "country": "JP",
+      "org_type": "public_org",
+      "prefecture": "大阪府",
+      "date_announced": "2026-11-27",
+      "affected_count": 30000,
+      "count_note": "約3万件（現時点）",
+      "cause": "unauthorized_access",
+      "root_cause": "大阪フィルム・カウンシルが運営するエキストラ募集サイトが第三者の不正アクセスを受けた",
+      "data_types": [
+        "氏名",
+        "住所",
+        "メールアドレス"
+      ],
+      "summary": "映画やドラマ撮影のエキストラを募集する「大阪フィルム・カウンシル」が運営するサイトが第三者による不正アクセスを受け、ボランティアエキストラやロケ協力施設として登録している人の氏名、住所、メールアドレスなど約3万件が漏えいしたと公表した。11月24日に登録者から、同カウンシルのメールアドレスで宅配業者を装った不審なメールが届いたとの問い合わせがあり、調査して判明した。サイトは閉鎖している。",
+      "sources": [
+        {
+          "title": "大阪観光局 大阪フィルム・カウンシルサイトにおける個人情報漏えいに関するお詫びとお知らせ（トップページ掲載）",
+          "url": "https://octb.osaka-info.jp/"
+        },
+        {
+          "title": "ABCニュース（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/280b9b68b79f187d863da527edb9d8ef3ed5138e"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": null,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-shizuoka-univ-pc-theft",
+      "organization": "静岡大学",
+      "industry": "人材・教育",
+      "country": "JP",
+      "org_type": "university",
+      "prefecture": "静岡県",
+      "date_announced": "2026-11-27",
+      "affected_count": 1364,
+      "count_note": "2014〜2020年度に理学部の講義を受講した学生（NHKは「1300人余り」）",
+      "cause": "lost_device",
+      "root_cause": "退職した元教員が海外出張先のドイツでノートパソコンを盗まれた",
+      "data_types": [
+        "氏名",
+        "性別"
+      ],
+      "summary": "退職した元教員が2026年7月、海外出張で滞在していたドイツでノートパソコンを盗まれ、学生1,364人分の個人情報が流出した可能性があると公表した。元教員は理学部の講義を担当しており、2014〜2020年度に開講した「新入生セミナー」「代数学」などの受講者の氏名、所属、学年、性別、成績が対象。パソコンではクラウドサービスのDropboxを利用しており、データが保存されていたとしている。",
+      "sources": [
+        {
+          "title": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261127de82388"
+        },
+        {
+          "title": "静岡朝日テレビ",
+          "url": "https://look.satv.co.jp/content_news/incident/104177"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
+      "id": "2026-11-afc-online-shop",
+      "organization": "株式会社エーエフシー",
+      "services": [
+        "エーエフシー（AFC）公式オンラインショップ"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-11-22",
+      "date_announced": "2026-11-26",
+      "affected_count": 302580,
+      "count_note": "漏えいの可能性がある顧客数（現時点）。登録状況により対象情報は異なる",
+      "cause": "unauthorized_access",
+      "root_cause": "第三者が通販サイトの管理用アカウントで不正ログインし、顧客データをダウンロードした",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "data_types": [
+        "氏名",
+        "メールアドレス",
+        "住所",
+        "電話番号",
+        "生年月日",
+        "購入履歴"
+      ],
+      "summary": "健康食品と化粧品の公式オンラインショップで、第三者が11月22日に管理用アカウントを使って不正にログインし、顧客情報を閲覧してデータをダウンロードしていたと公表した。11月23日にECプラットフォーム運営会社の監視で不審なアクセスが確認され、該当アカウントを停止した。漏えいの可能性があるのは302,580名で、氏名、メールアドレス、住所、電話番号、生年月日、会員情報、注文・購入明細などが含まれる。クレジットカード番号、セキュリティコード、ログインパスワードは含まれていないとしている。",
+      "sources": [
+        {
+          "title": "エーエフシー（AFC）公式オンラインショップ 不正アクセスによるお客様情報漏えいに関するお詫びとお知らせ",
+          "url": "https://464981.com/shop/pages/important-notice-20261126"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 4,
+      "reliability": "high"
+    },
+    {
+      "id": "2026-11-fifa",
+      "organization": "FIFA（国際サッカー連盟）",
+      "industry": "エンタメ・スポーツ",
+      "country": "CH",
+      "date_announced": "2026-11-26",
+      "affected_count": null,
+      "count_note": "件数・対象者・情報の内訳は未公表",
+      "cause": "unauthorized_access",
+      "root_cause": "犯罪的なサイバー攻撃を受け、個人情報と事業情報の一部に不正アクセスされた",
+      "summary": "犯罪的なサイバー攻撃を受け、限られた範囲の個人情報と事業情報に不正アクセスされたと公表し、法執行機関と連携しているとした。影響を受けた人数や組織数、発生時期、事業情報の内容は明らかにしていない。報道によると、ハッカー集団が12GBの内部ファイルを盗んだと主張しているが、FIFAはこの主張を確認していない。",
+      "sources": [
+        {
+          "title": "Al Jazeera",
+          "url": "https://www.aljazeera.com/sports/2026/11/26/fifa-says-personal-and-business-information-stolen-in-cyberattack"
+        },
+        {
+          "title": "Infosecurity Magazine",
+          "url": "https://www.infosecurity-magazine.com/news/fifa-confirms-cyberattack/"
+        }
+      ],
+      "severity": null,
+      "disclosure_days": null,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-11-mizuho-bank-karte",
       "organization": "株式会社みずほ銀行",
       "services": [
@@ -518,6 +937,39 @@
       "reliability": "mid"
     },
     {
+      "id": "2026-11-monogatari-corporation-forms",
+      "organization": "株式会社物語コーポレーション",
+      "services": [
+        "ブランドサイトのお問い合わせフォーム",
+        "コーポレートサイトのお問い合わせフォーム"
+      ],
+      "industry": "飲食",
+      "country": "JP",
+      "date_occurred": "2026-11-11",
+      "date_announced": "2026-11-26",
+      "affected_count": 80000,
+      "count_note": "約8万人（顧客と従業員ら。日本経済新聞の報道）。公式発表の正確な件数と内訳は未確認",
+      "cause": "third_party",
+      "root_cause": "委託先が運用管理する問い合わせフォーム等の集計システムが第三者の不正アクセスを受けた",
+      "data_types": [
+        "氏名",
+        "電話番号",
+        "会員ID",
+        "問い合わせ内容",
+        "従業員情報"
+      ],
+      "summary": "「焼肉きんぐ」などを運営する同社は、委託先が運用管理する同社システムが第三者の不正アクセスを受け、各ブランドサイトの問い合わせフォームなどに寄せられた顧客の氏名、電話番号、利用店舗、会員番号などと、社内コンテスト応募フォームの従業員らの情報、合わせて約8万人分が漏えいしたと公表した。不正アクセスは11月11日に確認した。10月に公表した「焼肉きんぐ」公式アプリの会員情報の漏えいとは別の事案である。",
+      "sources": [
+        {
+          "title": "日本経済新聞（「焼肉きんぐ」の運営会社、顧客ら8万人超の情報漏洩 10月に続き）",
+          "url": "https://www.nikkei.com/article/DGXZQOUC277730X21C26A1000000/"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 15,
+      "reliability": "mid"
+    },
+    {
       "id": "2026-11-nakano-city-ringbell",
       "organization": "中野区",
       "services": [
@@ -563,6 +1015,57 @@
       "severity": "high",
       "disclosure_days": null,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-11-new-balance-japan-karte",
+      "organization": "株式会社ニューバランス ジャパン",
+      "services": [
+        "ニューバランス公式オンラインストア"
+      ],
+      "industry": "小売・EC",
+      "country": "JP",
+      "date_occurred": "2026-11-13",
+      "date_announced": "2026-11-26",
+      "affected_count": 3740000,
+      "count_note": "最大約374万件（うちハッシュ化したメールアドレス約12万件）",
+      "cause": "third_party",
+      "root_cause": "利用していたプレイドの「KARTE」が脆弱性を突かれて不正アクセスを受け、取り込んでいた会員情報が漏えい",
+      "vendor": {
+        "name": "株式会社プレイド"
+      },
+      "data_types": [
+        "会員ID",
+        "性別",
+        "生年月日",
+        "購入履歴",
+        "メールアドレス"
+      ],
+      "summary": "利用している株式会社プレイドの「KARTE」が不正アクセスを受け、公式オンラインストア会員の顧客番号、性別、生年月日、最終購入商品名など最大約374万件が漏えいしたと公表した。メールアドレス約12万件も含まれるが、ハッシュ化して元に戻せない文字列に変換していたとしている。氏名、電話番号、クレジットカード情報、ログインパスワードは含まれない。対象の顧客には順次メールで連絡し、不審な電話やメールに注意するよう呼びかけた。",
+      "sources": [
+        {
+          "title": "ニューバランス ジャパン 外部サービスにおける不正アクセスによる個人情報漏えいに関するお詫びとお知らせ",
+          "url": "https://company.newbalance.jp/press/2026/p-74134"
+        },
+        {
+          "title": "PR TIMES（ニューバランス ジャパン）",
+          "url": "https://prtimes.jp/main/html/rd/p/000001503.000029460.html"
+        },
+        {
+          "title": "日本経済新聞（ニューバランス、最大374万件の情報漏洩）",
+          "url": "https://www.nikkei.com/article/DGXZQOUC26C9A0W6A121C2000000/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "ニューバランスを名乗る不審なメールや電話に注意する"
+        },
+        {
+          "text": "同社から届く個別連絡メールの内容を確認する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 13,
+      "reliability": "high"
     },
     {
       "id": "2026-11-peach-karte",
@@ -628,6 +1131,58 @@
       "severity": "high",
       "disclosure_days": null,
       "reliability": "mid"
+    },
+    {
+      "id": "2026-11-thinca",
+      "organization": "株式会社シンカ",
+      "services": [
+        "社内業務システム"
+      ],
+      "industry": "IT・通信",
+      "country": "JP",
+      "date_occurred": "2026-10-27",
+      "date_announced": "2026-11-26",
+      "affected_count": 5286,
+      "count_note": "5,286件（うち個人情報4,777件）。件数はデータの件数で、人数・社数ではない",
+      "cause": "unauthorized_access",
+      "root_cause": "社内業務システムのサーバーが第三者の不正アクセスを受けた",
+      "data_types": [
+        "取引先情報",
+        "従業員情報",
+        "氏名",
+        "電話番号",
+        "メールアドレス"
+      ],
+      "summary": "社内業務システムのサーバーが第三者の不正アクセスを受け、5,286件の情報が漏えいし、うち4,777件が個人情報だったと公表した。侵入は10月27日に始まっていた。漏えいしたのは、コミュニケーションプラットフォーム「カイクラ」の契約企業（解約済み・OEM経由を含む）の請求先情報や代理店・パートナー企業の情報で、会社名、所在地、代表者名、担当者名、携帯電話番号、メールアドレスを含み、同社社員の氏名も含まれる。「カイクラ」本体への侵入や、顧客情報・会話録音データの漏えいは確認されていないとしている。",
+      "sources": [
+        {
+          "title": "不正アクセス及び個人情報漏えいに関するお詫び（株式会社シンカ）",
+          "url": "https://www.thinca.co.jp/news/owabi/"
+        },
+        {
+          "title": "シンカ 弊社社内業務システムへの不正アクセスに関するお知らせ（適時開示）",
+          "url": "https://www.release.tdnet.info/inbs/140120261126586941.pdf"
+        },
+        {
+          "title": "シンカ、社内業務システムへの不正アクセスで5,286件の情報漏洩、うち個人情報4,777件（セキュリティ対策Lab）",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/thinca_kaikura_internal_server_5286_data_breach_202611/"
+        },
+        {
+          "title": "シンカが社内業務システムへの不正アクセスを公表し5,286件の情報漏えいを確認（サイバーセキュリティ.com）",
+          "url": "https://cybersecurity-jp.com/news/119002"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "シンカからの個別連絡を確認する"
+        },
+        {
+          "text": "シンカやカイクラを装った不審なメール・電話に注意する"
+        }
+      ],
+      "severity": "medium",
+      "disclosure_days": 30,
+      "reliability": "high"
     },
     {
       "id": "2026-11-yamap",
@@ -1331,6 +1886,10 @@
         {
           "title": "セキュリティ対策Lab",
           "url": "https://rocket-boys.co.jp/security-measures-lab/fuji_unite_hd_fuji_kosan_data_breach_20261124/"
+        },
+        {
+          "title": "Security NEXT",
+          "url": "https://www.security-next.com/193313"
         }
       ],
       "severity": null,
@@ -3269,8 +3828,8 @@
       "country": "JP",
       "date_occurred": "2026-11-18",
       "date_announced": "2026-11-19",
-      "affected_count": null,
-      "count_note": "対象となる会員の範囲と件数は調査中",
+      "affected_count": 3119000,
+      "count_note": "約311万9千人分（11月26日の第2報で確定）",
       "cause": "unauthorized_access",
       "root_cause": "三井ショッピングパークアプリが第三者の不正アクセスを受けた（侵入経路は調査中）",
       "data_types": [
@@ -3278,9 +3837,11 @@
         "氏名",
         "生年月日",
         "住所",
-        "メールアドレス"
+        "メールアドレス",
+        "電話番号",
+        "性別"
       ],
-      "summary": "運営する三井ショッピングパークアプリが第三者の不正アクセスを受け、三井ショッピングパークポイント会員のポイント会員番号、氏名、生年月日、住所、メールアドレスの一部が漏えいしたと公表した。クレジットカード情報やパスワードは含まない。11月18日に不正アクセスを確認し、同日アプリの提供を一時停止した。対象範囲、件数、侵入経路は調査中で、個人情報保護委員会に速報した。各施設や通販サイトは通常どおり営業している。",
+      "summary": "運営する三井ショッピングパークアプリが第三者の不正アクセスを受け、三井ショッピングパークポイント会員のポイント会員番号、氏名、生年月日、住所、メールアドレスの一部が漏えいしたと公表した。クレジットカード情報やパスワードは含まない。11月18日に不正アクセスを確認し、同日アプリの提供を一時停止した。対象範囲、件数、侵入経路は調査中で、個人情報保護委員会に速報した。各施設や通販サイトは通常どおり営業している。11月26日の第2報で、漏えいした会員は約311万9千人分と確定し、電話番号と性別も対象に含まれると公表した。侵入経路と手段は特定済みで、周辺システムへの影響や二次被害は確認されていない。",
       "sources": [
         {
           "title": "三井不動産商業マネジメント 三井ショッピングパークポイント会員情報の漏えいおよび三井ショッピングパークアプリサービス提供の一時停止について",
@@ -3293,6 +3854,14 @@
         {
           "title": "読売新聞",
           "url": "https://www.yomiuri.co.jp/economy/20261119-GYT1T00326/"
+        },
+        {
+          "title": "ITmedia NEWS（約312万会員の個人情報漏えい）",
+          "url": "https://www.itmedia.co.jp/news/article/2611/27/2000003510/"
+        },
+        {
+          "title": "CNET Japan（Yahoo!ニュース）",
+          "url": "https://news.yahoo.co.jp/articles/02527842506acb8b7dbedaa1bfaabe9b0f13bb6f"
         }
       ],
       "severity": "high",
@@ -6677,8 +7246,8 @@
       "industry": "メディア・出版",
       "country": "JP",
       "date_announced": "2026-11-17",
-      "affected_count": null,
-      "count_note": "件数は公表されていない。漏えいした可能性がある情報は元データに戻せない処理をしていたとしている",
+      "affected_count": 5399986,
+      "count_note": "日経ID利用者の個人情報539万9,986件の漏えいを確認（11月27日の第2報）。メールアドレスと電話番号は元データに戻せない処理済み",
       "cause": "third_party",
       "root_cause": "マーケティングに利用するプレイドの「KARTE」が不正アクセスを受け、委託していた日経電子版利用者の情報が漏えいした可能性",
       "vendor": {
@@ -6690,11 +7259,23 @@
         "性別",
         "生年月日"
       ],
-      "summary": "マーケティングに利用している株式会社プレイドの「KARTE」が不正アクセスを受け、同社に取り扱いを委託していた日経電子版利用者の個人情報の一部が外部に漏えいした可能性があると公表した。11月15日にプレイドから報告を受けた。漏えいした可能性があるのはメールアドレス、電話番号、性別、生年月で、元データに戻せない処理をしていたとしている。クレジットカード情報などは含まれず、悪用などの二次被害は確認されていない。件数は公表されていない。",
+      "summary": "マーケティングに利用している株式会社プレイドの「KARTE」が不正アクセスを受け、同社に取り扱いを委託していた日経電子版利用者の個人情報の一部が外部に漏えいした可能性があると公表した。11月15日にプレイドから報告を受けた。漏えいした可能性があるのはメールアドレス、電話番号、性別、生年月で、元データに戻せない処理をしていたとしている。クレジットカード情報などは含まれず、悪用などの二次被害は確認されていない。件数は公表されていない。11月27日の第2報で、プレイドから受領したデータを解析した結果、日経電子版の有料・無料会員や新聞宅配・専門メディアの購読で登録した人を含む日経ID利用者の個人情報539万9,986件の漏えいを確認したと公表した。対象者には個別に通知する。",
       "sources": [
         {
           "title": "日本経済新聞社 委託先外部サービスへの不正アクセスに伴う個人情報漏洩の可能性について",
           "url": "https://www.nikkei.co.jp/nikkeiinfo/news/information/1574.html"
+        },
+        {
+          "title": "日本経済新聞社 お知らせ（第2報）",
+          "url": "https://www.nikkei.co.jp/nikkeiinfo/news/information/1590.html"
+        },
+        {
+          "title": "日本経済新聞（日経読者情報、540万件漏洩）",
+          "url": "https://www.nikkei.com/article/DGXZQOUD265D70W6A121C2000000/"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/nikkei_id_karte_data_breach_confirmed_5399986_20261127/"
         }
       ],
       "checklist": [
@@ -6707,7 +7288,7 @@
       ],
       "severity": "high",
       "disclosure_days": null,
-      "reliability": "mid"
+      "reliability": "high"
     },
     {
       "id": "2026-11-nomi-city-arara",
@@ -7105,6 +7686,10 @@
         {
           "title": "STVニュース",
           "url": "https://m.stv.jp/news/stvnews/kiji/stb5e1324065fa49efa0438f4002d24c61.html"
+        },
+        {
+          "title": "ScanNetSecurity（不正アクセスで札幌のクリスマス抽選会が中止に）",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/27/56917.html"
         }
       ],
       "severity": "medium",
@@ -11192,6 +11777,66 @@
       "reliability": "high"
     },
     {
+      "id": "2026-11-persol-career-doda-tonariwa",
+      "organization": "パーソルキャリア株式会社",
+      "group": "パーソルグループ",
+      "services": [
+        "doda",
+        "doda LINE公式アカウント"
+      ],
+      "industry": "人材・教育",
+      "country": "JP",
+      "date_occurred": "2026-11-10",
+      "date_announced": "2026-11-12",
+      "affected_count": 616329,
+      "count_note": "個人のお客様情報61万6,329件（11月26日の第二報で確定）",
+      "cause": "third_party",
+      "root_cause": "doda LINE公式アカウントの運用に使う電通デジタル「TONARIWA」が管理アカウントの認証情報を悪用され不正アクセスを受けた",
+      "attack_methods": [
+        "stolen_credentials"
+      ],
+      "vendor": {
+        "name": "株式会社電通デジタル",
+        "group": "電通グループ"
+      },
+      "data_types": [
+        "氏名",
+        "生年月日",
+        "性別",
+        "電話番号"
+      ],
+      "summary": "転職サービス「doda」のLINE公式アカウントの運用に使っている株式会社電通デジタルの「TONARIWA」が不正アクセスを受け、利用者の情報が漏えいした可能性があると11月12日に公表した。11月26日の第二報で、氏名、生年月日、性別、電話番号、勤務先、在職区分などの個人のお客様情報61万6,329件の漏えいを確認したと発表した。11月10日に不正アクセスのログが確認され、電通デジタルは同日深夜にサービスを停止した。",
+      "sources": [
+        {
+          "title": "パーソルキャリア 外部委託先への不正アクセスによるお客様情報漏えいについてのお詫びとお知らせ（第二報）",
+          "url": "https://www.persol-career.co.jp/newsroom/news/information/2026/20261126_2388/"
+        },
+        {
+          "title": "NHK（パーソルキャリア 転職サービス利用者個人情報61万件余漏えい）",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261127de82399"
+        },
+        {
+          "title": "ScanNetSecurity（パーソルキャリアが保持していた情報が漏えいした可能性）",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56877.html"
+        },
+        {
+          "title": "セキュリティ対策Lab",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/persol_career_doda_tonariwa_data_breach_20261126/"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "転職関連を装った不審なSMSや電話に注意する"
+        },
+        {
+          "text": "doda のLINE公式アカウントから届くメッセージに不審な点がないか確認する"
+        }
+      ],
+      "severity": "high",
+      "disclosure_days": 2,
+      "reliability": "high"
+    },
+    {
       "id": "2026-11-qoo10",
       "organization": "Qoo10",
       "services": [
@@ -12097,7 +12742,7 @@
         "電話番号",
         "メールアドレス"
       ],
-      "summary": "職員採用試験で使った録画動画面接サービスの提供会社、株式会社ApplyNowが第三者の不正アクセスを受け、2021・2022・2024・2026年度の受験者1,464件の氏名、生年月日、電話番号、メールアドレスが漏えいしたと公表した。ApplyNowは9月7日に不正アクセスを検知し、11月9日に対象者へお詫びと注意喚起のメールを送った。二次被害は確認されていない。",
+      "summary": "職員採用試験で使った録画動画面接サービスの提供会社、株式会社ApplyNowが第三者の不正アクセスを受け、2021・2022・2024・2026年度の受験者1,464件の氏名、生年月日、電話番号、メールアドレスが漏えいしたと公表した。ApplyNowは9月7日に不正アクセスを検知し、11月9日に対象者へお詫びと注意喚起のメールを送った。二次被害は確認されていない。市は9月10日に連絡を受けていたが公表は11月11日で、11月27日の定例会見で市長が受験者への通知や公表の遅れを含めて陳謝した。",
       "sources": [
         {
           "title": "高知市 録画動画面接サービスへの不正アクセスについて",
@@ -12106,6 +12751,10 @@
         {
           "title": "NHK",
           "url": "https://news.web.nhk/newsweb/na/nd-20261111de74460"
+        },
+        {
+          "title": "RKC高知放送（高知市長 職員採用試験受験者の個人情報漏えいを陳謝）",
+          "url": "https://news.yahoo.co.jp/articles/8a8a27aea06492af4ddac80336933f197d737dca"
         }
       ],
       "severity": "high",
