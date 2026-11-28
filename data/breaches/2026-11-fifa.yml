@@ -1,0 +1,14 @@
+organization: FIFA（国際サッカー連盟）
+industry: エンタメ・スポーツ
+country: CH
+date_announced: 2026-11-26
+affected_count: null
+count_note: 件数・対象者・情報の内訳は未公表
+cause: unauthorized_access
+root_cause: 犯罪的なサイバー攻撃を受け、個人情報と事業情報の一部に不正アクセスされた
+summary: 犯罪的なサイバー攻撃を受け、限られた範囲の個人情報と事業情報に不正アクセスされたと公表し、法執行機関と連携しているとした。影響を受けた人数や組織数、発生時期、事業情報の内容は明らかにしていない。報道によると、ハッカー集団が12GBの内部ファイルを盗んだと主張しているが、FIFAはこの主張を確認していない。
+sources:
+  - title: Al Jazeera
+    url: https://www.aljazeera.com/sports/2026/11/26/fifa-says-personal-and-business-information-stolen-in-cyberattack
+  - title: Infosecurity Magazine
+    url: https://www.infosecurity-magazine.com/news/fifa-confirms-cyberattack/

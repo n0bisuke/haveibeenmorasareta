@@ -9,8 +9,8 @@ industry:
 country: JP
 date_occurred: 2026-11-18
 date_announced: 2026-11-19
-affected_count: null
-count_note: 対象となる会員の範囲と件数は調査中
+affected_count: 3119000
+count_note: 約311万9千人分（11月26日の第2報で確定）
 cause: unauthorized_access
 root_cause: 三井ショッピングパークアプリが第三者の不正アクセスを受けた（侵入経路は調査中）
 data_types:
@@ -19,7 +19,9 @@ data_types:
   - 生年月日
   - 住所
   - メールアドレス
-summary: 運営する三井ショッピングパークアプリが第三者の不正アクセスを受け、三井ショッピングパークポイント会員のポイント会員番号、氏名、生年月日、住所、メールアドレスの一部が漏えいしたと公表した。クレジットカード情報やパスワードは含まない。11月18日に不正アクセスを確認し、同日アプリの提供を一時停止した。対象範囲、件数、侵入経路は調査中で、個人情報保護委員会に速報した。各施設や通販サイトは通常どおり営業している。
+  - 電話番号
+  - 性別
+summary: 運営する三井ショッピングパークアプリが第三者の不正アクセスを受け、三井ショッピングパークポイント会員のポイント会員番号、氏名、生年月日、住所、メールアドレスの一部が漏えいしたと公表した。クレジットカード情報やパスワードは含まない。11月18日に不正アクセスを確認し、同日アプリの提供を一時停止した。対象範囲、件数、侵入経路は調査中で、個人情報保護委員会に速報した。各施設や通販サイトは通常どおり営業している。11月26日の第2報で、漏えいした会員は約311万9千人分と確定し、電話番号と性別も対象に含まれると公表した。侵入経路と手段は特定済みで、周辺システムへの影響や二次被害は確認されていない。
 sources:
   - title: 三井不動産商業マネジメント 三井ショッピングパークポイント会員情報の漏えいおよび三井ショッピングパークアプリサービス提供の一時停止について
     url: https://www.mf-shogyo.co.jp/pdf/info-20261119-94.pdf
@@ -27,3 +29,7 @@ sources:
     url: https://www.mitsuifudosan.co.jp/corporate/news/2026/1119/download/sonota/20261119.pdf
   - title: 読売新聞
     url: https://www.yomiuri.co.jp/economy/20261119-GYT1T00326/
+  - title: ITmedia NEWS（約312万会員の個人情報漏えい）
+    url: https://www.itmedia.co.jp/news/article/2611/27/2000003510/
+  - title: CNET Japan（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/02527842506acb8b7dbedaa1bfaabe9b0f13bb6f

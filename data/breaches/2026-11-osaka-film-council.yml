@@ -1,0 +1,22 @@
+organization: 公益財団法人大阪観光局
+services:
+  - 大阪フィルム・カウンシル Webサイト（ボランティアエキストラ・ロケ協力施設登録）
+industry: 旅行
+country: JP
+org_type: public_org
+prefecture: 大阪府
+date_announced: 2026-11-27
+affected_count: 30000
+count_note: 約3万件（現時点）
+cause: unauthorized_access
+root_cause: 大阪フィルム・カウンシルが運営するエキストラ募集サイトが第三者の不正アクセスを受けた
+data_types:
+  - 氏名
+  - 住所
+  - メールアドレス
+summary: 映画やドラマ撮影のエキストラを募集する「大阪フィルム・カウンシル」が運営するサイトが第三者による不正アクセスを受け、ボランティアエキストラやロケ協力施設として登録している人の氏名、住所、メールアドレスなど約3万件が漏えいしたと公表した。11月24日に登録者から、同カウンシルのメールアドレスで宅配業者を装った不審なメールが届いたとの問い合わせがあり、調査して判明した。サイトは閉鎖している。
+sources:
+  - title: 大阪観光局 大阪フィルム・カウンシルサイトにおける個人情報漏えいに関するお詫びとお知らせ（トップページ掲載）
+    url: https://octb.osaka-info.jp/
+  - title: ABCニュース（Yahoo!ニュース）
+    url: https://news.yahoo.co.jp/articles/280b9b68b79f187d863da527edb9d8ef3ed5138e
