@@ -1,0 +1,30 @@
+organization: 株式会社シンカ
+services:
+  - 社内業務システム
+industry: IT・通信
+country: JP
+date_occurred: 2026-10-27
+date_announced: 2026-11-26
+affected_count: 5286
+count_note: 5,286件（うち個人情報4,777件）。件数はデータの件数で、人数・社数ではない
+cause: unauthorized_access
+root_cause: 社内業務システムのサーバーが第三者の不正アクセスを受けた
+data_types:
+  - 取引先情報
+  - 従業員情報
+  - 氏名
+  - 電話番号
+  - メールアドレス
+summary: 社内業務システムのサーバーが第三者の不正アクセスを受け、5,286件の情報が漏えいし、うち4,777件が個人情報だったと公表した。侵入は10月27日に始まっていた。漏えいしたのは、コミュニケーションプラットフォーム「カイクラ」の契約企業（解約済み・OEM経由を含む）の請求先情報や代理店・パートナー企業の情報で、会社名、所在地、代表者名、担当者名、携帯電話番号、メールアドレスを含み、同社社員の氏名も含まれる。「カイクラ」本体への侵入や、顧客情報・会話録音データの漏えいは確認されていないとしている。
+sources:
+  - title: 不正アクセス及び個人情報漏えいに関するお詫び（株式会社シンカ）
+    url: https://www.thinca.co.jp/news/owabi/
+  - title: シンカ 弊社社内業務システムへの不正アクセスに関するお知らせ（適時開示）
+    url: https://www.release.tdnet.info/inbs/140120261126586941.pdf
+  - title: シンカ、社内業務システムへの不正アクセスで5,286件の情報漏洩、うち個人情報4,777件（セキュリティ対策Lab）
+    url: https://rocket-boys.co.jp/security-measures-lab/thinca_kaikura_internal_server_5286_data_breach_202611/
+  - title: シンカが社内業務システムへの不正アクセスを公表し5,286件の情報漏えいを確認（サイバーセキュリティ.com）
+    url: https://cybersecurity-jp.com/news/119002
+checklist:
+  - text: シンカからの個別連絡を確認する
+  - text: シンカやカイクラを装った不審なメール・電話に注意する

@@ -1,0 +1,22 @@
+organization: インド選挙管理委員会（Election Commission of India）
+industry: 行政
+country: IN
+date_announced: 2026-11-27
+affected_count: null
+count_note: 対象件数は未公表。データが実際に収集・悪用されたかは不明
+cause: vulnerability
+root_cause: 公式サイトの通話予約機能で、申請の参照番号から有権者の個人情報を取得できた
+attack_methods:
+  - broken_access_control
+data_types:
+  - 氏名
+  - 電話番号
+  - メールアドレス
+  - 生年月日
+  - 住所
+summary: ロイター通信の調査で、インド選挙管理委員会の公式サイトの通話予約機能に、オンライン登録・変更申請の参照番号を使うと有権者の氏名、電話番号、メールアドレス、生年月日、住所などを取得できる欠陥があったと報じられた。ロイターは10月26日に同委員会へ連絡し、委員会は11月26日に機微な項目を伏せる修正を行った。データが実際に収集・悪用されたかは分かっていない。
+sources:
+  - title: Reuters（KELO 転載）
+    url: https://kelo.com/2026/11/27/exclusive-indias-election-body-website-flaw-exposing-voter-data-fixed-after-reuters-findings/
+  - title: Kashmir Reader
+    url: https://kashmirreader.com/2026/11/28/election-commission-fixes-website-flaw-that-exposes-voters-personal-data/
